@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.database.vault.upbound.io;
 /// <summary>SecretBackendConnection is the Schema for the SecretBackendConnections API. Configures a database secret backend connection for Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecretBackendConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1SecretBackendConnection>
@@ -46,7 +46,7 @@ public partial class V1alpha1SecretBackendConnectionList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecDeletionPolicyEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1alpha1SecretBackendConnectionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecForProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecForProviderBackendRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1alpha1SecretBackendConnectionSpecForProviderBackendRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecForProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecForProviderBackendRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1alpha1SecretBackendConnectionSpecForProviderBackendRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendRefPol
 }
 
 /// <summary>Reference to a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendRef
 {
@@ -132,7 +132,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecForProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecForProviderBackendSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1alpha1SecretBackendConnectionSpecForProviderBackendSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecForProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecForProviderBackendSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1alpha1SecretBackendConnectionSpecForProviderBackendSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendSelect
 }
 
 /// <summary>Selector for a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendSelector
 {
@@ -207,7 +207,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderBackendSelect
 /// The password to authenticate with.
 /// The password to use when authenticating with Cassandra.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandraPasswordSecretRef
 {
@@ -229,7 +229,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandraPass
 /// chain.
 /// Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandraPemBundleSecretRef
 {
@@ -250,7 +250,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandraPemB
 /// A JSON structure configuring the certificate chain.
 /// Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandraPemJsonSecretRef
 {
@@ -267,7 +267,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandraPemJ
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandra
 {
@@ -393,7 +393,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderCassandra
 /// Required if tls is true. Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
 /// Required if `tls` is `true`. Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderCouchbaseBase64PemSecretRef
 {
@@ -414,7 +414,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderCouchbaseBase
 /// The password to authenticate with.
 /// Specifies the password corresponding to the given username.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderCouchbasePasswordSecretRef
 {
@@ -431,7 +431,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderCouchbasePass
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderCouchbase
 {
@@ -497,7 +497,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderCouchbase
 /// The password to authenticate with.
 /// The password to be used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderElasticsearchPasswordSecretRef
 {
@@ -514,7 +514,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderElasticsearch
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderElasticsearch
 {
@@ -593,7 +593,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderElasticsearch
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderHanaPasswordSecretRef
 {
@@ -610,7 +610,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderHanaPasswordS
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderHana
 {
@@ -696,7 +696,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderHana
 /// The password to authenticate with.
 /// Specifies the password corresponding to the given username.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdbPasswordSecretRef
 {
@@ -718,7 +718,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdbPassw
 /// chain.
 /// Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdbPemBundleSecretRef
 {
@@ -739,7 +739,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdbPemBu
 /// A JSON structure configuring the certificate chain.
 /// Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdbPemJsonSecretRef
 {
@@ -756,7 +756,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdbPemJs
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdb
 {
@@ -839,7 +839,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderInfluxdb
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbPasswordSecretRef
 {
@@ -860,7 +860,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbPasswo
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// The x509 certificate and private key bundle for connecting to the database. Must be PEM encoded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbTlsCertificateKeySecretRef
 {
@@ -877,7 +877,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbTlsCer
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodb
 {
@@ -977,7 +977,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodb
 /// The Private Programmatic API Key used to connect with MongoDB Atlas API.
 /// The Private Programmatic API Key used to connect with MongoDB Atlas API.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbatlasPrivateKeySecretRef
 {
@@ -994,7 +994,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbatlasP
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbatlas
 {
@@ -1031,7 +1031,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMongodbatlas
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMssqlPasswordSecretRef
 {
@@ -1048,7 +1048,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMssqlPassword
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMssql
 {
@@ -1144,7 +1144,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMssql
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlPasswordSecretRef
 {
@@ -1165,7 +1165,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlPassword
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlServiceAccountJsonSecretRef
 {
@@ -1186,7 +1186,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlServiceA
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlTlsCertificateKeySecretRef
 {
@@ -1203,7 +1203,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlTlsCerti
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysql
 {
@@ -1310,7 +1310,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysql
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAuroraPasswordSecretRef
 {
@@ -1331,7 +1331,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAuroraPa
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAuroraServiceAccountJsonSecretRef
 {
@@ -1352,7 +1352,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAuroraSe
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAuroraTlsCertificateKeySecretRef
 {
@@ -1369,7 +1369,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAuroraTl
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAurora
 {
@@ -1476,7 +1476,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlAurora
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacyPasswordSecretRef
 {
@@ -1497,7 +1497,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacyPa
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacyServiceAccountJsonSecretRef
 {
@@ -1518,7 +1518,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacySe
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacyTlsCertificateKeySecretRef
 {
@@ -1535,7 +1535,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacyTl
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacy
 {
@@ -1642,7 +1642,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlLegacy
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRdsPasswordSecretRef
 {
@@ -1663,7 +1663,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRdsPassw
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRdsServiceAccountJsonSecretRef
 {
@@ -1684,7 +1684,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRdsServi
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRdsTlsCertificateKeySecretRef
 {
@@ -1701,7 +1701,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRdsTlsCe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRds
 {
@@ -1808,7 +1808,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderMysqlRds
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderOraclePasswordSecretRef
 {
@@ -1825,7 +1825,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderOraclePasswor
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderOracle
 {
@@ -1927,7 +1927,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderOracle
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresqlPasswordSecretRef
 {
@@ -1948,7 +1948,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresqlPas
 /// The Private Programmatic API Key used to connect with MongoDB Atlas API.
 /// The secret key used for the x509 client certificate. Must be PEM encoded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresqlPrivateKeySecretRef
 {
@@ -1969,7 +1969,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresqlPri
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresqlServiceAccountJsonSecretRef
 {
@@ -1986,7 +1986,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresqlSer
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresql
 {
@@ -2126,7 +2126,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderPostgresql
 /// The password to authenticate with.
 /// Specifies the password corresponding to the given username.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisPasswordSecretRef
 {
@@ -2143,7 +2143,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisPassword
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderRedis
 {
@@ -2203,7 +2203,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderRedis
 /// The password to authenticate with.
 /// The AWS secret key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisElasticachePasswordSecretRef
 {
@@ -2224,7 +2224,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisElastica
 /// The username to authenticate with.
 /// The AWS access key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisElasticacheUsernameSecretRef
 {
@@ -2241,7 +2241,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisElastica
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisElasticache
 {
@@ -2278,7 +2278,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderRedisElastica
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderRedshiftPasswordSecretRef
 {
@@ -2295,7 +2295,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderRedshiftPassw
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderRedshift
 {
@@ -2381,7 +2381,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderRedshift
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderSnowflakePasswordSecretRef
 {
@@ -2403,7 +2403,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderSnowflakePass
 /// Note: This property is write-only and will not be read from the API.
 /// The private key configured for the admin user in Snowflake.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderSnowflakePrivateKeyWoSecretRef
 {
@@ -2420,7 +2420,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderSnowflakePriv
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProviderSnowflake
 {
@@ -2510,7 +2510,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProviderSnowflake
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecForProvider
 {
@@ -2766,7 +2766,7 @@ public partial class V1alpha1SecretBackendConnectionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPolicyResolutionEnum
 {
@@ -2782,7 +2782,7 @@ public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPolicyResolveEnum
 {
@@ -2793,7 +2793,7 @@ public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPolicy
 {
@@ -2817,7 +2817,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendRefPo
 }
 
 /// <summary>Reference to a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendRef
 {
@@ -2836,7 +2836,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecInitProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendSelectorPolicyResolutionEnum
 {
@@ -2852,7 +2852,7 @@ public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecInitProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendSelectorPolicyResolveEnum
 {
@@ -2863,7 +2863,7 @@ public enum V1alpha1SecretBackendConnectionSpecInitProviderBackendSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendSelectorPolicy
 {
@@ -2887,7 +2887,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendSelec
 }
 
 /// <summary>Selector for a Mount in vault to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendSelector
 {
@@ -2911,7 +2911,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderBackendSelec
 /// The password to authenticate with.
 /// The password to use when authenticating with Cassandra.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandraPasswordSecretRef
 {
@@ -2933,7 +2933,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandraPas
 /// chain.
 /// Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandraPemBundleSecretRef
 {
@@ -2954,7 +2954,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandraPem
 /// A JSON structure configuring the certificate chain.
 /// Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandraPemJsonSecretRef
 {
@@ -2971,7 +2971,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandraPem
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandra
 {
@@ -3097,7 +3097,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderCassandra
 /// Required if tls is true. Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
 /// Required if `tls` is `true`. Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderCouchbaseBase64PemSecretRef
 {
@@ -3118,7 +3118,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderCouchbaseBas
 /// The password to authenticate with.
 /// Specifies the password corresponding to the given username.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderCouchbasePasswordSecretRef
 {
@@ -3135,7 +3135,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderCouchbasePas
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderCouchbase
 {
@@ -3201,7 +3201,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderCouchbase
 /// The password to authenticate with.
 /// The password to be used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderElasticsearchPasswordSecretRef
 {
@@ -3218,7 +3218,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderElasticsearc
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderElasticsearch
 {
@@ -3297,7 +3297,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderElasticsearc
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderHanaPasswordSecretRef
 {
@@ -3314,7 +3314,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderHanaPassword
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderHana
 {
@@ -3400,7 +3400,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderHana
 /// The password to authenticate with.
 /// Specifies the password corresponding to the given username.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdbPasswordSecretRef
 {
@@ -3422,7 +3422,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdbPass
 /// chain.
 /// Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdbPemBundleSecretRef
 {
@@ -3443,7 +3443,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdbPemB
 /// A JSON structure configuring the certificate chain.
 /// Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdbPemJsonSecretRef
 {
@@ -3460,7 +3460,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdbPemJ
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdb
 {
@@ -3543,7 +3543,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderInfluxdb
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbPasswordSecretRef
 {
@@ -3564,7 +3564,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbPassw
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// The x509 certificate and private key bundle for connecting to the database. Must be PEM encoded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbTlsCertificateKeySecretRef
 {
@@ -3581,7 +3581,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbTlsCe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodb
 {
@@ -3681,7 +3681,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodb
 /// The Private Programmatic API Key used to connect with MongoDB Atlas API.
 /// The Private Programmatic API Key used to connect with MongoDB Atlas API.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbatlasPrivateKeySecretRef
 {
@@ -3698,7 +3698,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbatlas
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbatlas
 {
@@ -3735,7 +3735,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMongodbatlas
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMssqlPasswordSecretRef
 {
@@ -3752,7 +3752,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMssqlPasswor
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMssql
 {
@@ -3848,7 +3848,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMssql
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlPasswordSecretRef
 {
@@ -3869,7 +3869,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlPasswor
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlServiceAccountJsonSecretRef
 {
@@ -3890,7 +3890,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlService
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlTlsCertificateKeySecretRef
 {
@@ -3907,7 +3907,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlTlsCert
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysql
 {
@@ -4014,7 +4014,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysql
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAuroraPasswordSecretRef
 {
@@ -4035,7 +4035,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAuroraP
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAuroraServiceAccountJsonSecretRef
 {
@@ -4056,7 +4056,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAuroraS
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAuroraTlsCertificateKeySecretRef
 {
@@ -4073,7 +4073,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAuroraT
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAurora
 {
@@ -4180,7 +4180,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlAurora
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacyPasswordSecretRef
 {
@@ -4201,7 +4201,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacyP
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacyServiceAccountJsonSecretRef
 {
@@ -4222,7 +4222,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacyS
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacyTlsCertificateKeySecretRef
 {
@@ -4239,7 +4239,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacyT
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacy
 {
@@ -4346,7 +4346,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlLegacy
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRdsPasswordSecretRef
 {
@@ -4367,7 +4367,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRdsPass
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRdsServiceAccountJsonSecretRef
 {
@@ -4388,7 +4388,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRdsServ
 /// The client certificate and private key (concatenated in PEM format) to use for TLS authentication with MongoDB. This is a sensitive field that will not be returned in API responses.
 /// x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRdsTlsCertificateKeySecretRef
 {
@@ -4405,7 +4405,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRdsTlsC
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRds
 {
@@ -4512,7 +4512,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderMysqlRds
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderOraclePasswordSecretRef
 {
@@ -4529,7 +4529,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderOraclePasswo
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderOracle
 {
@@ -4631,7 +4631,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderOracle
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresqlPasswordSecretRef
 {
@@ -4652,7 +4652,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresqlPa
 /// The Private Programmatic API Key used to connect with MongoDB Atlas API.
 /// The secret key used for the x509 client certificate. Must be PEM encoded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresqlPrivateKeySecretRef
 {
@@ -4673,7 +4673,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresqlPr
 /// JSON encoding of an IAM access key. Requires auth_type to be gcp_iam.
 /// A JSON encoded credential for use with IAM authorization
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresqlServiceAccountJsonSecretRef
 {
@@ -4690,7 +4690,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresqlSe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresql
 {
@@ -4830,7 +4830,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderPostgresql
 /// The password to authenticate with.
 /// Specifies the password corresponding to the given username.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisPasswordSecretRef
 {
@@ -4847,7 +4847,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisPasswor
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedis
 {
@@ -4907,7 +4907,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedis
 /// The password to authenticate with.
 /// The AWS secret key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisElasticachePasswordSecretRef
 {
@@ -4928,7 +4928,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisElastic
 /// The username to authenticate with.
 /// The AWS access key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisElasticacheUsernameSecretRef
 {
@@ -4945,7 +4945,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisElastic
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisElasticache
 {
@@ -4982,7 +4982,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedisElastic
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedshiftPasswordSecretRef
 {
@@ -4999,7 +4999,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedshiftPass
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedshift
 {
@@ -5085,7 +5085,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderRedshift
 /// The password to authenticate with.
 /// The root credential password used in the connection URL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderSnowflakePasswordSecretRef
 {
@@ -5107,7 +5107,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderSnowflakePas
 /// Note: This property is write-only and will not be read from the API.
 /// The private key configured for the admin user in Snowflake.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderSnowflakePrivateKeyWoSecretRef
 {
@@ -5124,7 +5124,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderSnowflakePri
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProviderSnowflake
 {
@@ -5226,7 +5226,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProviderSnowflake
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecInitProvider
 {
@@ -5480,7 +5480,7 @@ public partial class V1alpha1SecretBackendConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecManagementPoliciesEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecManagementPoliciesEnum
 {
@@ -5504,7 +5504,7 @@ public enum V1alpha1SecretBackendConnectionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -5520,7 +5520,7 @@ public enum V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -5531,7 +5531,7 @@ public enum V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicy
 {
@@ -5559,7 +5559,7 @@ public partial class V1alpha1SecretBackendConnectionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecProviderConfigRef
 {
@@ -5578,7 +5578,7 @@ public partial class V1alpha1SecretBackendConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpecWriteConnectionSecretToRef
 {
@@ -5592,7 +5592,7 @@ public partial class V1alpha1SecretBackendConnectionSpecWriteConnectionSecretToR
 }
 
 /// <summary>SecretBackendConnectionSpec defines the desired state of SecretBackendConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionSpec
 {
@@ -5659,7 +5659,7 @@ public partial class V1alpha1SecretBackendConnectionSpec
     public V1alpha1SecretBackendConnectionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderCassandra
 {
@@ -5759,7 +5759,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderCassandra
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderCouchbase
 {
@@ -5807,7 +5807,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderCouchbase
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderElasticsearch
 {
@@ -5875,7 +5875,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderElasticsearc
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderHana
 {
@@ -5950,7 +5950,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderHana
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderInfluxdb
 {
@@ -6007,7 +6007,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderInfluxdb
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderMongodb
 {
@@ -6089,7 +6089,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderMongodb
     public string? WriteConcern { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderMongodbatlas
 {
@@ -6115,7 +6115,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderMongodbatlas
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderMssql
 {
@@ -6200,7 +6200,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderMssql
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysql
 {
@@ -6282,7 +6282,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysql
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysqlAurora
 {
@@ -6364,7 +6364,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysqlAurora
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysqlLegacy
 {
@@ -6446,7 +6446,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysqlLegacy
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysqlRds
 {
@@ -6528,7 +6528,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderMysqlRds
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderOracle
 {
@@ -6619,7 +6619,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderOracle
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderPostgresql
 {
@@ -6734,7 +6734,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderPostgresql
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderRedis
 {
@@ -6783,7 +6783,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderRedis
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderRedisElasticache
 {
@@ -6802,7 +6802,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderRedisElastic
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderRedshift
 {
@@ -6877,7 +6877,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderRedshift
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProviderSnowflake
 {
@@ -6952,7 +6952,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProviderSnowflake
     public string? UsernameTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusAtProvider
 {
@@ -7198,7 +7198,7 @@ public partial class V1alpha1SecretBackendConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatusConditions
 {
@@ -7241,7 +7241,7 @@ public partial class V1alpha1SecretBackendConnectionStatusConditions
 }
 
 /// <summary>SecretBackendConnectionStatus defines the observed state of SecretBackendConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretBackendConnectionStatus
 {
@@ -7271,7 +7271,7 @@ public partial class V1alpha1SecretBackendConnectionStatus
 }
 
 /// <summary>SecretBackendConnection is the Schema for the SecretBackendConnections API. Configures a database secret backend connection for Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecretBackendConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1SecretBackendConnectionSpec>, IStatus<V1alpha1SecretBackendConnectionStatus?>

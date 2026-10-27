@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.synapse.azure.m.upbound.io;
 /// <summary>LinkedService is the Schema for the LinkedServices API. Manages a Linked Service (connection) between a resource and Azure Synapse. This is a generic resource that supports all different Linked Service Types.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedService>
@@ -43,7 +43,7 @@ public partial class V1beta1LinkedServiceList : IKubernetesObject<V1ListMeta>, I
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRe
 }
 
 /// <summary>Reference to a IntegrationRuntimeAzure in synapse to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSe
 }
 
 /// <summary>Selector for a IntegrationRuntimeAzure in synapse to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntimeNameSe
 }
 
 /// <summary>A integration_runtime block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntime
 {
@@ -220,7 +220,7 @@ public partial class V1beta1LinkedServiceSpecForProviderIntegrationRuntime
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum
 {
@@ -247,7 +247,7 @@ public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPolicy
 {
@@ -271,7 +271,7 @@ public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRefPol
 }
 
 /// <summary>Reference to a Workspace in synapse to populate synapseWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRef
 {
@@ -294,7 +294,7 @@ public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -310,7 +310,7 @@ public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -321,7 +321,7 @@ public enum V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicy
 {
@@ -345,7 +345,7 @@ public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelect
 }
 
 /// <summary>Selector for a Workspace in synapse to populate synapseWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelector
 {
@@ -369,7 +369,7 @@ public partial class V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelect
     public V1beta1LinkedServiceSpecForProviderSynapseWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecForProvider
 {
@@ -430,7 +430,7 @@ public partial class V1beta1LinkedServiceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRefPolicyResolutionEnum
 {
@@ -446,7 +446,7 @@ public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRefPolicyResolveEnum
 {
@@ -457,7 +457,7 @@ public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRefPolicy
 {
@@ -481,7 +481,7 @@ public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameR
 }
 
 /// <summary>Reference to a IntegrationRuntimeAzure in synapse to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameRef
 {
@@ -504,7 +504,7 @@ public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelectorPolicyResolutionEnum
 {
@@ -520,7 +520,7 @@ public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelectorPolicyResolveEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelectorPolicy
 {
@@ -555,7 +555,7 @@ public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameS
 }
 
 /// <summary>Selector for a IntegrationRuntimeAzure in synapse to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameSelector
 {
@@ -580,7 +580,7 @@ public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntimeNameS
 }
 
 /// <summary>A integration_runtime block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntime
 {
@@ -613,7 +613,7 @@ public partial class V1beta1LinkedServiceSpecInitProviderIntegrationRuntime
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecInitProvider
 {
@@ -660,7 +660,7 @@ public partial class V1beta1LinkedServiceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSpecManagementPoliciesEnum>))]
 public enum V1beta1LinkedServiceSpecManagementPoliciesEnum
 {
@@ -683,7 +683,7 @@ public enum V1beta1LinkedServiceSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecProviderConfigRef
 {
@@ -702,7 +702,7 @@ public partial class V1beta1LinkedServiceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpecWriteConnectionSecretToRef
 {
@@ -712,7 +712,7 @@ public partial class V1beta1LinkedServiceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LinkedServiceSpec defines the desired state of LinkedService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSpec
 {
@@ -764,7 +764,7 @@ public partial class V1beta1LinkedServiceSpec
 }
 
 /// <summary>A integration_runtime block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceStatusAtProviderIntegrationRuntime
 {
@@ -777,7 +777,7 @@ public partial class V1beta1LinkedServiceStatusAtProviderIntegrationRuntime
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceStatusAtProvider
 {
@@ -829,7 +829,7 @@ public partial class V1beta1LinkedServiceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceStatusConditions
 {
@@ -872,7 +872,7 @@ public partial class V1beta1LinkedServiceStatusConditions
 }
 
 /// <summary>LinkedServiceStatus defines the observed state of LinkedService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceStatus
 {
@@ -902,7 +902,7 @@ public partial class V1beta1LinkedServiceStatus
 }
 
 /// <summary>LinkedService is the Schema for the LinkedServices API. Manages a Linked Service (connection) between a resource and Azure Synapse. This is a generic resource that supports all different Linked Service Types.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceSpec>, IStatus<V1beta1LinkedServiceStatus?>

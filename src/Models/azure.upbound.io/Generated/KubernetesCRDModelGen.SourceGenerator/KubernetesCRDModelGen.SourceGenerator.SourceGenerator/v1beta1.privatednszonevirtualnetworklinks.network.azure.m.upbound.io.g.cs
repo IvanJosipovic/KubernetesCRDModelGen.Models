@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
 /// <summary>PrivateDNSZoneVirtualNetworkLink is the Schema for the PrivateDNSZoneVirtualNetworkLinks API. Manages a Private DNS Zone Virtual Network Link.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateDNSZoneVirtualNetworkLink>
@@ -43,7 +43,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkList : IKubernetesOb
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZone
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZone
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPriva
 }
 
 /// <summary>Reference to a PrivateDNSZone in network to populate privateDnsZoneName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPriva
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZone
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZone
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPriva
 }
 
 /// <summary>Selector for a PrivateDNSZone in network to populate privateDnsZoneName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPrivateDnsZoneNameSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderPriva
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResou
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResou
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResourceGroupNameSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderResou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetwork
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetwork
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtu
 }
 
 /// <summary>Reference to a VirtualNetwork in network to populate virtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetwork
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetwork
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtu
 }
 
 /// <summary>Selector for a VirtualNetwork in network to populate virtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtu
     public V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProviderVirtualNetworkIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProvider
 {
@@ -561,7 +561,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdRefPolicyResolutionEnum
 {
@@ -577,7 +577,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetwor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdRefPolicyResolveEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetwor
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdRefPolicy
 {
@@ -612,7 +612,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirt
 }
 
 /// <summary>Reference to a VirtualNetwork in network to populate virtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdRef
 {
@@ -635,7 +635,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdSelectorPolicyResolutionEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetwor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdSelectorPolicyResolveEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetwor
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdSelectorPolicy
 {
@@ -686,7 +686,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirt
 }
 
 /// <summary>Selector for a VirtualNetwork in network to populate virtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirtualNetworkIdSelector
 {
@@ -722,7 +722,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProviderVirt
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProvider
 {
@@ -755,7 +755,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSZoneVirtualNetworkLinkSpecManagementPoliciesEnum>))]
 public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecManagementPoliciesEnum
 {
@@ -778,7 +778,7 @@ public enum V1beta1PrivateDNSZoneVirtualNetworkLinkSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecProviderConfigRef
 {
@@ -797,7 +797,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecProviderConfigRe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecWriteConnectionSecretToRef
 {
@@ -807,7 +807,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpecWriteConnectionS
 }
 
 /// <summary>PrivateDNSZoneVirtualNetworkLinkSpec defines the desired state of PrivateDNSZoneVirtualNetworkLink</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpec
 {
@@ -858,7 +858,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkSpec
     public V1beta1PrivateDNSZoneVirtualNetworkLinkSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkStatusAtProvider
 {
@@ -892,7 +892,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkStatusConditions
 {
@@ -935,7 +935,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkStatusConditions
 }
 
 /// <summary>PrivateDNSZoneVirtualNetworkLinkStatus defines the observed state of PrivateDNSZoneVirtualNetworkLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkStatus
 {
@@ -965,7 +965,7 @@ public partial class V1beta1PrivateDNSZoneVirtualNetworkLinkStatus
 }
 
 /// <summary>PrivateDNSZoneVirtualNetworkLink is the Schema for the PrivateDNSZoneVirtualNetworkLinks API. Manages a Private DNS Zone Virtual Network Link.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSZoneVirtualNetworkLink : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateDNSZoneVirtualNetworkLinkSpec>, IStatus<V1beta1PrivateDNSZoneVirtualNetworkLinkStatus?>

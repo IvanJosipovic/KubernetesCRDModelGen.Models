@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.ssm.aws.upbound.io;
 /// MaintenanceWindowTask is the Schema for the MaintenanceWindowTasks API. Provides an SSM Maintenance Window Task resource
 /// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -50,7 +50,7 @@ public partial class V1beta1MaintenanceWindowTaskList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecDeletionPolicyEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecDeletionPolicyEnum
@@ -67,7 +67,7 @@ public enum V1beta1MaintenanceWindowTaskSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolutionEnum
@@ -84,7 +84,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolveEnum
@@ -96,7 +96,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicy
@@ -121,7 +121,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRe
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRef
@@ -141,7 +141,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolutionEnum
@@ -158,7 +158,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolveEnum
@@ -170,7 +170,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicy
@@ -195,7 +195,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSe
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSelector
@@ -222,7 +222,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderServiceRoleArnSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolutionEnum
@@ -239,7 +239,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolveEnum
@@ -251,7 +251,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicy
@@ -276,7 +276,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRef
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRefs
@@ -296,7 +296,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolutionEnum
@@ -313,7 +313,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolveEnum
@@ -325,7 +325,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicy
@@ -350,7 +350,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSel
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelector
@@ -371,7 +371,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSel
     public V1beta1MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargets
@@ -398,7 +398,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTargets
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolutionEnum
@@ -415,7 +415,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolveEnum
@@ -427,7 +427,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicy
@@ -452,7 +452,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRefPolicy
 }
 
 /// <summary>Reference to a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRef
@@ -472,7 +472,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolutionEnum
@@ -489,7 +489,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolveEnum
@@ -501,7 +501,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicy
@@ -526,7 +526,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelectorP
 }
 
 /// <summary>Selector for a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelector
@@ -553,7 +553,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum
@@ -570,7 +570,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum
@@ -582,7 +582,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicy
@@ -607,7 +607,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefs
@@ -627,7 +627,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum
@@ -644,7 +644,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum
@@ -656,7 +656,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy
@@ -681,7 +681,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelector
@@ -702,7 +702,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameter
@@ -724,7 +724,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelector? ValuesSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParameters
@@ -739,7 +739,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>JSON to provide to your Lambda function as input.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersLambdaParametersPayloadSecretRef
@@ -757,7 +757,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersLambdaParameters
@@ -775,7 +775,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public string? Qualifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersCloudwatchConfig
@@ -795,7 +795,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum
@@ -812,7 +812,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum
@@ -824,7 +824,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicy
@@ -849,7 +849,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Reference to a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRef
@@ -869,7 +869,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum
@@ -886,7 +886,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum
@@ -898,7 +898,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicy
@@ -923,7 +923,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelector
@@ -944,7 +944,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfig
@@ -976,7 +976,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum
@@ -993,7 +993,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum
@@ -1005,7 +1005,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicy
@@ -1030,7 +1030,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Reference to a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRef
@@ -1050,7 +1050,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum
@@ -1067,7 +1067,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum
@@ -1079,7 +1079,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy
@@ -1104,7 +1104,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelector
@@ -1125,7 +1125,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersParameter
@@ -1145,7 +1145,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum
@@ -1162,7 +1162,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum
@@ -1174,7 +1174,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicy
@@ -1199,7 +1199,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRef
@@ -1219,7 +1219,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum
@@ -1236,7 +1236,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum
@@ -1248,7 +1248,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicy
@@ -1273,7 +1273,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelector
@@ -1294,7 +1294,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParameters
@@ -1361,7 +1361,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>The inputs for the STEP_FUNCTION task.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersStepFunctionsParametersInputSecretRef
@@ -1379,7 +1379,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParametersStepFunctionsParameters
@@ -1393,7 +1393,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationParameters
@@ -1421,7 +1421,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolutionEnum
@@ -1438,7 +1438,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolveEnum
@@ -1450,7 +1450,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolicy
@@ -1475,7 +1475,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRefPolic
 }
 
 /// <summary>Reference to a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRef
@@ -1495,7 +1495,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolutionEnum
@@ -1512,7 +1512,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolveEnum
@@ -1524,7 +1524,7 @@ public enum V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicy
@@ -1549,7 +1549,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelector
 }
 
 /// <summary>Selector for a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelector
@@ -1570,7 +1570,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelector
     public V1beta1MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecForProvider
@@ -1661,7 +1661,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolutionEnum
@@ -1678,7 +1678,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolveEnum
@@ -1690,7 +1690,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicy
@@ -1715,7 +1715,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnR
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnRef
@@ -1735,7 +1735,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolutionEnum
@@ -1752,7 +1752,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolveEnum
@@ -1764,7 +1764,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicy
@@ -1789,7 +1789,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnS
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelector
@@ -1816,7 +1816,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderServiceRoleArnS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolutionEnum
@@ -1833,7 +1833,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolveEnum
@@ -1845,7 +1845,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicy
@@ -1870,7 +1870,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRe
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRefs
@@ -1890,7 +1890,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolutionEnum
@@ -1907,7 +1907,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolveEnum
@@ -1919,7 +1919,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicy
@@ -1944,7 +1944,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSe
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelector
@@ -1965,7 +1965,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSe
     public V1beta1MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargets
@@ -1992,7 +1992,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTargets
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolutionEnum
@@ -2009,7 +2009,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolveEnum
@@ -2021,7 +2021,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicy
@@ -2046,7 +2046,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRefPolic
 }
 
 /// <summary>Reference to a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRef
@@ -2066,7 +2066,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolutionEnum
@@ -2083,7 +2083,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolveEnum
@@ -2095,7 +2095,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicy
@@ -2120,7 +2120,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelector
 }
 
 /// <summary>Selector for a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelector
@@ -2147,7 +2147,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum
@@ -2164,7 +2164,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum
@@ -2176,7 +2176,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicy
@@ -2201,7 +2201,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefs
@@ -2221,7 +2221,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum
@@ -2238,7 +2238,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum
@@ -2250,7 +2250,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy
@@ -2275,7 +2275,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelector
@@ -2296,7 +2296,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameter
@@ -2318,7 +2318,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelector? ValuesSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParameters
@@ -2333,7 +2333,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>JSON to provide to your Lambda function as input.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersLambdaParametersPayloadSecretRef
@@ -2351,7 +2351,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersLambdaParameters
@@ -2369,7 +2369,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public string? Qualifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersCloudwatchConfig
@@ -2389,7 +2389,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum
@@ -2406,7 +2406,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum
@@ -2418,7 +2418,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicy
@@ -2443,7 +2443,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Reference to a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRef
@@ -2463,7 +2463,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum
@@ -2480,7 +2480,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum
@@ -2492,7 +2492,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicy
@@ -2517,7 +2517,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelector
@@ -2538,7 +2538,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfig
@@ -2570,7 +2570,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum
@@ -2587,7 +2587,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum
@@ -2599,7 +2599,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicy
@@ -2624,7 +2624,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Reference to a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRef
@@ -2644,7 +2644,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum
@@ -2661,7 +2661,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum
@@ -2673,7 +2673,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy
@@ -2698,7 +2698,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelector
@@ -2719,7 +2719,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersParameter
@@ -2739,7 +2739,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum
@@ -2756,7 +2756,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum
@@ -2768,7 +2768,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicy
@@ -2793,7 +2793,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRef
@@ -2813,7 +2813,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum
@@ -2830,7 +2830,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum
@@ -2842,7 +2842,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicy
@@ -2867,7 +2867,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelector
@@ -2888,7 +2888,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParameters
@@ -2955,7 +2955,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>The inputs for the STEP_FUNCTION task.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersStepFunctionsParametersInputSecretRef
@@ -2973,7 +2973,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersStepFunctionsParameters
@@ -2987,7 +2987,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
@@ -3015,7 +3015,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolutionEnum
@@ -3032,7 +3032,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolveEnum
@@ -3044,7 +3044,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicy
@@ -3069,7 +3069,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRefPoli
 }
 
 /// <summary>Reference to a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRef
@@ -3089,7 +3089,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolutionEnum
@@ -3106,7 +3106,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolveEnum
@@ -3118,7 +3118,7 @@ public enum V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicy
@@ -3143,7 +3143,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelecto
 }
 
 /// <summary>Selector for a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelector
@@ -3176,7 +3176,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProviderWindowIdSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecInitProvider
@@ -3258,7 +3258,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecManagementPoliciesEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecManagementPoliciesEnum
@@ -3283,7 +3283,7 @@ public enum V1beta1MaintenanceWindowTaskSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicyResolutionEnum
@@ -3300,7 +3300,7 @@ public enum V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicyResolveEnum
@@ -3312,7 +3312,7 @@ public enum V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicy
@@ -3341,7 +3341,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecProviderConfigRef
@@ -3361,7 +3361,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpecWriteConnectionSecretToRef
@@ -3376,7 +3376,7 @@ public partial class V1beta1MaintenanceWindowTaskSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MaintenanceWindowTaskSpec defines the desired state of MaintenanceWindowTask</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskSpec
@@ -3444,7 +3444,7 @@ public partial class V1beta1MaintenanceWindowTaskSpec
     public V1beta1MaintenanceWindowTaskSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTargets
@@ -3457,7 +3457,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTargets
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersAutomationParametersParameter
@@ -3471,7 +3471,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersAutomationParameters
@@ -3485,7 +3485,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public IList<V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersAutomationParametersParameter>? Parameter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersLambdaParameters
@@ -3499,7 +3499,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public string? Qualifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParametersCloudwatchConfig
@@ -3513,7 +3513,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public bool? CloudwatchOutputEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParametersNotificationConfig
@@ -3531,7 +3531,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public string? NotificationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParametersParameter
@@ -3545,7 +3545,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParameters
@@ -3595,7 +3595,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public double? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersStepFunctionsParameters
@@ -3605,7 +3605,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParameters
@@ -3627,7 +3627,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public IList<V1beta1MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersStepFunctionsParameters>? StepFunctionsParameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusAtProvider
@@ -3701,7 +3701,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatusConditions
@@ -3745,7 +3745,7 @@ public partial class V1beta1MaintenanceWindowTaskStatusConditions
 }
 
 /// <summary>MaintenanceWindowTaskStatus defines the observed state of MaintenanceWindowTask.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MaintenanceWindowTaskStatus
@@ -3779,7 +3779,7 @@ public partial class V1beta1MaintenanceWindowTaskStatus
 /// MaintenanceWindowTask is the Schema for the MaintenanceWindowTasks API. Provides an SSM Maintenance Window Task resource
 /// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kargo.akuity.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ClusterPromotionTaskList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ClusterPromotionTask>
@@ -37,7 +37,7 @@ public partial class V1alpha1ClusterPromotionTaskList : IKubernetesObject<V1List
 }
 
 /// <summary>Retry is the retry policy for this step.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterPromotionTaskSpecStepsRetry
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1ClusterPromotionTaskSpecStepsRetry
 /// Kind is the type of the PromotionTask. Can be either PromotionTask or
 /// ClusterPromotionTask, default is PromotionTask.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ClusterPromotionTaskSpecStepsTaskKindEnum>))]
 public enum V1alpha1ClusterPromotionTaskSpecStepsTaskKindEnum
 {
@@ -103,7 +103,7 @@ public enum V1alpha1ClusterPromotionTaskSpecStepsTaskKindEnum
 /// Task is a reference to a PromotionTask that should be inflated into a
 /// Promotion when it is built from a PromotionTemplate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterPromotionTaskSpecStepsTask
 {
@@ -127,7 +127,7 @@ public partial class V1alpha1ClusterPromotionTaskSpecStepsTask
 /// It is used to pass information to the expression evaluation engine, and to
 /// allow for dynamic evaluation of expressions based on the variable values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterPromotionTaskSpecStepsVars
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1ClusterPromotionTaskSpecStepsVars
 }
 
 /// <summary>PromotionStep describes a directive to be executed as part of a Promotion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterPromotionTaskSpecSteps
 {
@@ -212,7 +212,7 @@ public partial class V1alpha1ClusterPromotionTaskSpecSteps
 /// It is used to pass information to the expression evaluation engine, and to
 /// allow for dynamic evaluation of expressions based on the variable values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterPromotionTaskSpecVars
 {
@@ -233,7 +233,7 @@ public partial class V1alpha1ClusterPromotionTaskSpecVars
 /// Spec describes the desired transition of a specific Stage into a specific
 /// Freight.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterPromotionTaskSpec
 {
@@ -254,7 +254,7 @@ public partial class V1alpha1ClusterPromotionTaskSpec
     public IList<V1alpha1ClusterPromotionTaskSpecVars>? Vars { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ClusterPromotionTask : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ClusterPromotionTaskSpec>

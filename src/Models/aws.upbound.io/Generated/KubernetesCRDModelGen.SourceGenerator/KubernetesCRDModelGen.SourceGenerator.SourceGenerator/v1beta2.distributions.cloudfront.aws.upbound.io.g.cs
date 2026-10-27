@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.aws.upbound.io;
 /// <summary>Distribution is the Schema for the Distributions API. Provides a CloudFront web distribution resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2DistributionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Distribution>
@@ -46,7 +46,7 @@ public partial class V1beta2DistributionList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecDeletionPolicyEnum>))]
 public enum V1beta2DistributionSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2DistributionSpecDeletionPolicyEnum
 }
 
 /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderCacheTagConfig
 {
@@ -67,7 +67,7 @@ public partial class V1beta2DistributionSpecForProviderCacheTagConfig
 }
 
 /// <summary>A connection function association configuration block (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderConnectionFunctionAssociation
 {
@@ -76,7 +76,7 @@ public partial class V1beta2DistributionSpecForProviderConnectionFunctionAssocia
     public string? Id { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderCustomErrorResponse
 {
@@ -98,7 +98,7 @@ public partial class V1beta2DistributionSpecForProviderCustomErrorResponse
 }
 
 /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorForwardedValuesCookies
 {
@@ -112,7 +112,7 @@ public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorForwa
 }
 
 /// <summary>The forwarded values configuration that specifies how CloudFront handles query strings, cookies and headers (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorForwardedValues
 {
@@ -133,7 +133,7 @@ public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorForwa
     public IList<string>? QueryStringCacheKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorFunctionAssociation
 {
@@ -147,7 +147,7 @@ public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorFunct
 }
 
 /// <summary>A config block that sets the grpc config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorGrpcConfig
 {
@@ -156,7 +156,7 @@ public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorGrpcC
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorLambdaFunctionAssociation
 {
@@ -174,7 +174,7 @@ public partial class V1beta2DistributionSpecForProviderDefaultCacheBehaviorLambd
 }
 
 /// <summary>Default cache behavior for this distribution (maximum one). Requires either cache_policy_id (preferred) or forwarded_values (deprecated) be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderDefaultCacheBehavior
 {
@@ -260,7 +260,7 @@ public partial class V1beta2DistributionSpecForProviderDefaultCacheBehavior
 }
 
 /// <summary>The logging configuration that controls how logs are written to your distribution (maximum one). AWS provides two versions of access logs for CloudFront: Legacy and v2. This argument configures legacy version standard logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderLoggingConfig
 {
@@ -278,7 +278,7 @@ public partial class V1beta2DistributionSpecForProviderLoggingConfig
 }
 
 /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorForwardedValuesCookies
 {
@@ -292,7 +292,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorForwa
 }
 
 /// <summary>The forwarded values configuration that specifies how CloudFront handles query strings, cookies and headers (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorForwardedValues
 {
@@ -319,7 +319,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorForwa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum
 {
@@ -335,7 +335,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum
 {
@@ -346,7 +346,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicy
 {
@@ -370,7 +370,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunct
 }
 
 /// <summary>Reference to a Function in cloudfront to populate functionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRef
 {
@@ -389,7 +389,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunct
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunct
 }
 
 /// <summary>Selector for a Function in cloudfront to populate functionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelector
 {
@@ -460,7 +460,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunct
     public V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociation
 {
@@ -482,7 +482,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorFunct
 }
 
 /// <summary>A config block that sets the grpc config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorGrpcConfig
 {
@@ -497,7 +497,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorGrpcC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum
 {
@@ -513,7 +513,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicy
 {
@@ -548,7 +548,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambd
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRef
 {
@@ -567,7 +567,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum
 {
@@ -583,7 +583,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum
 {
@@ -594,7 +594,7 @@ public enum V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicy
 {
@@ -618,7 +618,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambd
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelector
 {
@@ -638,7 +638,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambd
     public V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociation
 {
@@ -663,7 +663,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambd
     public V1beta2DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelector? LambdaArnSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrderedCacheBehavior
 {
@@ -752,7 +752,7 @@ public partial class V1beta2DistributionSpecForProviderOrderedCacheBehavior
     public string? ViewerProtocolPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginCustomHeader
 {
@@ -764,7 +764,7 @@ public partial class V1beta2DistributionSpecForProviderOriginCustomHeader
 }
 
 /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginCustomOriginConfigOriginMtlsConfig
 {
@@ -774,7 +774,7 @@ public partial class V1beta2DistributionSpecForProviderOriginCustomOriginConfigO
 }
 
 /// <summary>The CloudFront custom origin configuration information. If an S3 origin is required, use origin_access_control_id or s3_origin_config instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginCustomOriginConfig
 {
@@ -817,7 +817,7 @@ public partial class V1beta2DistributionSpecForProviderOriginCustomOriginConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolutionEnum
 {
@@ -833,7 +833,7 @@ public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolveEnum
 {
@@ -844,7 +844,7 @@ public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRefPolicy
 {
@@ -868,7 +868,7 @@ public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControl
 }
 
 /// <summary>Reference to a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControlIdRef
 {
@@ -887,7 +887,7 @@ public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum
 {
@@ -903,7 +903,7 @@ public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum
 {
@@ -914,7 +914,7 @@ public enum V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicy
 {
@@ -938,7 +938,7 @@ public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControl
 }
 
 /// <summary>Selector for a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControlIdSelector
 {
@@ -959,7 +959,7 @@ public partial class V1beta2DistributionSpecForProviderOriginOriginAccessControl
 }
 
 /// <summary>CloudFront Origin Shield configuration information. Using Origin Shield can help reduce the load on your origin. For more information, see Using Origin Shield in the Amazon CloudFront Developer Guide.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginOriginShield
 {
@@ -978,7 +978,7 @@ public partial class V1beta2DistributionSpecForProviderOriginOriginShield
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum
 {
@@ -994,7 +994,7 @@ public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum
 {
@@ -1005,7 +1005,7 @@ public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicy
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOrigi
 }
 
 /// <summary>Reference to a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRef
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOrigi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum
 {
@@ -1064,7 +1064,7 @@ public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum
 {
@@ -1075,7 +1075,7 @@ public enum V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicy
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOrigi
 }
 
 /// <summary>Selector for a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelector
 {
@@ -1120,7 +1120,7 @@ public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfigOrigi
 }
 
 /// <summary>CloudFront S3 origin configuration information. If a custom origin is required, use custom_origin_config instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfig
 {
@@ -1138,7 +1138,7 @@ public partial class V1beta2DistributionSpecForProviderOriginS3OriginConfig
 }
 
 /// <summary>The VPC origin configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginVpcOriginConfig
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta2DistributionSpecForProviderOriginVpcOriginConfig
     public string? VpcOriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOrigin
 {
@@ -1221,7 +1221,7 @@ public partial class V1beta2DistributionSpecForProviderOrigin
 }
 
 /// <summary>The failover criteria for when to failover to the secondary origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginGroupFailoverCriteria
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta2DistributionSpecForProviderOriginGroupFailoverCriter
     public IList<double>? StatusCodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginGroupMember
 {
@@ -1239,7 +1239,7 @@ public partial class V1beta2DistributionSpecForProviderOriginGroupMember
     public string? OriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderOriginGroup
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta2DistributionSpecForProviderOriginGroup
     public string? OriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderRestrictionsGeoRestriction
 {
@@ -1270,7 +1270,7 @@ public partial class V1beta2DistributionSpecForProviderRestrictionsGeoRestrictio
 }
 
 /// <summary>The restriction configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderRestrictions
 {
@@ -1279,7 +1279,7 @@ public partial class V1beta2DistributionSpecForProviderRestrictions
 }
 
 /// <summary>The SSL configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderViewerCertificate
 {
@@ -1305,7 +1305,7 @@ public partial class V1beta2DistributionSpecForProviderViewerCertificate
 }
 
 /// <summary>The trust store configuration for viewer mTLS (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderViewerMtlsConfigTrustStoreConfig
 {
@@ -1323,7 +1323,7 @@ public partial class V1beta2DistributionSpecForProviderViewerMtlsConfigTrustStor
 }
 
 /// <summary>The viewer mTLS configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProviderViewerMtlsConfig
 {
@@ -1336,7 +1336,7 @@ public partial class V1beta2DistributionSpecForProviderViewerMtlsConfig
     public V1beta2DistributionSpecForProviderViewerMtlsConfigTrustStoreConfig? TrustStoreConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecForProvider
 {
@@ -1442,7 +1442,7 @@ public partial class V1beta2DistributionSpecForProvider
 }
 
 /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderCacheTagConfig
 {
@@ -1452,7 +1452,7 @@ public partial class V1beta2DistributionSpecInitProviderCacheTagConfig
 }
 
 /// <summary>A connection function association configuration block (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderConnectionFunctionAssociation
 {
@@ -1461,7 +1461,7 @@ public partial class V1beta2DistributionSpecInitProviderConnectionFunctionAssoci
     public string? Id { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderCustomErrorResponse
 {
@@ -1483,7 +1483,7 @@ public partial class V1beta2DistributionSpecInitProviderCustomErrorResponse
 }
 
 /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorForwardedValuesCookies
 {
@@ -1497,7 +1497,7 @@ public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorForw
 }
 
 /// <summary>The forwarded values configuration that specifies how CloudFront handles query strings, cookies and headers (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorForwardedValues
 {
@@ -1518,7 +1518,7 @@ public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorForw
     public IList<string>? QueryStringCacheKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorFunctionAssociation
 {
@@ -1532,7 +1532,7 @@ public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorFunc
 }
 
 /// <summary>A config block that sets the grpc config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorGrpcConfig
 {
@@ -1541,7 +1541,7 @@ public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorGrpc
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorLambdaFunctionAssociation
 {
@@ -1559,7 +1559,7 @@ public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehaviorLamb
 }
 
 /// <summary>Default cache behavior for this distribution (maximum one). Requires either cache_policy_id (preferred) or forwarded_values (deprecated) be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehavior
 {
@@ -1645,7 +1645,7 @@ public partial class V1beta2DistributionSpecInitProviderDefaultCacheBehavior
 }
 
 /// <summary>The logging configuration that controls how logs are written to your distribution (maximum one). AWS provides two versions of access logs for CloudFront: Legacy and v2. This argument configures legacy version standard logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderLoggingConfig
 {
@@ -1663,7 +1663,7 @@ public partial class V1beta2DistributionSpecInitProviderLoggingConfig
 }
 
 /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorForwardedValuesCookies
 {
@@ -1677,7 +1677,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorForw
 }
 
 /// <summary>The forwarded values configuration that specifies how CloudFront handles query strings, cookies and headers (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorForwardedValues
 {
@@ -1704,7 +1704,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorForw
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum
 {
@@ -1720,7 +1720,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum
 {
@@ -1731,7 +1731,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicy
 {
@@ -1755,7 +1755,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunc
 }
 
 /// <summary>Reference to a Function in cloudfront to populate functionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRef
 {
@@ -1774,7 +1774,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum
 {
@@ -1790,7 +1790,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum
 {
@@ -1801,7 +1801,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicy
 {
@@ -1825,7 +1825,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunc
 }
 
 /// <summary>Selector for a Function in cloudfront to populate functionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelector
 {
@@ -1845,7 +1845,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunc
     public V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociation
 {
@@ -1867,7 +1867,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorFunc
 }
 
 /// <summary>A config block that sets the grpc config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorGrpcConfig
 {
@@ -1882,7 +1882,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorGrpc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum
 {
@@ -1898,7 +1898,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum
 {
@@ -1909,7 +1909,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicy
 {
@@ -1933,7 +1933,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLamb
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRef
 {
@@ -1952,7 +1952,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLamb
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum
 {
@@ -1968,7 +1968,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum
 {
@@ -1979,7 +1979,7 @@ public enum V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicy
 {
@@ -2003,7 +2003,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLamb
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelector
 {
@@ -2023,7 +2023,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLamb
     public V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociation
 {
@@ -2048,7 +2048,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLamb
     public V1beta2DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelector? LambdaArnSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehavior
 {
@@ -2137,7 +2137,7 @@ public partial class V1beta2DistributionSpecInitProviderOrderedCacheBehavior
     public string? ViewerProtocolPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginCustomHeader
 {
@@ -2149,7 +2149,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginCustomHeader
 }
 
 /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginCustomOriginConfigOriginMtlsConfig
 {
@@ -2159,7 +2159,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginCustomOriginConfig
 }
 
 /// <summary>The CloudFront custom origin configuration information. If an S3 origin is required, use origin_access_control_id or s3_origin_config instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginCustomOriginConfig
 {
@@ -2202,7 +2202,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginCustomOriginConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolutionEnum
 {
@@ -2218,7 +2218,7 @@ public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolveEnum
 {
@@ -2229,7 +2229,7 @@ public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicy
 {
@@ -2253,7 +2253,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessContro
 }
 
 /// <summary>Reference to a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdRef
 {
@@ -2272,7 +2272,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessContro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum
 {
@@ -2288,7 +2288,7 @@ public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum
 {
@@ -2299,7 +2299,7 @@ public enum V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicy
 {
@@ -2323,7 +2323,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessContro
 }
 
 /// <summary>Selector for a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessControlIdSelector
 {
@@ -2344,7 +2344,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginOriginAccessContro
 }
 
 /// <summary>CloudFront Origin Shield configuration information. Using Origin Shield can help reduce the load on your origin. For more information, see Using Origin Shield in the Amazon CloudFront Developer Guide.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginOriginShield
 {
@@ -2363,7 +2363,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginOriginShield
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum
 {
@@ -2379,7 +2379,7 @@ public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum
 {
@@ -2390,7 +2390,7 @@ public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicy
 {
@@ -2414,7 +2414,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOrig
 }
 
 /// <summary>Reference to a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRef
 {
@@ -2433,7 +2433,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOrig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum
 {
@@ -2449,7 +2449,7 @@ public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum
 {
@@ -2460,7 +2460,7 @@ public enum V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicy
 {
@@ -2484,7 +2484,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOrig
 }
 
 /// <summary>Selector for a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelector
 {
@@ -2505,7 +2505,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfigOrig
 }
 
 /// <summary>CloudFront S3 origin configuration information. If a custom origin is required, use custom_origin_config instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfig
 {
@@ -2523,7 +2523,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginS3OriginConfig
 }
 
 /// <summary>The VPC origin configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginVpcOriginConfig
 {
@@ -2544,7 +2544,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginVpcOriginConfig
     public string? VpcOriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOrigin
 {
@@ -2606,7 +2606,7 @@ public partial class V1beta2DistributionSpecInitProviderOrigin
 }
 
 /// <summary>The failover criteria for when to failover to the secondary origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginGroupFailoverCriteria
 {
@@ -2615,7 +2615,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginGroupFailoverCrite
     public IList<double>? StatusCodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginGroupMember
 {
@@ -2624,7 +2624,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginGroupMember
     public string? OriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderOriginGroup
 {
@@ -2641,7 +2641,7 @@ public partial class V1beta2DistributionSpecInitProviderOriginGroup
     public string? OriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderRestrictionsGeoRestriction
 {
@@ -2655,7 +2655,7 @@ public partial class V1beta2DistributionSpecInitProviderRestrictionsGeoRestricti
 }
 
 /// <summary>The restriction configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderRestrictions
 {
@@ -2664,7 +2664,7 @@ public partial class V1beta2DistributionSpecInitProviderRestrictions
 }
 
 /// <summary>The SSL configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderViewerCertificate
 {
@@ -2690,7 +2690,7 @@ public partial class V1beta2DistributionSpecInitProviderViewerCertificate
 }
 
 /// <summary>The trust store configuration for viewer mTLS (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderViewerMtlsConfigTrustStoreConfig
 {
@@ -2708,7 +2708,7 @@ public partial class V1beta2DistributionSpecInitProviderViewerMtlsConfigTrustSto
 }
 
 /// <summary>The viewer mTLS configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProviderViewerMtlsConfig
 {
@@ -2733,7 +2733,7 @@ public partial class V1beta2DistributionSpecInitProviderViewerMtlsConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecInitProvider
 {
@@ -2842,7 +2842,7 @@ public partial class V1beta2DistributionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecManagementPoliciesEnum>))]
 public enum V1beta2DistributionSpecManagementPoliciesEnum
 {
@@ -2866,7 +2866,7 @@ public enum V1beta2DistributionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2DistributionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2882,7 +2882,7 @@ public enum V1beta2DistributionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DistributionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2DistributionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2893,7 +2893,7 @@ public enum V1beta2DistributionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecProviderConfigRefPolicy
 {
@@ -2921,7 +2921,7 @@ public partial class V1beta2DistributionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecProviderConfigRef
 {
@@ -2940,7 +2940,7 @@ public partial class V1beta2DistributionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpecWriteConnectionSecretToRef
 {
@@ -2954,7 +2954,7 @@ public partial class V1beta2DistributionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DistributionSpec defines the desired state of Distribution</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionSpec
 {
@@ -3022,7 +3022,7 @@ public partial class V1beta2DistributionSpec
 }
 
 /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderCacheTagConfig
 {
@@ -3032,7 +3032,7 @@ public partial class V1beta2DistributionStatusAtProviderCacheTagConfig
 }
 
 /// <summary>A connection function association configuration block (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderConnectionFunctionAssociation
 {
@@ -3041,7 +3041,7 @@ public partial class V1beta2DistributionStatusAtProviderConnectionFunctionAssoci
     public string? Id { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderCustomErrorResponse
 {
@@ -3063,7 +3063,7 @@ public partial class V1beta2DistributionStatusAtProviderCustomErrorResponse
 }
 
 /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorForwardedValuesCookies
 {
@@ -3077,7 +3077,7 @@ public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorForw
 }
 
 /// <summary>The forwarded values configuration that specifies how CloudFront handles query strings, cookies and headers (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorForwardedValues
 {
@@ -3098,7 +3098,7 @@ public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorForw
     public IList<string>? QueryStringCacheKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorFunctionAssociation
 {
@@ -3112,7 +3112,7 @@ public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorFunc
 }
 
 /// <summary>A config block that sets the grpc config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorGrpcConfig
 {
@@ -3121,7 +3121,7 @@ public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorGrpc
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorLambdaFunctionAssociation
 {
@@ -3139,7 +3139,7 @@ public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehaviorLamb
 }
 
 /// <summary>Default cache behavior for this distribution (maximum one). Requires either cache_policy_id (preferred) or forwarded_values (deprecated) be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehavior
 {
@@ -3225,7 +3225,7 @@ public partial class V1beta2DistributionStatusAtProviderDefaultCacheBehavior
 }
 
 /// <summary>The logging configuration that controls how logs are written to your distribution (maximum one). AWS provides two versions of access logs for CloudFront: Legacy and v2. This argument configures legacy version standard logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderLoggingConfig
 {
@@ -3243,7 +3243,7 @@ public partial class V1beta2DistributionStatusAtProviderLoggingConfig
 }
 
 /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorForwardedValuesCookies
 {
@@ -3257,7 +3257,7 @@ public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorForw
 }
 
 /// <summary>The forwarded values configuration that specifies how CloudFront handles query strings, cookies and headers (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorForwardedValues
 {
@@ -3278,7 +3278,7 @@ public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorForw
     public IList<string>? QueryStringCacheKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorFunctionAssociation
 {
@@ -3292,7 +3292,7 @@ public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorFunc
 }
 
 /// <summary>A config block that sets the grpc config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorGrpcConfig
 {
@@ -3301,7 +3301,7 @@ public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorGrpc
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorLambdaFunctionAssociation
 {
@@ -3318,7 +3318,7 @@ public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehaviorLamb
     public string? LambdaArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehavior
 {
@@ -3407,7 +3407,7 @@ public partial class V1beta2DistributionStatusAtProviderOrderedCacheBehavior
     public string? ViewerProtocolPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginCustomHeader
 {
@@ -3419,7 +3419,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginCustomHeader
 }
 
 /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginCustomOriginConfigOriginMtlsConfig
 {
@@ -3429,7 +3429,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginCustomOriginConfig
 }
 
 /// <summary>The CloudFront custom origin configuration information. If an S3 origin is required, use origin_access_control_id or s3_origin_config instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginCustomOriginConfig
 {
@@ -3467,7 +3467,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginCustomOriginConfig
 }
 
 /// <summary>CloudFront Origin Shield configuration information. Using Origin Shield can help reduce the load on your origin. For more information, see Using Origin Shield in the Amazon CloudFront Developer Guide.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginOriginShield
 {
@@ -3481,7 +3481,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginOriginShield
 }
 
 /// <summary>CloudFront S3 origin configuration information. If a custom origin is required, use custom_origin_config instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginS3OriginConfig
 {
@@ -3491,7 +3491,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginS3OriginConfig
 }
 
 /// <summary>The VPC origin configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginVpcOriginConfig
 {
@@ -3512,7 +3512,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginVpcOriginConfig
     public string? VpcOriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOrigin
 {
@@ -3566,7 +3566,7 @@ public partial class V1beta2DistributionStatusAtProviderOrigin
 }
 
 /// <summary>The failover criteria for when to failover to the secondary origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginGroupFailoverCriteria
 {
@@ -3575,7 +3575,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginGroupFailoverCrite
     public IList<double>? StatusCodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginGroupMember
 {
@@ -3584,7 +3584,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginGroupMember
     public string? OriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderOriginGroup
 {
@@ -3601,7 +3601,7 @@ public partial class V1beta2DistributionStatusAtProviderOriginGroup
     public string? OriginId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderRestrictionsGeoRestriction
 {
@@ -3615,7 +3615,7 @@ public partial class V1beta2DistributionStatusAtProviderRestrictionsGeoRestricti
 }
 
 /// <summary>The restriction configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderRestrictions
 {
@@ -3623,7 +3623,7 @@ public partial class V1beta2DistributionStatusAtProviderRestrictions
     public V1beta2DistributionStatusAtProviderRestrictionsGeoRestriction? GeoRestriction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderTrustedKeyGroupsItems
 {
@@ -3636,7 +3636,7 @@ public partial class V1beta2DistributionStatusAtProviderTrustedKeyGroupsItems
     public IList<string>? KeyPairIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderTrustedKeyGroups
 {
@@ -3649,7 +3649,7 @@ public partial class V1beta2DistributionStatusAtProviderTrustedKeyGroups
     public IList<V1beta2DistributionStatusAtProviderTrustedKeyGroupsItems>? Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderTrustedSignersItems
 {
@@ -3662,7 +3662,7 @@ public partial class V1beta2DistributionStatusAtProviderTrustedSignersItems
     public IList<string>? KeyPairIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderTrustedSigners
 {
@@ -3676,7 +3676,7 @@ public partial class V1beta2DistributionStatusAtProviderTrustedSigners
 }
 
 /// <summary>The SSL configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderViewerCertificate
 {
@@ -3702,7 +3702,7 @@ public partial class V1beta2DistributionStatusAtProviderViewerCertificate
 }
 
 /// <summary>The trust store configuration for viewer mTLS (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderViewerMtlsConfigTrustStoreConfig
 {
@@ -3720,7 +3720,7 @@ public partial class V1beta2DistributionStatusAtProviderViewerMtlsConfigTrustSto
 }
 
 /// <summary>The viewer mTLS configuration for this distribution (maximum one).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProviderViewerMtlsConfig
 {
@@ -3733,7 +3733,7 @@ public partial class V1beta2DistributionStatusAtProviderViewerMtlsConfig
     public V1beta2DistributionStatusAtProviderViewerMtlsConfigTrustStoreConfig? TrustStoreConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusAtProvider
 {
@@ -3891,7 +3891,7 @@ public partial class V1beta2DistributionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatusConditions
 {
@@ -3934,7 +3934,7 @@ public partial class V1beta2DistributionStatusConditions
 }
 
 /// <summary>DistributionStatus defines the observed state of Distribution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DistributionStatus
 {
@@ -3964,7 +3964,7 @@ public partial class V1beta2DistributionStatus
 }
 
 /// <summary>Distribution is the Schema for the Distributions API. Provides a CloudFront web distribution resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Distribution : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2DistributionSpec>, IStatus<V1beta2DistributionStatus?>

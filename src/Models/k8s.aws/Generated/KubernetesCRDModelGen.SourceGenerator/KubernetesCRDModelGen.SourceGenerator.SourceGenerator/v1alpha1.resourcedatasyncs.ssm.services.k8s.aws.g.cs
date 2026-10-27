@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssm.services.k8s.aws;
 /// <summary>ResourceDataSync is the Schema for the ResourceDataSyncs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ResourceDataSyncList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ResourceDataSync>
@@ -44,7 +44,7 @@ public partial class V1alpha1ResourceDataSyncList : IKubernetesObject<V1ListMeta
 /// bucket. Each key prefix represents a different Amazon Web Services account
 /// ID.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncSpecS3DestinationDestinationDataSharing
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1ResourceDataSyncSpecS3DestinationDestinationDataSha
 /// Amazon S3 configuration details for the sync. This parameter is required
 /// if the SyncType value is SyncToDestination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncSpecS3Destination
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1ResourceDataSyncSpecS3Destination
 }
 
 /// <summary>The Organizations organizational unit data source for the sync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncSpecSyncSourceAwsOrganizationsSourceOrganizationalUnits
 {
@@ -101,7 +101,7 @@ public partial class V1alpha1ResourceDataSyncSpecSyncSourceAwsOrganizationsSourc
 /// Amazon Web Services organization isn&apos;t present, from multiple Amazon Web
 /// Services Regions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncSpecSyncSourceAwsOrganizationsSource
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1ResourceDataSyncSpecSyncSourceAwsOrganizationsSourc
 /// Specify information about the data sources to synchronize. This parameter
 /// is required if the SyncType value is SyncFromSource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncSpecSyncSource
 {
@@ -143,7 +143,7 @@ public partial class V1alpha1ResourceDataSyncSpecSyncSource
 }
 
 /// <summary>ResourceDataSyncSpec defines the desired state of ResourceDataSync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncSpec
 {
@@ -183,7 +183,7 @@ public partial class V1alpha1ResourceDataSyncSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncStatusAckResourceMetadata
 {
@@ -220,7 +220,7 @@ public partial class V1alpha1ResourceDataSyncStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncStatusConditions
 {
@@ -246,7 +246,7 @@ public partial class V1alpha1ResourceDataSyncStatusConditions
 }
 
 /// <summary>ResourceDataSyncStatus defines the observed state of ResourceDataSync</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResourceDataSyncStatus
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1ResourceDataSyncStatus
 }
 
 /// <summary>ResourceDataSync is the Schema for the ResourceDataSyncs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ResourceDataSync : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ResourceDataSyncSpec?>, IStatus<V1alpha1ResourceDataSyncStatus?>

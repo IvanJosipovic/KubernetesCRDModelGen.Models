@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.m.upbound.io;
 /// <summary>UserProfile is the Schema for the UserProfiles API. Provides a SageMaker AI User Profile resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserProfileList : IKubernetesObject<V1ListMeta>, IItems<V1beta1UserProfile>
@@ -43,7 +43,7 @@ public partial class V1beta1UserProfileList : IKubernetesObject<V1ListMeta>, IIt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolutionEnum>))]
 public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolveEnum>))]
 public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderDomainIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdRefPolicy
 }
 
 /// <summary>Reference to a Domain in sagemaker to populate domainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderDomainIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolveEnum>))]
 public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderDomainIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdSelectorPolicy
 }
 
 /// <summary>Selector for a Domain in sagemaker to populate domainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderDomainIdSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdSelector
 }
 
 /// <summary>The model deployment settings for the SageMaker AI Canvas application. See Direct Deploy Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsDirectDeploySettings
 {
@@ -203,7 +203,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 }
 
 /// <summary>The settings for running Amazon EMR Serverless jobs in SageMaker AI Canvas. See emr_serverless_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
@@ -216,7 +216,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
@@ -225,7 +225,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
     public string? AmazonBedrockRoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsIdentityProviderOauthSettings
 {
@@ -243,7 +243,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 }
 
 /// <summary>The settings for document querying. See Kendra Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsKendraSettings
 {
@@ -253,7 +253,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 }
 
 /// <summary>The model registry settings for the SageMaker AI Canvas application. See Model Register Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsModelRegisterSettings
 {
@@ -267,7 +267,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 }
 
 /// <summary>Time series forecast settings for the Canvas app. See Time Series Forecasting Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings
 {
@@ -281,7 +281,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 }
 
 /// <summary>The workspace settings for the SageMaker AI Canvas application. See Workspace Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsWorkspaceSettings
 {
@@ -295,7 +295,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 }
 
 /// <summary>The Canvas app settings. See Canvas App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettings
 {
@@ -332,7 +332,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 }
 
 /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings
 {
@@ -354,7 +354,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 }
 
 /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagement
 {
@@ -363,7 +363,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
     public V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings? IdleSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsCustomImage
 {
@@ -381,7 +381,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsDefaultResourceSpec
 {
@@ -407,7 +407,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 }
 
 /// <summary>The Code Editor application settings. See Code Editor App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettings
 {
@@ -432,7 +432,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig
 {
@@ -445,7 +445,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSyst
     public string? FileSystemPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSystemConfig
 {
@@ -455,7 +455,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSyst
 }
 
 /// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomPosixUserConfig
 {
@@ -469,7 +469,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomPosixUse
 }
 
 /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings
 {
@@ -491,7 +491,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 }
 
 /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagement
 {
@@ -500,7 +500,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
     public V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings? IdleSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsCodeRepository
 {
@@ -509,7 +509,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
     public string? RepositoryUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsCustomImage
 {
@@ -527,7 +527,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsDefaultResourceSpec
 {
@@ -553,7 +553,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 }
 
 /// <summary>The configuration parameters that specify the IAM roles assumed by the execution role of SageMaker AI (assumable roles) and the cluster instances or job execution environments (execution roles or runtime roles) to manage and access resources required for running Amazon EMR clusters or Amazon EMR Serverless applications. see emr_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsEmrSettings
 {
@@ -567,7 +567,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 }
 
 /// <summary>The settings for the JupyterLab application. See Jupyter Lab App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettings
 {
@@ -600,7 +600,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerAppSettingsCodeRepository
 {
@@ -610,7 +610,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerA
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerAppSettingsDefaultResourceSpec
 {
@@ -636,7 +636,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerA
 }
 
 /// <summary>The Jupyter server&apos;s app settings. See Jupyter Server App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerAppSettings
 {
@@ -653,7 +653,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerA
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayAppSettingsCustomImage
 {
@@ -671,7 +671,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayA
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
 {
@@ -697,7 +697,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayA
 }
 
 /// <summary>The kernel gateway app settings. See Kernel Gateway App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayAppSettings
 {
@@ -714,7 +714,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayA
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSettingsCustomImage
 {
@@ -732,7 +732,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSet
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSettingsDefaultResourceSpec
 {
@@ -758,7 +758,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSet
 }
 
 /// <summary>The RSession app settings. See RSession App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSettings
 {
@@ -772,7 +772,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSet
 }
 
 /// <summary>A collection of settings that configure user interaction with the RStudioServerPro app. See RStudioServerProAppSettings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRStudioServerProAppSettings
 {
@@ -786,7 +786,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRStudioServerP
 }
 
 /// <summary>The sharing settings. See Sharing Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsSharingSettings
 {
@@ -804,7 +804,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsSharingSetting
 }
 
 /// <summary>The default EBS storage settings for a private space. See Default EBS Storage Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings
 {
@@ -818,7 +818,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSe
 }
 
 /// <summary>The storage settings for a private space. See Space Storage Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSettings
 {
@@ -828,7 +828,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSe
 }
 
 /// <summary>The Studio Web Portal settings. See studio_web_portal_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsStudioWebPortalSettings
 {
@@ -846,7 +846,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsStudioWebPorta
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardAppSettingsDefaultResourceSpec
 {
@@ -872,7 +872,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardApp
 }
 
 /// <summary>The TensorBoard app settings. See TensorBoard App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardAppSettings
 {
@@ -882,7 +882,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardApp
 }
 
 /// <summary>The user settings. See User Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProviderUserSettings
 {
@@ -959,7 +959,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettings
     public V1beta1UserProfileSpecForProviderUserSettingsTensorBoardAppSettings? TensorBoardAppSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecForProvider
 {
@@ -1009,7 +1009,7 @@ public partial class V1beta1UserProfileSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolutionEnum>))]
 public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolutionEnum
 {
@@ -1025,7 +1025,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolveEnum>))]
 public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolveEnum
 {
@@ -1036,7 +1036,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdRefPolicy
 {
@@ -1060,7 +1060,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdRefPolicy
 }
 
 /// <summary>Reference to a Domain in sagemaker to populate domainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdRef
 {
@@ -1083,7 +1083,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolutionEnum
 {
@@ -1099,7 +1099,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolveEnum>))]
 public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolveEnum
 {
@@ -1110,7 +1110,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicy
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicy
 }
 
 /// <summary>Selector for a Domain in sagemaker to populate domainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdSelector
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdSelector
 }
 
 /// <summary>The model deployment settings for the SageMaker AI Canvas application. See Direct Deploy Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsDirectDeploySettings
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The settings for running Amazon EMR Serverless jobs in SageMaker AI Canvas. See emr_serverless_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
@@ -1182,7 +1182,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
@@ -1191,7 +1191,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
     public string? AmazonBedrockRoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsIdentityProviderOauthSettings
 {
@@ -1209,7 +1209,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The settings for document querying. See Kendra Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsKendraSettings
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The model registry settings for the SageMaker AI Canvas application. See Model Register Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsModelRegisterSettings
 {
@@ -1233,7 +1233,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>Time series forecast settings for the Canvas app. See Time Series Forecasting Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings
 {
@@ -1247,7 +1247,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The workspace settings for the SageMaker AI Canvas application. See Workspace Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsWorkspaceSettings
 {
@@ -1261,7 +1261,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The Canvas app settings. See Canvas App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettings
 {
@@ -1298,7 +1298,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings
 {
@@ -1320,7 +1320,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 }
 
 /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagement
 {
@@ -1329,7 +1329,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
     public V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings? IdleSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsCustomImage
 {
@@ -1347,7 +1347,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsDefaultResourceSpec
 {
@@ -1373,7 +1373,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 }
 
 /// <summary>The Code Editor application settings. See Code Editor App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettings
 {
@@ -1398,7 +1398,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig
 {
@@ -1411,7 +1411,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSys
     public string? FileSystemPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSystemConfig
 {
@@ -1421,7 +1421,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSys
 }
 
 /// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomPosixUserConfig
 {
@@ -1435,7 +1435,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomPosixUs
 }
 
 /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings
 {
@@ -1457,7 +1457,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagement
 {
@@ -1466,7 +1466,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
     public V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings? IdleSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsCodeRepository
 {
@@ -1475,7 +1475,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
     public string? RepositoryUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsCustomImage
 {
@@ -1493,7 +1493,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsDefaultResourceSpec
 {
@@ -1519,7 +1519,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>The configuration parameters that specify the IAM roles assumed by the execution role of SageMaker AI (assumable roles) and the cluster instances or job execution environments (execution roles or runtime roles) to manage and access resources required for running Amazon EMR clusters or Amazon EMR Serverless applications. see emr_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsEmrSettings
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>The settings for the JupyterLab application. See Jupyter Lab App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettings
 {
@@ -1566,7 +1566,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServerAppSettingsCodeRepository
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServer
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServerAppSettingsDefaultResourceSpec
 {
@@ -1602,7 +1602,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServer
 }
 
 /// <summary>The Jupyter server&apos;s app settings. See Jupyter Server App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServerAppSettings
 {
@@ -1619,7 +1619,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServer
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGatewayAppSettingsCustomImage
 {
@@ -1637,7 +1637,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGateway
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
 {
@@ -1663,7 +1663,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGateway
 }
 
 /// <summary>The kernel gateway app settings. See Kernel Gateway App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGatewayAppSettings
 {
@@ -1680,7 +1680,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGateway
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSettingsCustomImage
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSe
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSettingsDefaultResourceSpec
 {
@@ -1724,7 +1724,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSe
 }
 
 /// <summary>The RSession app settings. See RSession App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSettings
 {
@@ -1738,7 +1738,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSe
 }
 
 /// <summary>A collection of settings that configure user interaction with the RStudioServerPro app. See RStudioServerProAppSettings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRStudioServerProAppSettings
 {
@@ -1752,7 +1752,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRStudioServer
 }
 
 /// <summary>The sharing settings. See Sharing Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsSharingSettings
 {
@@ -1770,7 +1770,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsSharingSettin
 }
 
 /// <summary>The default EBS storage settings for a private space. See Default EBS Storage Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings
 {
@@ -1784,7 +1784,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageS
 }
 
 /// <summary>The storage settings for a private space. See Space Storage Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageSettings
 {
@@ -1794,7 +1794,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageS
 }
 
 /// <summary>The Studio Web Portal settings. See studio_web_portal_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsStudioWebPortalSettings
 {
@@ -1812,7 +1812,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsStudioWebPort
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAppSettingsDefaultResourceSpec
 {
@@ -1838,7 +1838,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAp
 }
 
 /// <summary>The TensorBoard app settings. See TensorBoard App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAppSettings
 {
@@ -1848,7 +1848,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAp
 }
 
 /// <summary>The user settings. See User Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProviderUserSettings
 {
@@ -1937,7 +1937,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettings
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecInitProvider
 {
@@ -1978,7 +1978,7 @@ public partial class V1beta1UserProfileSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecManagementPoliciesEnum>))]
 public enum V1beta1UserProfileSpecManagementPoliciesEnum
 {
@@ -2001,7 +2001,7 @@ public enum V1beta1UserProfileSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecProviderConfigRef
 {
@@ -2020,7 +2020,7 @@ public partial class V1beta1UserProfileSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpecWriteConnectionSecretToRef
 {
@@ -2030,7 +2030,7 @@ public partial class V1beta1UserProfileSpecWriteConnectionSecretToRef
 }
 
 /// <summary>UserProfileSpec defines the desired state of UserProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileSpec
 {
@@ -2082,7 +2082,7 @@ public partial class V1beta1UserProfileSpec
 }
 
 /// <summary>The model deployment settings for the SageMaker AI Canvas application. See Direct Deploy Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsDirectDeploySettings
 {
@@ -2092,7 +2092,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The settings for running Amazon EMR Serverless jobs in SageMaker AI Canvas. See emr_serverless_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
@@ -2105,7 +2105,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
@@ -2114,7 +2114,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
     public string? AmazonBedrockRoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsIdentityProviderOauthSettings
 {
@@ -2132,7 +2132,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The settings for document querying. See Kendra Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsKendraSettings
 {
@@ -2142,7 +2142,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The model registry settings for the SageMaker AI Canvas application. See Model Register Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsModelRegisterSettings
 {
@@ -2156,7 +2156,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>Time series forecast settings for the Canvas app. See Time Series Forecasting Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings
 {
@@ -2170,7 +2170,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The workspace settings for the SageMaker AI Canvas application. See Workspace Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsWorkspaceSettings
 {
@@ -2184,7 +2184,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>The Canvas app settings. See Canvas App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettings
 {
@@ -2221,7 +2221,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 }
 
 /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings
 {
@@ -2243,7 +2243,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 }
 
 /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagement
 {
@@ -2252,7 +2252,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
     public V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings? IdleSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsCustomImage
 {
@@ -2270,7 +2270,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsDefaultResourceSpec
 {
@@ -2296,7 +2296,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 }
 
 /// <summary>The Code Editor application settings. See Code Editor App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettings
 {
@@ -2321,7 +2321,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig
 {
@@ -2334,7 +2334,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSys
     public string? FileSystemPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSystemConfig
 {
@@ -2344,7 +2344,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSys
 }
 
 /// <summary>Details about the POSIX identity that is used for file system operations. See Custom Posix User Config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomPosixUserConfig
 {
@@ -2358,7 +2358,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomPosixUs
 }
 
 /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings
 {
@@ -2380,7 +2380,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagement
 {
@@ -2389,7 +2389,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
     public V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings? IdleSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsCodeRepository
 {
@@ -2398,7 +2398,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
     public string? RepositoryUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsCustomImage
 {
@@ -2416,7 +2416,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsDefaultResourceSpec
 {
@@ -2442,7 +2442,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>The configuration parameters that specify the IAM roles assumed by the execution role of SageMaker AI (assumable roles) and the cluster instances or job execution environments (execution roles or runtime roles) to manage and access resources required for running Amazon EMR clusters or Amazon EMR Serverless applications. see emr_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsEmrSettings
 {
@@ -2456,7 +2456,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 }
 
 /// <summary>The settings for the JupyterLab application. See Jupyter Lab App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettings
 {
@@ -2489,7 +2489,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServerAppSettingsCodeRepository
 {
@@ -2499,7 +2499,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServer
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServerAppSettingsDefaultResourceSpec
 {
@@ -2525,7 +2525,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServer
 }
 
 /// <summary>The Jupyter server&apos;s app settings. See Jupyter Server App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServerAppSettings
 {
@@ -2542,7 +2542,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServer
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGatewayAppSettingsCustomImage
 {
@@ -2560,7 +2560,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGateway
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
 {
@@ -2586,7 +2586,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGateway
 }
 
 /// <summary>The kernel gateway app settings. See Kernel Gateway App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGatewayAppSettings
 {
@@ -2603,7 +2603,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGateway
     public IList<string>? LifecycleConfigArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSettingsCustomImage
 {
@@ -2621,7 +2621,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSe
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSettingsDefaultResourceSpec
 {
@@ -2647,7 +2647,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSe
 }
 
 /// <summary>The RSession app settings. See RSession App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSettings
 {
@@ -2661,7 +2661,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSe
 }
 
 /// <summary>A collection of settings that configure user interaction with the RStudioServerPro app. See RStudioServerProAppSettings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRStudioServerProAppSettings
 {
@@ -2675,7 +2675,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRStudioServer
 }
 
 /// <summary>The sharing settings. See Sharing Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsSharingSettings
 {
@@ -2693,7 +2693,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsSharingSettin
 }
 
 /// <summary>The default EBS storage settings for a private space. See Default EBS Storage Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings
 {
@@ -2707,7 +2707,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageS
 }
 
 /// <summary>The storage settings for a private space. See Space Storage Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageSettings
 {
@@ -2717,7 +2717,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageS
 }
 
 /// <summary>The Studio Web Portal settings. See studio_web_portal_settings Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsStudioWebPortalSettings
 {
@@ -2735,7 +2735,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsStudioWebPort
 }
 
 /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAppSettingsDefaultResourceSpec
 {
@@ -2761,7 +2761,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAp
 }
 
 /// <summary>The TensorBoard app settings. See TensorBoard App Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAppSettings
 {
@@ -2771,7 +2771,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAp
 }
 
 /// <summary>The user settings. See User Settings below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProviderUserSettings
 {
@@ -2848,7 +2848,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettings
     public V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAppSettings? TensorBoardAppSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusAtProvider
 {
@@ -2900,7 +2900,7 @@ public partial class V1beta1UserProfileStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatusConditions
 {
@@ -2943,7 +2943,7 @@ public partial class V1beta1UserProfileStatusConditions
 }
 
 /// <summary>UserProfileStatus defines the observed state of UserProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserProfileStatus
 {
@@ -2973,7 +2973,7 @@ public partial class V1beta1UserProfileStatus
 }
 
 /// <summary>UserProfile is the Schema for the UserProfiles API. Provides a SageMaker AI User Profile resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1UserProfileSpec>, IStatus<V1beta1UserProfileStatus?>

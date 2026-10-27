@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrock.aws.upbound.io;
 /// <summary>Guardrail is the Schema for the Guardrails API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GuardrailList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Guardrail>
@@ -46,7 +46,7 @@ public partial class V1beta1GuardrailList : IKubernetesObject<V1ListMeta>, IItem
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecDeletionPolicyEnum>))]
 public enum V1beta1GuardrailSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1GuardrailSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigFiltersConfig
 {
@@ -98,7 +98,7 @@ public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigFiltersCo
 }
 
 /// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigTierConfig
 {
@@ -108,7 +108,7 @@ public partial class V1beta1GuardrailSpecForProviderContentPolicyConfigTierConfi
 }
 
 /// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContentPolicyConfig
 {
@@ -124,7 +124,7 @@ public partial class V1beta1GuardrailSpecForProviderContentPolicyConfig
     public V1beta1GuardrailSpecForProviderContentPolicyConfigTierConfig? TierConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContextualGroundingPolicyConfigFiltersConfig
 {
@@ -138,7 +138,7 @@ public partial class V1beta1GuardrailSpecForProviderContextualGroundingPolicyCon
 }
 
 /// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderContextualGroundingPolicyConfig
 {
@@ -148,7 +148,7 @@ public partial class V1beta1GuardrailSpecForProviderContextualGroundingPolicyCon
 }
 
 /// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderCrossRegionConfig
 {
@@ -163,7 +163,7 @@ public partial class V1beta1GuardrailSpecForProviderCrossRegionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicyResolutionEnum
 {
@@ -179,7 +179,7 @@ public enum V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicyResolveEnum
 {
@@ -190,7 +190,7 @@ public enum V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicy
 {
@@ -214,7 +214,7 @@ public partial class V1beta1GuardrailSpecForProviderKmsKeyArnRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderKmsKeyArnRef
 {
@@ -233,7 +233,7 @@ public partial class V1beta1GuardrailSpecForProviderKmsKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -249,7 +249,7 @@ public enum V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -260,7 +260,7 @@ public enum V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicy
 {
@@ -284,7 +284,7 @@ public partial class V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicy
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderKmsKeyArnSelector
 {
@@ -304,7 +304,7 @@ public partial class V1beta1GuardrailSpecForProviderKmsKeyArnSelector
     public V1beta1GuardrailSpecForProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyConfigPiiEntitiesConfig
 {
@@ -333,7 +333,7 @@ public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyCo
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyConfigRegexesConfig
 {
@@ -371,7 +371,7 @@ public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyCo
 }
 
 /// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyConfig
 {
@@ -385,7 +385,7 @@ public partial class V1beta1GuardrailSpecForProviderSensitiveInformationPolicyCo
 }
 
 /// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfigTierConfig
 {
@@ -394,7 +394,7 @@ public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfigTierConfig
     public string? TierName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfigTopicsConfig
 {
@@ -416,7 +416,7 @@ public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfigTopicsConfi
 }
 
 /// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfig
 {
@@ -429,7 +429,7 @@ public partial class V1beta1GuardrailSpecForProviderTopicPolicyConfig
     public IList<V1beta1GuardrailSpecForProviderTopicPolicyConfigTopicsConfig>? TopicsConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigManagedWordListsConfig
 {
@@ -454,7 +454,7 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigManagedWordL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigWordsConfig
 {
@@ -480,7 +480,7 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfigWordsConfig
 }
 
 /// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProviderWordPolicyConfig
 {
@@ -493,7 +493,7 @@ public partial class V1beta1GuardrailSpecForProviderWordPolicyConfig
     public IList<V1beta1GuardrailSpecForProviderWordPolicyConfigWordsConfig>? WordsConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecForProvider
 {
@@ -561,7 +561,7 @@ public partial class V1beta1GuardrailSpecForProvider
     public V1beta1GuardrailSpecForProviderWordPolicyConfig? WordPolicyConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigFiltersConfig
 {
@@ -603,7 +603,7 @@ public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigFiltersC
 }
 
 /// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigTierConfig
 {
@@ -613,7 +613,7 @@ public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfigTierConf
 }
 
 /// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfig
 {
@@ -629,7 +629,7 @@ public partial class V1beta1GuardrailSpecInitProviderContentPolicyConfig
     public V1beta1GuardrailSpecInitProviderContentPolicyConfigTierConfig? TierConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContextualGroundingPolicyConfigFiltersConfig
 {
@@ -643,7 +643,7 @@ public partial class V1beta1GuardrailSpecInitProviderContextualGroundingPolicyCo
 }
 
 /// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderContextualGroundingPolicyConfig
 {
@@ -653,7 +653,7 @@ public partial class V1beta1GuardrailSpecInitProviderContextualGroundingPolicyCo
 }
 
 /// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderCrossRegionConfig
 {
@@ -668,7 +668,7 @@ public partial class V1beta1GuardrailSpecInitProviderCrossRegionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicyResolutionEnum
 {
@@ -684,7 +684,7 @@ public enum V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicyResolveEnum
 {
@@ -695,7 +695,7 @@ public enum V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicy
 {
@@ -719,7 +719,7 @@ public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnRef
 {
@@ -738,7 +738,7 @@ public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicy
 {
@@ -789,7 +789,7 @@ public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicy
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnSelector
 {
@@ -809,7 +809,7 @@ public partial class V1beta1GuardrailSpecInitProviderKmsKeyArnSelector
     public V1beta1GuardrailSpecInitProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyConfigPiiEntitiesConfig
 {
@@ -838,7 +838,7 @@ public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyC
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyConfigRegexesConfig
 {
@@ -876,7 +876,7 @@ public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyC
 }
 
 /// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyConfig
 {
@@ -890,7 +890,7 @@ public partial class V1beta1GuardrailSpecInitProviderSensitiveInformationPolicyC
 }
 
 /// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfigTierConfig
 {
@@ -899,7 +899,7 @@ public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfigTierConfig
     public string? TierName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfigTopicsConfig
 {
@@ -921,7 +921,7 @@ public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfigTopicsConf
 }
 
 /// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfig
 {
@@ -934,7 +934,7 @@ public partial class V1beta1GuardrailSpecInitProviderTopicPolicyConfig
     public IList<V1beta1GuardrailSpecInitProviderTopicPolicyConfigTopicsConfig>? TopicsConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigManagedWordListsConfig
 {
@@ -959,7 +959,7 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigManagedWord
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigWordsConfig
 {
@@ -985,7 +985,7 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfigWordsConfig
 }
 
 /// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfig
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta1GuardrailSpecInitProviderWordPolicyConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecInitProvider
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1GuardrailSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecManagementPoliciesEnum>))]
 public enum V1beta1GuardrailSpecManagementPoliciesEnum
 {
@@ -1099,7 +1099,7 @@ public enum V1beta1GuardrailSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1GuardrailSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1115,7 +1115,7 @@ public enum V1beta1GuardrailSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GuardrailSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1GuardrailSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1126,7 +1126,7 @@ public enum V1beta1GuardrailSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecProviderConfigRefPolicy
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta1GuardrailSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecProviderConfigRef
 {
@@ -1173,7 +1173,7 @@ public partial class V1beta1GuardrailSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpecWriteConnectionSecretToRef
 {
@@ -1187,7 +1187,7 @@ public partial class V1beta1GuardrailSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GuardrailSpec defines the desired state of Guardrail</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailSpec
 {
@@ -1254,7 +1254,7 @@ public partial class V1beta1GuardrailSpec
     public V1beta1GuardrailSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigFiltersConfig
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigFiltersC
 }
 
 /// <summary>Configuration block for the content policy tier. See Tier Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigTierConfig
 {
@@ -1306,7 +1306,7 @@ public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfigTierConf
 }
 
 /// <summary>Content policy config for a guardrail. See Content Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfig
 {
@@ -1322,7 +1322,7 @@ public partial class V1beta1GuardrailStatusAtProviderContentPolicyConfig
     public V1beta1GuardrailStatusAtProviderContentPolicyConfigTierConfig? TierConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContextualGroundingPolicyConfigFiltersConfig
 {
@@ -1336,7 +1336,7 @@ public partial class V1beta1GuardrailStatusAtProviderContextualGroundingPolicyCo
 }
 
 /// <summary>Contextual grounding policy config for a guardrail. See Contextual Grounding Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderContextualGroundingPolicyConfig
 {
@@ -1346,7 +1346,7 @@ public partial class V1beta1GuardrailStatusAtProviderContextualGroundingPolicyCo
 }
 
 /// <summary>region routing for bedrock guardrails. See [Cross Region Config](#cross-region-config for more information. Note see available regions here.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderCrossRegionConfig
 {
@@ -1355,7 +1355,7 @@ public partial class V1beta1GuardrailStatusAtProviderCrossRegionConfig
     public string? GuardrailProfileIdentifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyConfigPiiEntitiesConfig
 {
@@ -1384,7 +1384,7 @@ public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyC
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyConfigRegexesConfig
 {
@@ -1422,7 +1422,7 @@ public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyC
 }
 
 /// <summary>Sensitive information policy config for a guardrail. See Sensitive Information Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyConfig
 {
@@ -1436,7 +1436,7 @@ public partial class V1beta1GuardrailStatusAtProviderSensitiveInformationPolicyC
 }
 
 /// <summary>Configuration block for the topic policy tier. See Tier Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfigTierConfig
 {
@@ -1445,7 +1445,7 @@ public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfigTierConfig
     public string? TierName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfigTopicsConfig
 {
@@ -1467,7 +1467,7 @@ public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfigTopicsConf
 }
 
 /// <summary>Topic policy config for a guardrail. See Topic Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfig
 {
@@ -1480,7 +1480,7 @@ public partial class V1beta1GuardrailStatusAtProviderTopicPolicyConfig
     public IList<V1beta1GuardrailStatusAtProviderTopicPolicyConfigTopicsConfig>? TopicsConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigManagedWordListsConfig
 {
@@ -1505,7 +1505,7 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigManagedWord
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigWordsConfig
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfigWordsConfig
 }
 
 /// <summary>Word policy config for a guardrail. See Word Policy Config for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfig
 {
@@ -1544,7 +1544,7 @@ public partial class V1beta1GuardrailStatusAtProviderWordPolicyConfig
     public IList<V1beta1GuardrailStatusAtProviderWordPolicyConfigWordsConfig>? WordsConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusAtProvider
 {
@@ -1635,7 +1635,7 @@ public partial class V1beta1GuardrailStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatusConditions
 {
@@ -1678,7 +1678,7 @@ public partial class V1beta1GuardrailStatusConditions
 }
 
 /// <summary>GuardrailStatus defines the observed state of Guardrail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GuardrailStatus
 {
@@ -1708,7 +1708,7 @@ public partial class V1beta1GuardrailStatus
 }
 
 /// <summary>Guardrail is the Schema for the Guardrails API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Guardrail : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GuardrailSpec>, IStatus<V1beta1GuardrailStatus?>

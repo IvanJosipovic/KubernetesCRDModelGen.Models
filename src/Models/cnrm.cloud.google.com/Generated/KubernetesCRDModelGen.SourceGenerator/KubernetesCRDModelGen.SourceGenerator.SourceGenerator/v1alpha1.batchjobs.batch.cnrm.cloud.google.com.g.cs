@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.batch.cnrm.cloud.google.com;
 /// <summary>BatchJob is the Schema for the BatchJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BatchJobList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1BatchJob>
@@ -37,7 +37,7 @@ public partial class V1alpha1BatchJobList : IKubernetesObject<V1ListMeta>, IItem
     public required IList<V1alpha1BatchJob> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyAccelerators
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyAccelera
 }
 
 /// <summary>Boot disk to be created and attached to each VM by this InstancePolicy. Boot disk will be deleted when the VM is deleted. Batch API now only supports booting from image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyBootDisk
 {
@@ -127,7 +127,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyBootDisk
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisksNewDisk
 {
@@ -187,7 +187,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisksNew
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisks
 {
@@ -204,7 +204,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicyDisks
 }
 
 /// <summary>InstancePolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicy
 {
@@ -237,7 +237,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstancesPolicy
     public string? Reservation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyInstances
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyInstances
 }
 
 /// <summary>Location where compute resources should be allocated for the Job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyLocation
 {
@@ -332,7 +332,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyLocation
 ///  * projects/{project}/global/networks/{network}
 ///  * global/networks/{network}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyNetworkNetworkInterfacesNetworkRef
 {
@@ -359,7 +359,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyNetworkNetworkInterface
 ///  * projects/{project}/regions/{region}/subnetworks/{subnetwork}
 ///  * regions/{region}/subnetworks/{subnetwork}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyNetworkNetworkInterfacesSubnetworkRef
 {
@@ -376,7 +376,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyNetworkNetworkInterface
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyNetworkNetworkInterfaces
 {
@@ -418,7 +418,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyNetworkNetworkInterface
 ///  Batch will use the network settings in the instance template instead of
 ///  this field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyNetwork
 {
@@ -428,7 +428,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyNetwork
 }
 
 /// <summary>The placement policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyPlacement
 {
@@ -454,7 +454,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyPlacement
 ///   * scopes: Additional OAuth scopes to grant the service account, beyond the
 ///   default cloud-platform scope. (list of strings)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicyServiceAccount
 {
@@ -472,7 +472,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicyServiceAccount
 }
 
 /// <summary>Compute resource allocation for all TaskGroups in the Job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecAllocationPolicy
 {
@@ -542,7 +542,7 @@ public partial class V1alpha1BatchJobSpecAllocationPolicy
 }
 
 /// <summary>Optional. When `destination` is set to `CLOUD_LOGGING`, you can optionally set this field to configure additional settings for Cloud Logging.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecLogsPolicyCloudLoggingOption
 {
@@ -552,7 +552,7 @@ public partial class V1alpha1BatchJobSpecLogsPolicyCloudLoggingOption
 }
 
 /// <summary>Log preservation policy for the Job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecLogsPolicy
 {
@@ -570,7 +570,7 @@ public partial class V1alpha1BatchJobSpecLogsPolicy
 }
 
 /// <summary>The attribute requirements of messages to be sent to this Pub/Sub topic. Without this field, no message will be sent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecNotificationsMessage
 {
@@ -602,7 +602,7 @@ public partial class V1alpha1BatchJobSpecNotificationsMessage
 ///  a job, see
 ///  https://cloud.google.com/batch/docs/enable-notifications.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecNotificationsPubsubTopicRef
 {
@@ -619,7 +619,7 @@ public partial class V1alpha1BatchJobSpecNotificationsPubsubTopicRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecNotifications
 {
@@ -647,7 +647,7 @@ public partial class V1alpha1BatchJobSpecNotifications
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecProjectRef
 {
@@ -669,7 +669,7 @@ public partial class V1alpha1BatchJobSpecProjectRef
 }
 
 /// <summary>The name of the KMS key that will be used to decrypt the cipher text.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskEnvironmentsEncryptedVariablesKmsKeyRef
 {
@@ -687,7 +687,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskEnvironmentsEncryptedVari
 }
 
 /// <summary>An encrypted JSON dictionary where the key/value pairs correspond to environment variable names and their values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskEnvironmentsEncryptedVariables
 {
@@ -700,7 +700,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskEnvironmentsEncryptedVari
     public V1alpha1BatchJobSpecTaskGroupsTaskEnvironmentsEncryptedVariablesKmsKeyRef? KmsKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskEnvironments
 {
@@ -718,7 +718,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskEnvironments
 }
 
 /// <summary>ComputeResource requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecComputeResource
 {
@@ -772,7 +772,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecComputeResource
 }
 
 /// <summary>The name of the KMS key that will be used to decrypt the cipher text.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecEnvironmentEncryptedVariablesKmsKeyRef
 {
@@ -790,7 +790,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecEnvironmentEncryptedV
 }
 
 /// <summary>An encrypted JSON dictionary where the key/value pairs correspond to environment variable names and their values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecEnvironmentEncryptedVariables
 {
@@ -804,7 +804,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecEnvironmentEncryptedV
 }
 
 /// <summary>Environment variables to set before running the Task.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecEnvironment
 {
@@ -822,7 +822,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecEnvironment
 }
 
 /// <summary>Conditions that decide why a task failure is dealt with a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecLifecyclePoliciesActionCondition
 {
@@ -831,7 +831,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecLifecyclePoliciesActi
     public IList<int>? ExitCodes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecLifecyclePolicies
 {
@@ -845,7 +845,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecLifecyclePolicies
 }
 
 /// <summary>Barrier runnable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesBarrier
 {
@@ -855,7 +855,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesBarrier
 }
 
 /// <summary>Container runnable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesContainer
 {
@@ -940,7 +940,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesContainer
 }
 
 /// <summary>The name of the KMS key that will be used to decrypt the cipher text.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesEnvironmentEncryptedVariablesKmsKeyRef
 {
@@ -958,7 +958,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesEnvironmentE
 }
 
 /// <summary>An encrypted JSON dictionary where the key/value pairs correspond to environment variable names and their values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesEnvironmentEncryptedVariables
 {
@@ -972,7 +972,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesEnvironmentE
 }
 
 /// <summary>Environment variables for this Runnable (overrides variables set for the whole Task or TaskGroup).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesEnvironment
 {
@@ -990,7 +990,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesEnvironment
 }
 
 /// <summary>Script runnable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesScript
 {
@@ -1023,7 +1023,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnablesScript
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnables
 {
@@ -1091,7 +1091,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecRunnables
 }
 
 /// <summary>A Google Cloud Storage (GCS) volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecVolumesGcs
 {
@@ -1101,7 +1101,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecVolumesGcs
 }
 
 /// <summary>A Network File System (NFS) volume. For example, a Filestore file share.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecVolumesNfs
 {
@@ -1114,7 +1114,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecVolumesNfs
     public string? Server { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecVolumes
 {
@@ -1154,7 +1154,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpecVolumes
 }
 
 /// <summary>Required. Tasks in the group share the same task spec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpec
 {
@@ -1199,7 +1199,7 @@ public partial class V1alpha1BatchJobSpecTaskGroupsTaskSpec
     public IList<V1alpha1BatchJobSpecTaskGroupsTaskSpecVolumes>? Volumes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpecTaskGroups
 {
@@ -1251,7 +1251,7 @@ public partial class V1alpha1BatchJobSpecTaskGroups
 }
 
 /// <summary>BatchJobSpec defines the desired state of BatchJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobSpec
 {
@@ -1287,7 +1287,7 @@ public partial class V1alpha1BatchJobSpec
     public IList<V1alpha1BatchJobSpecTaskGroups>? TaskGroups { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobStatusConditions
 {
@@ -1313,7 +1313,7 @@ public partial class V1alpha1BatchJobStatusConditions
 }
 
 /// <summary>Task Execution. This field is only defined for task-level status events where the task fails.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobStatusObservedStateStatusStatusEventsTaskExecution
 {
@@ -1334,7 +1334,7 @@ public partial class V1alpha1BatchJobStatusObservedStateStatusStatusEventsTaskEx
     public int? ExitCode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobStatusObservedStateStatusStatusEvents
 {
@@ -1360,7 +1360,7 @@ public partial class V1alpha1BatchJobStatusObservedStateStatusStatusEvents
 }
 
 /// <summary>Output only. Job status. It is read only for users.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobStatusObservedStateStatus
 {
@@ -1377,7 +1377,7 @@ public partial class V1alpha1BatchJobStatusObservedStateStatus
     public IList<V1alpha1BatchJobStatusObservedStateStatusStatusEvents>? StatusEvents { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobStatusObservedStateTaskGroups
 {
@@ -1387,7 +1387,7 @@ public partial class V1alpha1BatchJobStatusObservedStateTaskGroups
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobStatusObservedState
 {
@@ -1417,7 +1417,7 @@ public partial class V1alpha1BatchJobStatusObservedState
 }
 
 /// <summary>BatchJobStatus defines the config connector machine state of BatchJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BatchJobStatus
 {
@@ -1439,7 +1439,7 @@ public partial class V1alpha1BatchJobStatus
 }
 
 /// <summary>BatchJob is the Schema for the BatchJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BatchJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BatchJobSpec>, IStatus<V1alpha1BatchJobStatus?>

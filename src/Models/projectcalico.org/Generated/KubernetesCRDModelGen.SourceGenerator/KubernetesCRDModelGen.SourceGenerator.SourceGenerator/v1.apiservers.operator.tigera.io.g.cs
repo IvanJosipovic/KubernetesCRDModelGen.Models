@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.@operator.tigera.io;
 /// APIServer installs the Tigera API server and related resources. At most one instance
 /// of this resource is supported. It must be named &quot;default&quot; or &quot;tigera-secure&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1APIServerList : IKubernetesObject<V1ListMeta>, IItems<V1APIServer>
@@ -41,7 +41,7 @@ public partial class V1APIServerList : IKubernetesObject<V1ListMeta>, IItems<V1A
 }
 
 /// <summary>Metadata is a subset of a Kubernetes object&apos;s metadata that is added to the Deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentMetadata
 {
@@ -66,7 +66,7 @@ public partial class V1APIServerSpecApiServerDeploymentMetadata
 /// Metadata is a subset of a Kubernetes object&apos;s metadata that is added to
 /// the pod&apos;s metadata.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateMetadata
 {
@@ -91,7 +91,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateMetadata
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
 {
@@ -121,7 +121,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
 {
@@ -148,7 +148,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 }
 
 /// <summary>A node selector term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
 {
@@ -165,7 +165,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 /// An empty preferred scheduling term matches all objects with implicit weight 0
 /// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -182,7 +182,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
 {
@@ -212,7 +212,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
 {
@@ -243,7 +243,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 /// them are ANDed.
 /// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
 {
@@ -263,7 +263,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 /// at some point during pod execution (e.g. due to an update), the system
 /// may or may not try to eventually evict the pod from its node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -273,7 +273,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 }
 
 /// <summary>Describes node affinity scheduling rules for the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityNodeAffinity
 {
@@ -306,7 +306,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityN
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -335,7 +335,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -356,7 +356,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -388,7 +388,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -406,7 +406,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -474,7 +474,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -494,7 +494,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -523,7 +523,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -544,7 +544,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -576,7 +576,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -601,7 +601,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -669,7 +669,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 }
 
 /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAffinity
 {
@@ -704,7 +704,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -733,7 +733,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -754,7 +754,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -786,7 +786,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -804,7 +804,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -872,7 +872,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -892,7 +892,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -921,7 +921,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -942,7 +942,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -974,7 +974,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -999,7 +999,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -1067,7 +1067,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 }
 
 /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityPodAntiAffinity
 {
@@ -1104,7 +1104,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinityP
 /// If omitted, the API server Deployment will use its default value for affinity.
 /// WARNING: Please note that this field will override the default API server Deployment affinity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinity
 {
@@ -1125,7 +1125,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinity
 /// LivenessProbe allows customization of the liveness probe timing parameters.
 /// The probe handler is set by the operator and cannot be overridden.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersLivenessProbe
 {
@@ -1156,7 +1156,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
 /// Name is an enum which identifies the API server Deployment container by name.
 /// Supported values are: calico-apiserver, tigera-queryserver, calico-l7-admission-controller
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersNameEnum>))]
 public enum V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersNameEnum
 {
@@ -1172,7 +1172,7 @@ public enum V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersNameEnum
 /// Name is an enum which identifies the API server Deployment Container port by name.
 /// Supported values are: apiserver, queryserver, l7admctrl
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersPortsNameEnum>))]
 public enum V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersPortsNameEnum
 {
@@ -1184,7 +1184,7 @@ public enum V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersPortsNam
     L7admctrl
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersPorts
 {
@@ -1207,7 +1207,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
 /// ReadinessProbe allows customization of the readiness probe timing parameters.
 /// The probe handler is set by the operator and cannot be overridden.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersReadinessProbe
 {
@@ -1235,7 +1235,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersResourcesClaims
 {
@@ -1262,7 +1262,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
 /// If omitted, the API server Deployment will use its default value for this container&apos;s resources.
 /// If used in conjunction with the deprecated ComponentResources, then this value takes precedence.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersResources
 {
@@ -1294,7 +1294,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
 }
 
 /// <summary>APIServerDeploymentContainer is an API server Deployment container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainers
 {
@@ -1341,7 +1341,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
 /// Name is an enum which identifies the API server Deployment init container by name.
 /// Supported values are: calico-apiserver-certs-key-cert-provisioner
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitContainersNameEnum>))]
 public enum V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitContainersNameEnum
 {
@@ -1350,7 +1350,7 @@ public enum V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitContainersName
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitContainersResourcesClaims
 {
@@ -1376,7 +1376,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitConta
 /// If specified, this overrides the named API server Deployment init container&apos;s resources.
 /// If omitted, the API server Deployment will use its default value for this init container&apos;s resources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitContainersResources
 {
@@ -1408,7 +1408,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitConta
 }
 
 /// <summary>APIServerDeploymentInitContainer is an API server Deployment init container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitContainers
 {
@@ -1432,7 +1432,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecInitConta
 /// The pod this Toleration is attached to tolerates any taint that matches
 /// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecTolerations
 {
@@ -1481,7 +1481,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecToleratio
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecTopologySpreadConstraintsLabelSelectorMatchExpressions
 {
@@ -1511,7 +1511,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecTopologyS
 /// Pods that match this label selector are counted to determine the number of pods
 /// in their corresponding topology domain.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecTopologySpreadConstraintsLabelSelector
 {
@@ -1529,7 +1529,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecTopologyS
 }
 
 /// <summary>TopologySpreadConstraint specifies how to spread matching pods among the given topology.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecTopologySpreadConstraints
 {
@@ -1661,7 +1661,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecTopologyS
 }
 
 /// <summary>Spec is the API server Deployment&apos;s PodSpec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpec
 {
@@ -1726,7 +1726,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpec
 }
 
 /// <summary>Template describes the API server Deployment pod that will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplate
 {
@@ -1743,7 +1743,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplate
 }
 
 /// <summary>Spec is the specification of the API server Deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeploymentSpec
 {
@@ -1766,7 +1766,7 @@ public partial class V1APIServerSpecApiServerDeploymentSpec
 /// used in conjunction with ControlPlaneNodeSelector or ControlPlaneTolerations, then these overrides
 /// take precedence.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecApiServerDeployment
 {
@@ -1780,7 +1780,7 @@ public partial class V1APIServerSpecApiServerDeployment
 }
 
 /// <summary>Metadata is a subset of a Kubernetes object&apos;s metadata that is added to the Deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentMetadata
 {
@@ -1805,7 +1805,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentMetadata
 /// Metadata is a subset of a Kubernetes object&apos;s metadata that is added to
 /// the pod&apos;s metadata.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateMetadata
 {
@@ -1830,7 +1830,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateMetadata
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
 {
@@ -1860,7 +1860,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
 {
@@ -1887,7 +1887,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>A node selector term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
 {
@@ -1904,7 +1904,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// An empty preferred scheduling term matches all objects with implicit weight 0
 /// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -1921,7 +1921,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
 {
@@ -1951,7 +1951,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
 {
@@ -1982,7 +1982,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// them are ANDed.
 /// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
 {
@@ -2002,7 +2002,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// at some point during pod execution (e.g. due to an update), the system
 /// may or may not try to eventually evict the pod from its node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -2012,7 +2012,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>Describes node affinity scheduling rules for the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityNodeAffinity
 {
@@ -2045,7 +2045,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -2074,7 +2074,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -2095,7 +2095,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -2127,7 +2127,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -2145,7 +2145,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -2213,7 +2213,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -2233,7 +2233,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -2262,7 +2262,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -2283,7 +2283,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -2315,7 +2315,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -2340,7 +2340,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -2408,7 +2408,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAffinity
 {
@@ -2443,7 +2443,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -2472,7 +2472,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -2493,7 +2493,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -2525,7 +2525,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -2543,7 +2543,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -2611,7 +2611,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -2631,7 +2631,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -2660,7 +2660,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -2681,7 +2681,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -2713,7 +2713,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -2738,7 +2738,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -2806,7 +2806,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinityPodAntiAffinity
 {
@@ -2843,7 +2843,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// If omitted, the calico-webhooks Deployment will use its default value for affinity.
 /// WARNING: Please note that this field will override the default calico-webhooks Deployment affinity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffinity
 {
@@ -2864,7 +2864,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 /// LivenessProbe allows customization of the liveness probe timing parameters.
 /// The probe handler is set by the operator and cannot be overridden.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersLivenessProbe
 {
@@ -2895,7 +2895,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
 /// Name is an enum which identifies the calico-webhooks Deployment container by name.
 /// Supported values are: calico-webhooks
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersNameEnum>))]
 public enum V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersNameEnum
 {
@@ -2907,7 +2907,7 @@ public enum V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersNam
 /// Name is an enum which identifies the calico-webhooks Deployment container port by name.
 /// Supported values are: calico-webhooks
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersPortsNameEnum>))]
 public enum V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersPortsNameEnum
 {
@@ -2916,7 +2916,7 @@ public enum V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersPor
 }
 
 /// <summary>CalicoWebhooksDeploymentContainerPort defines a port override for a calico-webhooks container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersPorts
 {
@@ -2939,7 +2939,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
 /// ReadinessProbe allows customization of the readiness probe timing parameters.
 /// The probe handler is set by the operator and cannot be overridden.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersReadinessProbe
 {
@@ -2967,7 +2967,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersResourcesClaims
 {
@@ -2993,7 +2993,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
 /// If specified, this overrides the named calico-webhooks Deployment container&apos;s resources.
 /// If omitted, the calico-webhooks Deployment will use its default value for this container&apos;s resources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersResources
 {
@@ -3025,7 +3025,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
 }
 
 /// <summary>CalicoWebhooksDeploymentContainer is a calico-webhooks Deployment container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainers
 {
@@ -3071,7 +3071,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
 /// The pod this Toleration is attached to tolerates any taint that matches
 /// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecTolerations
 {
@@ -3117,7 +3117,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecTole
 }
 
 /// <summary>Spec is the calico-webhooks Deployment&apos;s PodSpec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpec
 {
@@ -3171,7 +3171,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpec
 }
 
 /// <summary>Template describes the calico-webhooks Deployment pod that will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplate
 {
@@ -3188,7 +3188,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplate
 }
 
 /// <summary>Spec is the specification of the calico-webhooks Deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpec
 {
@@ -3207,7 +3207,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpec
 }
 
 /// <summary>CalicoWebhooksDeployment configures the calico-webhooks Deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecCalicoWebhooksDeployment
 {
@@ -3221,7 +3221,7 @@ public partial class V1APIServerSpecCalicoWebhooksDeployment
 }
 
 /// <summary>LogSeverity defines log level for APIServer container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerSpecLoggingApiServerLogSeverityEnum>))]
 public enum V1APIServerSpecLoggingApiServerLogSeverityEnum
 {
@@ -3239,7 +3239,7 @@ public enum V1APIServerSpecLoggingApiServerLogSeverityEnum
     Trace
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecLoggingApiServer
 {
@@ -3249,7 +3249,7 @@ public partial class V1APIServerSpecLoggingApiServer
 }
 
 /// <summary>LogSeverity defines log level for QueryServer container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerSpecLoggingQueryServerLogSeverityEnum>))]
 public enum V1APIServerSpecLoggingQueryServerLogSeverityEnum
 {
@@ -3267,7 +3267,7 @@ public enum V1APIServerSpecLoggingQueryServerLogSeverityEnum
     Trace
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecLoggingQueryServer
 {
@@ -3276,7 +3276,7 @@ public partial class V1APIServerSpecLoggingQueryServer
     public V1APIServerSpecLoggingQueryServerLogSeverityEnum? LogSeverity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpecLogging
 {
@@ -3288,7 +3288,7 @@ public partial class V1APIServerSpecLogging
 }
 
 /// <summary>Specification of the desired state for the Tigera API server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerSpec
 {
@@ -3309,7 +3309,7 @@ public partial class V1APIServerSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1APIServerStatusConditionsStatusEnum>))]
 public enum V1APIServerStatusConditionsStatusEnum
 {
@@ -3322,7 +3322,7 @@ public enum V1APIServerStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerStatusConditions
 {
@@ -3368,7 +3368,7 @@ public partial class V1APIServerStatusConditions
 }
 
 /// <summary>Most recently observed status for the Tigera API server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1APIServerStatus
 {
@@ -3388,7 +3388,7 @@ public partial class V1APIServerStatus
 /// APIServer installs the Tigera API server and related resources. At most one instance
 /// of this resource is supported. It must be named &quot;default&quot; or &quot;tigera-secure&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1APIServer : IKubernetesObject<V1ObjectMeta>, ISpec<V1APIServerSpec?>, IStatus<V1APIServerStatus?>

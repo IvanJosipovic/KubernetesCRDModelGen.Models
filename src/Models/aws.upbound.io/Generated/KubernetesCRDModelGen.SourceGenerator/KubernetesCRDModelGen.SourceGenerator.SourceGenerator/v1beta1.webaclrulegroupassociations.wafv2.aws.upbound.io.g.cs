@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.wafv2.aws.upbound.io;
 /// <summary>WebACLRuleGroupAssociation is the Schema for the WebACLRuleGroupAssociations API. Associates a WAFv2 Rule Group with a Web ACL by adding a rule that references the Rule Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebACLRuleGroupAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WebACLRuleGroupAssociation>
@@ -46,7 +46,7 @@ public partial class V1beta1WebACLRuleGroupAssociationList : IKubernetesObject<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecDeletionPolicyEnum
 }
 
 /// <summary>Names of the fields in the request payload that contain your customer&apos;s primary physical address. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFields
 {
@@ -70,7 +70,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Name of the field in the request payload that contains your customer&apos;s email. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailField
 {
@@ -83,7 +83,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Details about your login page password field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordField
 {
@@ -96,7 +96,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Names of the fields in the request payload that contain your customer&apos;s primary phone number. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFields
 {
@@ -109,7 +109,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Details about your login page username field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameField
 {
@@ -122,7 +122,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Criteria for inspecting login requests, used by the ATP rule group to validate credentials usage. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspection
 {
@@ -155,7 +155,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response body. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContains
 {
@@ -175,7 +175,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response header. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeader
 {
@@ -202,7 +202,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response JSON. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJson
 {
@@ -229,7 +229,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response status code. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCode
 {
@@ -249,7 +249,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Criteria for inspecting responses to login requests, used by the ATP rule group to track login failure rates. Note that Response Inspection is available only on web ACLs that protect CloudFront distributions. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection
 {
@@ -271,7 +271,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Additional configuration for using the Account Creation Fraud Prevention managed rule group. Use this to specify information such as the registration page of your application and the type of content to accept or reject from the client. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSet
 {
@@ -299,7 +299,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection? ResponseInspection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpression
 {
@@ -309,7 +309,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallenge
 {
@@ -327,7 +327,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configuration for the request handling that&apos;s applied by the managed rule group rules ChallengeAllDuringEvent and ChallengeDDoSRequests during a distributed denial of service (DDoS) attack. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfig
 {
@@ -337,7 +337,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configuration for using the anti-DDoS managed rule group. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSet
 {
@@ -351,7 +351,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Details about your login page password field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordField
 {
@@ -364,7 +364,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Details about your login page username field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameField
 {
@@ -377,7 +377,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Criteria for inspecting login requests, used by the ATP rule group to validate credentials usage. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection
 {
@@ -398,7 +398,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response body. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContains
 {
@@ -418,7 +418,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response header. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeader
 {
@@ -445,7 +445,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response JSON. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJson
 {
@@ -472,7 +472,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configures inspection of the response status code. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCode
 {
@@ -492,7 +492,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Criteria for inspecting responses to login requests, used by the ATP rule group to track login failure rates. Note that Response Inspection is available only on web ACLs that protect CloudFront distributions. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspection
 {
@@ -514,7 +514,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Additional configuration for using the Account Takeover Protection managed rule group. Use this to specify information such as the sign-in page of your application and the type of content to accept or reject from the client. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet
 {
@@ -536,7 +536,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Additional configuration for using the Bot Control managed rule group. Use this to specify the inspection level that you want to use. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet
 {
@@ -550,7 +550,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Additional information that&apos;s used by a managed rule group. Only one rule attribute is allowed in each config. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigs
 {
@@ -571,7 +571,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet? AwsManagedRulesBotControlRuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader
 {
@@ -585,7 +585,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandling
 {
@@ -595,7 +595,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Allow the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseAllow
 {
@@ -604,7 +604,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseResponseHeader
 {
@@ -618,7 +618,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Custom response for blocked requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponse
 {
@@ -636,7 +636,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Block the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseBlock
 {
@@ -645,7 +645,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponse? CustomResponse { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader
 {
@@ -659,7 +659,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandling
 {
@@ -669,7 +669,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Require CAPTCHA verification. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCaptcha
 {
@@ -678,7 +678,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader
 {
@@ -692,7 +692,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandling
 {
@@ -702,7 +702,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseChallenge
 {
@@ -711,7 +711,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader
 {
@@ -725,7 +725,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandling
 {
@@ -735,7 +735,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 }
 
 /// <summary>Count the request without taking action. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCount
 {
@@ -748,7 +748,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 /// Action to use instead of the rule&apos;s original action. See below.
 /// Action to use in place of the rule action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUse
 {
@@ -773,7 +773,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
     public V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverrideActionToUseCount? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroupRuleActionOverride
 {
@@ -796,7 +796,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 /// Managed Rule Group configuration. One of rule_group_reference or managed_rule_group is required. Conflicts with rule_group_reference. See below.
 /// Managed rule group configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRuleGroup
 {
@@ -839,7 +839,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderManagedRule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnRefPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnRefPolicyResolutionEnum
 {
@@ -855,7 +855,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnRefPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnRefPolicyResolveEnum
 {
@@ -866,7 +866,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceAr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnRefPolicy
 {
@@ -890,7 +890,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Reference to a RuleGroup in wafv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnRef
 {
@@ -909,7 +909,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnSelectorPolicyResolutionEnum
 {
@@ -925,7 +925,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnSelectorPolicyResolveEnum
 {
@@ -936,7 +936,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceAr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnSelectorPolicy
 {
@@ -960,7 +960,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Selector for a RuleGroup in wafv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnSelector
 {
@@ -980,7 +980,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
     public V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader
 {
@@ -994,7 +994,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandling
 {
@@ -1004,7 +1004,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Allow the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseAllow
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
     public V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseResponseHeader
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Custom response for blocked requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponse
 {
@@ -1045,7 +1045,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Block the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseBlock
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
     public V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponse? CustomResponse { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader
 {
@@ -1068,7 +1068,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandling
 {
@@ -1078,7 +1078,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Require CAPTCHA verification. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptcha
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
     public V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader
 {
@@ -1101,7 +1101,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandling
 {
@@ -1111,7 +1111,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseChallenge
 {
@@ -1120,7 +1120,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
     public V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandling
 {
@@ -1144,7 +1144,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 }
 
 /// <summary>Count the request without taking action. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCount
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 /// Action to use instead of the rule&apos;s original action. See below.
 /// Action to use in place of the rule action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUse
 {
@@ -1182,7 +1182,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
     public V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverrideActionToUseCount? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReferenceRuleActionOverride
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 /// Custom Rule Group reference configuration. One of rule_group_reference or managed_rule_group is required. Conflicts with managed_rule_group. See below.
 /// Rule Group reference configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupReference
 {
@@ -1236,7 +1236,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderRuleGroupRe
 /// Defines and enables Amazon CloudWatch metrics and web request sample collection. See below.
 /// Visibility configuration for the rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderVisibilityConfig
 {
@@ -1268,7 +1268,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderVisibilityC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRefPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRefPolicyResolutionEnum
 {
@@ -1284,7 +1284,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRefPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRefPolicyResolveEnum
 {
@@ -1295,7 +1295,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRefPolicy
 {
@@ -1319,7 +1319,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRe
 }
 
 /// <summary>Reference to a WebACL in wafv2 to populate webAclArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRef
 {
@@ -1338,7 +1338,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPolicyResolutionEnum
 {
@@ -1354,7 +1354,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPolicyResolveEnum
 {
@@ -1365,7 +1365,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPolicy
 {
@@ -1389,7 +1389,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSe
 }
 
 /// <summary>Selector for a WebACL in wafv2 to populate webAclArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelector
 {
@@ -1409,7 +1409,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSe
     public V1beta1WebACLRuleGroupAssociationSpecForProviderWebAclArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecForProvider
 {
@@ -1479,7 +1479,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecForProvider
 }
 
 /// <summary>Names of the fields in the request payload that contain your customer&apos;s primary physical address. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFields
 {
@@ -1492,7 +1492,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Name of the field in the request payload that contains your customer&apos;s email. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailField
 {
@@ -1505,7 +1505,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Details about your login page password field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordField
 {
@@ -1518,7 +1518,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Names of the fields in the request payload that contain your customer&apos;s primary phone number. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFields
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Details about your login page username field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameField
 {
@@ -1544,7 +1544,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting login requests, used by the ATP rule group to validate credentials usage. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspection
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response body. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContains
 {
@@ -1597,7 +1597,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response header. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeader
 {
@@ -1624,7 +1624,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response JSON. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJson
 {
@@ -1651,7 +1651,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response status code. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCode
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting responses to login requests, used by the ATP rule group to track login failure rates. Note that Response Inspection is available only on web ACLs that protect CloudFront distributions. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection
 {
@@ -1693,7 +1693,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Additional configuration for using the Account Creation Fraud Prevention managed rule group. Use this to specify information such as the registration page of your application and the type of content to accept or reject from the client. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSet
 {
@@ -1721,7 +1721,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection? ResponseInspection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpression
 {
@@ -1731,7 +1731,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallenge
 {
@@ -1749,7 +1749,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configuration for the request handling that&apos;s applied by the managed rule group rules ChallengeAllDuringEvent and ChallengeDDoSRequests during a distributed denial of service (DDoS) attack. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfig
 {
@@ -1759,7 +1759,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configuration for using the anti-DDoS managed rule group. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSet
 {
@@ -1773,7 +1773,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Details about your login page password field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordField
 {
@@ -1786,7 +1786,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Details about your login page username field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameField
 {
@@ -1799,7 +1799,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting login requests, used by the ATP rule group to validate credentials usage. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection
 {
@@ -1820,7 +1820,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response body. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContains
 {
@@ -1840,7 +1840,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response header. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeader
 {
@@ -1867,7 +1867,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response JSON. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJson
 {
@@ -1894,7 +1894,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response status code. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCode
 {
@@ -1914,7 +1914,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting responses to login requests, used by the ATP rule group to track login failure rates. Note that Response Inspection is available only on web ACLs that protect CloudFront distributions. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspection
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Additional configuration for using the Account Takeover Protection managed rule group. Use this to specify information such as the sign-in page of your application and the type of content to accept or reject from the client. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet
 {
@@ -1958,7 +1958,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Additional configuration for using the Bot Control managed rule group. Use this to specify the inspection level that you want to use. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet
 {
@@ -1972,7 +1972,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Additional information that&apos;s used by a managed rule group. Only one rule attribute is allowed in each config. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigs
 {
@@ -1993,7 +1993,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet? AwsManagedRulesBotControlRuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader
 {
@@ -2007,7 +2007,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandling
 {
@@ -2017,7 +2017,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Allow the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseAllow
 {
@@ -2026,7 +2026,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseResponseHeader
 {
@@ -2040,7 +2040,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Custom response for blocked requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponse
 {
@@ -2058,7 +2058,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Block the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseBlock
 {
@@ -2067,7 +2067,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponse? CustomResponse { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader
 {
@@ -2081,7 +2081,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandling
 {
@@ -2091,7 +2091,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Require CAPTCHA verification. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCaptcha
 {
@@ -2100,7 +2100,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader
 {
@@ -2114,7 +2114,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandling
 {
@@ -2124,7 +2124,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseChallenge
 {
@@ -2133,7 +2133,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader
 {
@@ -2147,7 +2147,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandling
 {
@@ -2157,7 +2157,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 }
 
 /// <summary>Count the request without taking action. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCount
 {
@@ -2170,7 +2170,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 /// Action to use instead of the rule&apos;s original action. See below.
 /// Action to use in place of the rule action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUse
 {
@@ -2195,7 +2195,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverrideActionToUseCount? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroupRuleActionOverride
 {
@@ -2218,7 +2218,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 /// Managed Rule Group configuration. One of rule_group_reference or managed_rule_group is required. Conflicts with rule_group_reference. See below.
 /// Managed rule group configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRuleGroup
 {
@@ -2261,7 +2261,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderManagedRul
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnRefPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnRefPolicyResolutionEnum
 {
@@ -2277,7 +2277,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnRefPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnRefPolicyResolveEnum
 {
@@ -2288,7 +2288,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceA
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnRefPolicy
 {
@@ -2312,7 +2312,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Reference to a RuleGroup in wafv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnRef
 {
@@ -2331,7 +2331,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnSelectorPolicyResolutionEnum
 {
@@ -2347,7 +2347,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnSelectorPolicyResolveEnum
 {
@@ -2358,7 +2358,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceA
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnSelectorPolicy
 {
@@ -2382,7 +2382,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Selector for a RuleGroup in wafv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnSelector
 {
@@ -2402,7 +2402,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader
 {
@@ -2416,7 +2416,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandling
 {
@@ -2426,7 +2426,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Allow the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseAllow
 {
@@ -2435,7 +2435,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseResponseHeader
 {
@@ -2449,7 +2449,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Custom response for blocked requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponse
 {
@@ -2467,7 +2467,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Block the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseBlock
 {
@@ -2476,7 +2476,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponse? CustomResponse { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader
 {
@@ -2490,7 +2490,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandling
 {
@@ -2500,7 +2500,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Require CAPTCHA verification. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptcha
 {
@@ -2509,7 +2509,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader
 {
@@ -2523,7 +2523,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandling
 {
@@ -2533,7 +2533,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseChallenge
 {
@@ -2542,7 +2542,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader
 {
@@ -2556,7 +2556,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandling
 {
@@ -2566,7 +2566,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 }
 
 /// <summary>Count the request without taking action. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCount
 {
@@ -2579,7 +2579,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 /// Action to use instead of the rule&apos;s original action. See below.
 /// Action to use in place of the rule action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUse
 {
@@ -2604,7 +2604,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverrideActionToUseCount? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReferenceRuleActionOverride
 {
@@ -2627,7 +2627,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 /// Custom Rule Group reference configuration. One of rule_group_reference or managed_rule_group is required. Conflicts with managed_rule_group. See below.
 /// Rule Group reference configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupReference
 {
@@ -2658,7 +2658,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderRuleGroupR
 /// Defines and enables Amazon CloudWatch metrics and web request sample collection. See below.
 /// Visibility configuration for the rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderVisibilityConfig
 {
@@ -2690,7 +2690,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderVisibility
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRefPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRefPolicyResolutionEnum
 {
@@ -2706,7 +2706,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRefPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRefPolicyResolveEnum
 {
@@ -2717,7 +2717,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRefPolicy
 {
@@ -2741,7 +2741,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnR
 }
 
 /// <summary>Reference to a WebACL in wafv2 to populate webAclArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnRef
 {
@@ -2760,7 +2760,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelectorPolicyResolutionEnum
 {
@@ -2776,7 +2776,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelectorPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelectorPolicyResolveEnum
 {
@@ -2787,7 +2787,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelectorPolicy
 {
@@ -2811,7 +2811,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnS
 }
 
 /// <summary>Selector for a WebACL in wafv2 to populate webAclArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnSelector
 {
@@ -2843,7 +2843,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProviderWebAclArnS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecInitProvider
 {
@@ -2909,7 +2909,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecManagementPoliciesEnum
 {
@@ -2933,7 +2933,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2949,7 +2949,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2960,7 +2960,7 @@ public enum V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolicy
 {
@@ -2988,7 +2988,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecProviderConfigRefPolic
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecProviderConfigRef
 {
@@ -3007,7 +3007,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpecWriteConnectionSecretToRef
 {
@@ -3021,7 +3021,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpecWriteConnectionSecretT
 }
 
 /// <summary>WebACLRuleGroupAssociationSpec defines the desired state of WebACLRuleGroupAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationSpec
 {
@@ -3089,7 +3089,7 @@ public partial class V1beta1WebACLRuleGroupAssociationSpec
 }
 
 /// <summary>Names of the fields in the request payload that contain your customer&apos;s primary physical address. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionAddressFields
 {
@@ -3102,7 +3102,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Name of the field in the request payload that contains your customer&apos;s email. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionEmailField
 {
@@ -3115,7 +3115,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Details about your login page password field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPasswordField
 {
@@ -3128,7 +3128,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Names of the fields in the request payload that contain your customer&apos;s primary phone number. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionPhoneNumberFields
 {
@@ -3141,7 +3141,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Details about your login page username field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspectionUsernameField
 {
@@ -3154,7 +3154,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting login requests, used by the ATP rule group to validate credentials usage. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetRequestInspection
 {
@@ -3187,7 +3187,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response body. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionBodyContains
 {
@@ -3207,7 +3207,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response header. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionHeader
 {
@@ -3234,7 +3234,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response JSON. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionJson
 {
@@ -3261,7 +3261,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response status code. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspectionStatusCode
 {
@@ -3281,7 +3281,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting responses to login requests, used by the ATP rule group to track login failure rates. Note that Response Inspection is available only on web ACLs that protect CloudFront distributions. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection
 {
@@ -3303,7 +3303,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Additional configuration for using the Account Creation Fraud Prevention managed rule group. Use this to specify information such as the registration page of your application and the type of content to accept or reject from the client. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSet
 {
@@ -3331,7 +3331,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAcfpRuleSetResponseInspection? ResponseInspection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallengeExemptUriRegularExpression
 {
@@ -3341,7 +3341,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfigChallenge
 {
@@ -3359,7 +3359,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configuration for the request handling that&apos;s applied by the managed rule group rules ChallengeAllDuringEvent and ChallengeDDoSRequests during a distributed denial of service (DDoS) attack. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSetClientSideActionConfig
 {
@@ -3369,7 +3369,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configuration for using the anti-DDoS managed rule group. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAntiDdosRuleSet
 {
@@ -3383,7 +3383,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Details about your login page password field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordField
 {
@@ -3396,7 +3396,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Details about your login page username field. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameField
 {
@@ -3409,7 +3409,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting login requests, used by the ATP rule group to validate credentials usage. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection
 {
@@ -3430,7 +3430,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response body. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionBodyContains
 {
@@ -3450,7 +3450,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response header. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionHeader
 {
@@ -3477,7 +3477,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response JSON. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJson
 {
@@ -3504,7 +3504,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configures inspection of the response status code. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionStatusCode
 {
@@ -3524,7 +3524,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Criteria for inspecting responses to login requests, used by the ATP rule group to track login failure rates. Note that Response Inspection is available only on web ACLs that protect CloudFront distributions. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspection
 {
@@ -3546,7 +3546,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Additional configuration for using the Account Takeover Protection managed rule group. Use this to specify information such as the sign-in page of your application and the type of content to accept or reject from the client. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet
 {
@@ -3568,7 +3568,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Additional configuration for using the Bot Control managed rule group. Use this to specify the inspection level that you want to use. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet
 {
@@ -3582,7 +3582,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Additional information that&apos;s used by a managed rule group. Only one rule attribute is allowed in each config. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigs
 {
@@ -3603,7 +3603,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet? AwsManagedRulesBotControlRuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader
 {
@@ -3617,7 +3617,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandling
 {
@@ -3627,7 +3627,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Allow the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseAllow
 {
@@ -3636,7 +3636,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponseResponseHeader
 {
@@ -3650,7 +3650,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Custom response for blocked requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponse
 {
@@ -3668,7 +3668,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Block the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseBlock
 {
@@ -3677,7 +3677,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseBlockCustomResponse? CustomResponse { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader
 {
@@ -3691,7 +3691,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandling
 {
@@ -3701,7 +3701,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Require CAPTCHA verification. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCaptcha
 {
@@ -3710,7 +3710,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCaptchaCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader
 {
@@ -3724,7 +3724,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandling
 {
@@ -3734,7 +3734,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseChallenge
 {
@@ -3743,7 +3743,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseChallengeCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader
 {
@@ -3757,7 +3757,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCountCustomRequestHandling
 {
@@ -3767,7 +3767,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 }
 
 /// <summary>Count the request without taking action. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCount
 {
@@ -3780,7 +3780,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 /// Action to use instead of the rule&apos;s original action. See below.
 /// Action to use in place of the rule action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUse
 {
@@ -3805,7 +3805,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverrideActionToUseCount? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroupRuleActionOverride
 {
@@ -3828,7 +3828,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
 /// Managed Rule Group configuration. One of rule_group_reference or managed_rule_group is required. Conflicts with rule_group_reference. See below.
 /// Managed rule group configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRuleGroup
 {
@@ -3865,7 +3865,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderManagedRul
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandlingInsertHeader
 {
@@ -3879,7 +3879,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandling
 {
@@ -3889,7 +3889,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Allow the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseAllow
 {
@@ -3898,7 +3898,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponseResponseHeader
 {
@@ -3912,7 +3912,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Custom response for blocked requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponse
 {
@@ -3930,7 +3930,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Block the request. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseBlock
 {
@@ -3939,7 +3939,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseBlockCustomResponse? CustomResponse { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandlingInsertHeader
 {
@@ -3953,7 +3953,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandling
 {
@@ -3963,7 +3963,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Require CAPTCHA verification. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptcha
 {
@@ -3972,7 +3972,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCaptchaCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandlingInsertHeader
 {
@@ -3986,7 +3986,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandling
 {
@@ -3996,7 +3996,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Configuration for the use of the AWSManagedRulesAntiDDoSRuleSet rules ChallengeAllDuringEvent and ChallengeDDoSRequests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseChallenge
 {
@@ -4005,7 +4005,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseChallengeCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandlingInsertHeader
 {
@@ -4019,7 +4019,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Custom handling for counted requests. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCountCustomRequestHandling
 {
@@ -4029,7 +4029,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 }
 
 /// <summary>Count the request without taking action. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCount
 {
@@ -4042,7 +4042,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 /// Action to use instead of the rule&apos;s original action. See below.
 /// Action to use in place of the rule action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUse
 {
@@ -4067,7 +4067,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
     public V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverrideActionToUseCount? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReferenceRuleActionOverride
 {
@@ -4090,7 +4090,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 /// Custom Rule Group reference configuration. One of rule_group_reference or managed_rule_group is required. Conflicts with managed_rule_group. See below.
 /// Rule Group reference configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupReference
 {
@@ -4113,7 +4113,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderRuleGroupR
 /// Defines and enables Amazon CloudWatch metrics and web request sample collection. See below.
 /// Visibility configuration for the rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderVisibilityConfig
 {
@@ -4139,7 +4139,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProviderVisibility
     public bool? SampledRequestsEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusAtProvider
 {
@@ -4204,7 +4204,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatusConditions
 {
@@ -4247,7 +4247,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatusConditions
 }
 
 /// <summary>WebACLRuleGroupAssociationStatus defines the observed state of WebACLRuleGroupAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLRuleGroupAssociationStatus
 {
@@ -4277,7 +4277,7 @@ public partial class V1beta1WebACLRuleGroupAssociationStatus
 }
 
 /// <summary>WebACLRuleGroupAssociation is the Schema for the WebACLRuleGroupAssociations API. Associates a WAFv2 Rule Group with a Web ACL by adding a rule that references the Rule Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebACLRuleGroupAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WebACLRuleGroupAssociationSpec>, IStatus<V1beta1WebACLRuleGroupAssociationStatus?>

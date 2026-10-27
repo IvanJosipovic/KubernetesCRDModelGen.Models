@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssm.aws.upbound.io;
 /// <summary>DefaultPatchBaseline is the Schema for the DefaultPatchBaselines API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DefaultPatchBaselineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DefaultPatchBaseline>
@@ -46,7 +46,7 @@ public partial class V1beta1DefaultPatchBaselineList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecDeletionPolicyEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1DefaultPatchBaselineSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRefPoli
 }
 
 /// <summary>Reference to a PatchBaseline in ssm to populate baselineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelecto
 }
 
 /// <summary>Selector for a PatchBaseline in ssm to populate baselineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderBaselineIdSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRefPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRe
 }
 
 /// <summary>Reference to a PatchBaseline in ssm to populate operatingSystem.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSe
 }
 
 /// <summary>Selector for a PatchBaseline in ssm to populate operatingSystem.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSe
     public V1beta1DefaultPatchBaselineSpecForProviderOperatingSystemSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecForProvider
 {
@@ -413,7 +413,7 @@ public partial class V1beta1DefaultPatchBaselineSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPolicyResolutionEnum
 {
@@ -429,7 +429,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPolicyResolveEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPolicy
 {
@@ -464,7 +464,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRefPol
 }
 
 /// <summary>Reference to a PatchBaseline in ssm to populate baselineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRef
 {
@@ -483,7 +483,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelectorPolicyResolutionEnum
 {
@@ -499,7 +499,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelectorPolicyResolveEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelectorPolicy
 {
@@ -534,7 +534,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelect
 }
 
 /// <summary>Selector for a PatchBaseline in ssm to populate baselineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelector
 {
@@ -560,7 +560,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderBaselineIdSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRefPolicyResolutionEnum
 {
@@ -576,7 +576,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRefPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRefPolicyResolveEnum
 {
@@ -587,7 +587,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRefPolicy
 {
@@ -611,7 +611,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemR
 }
 
 /// <summary>Reference to a PatchBaseline in ssm to populate operatingSystem.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemRef
 {
@@ -630,7 +630,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelectorPolicyResolutionEnum
 {
@@ -646,7 +646,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelectorPolicyResolveEnum
 {
@@ -657,7 +657,7 @@ public enum V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelectorPolicy
 {
@@ -681,7 +681,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemS
 }
 
 /// <summary>Selector for a PatchBaseline in ssm to populate operatingSystem.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemSelector
 {
@@ -713,7 +713,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProviderOperatingSystemS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecInitProvider
 {
@@ -767,7 +767,7 @@ public partial class V1beta1DefaultPatchBaselineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecManagementPoliciesEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecManagementPoliciesEnum
 {
@@ -791,7 +791,7 @@ public enum V1beta1DefaultPatchBaselineSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -807,7 +807,7 @@ public enum V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicyResolveEnum
 {
@@ -818,7 +818,7 @@ public enum V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicy
 {
@@ -846,7 +846,7 @@ public partial class V1beta1DefaultPatchBaselineSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecProviderConfigRef
 {
@@ -865,7 +865,7 @@ public partial class V1beta1DefaultPatchBaselineSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpecWriteConnectionSecretToRef
 {
@@ -879,7 +879,7 @@ public partial class V1beta1DefaultPatchBaselineSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DefaultPatchBaselineSpec defines the desired state of DefaultPatchBaseline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineSpec
 {
@@ -946,7 +946,7 @@ public partial class V1beta1DefaultPatchBaselineSpec
     public V1beta1DefaultPatchBaselineSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineStatusAtProvider
 {
@@ -991,7 +991,7 @@ public partial class V1beta1DefaultPatchBaselineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineStatusConditions
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta1DefaultPatchBaselineStatusConditions
 }
 
 /// <summary>DefaultPatchBaselineStatus defines the observed state of DefaultPatchBaseline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultPatchBaselineStatus
 {
@@ -1064,7 +1064,7 @@ public partial class V1beta1DefaultPatchBaselineStatus
 }
 
 /// <summary>DefaultPatchBaseline is the Schema for the DefaultPatchBaselines API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DefaultPatchBaseline : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DefaultPatchBaselineSpec>, IStatus<V1beta1DefaultPatchBaselineStatus?>

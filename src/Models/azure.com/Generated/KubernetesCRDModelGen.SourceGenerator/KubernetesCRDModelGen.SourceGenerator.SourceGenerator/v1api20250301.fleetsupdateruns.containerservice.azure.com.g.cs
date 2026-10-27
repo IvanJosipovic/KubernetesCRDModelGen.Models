@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.containerservice.azure.com;
 /// - Generated from: /containerservice/resource-manager/Microsoft.ContainerService/fleet/stable/2025-03-01/fleets.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/fleets/{fleetName}/updateRuns/{updateRunName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250301FleetsUpdateRunList : IKubernetesObject<V1ListMeta>, IItems<V1api20250301FleetsUpdateRun>
@@ -42,7 +42,7 @@ public partial class V1api20250301FleetsUpdateRunList : IKubernetesObject<V1List
 }
 
 /// <summary>Type: The node image upgrade type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250301FleetsUpdateRunSpecManagedClusterUpdateNodeImageSelectionTypeEnum>))]
 public enum V1api20250301FleetsUpdateRunSpecManagedClusterUpdateNodeImageSelectionTypeEnum
 {
@@ -55,7 +55,7 @@ public enum V1api20250301FleetsUpdateRunSpecManagedClusterUpdateNodeImageSelecti
 }
 
 /// <summary>NodeImageSelection: The node image upgrade to be applied to the target nodes in update run.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecManagedClusterUpdateNodeImageSelection
 {
@@ -65,7 +65,7 @@ public partial class V1api20250301FleetsUpdateRunSpecManagedClusterUpdateNodeIma
 }
 
 /// <summary>Type: ManagedClusterUpgradeType is the type of upgrade to be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250301FleetsUpdateRunSpecManagedClusterUpdateUpgradeTypeEnum>))]
 public enum V1api20250301FleetsUpdateRunSpecManagedClusterUpdateUpgradeTypeEnum
 {
@@ -78,7 +78,7 @@ public enum V1api20250301FleetsUpdateRunSpecManagedClusterUpdateUpgradeTypeEnum
 }
 
 /// <summary>Upgrade: The upgrade to apply to the ManagedClusters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecManagedClusterUpdateUpgrade
 {
@@ -95,7 +95,7 @@ public partial class V1api20250301FleetsUpdateRunSpecManagedClusterUpdateUpgrade
 /// ManagedClusterUpdate: The update to be applied to all clusters in the UpdateRun. The managedClusterUpdate can be
 /// modified until the run is started.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecManagedClusterUpdate
 {
@@ -113,7 +113,7 @@ public partial class V1api20250301FleetsUpdateRunSpecManagedClusterUpdate
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecOperatorSpecConfigMapExpressions
 {
@@ -154,7 +154,7 @@ public partial class V1api20250301FleetsUpdateRunSpecOperatorSpecConfigMapExpres
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecOperatorSpecSecretExpressions
 {
@@ -194,7 +194,7 @@ public partial class V1api20250301FleetsUpdateRunSpecOperatorSpecSecretExpressio
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecOperatorSpec
 {
@@ -212,7 +212,7 @@ public partial class V1api20250301FleetsUpdateRunSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a containerservice.azure.com/Fleet resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecOwner
 {
@@ -225,7 +225,7 @@ public partial class V1api20250301FleetsUpdateRunSpecOwner
 }
 
 /// <summary>A group to be updated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecStrategyStagesGroups
 {
@@ -241,7 +241,7 @@ public partial class V1api20250301FleetsUpdateRunSpecStrategyStagesGroups
 /// Defines a stage which contains the groups to update and the steps to take (e.g., wait for a time period) before starting
 /// the next stage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecStrategyStages
 {
@@ -267,7 +267,7 @@ public partial class V1api20250301FleetsUpdateRunSpecStrategyStages
 /// UpdateGroup targeting all members.
 /// The strategy of the UpdateRun can be modified until the run is started.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecStrategy
 {
@@ -289,7 +289,7 @@ public partial class V1api20250301FleetsUpdateRunSpecStrategy
 /// Subsequent changes to the referenced FleetUpdateStrategy resource do not propagate.
 /// UpdateRunStrategy changes can be made directly on the &quot;strategy&quot; field before launching the UpdateRun.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpecUpdateStrategyReference
 {
@@ -314,7 +314,7 @@ public partial class V1api20250301FleetsUpdateRunSpecUpdateStrategyReference
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunSpec
 {
@@ -374,7 +374,7 @@ public partial class V1api20250301FleetsUpdateRunSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusConditions
 {
@@ -420,7 +420,7 @@ public partial class V1api20250301FleetsUpdateRunStatusConditions
 }
 
 /// <summary>The node upgrade image version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdateNodeImageSelectionCustomNodeImageVersions
 {
@@ -430,7 +430,7 @@ public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdateNodeI
 }
 
 /// <summary>NodeImageSelection: The node image upgrade to be applied to the target nodes in update run.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdateNodeImageSelection
 {
@@ -450,7 +450,7 @@ public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdateNodeI
 }
 
 /// <summary>Upgrade: The upgrade to apply to the ManagedClusters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdateUpgrade
 {
@@ -467,7 +467,7 @@ public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdateUpgra
 /// ManagedClusterUpdate: The update to be applied to all clusters in the UpdateRun. The managedClusterUpdate can be
 /// modified until the run is started.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdate
 {
@@ -481,7 +481,7 @@ public partial class V1api20250301FleetsUpdateRunStatusManagedClusterUpdate
 }
 
 /// <summary>The node upgrade image version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusNodeImageSelectionSelectedNodeImageVersions
 {
@@ -494,7 +494,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusNodeImageSelectionS
 /// NodeImageSelection: The node image upgrade specs for the update run. It is only set in update run when
 /// `NodeImageSelection.type` is `Consistent`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusNodeImageSelection
 {
@@ -504,7 +504,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusNodeImageSelection
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWaitStatusStatusErrorAdditionalInfo
 {
@@ -518,7 +518,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWai
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWaitStatusStatusErrorDetailsAdditionalInfo
 {
@@ -531,7 +531,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWai
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWaitStatusStatusErrorDetails
 {
@@ -553,7 +553,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWai
 }
 
 /// <summary>Error: The error details when a failure is encountered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWaitStatusStatusError
 {
@@ -579,7 +579,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWai
 }
 
 /// <summary>Status: The status of the wait duration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWaitStatusStatus
 {
@@ -601,7 +601,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWai
 }
 
 /// <summary>AfterStageWaitStatus: The status of the wait period configured on the UpdateStage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWaitStatus
 {
@@ -615,7 +615,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesAfterStageWai
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembersStatusErrorAdditionalInfo
 {
@@ -629,7 +629,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembers
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembersStatusErrorDetailsAdditionalInfo
 {
@@ -642,7 +642,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembers
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembersStatusErrorDetails
 {
@@ -664,7 +664,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembers
 }
 
 /// <summary>Error: The error details when a failure is encountered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembersStatusError
 {
@@ -690,7 +690,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembers
 }
 
 /// <summary>Status: The status of the MemberUpdate operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembersStatus
 {
@@ -712,7 +712,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembers
 }
 
 /// <summary>The status of a member update operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembers
 {
@@ -738,7 +738,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsMembers
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusErrorAdditionalInfo
 {
@@ -752,7 +752,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusE
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusErrorDetailsAdditionalInfo
 {
@@ -765,7 +765,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusE
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusErrorDetails
 {
@@ -787,7 +787,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusE
 }
 
 /// <summary>Error: The error details when a failure is encountered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusError
 {
@@ -813,7 +813,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatusE
 }
 
 /// <summary>Status: The status of the UpdateGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatus
 {
@@ -835,7 +835,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroupsStatus
 }
 
 /// <summary>The status of a UpdateGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroups
 {
@@ -853,7 +853,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesGroups
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusErrorAdditionalInfo
 {
@@ -867,7 +867,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusErrorAd
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusErrorDetailsAdditionalInfo
 {
@@ -880,7 +880,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusErrorDe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusErrorDetails
 {
@@ -902,7 +902,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusErrorDe
 }
 
 /// <summary>Error: The error details when a failure is encountered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusError
 {
@@ -928,7 +928,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatusError
 }
 
 /// <summary>Status: The status of the UpdateStage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatus
 {
@@ -950,7 +950,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStagesStatus
 }
 
 /// <summary>The status of a UpdateStage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStages
 {
@@ -972,7 +972,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStages
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStatusErrorAdditionalInfo
 {
@@ -986,7 +986,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStatusErrorAddition
 }
 
 /// <summary>The resource management error additional info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStatusErrorDetailsAdditionalInfo
 {
@@ -999,7 +999,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStatusErrorDetailsA
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStatusErrorDetails
 {
@@ -1021,7 +1021,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStatusErrorDetails
 }
 
 /// <summary>Error: The error details when a failure is encountered.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStatusError
 {
@@ -1047,7 +1047,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStatusError
 }
 
 /// <summary>Status: The status of the UpdateRun.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatusStatus
 {
@@ -1069,7 +1069,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatusStatus
 }
 
 /// <summary>Status: The status of the UpdateRun.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStatus
 {
@@ -1090,7 +1090,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStatus
 }
 
 /// <summary>A group to be updated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStrategyStagesGroups
 {
@@ -1106,7 +1106,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStrategyStagesGroups
 /// Defines a stage which contains the groups to update and the steps to take (e.g., wait for a time period) before starting
 /// the next stage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStrategyStages
 {
@@ -1132,7 +1132,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStrategyStages
 /// UpdateGroup targeting all members.
 /// The strategy of the UpdateRun can be modified until the run is started.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusStrategy
 {
@@ -1142,7 +1142,7 @@ public partial class V1api20250301FleetsUpdateRunStatusStrategy
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatusSystemData
 {
@@ -1171,7 +1171,7 @@ public partial class V1api20250301FleetsUpdateRunStatusSystemData
     public string? LastModifiedByType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250301FleetsUpdateRunStatus
 {
@@ -1257,7 +1257,7 @@ public partial class V1api20250301FleetsUpdateRunStatus
 /// - Generated from: /containerservice/resource-manager/Microsoft.ContainerService/fleet/stable/2025-03-01/fleets.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/fleets/{fleetName}/updateRuns/{updateRunName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250301FleetsUpdateRun : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20250301FleetsUpdateRunSpec?>, IStatus<V1api20250301FleetsUpdateRunStatus?>

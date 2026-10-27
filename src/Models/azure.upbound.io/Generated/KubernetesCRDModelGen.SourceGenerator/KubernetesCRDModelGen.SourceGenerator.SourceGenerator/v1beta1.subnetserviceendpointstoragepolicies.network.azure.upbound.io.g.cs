@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>SubnetServiceEndpointStoragePolicy is the Schema for the SubnetServiceEndpointStoragePolicys API. Manages a Subnet Service Endpoint Storage Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubnetServiceEndpointStoragePolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SubnetServiceEndpointStoragePolicy>
@@ -46,7 +46,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicyList : IKubernetes
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecDeletionPolicyEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesRefsPolicyResolutionEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesRefsPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesRefsPolicyResolveEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesRefsPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionSe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesRefsPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDef
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesRefs
 {
@@ -132,7 +132,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDef
 }
 
 /// <summary>Selector for a list of ResourceGroup in azure to populate serviceResources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDef
     public V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinitionServiceResourcesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDefinition
 {
@@ -238,7 +238,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderDef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -265,7 +265,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGrou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameRefPolicy
 {
@@ -289,7 +289,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderRes
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameRef
 {
@@ -308,7 +308,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderRes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -335,7 +335,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGrou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -359,7 +359,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderRes
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameSelector
 {
@@ -379,7 +379,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProviderRes
     public V1beta1SubnetServiceEndpointStoragePolicySpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProvider
 {
@@ -414,7 +414,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesRefsPolicyResolutionEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesRefsPolicyResolutionEnum
 {
@@ -430,7 +430,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesRefsPolicyResolveEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesRefsPolicyResolveEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesRefsPolicy
 {
@@ -465,7 +465,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDe
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesRefs
 {
@@ -484,7 +484,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesSelectorPolicyResolutionEnum
 {
@@ -500,7 +500,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesSelectorPolicyResolveEnum
 {
@@ -511,7 +511,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesSelectorPolicy
 {
@@ -535,7 +535,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDe
 }
 
 /// <summary>Selector for a list of ResourceGroup in azure to populate serviceResources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesSelector
 {
@@ -555,7 +555,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDe
     public V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinitionServiceResourcesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDefinition
 {
@@ -596,7 +596,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProviderDe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProvider
 {
@@ -617,7 +617,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecManagementPoliciesEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecManagementPoliciesEnum
 {
@@ -641,7 +641,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -657,7 +657,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -668,7 +668,7 @@ public enum V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRefPolicy
 {
@@ -696,7 +696,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfig
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfigRef
 {
@@ -715,7 +715,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpecWriteConnectionSecretToRef
 {
@@ -729,7 +729,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpecWriteConnectio
 }
 
 /// <summary>SubnetServiceEndpointStoragePolicySpec defines the desired state of SubnetServiceEndpointStoragePolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicySpec
 {
@@ -796,7 +796,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicySpec
     public V1beta1SubnetServiceEndpointStoragePolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicyStatusAtProviderDefinition
 {
@@ -817,7 +817,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicyStatusAtProviderDe
     public IList<string>? ServiceResources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicyStatusAtProvider
 {
@@ -843,7 +843,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicyStatusConditions
 {
@@ -886,7 +886,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicyStatusConditions
 }
 
 /// <summary>SubnetServiceEndpointStoragePolicyStatus defines the observed state of SubnetServiceEndpointStoragePolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetServiceEndpointStoragePolicyStatus
 {
@@ -916,7 +916,7 @@ public partial class V1beta1SubnetServiceEndpointStoragePolicyStatus
 }
 
 /// <summary>SubnetServiceEndpointStoragePolicy is the Schema for the SubnetServiceEndpointStoragePolicys API. Manages a Subnet Service Endpoint Storage Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubnetServiceEndpointStoragePolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SubnetServiceEndpointStoragePolicySpec>, IStatus<V1beta1SubnetServiceEndpointStoragePolicyStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>SecurityPolicy is the Schema for the SecurityPolicys API. Creates a Security Policy resource for Google Compute Engine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecurityPolicy>
@@ -37,7 +37,7 @@ public partial class V1beta1SecurityPolicyList : IKubernetesObject<V1ListMeta>, 
     public required IList<V1beta1SecurityPolicy> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs
 {
@@ -54,7 +54,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs
 {
@@ -96,7 +96,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
 }
 
 /// <summary>Configuration for Google Cloud Armor Adaptive Protection Layer 7 DDoS Defense. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfigLayer7DdosDefenseConfig
 {
@@ -114,7 +114,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
 }
 
 /// <summary>Configuration for Google Cloud Armor Adaptive Protection. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfig
 {
@@ -127,7 +127,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
 /// Custom configuration to apply the JSON parsing. Only applicable when
 /// json_parsing is set to STANDARD. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfigJsonCustomConfig
 {
@@ -145,7 +145,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfigJs
 /// Advanced Configuration Options.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfig
 {
@@ -174,7 +174,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfig
 }
 
 /// <summary>reCAPTCHA Configuration Options. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRecaptchaOptionsConfig
 {
@@ -183,7 +183,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRecaptchaOptionsConfig
     public string? RedirectSiteKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderActionRequestHeadersToAdds
 {
@@ -197,7 +197,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderActionRequest
 }
 
 /// <summary>Additional actions that are performed on headers. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderAction
 {
@@ -211,7 +211,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderAction
 /// This field must be specified if versioned_expr is specified and cannot be specified if versioned_expr is not specified.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchConfig
 {
@@ -229,7 +229,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchConfig
 /// such as origin.ip, source.region_code and contents in the request header.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExpr
 {
@@ -245,7 +245,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExpr
 /// reCAPTCHA configuration options to be applied for the rule. If the rule does not evaluate reCAPTCHA tokens, this field has no effect.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptionsRecaptchaOptions
 {
@@ -262,7 +262,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptionsRec
 /// The configuration options available when specifying a user defined CEVAL expression (i.e., &apos;expr&apos;).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptions
 {
@@ -278,7 +278,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptions
 /// A match condition that incoming traffic is evaluated against.
 /// If it evaluates to true, the corresponding action is enforced. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatch
 {
@@ -313,7 +313,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatch
     public string? VersionedExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestCookie
 {
@@ -326,7 +326,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestHeader
 {
@@ -339,7 +339,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestQueryParam
 {
@@ -352,7 +352,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestUri
 {
@@ -365,7 +365,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusion
 {
@@ -395,7 +395,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 }
 
 /// <summary>Preconfigured WAF configuration to be applied for the rule. If the rule does not evaluate preconfigured WAF rules, i.e., if evaluatePreconfiguredWaf() is not used, this field will have no effect. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfig
 {
@@ -409,7 +409,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 /// If specified, the key will be banned for the configured ban_duration_sec when the number of requests that exceed the rate_limit_threshold also
 /// exceed this ban_threshold. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsBanThreshold
 {
@@ -422,7 +422,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsBan
     public double? IntervalSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsEnforceOnKeyConfigs
 {
@@ -436,7 +436,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsEnf
 }
 
 /// <summary>Parameters defining the redirect action that is used as the exceed action. Cannot be specified if the exceed action is not redirect. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsExceedRedirectOptions
 {
@@ -450,7 +450,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsExc
 }
 
 /// <summary>Threshold at which to begin ratelimiting. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsRateLimitThreshold
 {
@@ -464,7 +464,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsRat
 }
 
 /// <summary>Must be specified if the action is rate_based_ban or throttle. Cannot be specified for other actions. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptions
 {
@@ -516,7 +516,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptions
 }
 
 /// <summary>Can be specified if the action is redirect. Cannot be specified for other actions. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRedirectOptions
 {
@@ -529,7 +529,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRedirectOptions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProviderRule
 {
@@ -579,7 +579,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRule
     public V1beta1SecurityPolicySpecForProviderRuleRedirectOptions? RedirectOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecForProvider
 {
@@ -630,7 +630,7 @@ public partial class V1beta1SecurityPolicySpecForProvider
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs
 {
@@ -647,7 +647,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs
 {
@@ -689,7 +689,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
 }
 
 /// <summary>Configuration for Google Cloud Armor Adaptive Protection Layer 7 DDoS Defense. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfigLayer7DdosDefenseConfig
 {
@@ -707,7 +707,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
 }
 
 /// <summary>Configuration for Google Cloud Armor Adaptive Protection. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfig
 {
@@ -720,7 +720,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
 /// Custom configuration to apply the JSON parsing. Only applicable when
 /// json_parsing is set to STANDARD. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfigJsonCustomConfig
 {
@@ -738,7 +738,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfigJ
 /// Advanced Configuration Options.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfig
 {
@@ -767,7 +767,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfig
 }
 
 /// <summary>reCAPTCHA Configuration Options. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRecaptchaOptionsConfig
 {
@@ -776,7 +776,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRecaptchaOptionsConfig
     public string? RedirectSiteKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderActionRequestHeadersToAdds
 {
@@ -790,7 +790,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderActionReques
 }
 
 /// <summary>Additional actions that are performed on headers. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderAction
 {
@@ -804,7 +804,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderAction
 /// This field must be specified if versioned_expr is specified and cannot be specified if versioned_expr is not specified.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchConfig
 {
@@ -822,7 +822,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchConfig
 /// such as origin.ip, source.region_code and contents in the request header.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExpr
 {
@@ -838,7 +838,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExpr
 /// reCAPTCHA configuration options to be applied for the rule. If the rule does not evaluate reCAPTCHA tokens, this field has no effect.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptionsRecaptchaOptions
 {
@@ -855,7 +855,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptionsRe
 /// The configuration options available when specifying a user defined CEVAL expression (i.e., &apos;expr&apos;).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptions
 {
@@ -871,7 +871,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptions
 /// A match condition that incoming traffic is evaluated against.
 /// If it evaluates to true, the corresponding action is enforced. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatch
 {
@@ -906,7 +906,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatch
     public string? VersionedExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestCookie
 {
@@ -919,7 +919,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestHeader
 {
@@ -932,7 +932,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestQueryParam
 {
@@ -945,7 +945,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestUri
 {
@@ -958,7 +958,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusion
 {
@@ -988,7 +988,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 }
 
 /// <summary>Preconfigured WAF configuration to be applied for the rule. If the rule does not evaluate preconfigured WAF rules, i.e., if evaluatePreconfiguredWaf() is not used, this field will have no effect. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfig
 {
@@ -1002,7 +1002,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 /// If specified, the key will be banned for the configured ban_duration_sec when the number of requests that exceed the rate_limit_threshold also
 /// exceed this ban_threshold. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsBanThreshold
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsBa
     public double? IntervalSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsEnforceOnKeyConfigs
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsEn
 }
 
 /// <summary>Parameters defining the redirect action that is used as the exceed action. Cannot be specified if the exceed action is not redirect. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsExceedRedirectOptions
 {
@@ -1043,7 +1043,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsEx
 }
 
 /// <summary>Threshold at which to begin ratelimiting. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsRateLimitThreshold
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsRa
 }
 
 /// <summary>Must be specified if the action is rate_based_ban or throttle. Cannot be specified for other actions. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptions
 {
@@ -1109,7 +1109,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptions
 }
 
 /// <summary>Can be specified if the action is redirect. Cannot be specified for other actions. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRedirectOptions
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRedirectOptions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProviderRule
 {
@@ -1184,7 +1184,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRule
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecInitProvider
 {
@@ -1239,7 +1239,7 @@ public partial class V1beta1SecurityPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1SecurityPolicySpecManagementPoliciesEnum
 {
@@ -1262,7 +1262,7 @@ public enum V1beta1SecurityPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecProviderConfigRef
 {
@@ -1281,7 +1281,7 @@ public partial class V1beta1SecurityPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpecWriteConnectionSecretToRef
 {
@@ -1291,7 +1291,7 @@ public partial class V1beta1SecurityPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>SecurityPolicySpec defines the desired state of SecurityPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicySpec
 {
@@ -1342,7 +1342,7 @@ public partial class V1beta1SecurityPolicySpec
     public V1beta1SecurityPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs
 {
@@ -1359,7 +1359,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
 }
 
 /// <summary>Configuration for Google Cloud Armor Adaptive Protection Layer 7 DDoS Defense. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfigLayer7DdosDefenseConfig
 {
@@ -1419,7 +1419,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
 }
 
 /// <summary>Configuration for Google Cloud Armor Adaptive Protection. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfig
 {
@@ -1432,7 +1432,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
 /// Custom configuration to apply the JSON parsing. Only applicable when
 /// json_parsing is set to STANDARD. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfigJsonCustomConfig
 {
@@ -1450,7 +1450,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfigJ
 /// Advanced Configuration Options.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfig
 {
@@ -1479,7 +1479,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfig
 }
 
 /// <summary>reCAPTCHA Configuration Options. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRecaptchaOptionsConfig
 {
@@ -1488,7 +1488,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRecaptchaOptionsConfig
     public string? RedirectSiteKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderActionRequestHeadersToAdds
 {
@@ -1502,7 +1502,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderActionReques
 }
 
 /// <summary>Additional actions that are performed on headers. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderAction
 {
@@ -1516,7 +1516,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderAction
 /// This field must be specified if versioned_expr is specified and cannot be specified if versioned_expr is not specified.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchConfig
 {
@@ -1534,7 +1534,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchConfig
 /// such as origin.ip, source.region_code and contents in the request header.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExpr
 {
@@ -1550,7 +1550,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExpr
 /// reCAPTCHA configuration options to be applied for the rule. If the rule does not evaluate reCAPTCHA tokens, this field has no effect.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptionsRecaptchaOptions
 {
@@ -1567,7 +1567,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptionsRe
 /// The configuration options available when specifying a user defined CEVAL expression (i.e., &apos;expr&apos;).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptions
 {
@@ -1583,7 +1583,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptions
 /// A match condition that incoming traffic is evaluated against.
 /// If it evaluates to true, the corresponding action is enforced. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatch
 {
@@ -1618,7 +1618,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatch
     public string? VersionedExpr { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestCookie
 {
@@ -1631,7 +1631,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestHeader
 {
@@ -1644,7 +1644,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestQueryParam
 {
@@ -1657,7 +1657,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestUri
 {
@@ -1670,7 +1670,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusion
 {
@@ -1700,7 +1700,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 }
 
 /// <summary>Preconfigured WAF configuration to be applied for the rule. If the rule does not evaluate preconfigured WAF rules, i.e., if evaluatePreconfiguredWaf() is not used, this field will have no effect. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfig
 {
@@ -1714,7 +1714,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 /// If specified, the key will be banned for the configured ban_duration_sec when the number of requests that exceed the rate_limit_threshold also
 /// exceed this ban_threshold. Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsBanThreshold
 {
@@ -1727,7 +1727,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsBa
     public double? IntervalSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsEnforceOnKeyConfigs
 {
@@ -1741,7 +1741,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsEn
 }
 
 /// <summary>Parameters defining the redirect action that is used as the exceed action. Cannot be specified if the exceed action is not redirect. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsExceedRedirectOptions
 {
@@ -1755,7 +1755,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsEx
 }
 
 /// <summary>Threshold at which to begin ratelimiting. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsRateLimitThreshold
 {
@@ -1769,7 +1769,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsRa
 }
 
 /// <summary>Must be specified if the action is rate_based_ban or throttle. Cannot be specified for other actions. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptions
 {
@@ -1821,7 +1821,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptions
 }
 
 /// <summary>Can be specified if the action is redirect. Cannot be specified for other actions. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRedirectOptions
 {
@@ -1834,7 +1834,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRedirectOptions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProviderRule
 {
@@ -1884,7 +1884,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRule
     public V1beta1SecurityPolicyStatusAtProviderRuleRedirectOptions? RedirectOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusAtProvider
 {
@@ -1966,7 +1966,7 @@ public partial class V1beta1SecurityPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatusConditions
 {
@@ -2009,7 +2009,7 @@ public partial class V1beta1SecurityPolicyStatusConditions
 }
 
 /// <summary>SecurityPolicyStatus defines the observed state of SecurityPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityPolicyStatus
 {
@@ -2039,7 +2039,7 @@ public partial class V1beta1SecurityPolicyStatus
 }
 
 /// <summary>SecurityPolicy is the Schema for the SecurityPolicys API. Creates a Security Policy resource for Google Compute Engine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecurityPolicySpec>, IStatus<V1beta1SecurityPolicyStatus?>

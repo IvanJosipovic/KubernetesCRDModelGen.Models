@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.tpu.cnrm.cloud.google.com;
 /// <summary>TPUVirtualMachine is the Schema for the TPUVirtualMachine API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TPUVirtualMachineList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TPUVirtualMachine>
@@ -38,7 +38,7 @@ public partial class V1alpha1TPUVirtualMachineList : IKubernetesObject<V1ListMet
 }
 
 /// <summary>The AccleratorConfig for the TPU Node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecAcceleratorConfig
 {
@@ -51,7 +51,7 @@ public partial class V1alpha1TPUVirtualMachineSpecAcceleratorConfig
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecDataDisks
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1TPUVirtualMachineSpecDataDisks
 }
 
 /// <summary>The network for the TPU node. It must be a preexisting Google Compute Engine network. If none is provided, &quot;default&quot; will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigNetworkRef
 {
@@ -83,7 +83,7 @@ public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigNetworkRef
 }
 
 /// <summary>The subnetwork for the TPU node. It must be a preexisting Google Compute Engine subnetwork. If none is provided, &quot;default&quot; will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigSubnetworkRef
 {
@@ -101,7 +101,7 @@ public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigSubnetworkRef
 }
 
 /// <summary>Network configurations for the TPU node. network_config and network_configs are mutually exclusive, you can only specify one of them. If both are specified, an error will be returned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecNetworkConfig
 {
@@ -127,7 +127,7 @@ public partial class V1alpha1TPUVirtualMachineSpecNetworkConfig
 }
 
 /// <summary>The network for the TPU node. It must be a preexisting Google Compute Engine network. If none is provided, &quot;default&quot; will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigsNetworkRef
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigsNetworkRef
 }
 
 /// <summary>The subnetwork for the TPU node. It must be a preexisting Google Compute Engine subnetwork. If none is provided, &quot;default&quot; will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigsSubnetworkRef
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigsSubnetworkRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigs
 {
@@ -188,7 +188,7 @@ public partial class V1alpha1TPUVirtualMachineSpecNetworkConfigs
 }
 
 /// <summary>The project that the TPU virtual machine belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecProjectRef
 {
@@ -210,7 +210,7 @@ public partial class V1alpha1TPUVirtualMachineSpecProjectRef
 }
 
 /// <summary>The scheduling options for this node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecSchedulingConfig
 {
@@ -228,7 +228,7 @@ public partial class V1alpha1TPUVirtualMachineSpecSchedulingConfig
 }
 
 /// <summary>The service account to be used. If empty, the default Compute service account will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecServiceAccountServiceAccountRef
 {
@@ -246,7 +246,7 @@ public partial class V1alpha1TPUVirtualMachineSpecServiceAccountServiceAccountRe
 }
 
 /// <summary>The Google Cloud Platform Service Account to be used by the TPU node VMs. If None is specified, the default compute service account will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecServiceAccount
 {
@@ -260,7 +260,7 @@ public partial class V1alpha1TPUVirtualMachineSpecServiceAccount
 }
 
 /// <summary>Shielded Instance options.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpecShieldedInstanceConfig
 {
@@ -270,7 +270,7 @@ public partial class V1alpha1TPUVirtualMachineSpecShieldedInstanceConfig
 }
 
 /// <summary>TPUVirtualMachineSpec defines the desired state of TPUVirtualMachine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineSpec
 {
@@ -339,7 +339,7 @@ public partial class V1alpha1TPUVirtualMachineSpec
     public IList<string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineStatusConditions
 {
@@ -365,7 +365,7 @@ public partial class V1alpha1TPUVirtualMachineStatusConditions
 }
 
 /// <summary>The access config for the TPU worker.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineStatusObservedStateNetworkEndpointsAccessConfig
 {
@@ -374,7 +374,7 @@ public partial class V1alpha1TPUVirtualMachineStatusObservedStateNetworkEndpoint
     public string? ExternalIP { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineStatusObservedStateNetworkEndpoints
 {
@@ -383,7 +383,7 @@ public partial class V1alpha1TPUVirtualMachineStatusObservedStateNetworkEndpoint
     public V1alpha1TPUVirtualMachineStatusObservedStateNetworkEndpointsAccessConfig? AccessConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineStatusObservedStateSymptoms
 {
@@ -405,7 +405,7 @@ public partial class V1alpha1TPUVirtualMachineStatusObservedStateSymptoms
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineStatusObservedState
 {
@@ -439,7 +439,7 @@ public partial class V1alpha1TPUVirtualMachineStatusObservedState
 }
 
 /// <summary>TPUVirtualMachineStatus defines the config connector machine state of TPUVirtualMachine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TPUVirtualMachineStatus
 {
@@ -461,7 +461,7 @@ public partial class V1alpha1TPUVirtualMachineStatus
 }
 
 /// <summary>TPUVirtualMachine is the Schema for the TPUVirtualMachine API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TPUVirtualMachine : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TPUVirtualMachineSpec>, IStatus<V1alpha1TPUVirtualMachineStatus?>

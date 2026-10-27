@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.m.upbound.io;
 /// <summary>Prompt is the Schema for the Prompts API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PromptList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Prompt>
@@ -43,7 +43,7 @@ public partial class V1beta1PromptList : IKubernetesObject<V1ListMeta>, IItems<V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRefPoli
 }
 
 /// <summary>Reference to a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelecto
 }
 
 /// <summary>Selector for a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1PromptSpecForProviderCustomerEncryptionKeyArnSelecto
 }
 
 /// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantGenAiResourceAgent
 {
@@ -203,7 +203,7 @@ public partial class V1beta1PromptSpecForProviderVariantGenAiResourceAgent
 }
 
 /// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantGenAiResource
 {
@@ -213,7 +213,7 @@ public partial class V1beta1PromptSpecForProviderVariantGenAiResource
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantInferenceConfigurationText
 {
@@ -235,7 +235,7 @@ public partial class V1beta1PromptSpecForProviderVariantInferenceConfigurationTe
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantInferenceConfiguration
 {
@@ -244,7 +244,7 @@ public partial class V1beta1PromptSpecForProviderVariantInferenceConfiguration
     public V1beta1PromptSpecForProviderVariantInferenceConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantMetadata
 {
@@ -257,7 +257,7 @@ public partial class V1beta1PromptSpecForProviderVariantMetadata
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatInputVariable
 {
@@ -267,7 +267,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessageContentCachePoint
 {
@@ -276,7 +276,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessageContent
 {
@@ -289,7 +289,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatMessage
 {
@@ -303,7 +303,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatSystemCachePoint
 {
@@ -312,7 +312,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatSystem
 {
@@ -326,7 +326,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint
 {
@@ -336,7 +336,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
@@ -346,7 +346,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec
 {
@@ -363,7 +363,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationTool
 {
@@ -377,21 +377,21 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
 /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
 /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
@@ -401,7 +401,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfigurationToolChoice
 {
@@ -419,7 +419,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChatToolConfiguration
 {
@@ -433,7 +433,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationChat
 {
@@ -455,7 +455,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationCha
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTextCachePoint
 {
@@ -464,7 +464,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTex
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTextInputVariable
 {
@@ -474,7 +474,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTex
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationText
 {
@@ -492,7 +492,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfigurationTex
 }
 
 /// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariantTemplateConfiguration
 {
@@ -505,7 +505,7 @@ public partial class V1beta1PromptSpecForProviderVariantTemplateConfiguration
     public V1beta1PromptSpecForProviderVariantTemplateConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProviderVariant
 {
@@ -542,7 +542,7 @@ public partial class V1beta1PromptSpecForProviderVariant
     public string? TemplateType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecForProvider
 {
@@ -592,7 +592,7 @@ public partial class V1beta1PromptSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum
 {
@@ -608,7 +608,7 @@ public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolveEnum
 {
@@ -619,7 +619,7 @@ public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPolicy
 {
@@ -643,7 +643,7 @@ public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRefPol
 }
 
 /// <summary>Reference to a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRef
 {
@@ -666,7 +666,7 @@ public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum
 {
@@ -682,7 +682,7 @@ public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum
 {
@@ -693,7 +693,7 @@ public enum V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelectorPolicy
 {
@@ -717,7 +717,7 @@ public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelect
 }
 
 /// <summary>Selector for a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelector
 {
@@ -742,7 +742,7 @@ public partial class V1beta1PromptSpecInitProviderCustomerEncryptionKeyArnSelect
 }
 
 /// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantGenAiResourceAgent
 {
@@ -752,7 +752,7 @@ public partial class V1beta1PromptSpecInitProviderVariantGenAiResourceAgent
 }
 
 /// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantGenAiResource
 {
@@ -762,7 +762,7 @@ public partial class V1beta1PromptSpecInitProviderVariantGenAiResource
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantInferenceConfigurationText
 {
@@ -784,7 +784,7 @@ public partial class V1beta1PromptSpecInitProviderVariantInferenceConfigurationT
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantInferenceConfiguration
 {
@@ -793,7 +793,7 @@ public partial class V1beta1PromptSpecInitProviderVariantInferenceConfiguration
     public V1beta1PromptSpecInitProviderVariantInferenceConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantMetadata
 {
@@ -806,7 +806,7 @@ public partial class V1beta1PromptSpecInitProviderVariantMetadata
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatInputVariable
 {
@@ -816,7 +816,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessageContentCachePoint
 {
@@ -825,7 +825,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessageContent
 {
@@ -838,7 +838,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatMessage
 {
@@ -852,7 +852,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatSystemCachePoint
 {
@@ -861,7 +861,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatSystem
 {
@@ -875,7 +875,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint
 {
@@ -885,7 +885,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
@@ -895,7 +895,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec
 {
@@ -912,7 +912,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationTool
 {
@@ -926,21 +926,21 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
 /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
 /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
@@ -950,7 +950,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfigurationToolChoice
 {
@@ -968,7 +968,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChatToolConfiguration
 {
@@ -982,7 +982,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationChat
 {
@@ -1004,7 +1004,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTextCachePoint
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTextInputVariable
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTe
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationText
 {
@@ -1041,7 +1041,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfigurationTe
 }
 
 /// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariantTemplateConfiguration
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta1PromptSpecInitProviderVariantTemplateConfiguration
     public V1beta1PromptSpecInitProviderVariantTemplateConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProviderVariant
 {
@@ -1103,7 +1103,7 @@ public partial class V1beta1PromptSpecInitProviderVariant
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecInitProvider
 {
@@ -1144,7 +1144,7 @@ public partial class V1beta1PromptSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PromptSpecManagementPoliciesEnum>))]
 public enum V1beta1PromptSpecManagementPoliciesEnum
 {
@@ -1167,7 +1167,7 @@ public enum V1beta1PromptSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecProviderConfigRef
 {
@@ -1186,7 +1186,7 @@ public partial class V1beta1PromptSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpecWriteConnectionSecretToRef
 {
@@ -1196,7 +1196,7 @@ public partial class V1beta1PromptSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PromptSpec defines the desired state of Prompt</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptSpec
 {
@@ -1248,7 +1248,7 @@ public partial class V1beta1PromptSpec
 }
 
 /// <summary>Specifies an Amazon Bedrock agent with which to use the prompt. See Agent Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantGenAiResourceAgent
 {
@@ -1258,7 +1258,7 @@ public partial class V1beta1PromptStatusAtProviderVariantGenAiResourceAgent
 }
 
 /// <summary>Specifies a generative AI resource with which to use the prompt. If this is not supplied, then a gen_ai_resource must be defined. See Generative AI Resource for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantGenAiResource
 {
@@ -1268,7 +1268,7 @@ public partial class V1beta1PromptStatusAtProviderVariantGenAiResource
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantInferenceConfigurationText
 {
@@ -1290,7 +1290,7 @@ public partial class V1beta1PromptStatusAtProviderVariantInferenceConfigurationT
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantInferenceConfiguration
 {
@@ -1299,7 +1299,7 @@ public partial class V1beta1PromptStatusAtProviderVariantInferenceConfiguration
     public V1beta1PromptStatusAtProviderVariantInferenceConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantMetadata
 {
@@ -1312,7 +1312,7 @@ public partial class V1beta1PromptStatusAtProviderVariantMetadata
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatInputVariable
 {
@@ -1322,7 +1322,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessageContentCachePoint
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessageContent
 {
@@ -1344,7 +1344,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatMessage
 {
@@ -1358,7 +1358,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatSystemCachePoint
 {
@@ -1367,7 +1367,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatSystem
 {
@@ -1381,7 +1381,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolCachePoint
 {
@@ -1391,7 +1391,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolToolSpec
 {
@@ -1418,7 +1418,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationTool
 {
@@ -1432,21 +1432,21 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
 /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
 /// <summary>A list of tools to pass to a model. See Tool for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfigurationToolChoice
 {
@@ -1474,7 +1474,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChatToolConfiguration
 {
@@ -1488,7 +1488,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationChat
 {
@@ -1510,7 +1510,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationCh
 }
 
 /// <summary>A cache checkpoint within a template configuration. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTextCachePoint
 {
@@ -1519,7 +1519,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTextInputVariable
 {
@@ -1529,7 +1529,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTe
 }
 
 /// <summary>Contains inference configurations for the prompt variant. See Text Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationText
 {
@@ -1547,7 +1547,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfigurationTe
 }
 
 /// <summary>Contains configurations for the prompt template. See Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariantTemplateConfiguration
 {
@@ -1560,7 +1560,7 @@ public partial class V1beta1PromptStatusAtProviderVariantTemplateConfiguration
     public V1beta1PromptStatusAtProviderVariantTemplateConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProviderVariant
 {
@@ -1597,7 +1597,7 @@ public partial class V1beta1PromptStatusAtProviderVariant
     public string? TemplateType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusAtProvider
 {
@@ -1658,7 +1658,7 @@ public partial class V1beta1PromptStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatusConditions
 {
@@ -1701,7 +1701,7 @@ public partial class V1beta1PromptStatusConditions
 }
 
 /// <summary>PromptStatus defines the observed state of Prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PromptStatus
 {
@@ -1731,7 +1731,7 @@ public partial class V1beta1PromptStatus
 }
 
 /// <summary>Prompt is the Schema for the Prompts API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Prompt : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PromptSpec>, IStatus<V1beta1PromptStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.grafana.aws.m.upbound.io;
 /// <summary>WorkspaceServiceAccountToken is the Schema for the WorkspaceServiceAccountTokens API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceServiceAccountTokenList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkspaceServiceAccountToken>
@@ -43,7 +43,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenList : IKubernetesObject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAc
 }
 
 /// <summary>Reference to a WorkspaceServiceAccount in grafana to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAc
 }
 
 /// <summary>Selector for a WorkspaceServiceAccount in grafana to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAccountIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderServiceAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspace
 }
 
 /// <summary>Reference to a Workspace in grafana to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspace
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspace
 }
 
 /// <summary>Selector for a Workspace in grafana to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspace
     public V1beta1WorkspaceServiceAccountTokenSpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecForProvider
 {
@@ -397,7 +397,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdRefPolicyResolutionEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdRefPolicyResolveEnum
 {
@@ -424,7 +424,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdRefPolicy
 {
@@ -448,7 +448,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceA
 }
 
 /// <summary>Reference to a WorkspaceServiceAccount in grafana to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdRef
 {
@@ -471,7 +471,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdSelectorPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdSelectorPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdSelectorPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceA
 }
 
 /// <summary>Selector for a WorkspaceServiceAccount in grafana to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceAccountIdSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderServiceA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspac
 }
 
 /// <summary>Reference to a Workspace in grafana to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspac
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspac
 }
 
 /// <summary>Selector for a Workspace in grafana to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspaceIdSelector
 {
@@ -713,7 +713,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProviderWorkspac
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProvider
 {
@@ -754,7 +754,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceServiceAccountTokenSpecManagementPoliciesEnum>))]
 public enum V1beta1WorkspaceServiceAccountTokenSpecManagementPoliciesEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1WorkspaceServiceAccountTokenSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecProviderConfigRef
 {
@@ -796,7 +796,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpecWriteConnectionSecretToRef
 {
@@ -806,7 +806,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpecWriteConnectionSecre
 }
 
 /// <summary>WorkspaceServiceAccountTokenSpec defines the desired state of WorkspaceServiceAccountToken</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenSpec
 {
@@ -857,7 +857,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenSpec
     public V1beta1WorkspaceServiceAccountTokenSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenStatusAtProvider
 {
@@ -901,7 +901,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenStatusConditions
 {
@@ -944,7 +944,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenStatusConditions
 }
 
 /// <summary>WorkspaceServiceAccountTokenStatus defines the observed state of WorkspaceServiceAccountToken.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceServiceAccountTokenStatus
 {
@@ -974,7 +974,7 @@ public partial class V1beta1WorkspaceServiceAccountTokenStatus
 }
 
 /// <summary>WorkspaceServiceAccountToken is the Schema for the WorkspaceServiceAccountTokens API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceServiceAccountToken : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkspaceServiceAccountTokenSpec>, IStatus<V1beta1WorkspaceServiceAccountTokenStatus?>

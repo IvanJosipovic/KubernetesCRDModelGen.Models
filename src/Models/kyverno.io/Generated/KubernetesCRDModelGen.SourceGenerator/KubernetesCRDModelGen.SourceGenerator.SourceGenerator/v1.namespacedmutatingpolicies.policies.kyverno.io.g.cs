@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.policies.kyverno.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1NamespacedMutatingPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1NamespacedMutatingPolicy>
@@ -37,7 +37,7 @@ public partial class V1NamespacedMutatingPolicyList : IKubernetesObject<V1ListMe
 }
 
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecAuditAnnotations
 {
@@ -83,7 +83,7 @@ public partial class V1NamespacedMutatingPolicySpecAuditAnnotations
 }
 
 /// <summary>MutatingAdmissionPolicy specifies whether to generate a Kubernetes MutatingAdmissionPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecAutogenMutatingAdmissionPolicy
 {
@@ -96,7 +96,7 @@ public partial class V1NamespacedMutatingPolicySpecAutogenMutatingAdmissionPolic
 }
 
 /// <summary>PodControllers specifies whether to generate a pod controllers rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecAutogenPodControllers
 {
@@ -105,7 +105,7 @@ public partial class V1NamespacedMutatingPolicySpecAutogenPodControllers
 }
 
 /// <summary>AutogenConfiguration defines the configuration for the generation controller.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecAutogen
 {
@@ -119,7 +119,7 @@ public partial class V1NamespacedMutatingPolicySpecAutogen
 }
 
 /// <summary>Admission controls policy evaluation during admission.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecEvaluationAdmission
 {
@@ -132,7 +132,7 @@ public partial class V1NamespacedMutatingPolicySpecEvaluationAdmission
 }
 
 /// <summary>Background controls policy evaluation during background scan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecEvaluationBackground
 {
@@ -146,7 +146,7 @@ public partial class V1NamespacedMutatingPolicySpecEvaluationBackground
 }
 
 /// <summary>MutateExisting controls whether existing resources are mutated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecEvaluationMutateExisting
 {
@@ -159,7 +159,7 @@ public partial class V1NamespacedMutatingPolicySpecEvaluationMutateExisting
 }
 
 /// <summary>EvaluationConfiguration defines the configuration for mutating policy evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecEvaluation
 {
@@ -212,7 +212,7 @@ public partial class V1NamespacedMutatingPolicySpecEvaluation
 /// 
 /// Allowed values are Ignore or Fail. Defaults to Fail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1NamespacedMutatingPolicySpecFailurePolicyEnum>))]
 public enum V1NamespacedMutatingPolicySpecFailurePolicyEnum
 {
@@ -223,7 +223,7 @@ public enum V1NamespacedMutatingPolicySpecFailurePolicyEnum
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConditions
 {
@@ -261,7 +261,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConditions
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConstraintsExcludeResourceRules
 {
@@ -332,7 +332,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraintsExcludeResour
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConstraintsNamespaceSelectorMatchExpressions
 {
@@ -402,7 +402,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraintsNamespaceSele
 /// 
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConstraintsNamespaceSelector
 {
@@ -423,7 +423,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraintsNamespaceSele
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConstraintsObjectSelectorMatchExpressions
 {
@@ -461,7 +461,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraintsObjectSelecto
 /// users may skip the admission webhook by setting the labels.
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConstraintsObjectSelector
 {
@@ -479,7 +479,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraintsObjectSelecto
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConstraintsResourceRules
 {
@@ -552,7 +552,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraintsResourceRules
 /// Trigger constraints and MatchConditions are evaluated before target resolution.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMatchConstraints
 {
@@ -660,7 +660,7 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraints
 /// [structured merge diff](https://github.com/kubernetes-sigs/structured-merge-diff).
 /// A CEL expression is used to create apply configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMutationsApplyConfiguration
 {
@@ -714,7 +714,7 @@ public partial class V1NamespacedMutatingPolicySpecMutationsApplyConfiguration
 /// jsonPatch defines a [JSON patch](https://jsonpatch.com/) operation to perform a mutation to the object.
 /// A CEL expression is used to create the JSON patch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMutationsJsonPatch
 {
@@ -789,7 +789,7 @@ public partial class V1NamespacedMutatingPolicySpecMutationsJsonPatch
 }
 
 /// <summary>Mutation specifies the CEL expression which is used to apply the Mutation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecMutations
 {
@@ -819,7 +819,7 @@ public partial class V1NamespacedMutatingPolicySpecMutations
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConditions
 {
@@ -857,7 +857,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConditions
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsExcludeResourceRules
 {
@@ -928,7 +928,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsExclude
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsNamespaceSelectorMatchExpressions
 {
@@ -998,7 +998,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsNamespa
 /// 
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsNamespaceSelector
 {
@@ -1019,7 +1019,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsNamespa
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsObjectSelectorMatchExpressions
 {
@@ -1057,7 +1057,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsObjectS
 /// users may skip the admission webhook by setting the labels.
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsObjectSelector
 {
@@ -1075,7 +1075,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsObjectS
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsResourceRules
 {
@@ -1143,7 +1143,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsResourc
 }
 
 /// <summary>TargetMatchConstraints resolves the resources to mutate after Variables are evaluated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraints
 {
@@ -1253,7 +1253,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraints
 }
 
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecVariables
 {
@@ -1274,7 +1274,7 @@ public partial class V1NamespacedMutatingPolicySpecVariables
 }
 
 /// <summary>WebhookConfiguration defines the configuration for the webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecWebhookConfiguration
 {
@@ -1288,7 +1288,7 @@ public partial class V1NamespacedMutatingPolicySpecWebhookConfiguration
 }
 
 /// <summary>MutatingPolicySpec is the specification of the desired behavior of the MutatingPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpec
 {
@@ -1408,7 +1408,7 @@ public partial class V1NamespacedMutatingPolicySpec
 }
 
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAuditAnnotations
 {
@@ -1454,7 +1454,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAuditAnno
 }
 
 /// <summary>MutatingAdmissionPolicy specifies whether to generate a Kubernetes MutatingAdmissionPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAutogenMutatingAdmissionPolicy
 {
@@ -1467,7 +1467,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAutogenMu
 }
 
 /// <summary>PodControllers specifies whether to generate a pod controllers rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAutogenPodControllers
 {
@@ -1476,7 +1476,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAutogenPo
 }
 
 /// <summary>AutogenConfiguration defines the configuration for the generation controller.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAutogen
 {
@@ -1490,7 +1490,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAutogen
 }
 
 /// <summary>Admission controls policy evaluation during admission.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluationAdmission
 {
@@ -1503,7 +1503,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluatio
 }
 
 /// <summary>Background controls policy evaluation during background scan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluationBackground
 {
@@ -1517,7 +1517,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluatio
 }
 
 /// <summary>MutateExisting controls whether existing resources are mutated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluationMutateExisting
 {
@@ -1530,7 +1530,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluatio
 }
 
 /// <summary>EvaluationConfiguration defines the configuration for mutating policy evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluation
 {
@@ -1583,7 +1583,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluatio
 /// 
 /// Allowed values are Ignore or Fail. Defaults to Fail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1NamespacedMutatingPolicyStatusAutogenConfigsSpecFailurePolicyEnum>))]
 public enum V1NamespacedMutatingPolicyStatusAutogenConfigsSpecFailurePolicyEnum
 {
@@ -1594,7 +1594,7 @@ public enum V1NamespacedMutatingPolicyStatusAutogenConfigsSpecFailurePolicyEnum
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConditions
 {
@@ -1632,7 +1632,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCond
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConstraintsExcludeResourceRules
 {
@@ -1703,7 +1703,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConstraintsNamespaceSelectorMatchExpressions
 {
@@ -1773,7 +1773,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 /// 
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConstraintsNamespaceSelector
 {
@@ -1794,7 +1794,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConstraintsObjectSelectorMatchExpressions
 {
@@ -1832,7 +1832,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 /// users may skip the admission webhook by setting the labels.
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConstraintsObjectSelector
 {
@@ -1850,7 +1850,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConstraintsResourceRules
 {
@@ -1923,7 +1923,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 /// Trigger constraints and MatchConditions are evaluated before target resolution.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConstraints
 {
@@ -2031,7 +2031,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 /// [structured merge diff](https://github.com/kubernetes-sigs/structured-merge-diff).
 /// A CEL expression is used to create apply configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMutationsApplyConfiguration
 {
@@ -2085,7 +2085,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMutations
 /// jsonPatch defines a [JSON patch](https://jsonpatch.com/) operation to perform a mutation to the object.
 /// A CEL expression is used to create the JSON patch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMutationsJsonPatch
 {
@@ -2160,7 +2160,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMutations
 }
 
 /// <summary>Mutation specifies the CEL expression which is used to apply the Mutation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMutations
 {
@@ -2190,7 +2190,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMutations
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConditions
 {
@@ -2228,7 +2228,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraintsExcludeResourceRules
 {
@@ -2299,7 +2299,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraintsNamespaceSelectorMatchExpressions
 {
@@ -2369,7 +2369,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 /// 
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraintsNamespaceSelector
 {
@@ -2390,7 +2390,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraintsObjectSelectorMatchExpressions
 {
@@ -2428,7 +2428,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 /// users may skip the admission webhook by setting the labels.
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraintsObjectSelector
 {
@@ -2446,7 +2446,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraintsResourceRules
 {
@@ -2514,7 +2514,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 }
 
 /// <summary>TargetMatchConstraints resolves the resources to mutate after Variables are evaluated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraints
 {
@@ -2624,7 +2624,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
 }
 
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecVariables
 {
@@ -2645,7 +2645,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecVariables
 }
 
 /// <summary>WebhookConfiguration defines the configuration for the webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecWebhookConfiguration
 {
@@ -2659,7 +2659,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecWebhookCo
 }
 
 /// <summary>MutatingPolicySpec is the specification of the desired behavior of the MutatingPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpec
 {
@@ -2778,7 +2778,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpec
     public V1NamespacedMutatingPolicyStatusAutogenConfigsSpecWebhookConfiguration? WebhookConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsTargets
 {
@@ -2795,7 +2795,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsTargets
     public required string Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigs
 {
@@ -2807,7 +2807,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigs
     public required IList<V1NamespacedMutatingPolicyStatusAutogenConfigsTargets> Targets { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogen
 {
@@ -2816,7 +2816,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogen
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1NamespacedMutatingPolicyStatusConditionStatusConditionsStatusEnum>))]
 public enum V1NamespacedMutatingPolicyStatusConditionStatusConditionsStatusEnum
 {
@@ -2829,7 +2829,7 @@ public enum V1NamespacedMutatingPolicyStatusConditionStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusConditionStatusConditions
 {
@@ -2875,7 +2875,7 @@ public partial class V1NamespacedMutatingPolicyStatusConditionStatusConditions
 }
 
 /// <summary>ConditionStatus is the shared status across all policy types</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusConditionStatus
 {
@@ -2898,7 +2898,7 @@ public partial class V1NamespacedMutatingPolicyStatusConditionStatus
 }
 
 /// <summary>Status contains policy runtime data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatus
 {
@@ -2914,7 +2914,7 @@ public partial class V1NamespacedMutatingPolicyStatus
     public bool? Generated { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1NamespacedMutatingPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1NamespacedMutatingPolicySpec>, IStatus<V1NamespacedMutatingPolicyStatus?>

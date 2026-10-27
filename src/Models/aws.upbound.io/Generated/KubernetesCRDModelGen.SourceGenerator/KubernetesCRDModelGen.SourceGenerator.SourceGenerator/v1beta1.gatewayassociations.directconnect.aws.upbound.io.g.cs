@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.directconnect.aws.upbound.io;
 /// <summary>GatewayAssociation is the Schema for the GatewayAssociations API. Associates a Direct Connect Gateway with a VGW or transit gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GatewayAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GatewayAssociation>
@@ -46,7 +46,7 @@ public partial class V1beta1GatewayAssociationList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1GatewayAssociationSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1GatewayAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayId
 }
 
 /// <summary>Reference to a VPNGateway in ec2 to populate associatedGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayId
 }
 
 /// <summary>Selector for a VPNGateway in ec2 to populate associatedGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderAssociatedGatewayId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdRefPolic
 }
 
 /// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelector
 }
 
 /// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelector
 {
@@ -356,7 +356,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderDxGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicyResolutionEnum
 {
@@ -372,7 +372,7 @@ public enum V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicyResolveEnum
 {
@@ -383,7 +383,7 @@ public enum V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicy
 {
@@ -407,7 +407,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderProposalIdRefPolicy
 }
 
 /// <summary>Reference to a GatewayAssociationProposal in directconnect to populate proposalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderProposalIdRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderProposalIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderProposalIdSelectorP
 }
 
 /// <summary>Selector for a GatewayAssociationProposal in directconnect to populate proposalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProviderProposalIdSelector
 {
@@ -497,7 +497,7 @@ public partial class V1beta1GatewayAssociationSpecForProviderProposalIdSelector
     public V1beta1GatewayAssociationSpecForProviderProposalIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecForProvider
 {
@@ -568,7 +568,7 @@ public partial class V1beta1GatewayAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRefPolicyResolutionEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRefPolicyResolveEnum
 {
@@ -595,7 +595,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRefPolicy
 {
@@ -619,7 +619,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayI
 }
 
 /// <summary>Reference to a VPNGateway in ec2 to populate associatedGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdRef
 {
@@ -638,7 +638,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelectorPolicyResolutionEnum
 {
@@ -654,7 +654,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelectorPolicyResolveEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelectorPolicy
 {
@@ -689,7 +689,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayI
 }
 
 /// <summary>Selector for a VPNGateway in ec2 to populate associatedGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayIdSelector
 {
@@ -715,7 +715,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderAssociatedGatewayI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPolicyResolutionEnum
 {
@@ -731,7 +731,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPolicyResolveEnum
 {
@@ -742,7 +742,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPolicy
 {
@@ -766,7 +766,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRefPoli
 }
 
 /// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRef
 {
@@ -785,7 +785,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelectorPolicyResolutionEnum
 {
@@ -801,7 +801,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelectorPolicyResolveEnum
 {
@@ -812,7 +812,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelectorPolicy
 {
@@ -836,7 +836,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelecto
 }
 
 /// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelector
 {
@@ -862,7 +862,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderDxGatewayIdSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolicyResolutionEnum
 {
@@ -878,7 +878,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolicyResolveEnum
 {
@@ -889,7 +889,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolicy
 {
@@ -913,7 +913,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdRefPolic
 }
 
 /// <summary>Reference to a GatewayAssociationProposal in directconnect to populate proposalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdRef
 {
@@ -932,7 +932,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderProposalIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderProposalIdSelectorPolicyResolutionEnum
 {
@@ -948,7 +948,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderProposalIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecInitProviderProposalIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecInitProviderProposalIdSelectorPolicyResolveEnum
 {
@@ -959,7 +959,7 @@ public enum V1beta1GatewayAssociationSpecInitProviderProposalIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdSelectorPolicy
 {
@@ -983,7 +983,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdSelector
 }
 
 /// <summary>Selector for a GatewayAssociationProposal in directconnect to populate proposalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdSelector
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta1GatewayAssociationSpecInitProviderProposalIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecInitProvider
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta1GatewayAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1GatewayAssociationSpecManagementPoliciesEnum
 {
@@ -1101,7 +1101,7 @@ public enum V1beta1GatewayAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1117,7 +1117,7 @@ public enum V1beta1GatewayAssociationSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1GatewayAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1128,7 +1128,7 @@ public enum V1beta1GatewayAssociationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecProviderConfigRefPolicy
 {
@@ -1156,7 +1156,7 @@ public partial class V1beta1GatewayAssociationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecProviderConfigRef
 {
@@ -1175,7 +1175,7 @@ public partial class V1beta1GatewayAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpecWriteConnectionSecretToRef
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta1GatewayAssociationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GatewayAssociationSpec defines the desired state of GatewayAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationSpec
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1GatewayAssociationSpec
     public V1beta1GatewayAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationStatusAtProvider
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta1GatewayAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationStatusConditions
 {
@@ -1360,7 +1360,7 @@ public partial class V1beta1GatewayAssociationStatusConditions
 }
 
 /// <summary>GatewayAssociationStatus defines the observed state of GatewayAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayAssociationStatus
 {
@@ -1390,7 +1390,7 @@ public partial class V1beta1GatewayAssociationStatus
 }
 
 /// <summary>GatewayAssociation is the Schema for the GatewayAssociations API. Associates a Direct Connect Gateway with a VGW or transit gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GatewayAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GatewayAssociationSpec>, IStatus<V1beta1GatewayAssociationStatus?>

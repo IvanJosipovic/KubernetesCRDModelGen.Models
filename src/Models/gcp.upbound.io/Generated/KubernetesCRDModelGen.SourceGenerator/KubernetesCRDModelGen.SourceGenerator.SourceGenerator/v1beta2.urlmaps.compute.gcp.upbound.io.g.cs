@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>URLMap is the Schema for the URLMaps API. UrlMaps are used to route requests to a backend service based on rules that you define for the host and path of an incoming URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2URLMapList : IKubernetesObject<V1ListMeta>, IItems<V1beta2URLMap>
@@ -46,7 +46,7 @@ public partial class V1beta2URLMapList : IKubernetesObject<V1ListMeta>, IItems<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecDeletionPolicyEnum>))]
 public enum V1beta2URLMapSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2URLMapSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorResponseRule
 {
@@ -82,7 +82,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
@@ -98,7 +98,7 @@ public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
@@ -109,7 +109,7 @@ public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
@@ -133,7 +133,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolic
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRef
 {
@@ -152,7 +152,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
@@ -168,7 +168,7 @@ public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
@@ -179,7 +179,7 @@ public enum V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
@@ -203,7 +203,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolic
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
@@ -234,7 +234,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// defaultCustomErrorResponsePolicy is supported only for global external Application Load Balancers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolicy
 {
@@ -275,7 +275,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyCacheKeyPolicy
 {
@@ -369,7 +369,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyCa
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyClientTtl
 {
@@ -395,7 +395,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyCl
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyDefaultTtl
 {
@@ -421,7 +421,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyDe
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyMaxTtl
 {
@@ -441,7 +441,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyMa
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -454,7 +454,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNe
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -490,7 +490,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyNe
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicyServeWhileStale
 {
@@ -510,7 +510,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicySe
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicy
 {
@@ -647,7 +647,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCachePolicy
 /// W3C Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCorsPolicy
 {
@@ -703,7 +703,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionCorsPolicy
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicyAbort
 {
@@ -727,7 +727,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectio
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -745,7 +745,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectio
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicyDelay
 {
@@ -773,7 +773,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectio
 /// timeout and retryPolicy will be ignored by clients that are configured with a faultInjectionPolicy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicy
 {
@@ -802,7 +802,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionFaultInjectio
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionMaxStreamDuration
 {
@@ -821,7 +821,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionMaxStreamDura
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
@@ -837,7 +837,7 @@ public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
@@ -848,7 +848,7 @@ public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
@@ -872,7 +872,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirror
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
@@ -891,7 +891,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirror
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
@@ -907,7 +907,7 @@ public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
@@ -918,7 +918,7 @@ public enum V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
@@ -942,7 +942,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirror
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
@@ -968,7 +968,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirror
 /// the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicy
 {
@@ -993,7 +993,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRequestMirror
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRetryPolicyPe
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRetryPolicy
 {
@@ -1036,7 +1036,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionRetryPolicy
 /// If not specified, will use the largest timeout among all backend services associated with the route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionTimeout
 {
@@ -1053,7 +1053,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionTimeout
 /// The spec to modify the URL of the request, prior to forwarding the request to the matched service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionUrlRewrite
 {
@@ -1074,7 +1074,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionUrlRewrite
     public string? PathPrefixRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -1095,7 +1095,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBacke
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBacke
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
@@ -1156,7 +1156,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBacke
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBackendServices
 {
@@ -1197,7 +1197,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteActionWeightedBacke
 /// Only one of defaultRouteAction or defaultUrlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultRouteAction
 {
@@ -1293,7 +1293,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultServiceRefPolicyResolutionEnum
 {
@@ -1309,7 +1309,7 @@ public enum V1beta2URLMapSpecForProviderDefaultServiceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultServiceRefPolicyResolveEnum
 {
@@ -1320,7 +1320,7 @@ public enum V1beta2URLMapSpecForProviderDefaultServiceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultServiceRefPolicy
 {
@@ -1344,7 +1344,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultServiceRefPolicy
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultServiceRef
 {
@@ -1363,7 +1363,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicyResolutionEnum
 {
@@ -1379,7 +1379,7 @@ public enum V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicyResolveEnum
 {
@@ -1390,7 +1390,7 @@ public enum V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicy
 {
@@ -1414,7 +1414,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultServiceSelectorPolicy
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultServiceSelector
 {
@@ -1440,7 +1440,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultServiceSelector
 /// defaultRouteAction must not be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderDefaultUrlRedirect
 {
@@ -1494,7 +1494,7 @@ public partial class V1beta2URLMapSpecForProviderDefaultUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderHeaderActionRequestHeadersToAdd
 {
@@ -1515,7 +1515,7 @@ public partial class V1beta2URLMapSpecForProviderHeaderActionRequestHeadersToAdd
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderHeaderActionResponseHeadersToAdd
 {
@@ -1542,7 +1542,7 @@ public partial class V1beta2URLMapSpecForProviderHeaderActionResponseHeadersToAd
 /// headerAction specified under pathMatcher.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderHeaderAction
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta2URLMapSpecForProviderHeaderAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderHostRule
 {
@@ -1603,7 +1603,7 @@ public partial class V1beta2URLMapSpecForProviderHostRule
     public string? PathMatcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule
 {
@@ -1629,7 +1629,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
@@ -1645,7 +1645,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
@@ -1656,7 +1656,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
@@ -1680,7 +1680,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRef
 {
@@ -1699,7 +1699,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
@@ -1715,7 +1715,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
@@ -1726,7 +1726,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
@@ -1750,7 +1750,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
@@ -1781,7 +1781,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// defaultCustomErrorResponsePolicy is supported only for global external Application Load Balancers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicy
 {
@@ -1822,7 +1822,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy
 {
@@ -1916,7 +1916,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyClientTtl
 {
@@ -1942,7 +1942,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl
 {
@@ -1968,7 +1968,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl
 {
@@ -1988,7 +1988,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -2001,7 +2001,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -2037,7 +2037,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale
 {
@@ -2057,7 +2057,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCachePolicy
 {
@@ -2194,7 +2194,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCa
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCorsPolicy
 {
@@ -2250,7 +2250,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionCo
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicyAbort
 {
@@ -2274,7 +2274,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -2292,7 +2292,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 {
@@ -2322,7 +2322,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicy
 {
@@ -2351,7 +2351,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
@@ -2370,7 +2370,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionMa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
@@ -2386,7 +2386,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
@@ -2397,7 +2397,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
@@ -2421,7 +2421,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
@@ -2440,7 +2440,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
@@ -2456,7 +2456,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
@@ -2467,7 +2467,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
@@ -2491,7 +2491,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
@@ -2518,7 +2518,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicy
 {
@@ -2543,7 +2543,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
@@ -2560,7 +2560,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRetryPolicy
 {
@@ -2587,7 +2587,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionTimeout
 {
@@ -2605,7 +2605,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionTi
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionUrlRewrite
 {
@@ -2626,7 +2626,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionUr
     public string? PathPrefixRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -2647,7 +2647,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWe
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -2674,7 +2674,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWe
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
@@ -2708,7 +2708,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWe
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServices
 {
@@ -2749,7 +2749,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteActionWe
 /// Only one of defaultRouteAction or defaultUrlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteAction
 {
@@ -2851,7 +2851,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolutionEnum
 {
@@ -2867,7 +2867,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolveEnum
 {
@@ -2878,7 +2878,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPolicy
 {
@@ -2902,7 +2902,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRefPol
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRef
 {
@@ -2921,7 +2921,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum
 {
@@ -2937,7 +2937,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum
 {
@@ -2948,7 +2948,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicy
 {
@@ -2972,7 +2972,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelect
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelector
 {
@@ -2998,7 +2998,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultServiceSelect
 /// defaultRouteAction must not be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultUrlRedirect
 {
@@ -3055,7 +3055,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherDefaultUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherHeaderActionRequestHeadersToAdd
 {
@@ -3076,7 +3076,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherHeaderActionRequestH
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherHeaderActionResponseHeadersToAdd
 {
@@ -3103,7 +3103,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherHeaderActionResponse
 /// matching HttpRouteRule HeaderAction and before the HeaderAction in the UrlMap
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherHeaderAction
 {
@@ -3137,7 +3137,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherHeaderAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule
 {
@@ -3163,7 +3163,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
@@ -3179,7 +3179,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
@@ -3190,7 +3190,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicy
 {
@@ -3214,7 +3214,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRef
 {
@@ -3233,7 +3233,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
@@ -3249,7 +3249,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
@@ -3260,7 +3260,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
@@ -3284,7 +3284,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelector
 {
@@ -3308,7 +3308,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// customErrorResponsePolicy specifies how the Load Balancer returns error responses when BackendService or BackendBucket responds with an error.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicy
 {
@@ -3349,7 +3349,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy
 {
@@ -3443,7 +3443,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl
 {
@@ -3469,7 +3469,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl
 {
@@ -3495,7 +3495,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl
 {
@@ -3515,7 +3515,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -3528,7 +3528,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -3564,7 +3564,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale
 {
@@ -3584,7 +3584,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCachePolicy
 {
@@ -3721,7 +3721,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionCorsPolicy
 {
@@ -3777,7 +3777,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort
 {
@@ -3801,7 +3801,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -3819,7 +3819,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay
 {
@@ -3849,7 +3849,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicy
 {
@@ -3878,7 +3878,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
@@ -3897,7 +3897,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
@@ -3913,7 +3913,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
@@ -3924,7 +3924,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
@@ -3948,7 +3948,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRef
 {
@@ -3967,7 +3967,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
@@ -3983,7 +3983,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
@@ -3994,7 +3994,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
@@ -4018,7 +4018,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelector
 {
@@ -4045,7 +4045,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicy
 {
@@ -4070,7 +4070,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
@@ -4087,7 +4087,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionRetryPolicy
 {
@@ -4114,7 +4114,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionTimeout
 {
@@ -4132,7 +4132,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionT
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionUrlRewrite
 {
@@ -4159,7 +4159,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionU
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum
 {
@@ -4175,7 +4175,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum
 {
@@ -4186,7 +4186,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicy
 {
@@ -4210,7 +4210,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRef
 {
@@ -4229,7 +4229,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum
 {
@@ -4245,7 +4245,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum
 {
@@ -4256,7 +4256,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicy
 {
@@ -4280,7 +4280,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelector
 {
@@ -4300,7 +4300,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
     public V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -4321,7 +4321,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -4348,7 +4348,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
@@ -4382,7 +4382,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServices
 {
@@ -4432,7 +4432,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 /// or urlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteAction
 {
@@ -4534,7 +4534,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum
 {
@@ -4550,7 +4550,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolveEnum
 {
@@ -4561,7 +4561,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicy
 {
@@ -4585,7 +4585,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRefPo
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRef
 {
@@ -4604,7 +4604,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum
 {
@@ -4620,7 +4620,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum
 {
@@ -4631,7 +4631,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicy
 {
@@ -4655,7 +4655,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelec
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelector
 {
@@ -4681,7 +4681,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleServiceSelec
 /// set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleUrlRedirect
 {
@@ -4738,7 +4738,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRuleUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherPathRule
 {
@@ -4792,7 +4792,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherPathRule
     public V1beta2URLMapSpecForProviderPathMatcherPathRuleUrlRedirect? UrlRedirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule
 {
@@ -4816,7 +4816,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesCustomErro
 /// customErrorResponsePolicy specifies how the Load Balancer returns error responses when BackendService or BackendBucket responds with an error.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesCustomErrorResponsePolicy
 {
@@ -4842,7 +4842,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesCustomErro
     public string? ErrorService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd
 {
@@ -4863,7 +4863,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesHeaderActi
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 {
@@ -4890,7 +4890,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesHeaderActi
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesHeaderAction
 {
@@ -4933,7 +4933,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesHeaderActi
 /// must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch
 {
@@ -4946,7 +4946,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
     public double? RangeStart { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRulesHeaderMatches
 {
@@ -5017,7 +5017,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
     public string? SuffixMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels
 {
@@ -5033,7 +5033,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRulesMetadataFilters
 {
@@ -5054,7 +5054,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
     public string? FilterMatchCriteria { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRulesQueryParameterMatches
 {
@@ -5091,7 +5091,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
     public string? RegexMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 {
@@ -5184,7 +5184,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy
 {
@@ -5278,7 +5278,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl
 {
@@ -5304,7 +5304,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl
 {
@@ -5330,7 +5330,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl
 {
@@ -5350,7 +5350,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -5363,7 +5363,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -5399,7 +5399,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale
 {
@@ -5419,7 +5419,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCachePolicy
 {
@@ -5556,7 +5556,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionCorsPolicy
 {
@@ -5612,7 +5612,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort
 {
@@ -5636,7 +5636,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -5654,7 +5654,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay
 {
@@ -5684,7 +5684,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicy
 {
@@ -5713,7 +5713,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
@@ -5733,7 +5733,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 {
@@ -5750,7 +5750,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
@@ -5767,7 +5767,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionRetryPolicy
 {
@@ -5794,7 +5794,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionTimeout
 {
@@ -5812,7 +5812,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionUrlRewrite
 {
@@ -5849,7 +5849,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
     public string? PathTemplateRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -5870,7 +5870,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -5897,7 +5897,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
@@ -5931,7 +5931,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServices
 {
@@ -5973,7 +5973,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// or urlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteAction
 {
@@ -6075,7 +6075,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum
 {
@@ -6091,7 +6091,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum
 {
@@ -6102,7 +6102,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicy
 {
@@ -6126,7 +6126,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRef
 }
 
 /// <summary>Reference to a BackendService in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRef
 {
@@ -6145,7 +6145,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum
 {
@@ -6161,7 +6161,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum
 {
@@ -6172,7 +6172,7 @@ public enum V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicy
 {
@@ -6196,7 +6196,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSel
 }
 
 /// <summary>Selector for a BackendService in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSelector
 {
@@ -6222,7 +6222,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesServiceSel
 /// set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesUrlRedirect
 {
@@ -6279,7 +6279,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRulesUrlRedirec
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRules
 {
@@ -6358,7 +6358,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcherRouteRules
     public V1beta2URLMapSpecForProviderPathMatcherRouteRulesUrlRedirect? UrlRedirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderPathMatcher
 {
@@ -6453,7 +6453,7 @@ public partial class V1beta2URLMapSpecForProviderPathMatcher
     public IList<V1beta2URLMapSpecForProviderPathMatcherRouteRules>? RouteRules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderTestHeaders
 {
@@ -6475,7 +6475,7 @@ public partial class V1beta2URLMapSpecForProviderTestHeaders
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderTestServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderTestServiceRefPolicyResolutionEnum
 {
@@ -6491,7 +6491,7 @@ public enum V1beta2URLMapSpecForProviderTestServiceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderTestServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderTestServiceRefPolicyResolveEnum
 {
@@ -6502,7 +6502,7 @@ public enum V1beta2URLMapSpecForProviderTestServiceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderTestServiceRefPolicy
 {
@@ -6526,7 +6526,7 @@ public partial class V1beta2URLMapSpecForProviderTestServiceRefPolicy
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderTestServiceRef
 {
@@ -6545,7 +6545,7 @@ public partial class V1beta2URLMapSpecForProviderTestServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderTestServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecForProviderTestServiceSelectorPolicyResolutionEnum
 {
@@ -6561,7 +6561,7 @@ public enum V1beta2URLMapSpecForProviderTestServiceSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecForProviderTestServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecForProviderTestServiceSelectorPolicyResolveEnum
 {
@@ -6572,7 +6572,7 @@ public enum V1beta2URLMapSpecForProviderTestServiceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderTestServiceSelectorPolicy
 {
@@ -6596,7 +6596,7 @@ public partial class V1beta2URLMapSpecForProviderTestServiceSelectorPolicy
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderTestServiceSelector
 {
@@ -6616,7 +6616,7 @@ public partial class V1beta2URLMapSpecForProviderTestServiceSelector
     public V1beta2URLMapSpecForProviderTestServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProviderTest
 {
@@ -6668,7 +6668,7 @@ public partial class V1beta2URLMapSpecForProviderTest
     public V1beta2URLMapSpecForProviderTestServiceSelector? ServiceSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecForProvider
 {
@@ -6765,7 +6765,7 @@ public partial class V1beta2URLMapSpecForProvider
     public IList<V1beta2URLMapSpecForProviderTest>? Test { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorResponseRule
 {
@@ -6791,7 +6791,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
@@ -6807,7 +6807,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
@@ -6818,7 +6818,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
@@ -6842,7 +6842,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRef
 {
@@ -6861,7 +6861,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
@@ -6877,7 +6877,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
@@ -6888,7 +6888,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
@@ -6912,7 +6912,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
@@ -6943,7 +6943,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// defaultCustomErrorResponsePolicy is supported only for global external Application Load Balancers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePolicy
 {
@@ -6984,7 +6984,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyCacheKeyPolicy
 {
@@ -7078,7 +7078,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyC
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyClientTtl
 {
@@ -7104,7 +7104,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyC
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyDefaultTtl
 {
@@ -7130,7 +7130,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyD
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyMaxTtl
 {
@@ -7150,7 +7150,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyM
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -7163,7 +7163,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyN
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -7199,7 +7199,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyN
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyServeWhileStale
 {
@@ -7219,7 +7219,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicyS
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicy
 {
@@ -7356,7 +7356,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCachePolicy
 /// W3C Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCorsPolicy
 {
@@ -7412,7 +7412,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionCorsPolicy
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicyAbort
 {
@@ -7436,7 +7436,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -7454,7 +7454,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicyDelay
 {
@@ -7482,7 +7482,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 /// timeout and retryPolicy will be ignored by clients that are configured with a faultInjectionPolicy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicy
 {
@@ -7511,7 +7511,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionMaxStreamDuration
 {
@@ -7530,7 +7530,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionMaxStreamDur
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
@@ -7546,7 +7546,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
@@ -7557,7 +7557,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
@@ -7581,7 +7581,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirro
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
@@ -7600,7 +7600,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
@@ -7616,7 +7616,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
@@ -7627,7 +7627,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
@@ -7651,7 +7651,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirro
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
@@ -7677,7 +7677,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirro
 /// the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicy
 {
@@ -7702,7 +7702,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRequestMirro
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
@@ -7719,7 +7719,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRetryPolicyP
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRetryPolicy
 {
@@ -7745,7 +7745,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionRetryPolicy
 /// If not specified, will use the largest timeout among all backend services associated with the route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionTimeout
 {
@@ -7762,7 +7762,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionTimeout
 /// The spec to modify the URL of the request, prior to forwarding the request to the matched service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionUrlRewrite
 {
@@ -7783,7 +7783,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionUrlRewrite
     public string? PathPrefixRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -7804,7 +7804,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBack
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -7831,7 +7831,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBack
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
@@ -7865,7 +7865,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBack
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBackendServices
 {
@@ -7906,7 +7906,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteActionWeightedBack
 /// Only one of defaultRouteAction or defaultUrlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultRouteAction
 {
@@ -8002,7 +8002,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultServiceRefPolicyResolutionEnum
 {
@@ -8018,7 +8018,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultServiceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultServiceRefPolicyResolveEnum
 {
@@ -8029,7 +8029,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultServiceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultServiceRefPolicy
 {
@@ -8053,7 +8053,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultServiceRefPolicy
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultServiceRef
 {
@@ -8072,7 +8072,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicyResolutionEnum
 {
@@ -8088,7 +8088,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicyResolveEnum
 {
@@ -8099,7 +8099,7 @@ public enum V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicy
 {
@@ -8123,7 +8123,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultServiceSelectorPolicy
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultServiceSelector
 {
@@ -8149,7 +8149,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultServiceSelector
 /// defaultRouteAction must not be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderDefaultUrlRedirect
 {
@@ -8203,7 +8203,7 @@ public partial class V1beta2URLMapSpecInitProviderDefaultUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderHeaderActionRequestHeadersToAdd
 {
@@ -8224,7 +8224,7 @@ public partial class V1beta2URLMapSpecInitProviderHeaderActionRequestHeadersToAd
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderHeaderActionResponseHeadersToAdd
 {
@@ -8251,7 +8251,7 @@ public partial class V1beta2URLMapSpecInitProviderHeaderActionResponseHeadersToA
 /// headerAction specified under pathMatcher.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderHeaderAction
 {
@@ -8285,7 +8285,7 @@ public partial class V1beta2URLMapSpecInitProviderHeaderAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderHostRule
 {
@@ -8312,7 +8312,7 @@ public partial class V1beta2URLMapSpecInitProviderHostRule
     public string? PathMatcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule
 {
@@ -8338,7 +8338,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
@@ -8354,7 +8354,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
@@ -8365,7 +8365,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
@@ -8389,7 +8389,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRef
 {
@@ -8408,7 +8408,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
@@ -8424,7 +8424,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
@@ -8435,7 +8435,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
@@ -8459,7 +8459,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
@@ -8490,7 +8490,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// defaultCustomErrorResponsePolicy is supported only for global external Application Load Balancers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicy
 {
@@ -8531,7 +8531,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy
 {
@@ -8625,7 +8625,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyClientTtl
 {
@@ -8651,7 +8651,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl
 {
@@ -8677,7 +8677,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl
 {
@@ -8697,7 +8697,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -8710,7 +8710,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -8746,7 +8746,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale
 {
@@ -8766,7 +8766,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCachePolicy
 {
@@ -8903,7 +8903,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionCorsPolicy
 {
@@ -8959,7 +8959,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicyAbort
 {
@@ -8983,7 +8983,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -9001,7 +9001,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 {
@@ -9031,7 +9031,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicy
 {
@@ -9060,7 +9060,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
@@ -9079,7 +9079,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
@@ -9095,7 +9095,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
@@ -9106,7 +9106,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
@@ -9130,7 +9130,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
@@ -9149,7 +9149,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
@@ -9165,7 +9165,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
@@ -9176,7 +9176,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
@@ -9200,7 +9200,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
@@ -9227,7 +9227,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicy
 {
@@ -9252,7 +9252,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
@@ -9269,7 +9269,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionRetryPolicy
 {
@@ -9296,7 +9296,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionTimeout
 {
@@ -9314,7 +9314,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionT
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionUrlRewrite
 {
@@ -9335,7 +9335,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionU
     public string? PathPrefixRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -9356,7 +9356,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionW
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -9383,7 +9383,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionW
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
@@ -9417,7 +9417,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionW
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServices
 {
@@ -9458,7 +9458,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteActionW
 /// Only one of defaultRouteAction or defaultUrlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteAction
 {
@@ -9560,7 +9560,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolutionEnum
 {
@@ -9576,7 +9576,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolveEnum
 {
@@ -9587,7 +9587,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicy
 {
@@ -9611,7 +9611,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRefPo
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRef
 {
@@ -9630,7 +9630,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum
 {
@@ -9646,7 +9646,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum
 {
@@ -9657,7 +9657,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicy
 {
@@ -9681,7 +9681,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelec
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelector
 {
@@ -9707,7 +9707,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultServiceSelec
 /// defaultRouteAction must not be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultUrlRedirect
 {
@@ -9764,7 +9764,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherDefaultUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherHeaderActionRequestHeadersToAdd
 {
@@ -9785,7 +9785,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherHeaderActionRequest
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherHeaderActionResponseHeadersToAdd
 {
@@ -9812,7 +9812,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherHeaderActionRespons
 /// matching HttpRouteRule HeaderAction and before the HeaderAction in the UrlMap
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherHeaderAction
 {
@@ -9846,7 +9846,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherHeaderAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule
 {
@@ -9872,7 +9872,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
@@ -9888,7 +9888,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
@@ -9899,7 +9899,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicy
 {
@@ -9923,7 +9923,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomError
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRef
 {
@@ -9942,7 +9942,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
@@ -9958,7 +9958,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
@@ -9969,7 +9969,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
@@ -9993,7 +9993,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomError
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelector
 {
@@ -10017,7 +10017,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// customErrorResponsePolicy specifies how the Load Balancer returns error responses when BackendService or BackendBucket responds with an error.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicy
 {
@@ -10058,7 +10058,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy
 {
@@ -10152,7 +10152,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl
 {
@@ -10178,7 +10178,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl
 {
@@ -10204,7 +10204,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl
 {
@@ -10224,7 +10224,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -10237,7 +10237,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -10273,7 +10273,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale
 {
@@ -10293,7 +10293,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCachePolicy
 {
@@ -10430,7 +10430,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionCorsPolicy
 {
@@ -10486,7 +10486,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort
 {
@@ -10510,7 +10510,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -10528,7 +10528,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay
 {
@@ -10558,7 +10558,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicy
 {
@@ -10587,7 +10587,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
@@ -10606,7 +10606,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
@@ -10622,7 +10622,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
@@ -10633,7 +10633,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
@@ -10657,7 +10657,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRef
 {
@@ -10676,7 +10676,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
@@ -10692,7 +10692,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
@@ -10703,7 +10703,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
@@ -10727,7 +10727,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelector
 {
@@ -10754,7 +10754,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicy
 {
@@ -10779,7 +10779,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
@@ -10796,7 +10796,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionRetryPolicy
 {
@@ -10823,7 +10823,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionTimeout
 {
@@ -10841,7 +10841,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionUrlRewrite
 {
@@ -10868,7 +10868,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum
 {
@@ -10884,7 +10884,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum
 {
@@ -10895,7 +10895,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicy
 {
@@ -10919,7 +10919,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 }
 
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRef
 {
@@ -10938,7 +10938,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum
 {
@@ -10954,7 +10954,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum
 {
@@ -10965,7 +10965,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicy
 {
@@ -10989,7 +10989,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 }
 
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelector
 {
@@ -11009,7 +11009,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
     public V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -11030,7 +11030,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -11057,7 +11057,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
@@ -11091,7 +11091,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServices
 {
@@ -11141,7 +11141,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// or urlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 {
@@ -11243,7 +11243,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum
 {
@@ -11259,7 +11259,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolveEnum
 {
@@ -11270,7 +11270,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicy
 {
@@ -11294,7 +11294,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRefP
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRef
 {
@@ -11313,7 +11313,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum
 {
@@ -11329,7 +11329,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum
 {
@@ -11340,7 +11340,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicy
 {
@@ -11364,7 +11364,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSele
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSelector
 {
@@ -11390,7 +11390,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleServiceSele
 /// set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleUrlRedirect
 {
@@ -11447,7 +11447,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRuleUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRule
 {
@@ -11501,7 +11501,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherPathRule
     public V1beta2URLMapSpecInitProviderPathMatcherPathRuleUrlRedirect? UrlRedirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule
 {
@@ -11525,7 +11525,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesCustomErr
 /// customErrorResponsePolicy specifies how the Load Balancer returns error responses when BackendService or BackendBucket responds with an error.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesCustomErrorResponsePolicy
 {
@@ -11551,7 +11551,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesCustomErr
     public string? ErrorService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd
 {
@@ -11572,7 +11572,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesHeaderAct
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 {
@@ -11599,7 +11599,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesHeaderAct
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesHeaderAction
 {
@@ -11642,7 +11642,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesHeaderAct
 /// must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch
 {
@@ -11655,7 +11655,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
     public double? RangeStart { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesHeaderMatches
 {
@@ -11726,7 +11726,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
     public string? SuffixMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels
 {
@@ -11742,7 +11742,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesMetadataFilters
 {
@@ -11763,7 +11763,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
     public string? FilterMatchCriteria { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesQueryParameterMatches
 {
@@ -11800,7 +11800,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
     public string? RegexMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRules
 {
@@ -11893,7 +11893,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy
 {
@@ -11987,7 +11987,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl
 {
@@ -12013,7 +12013,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl
 {
@@ -12039,7 +12039,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl
 {
@@ -12059,7 +12059,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -12072,7 +12072,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -12108,7 +12108,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale
 {
@@ -12128,7 +12128,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCachePolicy
 {
@@ -12265,7 +12265,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCorsPolicy
 {
@@ -12321,7 +12321,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort
 {
@@ -12345,7 +12345,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -12363,7 +12363,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay
 {
@@ -12393,7 +12393,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicy
 {
@@ -12422,7 +12422,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
@@ -12442,7 +12442,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 {
@@ -12459,7 +12459,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
@@ -12476,7 +12476,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionRetryPolicy
 {
@@ -12503,7 +12503,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionTimeout
 {
@@ -12521,7 +12521,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionUrlRewrite
 {
@@ -12558,7 +12558,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
     public string? PathTemplateRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -12579,7 +12579,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -12606,7 +12606,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
@@ -12640,7 +12640,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServices
 {
@@ -12682,7 +12682,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// or urlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteAction
 {
@@ -12784,7 +12784,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum
 {
@@ -12800,7 +12800,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum
 {
@@ -12811,7 +12811,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicy
 {
@@ -12835,7 +12835,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRe
 }
 
 /// <summary>Reference to a BackendService in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRef
 {
@@ -12854,7 +12854,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum
 {
@@ -12870,7 +12870,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum
 {
@@ -12881,7 +12881,7 @@ public enum V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicy
 {
@@ -12905,7 +12905,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSe
 }
 
 /// <summary>Selector for a BackendService in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSelector
 {
@@ -12931,7 +12931,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesServiceSe
 /// set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesUrlRedirect
 {
@@ -12988,7 +12988,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRulesUrlRedire
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRules
 {
@@ -13067,7 +13067,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcherRouteRules
     public V1beta2URLMapSpecInitProviderPathMatcherRouteRulesUrlRedirect? UrlRedirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderPathMatcher
 {
@@ -13162,7 +13162,7 @@ public partial class V1beta2URLMapSpecInitProviderPathMatcher
     public IList<V1beta2URLMapSpecInitProviderPathMatcherRouteRules>? RouteRules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderTestHeaders
 {
@@ -13184,7 +13184,7 @@ public partial class V1beta2URLMapSpecInitProviderTestHeaders
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderTestServiceRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderTestServiceRefPolicyResolutionEnum
 {
@@ -13200,7 +13200,7 @@ public enum V1beta2URLMapSpecInitProviderTestServiceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderTestServiceRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderTestServiceRefPolicyResolveEnum
 {
@@ -13211,7 +13211,7 @@ public enum V1beta2URLMapSpecInitProviderTestServiceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderTestServiceRefPolicy
 {
@@ -13235,7 +13235,7 @@ public partial class V1beta2URLMapSpecInitProviderTestServiceRefPolicy
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderTestServiceRef
 {
@@ -13254,7 +13254,7 @@ public partial class V1beta2URLMapSpecInitProviderTestServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderTestServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecInitProviderTestServiceSelectorPolicyResolutionEnum
 {
@@ -13270,7 +13270,7 @@ public enum V1beta2URLMapSpecInitProviderTestServiceSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecInitProviderTestServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecInitProviderTestServiceSelectorPolicyResolveEnum
 {
@@ -13281,7 +13281,7 @@ public enum V1beta2URLMapSpecInitProviderTestServiceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderTestServiceSelectorPolicy
 {
@@ -13305,7 +13305,7 @@ public partial class V1beta2URLMapSpecInitProviderTestServiceSelectorPolicy
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderTestServiceSelector
 {
@@ -13325,7 +13325,7 @@ public partial class V1beta2URLMapSpecInitProviderTestServiceSelector
     public V1beta2URLMapSpecInitProviderTestServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProviderTest
 {
@@ -13389,7 +13389,7 @@ public partial class V1beta2URLMapSpecInitProviderTest
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecInitProvider
 {
@@ -13490,7 +13490,7 @@ public partial class V1beta2URLMapSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecManagementPoliciesEnum>))]
 public enum V1beta2URLMapSpecManagementPoliciesEnum
 {
@@ -13514,7 +13514,7 @@ public enum V1beta2URLMapSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2URLMapSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -13530,7 +13530,7 @@ public enum V1beta2URLMapSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2URLMapSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2URLMapSpecProviderConfigRefPolicyResolveEnum
 {
@@ -13541,7 +13541,7 @@ public enum V1beta2URLMapSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecProviderConfigRefPolicy
 {
@@ -13569,7 +13569,7 @@ public partial class V1beta2URLMapSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecProviderConfigRef
 {
@@ -13588,7 +13588,7 @@ public partial class V1beta2URLMapSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpecWriteConnectionSecretToRef
 {
@@ -13602,7 +13602,7 @@ public partial class V1beta2URLMapSpecWriteConnectionSecretToRef
 }
 
 /// <summary>URLMapSpec defines the desired state of URLMap</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapSpec
 {
@@ -13669,7 +13669,7 @@ public partial class V1beta2URLMapSpec
     public V1beta2URLMapSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultCustomErrorResponsePolicyErrorResponseRule
 {
@@ -13700,7 +13700,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultCustomErrorResponsePoli
 /// defaultCustomErrorResponsePolicy is supported only for global external Application Load Balancers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultCustomErrorResponsePolicy
 {
@@ -13733,7 +13733,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultCustomErrorResponsePoli
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyCacheKeyPolicy
 {
@@ -13827,7 +13827,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyC
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyClientTtl
 {
@@ -13853,7 +13853,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyC
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyDefaultTtl
 {
@@ -13879,7 +13879,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyD
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyMaxTtl
 {
@@ -13899,7 +13899,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyM
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -13912,7 +13912,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyN
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -13948,7 +13948,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyN
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyServeWhileStale
 {
@@ -13968,7 +13968,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicyS
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicy
 {
@@ -14105,7 +14105,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCachePolicy
 /// W3C Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCorsPolicy
 {
@@ -14161,7 +14161,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionCorsPolicy
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicyAbort
 {
@@ -14185,7 +14185,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -14203,7 +14203,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicyDelay
 {
@@ -14231,7 +14231,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 /// timeout and retryPolicy will be ignored by clients that are configured with a faultInjectionPolicy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicy
 {
@@ -14260,7 +14260,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionMaxStreamDuration
 {
@@ -14279,7 +14279,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionMaxStreamDur
 /// the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRequestMirrorPolicy
 {
@@ -14296,7 +14296,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRequestMirro
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
@@ -14313,7 +14313,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRetryPolicyP
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRetryPolicy
 {
@@ -14339,7 +14339,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionRetryPolicy
 /// If not specified, will use the largest timeout among all backend services associated with the route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionTimeout
 {
@@ -14356,7 +14356,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionTimeout
 /// The spec to modify the URL of the request, prior to forwarding the request to the matched service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionUrlRewrite
 {
@@ -14377,7 +14377,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionUrlRewrite
     public string? PathPrefixRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -14398,7 +14398,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBack
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -14425,7 +14425,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBack
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
@@ -14459,7 +14459,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBack
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBackendServices
 {
@@ -14500,7 +14500,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteActionWeightedBack
 /// Only one of defaultRouteAction or defaultUrlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultRouteAction
 {
@@ -14596,7 +14596,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultRouteAction
 /// defaultRouteAction must not be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderDefaultUrlRedirect
 {
@@ -14650,7 +14650,7 @@ public partial class V1beta2URLMapStatusAtProviderDefaultUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderHeaderActionRequestHeadersToAdd
 {
@@ -14671,7 +14671,7 @@ public partial class V1beta2URLMapStatusAtProviderHeaderActionRequestHeadersToAd
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderHeaderActionResponseHeadersToAdd
 {
@@ -14698,7 +14698,7 @@ public partial class V1beta2URLMapStatusAtProviderHeaderActionResponseHeadersToA
 /// headerAction specified under pathMatcher.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderHeaderAction
 {
@@ -14732,7 +14732,7 @@ public partial class V1beta2URLMapStatusAtProviderHeaderAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderHostRule
 {
@@ -14759,7 +14759,7 @@ public partial class V1beta2URLMapStatusAtProviderHostRule
     public string? PathMatcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule
 {
@@ -14790,7 +14790,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultCustomErrorR
 /// defaultCustomErrorResponsePolicy is supported only for global external Application Load Balancers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultCustomErrorResponsePolicy
 {
@@ -14823,7 +14823,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultCustomErrorR
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy
 {
@@ -14917,7 +14917,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyClientTtl
 {
@@ -14943,7 +14943,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyDefaultTtl
 {
@@ -14969,7 +14969,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyMaxTtl
 {
@@ -14989,7 +14989,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -15002,7 +15002,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -15038,7 +15038,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicyServeWhileStale
 {
@@ -15058,7 +15058,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCachePolicy
 {
@@ -15195,7 +15195,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionCorsPolicy
 {
@@ -15251,7 +15251,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicyAbort
 {
@@ -15275,7 +15275,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -15293,7 +15293,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 {
@@ -15323,7 +15323,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicy
 {
@@ -15352,7 +15352,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
@@ -15372,7 +15372,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionM
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionRequestMirrorPolicy
 {
@@ -15389,7 +15389,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
@@ -15406,7 +15406,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionRetryPolicy
 {
@@ -15433,7 +15433,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionTimeout
 {
@@ -15451,7 +15451,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionT
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionUrlRewrite
 {
@@ -15472,7 +15472,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionU
     public string? PathPrefixRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -15493,7 +15493,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionW
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -15520,7 +15520,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionW
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
@@ -15554,7 +15554,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionW
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServices
 {
@@ -15595,7 +15595,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteActionW
 /// Only one of defaultRouteAction or defaultUrlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteAction
 {
@@ -15697,7 +15697,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultRouteAction
 /// defaultRouteAction must not be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultUrlRedirect
 {
@@ -15754,7 +15754,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherDefaultUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherHeaderActionRequestHeadersToAdd
 {
@@ -15775,7 +15775,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherHeaderActionRequest
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherHeaderActionResponseHeadersToAdd
 {
@@ -15802,7 +15802,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherHeaderActionRespons
 /// matching HttpRouteRule HeaderAction and before the HeaderAction in the UrlMap
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherHeaderAction
 {
@@ -15836,7 +15836,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherHeaderAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule
 {
@@ -15860,7 +15860,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleCustomError
 /// customErrorResponsePolicy specifies how the Load Balancer returns error responses when BackendService or BackendBucket responds with an error.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleCustomErrorResponsePolicy
 {
@@ -15893,7 +15893,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleCustomError
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicy
 {
@@ -15987,7 +15987,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyClientTtl
 {
@@ -16013,7 +16013,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyDefaultTtl
 {
@@ -16039,7 +16039,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyMaxTtl
 {
@@ -16059,7 +16059,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -16072,7 +16072,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -16108,7 +16108,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicyServeWhileStale
 {
@@ -16128,7 +16128,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCachePolicy
 {
@@ -16265,7 +16265,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionCorsPolicy
 {
@@ -16321,7 +16321,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort
 {
@@ -16345,7 +16345,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -16363,7 +16363,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay
 {
@@ -16393,7 +16393,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicy
 {
@@ -16422,7 +16422,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
@@ -16442,7 +16442,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionRequestMirrorPolicy
 {
@@ -16459,7 +16459,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
@@ -16476,7 +16476,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionRetryPolicy
 {
@@ -16503,7 +16503,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionTimeout
 {
@@ -16521,7 +16521,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionUrlRewrite
 {
@@ -16542,7 +16542,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
     public string? PathPrefixRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -16563,7 +16563,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -16590,7 +16590,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
@@ -16624,7 +16624,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServices
 {
@@ -16666,7 +16666,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// or urlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 {
@@ -16768,7 +16768,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 /// set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleUrlRedirect
 {
@@ -16825,7 +16825,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRuleUrlRedirect
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRule
 {
@@ -16871,7 +16871,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherPathRule
     public V1beta2URLMapStatusAtProviderPathMatcherPathRuleUrlRedirect? UrlRedirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule
 {
@@ -16895,7 +16895,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesCustomErr
 /// customErrorResponsePolicy specifies how the Load Balancer returns error responses when BackendService or BackendBucket responds with an error.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesCustomErrorResponsePolicy
 {
@@ -16921,7 +16921,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesCustomErr
     public string? ErrorService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd
 {
@@ -16942,7 +16942,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesHeaderAct
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 {
@@ -16969,7 +16969,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesHeaderAct
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesHeaderAction
 {
@@ -17012,7 +17012,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesHeaderAct
 /// must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch
 {
@@ -17025,7 +17025,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
     public double? RangeStart { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesHeaderMatches
 {
@@ -17096,7 +17096,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
     public string? SuffixMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels
 {
@@ -17112,7 +17112,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesMetadataFilters
 {
@@ -17133,7 +17133,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
     public string? FilterMatchCriteria { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesQueryParameterMatches
 {
@@ -17170,7 +17170,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
     public string? RegexMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRules
 {
@@ -17263,7 +17263,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 /// host, and only query parameters known to Cloud Storage are included.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyCacheKeyPolicy
 {
@@ -17357,7 +17357,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// Cannot be specified when cacheMode is USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyClientTtl
 {
@@ -17383,7 +17383,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// USE_ORIGIN_HEADERS.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl
 {
@@ -17409,7 +17409,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// mode.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyMaxTtl
 {
@@ -17429,7 +17429,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// before the defined TTL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicyTtl
 {
@@ -17442,7 +17442,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
     public string? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPolicy
 {
@@ -17478,7 +17478,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// to zero (0) to disable serve-while-stale.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale
 {
@@ -17498,7 +17498,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// backend has Identity-Aware Proxy enabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCachePolicy
 {
@@ -17635,7 +17635,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// Recommendation for Cross Origin Resource Sharing
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCorsPolicy
 {
@@ -17691,7 +17691,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// injection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort
 {
@@ -17715,7 +17715,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// Specifies the value of the fixed delay interval.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
@@ -17733,7 +17733,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// injection, before being sent to a backend service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay
 {
@@ -17763,7 +17763,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// ignored by clients that are configured with a fault_injection_policy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicy
 {
@@ -17792,7 +17792,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// including all retries. A stream that does not complete in this duration is closed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
@@ -17812,7 +17812,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// service, the host / authority header is suffixed with -shadow.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 {
@@ -17829,7 +17829,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// Specifies a non-zero timeout per retry attempt.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
@@ -17846,7 +17846,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// Specifies the retry policy associated with this route.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionRetryPolicy
 {
@@ -17873,7 +17873,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// specified, the default value is 15 seconds.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionTimeout
 {
@@ -17891,7 +17891,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// the matched service
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionUrlRewrite
 {
@@ -17928,7 +17928,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
     public string? PathTemplateRewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
@@ -17949,7 +17949,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
@@ -17976,7 +17976,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// headerAction in the enclosing HttpRouteRule, PathMatcher and UrlMap.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
@@ -18010,7 +18010,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
     public IList<string>? ResponseHeadersToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServices
 {
@@ -18052,7 +18052,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// or urlRedirect must be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteAction
 {
@@ -18154,7 +18154,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 /// set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesUrlRedirect
 {
@@ -18211,7 +18211,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRulesUrlRedire
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRules
 {
@@ -18282,7 +18282,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcherRouteRules
     public V1beta2URLMapStatusAtProviderPathMatcherRouteRulesUrlRedirect? UrlRedirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderPathMatcher
 {
@@ -18369,7 +18369,7 @@ public partial class V1beta2URLMapStatusAtProviderPathMatcher
     public IList<V1beta2URLMapStatusAtProviderPathMatcherRouteRules>? RouteRules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderTestHeaders
 {
@@ -18385,7 +18385,7 @@ public partial class V1beta2URLMapStatusAtProviderTestHeaders
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProviderTest
 {
@@ -18429,7 +18429,7 @@ public partial class V1beta2URLMapStatusAtProviderTest
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusAtProvider
 {
@@ -18549,7 +18549,7 @@ public partial class V1beta2URLMapStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatusConditions
 {
@@ -18592,7 +18592,7 @@ public partial class V1beta2URLMapStatusConditions
 }
 
 /// <summary>URLMapStatus defines the observed state of URLMap.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2URLMapStatus
 {
@@ -18622,7 +18622,7 @@ public partial class V1beta2URLMapStatus
 }
 
 /// <summary>URLMap is the Schema for the URLMaps API. UrlMaps are used to route requests to a backend service based on rules that you define for the host and path of an incoming URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2URLMap : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2URLMapSpec>, IStatus<V1beta2URLMapStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datashare.azure.m.upbound.io;
 /// <summary>DataSetKustoDatabase is the Schema for the DataSetKustoDatabases API. Manages a Data Share Kusto Database Dataset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetKustoDatabaseList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataSetKustoDatabase>
@@ -43,7 +43,7 @@ public partial class V1beta1DataSetKustoDatabaseList : IKubernetesObject<V1ListM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRe
 }
 
 /// <summary>Reference to a Database in kusto to populate kustoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSe
 }
 
 /// <summary>Selector for a Database in kusto to populate kustoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderKustoDatabaseIdSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdRefPolicy
 }
 
 /// <summary>Reference to a DataShare in datashare to populate shareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPo
 }
 
 /// <summary>Selector for a DataShare in datashare to populate shareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelector
     public V1beta1DataSetKustoDatabaseSpecForProviderShareIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecForProvider
 {
@@ -382,7 +382,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRefPolicyResolutionEnum
 {
@@ -398,7 +398,7 @@ public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRefPolicyResolveEnum
 {
@@ -409,7 +409,7 @@ public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRefPolicy
 {
@@ -433,7 +433,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdR
 }
 
 /// <summary>Reference to a Database in kusto to populate kustoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelectorPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelectorPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelectorPolicy
 {
@@ -507,7 +507,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdS
 }
 
 /// <summary>Selector for a Database in kusto to populate kustoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdSelector
 {
@@ -543,7 +543,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecInitProviderKustoDatabaseIdS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecInitProvider
 {
@@ -564,7 +564,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetKustoDatabaseSpecManagementPoliciesEnum>))]
 public enum V1beta1DataSetKustoDatabaseSpecManagementPoliciesEnum
 {
@@ -587,7 +587,7 @@ public enum V1beta1DataSetKustoDatabaseSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecProviderConfigRef
 {
@@ -606,7 +606,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpecWriteConnectionSecretToRef
 {
@@ -616,7 +616,7 @@ public partial class V1beta1DataSetKustoDatabaseSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DataSetKustoDatabaseSpec defines the desired state of DataSetKustoDatabase</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseSpec
 {
@@ -667,7 +667,7 @@ public partial class V1beta1DataSetKustoDatabaseSpec
     public V1beta1DataSetKustoDatabaseSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseStatusAtProvider
 {
@@ -693,7 +693,7 @@ public partial class V1beta1DataSetKustoDatabaseStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseStatusConditions
 {
@@ -736,7 +736,7 @@ public partial class V1beta1DataSetKustoDatabaseStatusConditions
 }
 
 /// <summary>DataSetKustoDatabaseStatus defines the observed state of DataSetKustoDatabase.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetKustoDatabaseStatus
 {
@@ -766,7 +766,7 @@ public partial class V1beta1DataSetKustoDatabaseStatus
 }
 
 /// <summary>DataSetKustoDatabase is the Schema for the DataSetKustoDatabases API. Manages a Data Share Kusto Database Dataset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetKustoDatabase : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataSetKustoDatabaseSpec>, IStatus<V1beta1DataSetKustoDatabaseStatus?>

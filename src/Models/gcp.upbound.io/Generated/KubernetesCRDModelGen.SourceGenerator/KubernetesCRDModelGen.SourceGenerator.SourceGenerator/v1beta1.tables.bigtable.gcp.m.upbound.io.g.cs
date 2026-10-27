@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigtable.gcp.m.upbound.io;
 /// <summary>Table is the Schema for the Tables API. Creates a Google Cloud Bigtable table inside an instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TableList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Table>
@@ -38,7 +38,7 @@ public partial class V1beta1TableList : IKubernetesObject<V1ListMeta>, IItems<V1
 }
 
 /// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderAutomatedBackupPolicy
 {
@@ -52,7 +52,7 @@ public partial class V1beta1TableSpecForProviderAutomatedBackupPolicy
     public string? RetentionPeriod { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderColumnFamily
 {
@@ -71,7 +71,7 @@ public partial class V1beta1TableSpecForProviderColumnFamily
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableSpecForProviderInstanceNameRefPolicyResolutionEnum>))]
 public enum V1beta1TableSpecForProviderInstanceNameRefPolicyResolutionEnum
 {
@@ -87,7 +87,7 @@ public enum V1beta1TableSpecForProviderInstanceNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableSpecForProviderInstanceNameRefPolicyResolveEnum>))]
 public enum V1beta1TableSpecForProviderInstanceNameRefPolicyResolveEnum
 {
@@ -98,7 +98,7 @@ public enum V1beta1TableSpecForProviderInstanceNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderInstanceNameRefPolicy
 {
@@ -122,7 +122,7 @@ public partial class V1beta1TableSpecForProviderInstanceNameRefPolicy
 }
 
 /// <summary>Reference to a Instance in bigtable to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderInstanceNameRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1TableSpecForProviderInstanceNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableSpecForProviderInstanceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TableSpecForProviderInstanceNameSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1TableSpecForProviderInstanceNameSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableSpecForProviderInstanceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TableSpecForProviderInstanceNameSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1TableSpecForProviderInstanceNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderInstanceNameSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta1TableSpecForProviderInstanceNameSelectorPolicy
 }
 
 /// <summary>Selector for a Instance in bigtable to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderInstanceNameSelector
 {
@@ -220,7 +220,7 @@ public partial class V1beta1TableSpecForProviderInstanceNameSelector
     public V1beta1TableSpecForProviderInstanceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProvider
 {
@@ -268,7 +268,7 @@ public partial class V1beta1TableSpecForProvider
 }
 
 /// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProviderAutomatedBackupPolicy
 {
@@ -282,7 +282,7 @@ public partial class V1beta1TableSpecInitProviderAutomatedBackupPolicy
     public string? RetentionPeriod { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProviderColumnFamily
 {
@@ -307,7 +307,7 @@ public partial class V1beta1TableSpecInitProviderColumnFamily
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProvider
 {
@@ -346,7 +346,7 @@ public partial class V1beta1TableSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableSpecManagementPoliciesEnum>))]
 public enum V1beta1TableSpecManagementPoliciesEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1TableSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecProviderConfigRef
 {
@@ -388,7 +388,7 @@ public partial class V1beta1TableSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecWriteConnectionSecretToRef
 {
@@ -398,7 +398,7 @@ public partial class V1beta1TableSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TableSpec defines the desired state of Table</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpec
 {
@@ -450,7 +450,7 @@ public partial class V1beta1TableSpec
 }
 
 /// <summary>Defines an automated backup policy for a table, specified by retention_period and frequency. To create a table with automated backup disabled, either omit the automated_backup_policy argument or set both retention_period and frequency to &quot;0&quot;. To disable automated backup on an existing table that has automated backup enabled, set both retention_period and frequency to &quot;0&quot;. When updating an existing table, change the retention_period or frequency by setting the respective property to a non-zero value. The policy also accepts an optional locations list to specify backup storage locations; if locations is omitted, the policy defaults to all clusters in the instance. If the automated_backup_policy argument is not provided on update, the resource&apos;s automated backup policy will not be modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProviderAutomatedBackupPolicy
 {
@@ -464,7 +464,7 @@ public partial class V1beta1TableStatusAtProviderAutomatedBackupPolicy
     public string? RetentionPeriod { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProviderColumnFamily
 {
@@ -477,7 +477,7 @@ public partial class V1beta1TableStatusAtProviderColumnFamily
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProvider
 {
@@ -528,7 +528,7 @@ public partial class V1beta1TableStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusConditions
 {
@@ -571,7 +571,7 @@ public partial class V1beta1TableStatusConditions
 }
 
 /// <summary>TableStatus defines the observed state of Table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatus
 {
@@ -601,7 +601,7 @@ public partial class V1beta1TableStatus
 }
 
 /// <summary>Table is the Schema for the Tables API. Creates a Google Cloud Bigtable table inside an instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Table : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TableSpec>, IStatus<V1beta1TableStatus?>

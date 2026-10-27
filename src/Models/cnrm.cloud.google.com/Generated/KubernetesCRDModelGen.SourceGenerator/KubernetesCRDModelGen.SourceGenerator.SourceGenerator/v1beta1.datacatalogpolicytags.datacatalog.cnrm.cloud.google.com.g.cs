@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datacatalog.cnrm.cloud.google.com;
 /// <summary>DataCatalogPolicyTag is the Schema for the DataCatalogPolicyTag API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataCatalogPolicyTagList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataCatalogPolicyTag>
@@ -38,7 +38,7 @@ public partial class V1beta1DataCatalogPolicyTagList : IKubernetesObject<V1ListM
 }
 
 /// <summary>PolicyTagRef defines the resource reference to DataCatalogPolicyTag, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataCatalogPolicyTagSpecParentPolicyTagRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1DataCatalogPolicyTagSpecParentPolicyTagRef
 }
 
 /// <summary>TaxonomyRef defines the resource reference to DataCatalogTaxonomy, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataCatalogPolicyTagSpecTaxonomyRef
 {
@@ -74,7 +74,7 @@ public partial class V1beta1DataCatalogPolicyTagSpecTaxonomyRef
 }
 
 /// <summary>DataCatalogPolicyTagSpec defines the desired state of DataCatalogPolicyTag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataCatalogPolicyTagSpec
 {
@@ -99,7 +99,7 @@ public partial class V1beta1DataCatalogPolicyTagSpec
     public required V1beta1DataCatalogPolicyTagSpecTaxonomyRef TaxonomyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataCatalogPolicyTagStatusConditions
 {
@@ -125,14 +125,14 @@ public partial class V1beta1DataCatalogPolicyTagStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataCatalogPolicyTagStatusObservedState
 {
 }
 
 /// <summary>DataCatalogPolicyTagStatus defines the config connector machine state of DataCatalogPolicyTag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataCatalogPolicyTagStatus
 {
@@ -162,7 +162,7 @@ public partial class V1beta1DataCatalogPolicyTagStatus
 }
 
 /// <summary>DataCatalogPolicyTag is the Schema for the DataCatalogPolicyTag API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataCatalogPolicyTag : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataCatalogPolicyTagSpec>, IStatus<V1beta1DataCatalogPolicyTagStatus?>

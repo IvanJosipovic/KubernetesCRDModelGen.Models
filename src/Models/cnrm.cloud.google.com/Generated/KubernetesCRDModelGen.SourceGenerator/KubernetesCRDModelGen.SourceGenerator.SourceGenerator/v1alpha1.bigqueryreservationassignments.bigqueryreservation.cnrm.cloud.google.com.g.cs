@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigqueryreservation.cnrm.cloud.google.com;
 /// <summary>BigQueryReservationAssignment is the Schema for the BigQueryReservationAssignment API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BigQueryReservationAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1BigQueryReservationAssignment>
@@ -38,7 +38,7 @@ public partial class V1alpha1BigQueryReservationAssignmentList : IKubernetesObje
 }
 
 /// <summary>Exactly one of ProjectRef or FolderRef or OrganizationRef must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentSpecAssigneeFolderRef
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1BigQueryReservationAssignmentSpecAssigneeFolderRef
 }
 
 /// <summary>Exactly one of ProjectRef or FolderRef or OrganizationRef must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentSpecAssigneeOrganizationRef
 {
@@ -66,7 +66,7 @@ public partial class V1alpha1BigQueryReservationAssignmentSpecAssigneeOrganizati
 }
 
 /// <summary>Exactly one of ProjectRef or FolderRef or OrganizationRef must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentSpecAssigneeProjectRef
 {
@@ -88,7 +88,7 @@ public partial class V1alpha1BigQueryReservationAssignmentSpecAssigneeProjectRef
 }
 
 /// <summary>Immutable. Required. The resource which will use the reservation. E.g. `projects/myproject`, `folders/123`, or `organizations/456`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentSpecAssignee
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1BigQueryReservationAssignmentSpecAssignee
 }
 
 /// <summary>The name of reservation to create a new assignment in, or to move the assignment to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentSpecReservationRef
 {
@@ -124,7 +124,7 @@ public partial class V1alpha1BigQueryReservationAssignmentSpecReservationRef
 }
 
 /// <summary>BigQueryReservationAssignmentSpec defines the desired state of BigQueryReservationAssignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentSpec
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1BigQueryReservationAssignmentSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentStatusConditions
 {
@@ -171,7 +171,7 @@ public partial class V1alpha1BigQueryReservationAssignmentStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentStatusObservedState
 {
@@ -181,7 +181,7 @@ public partial class V1alpha1BigQueryReservationAssignmentStatusObservedState
 }
 
 /// <summary>BigQueryReservationAssignmentStatus defines the config connector machine state of BigQueryReservationAssignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BigQueryReservationAssignmentStatus
 {
@@ -203,7 +203,7 @@ public partial class V1alpha1BigQueryReservationAssignmentStatus
 }
 
 /// <summary>BigQueryReservationAssignment is the Schema for the BigQueryReservationAssignment API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BigQueryReservationAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BigQueryReservationAssignmentSpec>, IStatus<V1alpha1BigQueryReservationAssignmentStatus?>

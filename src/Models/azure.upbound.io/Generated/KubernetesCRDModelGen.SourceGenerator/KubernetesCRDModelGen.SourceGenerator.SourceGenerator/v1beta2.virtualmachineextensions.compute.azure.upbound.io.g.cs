@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
 /// <summary>VirtualMachineExtension is the Schema for the VirtualMachineExtensions API. Manages a Virtual Machine Extension to provide post deployment configuration and run automated tasks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualMachineExtensionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2VirtualMachineExtension>
@@ -46,7 +46,7 @@ public partial class V1beta2VirtualMachineExtensionList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecDeletionPolicyEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2VirtualMachineExtensionSpecDeletionPolicyEnum
 }
 
 /// <summary>A protected_settings_from_key_vault block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecForProviderProtectedSettingsFromKeyVault
 {
@@ -71,7 +71,7 @@ public partial class V1beta2VirtualMachineExtensionSpecForProviderProtectedSetti
 }
 
 /// <summary>The protected_settings passed to the extension, like settings, these are specified as a JSON object in a string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecForProviderProtectedSettingsSecretRef
 {
@@ -94,7 +94,7 @@ public partial class V1beta2VirtualMachineExtensionSpecForProviderProtectedSetti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRefPolicyResolutionEnum
 {
@@ -110,7 +110,7 @@ public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRefPolicyResolveEnum
 {
@@ -121,7 +121,7 @@ public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRefPolicy
 {
@@ -145,7 +145,7 @@ public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachine
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdRef
 {
@@ -164,7 +164,7 @@ public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachine
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
@@ -191,7 +191,7 @@ public enum V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelectorPolicy
 {
@@ -215,7 +215,7 @@ public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachine
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelector
 {
@@ -235,7 +235,7 @@ public partial class V1beta2VirtualMachineExtensionSpecForProviderVirtualMachine
     public V1beta2VirtualMachineExtensionSpecForProviderVirtualMachineIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecForProvider
 {
@@ -297,7 +297,7 @@ public partial class V1beta2VirtualMachineExtensionSpecForProvider
 }
 
 /// <summary>A protected_settings_from_key_vault block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecInitProviderProtectedSettingsFromKeyVault
 {
@@ -311,7 +311,7 @@ public partial class V1beta2VirtualMachineExtensionSpecInitProviderProtectedSett
 }
 
 /// <summary>The protected_settings passed to the extension, like settings, these are specified as a JSON object in a string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecInitProviderProtectedSettingsSecretRef
 {
@@ -340,7 +340,7 @@ public partial class V1beta2VirtualMachineExtensionSpecInitProviderProtectedSett
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecInitProvider
 {
@@ -393,7 +393,7 @@ public partial class V1beta2VirtualMachineExtensionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecManagementPoliciesEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecManagementPoliciesEnum
 {
@@ -417,7 +417,7 @@ public enum V1beta2VirtualMachineExtensionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicy
 {
@@ -472,7 +472,7 @@ public partial class V1beta2VirtualMachineExtensionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecProviderConfigRef
 {
@@ -491,7 +491,7 @@ public partial class V1beta2VirtualMachineExtensionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpecWriteConnectionSecretToRef
 {
@@ -505,7 +505,7 @@ public partial class V1beta2VirtualMachineExtensionSpecWriteConnectionSecretToRe
 }
 
 /// <summary>VirtualMachineExtensionSpec defines the desired state of VirtualMachineExtension</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionSpec
 {
@@ -573,7 +573,7 @@ public partial class V1beta2VirtualMachineExtensionSpec
 }
 
 /// <summary>A protected_settings_from_key_vault block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionStatusAtProviderProtectedSettingsFromKeyVault
 {
@@ -586,7 +586,7 @@ public partial class V1beta2VirtualMachineExtensionStatusAtProviderProtectedSett
     public string? SourceVaultId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionStatusAtProvider
 {
@@ -640,7 +640,7 @@ public partial class V1beta2VirtualMachineExtensionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionStatusConditions
 {
@@ -683,7 +683,7 @@ public partial class V1beta2VirtualMachineExtensionStatusConditions
 }
 
 /// <summary>VirtualMachineExtensionStatus defines the observed state of VirtualMachineExtension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineExtensionStatus
 {
@@ -713,7 +713,7 @@ public partial class V1beta2VirtualMachineExtensionStatus
 }
 
 /// <summary>VirtualMachineExtension is the Schema for the VirtualMachineExtensions API. Manages a Virtual Machine Extension to provide post deployment configuration and run automated tasks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualMachineExtension : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2VirtualMachineExtensionSpec>, IStatus<V1beta2VirtualMachineExtensionStatus?>

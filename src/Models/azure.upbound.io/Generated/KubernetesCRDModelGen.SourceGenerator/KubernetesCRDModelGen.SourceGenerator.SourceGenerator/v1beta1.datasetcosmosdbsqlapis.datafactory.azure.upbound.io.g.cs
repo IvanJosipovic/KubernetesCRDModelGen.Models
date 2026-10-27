@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
 /// <summary>DataSetCosmosDBSQLAPI is the Schema for the DataSetCosmosDBSQLAPIs API. Manages an Azure Cosmos DB SQL API Dataset inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetCosmosDBSQLAPIList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataSetCosmosDBSQLAPI>
@@ -46,7 +46,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPIList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecDeletionPolicyEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRef
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSel
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderDataFactoryIdSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRefPolicyResolveEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNam
 }
 
 /// <summary>Reference to a LinkedServiceCosmosDB in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNam
 }
 
 /// <summary>Selector for a LinkedServiceCosmosDB in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNam
     public V1beta1DataSetCosmosDBSQLAPISpecForProviderLinkedServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderSchemaColumn
 {
@@ -367,7 +367,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProviderSchemaColumn
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecForProvider
 {
@@ -430,7 +430,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRefPolicyResolutionEnum
 {
@@ -446,7 +446,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRefPolicyResolveEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRefPolicyResolveEnum
 {
@@ -457,7 +457,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRefPolicy
 {
@@ -481,7 +481,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNa
 }
 
 /// <summary>Reference to a LinkedServiceCosmosDB in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameRef
 {
@@ -500,7 +500,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelectorPolicyResolutionEnum
 {
@@ -516,7 +516,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelectorPolicyResolveEnum
 {
@@ -527,7 +527,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelectorPolicy
 {
@@ -551,7 +551,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNa
 }
 
 /// <summary>Selector for a LinkedServiceCosmosDB in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelector
 {
@@ -571,7 +571,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNa
     public V1beta1DataSetCosmosDBSQLAPISpecInitProviderLinkedServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderSchemaColumn
 {
@@ -600,7 +600,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProviderSchemaColumn
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProvider
 {
@@ -649,7 +649,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecManagementPoliciesEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecManagementPoliciesEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicyResolutionEnum
 {
@@ -689,7 +689,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicyResolveEnum
 {
@@ -700,7 +700,7 @@ public enum V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicy
 {
@@ -728,7 +728,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRef
 {
@@ -747,7 +747,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpecWriteConnectionSecretToRef
 {
@@ -761,7 +761,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpecWriteConnectionSecretToRef
 }
 
 /// <summary>DataSetCosmosDBSQLAPISpec defines the desired state of DataSetCosmosDBSQLAPI</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPISpec
 {
@@ -828,7 +828,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPISpec
     public V1beta1DataSetCosmosDBSQLAPISpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPIStatusAtProviderSchemaColumn
 {
@@ -845,7 +845,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPIStatusAtProviderSchemaColumn
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPIStatusAtProvider
 {
@@ -891,7 +891,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPIStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPIStatusConditions
 {
@@ -934,7 +934,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPIStatusConditions
 }
 
 /// <summary>DataSetCosmosDBSQLAPIStatus defines the observed state of DataSetCosmosDBSQLAPI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetCosmosDBSQLAPIStatus
 {
@@ -964,7 +964,7 @@ public partial class V1beta1DataSetCosmosDBSQLAPIStatus
 }
 
 /// <summary>DataSetCosmosDBSQLAPI is the Schema for the DataSetCosmosDBSQLAPIs API. Manages an Azure Cosmos DB SQL API Dataset inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetCosmosDBSQLAPI : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataSetCosmosDBSQLAPISpec>, IStatus<V1beta1DataSetCosmosDBSQLAPIStatus?>

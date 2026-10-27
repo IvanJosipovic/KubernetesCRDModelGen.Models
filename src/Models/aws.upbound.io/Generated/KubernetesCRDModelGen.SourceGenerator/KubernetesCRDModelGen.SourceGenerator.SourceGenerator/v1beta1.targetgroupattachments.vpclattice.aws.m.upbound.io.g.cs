@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vpclattice.aws.m.upbound.io;
 /// <summary>TargetGroupAttachment is the Schema for the TargetGroupAttachments API. Provides the ability to register a target with an AWS VPC Lattice Target Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TargetGroupAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TargetGroupAttachment>
@@ -38,7 +38,7 @@ public partial class V1beta1TargetGroupAttachmentList : IKubernetesObject<V1List
 }
 
 /// <summary>Target to register with the target group. See target Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecForProviderTarget
 {
@@ -57,7 +57,7 @@ public partial class V1beta1TargetGroupAttachmentSpecForProviderTarget
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRefPolicyResolutionEnum
 {
@@ -73,7 +73,7 @@ public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRefPolicyResolveEnum
 {
@@ -84,7 +84,7 @@ public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRefPolicy
 {
@@ -108,7 +108,7 @@ public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdent
 }
 
 /// <summary>Reference to a TargetGroup in vpclattice to populate targetGroupIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdent
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdent
 }
 
 /// <summary>Selector for a TargetGroup in vpclattice to populate targetGroupIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelector
 {
@@ -206,7 +206,7 @@ public partial class V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdent
     public V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecForProvider
 {
@@ -235,7 +235,7 @@ public partial class V1beta1TargetGroupAttachmentSpecForProvider
 }
 
 /// <summary>Target to register with the target group. See target Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProviderTarget
 {
@@ -254,7 +254,7 @@ public partial class V1beta1TargetGroupAttachmentSpecInitProviderTarget
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRefPolicyResolutionEnum
 {
@@ -270,7 +270,7 @@ public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRefPolicyResolveEnum
 {
@@ -281,7 +281,7 @@ public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRefPolicy
 {
@@ -305,7 +305,7 @@ public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIden
 }
 
 /// <summary>Reference to a TargetGroup in vpclattice to populate targetGroupIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierRef
 {
@@ -328,7 +328,7 @@ public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIden
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSelectorPolicyResolutionEnum
 {
@@ -344,7 +344,7 @@ public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSelectorPolicyResolveEnum
 {
@@ -355,7 +355,7 @@ public enum V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSelectorPolicy
 {
@@ -379,7 +379,7 @@ public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIden
 }
 
 /// <summary>Selector for a TargetGroup in vpclattice to populate targetGroupIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIdentifierSelector
 {
@@ -415,7 +415,7 @@ public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIden
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProvider
 {
@@ -440,7 +440,7 @@ public partial class V1beta1TargetGroupAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TargetGroupAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1TargetGroupAttachmentSpecManagementPoliciesEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta1TargetGroupAttachmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecProviderConfigRef
 {
@@ -482,7 +482,7 @@ public partial class V1beta1TargetGroupAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecWriteConnectionSecretToRef
 {
@@ -492,7 +492,7 @@ public partial class V1beta1TargetGroupAttachmentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TargetGroupAttachmentSpec defines the desired state of TargetGroupAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpec
 {
@@ -544,7 +544,7 @@ public partial class V1beta1TargetGroupAttachmentSpec
 }
 
 /// <summary>Target to register with the target group. See target Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentStatusAtProviderTarget
 {
@@ -557,7 +557,7 @@ public partial class V1beta1TargetGroupAttachmentStatusAtProviderTarget
     public double? Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentStatusAtProvider
 {
@@ -582,7 +582,7 @@ public partial class V1beta1TargetGroupAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentStatusConditions
 {
@@ -625,7 +625,7 @@ public partial class V1beta1TargetGroupAttachmentStatusConditions
 }
 
 /// <summary>TargetGroupAttachmentStatus defines the observed state of TargetGroupAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentStatus
 {
@@ -655,7 +655,7 @@ public partial class V1beta1TargetGroupAttachmentStatus
 }
 
 /// <summary>TargetGroupAttachment is the Schema for the TargetGroupAttachments API. Provides the ability to register a target with an AWS VPC Lattice Target Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TargetGroupAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TargetGroupAttachmentSpec>, IStatus<V1beta1TargetGroupAttachmentStatus?>

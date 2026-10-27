@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datastream.cnrm.cloud.google.com;
 /// <summary>DatastreamConnectionProfile is the Schema for the DatastreamConnectionProfile API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DatastreamConnectionProfileList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DatastreamConnectionProfile>
@@ -38,14 +38,14 @@ public partial class V1alpha1DatastreamConnectionProfileList : IKubernetesObject
 }
 
 /// <summary>BigQuery Connection Profile configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecBigQueryProfile
 {
 }
 
 /// <summary>The Kubernetes Secret object that stores the &quot;username&quot; and &quot;password&quot; information for the SSH tunnel. The Secret type has to be `kubernetes.io/basic-auth`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecForwardSSHConnectivitySecretRef
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecForwardSSHConnectivi
 }
 
 /// <summary>Forward SSH tunnel connectivity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecForwardSSHConnectivity
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecForwardSSHConnectivi
 }
 
 /// <summary>Cloud Storage ConnectionProfile configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecGcsProfile
 {
@@ -95,7 +95,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecGcsProfile
 }
 
 /// <summary>The Kubernetes Secret object that stores the &quot;username&quot; and &quot;password&quot; information for the MySQL connection. The Secret type has to be `kubernetes.io/basic-auth`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecMySQLProfileSecretRef
 {
@@ -109,7 +109,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecMySQLProfileSecretRe
 }
 
 /// <summary>SSL configuration for the MySQL connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecMySQLProfileSslConfig
 {
@@ -127,7 +127,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecMySQLProfileSslConfi
 }
 
 /// <summary>MySQL ConnectionProfile configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecMySQLProfile
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecMySQLProfile
 }
 
 /// <summary>Optional. SSL configuration for the Oracle connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleASMConfigOracleSSLConfig
 {
@@ -159,7 +159,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleA
 }
 
 /// <summary>The Kubernetes Secret object that stores the &quot;username&quot; and &quot;password&quot; information for the Oracle ASM connection. The Secret type has to be `kubernetes.io/basic-auth`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleASMConfigSecretRef
 {
@@ -173,7 +173,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleA
 }
 
 /// <summary>Optional. Configuration for Oracle ASM connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleASMConfig
 {
@@ -203,7 +203,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleA
 }
 
 /// <summary>Optional. SSL configuration for the Oracle connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleSSLConfig
 {
@@ -213,7 +213,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileOracleS
 }
 
 /// <summary>Optional. A reference to a Secret Manager resource name storing the Oracle connection password. Mutually exclusive with the `secretRef` field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileSecretManagerSecretRef
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileSecretM
 }
 
 /// <summary>The Kubernetes Secret object that stores the &quot;username&quot; and &quot;password&quot; information for the Oracle connection. The Secret type has to be `kubernetes.io/basic-auth`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileSecretRef
 {
@@ -245,7 +245,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfileSecretR
 }
 
 /// <summary>Oracle ConnectionProfile configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfile
 {
@@ -283,7 +283,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecOracleProfile
 }
 
 /// <summary>Required. A reference to a private connection resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecPrivateConnectivityPrivateConnectionRef
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecPrivateConnectivityP
 }
 
 /// <summary>Private connectivity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecPrivateConnectivity
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecPrivateConnectivity
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecProjectRef
 {
@@ -333,7 +333,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecProjectRef
 }
 
 /// <summary>The Kubernetes Secret object that stores the &quot;username&quot; and &quot;password&quot; information for the SQLServer connection. The Secret type has to be `kubernetes.io/basic-auth`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecSqlServerProfileSecretRef
 {
@@ -347,7 +347,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpecSqlServerProfileSecr
 }
 
 /// <summary>SQLServer Connection Profile configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecSqlServerProfile
 {
@@ -369,14 +369,14 @@ public partial class V1alpha1DatastreamConnectionProfileSpecSqlServerProfile
 }
 
 /// <summary>Static Service IP connectivity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpecStaticServiceIPConnectivity
 {
 }
 
 /// <summary>DatastreamConnectionProfileSpec defines the desired state of DatastreamConnectionProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileSpec
 {
@@ -433,7 +433,7 @@ public partial class V1alpha1DatastreamConnectionProfileSpec
     public V1alpha1DatastreamConnectionProfileSpecStaticServiceIPConnectivity? StaticServiceIPConnectivity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileStatusConditions
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1DatastreamConnectionProfileStatusConditions
 }
 
 /// <summary>SSL configuration for the MySQL connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateMySQLProfileSslConfig
 {
@@ -477,7 +477,7 @@ public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateMySQL
 }
 
 /// <summary>MySQL ConnectionProfile configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateMySQLProfile
 {
@@ -487,7 +487,7 @@ public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateMySQL
 }
 
 /// <summary>Optional. SSL configuration for the Oracle connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateOracleProfileOracleSSLConfig
 {
@@ -497,7 +497,7 @@ public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateOracl
 }
 
 /// <summary>Oracle ConnectionProfile configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateOracleProfile
 {
@@ -507,7 +507,7 @@ public partial class V1alpha1DatastreamConnectionProfileStatusObservedStateOracl
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileStatusObservedState
 {
@@ -529,7 +529,7 @@ public partial class V1alpha1DatastreamConnectionProfileStatusObservedState
 }
 
 /// <summary>DatastreamConnectionProfileStatus defines the config connector machine state of DatastreamConnectionProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DatastreamConnectionProfileStatus
 {
@@ -551,7 +551,7 @@ public partial class V1alpha1DatastreamConnectionProfileStatus
 }
 
 /// <summary>DatastreamConnectionProfile is the Schema for the DatastreamConnectionProfile API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DatastreamConnectionProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DatastreamConnectionProfileSpec>, IStatus<V1alpha1DatastreamConnectionProfileStatus?>

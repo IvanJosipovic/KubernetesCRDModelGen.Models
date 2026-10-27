@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.waf.aws.upbound.io;
 /// <summary>WebACL is the Schema for the WebACLs API. Provides a AWS WAF web access control group (ACL) resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WebACLList : IKubernetesObject<V1ListMeta>, IItems<V1beta2WebACL>
@@ -46,7 +46,7 @@ public partial class V1beta2WebACLList : IKubernetesObject<V1ListMeta>, IItems<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecDeletionPolicyEnum>))]
 public enum V1beta2WebACLSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2WebACLSpecDeletionPolicyEnum
 }
 
 /// <summary>Configuration block with action that you want AWS WAF to take when a request doesn&apos;t match the criteria in any of the rules that are associated with the web ACL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderDefaultAction
 {
@@ -75,7 +75,7 @@ public partial class V1beta2WebACLSpecForProviderDefaultAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRefPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRefPolicyResolutionEnum
 {
@@ -91,7 +91,7 @@ public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRefPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRefPolicyResolveEnum
 {
@@ -102,7 +102,7 @@ public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRefPolicy
 {
@@ -126,7 +126,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinat
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate logDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinat
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate logDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelector
 {
@@ -216,7 +216,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinat
     public V1beta2WebACLSpecForProviderLoggingConfigurationLogDestinationSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfigurationRedactedFieldsFieldToMatch
 {
@@ -230,7 +230,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfigurationRedactedFie
 }
 
 /// <summary>Configuration block containing parts of the request that you want redacted from the logs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfigurationRedactedFields
 {
@@ -240,7 +240,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfigurationRedactedFie
 }
 
 /// <summary>Configuration block to enable WAF logging. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfiguration
 {
@@ -262,7 +262,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfiguration
 }
 
 /// <summary>The action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule. Not used if type is GROUP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderRulesAction
 {
@@ -272,7 +272,7 @@ public partial class V1beta2WebACLSpecForProviderRulesAction
 }
 
 /// <summary>Override the action that a group requests CloudFront or AWS WAF takes when a web request matches the conditions in the rule. Only used if type is GROUP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderRulesOverrideAction
 {
@@ -287,7 +287,7 @@ public partial class V1beta2WebACLSpecForProviderRulesOverrideAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderRulesRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecForProviderRulesRuleIdRefPolicyResolutionEnum
 {
@@ -303,7 +303,7 @@ public enum V1beta2WebACLSpecForProviderRulesRuleIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderRulesRuleIdRefPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecForProviderRulesRuleIdRefPolicyResolveEnum
 {
@@ -314,7 +314,7 @@ public enum V1beta2WebACLSpecForProviderRulesRuleIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderRulesRuleIdRefPolicy
 {
@@ -338,7 +338,7 @@ public partial class V1beta2WebACLSpecForProviderRulesRuleIdRefPolicy
 }
 
 /// <summary>Reference to a Rule in waf to populate ruleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderRulesRuleIdRef
 {
@@ -357,7 +357,7 @@ public partial class V1beta2WebACLSpecForProviderRulesRuleIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicyResolutionEnum
 {
@@ -373,7 +373,7 @@ public enum V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicyResolveEnum
 {
@@ -384,7 +384,7 @@ public enum V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicy
 {
@@ -408,7 +408,7 @@ public partial class V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicy
 }
 
 /// <summary>Selector for a Rule in waf to populate ruleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderRulesRuleIdSelector
 {
@@ -428,7 +428,7 @@ public partial class V1beta2WebACLSpecForProviderRulesRuleIdSelector
     public V1beta2WebACLSpecForProviderRulesRuleIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderRules
 {
@@ -464,7 +464,7 @@ public partial class V1beta2WebACLSpecForProviderRules
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProvider
 {
@@ -494,7 +494,7 @@ public partial class V1beta2WebACLSpecForProvider
 }
 
 /// <summary>Configuration block with action that you want AWS WAF to take when a request doesn&apos;t match the criteria in any of the rules that are associated with the web ACL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderDefaultAction
 {
@@ -512,7 +512,7 @@ public partial class V1beta2WebACLSpecInitProviderDefaultAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRefPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRefPolicyResolutionEnum
 {
@@ -528,7 +528,7 @@ public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRefPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRefPolicyResolveEnum
 {
@@ -539,7 +539,7 @@ public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRefPolicy
 {
@@ -563,7 +563,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestina
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate logDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationRef
 {
@@ -582,7 +582,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestina
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelectorPolicyResolutionEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelectorPolicyResolveEnum
 {
@@ -609,7 +609,7 @@ public enum V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelectorPolicy
 {
@@ -633,7 +633,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestina
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate logDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelector
 {
@@ -653,7 +653,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestina
     public V1beta2WebACLSpecInitProviderLoggingConfigurationLogDestinationSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationRedactedFieldsFieldToMatch
 {
@@ -667,7 +667,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationRedactedFi
 }
 
 /// <summary>Configuration block containing parts of the request that you want redacted from the logs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationRedactedFields
 {
@@ -677,7 +677,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationRedactedFi
 }
 
 /// <summary>Configuration block to enable WAF logging. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfiguration
 {
@@ -699,7 +699,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfiguration
 }
 
 /// <summary>The action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule. Not used if type is GROUP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderRulesAction
 {
@@ -709,7 +709,7 @@ public partial class V1beta2WebACLSpecInitProviderRulesAction
 }
 
 /// <summary>Override the action that a group requests CloudFront or AWS WAF takes when a web request matches the conditions in the rule. Only used if type is GROUP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderRulesOverrideAction
 {
@@ -724,7 +724,7 @@ public partial class V1beta2WebACLSpecInitProviderRulesOverrideAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicyResolutionEnum
 {
@@ -740,7 +740,7 @@ public enum V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicyResolveEnum
 {
@@ -751,7 +751,7 @@ public enum V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicy
 {
@@ -775,7 +775,7 @@ public partial class V1beta2WebACLSpecInitProviderRulesRuleIdRefPolicy
 }
 
 /// <summary>Reference to a Rule in waf to populate ruleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderRulesRuleIdRef
 {
@@ -794,7 +794,7 @@ public partial class V1beta2WebACLSpecInitProviderRulesRuleIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicyResolutionEnum
 {
@@ -810,7 +810,7 @@ public enum V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicyResolveEnum
 {
@@ -821,7 +821,7 @@ public enum V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicy
 {
@@ -845,7 +845,7 @@ public partial class V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicy
 }
 
 /// <summary>Selector for a Rule in waf to populate ruleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderRulesRuleIdSelector
 {
@@ -865,7 +865,7 @@ public partial class V1beta2WebACLSpecInitProviderRulesRuleIdSelector
     public V1beta2WebACLSpecInitProviderRulesRuleIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderRules
 {
@@ -913,7 +913,7 @@ public partial class V1beta2WebACLSpecInitProviderRules
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProvider
 {
@@ -946,7 +946,7 @@ public partial class V1beta2WebACLSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecManagementPoliciesEnum>))]
 public enum V1beta2WebACLSpecManagementPoliciesEnum
 {
@@ -970,7 +970,7 @@ public enum V1beta2WebACLSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2WebACLSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -986,7 +986,7 @@ public enum V1beta2WebACLSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WebACLSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2WebACLSpecProviderConfigRefPolicyResolveEnum
 {
@@ -997,7 +997,7 @@ public enum V1beta2WebACLSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecProviderConfigRefPolicy
 {
@@ -1025,7 +1025,7 @@ public partial class V1beta2WebACLSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecProviderConfigRef
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta2WebACLSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecWriteConnectionSecretToRef
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta2WebACLSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WebACLSpec defines the desired state of WebACL</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpec
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta2WebACLSpec
 }
 
 /// <summary>Configuration block with action that you want AWS WAF to take when a request doesn&apos;t match the criteria in any of the rules that are associated with the web ACL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderDefaultAction
 {
@@ -1138,7 +1138,7 @@ public partial class V1beta2WebACLStatusAtProviderDefaultAction
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderLoggingConfigurationRedactedFieldsFieldToMatch
 {
@@ -1152,7 +1152,7 @@ public partial class V1beta2WebACLStatusAtProviderLoggingConfigurationRedactedFi
 }
 
 /// <summary>Configuration block containing parts of the request that you want redacted from the logs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderLoggingConfigurationRedactedFields
 {
@@ -1162,7 +1162,7 @@ public partial class V1beta2WebACLStatusAtProviderLoggingConfigurationRedactedFi
 }
 
 /// <summary>Configuration block to enable WAF logging. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderLoggingConfiguration
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta2WebACLStatusAtProviderLoggingConfiguration
 }
 
 /// <summary>The action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule. Not used if type is GROUP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderRulesAction
 {
@@ -1186,7 +1186,7 @@ public partial class V1beta2WebACLStatusAtProviderRulesAction
 }
 
 /// <summary>Override the action that a group requests CloudFront or AWS WAF takes when a web request matches the conditions in the rule. Only used if type is GROUP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderRulesOverrideAction
 {
@@ -1195,7 +1195,7 @@ public partial class V1beta2WebACLStatusAtProviderRulesOverrideAction
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderRules
 {
@@ -1223,7 +1223,7 @@ public partial class V1beta2WebACLStatusAtProviderRules
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProvider
 {
@@ -1265,7 +1265,7 @@ public partial class V1beta2WebACLStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusConditions
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta2WebACLStatusConditions
 }
 
 /// <summary>WebACLStatus defines the observed state of WebACL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatus
 {
@@ -1338,7 +1338,7 @@ public partial class V1beta2WebACLStatus
 }
 
 /// <summary>WebACL is the Schema for the WebACLs API. Provides a AWS WAF web access control group (ACL) resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WebACL : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2WebACLSpec>, IStatus<V1beta2WebACLStatus?>

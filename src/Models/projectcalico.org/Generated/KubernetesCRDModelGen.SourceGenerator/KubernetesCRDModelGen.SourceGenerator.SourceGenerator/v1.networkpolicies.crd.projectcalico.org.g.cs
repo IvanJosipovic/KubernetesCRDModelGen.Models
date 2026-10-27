@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1NetworkPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1NetworkPolicy>
@@ -36,7 +36,7 @@ public partial class V1NetworkPolicyList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1NetworkPolicy> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1NetworkPolicySpecEgressActionEnum>))]
 public enum V1NetworkPolicySpecEgressActionEnum
 {
@@ -54,7 +54,7 @@ public enum V1NetworkPolicySpecEgressActionEnum
 /// ServiceAccounts is an optional field that restricts the rule to only apply to traffic that originates from (or
 /// terminates at) a pod running as a matching service account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressDestinationServiceAccounts
 {
@@ -84,7 +84,7 @@ public partial class V1NetworkPolicySpecEgressDestinationServiceAccounts
 /// 
 /// Ports and NotPorts can only be specified with Services on ingress rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressDestinationServices
 {
@@ -101,7 +101,7 @@ public partial class V1NetworkPolicySpecEgressDestinationServices
 }
 
 /// <summary>Destination contains the match criteria that apply to destination entity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressDestination
 {
@@ -207,7 +207,7 @@ public partial class V1NetworkPolicySpecEgressDestination
 /// exact: &lt;path&gt;: which matches the path exactly or
 /// prefix: &lt;path-prefix&gt;: which matches the path prefix
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressHttpPaths
 {
@@ -219,7 +219,7 @@ public partial class V1NetworkPolicySpecEgressHttpPaths
 }
 
 /// <summary>HTTP contains match criteria that apply to HTTP requests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressHttp
 {
@@ -249,7 +249,7 @@ public partial class V1NetworkPolicySpecEgressHttp
 /// code of ICMP traffic.  This should only be specified if the Protocol field is set to
 /// &quot;ICMP&quot; or &quot;ICMPv6&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressIcmp
 {
@@ -270,7 +270,7 @@ public partial class V1NetworkPolicySpecEgressIcmp
 }
 
 /// <summary>Metadata contains additional information for this rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressMetadata
 {
@@ -280,7 +280,7 @@ public partial class V1NetworkPolicySpecEgressMetadata
 }
 
 /// <summary>NotICMP is the negated version of the ICMP field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressNotICMP
 {
@@ -304,7 +304,7 @@ public partial class V1NetworkPolicySpecEgressNotICMP
 /// ServiceAccounts is an optional field that restricts the rule to only apply to traffic that originates from (or
 /// terminates at) a pod running as a matching service account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressSourceServiceAccounts
 {
@@ -334,7 +334,7 @@ public partial class V1NetworkPolicySpecEgressSourceServiceAccounts
 /// 
 /// Ports and NotPorts can only be specified with Services on ingress rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressSourceServices
 {
@@ -351,7 +351,7 @@ public partial class V1NetworkPolicySpecEgressSourceServices
 }
 
 /// <summary>Source contains the match criteria that apply to source entity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgressSource
 {
@@ -461,7 +461,7 @@ public partial class V1NetworkPolicySpecEgressSource
 /// criteria within a rule must be satisfied for a packet to match. A single rule can contain
 /// the positive and negative version of a match and both must be satisfied for the rule to match.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecEgress
 {
@@ -519,7 +519,7 @@ public partial class V1NetworkPolicySpecEgress
     public V1NetworkPolicySpecEgressSource? Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1NetworkPolicySpecIngressActionEnum>))]
 public enum V1NetworkPolicySpecIngressActionEnum
 {
@@ -537,7 +537,7 @@ public enum V1NetworkPolicySpecIngressActionEnum
 /// ServiceAccounts is an optional field that restricts the rule to only apply to traffic that originates from (or
 /// terminates at) a pod running as a matching service account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressDestinationServiceAccounts
 {
@@ -567,7 +567,7 @@ public partial class V1NetworkPolicySpecIngressDestinationServiceAccounts
 /// 
 /// Ports and NotPorts can only be specified with Services on ingress rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressDestinationServices
 {
@@ -584,7 +584,7 @@ public partial class V1NetworkPolicySpecIngressDestinationServices
 }
 
 /// <summary>Destination contains the match criteria that apply to destination entity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressDestination
 {
@@ -690,7 +690,7 @@ public partial class V1NetworkPolicySpecIngressDestination
 /// exact: &lt;path&gt;: which matches the path exactly or
 /// prefix: &lt;path-prefix&gt;: which matches the path prefix
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressHttpPaths
 {
@@ -702,7 +702,7 @@ public partial class V1NetworkPolicySpecIngressHttpPaths
 }
 
 /// <summary>HTTP contains match criteria that apply to HTTP requests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressHttp
 {
@@ -732,7 +732,7 @@ public partial class V1NetworkPolicySpecIngressHttp
 /// code of ICMP traffic.  This should only be specified if the Protocol field is set to
 /// &quot;ICMP&quot; or &quot;ICMPv6&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressIcmp
 {
@@ -753,7 +753,7 @@ public partial class V1NetworkPolicySpecIngressIcmp
 }
 
 /// <summary>Metadata contains additional information for this rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressMetadata
 {
@@ -763,7 +763,7 @@ public partial class V1NetworkPolicySpecIngressMetadata
 }
 
 /// <summary>NotICMP is the negated version of the ICMP field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressNotICMP
 {
@@ -787,7 +787,7 @@ public partial class V1NetworkPolicySpecIngressNotICMP
 /// ServiceAccounts is an optional field that restricts the rule to only apply to traffic that originates from (or
 /// terminates at) a pod running as a matching service account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressSourceServiceAccounts
 {
@@ -817,7 +817,7 @@ public partial class V1NetworkPolicySpecIngressSourceServiceAccounts
 /// 
 /// Ports and NotPorts can only be specified with Services on ingress rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressSourceServices
 {
@@ -834,7 +834,7 @@ public partial class V1NetworkPolicySpecIngressSourceServices
 }
 
 /// <summary>Source contains the match criteria that apply to source entity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngressSource
 {
@@ -944,7 +944,7 @@ public partial class V1NetworkPolicySpecIngressSource
 /// criteria within a rule must be satisfied for a packet to match. A single rule can contain
 /// the positive and negative version of a match and both must be satisfied for the rule to match.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpecIngress
 {
@@ -1002,7 +1002,7 @@ public partial class V1NetworkPolicySpecIngress
     public V1NetworkPolicySpecIngressSource? Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1NetworkPolicySpecPerformanceHintsEnum>))]
 public enum V1NetworkPolicySpecPerformanceHintsEnum
 {
@@ -1011,7 +1011,7 @@ public enum V1NetworkPolicySpecPerformanceHintsEnum
 }
 
 /// <summary>PolicyType enumerates the possible values of the PolicySpec Types field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1NetworkPolicySpecTypesEnum>))]
 public enum V1NetworkPolicySpecTypesEnum
 {
@@ -1021,7 +1021,7 @@ public enum V1NetworkPolicySpecTypesEnum
     Egress
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkPolicySpec
 {
@@ -1128,7 +1128,7 @@ public partial class V1NetworkPolicySpec
     public IList<V1NetworkPolicySpecTypesEnum>? Types { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1NetworkPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1NetworkPolicySpec?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dlm.aws.upbound.io;
 /// <summary>LifecyclePolicy is the Schema for the LifecyclePolicys API. Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LifecyclePolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta2LifecyclePolicy>
@@ -46,7 +46,7 @@ public partial class V1beta2LifecyclePolicyList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecDeletionPolicyEnum>))]
 public enum V1beta2LifecyclePolicySpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2LifecyclePolicySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRefPol
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelect
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderExecutionRoleArnSelect
 }
 
 /// <summary>The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
@@ -218,7 +218,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsActionCro
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopyRetainRule
 {
@@ -231,7 +231,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsActionCro
     public string? IntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopy
 {
@@ -249,7 +249,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsActionCro
 }
 
 /// <summary>The actions to be performed when the event-based policy is triggered. You can specify only one action per policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the action configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsAction
 {
@@ -263,7 +263,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsAction
 }
 
 /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsEventSourceParameters
 {
@@ -281,7 +281,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsEventSour
 }
 
 /// <summary>The event that triggers the event-based policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the event_source configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsEventSource
 {
@@ -295,7 +295,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsEventSour
 }
 
 /// <summary>Specifies exclusion parameters for volumes or instances for which you do not want to create snapshots or AMIs.  See the exclusions configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsExclusions
 {
@@ -313,7 +313,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsExclusion
 }
 
 /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsParameters
 {
@@ -331,7 +331,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsParameter
 }
 
 /// <summary>Information about retention period in the Amazon EBS Snapshots Archive. See the retention_archive_tier block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier
 {
@@ -349,7 +349,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleA
 }
 
 /// <summary>Information about the retention period for the snapshot archiving rule. See the archive_retain_rule block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRule
 {
@@ -359,7 +359,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleA
 }
 
 /// <summary>Specifies a snapshot archiving rule for a schedule. See archive_rule block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleArchiveRule
 {
@@ -369,7 +369,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleA
 }
 
 /// <summary>Specifies pre and/or post scripts for a snapshot lifecycle policy that targets instances. Valid only when resource_type is INSTANCE. See the scripts configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCreateRuleScripts
 {
@@ -399,7 +399,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 }
 
 /// <summary>See the create_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCreateRule
 {
@@ -434,7 +434,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum
 {
@@ -450,7 +450,7 @@ public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum
 {
@@ -461,7 +461,7 @@ public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicy
 {
@@ -485,7 +485,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 }
 
 /// <summary>Reference to a Key in kms to populate cmkArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRef
 {
@@ -504,7 +504,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum
 {
@@ -520,7 +520,7 @@ public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicy
 {
@@ -555,7 +555,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 }
 
 /// <summary>Selector for a Key in kms to populate cmkArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelector
 {
@@ -576,7 +576,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 }
 
 /// <summary>See the deprecate_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule
 {
@@ -590,7 +590,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule
 {
@@ -603,7 +603,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
     public string? IntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
@@ -645,7 +645,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 }
 
 /// <summary>See the deprecate_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleDeprecateRule
 {
@@ -663,7 +663,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleD
 }
 
 /// <summary>See the fast_restore_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleFastRestoreRule
 {
@@ -685,7 +685,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleF
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleRetainRule
 {
@@ -703,7 +703,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleR
 }
 
 /// <summary>See the share_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleShareRule
 {
@@ -720,7 +720,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsScheduleS
     public string? UnshareIntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsSchedule
 {
@@ -770,7 +770,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the policy_details configuration block. Max of 1.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetails
 {
@@ -835,7 +835,7 @@ public partial class V1beta2LifecyclePolicySpecForProviderPolicyDetails
     public IDictionary<string, string>? TargetTags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecForProvider
 {
@@ -885,7 +885,7 @@ public partial class V1beta2LifecyclePolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -901,7 +901,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -912,7 +912,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicy
 {
@@ -936,7 +936,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRefPo
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRef
 {
@@ -955,7 +955,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -971,7 +971,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -982,7 +982,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicy
 {
@@ -1006,7 +1006,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelec
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelector
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderExecutionRoleArnSelec
 }
 
 /// <summary>The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
@@ -1041,7 +1041,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsActionCr
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopyRetainRule
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsActionCr
     public string? IntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopy
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsActionCr
 }
 
 /// <summary>The actions to be performed when the event-based policy is triggered. You can specify only one action per policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the action configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsAction
 {
@@ -1086,7 +1086,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsAction
 }
 
 /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsEventSourceParameters
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsEventSou
 }
 
 /// <summary>The event that triggers the event-based policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the event_source configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsEventSource
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsEventSou
 }
 
 /// <summary>Specifies exclusion parameters for volumes or instances for which you do not want to create snapshots or AMIs.  See the exclusions configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsExclusions
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsExclusio
 }
 
 /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsParameters
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsParamete
 }
 
 /// <summary>Information about retention period in the Amazon EBS Snapshots Archive. See the retention_archive_tier block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>Information about the retention period for the snapshot archiving rule. See the archive_retain_rule block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRule
 {
@@ -1182,7 +1182,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies a snapshot archiving rule for a schedule. See archive_rule block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleArchiveRule
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies pre and/or post scripts for a snapshot lifecycle policy that targets instances. Valid only when resource_type is INSTANCE. See the scripts configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCreateRuleScripts
 {
@@ -1222,7 +1222,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the create_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCreateRule
 {
@@ -1257,7 +1257,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum
 {
@@ -1273,7 +1273,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum
 {
@@ -1284,7 +1284,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicy
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>Reference to a Key in kms to populate cmkArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRef
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum
 {
@@ -1343,7 +1343,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum
 {
@@ -1354,7 +1354,7 @@ public enum V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicy
 {
@@ -1378,7 +1378,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>Selector for a Key in kms to populate cmkArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelector
 {
@@ -1399,7 +1399,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the deprecate_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule
 {
@@ -1413,7 +1413,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule
 {
@@ -1426,7 +1426,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
     public string? IntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
@@ -1468,7 +1468,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the deprecate_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleDeprecateRule
 {
@@ -1486,7 +1486,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the fast_restore_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleFastRestoreRule
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleRetainRule
 {
@@ -1526,7 +1526,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the share_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsScheduleShareRule
 {
@@ -1543,7 +1543,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
     public string? UnshareIntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 {
@@ -1593,7 +1593,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the policy_details configuration block. Max of 1.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetails
 {
@@ -1670,7 +1670,7 @@ public partial class V1beta2LifecyclePolicySpecInitProviderPolicyDetails
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecInitProvider
 {
@@ -1711,7 +1711,7 @@ public partial class V1beta2LifecyclePolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecManagementPoliciesEnum>))]
 public enum V1beta2LifecyclePolicySpecManagementPoliciesEnum
 {
@@ -1735,7 +1735,7 @@ public enum V1beta2LifecyclePolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2LifecyclePolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1751,7 +1751,7 @@ public enum V1beta2LifecyclePolicySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LifecyclePolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2LifecyclePolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -1762,7 +1762,7 @@ public enum V1beta2LifecyclePolicySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecProviderConfigRefPolicy
 {
@@ -1790,7 +1790,7 @@ public partial class V1beta2LifecyclePolicySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecProviderConfigRef
 {
@@ -1809,7 +1809,7 @@ public partial class V1beta2LifecyclePolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpecWriteConnectionSecretToRef
 {
@@ -1823,7 +1823,7 @@ public partial class V1beta2LifecyclePolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>LifecyclePolicySpec defines the desired state of LifecyclePolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicySpec
 {
@@ -1891,7 +1891,7 @@ public partial class V1beta2LifecyclePolicySpec
 }
 
 /// <summary>The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
@@ -1905,7 +1905,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsActionCr
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopyRetainRule
 {
@@ -1918,7 +1918,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsActionCr
     public string? IntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopy
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsActionCr
 }
 
 /// <summary>The actions to be performed when the event-based policy is triggered. You can specify only one action per policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the action configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsAction
 {
@@ -1950,7 +1950,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsAction
 }
 
 /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsEventSourceParameters
 {
@@ -1968,7 +1968,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsEventSou
 }
 
 /// <summary>The event that triggers the event-based policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the event_source configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsEventSource
 {
@@ -1982,7 +1982,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsEventSou
 }
 
 /// <summary>Specifies exclusion parameters for volumes or instances for which you do not want to create snapshots or AMIs.  See the exclusions configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsExclusions
 {
@@ -2000,7 +2000,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsExclusio
 }
 
 /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsParameters
 {
@@ -2018,7 +2018,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsParamete
 }
 
 /// <summary>Information about retention period in the Amazon EBS Snapshots Archive. See the retention_archive_tier block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier
 {
@@ -2036,7 +2036,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>Information about the retention period for the snapshot archiving rule. See the archive_retain_rule block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRule
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies a snapshot archiving rule for a schedule. See archive_rule block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleArchiveRule
 {
@@ -2056,7 +2056,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies pre and/or post scripts for a snapshot lifecycle policy that targets instances. Valid only when resource_type is INSTANCE. See the scripts configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCreateRuleScripts
 {
@@ -2086,7 +2086,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the create_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCreateRule
 {
@@ -2116,7 +2116,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the deprecate_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule
 {
@@ -2130,7 +2130,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule
 {
@@ -2143,7 +2143,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
     public string? IntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
@@ -2177,7 +2177,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the deprecate_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleDeprecateRule
 {
@@ -2195,7 +2195,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the fast_restore_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleFastRestoreRule
 {
@@ -2217,7 +2217,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>Specifies the retention rule for cross-Region snapshot copies. See the retain_rule block. Max of 1 per action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleRetainRule
 {
@@ -2235,7 +2235,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the share_rule block. Max of 1 per schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsScheduleShareRule
 {
@@ -2252,7 +2252,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
     public string? UnshareIntervalUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 {
@@ -2302,7 +2302,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 }
 
 /// <summary>See the policy_details configuration block. Max of 1.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetails
 {
@@ -2367,7 +2367,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProviderPolicyDetails
     public IDictionary<string, string>? TargetTags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusAtProvider
 {
@@ -2416,7 +2416,7 @@ public partial class V1beta2LifecyclePolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatusConditions
 {
@@ -2459,7 +2459,7 @@ public partial class V1beta2LifecyclePolicyStatusConditions
 }
 
 /// <summary>LifecyclePolicyStatus defines the observed state of LifecyclePolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LifecyclePolicyStatus
 {
@@ -2489,7 +2489,7 @@ public partial class V1beta2LifecyclePolicyStatus
 }
 
 /// <summary>LifecyclePolicy is the Schema for the LifecyclePolicys API. Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LifecyclePolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2LifecyclePolicySpec>, IStatus<V1beta2LifecyclePolicyStatus?>

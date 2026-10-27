@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
 /// <summary>TrafficMirrorFilterRule is the Schema for the TrafficMirrorFilterRules API. Provides an Traffic mirror filter rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2TrafficMirrorFilterRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta2TrafficMirrorFilterRule>
@@ -46,7 +46,7 @@ public partial class V1beta2TrafficMirrorFilterRuleList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecDeletionPolicyEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecDeletionPolicyEnum
 }
 
 /// <summary>Destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderDestinationPortRange
 {
@@ -71,7 +71,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderDestinationPor
 }
 
 /// <summary>Source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderSourcePortRange
 {
@@ -90,7 +90,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderSourcePortRang
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolutionEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolutionEnum
 {
@@ -106,7 +106,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolveEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolveEnum
 {
@@ -117,7 +117,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicy
 {
@@ -141,7 +141,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
 }
 
 /// <summary>Reference to a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRef
 {
@@ -160,7 +160,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum
 {
@@ -176,7 +176,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum
 {
@@ -187,7 +187,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicy
 {
@@ -211,7 +211,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
 }
 
 /// <summary>Selector for a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelector
 {
@@ -231,7 +231,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
     public V1beta2TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecForProvider
 {
@@ -292,7 +292,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecForProvider
 }
 
 /// <summary>Destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderDestinationPortRange
 {
@@ -306,7 +306,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderDestinationPo
 }
 
 /// <summary>Source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderSourcePortRange
 {
@@ -325,7 +325,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderSourcePortRan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolutionEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolutionEnum
 {
@@ -341,7 +341,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolveEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolveEnum
 {
@@ -352,7 +352,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicy
 {
@@ -376,7 +376,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 }
 
 /// <summary>Reference to a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRef
 {
@@ -395,7 +395,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum
 {
@@ -422,7 +422,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicy
 {
@@ -446,7 +446,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 }
 
 /// <summary>Selector for a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelector
 {
@@ -478,7 +478,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecInitProvider
 {
@@ -535,7 +535,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecManagementPoliciesEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecManagementPoliciesEnum
 {
@@ -559,7 +559,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -586,7 +586,7 @@ public enum V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicy
 {
@@ -614,7 +614,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecProviderConfigRef
 {
@@ -633,7 +633,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpecWriteConnectionSecretToRef
 {
@@ -647,7 +647,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpecWriteConnectionSecretToRe
 }
 
 /// <summary>TrafficMirrorFilterRuleSpec defines the desired state of TrafficMirrorFilterRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleSpec
 {
@@ -715,7 +715,7 @@ public partial class V1beta2TrafficMirrorFilterRuleSpec
 }
 
 /// <summary>Destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleStatusAtProviderDestinationPortRange
 {
@@ -729,7 +729,7 @@ public partial class V1beta2TrafficMirrorFilterRuleStatusAtProviderDestinationPo
 }
 
 /// <summary>Source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleStatusAtProviderSourcePortRange
 {
@@ -742,7 +742,7 @@ public partial class V1beta2TrafficMirrorFilterRuleStatusAtProviderSourcePortRan
     public double? ToPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleStatusAtProvider
 {
@@ -803,7 +803,7 @@ public partial class V1beta2TrafficMirrorFilterRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleStatusConditions
 {
@@ -846,7 +846,7 @@ public partial class V1beta2TrafficMirrorFilterRuleStatusConditions
 }
 
 /// <summary>TrafficMirrorFilterRuleStatus defines the observed state of TrafficMirrorFilterRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TrafficMirrorFilterRuleStatus
 {
@@ -876,7 +876,7 @@ public partial class V1beta2TrafficMirrorFilterRuleStatus
 }
 
 /// <summary>TrafficMirrorFilterRule is the Schema for the TrafficMirrorFilterRules API. Provides an Traffic mirror filter rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2TrafficMirrorFilterRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2TrafficMirrorFilterRuleSpec>, IStatus<V1beta2TrafficMirrorFilterRuleStatus?>

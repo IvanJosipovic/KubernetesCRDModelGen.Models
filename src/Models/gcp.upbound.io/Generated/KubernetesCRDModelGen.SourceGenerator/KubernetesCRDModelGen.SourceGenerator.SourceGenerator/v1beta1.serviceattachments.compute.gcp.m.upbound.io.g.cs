@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>ServiceAttachment is the Schema for the ServiceAttachments API. Represents a ServiceAttachment resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ServiceAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ServiceAttachment>
@@ -43,7 +43,7 @@ public partial class V1beta1ServiceAttachmentList : IKubernetesObject<V1ListMeta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlRefPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlRefPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrl
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsN
 }
 
 /// <summary>Reference to a Network in compute to populate networkUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrl
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsN
 }
 
 /// <summary>Selector for a Network in compute to populate networkUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsN
     public V1beta1ServiceAttachmentSpecForProviderConsumerAcceptListsNetworkUrlSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptLists
 {
@@ -239,7 +239,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderConsumerAcceptLists
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicyResolutionEnum
 {
@@ -255,7 +255,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicyResolveEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicy
 {
@@ -290,7 +290,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefs
 {
@@ -313,7 +313,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPolicyResolutionEnum
 {
@@ -329,7 +329,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPolicyResolveEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPolicy
 {
@@ -364,7 +364,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelectorPo
 }
 
 /// <summary>Selector for a list of Subnetwork in compute to populate natSubnets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelector
 {
@@ -394,7 +394,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderNatSubnetsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPolicyResolutionEnum
 {
@@ -410,7 +410,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPolicyResolveEnum
 {
@@ -421,7 +421,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPolicy
 {
@@ -445,7 +445,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceRefPoli
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate targetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceRef
 {
@@ -468,7 +468,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicyResolutionEnum
 {
@@ -484,7 +484,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicyResolveEnum
 {
@@ -495,7 +495,7 @@ public enum V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicy
 {
@@ -519,7 +519,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceSelecto
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate targetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceSelector
 {
@@ -543,7 +543,7 @@ public partial class V1beta1ServiceAttachmentSpecForProviderTargetServiceSelecto
     public V1beta1ServiceAttachmentSpecForProviderTargetServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecForProvider
 {
@@ -667,7 +667,7 @@ public partial class V1beta1ServiceAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlRefPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlRefPolicyResolutionEnum
 {
@@ -683,7 +683,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlRefPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlRefPolicyResolveEnum
 {
@@ -694,7 +694,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlRefPolicy
 {
@@ -718,7 +718,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptLists
 }
 
 /// <summary>Reference to a Network in compute to populate networkUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlRef
 {
@@ -741,7 +741,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptLists
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolutionEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlSelectorPolicyResolveEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlSelectorPolicy
 {
@@ -792,7 +792,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptLists
 }
 
 /// <summary>Selector for a Network in compute to populate networkUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlSelector
 {
@@ -816,7 +816,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptLists
     public V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptListsNetworkUrlSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptLists
 {
@@ -863,7 +863,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderConsumerAcceptLists
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolicyResolutionEnum
 {
@@ -879,7 +879,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolicyResolveEnum
 {
@@ -890,7 +890,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolicy
 {
@@ -914,7 +914,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefsPolic
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefs
 {
@@ -937,7 +937,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorPolicyResolutionEnum
 {
@@ -953,7 +953,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorPolicyResolveEnum
 {
@@ -964,7 +964,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorPolicy
 {
@@ -988,7 +988,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelectorP
 }
 
 /// <summary>Selector for a list of Subnetwork in compute to populate natSubnets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelector
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderNatSubnetsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPolicyResolutionEnum
 {
@@ -1034,7 +1034,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPolicyResolveEnum
 {
@@ -1045,7 +1045,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPolicy
 {
@@ -1069,7 +1069,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceRefPol
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate targetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceRef
 {
@@ -1092,7 +1092,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelectorPolicyResolutionEnum
 {
@@ -1108,7 +1108,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelectorPolicyResolveEnum
 {
@@ -1119,7 +1119,7 @@ public enum V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelectorPolicy
 {
@@ -1143,7 +1143,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelect
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate targetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelector
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProviderTargetServiceSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecInitProvider
 {
@@ -1297,7 +1297,7 @@ public partial class V1beta1ServiceAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1ServiceAttachmentSpecManagementPoliciesEnum
 {
@@ -1320,7 +1320,7 @@ public enum V1beta1ServiceAttachmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecProviderConfigRef
 {
@@ -1339,7 +1339,7 @@ public partial class V1beta1ServiceAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpecWriteConnectionSecretToRef
 {
@@ -1349,7 +1349,7 @@ public partial class V1beta1ServiceAttachmentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ServiceAttachmentSpec defines the desired state of ServiceAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentSpec
 {
@@ -1400,7 +1400,7 @@ public partial class V1beta1ServiceAttachmentSpec
     public V1beta1ServiceAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentStatusAtProviderConnectedEndpoints
 {
@@ -1450,7 +1450,7 @@ public partial class V1beta1ServiceAttachmentStatusAtProviderConnectedEndpoints
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentStatusAtProviderConsumerAcceptLists
 {
@@ -1483,7 +1483,7 @@ public partial class V1beta1ServiceAttachmentStatusAtProviderConsumerAcceptLists
     public string? ProjectIdOrNum { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentStatusAtProviderPscServiceAttachmentId
 {
@@ -1502,7 +1502,7 @@ public partial class V1beta1ServiceAttachmentStatusAtProviderPscServiceAttachmen
     public string? Low { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentStatusAtProvider
 {
@@ -1642,7 +1642,7 @@ public partial class V1beta1ServiceAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentStatusConditions
 {
@@ -1685,7 +1685,7 @@ public partial class V1beta1ServiceAttachmentStatusConditions
 }
 
 /// <summary>ServiceAttachmentStatus defines the observed state of ServiceAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAttachmentStatus
 {
@@ -1715,7 +1715,7 @@ public partial class V1beta1ServiceAttachmentStatus
 }
 
 /// <summary>ServiceAttachment is the Schema for the ServiceAttachments API. Represents a ServiceAttachment resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ServiceAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ServiceAttachmentSpec>, IStatus<V1beta1ServiceAttachmentStatus?>

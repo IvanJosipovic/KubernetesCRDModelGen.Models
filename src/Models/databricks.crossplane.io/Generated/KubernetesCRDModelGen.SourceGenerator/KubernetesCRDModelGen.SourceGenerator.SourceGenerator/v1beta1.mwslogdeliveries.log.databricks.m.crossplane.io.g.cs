@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.log.databricks.m.crossplane.io;
 /// <summary>MwsLogDelivery is the Schema for the MwsLogDeliverys API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MwsLogDeliveryList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MwsLogDelivery>
@@ -43,7 +43,7 @@ public partial class V1beta1MwsLogDeliveryList : IKubernetesObject<V1ListMeta>, 
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdRefPolicy
 }
 
 /// <summary>Reference to a MwsCredentials in deployment to populate credentialsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelectorPo
 }
 
 /// <summary>Selector for a MwsCredentials in deployment to populate credentialsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderCredentialsIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRefPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRefPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdR
 }
 
 /// <summary>Reference to a MwsStorageConfigurations in deployment to populate storageConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdS
 }
 
 /// <summary>Selector for a MwsStorageConfigurations in deployment to populate storageConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdS
     public V1beta1MwsLogDeliverySpecForProviderStorageConfigurationIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecForProvider
 {
@@ -418,7 +418,7 @@ public partial class V1beta1MwsLogDeliverySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicyResolutionEnum
 {
@@ -434,7 +434,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicyResolveEnum
 {
@@ -445,7 +445,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicy
 {
@@ -469,7 +469,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRefPolicy
 }
 
 /// <summary>Reference to a MwsCredentials in deployment to populate credentialsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRef
 {
@@ -492,7 +492,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorPolicyResolutionEnum
 {
@@ -508,7 +508,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorPolicyResolveEnum
 {
@@ -519,7 +519,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorPolicy
 {
@@ -543,7 +543,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelectorP
 }
 
 /// <summary>Selector for a MwsCredentials in deployment to populate credentialsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelector
 {
@@ -573,7 +573,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderCredentialsIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRefPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRefPolicyResolutionEnum
 {
@@ -589,7 +589,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRefPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRefPolicyResolveEnum
 {
@@ -600,7 +600,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRefPolicy
 {
@@ -624,7 +624,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationId
 }
 
 /// <summary>Reference to a MwsStorageConfigurations in deployment to populate storageConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdRef
 {
@@ -647,7 +647,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelectorPolicyResolutionEnum
 {
@@ -663,7 +663,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelectorPolicyResolveEnum
 {
@@ -674,7 +674,7 @@ public enum V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelectorPolicy
 {
@@ -698,7 +698,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationId
 }
 
 /// <summary>Selector for a MwsStorageConfigurations in deployment to populate storageConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationIdSelector
 {
@@ -734,7 +734,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProviderStorageConfigurationId
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecInitProvider
 {
@@ -803,7 +803,7 @@ public partial class V1beta1MwsLogDeliverySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsLogDeliverySpecManagementPoliciesEnum>))]
 public enum V1beta1MwsLogDeliverySpecManagementPoliciesEnum
 {
@@ -826,7 +826,7 @@ public enum V1beta1MwsLogDeliverySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecProviderConfigRef
 {
@@ -845,7 +845,7 @@ public partial class V1beta1MwsLogDeliverySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpecWriteConnectionSecretToRef
 {
@@ -855,7 +855,7 @@ public partial class V1beta1MwsLogDeliverySpecWriteConnectionSecretToRef
 }
 
 /// <summary>MwsLogDeliverySpec defines the desired state of MwsLogDelivery</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliverySpec
 {
@@ -906,7 +906,7 @@ public partial class V1beta1MwsLogDeliverySpec
     public V1beta1MwsLogDeliverySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliveryStatusAtProvider
 {
@@ -960,7 +960,7 @@ public partial class V1beta1MwsLogDeliveryStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliveryStatusConditions
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta1MwsLogDeliveryStatusConditions
 }
 
 /// <summary>MwsLogDeliveryStatus defines the observed state of MwsLogDelivery.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsLogDeliveryStatus
 {
@@ -1033,7 +1033,7 @@ public partial class V1beta1MwsLogDeliveryStatus
 }
 
 /// <summary>MwsLogDelivery is the Schema for the MwsLogDeliverys API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MwsLogDelivery : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MwsLogDeliverySpec>, IStatus<V1beta1MwsLogDeliveryStatus?>

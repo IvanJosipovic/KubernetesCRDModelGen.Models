@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.pipes.aws.upbound.io;
 /// <summary>Pipe is the Schema for the Pipes API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PipeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Pipe>
@@ -46,7 +46,7 @@ public partial class V1beta1PipeList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecDeletionPolicyEnum>))]
 public enum V1beta1PipeSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1PipeSpecDeletionPolicyEnum
 }
 
 /// <summary>Contains the HTTP parameters to use when the target is a API Gateway REST endpoint or EventBridge ApiDestination. If you specify an API Gateway REST API or EventBridge ApiDestination as a target, you can use this parameter to specify headers, path parameters, and query string keys/values as part of your target invoking request. If you&apos;re using ApiDestinations, the corresponding Connection can also have these values configured. In case of any conflicting keys, values from the Connection take precedence. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderEnrichmentParametersHttpParameters
 {
@@ -75,7 +75,7 @@ public partial class V1beta1PipeSpecForProviderEnrichmentParametersHttpParameter
 }
 
 /// <summary>Parameters to configure enrichment for your pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderEnrichmentParameters
 {
@@ -94,7 +94,7 @@ public partial class V1beta1PipeSpecForProviderEnrichmentParameters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderEnrichmentRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderEnrichmentRefPolicyResolutionEnum
 {
@@ -110,7 +110,7 @@ public enum V1beta1PipeSpecForProviderEnrichmentRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderEnrichmentRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderEnrichmentRefPolicyResolveEnum
 {
@@ -121,7 +121,7 @@ public enum V1beta1PipeSpecForProviderEnrichmentRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderEnrichmentRefPolicy
 {
@@ -145,7 +145,7 @@ public partial class V1beta1PipeSpecForProviderEnrichmentRefPolicy
 }
 
 /// <summary>Reference to a APIDestination in cloudwatchevents to populate enrichment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderEnrichmentRef
 {
@@ -164,7 +164,7 @@ public partial class V1beta1PipeSpecForProviderEnrichmentRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderEnrichmentSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderEnrichmentSelectorPolicyResolutionEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta1PipeSpecForProviderEnrichmentSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderEnrichmentSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderEnrichmentSelectorPolicyResolveEnum
 {
@@ -191,7 +191,7 @@ public enum V1beta1PipeSpecForProviderEnrichmentSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderEnrichmentSelectorPolicy
 {
@@ -215,7 +215,7 @@ public partial class V1beta1PipeSpecForProviderEnrichmentSelectorPolicy
 }
 
 /// <summary>Selector for a APIDestination in cloudwatchevents to populate enrichment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderEnrichmentSelector
 {
@@ -241,7 +241,7 @@ public partial class V1beta1PipeSpecForProviderEnrichmentSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolutionEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolveEnum
 {
@@ -268,7 +268,7 @@ public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicy
 {
@@ -292,7 +292,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLog
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRef
 {
@@ -311,7 +311,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLog
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolutionEnum
 {
@@ -327,7 +327,7 @@ public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolveEnum
 {
@@ -338,7 +338,7 @@ public enum V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicy
 {
@@ -362,7 +362,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLog
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelector
 {
@@ -383,7 +383,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLog
 }
 
 /// <summary>Amazon CloudWatch Logs logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLogDestination
 {
@@ -401,7 +401,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLog
 }
 
 /// <summary>Amazon Kinesis Data Firehose logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationFirehoseLogDestination
 {
@@ -411,7 +411,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationFirehoseLogDestin
 }
 
 /// <summary>Amazon S3 logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationS3LogDestination
 {
@@ -433,7 +433,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationS3LogDestination
 }
 
 /// <summary>Logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfiguration
 {
@@ -464,7 +464,7 @@ public partial class V1beta1PipeSpecForProviderLogConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -480,7 +480,7 @@ public enum V1beta1PipeSpecForProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -491,7 +491,7 @@ public enum V1beta1PipeSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderRoleArnRefPolicy
 {
@@ -515,7 +515,7 @@ public partial class V1beta1PipeSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderRoleArnRef
 {
@@ -534,7 +534,7 @@ public partial class V1beta1PipeSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -550,7 +550,7 @@ public enum V1beta1PipeSpecForProviderRoleArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -561,7 +561,7 @@ public enum V1beta1PipeSpecForProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderRoleArnSelectorPolicy
 {
@@ -585,7 +585,7 @@ public partial class V1beta1PipeSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderRoleArnSelector
 {
@@ -606,7 +606,7 @@ public partial class V1beta1PipeSpecForProviderRoleArnSelector
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersActivemqBrokerParametersCredentials
 {
@@ -616,7 +616,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersActivemqBrokerPar
 }
 
 /// <summary>The parameters for using an Active MQ broker as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersActivemqBrokerParameters
 {
@@ -638,7 +638,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersActivemqBrokerPar
 }
 
 /// <summary>Define the target queue to send dead-letter queue events to. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersDynamodbStreamParametersDeadLetterConfig
 {
@@ -648,7 +648,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersDynamodbStreamPar
 }
 
 /// <summary>The parameters for using a DynamoDB stream as a source.  Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersDynamodbStreamParameters
 {
@@ -685,7 +685,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersDynamodbStreamPar
     public string? StartingPosition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersFilterCriteriaFilter
 {
@@ -695,7 +695,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersFilterCriteriaFil
 }
 
 /// <summary>The collection of event patterns used to filter events. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersFilterCriteria
 {
@@ -705,7 +705,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersFilterCriteria
 }
 
 /// <summary>Define the target queue to send dead-letter queue events to. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersKinesisStreamParametersDeadLetterConfig
 {
@@ -715,7 +715,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersKinesisStreamPara
 }
 
 /// <summary>The parameters for using a Kinesis stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersKinesisStreamParameters
 {
@@ -757,7 +757,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersKinesisStreamPara
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersManagedStreamingKafkaParametersCredentials
 {
@@ -771,7 +771,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersManagedStreamingK
 }
 
 /// <summary>The parameters for using an MSK stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersManagedStreamingKafkaParameters
 {
@@ -801,7 +801,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersManagedStreamingK
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersRabbitmqBrokerParametersCredentials
 {
@@ -811,7 +811,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersRabbitmqBrokerPar
 }
 
 /// <summary>The parameters for using a Rabbit MQ broker as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersRabbitmqBrokerParameters
 {
@@ -837,7 +837,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersRabbitmqBrokerPar
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersSelfManagedKafkaParametersCredentials
 {
@@ -859,7 +859,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersSelfManagedKafkaP
 }
 
 /// <summary>This structure specifies the VPC subnets and security groups for the stream, and whether a public IP address is to be used. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersSelfManagedKafkaParametersVpc
 {
@@ -873,7 +873,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersSelfManagedKafkaP
 }
 
 /// <summary>The parameters for using a self-managed Apache Kafka stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersSelfManagedKafkaParameters
 {
@@ -915,7 +915,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersSelfManagedKafkaP
 }
 
 /// <summary>The parameters for using a Amazon SQS stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParametersSqsQueueParameters
 {
@@ -929,7 +929,7 @@ public partial class V1beta1PipeSpecForProviderSourceParametersSqsQueueParameter
 }
 
 /// <summary>Parameters to configure a source for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceParameters
 {
@@ -972,7 +972,7 @@ public partial class V1beta1PipeSpecForProviderSourceParameters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderSourceRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderSourceRefPolicyResolutionEnum
 {
@@ -988,7 +988,7 @@ public enum V1beta1PipeSpecForProviderSourceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderSourceRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderSourceRefPolicyResolveEnum
 {
@@ -999,7 +999,7 @@ public enum V1beta1PipeSpecForProviderSourceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceRefPolicy
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1PipeSpecForProviderSourceRefPolicy
 }
 
 /// <summary>Reference to a Queue in sqs to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceRef
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta1PipeSpecForProviderSourceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderSourceSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderSourceSelectorPolicyResolutionEnum
 {
@@ -1058,7 +1058,7 @@ public enum V1beta1PipeSpecForProviderSourceSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderSourceSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderSourceSelectorPolicyResolveEnum
 {
@@ -1069,7 +1069,7 @@ public enum V1beta1PipeSpecForProviderSourceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceSelectorPolicy
 {
@@ -1093,7 +1093,7 @@ public partial class V1beta1PipeSpecForProviderSourceSelectorPolicy
 }
 
 /// <summary>Selector for a Queue in sqs to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderSourceSelector
 {
@@ -1114,7 +1114,7 @@ public partial class V1beta1PipeSpecForProviderSourceSelector
 }
 
 /// <summary>The array properties for the submitted job, such as the size of the array. The array size can be between 2 and 10,000. If you specify array properties for a job, it becomes an array job. This parameter is used only if the target is an AWS Batch job. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParametersArrayProperties
 {
@@ -1123,7 +1123,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
     public double? Size { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParametersContainerOverridesEnvironment
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParametersContainerOverridesResourceRequirement
 {
@@ -1150,7 +1150,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
 }
 
 /// <summary>The overrides that are sent to a container. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParametersContainerOverrides
 {
@@ -1171,7 +1171,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
     public IList<V1beta1PipeSpecForProviderTargetParametersBatchJobParametersContainerOverridesResourceRequirement>? ResourceRequirement { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParametersDependsOn
 {
@@ -1185,7 +1185,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
 }
 
 /// <summary>The retry strategy to use for failed jobs. When a retry strategy is specified here, it overrides the retry strategy defined in the job definition. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParametersRetryStrategy
 {
@@ -1195,7 +1195,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
 }
 
 /// <summary>The parameters for using an AWS Batch job as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameters
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
 }
 
 /// <summary>The parameters for using an CloudWatch Logs log stream as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersCloudwatchLogsParameters
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersCloudwatchLogsPar
     public string? Timestamp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersCapacityProviderStrategy
 {
@@ -1260,7 +1260,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
 }
 
 /// <summary>Use this structure to specify the VPC subnets and security groups for the task, and whether a public IP address is to be used. This structure is relevant only for ECS tasks that use the awsvpc network mode. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration
 {
@@ -1278,7 +1278,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
 }
 
 /// <summary>Use this structure if the Amazon ECS task uses the awsvpc network mode. This structure specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. This structure is required if LaunchType is FARGATE because the awsvpc mode is required for Fargate tasks. If you specify NetworkConfiguration when the target ECS task does not use the awsvpc network mode, the task fails. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersNetworkConfiguration
 {
@@ -1287,7 +1287,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     public V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration? AwsVpcConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
 {
@@ -1300,7 +1300,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile
 {
@@ -1313,7 +1313,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement
 {
@@ -1326,7 +1326,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverridesContainerOverride
 {
@@ -1364,7 +1364,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
 }
 
 /// <summary>The ephemeral storage setting override for the task.  Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverridesEphemeralStorage
 {
@@ -1373,7 +1373,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     public double? SizeInGib { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride
 {
@@ -1387,7 +1387,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
 }
 
 /// <summary>The overrides that are associated with a task. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverrides
 {
@@ -1420,7 +1420,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     public string? TaskRoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersPlacementConstraint
 {
@@ -1433,7 +1433,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersPlacementStrategy
 {
@@ -1447,7 +1447,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
 }
 
 /// <summary>The parameters for using an Amazon ECS task as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
 {
@@ -1513,7 +1513,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
 }
 
 /// <summary>The parameters for using an EventBridge event bus as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersEventbridgeEventBusParameters
 {
@@ -1539,7 +1539,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEventbridgeEventB
 }
 
 /// <summary>These are custom parameter to be used when the target is an API Gateway REST APIs or EventBridge ApiDestinations. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersHttpParameters
 {
@@ -1557,7 +1557,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersHttpParameters
 }
 
 /// <summary>The parameters for using a Kinesis stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersKinesisStreamParameters
 {
@@ -1567,7 +1567,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersKinesisStreamPara
 }
 
 /// <summary>The parameters for using a Lambda function as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersLambdaFunctionParameters
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersLambdaFunctionPar
 }
 
 /// <summary>These are custom parameters to be used when the target is a Amazon Redshift cluster to invoke the Amazon Redshift Data API BatchExecuteStatement. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersRedshiftDataParameters
 {
@@ -1606,7 +1606,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersRedshiftDataParam
     public bool? WithEvent { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersSagemakerPipelineParametersPipelineParameter
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersSagemakerPipeline
 }
 
 /// <summary>The parameters for using a SageMaker AI pipeline as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersSagemakerPipelineParameters
 {
@@ -1630,7 +1630,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersSagemakerPipeline
 }
 
 /// <summary>The parameters for using a Amazon SQS stream as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersSqsQueueParameters
 {
@@ -1644,7 +1644,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersSqsQueueParameter
 }
 
 /// <summary>The parameters for using a Step Functions state machine as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParametersStepFunctionStateMachineParameters
 {
@@ -1654,7 +1654,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersStepFunctionState
 }
 
 /// <summary>Parameters to configure a target for your pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetParameters
 {
@@ -1713,7 +1713,7 @@ public partial class V1beta1PipeSpecForProviderTargetParameters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderTargetRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderTargetRefPolicyResolutionEnum
 {
@@ -1729,7 +1729,7 @@ public enum V1beta1PipeSpecForProviderTargetRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderTargetRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderTargetRefPolicyResolveEnum
 {
@@ -1740,7 +1740,7 @@ public enum V1beta1PipeSpecForProviderTargetRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetRefPolicy
 {
@@ -1764,7 +1764,7 @@ public partial class V1beta1PipeSpecForProviderTargetRefPolicy
 }
 
 /// <summary>Reference to a Queue in sqs to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetRef
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta1PipeSpecForProviderTargetRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecForProviderTargetSelectorPolicyResolutionEnum
 {
@@ -1799,7 +1799,7 @@ public enum V1beta1PipeSpecForProviderTargetSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecForProviderTargetSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecForProviderTargetSelectorPolicyResolveEnum
 {
@@ -1810,7 +1810,7 @@ public enum V1beta1PipeSpecForProviderTargetSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetSelectorPolicy
 {
@@ -1834,7 +1834,7 @@ public partial class V1beta1PipeSpecForProviderTargetSelectorPolicy
 }
 
 /// <summary>Selector for a Queue in sqs to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderTargetSelector
 {
@@ -1854,7 +1854,7 @@ public partial class V1beta1PipeSpecForProviderTargetSelector
     public V1beta1PipeSpecForProviderTargetSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProvider
 {
@@ -1947,7 +1947,7 @@ public partial class V1beta1PipeSpecForProvider
 }
 
 /// <summary>Contains the HTTP parameters to use when the target is a API Gateway REST endpoint or EventBridge ApiDestination. If you specify an API Gateway REST API or EventBridge ApiDestination as a target, you can use this parameter to specify headers, path parameters, and query string keys/values as part of your target invoking request. If you&apos;re using ApiDestinations, the corresponding Connection can also have these values configured. In case of any conflicting keys, values from the Connection take precedence. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderEnrichmentParametersHttpParameters
 {
@@ -1965,7 +1965,7 @@ public partial class V1beta1PipeSpecInitProviderEnrichmentParametersHttpParamete
 }
 
 /// <summary>Parameters to configure enrichment for your pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderEnrichmentParameters
 {
@@ -1984,7 +1984,7 @@ public partial class V1beta1PipeSpecInitProviderEnrichmentParameters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderEnrichmentRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderEnrichmentRefPolicyResolutionEnum
 {
@@ -2000,7 +2000,7 @@ public enum V1beta1PipeSpecInitProviderEnrichmentRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderEnrichmentRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderEnrichmentRefPolicyResolveEnum
 {
@@ -2011,7 +2011,7 @@ public enum V1beta1PipeSpecInitProviderEnrichmentRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderEnrichmentRefPolicy
 {
@@ -2035,7 +2035,7 @@ public partial class V1beta1PipeSpecInitProviderEnrichmentRefPolicy
 }
 
 /// <summary>Reference to a APIDestination in cloudwatchevents to populate enrichment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderEnrichmentRef
 {
@@ -2054,7 +2054,7 @@ public partial class V1beta1PipeSpecInitProviderEnrichmentRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderEnrichmentSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderEnrichmentSelectorPolicyResolutionEnum
 {
@@ -2070,7 +2070,7 @@ public enum V1beta1PipeSpecInitProviderEnrichmentSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderEnrichmentSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderEnrichmentSelectorPolicyResolveEnum
 {
@@ -2081,7 +2081,7 @@ public enum V1beta1PipeSpecInitProviderEnrichmentSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderEnrichmentSelectorPolicy
 {
@@ -2105,7 +2105,7 @@ public partial class V1beta1PipeSpecInitProviderEnrichmentSelectorPolicy
 }
 
 /// <summary>Selector for a APIDestination in cloudwatchevents to populate enrichment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderEnrichmentSelector
 {
@@ -2131,7 +2131,7 @@ public partial class V1beta1PipeSpecInitProviderEnrichmentSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolutionEnum
 {
@@ -2147,7 +2147,7 @@ public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicyResolveEnum
 {
@@ -2158,7 +2158,7 @@ public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRefPolicy
 {
@@ -2182,7 +2182,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLo
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnRef
 {
@@ -2201,7 +2201,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolutionEnum
 {
@@ -2217,7 +2217,7 @@ public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicyResolveEnum
 {
@@ -2228,7 +2228,7 @@ public enum V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelectorPolicy
 {
@@ -2252,7 +2252,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLo
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestinationLogGroupArnSelector
 {
@@ -2273,7 +2273,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLo
 }
 
 /// <summary>Amazon CloudWatch Logs logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLogDestination
 {
@@ -2291,7 +2291,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLo
 }
 
 /// <summary>Amazon Kinesis Data Firehose logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationFirehoseLogDestination
 {
@@ -2301,7 +2301,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationFirehoseLogDesti
 }
 
 /// <summary>Amazon S3 logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationS3LogDestination
 {
@@ -2323,7 +2323,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationS3LogDestination
 }
 
 /// <summary>Logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfiguration
 {
@@ -2354,7 +2354,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -2370,7 +2370,7 @@ public enum V1beta1PipeSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -2381,7 +2381,7 @@ public enum V1beta1PipeSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderRoleArnRefPolicy
 {
@@ -2405,7 +2405,7 @@ public partial class V1beta1PipeSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderRoleArnRef
 {
@@ -2424,7 +2424,7 @@ public partial class V1beta1PipeSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -2440,7 +2440,7 @@ public enum V1beta1PipeSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -2451,7 +2451,7 @@ public enum V1beta1PipeSpecInitProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderRoleArnSelectorPolicy
 {
@@ -2475,7 +2475,7 @@ public partial class V1beta1PipeSpecInitProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderRoleArnSelector
 {
@@ -2496,7 +2496,7 @@ public partial class V1beta1PipeSpecInitProviderRoleArnSelector
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersActivemqBrokerParametersCredentials
 {
@@ -2506,7 +2506,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersActivemqBrokerPa
 }
 
 /// <summary>The parameters for using an Active MQ broker as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersActivemqBrokerParameters
 {
@@ -2528,7 +2528,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersActivemqBrokerPa
 }
 
 /// <summary>Define the target queue to send dead-letter queue events to. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersDynamodbStreamParametersDeadLetterConfig
 {
@@ -2538,7 +2538,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersDynamodbStreamPa
 }
 
 /// <summary>The parameters for using a DynamoDB stream as a source.  Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersDynamodbStreamParameters
 {
@@ -2575,7 +2575,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersDynamodbStreamPa
     public string? StartingPosition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersFilterCriteriaFilter
 {
@@ -2585,7 +2585,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersFilterCriteriaFi
 }
 
 /// <summary>The collection of event patterns used to filter events. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersFilterCriteria
 {
@@ -2595,7 +2595,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersFilterCriteria
 }
 
 /// <summary>Define the target queue to send dead-letter queue events to. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersKinesisStreamParametersDeadLetterConfig
 {
@@ -2605,7 +2605,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersKinesisStreamPar
 }
 
 /// <summary>The parameters for using a Kinesis stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersKinesisStreamParameters
 {
@@ -2647,7 +2647,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersKinesisStreamPar
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersManagedStreamingKafkaParametersCredentials
 {
@@ -2661,7 +2661,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersManagedStreaming
 }
 
 /// <summary>The parameters for using an MSK stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersManagedStreamingKafkaParameters
 {
@@ -2691,7 +2691,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersManagedStreaming
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersRabbitmqBrokerParametersCredentials
 {
@@ -2701,7 +2701,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersRabbitmqBrokerPa
 }
 
 /// <summary>The parameters for using a Rabbit MQ broker as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersRabbitmqBrokerParameters
 {
@@ -2727,7 +2727,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersRabbitmqBrokerPa
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersSelfManagedKafkaParametersCredentials
 {
@@ -2749,7 +2749,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersSelfManagedKafka
 }
 
 /// <summary>This structure specifies the VPC subnets and security groups for the stream, and whether a public IP address is to be used. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersSelfManagedKafkaParametersVpc
 {
@@ -2763,7 +2763,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersSelfManagedKafka
 }
 
 /// <summary>The parameters for using a self-managed Apache Kafka stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersSelfManagedKafkaParameters
 {
@@ -2805,7 +2805,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersSelfManagedKafka
 }
 
 /// <summary>The parameters for using a Amazon SQS stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParametersSqsQueueParameters
 {
@@ -2819,7 +2819,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParametersSqsQueueParamete
 }
 
 /// <summary>Parameters to configure a source for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceParameters
 {
@@ -2862,7 +2862,7 @@ public partial class V1beta1PipeSpecInitProviderSourceParameters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderSourceRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderSourceRefPolicyResolutionEnum
 {
@@ -2878,7 +2878,7 @@ public enum V1beta1PipeSpecInitProviderSourceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderSourceRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderSourceRefPolicyResolveEnum
 {
@@ -2889,7 +2889,7 @@ public enum V1beta1PipeSpecInitProviderSourceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceRefPolicy
 {
@@ -2913,7 +2913,7 @@ public partial class V1beta1PipeSpecInitProviderSourceRefPolicy
 }
 
 /// <summary>Reference to a Queue in sqs to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceRef
 {
@@ -2932,7 +2932,7 @@ public partial class V1beta1PipeSpecInitProviderSourceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderSourceSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderSourceSelectorPolicyResolutionEnum
 {
@@ -2948,7 +2948,7 @@ public enum V1beta1PipeSpecInitProviderSourceSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderSourceSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderSourceSelectorPolicyResolveEnum
 {
@@ -2959,7 +2959,7 @@ public enum V1beta1PipeSpecInitProviderSourceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceSelectorPolicy
 {
@@ -2983,7 +2983,7 @@ public partial class V1beta1PipeSpecInitProviderSourceSelectorPolicy
 }
 
 /// <summary>Selector for a Queue in sqs to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderSourceSelector
 {
@@ -3004,7 +3004,7 @@ public partial class V1beta1PipeSpecInitProviderSourceSelector
 }
 
 /// <summary>The array properties for the submitted job, such as the size of the array. The array size can be between 2 and 10,000. If you specify array properties for a job, it becomes an array job. This parameter is used only if the target is an AWS Batch job. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersArrayProperties
 {
@@ -3013,7 +3013,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
     public double? Size { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersContainerOverridesEnvironment
 {
@@ -3026,7 +3026,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersContainerOverridesResourceRequirement
 {
@@ -3040,7 +3040,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The overrides that are sent to a container. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersContainerOverrides
 {
@@ -3061,7 +3061,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
     public IList<V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersContainerOverridesResourceRequirement>? ResourceRequirement { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersDependsOn
 {
@@ -3075,7 +3075,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The retry strategy to use for failed jobs. When a retry strategy is specified here, it overrides the retry strategy defined in the job definition. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersRetryStrategy
 {
@@ -3085,7 +3085,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The parameters for using an AWS Batch job as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParameters
 {
@@ -3119,7 +3119,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The parameters for using an CloudWatch Logs log stream as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersCloudwatchLogsParameters
 {
@@ -3132,7 +3132,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersCloudwatchLogsPa
     public string? Timestamp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersCapacityProviderStrategy
 {
@@ -3150,7 +3150,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>Use this structure to specify the VPC subnets and security groups for the task, and whether a public IP address is to be used. This structure is relevant only for ECS tasks that use the awsvpc network mode. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration
 {
@@ -3168,7 +3168,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>Use this structure if the Amazon ECS task uses the awsvpc network mode. This structure specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. This structure is required if LaunchType is FARGATE because the awsvpc mode is required for Fargate tasks. If you specify NetworkConfiguration when the target ECS task does not use the awsvpc network mode, the task fails. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersNetworkConfiguration
 {
@@ -3177,7 +3177,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     public V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration? AwsVpcConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
 {
@@ -3190,7 +3190,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile
 {
@@ -3203,7 +3203,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement
 {
@@ -3216,7 +3216,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverridesContainerOverride
 {
@@ -3254,7 +3254,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The ephemeral storage setting override for the task.  Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverridesEphemeralStorage
 {
@@ -3263,7 +3263,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     public double? SizeInGib { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride
 {
@@ -3277,7 +3277,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The overrides that are associated with a task. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverrides
 {
@@ -3310,7 +3310,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     public string? TaskRoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersPlacementConstraint
 {
@@ -3323,7 +3323,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersPlacementStrategy
 {
@@ -3337,7 +3337,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The parameters for using an Amazon ECS task as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameters
 {
@@ -3403,7 +3403,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The parameters for using an EventBridge event bus as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersEventbridgeEventBusParameters
 {
@@ -3429,7 +3429,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEventbridgeEvent
 }
 
 /// <summary>These are custom parameter to be used when the target is an API Gateway REST APIs or EventBridge ApiDestinations. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersHttpParameters
 {
@@ -3447,7 +3447,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersHttpParameters
 }
 
 /// <summary>The parameters for using a Kinesis stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersKinesisStreamParameters
 {
@@ -3457,7 +3457,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersKinesisStreamPar
 }
 
 /// <summary>The parameters for using a Lambda function as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersLambdaFunctionParameters
 {
@@ -3467,7 +3467,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersLambdaFunctionPa
 }
 
 /// <summary>These are custom parameters to be used when the target is a Amazon Redshift cluster to invoke the Amazon Redshift Data API BatchExecuteStatement. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersRedshiftDataParameters
 {
@@ -3496,7 +3496,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersRedshiftDataPara
     public bool? WithEvent { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersSagemakerPipelineParametersPipelineParameter
 {
@@ -3510,7 +3510,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersSagemakerPipelin
 }
 
 /// <summary>The parameters for using a SageMaker AI pipeline as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersSagemakerPipelineParameters
 {
@@ -3520,7 +3520,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersSagemakerPipelin
 }
 
 /// <summary>The parameters for using a Amazon SQS stream as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersSqsQueueParameters
 {
@@ -3534,7 +3534,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersSqsQueueParamete
 }
 
 /// <summary>The parameters for using a Step Functions state machine as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParametersStepFunctionStateMachineParameters
 {
@@ -3544,7 +3544,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersStepFunctionStat
 }
 
 /// <summary>Parameters to configure a target for your pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetParameters
 {
@@ -3603,7 +3603,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParameters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderTargetRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderTargetRefPolicyResolutionEnum
 {
@@ -3619,7 +3619,7 @@ public enum V1beta1PipeSpecInitProviderTargetRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderTargetRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderTargetRefPolicyResolveEnum
 {
@@ -3630,7 +3630,7 @@ public enum V1beta1PipeSpecInitProviderTargetRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetRefPolicy
 {
@@ -3654,7 +3654,7 @@ public partial class V1beta1PipeSpecInitProviderTargetRefPolicy
 }
 
 /// <summary>Reference to a Queue in sqs to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetRef
 {
@@ -3673,7 +3673,7 @@ public partial class V1beta1PipeSpecInitProviderTargetRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecInitProviderTargetSelectorPolicyResolutionEnum
 {
@@ -3689,7 +3689,7 @@ public enum V1beta1PipeSpecInitProviderTargetSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecInitProviderTargetSelectorPolicyResolveEnum>))]
 public enum V1beta1PipeSpecInitProviderTargetSelectorPolicyResolveEnum
 {
@@ -3700,7 +3700,7 @@ public enum V1beta1PipeSpecInitProviderTargetSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetSelectorPolicy
 {
@@ -3724,7 +3724,7 @@ public partial class V1beta1PipeSpecInitProviderTargetSelectorPolicy
 }
 
 /// <summary>Selector for a Queue in sqs to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderTargetSelector
 {
@@ -3756,7 +3756,7 @@ public partial class V1beta1PipeSpecInitProviderTargetSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProvider
 {
@@ -3845,7 +3845,7 @@ public partial class V1beta1PipeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecManagementPoliciesEnum>))]
 public enum V1beta1PipeSpecManagementPoliciesEnum
 {
@@ -3869,7 +3869,7 @@ public enum V1beta1PipeSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PipeSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3885,7 +3885,7 @@ public enum V1beta1PipeSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PipeSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PipeSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3896,7 +3896,7 @@ public enum V1beta1PipeSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecProviderConfigRefPolicy
 {
@@ -3924,7 +3924,7 @@ public partial class V1beta1PipeSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecProviderConfigRef
 {
@@ -3943,7 +3943,7 @@ public partial class V1beta1PipeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecWriteConnectionSecretToRef
 {
@@ -3957,7 +3957,7 @@ public partial class V1beta1PipeSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PipeSpec defines the desired state of Pipe</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpec
 {
@@ -4025,7 +4025,7 @@ public partial class V1beta1PipeSpec
 }
 
 /// <summary>Contains the HTTP parameters to use when the target is a API Gateway REST endpoint or EventBridge ApiDestination. If you specify an API Gateway REST API or EventBridge ApiDestination as a target, you can use this parameter to specify headers, path parameters, and query string keys/values as part of your target invoking request. If you&apos;re using ApiDestinations, the corresponding Connection can also have these values configured. In case of any conflicting keys, values from the Connection take precedence. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderEnrichmentParametersHttpParameters
 {
@@ -4043,7 +4043,7 @@ public partial class V1beta1PipeStatusAtProviderEnrichmentParametersHttpParamete
 }
 
 /// <summary>Parameters to configure enrichment for your pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderEnrichmentParameters
 {
@@ -4057,7 +4057,7 @@ public partial class V1beta1PipeStatusAtProviderEnrichmentParameters
 }
 
 /// <summary>Amazon CloudWatch Logs logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderLogConfigurationCloudwatchLogsLogDestination
 {
@@ -4067,7 +4067,7 @@ public partial class V1beta1PipeStatusAtProviderLogConfigurationCloudwatchLogsLo
 }
 
 /// <summary>Amazon Kinesis Data Firehose logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderLogConfigurationFirehoseLogDestination
 {
@@ -4077,7 +4077,7 @@ public partial class V1beta1PipeStatusAtProviderLogConfigurationFirehoseLogDesti
 }
 
 /// <summary>Amazon S3 logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderLogConfigurationS3LogDestination
 {
@@ -4099,7 +4099,7 @@ public partial class V1beta1PipeStatusAtProviderLogConfigurationS3LogDestination
 }
 
 /// <summary>Logging configuration settings for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderLogConfiguration
 {
@@ -4125,7 +4125,7 @@ public partial class V1beta1PipeStatusAtProviderLogConfiguration
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersActivemqBrokerParametersCredentials
 {
@@ -4135,7 +4135,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersActivemqBrokerPa
 }
 
 /// <summary>The parameters for using an Active MQ broker as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersActivemqBrokerParameters
 {
@@ -4157,7 +4157,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersActivemqBrokerPa
 }
 
 /// <summary>Define the target queue to send dead-letter queue events to. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersDynamodbStreamParametersDeadLetterConfig
 {
@@ -4167,7 +4167,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersDynamodbStreamPa
 }
 
 /// <summary>The parameters for using a DynamoDB stream as a source.  Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersDynamodbStreamParameters
 {
@@ -4204,7 +4204,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersDynamodbStreamPa
     public string? StartingPosition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersFilterCriteriaFilter
 {
@@ -4214,7 +4214,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersFilterCriteriaFi
 }
 
 /// <summary>The collection of event patterns used to filter events. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersFilterCriteria
 {
@@ -4224,7 +4224,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersFilterCriteria
 }
 
 /// <summary>Define the target queue to send dead-letter queue events to. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersKinesisStreamParametersDeadLetterConfig
 {
@@ -4234,7 +4234,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersKinesisStreamPar
 }
 
 /// <summary>The parameters for using a Kinesis stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersKinesisStreamParameters
 {
@@ -4276,7 +4276,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersKinesisStreamPar
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersManagedStreamingKafkaParametersCredentials
 {
@@ -4290,7 +4290,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersManagedStreaming
 }
 
 /// <summary>The parameters for using an MSK stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersManagedStreamingKafkaParameters
 {
@@ -4320,7 +4320,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersManagedStreaming
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersRabbitmqBrokerParametersCredentials
 {
@@ -4330,7 +4330,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersRabbitmqBrokerPa
 }
 
 /// <summary>The parameters for using a Rabbit MQ broker as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersRabbitmqBrokerParameters
 {
@@ -4356,7 +4356,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersRabbitmqBrokerPa
 }
 
 /// <summary>The credentials needed to access the resource. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersSelfManagedKafkaParametersCredentials
 {
@@ -4378,7 +4378,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersSelfManagedKafka
 }
 
 /// <summary>This structure specifies the VPC subnets and security groups for the stream, and whether a public IP address is to be used. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersSelfManagedKafkaParametersVpc
 {
@@ -4392,7 +4392,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersSelfManagedKafka
 }
 
 /// <summary>The parameters for using a self-managed Apache Kafka stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersSelfManagedKafkaParameters
 {
@@ -4434,7 +4434,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersSelfManagedKafka
 }
 
 /// <summary>The parameters for using a Amazon SQS stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParametersSqsQueueParameters
 {
@@ -4448,7 +4448,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParametersSqsQueueParamete
 }
 
 /// <summary>Parameters to configure a source for the pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderSourceParameters
 {
@@ -4486,7 +4486,7 @@ public partial class V1beta1PipeStatusAtProviderSourceParameters
 }
 
 /// <summary>The array properties for the submitted job, such as the size of the array. The array size can be between 2 and 10,000. If you specify array properties for a job, it becomes an array job. This parameter is used only if the target is an AWS Batch job. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersArrayProperties
 {
@@ -4495,7 +4495,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
     public double? Size { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersContainerOverridesEnvironment
 {
@@ -4508,7 +4508,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersContainerOverridesResourceRequirement
 {
@@ -4522,7 +4522,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The overrides that are sent to a container. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersContainerOverrides
 {
@@ -4543,7 +4543,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
     public IList<V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersContainerOverridesResourceRequirement>? ResourceRequirement { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersDependsOn
 {
@@ -4557,7 +4557,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The retry strategy to use for failed jobs. When a retry strategy is specified here, it overrides the retry strategy defined in the job definition. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersRetryStrategy
 {
@@ -4567,7 +4567,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The parameters for using an AWS Batch job as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParameters
 {
@@ -4601,7 +4601,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
 }
 
 /// <summary>The parameters for using an CloudWatch Logs log stream as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersCloudwatchLogsParameters
 {
@@ -4614,7 +4614,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersCloudwatchLogsPa
     public string? Timestamp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersCapacityProviderStrategy
 {
@@ -4632,7 +4632,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>Use this structure to specify the VPC subnets and security groups for the task, and whether a public IP address is to be used. This structure is relevant only for ECS tasks that use the awsvpc network mode. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration
 {
@@ -4650,7 +4650,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>Use this structure if the Amazon ECS task uses the awsvpc network mode. This structure specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. This structure is required if LaunchType is FARGATE because the awsvpc mode is required for Fargate tasks. If you specify NetworkConfiguration when the target ECS task does not use the awsvpc network mode, the task fails. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersNetworkConfiguration
 {
@@ -4659,7 +4659,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     public V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersNetworkConfigurationAwsVpcConfiguration? AwsVpcConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironment
 {
@@ -4672,7 +4672,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverridesContainerOverrideEnvironmentFile
 {
@@ -4685,7 +4685,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirement
 {
@@ -4698,7 +4698,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverridesContainerOverride
 {
@@ -4736,7 +4736,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The ephemeral storage setting override for the task.  Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverridesEphemeralStorage
 {
@@ -4745,7 +4745,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     public double? SizeInGib { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverride
 {
@@ -4759,7 +4759,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The overrides that are associated with a task. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverrides
 {
@@ -4792,7 +4792,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     public string? TaskRoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersPlacementConstraint
 {
@@ -4805,7 +4805,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersPlacementStrategy
 {
@@ -4819,7 +4819,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The parameters for using an Amazon ECS task as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameters
 {
@@ -4885,7 +4885,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
 }
 
 /// <summary>The parameters for using an EventBridge event bus as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersEventbridgeEventBusParameters
 {
@@ -4911,7 +4911,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEventbridgeEvent
 }
 
 /// <summary>These are custom parameter to be used when the target is an API Gateway REST APIs or EventBridge ApiDestinations. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersHttpParameters
 {
@@ -4929,7 +4929,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersHttpParameters
 }
 
 /// <summary>The parameters for using a Kinesis stream as a source. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersKinesisStreamParameters
 {
@@ -4939,7 +4939,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersKinesisStreamPar
 }
 
 /// <summary>The parameters for using a Lambda function as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersLambdaFunctionParameters
 {
@@ -4949,7 +4949,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersLambdaFunctionPa
 }
 
 /// <summary>These are custom parameters to be used when the target is a Amazon Redshift cluster to invoke the Amazon Redshift Data API BatchExecuteStatement. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersRedshiftDataParameters
 {
@@ -4978,7 +4978,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersRedshiftDataPara
     public bool? WithEvent { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersSagemakerPipelineParametersPipelineParameter
 {
@@ -4992,7 +4992,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersSagemakerPipelin
 }
 
 /// <summary>The parameters for using a SageMaker AI pipeline as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersSagemakerPipelineParameters
 {
@@ -5002,7 +5002,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersSagemakerPipelin
 }
 
 /// <summary>The parameters for using a Amazon SQS stream as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersSqsQueueParameters
 {
@@ -5016,7 +5016,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersSqsQueueParamete
 }
 
 /// <summary>The parameters for using a Step Functions state machine as a target. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParametersStepFunctionStateMachineParameters
 {
@@ -5026,7 +5026,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersStepFunctionStat
 }
 
 /// <summary>Parameters to configure a target for your pipe. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderTargetParameters
 {
@@ -5079,7 +5079,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParameters
     public V1beta1PipeStatusAtProviderTargetParametersStepFunctionStateMachineParameters? StepFunctionStateMachineParameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProvider
 {
@@ -5152,7 +5152,7 @@ public partial class V1beta1PipeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusConditions
 {
@@ -5195,7 +5195,7 @@ public partial class V1beta1PipeStatusConditions
 }
 
 /// <summary>PipeStatus defines the observed state of Pipe.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatus
 {
@@ -5225,7 +5225,7 @@ public partial class V1beta1PipeStatus
 }
 
 /// <summary>Pipe is the Schema for the Pipes API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Pipe : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PipeSpec>, IStatus<V1beta1PipeStatus?>

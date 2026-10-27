@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vertexai.gcp.upbound.io;
 /// <summary>FeaturestoreEntitytype is the Schema for the FeaturestoreEntitytypes API. An entity type is a type of object in a system that needs to be modeled and have stored information about.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FeaturestoreEntitytypeList : IKubernetesObject<V1ListMeta>, IItems<V1beta2FeaturestoreEntitytype>
@@ -46,7 +46,7 @@ public partial class V1beta2FeaturestoreEntitytypeList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecDeletionPolicyEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolutionEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolveEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRef
 }
 
 /// <summary>Reference to a Featurestore in vertexai to populate featurestore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolutionEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolveEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSel
 }
 
 /// <summary>Selector for a Featurestore in vertexai to populate featurestore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSelector
 {
@@ -207,7 +207,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderFeaturestoreSel
 /// Threshold for categorical features of anomaly detection. This is shared by all types of Featurestore Monitoring for categorical features (i.e. Features with type (Feature.ValueType) BOOL or STRING).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfigCategoricalThresholdConfig
 {
@@ -220,7 +220,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 /// The config for ImportFeatures Analysis Based Feature Monitoring.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfigImportFeaturesAnalysis
 {
@@ -237,7 +237,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 /// Threshold for numerical features of anomaly detection. This is shared by all objectives of Featurestore Monitoring for numerical features (i.e. Features with type (Feature.ValueType) DOUBLE or INT64).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfigNumericalThresholdConfig
 {
@@ -250,7 +250,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 /// The config for Snapshot Analysis Based Feature Monitoring.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfigSnapshotAnalysis
 {
@@ -275,7 +275,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 /// If this is populated with [FeaturestoreMonitoringConfig.monitoring_interval] specified, snapshot analysis monitoring is enabled. Otherwise, snapshot analysis monitoring is disabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfig
 {
@@ -308,7 +308,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfi
     public V1beta2FeaturestoreEntitytypeSpecForProviderMonitoringConfigSnapshotAnalysis? SnapshotAnalysis { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecForProvider
 {
@@ -351,7 +351,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolutionEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolutionEnum
 {
@@ -367,7 +367,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolveEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolveEnum
 {
@@ -378,7 +378,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicy
 {
@@ -402,7 +402,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRe
 }
 
 /// <summary>Reference to a Featurestore in vertexai to populate featurestore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRef
 {
@@ -421,7 +421,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolutionEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolutionEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolveEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolveEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicy
 {
@@ -472,7 +472,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSe
 }
 
 /// <summary>Selector for a Featurestore in vertexai to populate featurestore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderFeaturestoreSe
 /// Threshold for categorical features of anomaly detection. This is shared by all types of Featurestore Monitoring for categorical features (i.e. Features with type (Feature.ValueType) BOOL or STRING).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConfigCategoricalThresholdConfig
 {
@@ -509,7 +509,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 /// The config for ImportFeatures Analysis Based Feature Monitoring.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConfigImportFeaturesAnalysis
 {
@@ -526,7 +526,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 /// Threshold for numerical features of anomaly detection. This is shared by all objectives of Featurestore Monitoring for numerical features (i.e. Features with type (Feature.ValueType) DOUBLE or INT64).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConfigNumericalThresholdConfig
 {
@@ -539,7 +539,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 /// The config for Snapshot Analysis Based Feature Monitoring.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConfigSnapshotAnalysis
 {
@@ -564,7 +564,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 /// If this is populated with [FeaturestoreMonitoringConfig.monitoring_interval] specified, snapshot analysis monitoring is enabled. Otherwise, snapshot analysis monitoring is disabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConfig
 {
@@ -609,7 +609,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecInitProvider
 {
@@ -650,7 +650,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecManagementPoliciesEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecManagementPoliciesEnum
 {
@@ -674,7 +674,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -690,7 +690,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolveEnum
 {
@@ -701,7 +701,7 @@ public enum V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicy
 {
@@ -729,7 +729,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecProviderConfigRef
 {
@@ -748,7 +748,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpecWriteConnectionSecretToRef
 {
@@ -762,7 +762,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FeaturestoreEntitytypeSpec defines the desired state of FeaturestoreEntitytype</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeSpec
 {
@@ -833,7 +833,7 @@ public partial class V1beta2FeaturestoreEntitytypeSpec
 /// Threshold for categorical features of anomaly detection. This is shared by all types of Featurestore Monitoring for categorical features (i.e. Features with type (Feature.ValueType) BOOL or STRING).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConfigCategoricalThresholdConfig
 {
@@ -846,7 +846,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 /// The config for ImportFeatures Analysis Based Feature Monitoring.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConfigImportFeaturesAnalysis
 {
@@ -863,7 +863,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 /// Threshold for numerical features of anomaly detection. This is shared by all objectives of Featurestore Monitoring for numerical features (i.e. Features with type (Feature.ValueType) DOUBLE or INT64).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConfigNumericalThresholdConfig
 {
@@ -876,7 +876,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 /// The config for Snapshot Analysis Based Feature Monitoring.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConfigSnapshotAnalysis
 {
@@ -901,7 +901,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 /// If this is populated with [FeaturestoreMonitoringConfig.monitoring_interval] specified, snapshot analysis monitoring is enabled. Otherwise, snapshot analysis monitoring is disabled.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConfig
 {
@@ -934,7 +934,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConf
     public V1beta2FeaturestoreEntitytypeStatusAtProviderMonitoringConfigSnapshotAnalysis? SnapshotAnalysis { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatusAtProvider
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatusConditions
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatusConditions
 }
 
 /// <summary>FeaturestoreEntitytypeStatus defines the observed state of FeaturestoreEntitytype.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeaturestoreEntitytypeStatus
 {
@@ -1074,7 +1074,7 @@ public partial class V1beta2FeaturestoreEntitytypeStatus
 }
 
 /// <summary>FeaturestoreEntitytype is the Schema for the FeaturestoreEntitytypes API. An entity type is a type of object in a system that needs to be modeled and have stored information about.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FeaturestoreEntitytype : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2FeaturestoreEntitytypeSpec>, IStatus<V1beta2FeaturestoreEntitytypeStatus?>

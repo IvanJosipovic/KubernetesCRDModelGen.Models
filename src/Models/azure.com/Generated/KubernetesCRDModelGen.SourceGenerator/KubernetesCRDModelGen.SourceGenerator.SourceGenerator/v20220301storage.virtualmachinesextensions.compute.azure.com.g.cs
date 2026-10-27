@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-03-01/virtualMachine.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}/extensions/{vmExtensionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220301storageVirtualMachinesExtensionList : IKubernetesObject<V1ListMeta>, IItems<V20220301storageVirtualMachinesExtension>
@@ -46,7 +46,7 @@ public partial class V20220301storageVirtualMachinesExtensionList : IKubernetesO
 /// Storage version of v20220301.InstanceViewStatus
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecInstanceViewStatuses
 {
@@ -77,7 +77,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecInstanceViewSta
 /// Storage version of v20220301.InstanceViewStatus
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecInstanceViewSubstatuses
 {
@@ -108,7 +108,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecInstanceViewSub
 /// Storage version of v20220301.VirtualMachineExtensionInstanceView
 /// The instance view of a virtual machine extension.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecInstanceView
 {
@@ -140,7 +140,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecInstanceView
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecOperatorSpecConfigMapExpressions
 {
@@ -181,7 +181,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecOperatorSpecCon
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecOperatorSpecSecretExpressions
 {
@@ -221,7 +221,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecOperatorSpecSec
 /// Storage version of v20220301.VirtualMachinesExtensionOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecOperatorSpec
 {
@@ -244,7 +244,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a compute.azure.com/VirtualMachine resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecOwner
 {
@@ -260,7 +260,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecOwner
 /// SecretMapReference is a reference to a Kubernetes secret in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettings
 {
@@ -273,7 +273,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettin
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettingsFromKeyVaultSourceVaultReference
 {
@@ -299,7 +299,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettin
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettingsFromKeyVaultSourceVault
 {
@@ -319,7 +319,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettin
 /// Storage version of v20220301.KeyVaultSecretReference
 /// Describes a reference to Key Vault Secret
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettingsFromKeyVault
 {
@@ -339,7 +339,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpecProtectedSettin
 }
 
 /// <summary>Storage version of v20220301.VirtualMachinesExtension_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionSpec
 {
@@ -428,7 +428,7 @@ public partial class V20220301storageVirtualMachinesExtensionSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionStatusConditions
 {
@@ -477,7 +477,7 @@ public partial class V20220301storageVirtualMachinesExtensionStatusConditions
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionStatusInstanceViewStatuses
 {
@@ -508,7 +508,7 @@ public partial class V20220301storageVirtualMachinesExtensionStatusInstanceViewS
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionStatusInstanceViewSubstatuses
 {
@@ -539,7 +539,7 @@ public partial class V20220301storageVirtualMachinesExtensionStatusInstanceViewS
 /// Storage version of v20220301.VirtualMachineExtensionInstanceView_STATUS
 /// The instance view of a virtual machine extension.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionStatusInstanceView
 {
@@ -567,7 +567,7 @@ public partial class V20220301storageVirtualMachinesExtensionStatusInstanceView
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionStatusProtectedSettingsFromKeyVaultSourceVault
 {
@@ -586,7 +586,7 @@ public partial class V20220301storageVirtualMachinesExtensionStatusProtectedSett
 /// Storage version of v20220301.KeyVaultSecretReference_STATUS
 /// Describes a reference to Key Vault Secret
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionStatusProtectedSettingsFromKeyVault
 {
@@ -606,7 +606,7 @@ public partial class V20220301storageVirtualMachinesExtensionStatusProtectedSett
 }
 
 /// <summary>Storage version of v20220301.VirtualMachinesExtension_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachinesExtensionStatus
 {
@@ -683,7 +683,7 @@ public partial class V20220301storageVirtualMachinesExtensionStatus
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-03-01/virtualMachine.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}/extensions/{vmExtensionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220301storageVirtualMachinesExtension : IKubernetesObject<V1ObjectMeta>, ISpec<V20220301storageVirtualMachinesExtensionSpec?>, IStatus<V20220301storageVirtualMachinesExtensionStatus?>

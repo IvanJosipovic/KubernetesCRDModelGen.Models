@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.secretsmanager.aws.m.upbound.io;
 /// <summary>SecretRotation is the Schema for the SecretRotations API. Provides a resource to manage AWS Secrets Manager secret rotation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecretRotationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecretRotation>
@@ -43,7 +43,7 @@ public partial class V1beta1SecretRotationList : IKubernetesObject<V1ListMeta>, 
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataVa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataVa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationM
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataVa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataVa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationM
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationM
     public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadata
 {
@@ -219,7 +219,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum
 {
@@ -246,7 +246,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicy
 {
@@ -270,7 +270,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationR
 }
 
 /// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRef
 {
@@ -293,7 +293,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicy
 {
@@ -344,7 +344,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationR
 }
 
 /// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelector
 {
@@ -374,7 +374,7 @@ public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolutionEnum
 {
@@ -390,7 +390,7 @@ public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolveEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicy
 {
@@ -425,7 +425,7 @@ public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPol
 }
 
 /// <summary>Reference to a Function in lambda to populate rotationLambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnRef
 {
@@ -448,7 +448,7 @@ public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderRotationLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnSelectorPolicyResolutionEnum
 {
@@ -464,7 +464,7 @@ public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderRotationLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnSelectorPolicyResolveEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnSelectorPolicy
 {
@@ -499,7 +499,7 @@ public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnSelect
 }
 
 /// <summary>Selector for a Function in lambda to populate rotationLambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnSelector
 {
@@ -524,7 +524,7 @@ public partial class V1beta1SecretRotationSpecForProviderRotationLambdaArnSelect
 }
 
 /// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderRotationRules
 {
@@ -547,7 +547,7 @@ public partial class V1beta1SecretRotationSpecForProviderRotationRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderSecretIdRefPolicyResolutionEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1SecretRotationSpecForProviderSecretIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderSecretIdRefPolicyResolveEnum
 {
@@ -574,7 +574,7 @@ public enum V1beta1SecretRotationSpecForProviderSecretIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderSecretIdRefPolicy
 {
@@ -598,7 +598,7 @@ public partial class V1beta1SecretRotationSpecForProviderSecretIdRefPolicy
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderSecretIdRef
 {
@@ -621,7 +621,7 @@ public partial class V1beta1SecretRotationSpecForProviderSecretIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicyResolutionEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicyResolveEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicy
 {
@@ -672,7 +672,7 @@ public partial class V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicy
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProviderSecretIdSelector
 {
@@ -696,7 +696,7 @@ public partial class V1beta1SecretRotationSpecForProviderSecretIdSelector
     public V1beta1SecretRotationSpecForProviderSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecForProvider
 {
@@ -766,7 +766,7 @@ public partial class V1beta1SecretRotationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum
 {
@@ -782,7 +782,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataV
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum
 {
@@ -793,7 +793,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataV
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicy
 {
@@ -817,7 +817,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRef
 {
@@ -840,7 +840,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum
 {
@@ -856,7 +856,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataV
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum
 {
@@ -867,7 +867,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataV
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicy
 {
@@ -891,7 +891,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelector
 {
@@ -915,7 +915,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
     public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadata
 {
@@ -942,7 +942,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum
 {
@@ -958,7 +958,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum
 {
@@ -969,7 +969,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicy
 {
@@ -993,7 +993,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 }
 
 /// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRef
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum
 {
@@ -1032,7 +1032,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum
 {
@@ -1043,7 +1043,7 @@ public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicy
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 }
 
 /// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelector
 {
@@ -1097,7 +1097,7 @@ public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotation
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPolicyResolutionEnum
 {
@@ -1113,7 +1113,7 @@ public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPolicyResolveEnum
 {
@@ -1124,7 +1124,7 @@ public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPolicy
 {
@@ -1148,7 +1148,7 @@ public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnRefPo
 }
 
 /// <summary>Reference to a Function in lambda to populate rotationLambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnRef
 {
@@ -1171,7 +1171,7 @@ public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicyResolutionEnum
 {
@@ -1187,7 +1187,7 @@ public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicyResolveEnum
 {
@@ -1198,7 +1198,7 @@ public enum V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicy
 {
@@ -1222,7 +1222,7 @@ public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelec
 }
 
 /// <summary>Selector for a Function in lambda to populate rotationLambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelector
 {
@@ -1247,7 +1247,7 @@ public partial class V1beta1SecretRotationSpecInitProviderRotationLambdaArnSelec
 }
 
 /// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderRotationRules
 {
@@ -1270,7 +1270,7 @@ public partial class V1beta1SecretRotationSpecInitProviderRotationRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderSecretIdRefPolicyResolutionEnum
 {
@@ -1286,7 +1286,7 @@ public enum V1beta1SecretRotationSpecInitProviderSecretIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderSecretIdRefPolicyResolveEnum
 {
@@ -1297,7 +1297,7 @@ public enum V1beta1SecretRotationSpecInitProviderSecretIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderSecretIdRefPolicy
 {
@@ -1321,7 +1321,7 @@ public partial class V1beta1SecretRotationSpecInitProviderSecretIdRefPolicy
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderSecretIdRef
 {
@@ -1344,7 +1344,7 @@ public partial class V1beta1SecretRotationSpecInitProviderSecretIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicyResolutionEnum
 {
@@ -1360,7 +1360,7 @@ public enum V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicyResolveEnum
 {
@@ -1371,7 +1371,7 @@ public enum V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicy
 {
@@ -1395,7 +1395,7 @@ public partial class V1beta1SecretRotationSpecInitProviderSecretIdSelectorPolicy
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProviderSecretIdSelector
 {
@@ -1431,7 +1431,7 @@ public partial class V1beta1SecretRotationSpecInitProviderSecretIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecInitProvider
 {
@@ -1492,7 +1492,7 @@ public partial class V1beta1SecretRotationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecManagementPoliciesEnum>))]
 public enum V1beta1SecretRotationSpecManagementPoliciesEnum
 {
@@ -1515,7 +1515,7 @@ public enum V1beta1SecretRotationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecProviderConfigRef
 {
@@ -1534,7 +1534,7 @@ public partial class V1beta1SecretRotationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpecWriteConnectionSecretToRef
 {
@@ -1544,7 +1544,7 @@ public partial class V1beta1SecretRotationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SecretRotationSpec defines the desired state of SecretRotation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationSpec
 {
@@ -1595,7 +1595,7 @@ public partial class V1beta1SecretRotationSpec
     public V1beta1SecretRotationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationStatusAtProviderExternalSecretRotationMetadata
 {
@@ -1609,7 +1609,7 @@ public partial class V1beta1SecretRotationStatusAtProviderExternalSecretRotation
 }
 
 /// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationStatusAtProviderRotationRules
 {
@@ -1626,7 +1626,7 @@ public partial class V1beta1SecretRotationStatusAtProviderRotationRules
     public string? ScheduleExpression { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationStatusAtProvider
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta1SecretRotationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationStatusConditions
 {
@@ -1714,7 +1714,7 @@ public partial class V1beta1SecretRotationStatusConditions
 }
 
 /// <summary>SecretRotationStatus defines the observed state of SecretRotation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretRotationStatus
 {
@@ -1744,7 +1744,7 @@ public partial class V1beta1SecretRotationStatus
 }
 
 /// <summary>SecretRotation is the Schema for the SecretRotations API. Provides a resource to manage AWS Secrets Manager secret rotation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecretRotation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecretRotationSpec>, IStatus<V1beta1SecretRotationStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
 /// <summary>Endpoint is the Schema for the Endpoints API. Provides a SageMaker AI Endpoint resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2EndpointList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Endpoint>
@@ -46,7 +46,7 @@ public partial class V1beta2EndpointList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecDeletionPolicyEnum>))]
 public enum V1beta2EndpointSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2EndpointSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigAutoRollbackConfigurationAlarms
 {
@@ -66,7 +66,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigAutoRollbackC
 }
 
 /// <summary>Automatic rollback configuration for handling endpoint deployment failures and recovery. See Auto Rollback Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigAutoRollbackConfiguration
 {
@@ -76,7 +76,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigAutoRollbackC
 }
 
 /// <summary>Batch size for the first step to turn on traffic on the new endpoint fleet. Value must be less than or equal to 50% of the variant&apos;s total instance count. See Canary Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize
 {
@@ -90,7 +90,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 }
 
 /// <summary>Batch size for each step to turn on traffic on the new endpoint fleet. Value must be 10-50% of the variant&apos;s total instance count. See Linear Step Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize
 {
@@ -104,7 +104,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 }
 
 /// <summary>Defines the traffic routing strategy to shift traffic from the old fleet to the new fleet during an endpoint deployment. See Traffic Routing Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration
 {
@@ -126,7 +126,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 }
 
 /// <summary>Update policy for a blue/green deployment. If this update policy is specified, SageMaker AI creates a new fleet during the deployment while maintaining the old fleet. SageMaker AI flips traffic to the new fleet according to the specified traffic routing configuration. Only one update policy should be used in the deployment configuration. If no update policy is specified, SageMaker AI uses a blue/green deployment strategy with all at once traffic shifting by default. See Blue Green Update Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicy
 {
@@ -144,7 +144,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 }
 
 /// <summary>Batch size for each rolling step to provision capacity and turn on traffic on the new endpoint fleet, and terminate capacity on the old endpoint fleet. Value must be between 5% to 50% of the variant&apos;s total instance count. See Maximum Batch Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigRollingUpdatePolicyMaximumBatchSize
 {
@@ -158,7 +158,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigRollingUpdate
 }
 
 /// <summary>Batch size for rollback to the old endpoint fleet. Each rolling step to provision capacity and turn on traffic on the old endpoint fleet, and terminate capacity on the new endpoint fleet. If this field is absent, the default value will be set to 100% of total capacity which means to bring up the whole capacity of the old fleet at once during rollback. See Rollback Maximum Batch Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize
 {
@@ -172,7 +172,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigRollingUpdate
 }
 
 /// <summary>Specifies a rolling deployment strategy for updating a SageMaker AI endpoint. See Rolling Update Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfigRollingUpdatePolicy
 {
@@ -194,7 +194,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfigRollingUpdate
 }
 
 /// <summary>The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations. See Deployment Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderDeploymentConfig
 {
@@ -217,7 +217,7 @@ public partial class V1beta2EndpointSpecForProviderDeploymentConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicyResolutionEnum
 {
@@ -233,7 +233,7 @@ public enum V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicyResolveEnum>))]
 public enum V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicyResolveEnum
 {
@@ -244,7 +244,7 @@ public enum V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicy
 {
@@ -268,7 +268,7 @@ public partial class V1beta2EndpointSpecForProviderEndpointConfigNameRefPolicy
 }
 
 /// <summary>Reference to a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderEndpointConfigNameRef
 {
@@ -287,7 +287,7 @@ public partial class V1beta2EndpointSpecForProviderEndpointConfigNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolutionEnum
 {
@@ -303,7 +303,7 @@ public enum V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolveEnum
 {
@@ -314,7 +314,7 @@ public enum V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicy
 {
@@ -338,7 +338,7 @@ public partial class V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPol
 }
 
 /// <summary>Selector for a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProviderEndpointConfigNameSelector
 {
@@ -358,7 +358,7 @@ public partial class V1beta2EndpointSpecForProviderEndpointConfigNameSelector
     public V1beta2EndpointSpecForProviderEndpointConfigNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecForProvider
 {
@@ -390,7 +390,7 @@ public partial class V1beta2EndpointSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigAutoRollbackConfigurationAlarms
 {
@@ -400,7 +400,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigAutoRollback
 }
 
 /// <summary>Automatic rollback configuration for handling endpoint deployment failures and recovery. See Auto Rollback Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigAutoRollbackConfiguration
 {
@@ -410,7 +410,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigAutoRollback
 }
 
 /// <summary>Batch size for the first step to turn on traffic on the new endpoint fleet. Value must be less than or equal to 50% of the variant&apos;s total instance count. See Canary Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize
 {
@@ -424,7 +424,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Batch size for each step to turn on traffic on the new endpoint fleet. Value must be 10-50% of the variant&apos;s total instance count. See Linear Step Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize
 {
@@ -438,7 +438,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Defines the traffic routing strategy to shift traffic from the old fleet to the new fleet during an endpoint deployment. See Traffic Routing Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration
 {
@@ -460,7 +460,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Update policy for a blue/green deployment. If this update policy is specified, SageMaker AI creates a new fleet during the deployment while maintaining the old fleet. SageMaker AI flips traffic to the new fleet according to the specified traffic routing configuration. Only one update policy should be used in the deployment configuration. If no update policy is specified, SageMaker AI uses a blue/green deployment strategy with all at once traffic shifting by default. See Blue Green Update Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Batch size for each rolling step to provision capacity and turn on traffic on the new endpoint fleet, and terminate capacity on the old endpoint fleet. Value must be between 5% to 50% of the variant&apos;s total instance count. See Maximum Batch Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigRollingUpdatePolicyMaximumBatchSize
 {
@@ -492,7 +492,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigRollingUpdat
 }
 
 /// <summary>Batch size for rollback to the old endpoint fleet. Each rolling step to provision capacity and turn on traffic on the old endpoint fleet, and terminate capacity on the new endpoint fleet. If this field is absent, the default value will be set to 100% of total capacity which means to bring up the whole capacity of the old fleet at once during rollback. See Rollback Maximum Batch Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize
 {
@@ -506,7 +506,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigRollingUpdat
 }
 
 /// <summary>Specifies a rolling deployment strategy for updating a SageMaker AI endpoint. See Rolling Update Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfigRollingUpdatePolicy
 {
@@ -528,7 +528,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfigRollingUpdat
 }
 
 /// <summary>The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations. See Deployment Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderDeploymentConfig
 {
@@ -551,7 +551,7 @@ public partial class V1beta2EndpointSpecInitProviderDeploymentConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicyResolutionEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicyResolveEnum>))]
 public enum V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicyResolveEnum
 {
@@ -578,7 +578,7 @@ public enum V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicy
 {
@@ -602,7 +602,7 @@ public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameRefPolicy
 }
 
 /// <summary>Reference to a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameRef
 {
@@ -621,7 +621,7 @@ public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolutionEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolveEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPolicy
 {
@@ -672,7 +672,7 @@ public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameSelectorPo
 }
 
 /// <summary>Selector for a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameSelector
 {
@@ -704,7 +704,7 @@ public partial class V1beta2EndpointSpecInitProviderEndpointConfigNameSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecInitProvider
 {
@@ -733,7 +733,7 @@ public partial class V1beta2EndpointSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecManagementPoliciesEnum>))]
 public enum V1beta2EndpointSpecManagementPoliciesEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta2EndpointSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -773,7 +773,7 @@ public enum V1beta2EndpointSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2EndpointSpecProviderConfigRefPolicyResolveEnum
 {
@@ -784,7 +784,7 @@ public enum V1beta2EndpointSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecProviderConfigRefPolicy
 {
@@ -812,7 +812,7 @@ public partial class V1beta2EndpointSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecProviderConfigRef
 {
@@ -831,7 +831,7 @@ public partial class V1beta2EndpointSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpecWriteConnectionSecretToRef
 {
@@ -845,7 +845,7 @@ public partial class V1beta2EndpointSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EndpointSpec defines the desired state of Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointSpec
 {
@@ -912,7 +912,7 @@ public partial class V1beta2EndpointSpec
     public V1beta2EndpointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigAutoRollbackConfigurationAlarms
 {
@@ -922,7 +922,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigAutoRollback
 }
 
 /// <summary>Automatic rollback configuration for handling endpoint deployment failures and recovery. See Auto Rollback Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigAutoRollbackConfiguration
 {
@@ -932,7 +932,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigAutoRollback
 }
 
 /// <summary>Batch size for the first step to turn on traffic on the new endpoint fleet. Value must be less than or equal to 50% of the variant&apos;s total instance count. See Canary Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize
 {
@@ -946,7 +946,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Batch size for each step to turn on traffic on the new endpoint fleet. Value must be 10-50% of the variant&apos;s total instance count. See Linear Step Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize
 {
@@ -960,7 +960,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Defines the traffic routing strategy to shift traffic from the old fleet to the new fleet during an endpoint deployment. See Traffic Routing Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration
 {
@@ -982,7 +982,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Update policy for a blue/green deployment. If this update policy is specified, SageMaker AI creates a new fleet during the deployment while maintaining the old fleet. SageMaker AI flips traffic to the new fleet according to the specified traffic routing configuration. Only one update policy should be used in the deployment configuration. If no update policy is specified, SageMaker AI uses a blue/green deployment strategy with all at once traffic shifting by default. See Blue Green Update Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicy
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 }
 
 /// <summary>Batch size for each rolling step to provision capacity and turn on traffic on the new endpoint fleet, and terminate capacity on the old endpoint fleet. Value must be between 5% to 50% of the variant&apos;s total instance count. See Maximum Batch Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigRollingUpdatePolicyMaximumBatchSize
 {
@@ -1014,7 +1014,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigRollingUpdat
 }
 
 /// <summary>Batch size for rollback to the old endpoint fleet. Each rolling step to provision capacity and turn on traffic on the old endpoint fleet, and terminate capacity on the new endpoint fleet. If this field is absent, the default value will be set to 100% of total capacity which means to bring up the whole capacity of the old fleet at once during rollback. See Rollback Maximum Batch Size.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize
 {
@@ -1028,7 +1028,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigRollingUpdat
 }
 
 /// <summary>Specifies a rolling deployment strategy for updating a SageMaker AI endpoint. See Rolling Update Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfigRollingUpdatePolicy
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfigRollingUpdat
 }
 
 /// <summary>The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations. See Deployment Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProviderDeploymentConfig
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta2EndpointStatusAtProviderDeploymentConfig
     public V1beta2EndpointStatusAtProviderDeploymentConfigRollingUpdatePolicy? RollingUpdatePolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusAtProvider
 {
@@ -1103,7 +1103,7 @@ public partial class V1beta2EndpointStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatusConditions
 {
@@ -1146,7 +1146,7 @@ public partial class V1beta2EndpointStatusConditions
 }
 
 /// <summary>EndpointStatus defines the observed state of Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointStatus
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta2EndpointStatus
 }
 
 /// <summary>Endpoint is the Schema for the Endpoints API. Provides a SageMaker AI Endpoint resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Endpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2EndpointSpec>, IStatus<V1beta2EndpointStatus?>

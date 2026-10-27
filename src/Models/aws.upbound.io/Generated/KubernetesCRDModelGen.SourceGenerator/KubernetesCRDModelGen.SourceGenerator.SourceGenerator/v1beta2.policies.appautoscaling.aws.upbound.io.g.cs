@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appautoscaling.aws.upbound.io;
 /// <summary>Policy is the Schema for the Policys API. Provides an Application AutoScaling Policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2PolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Policy>
@@ -46,7 +46,7 @@ public partial class V1beta2PolicyList : IKubernetesObject<V1ListMeta>, IItems<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecDeletionPolicyEnum>))]
 public enum V1beta2PolicySpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2PolicySpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -70,7 +70,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -88,7 +88,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat
 {
@@ -105,7 +105,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery
 {
@@ -131,7 +131,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification
 {
@@ -140,7 +140,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
     public IList<V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -154,7 +154,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -172,7 +172,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat
 {
@@ -189,7 +189,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery
 {
@@ -215,7 +215,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification
 {
@@ -224,7 +224,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
     public IList<V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -238,7 +238,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -256,7 +256,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat
 {
@@ -273,7 +273,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery
 {
@@ -299,7 +299,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification
 {
@@ -309,7 +309,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification
 {
@@ -323,7 +323,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification
 {
@@ -337,7 +337,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification
 {
@@ -350,7 +350,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? ResourceLabel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecification
 {
@@ -384,7 +384,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 }
 
 /// <summary>Predictive scaling policy configuration, requires policy_type = &quot;PredictiveScaling&quot;. See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfiguration
 {
@@ -415,7 +415,7 @@ public partial class V1beta2PolicySpecForProviderPredictiveScalingPolicyConfigur
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta2PolicySpecForProviderResourceIdRefPolicyResolutionEnum
 {
@@ -431,7 +431,7 @@ public enum V1beta2PolicySpecForProviderResourceIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderResourceIdRefPolicyResolveEnum>))]
 public enum V1beta2PolicySpecForProviderResourceIdRefPolicyResolveEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta2PolicySpecForProviderResourceIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderResourceIdRefPolicy
 {
@@ -466,7 +466,7 @@ public partial class V1beta2PolicySpecForProviderResourceIdRefPolicy
 }
 
 /// <summary>Reference to a Target in appautoscaling to populate resourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderResourceIdRef
 {
@@ -485,7 +485,7 @@ public partial class V1beta2PolicySpecForProviderResourceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2PolicySpecForProviderResourceIdSelectorPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta2PolicySpecForProviderResourceIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2PolicySpecForProviderResourceIdSelectorPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1beta2PolicySpecForProviderResourceIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderResourceIdSelectorPolicy
 {
@@ -536,7 +536,7 @@ public partial class V1beta2PolicySpecForProviderResourceIdSelectorPolicy
 }
 
 /// <summary>Selector for a Target in appautoscaling to populate resourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderResourceIdSelector
 {
@@ -562,7 +562,7 @@ public partial class V1beta2PolicySpecForProviderResourceIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderScalableDimensionRefPolicyResolutionEnum>))]
 public enum V1beta2PolicySpecForProviderScalableDimensionRefPolicyResolutionEnum
 {
@@ -578,7 +578,7 @@ public enum V1beta2PolicySpecForProviderScalableDimensionRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderScalableDimensionRefPolicyResolveEnum>))]
 public enum V1beta2PolicySpecForProviderScalableDimensionRefPolicyResolveEnum
 {
@@ -589,7 +589,7 @@ public enum V1beta2PolicySpecForProviderScalableDimensionRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderScalableDimensionRefPolicy
 {
@@ -613,7 +613,7 @@ public partial class V1beta2PolicySpecForProviderScalableDimensionRefPolicy
 }
 
 /// <summary>Reference to a Target in appautoscaling to populate scalableDimension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderScalableDimensionRef
 {
@@ -632,7 +632,7 @@ public partial class V1beta2PolicySpecForProviderScalableDimensionRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderScalableDimensionSelectorPolicyResolutionEnum>))]
 public enum V1beta2PolicySpecForProviderScalableDimensionSelectorPolicyResolutionEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta2PolicySpecForProviderScalableDimensionSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderScalableDimensionSelectorPolicyResolveEnum>))]
 public enum V1beta2PolicySpecForProviderScalableDimensionSelectorPolicyResolveEnum
 {
@@ -659,7 +659,7 @@ public enum V1beta2PolicySpecForProviderScalableDimensionSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderScalableDimensionSelectorPolicy
 {
@@ -683,7 +683,7 @@ public partial class V1beta2PolicySpecForProviderScalableDimensionSelectorPolicy
 }
 
 /// <summary>Selector for a Target in appautoscaling to populate scalableDimension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderScalableDimensionSelector
 {
@@ -709,7 +709,7 @@ public partial class V1beta2PolicySpecForProviderScalableDimensionSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderServiceNamespaceRefPolicyResolutionEnum>))]
 public enum V1beta2PolicySpecForProviderServiceNamespaceRefPolicyResolutionEnum
 {
@@ -725,7 +725,7 @@ public enum V1beta2PolicySpecForProviderServiceNamespaceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderServiceNamespaceRefPolicyResolveEnum>))]
 public enum V1beta2PolicySpecForProviderServiceNamespaceRefPolicyResolveEnum
 {
@@ -736,7 +736,7 @@ public enum V1beta2PolicySpecForProviderServiceNamespaceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderServiceNamespaceRefPolicy
 {
@@ -760,7 +760,7 @@ public partial class V1beta2PolicySpecForProviderServiceNamespaceRefPolicy
 }
 
 /// <summary>Reference to a Target in appautoscaling to populate serviceNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderServiceNamespaceRef
 {
@@ -779,7 +779,7 @@ public partial class V1beta2PolicySpecForProviderServiceNamespaceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicyResolutionEnum>))]
 public enum V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicyResolutionEnum
 {
@@ -795,7 +795,7 @@ public enum V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicyResolveEnum>))]
 public enum V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicyResolveEnum
 {
@@ -806,7 +806,7 @@ public enum V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicy
 {
@@ -830,7 +830,7 @@ public partial class V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicy
 }
 
 /// <summary>Selector for a Target in appautoscaling to populate serviceNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderServiceNamespaceSelector
 {
@@ -850,7 +850,7 @@ public partial class V1beta2PolicySpecForProviderServiceNamespaceSelector
     public V1beta2PolicySpecForProviderServiceNamespaceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderStepScalingPolicyConfigurationStepAdjustment
 {
@@ -868,7 +868,7 @@ public partial class V1beta2PolicySpecForProviderStepScalingPolicyConfigurationS
 }
 
 /// <summary>Step scaling policy configuration, requires policy_type = &quot;StepScaling&quot; (default). See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderStepScalingPolicyConfiguration
 {
@@ -893,7 +893,7 @@ public partial class V1beta2PolicySpecForProviderStepScalingPolicyConfiguration
     public IList<V1beta2PolicySpecForProviderStepScalingPolicyConfigurationStepAdjustment>? StepAdjustment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions
 {
@@ -906,7 +906,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions
 {
@@ -920,7 +920,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
 }
 
 /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric
 {
@@ -938,7 +938,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
 }
 
 /// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat
 {
@@ -955,7 +955,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetrics
 {
@@ -981,7 +981,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
 }
 
 /// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification
 {
@@ -1011,7 +1011,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
 }
 
 /// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification
 {
@@ -1025,7 +1025,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
 }
 
 /// <summary>Target tracking policy configuration, requires policy_type = &quot;TargetTrackingScaling&quot;. See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfiguration
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConf
     public double? TargetValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecForProvider
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta2PolicySpecForProvider
     public V1beta2PolicySpecForProviderTargetTrackingScalingPolicyConfiguration? TargetTrackingScalingPolicyConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -1132,7 +1132,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -1150,7 +1150,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification
 {
@@ -1202,7 +1202,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public IList<V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -1216,7 +1216,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -1234,7 +1234,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery
 {
@@ -1277,7 +1277,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public IList<V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -1300,7 +1300,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat
 {
@@ -1335,7 +1335,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification
 {
@@ -1371,7 +1371,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification
 {
@@ -1385,7 +1385,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification
 {
@@ -1399,7 +1399,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification
 {
@@ -1412,7 +1412,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? ResourceLabel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecification
 {
@@ -1446,7 +1446,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predictive scaling policy configuration, requires policy_type = &quot;PredictiveScaling&quot;. See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfiguration
 {
@@ -1471,7 +1471,7 @@ public partial class V1beta2PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public double? SchedulingBufferTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderStepScalingPolicyConfigurationStepAdjustment
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta2PolicySpecInitProviderStepScalingPolicyConfiguration
 }
 
 /// <summary>Step scaling policy configuration, requires policy_type = &quot;StepScaling&quot; (default). See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderStepScalingPolicyConfiguration
 {
@@ -1514,7 +1514,7 @@ public partial class V1beta2PolicySpecInitProviderStepScalingPolicyConfiguration
     public IList<V1beta2PolicySpecInitProviderStepScalingPolicyConfigurationStepAdjustment>? StepAdjustment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions
 {
@@ -1527,7 +1527,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions
 {
@@ -1541,7 +1541,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric
 {
@@ -1559,7 +1559,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetrics
 {
@@ -1602,7 +1602,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification
 {
@@ -1632,7 +1632,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification
 {
@@ -1646,7 +1646,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Target tracking policy configuration, requires policy_type = &quot;TargetTrackingScaling&quot;. See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyConfiguration
 {
@@ -1687,7 +1687,7 @@ public partial class V1beta2PolicySpecInitProviderTargetTrackingScalingPolicyCon
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecInitProvider
 {
@@ -1712,7 +1712,7 @@ public partial class V1beta2PolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecManagementPoliciesEnum>))]
 public enum V1beta2PolicySpecManagementPoliciesEnum
 {
@@ -1736,7 +1736,7 @@ public enum V1beta2PolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2PolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1752,7 +1752,7 @@ public enum V1beta2PolicySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2PolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -1763,7 +1763,7 @@ public enum V1beta2PolicySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecProviderConfigRefPolicy
 {
@@ -1791,7 +1791,7 @@ public partial class V1beta2PolicySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecProviderConfigRef
 {
@@ -1810,7 +1810,7 @@ public partial class V1beta2PolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpecWriteConnectionSecretToRef
 {
@@ -1824,7 +1824,7 @@ public partial class V1beta2PolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>PolicySpec defines the desired state of Policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicySpec
 {
@@ -1891,7 +1891,7 @@ public partial class V1beta2PolicySpec
     public V1beta2PolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -1905,7 +1905,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -1923,7 +1923,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat
 {
@@ -1940,7 +1940,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery
 {
@@ -1966,7 +1966,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification
 {
@@ -1975,7 +1975,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public IList<V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -1989,7 +1989,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -2007,7 +2007,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat
 {
@@ -2024,7 +2024,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery
 {
@@ -2050,7 +2050,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification
 {
@@ -2059,7 +2059,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public IList<V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimension
 {
@@ -2073,7 +2073,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric
 {
@@ -2091,7 +2091,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat
 {
@@ -2108,7 +2108,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery
 {
@@ -2134,7 +2134,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification
 {
@@ -2144,7 +2144,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification
 {
@@ -2158,7 +2158,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification
 {
@@ -2172,7 +2172,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification
 {
@@ -2185,7 +2185,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? ResourceLabel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecification
 {
@@ -2219,7 +2219,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 }
 
 /// <summary>Predictive scaling policy configuration, requires policy_type = &quot;PredictiveScaling&quot;. See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfiguration
 {
@@ -2244,7 +2244,7 @@ public partial class V1beta2PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public double? SchedulingBufferTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderStepScalingPolicyConfigurationStepAdjustment
 {
@@ -2262,7 +2262,7 @@ public partial class V1beta2PolicyStatusAtProviderStepScalingPolicyConfiguration
 }
 
 /// <summary>Step scaling policy configuration, requires policy_type = &quot;StepScaling&quot; (default). See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderStepScalingPolicyConfiguration
 {
@@ -2287,7 +2287,7 @@ public partial class V1beta2PolicyStatusAtProviderStepScalingPolicyConfiguration
     public IList<V1beta2PolicyStatusAtProviderStepScalingPolicyConfigurationStepAdjustment>? StepAdjustment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions
 {
@@ -2300,7 +2300,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions
 {
@@ -2314,7 +2314,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric
 {
@@ -2332,7 +2332,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat
 {
@@ -2349,7 +2349,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetrics
 {
@@ -2375,7 +2375,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification
 {
@@ -2405,7 +2405,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification
 {
@@ -2419,7 +2419,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
 }
 
 /// <summary>Target tracking policy configuration, requires policy_type = &quot;TargetTrackingScaling&quot;. See supported fields below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyConfiguration
 {
@@ -2448,7 +2448,7 @@ public partial class V1beta2PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     public double? TargetValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusAtProvider
 {
@@ -2501,7 +2501,7 @@ public partial class V1beta2PolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatusConditions
 {
@@ -2544,7 +2544,7 @@ public partial class V1beta2PolicyStatusConditions
 }
 
 /// <summary>PolicyStatus defines the observed state of Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PolicyStatus
 {
@@ -2574,7 +2574,7 @@ public partial class V1beta2PolicyStatus
 }
 
 /// <summary>Policy is the Schema for the Policys API. Provides an Application AutoScaling Policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Policy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2PolicySpec>, IStatus<V1beta2PolicyStatus?>

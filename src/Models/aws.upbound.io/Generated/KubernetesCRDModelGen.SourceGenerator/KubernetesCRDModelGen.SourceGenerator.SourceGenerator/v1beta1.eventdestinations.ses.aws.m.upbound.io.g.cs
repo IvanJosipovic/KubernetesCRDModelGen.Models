@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ses.aws.m.upbound.io;
 /// <summary>EventDestination is the Schema for the EventDestinations API. Provides an SES event destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EventDestinationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EventDestination>
@@ -37,7 +37,7 @@ public partial class V1beta1EventDestinationList : IKubernetesObject<V1ListMeta>
     public required IList<V1beta1EventDestination> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderCloudwatchDestination
 {
@@ -60,7 +60,7 @@ public partial class V1beta1EventDestinationSpecForProviderCloudwatchDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderConfigurationSetNameRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameRefPolicyResolutionEnum
 {
@@ -76,7 +76,7 @@ public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderConfigurationSetNameRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameRefPolicyResolveEnum
 {
@@ -87,7 +87,7 @@ public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameRefPolicy
 {
@@ -111,7 +111,7 @@ public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameR
 }
 
 /// <summary>Reference to a ConfigurationSet in ses to populate configurationSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameRef
 {
@@ -134,7 +134,7 @@ public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderConfigurationSetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameSelectorPolicyResolutionEnum
 {
@@ -150,7 +150,7 @@ public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderConfigurationSetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameSelectorPolicyResolveEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1EventDestinationSpecForProviderConfigurationSetNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameSelectorPolicy
 {
@@ -185,7 +185,7 @@ public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameS
 }
 
 /// <summary>Selector for a ConfigurationSet in ses to populate configurationSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameSelector
 {
@@ -215,7 +215,7 @@ public partial class V1beta1EventDestinationSpecForProviderConfigurationSetNameS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRefPolicyResolutionEnum
 {
@@ -231,7 +231,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRefPolicyResolveEnum
 {
@@ -242,7 +242,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRefPolicy
 {
@@ -266,7 +266,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRol
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnRef
 {
@@ -289,7 +289,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelectorPolicyResolutionEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelectorPolicyResolveEnum
 {
@@ -316,7 +316,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelectorPolicy
 {
@@ -340,7 +340,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRol
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelector
 {
@@ -370,7 +370,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationRol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRefPolicyResolutionEnum
 {
@@ -386,7 +386,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRefPolicyResolveEnum
 {
@@ -397,7 +397,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRefPolicy
 {
@@ -421,7 +421,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStr
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnRef
 {
@@ -444,7 +444,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSelectorPolicyResolutionEnum
 {
@@ -460,7 +460,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSelectorPolicyResolveEnum
 {
@@ -471,7 +471,7 @@ public enum V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSelectorPolicy
 {
@@ -495,7 +495,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStr
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStreamArnSelector
 {
@@ -520,7 +520,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStr
 }
 
 /// <summary>Send the events to a kinesis firehose destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestination
 {
@@ -555,7 +555,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRefPolicyResolutionEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRefPolicyResolveEnum
 {
@@ -582,7 +582,7 @@ public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRefPolicy
 {
@@ -606,7 +606,7 @@ public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicAr
 }
 
 /// <summary>Reference to a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnRef
 {
@@ -629,7 +629,7 @@ public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelectorPolicyResolutionEnum
 {
@@ -645,7 +645,7 @@ public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelectorPolicyResolveEnum
 {
@@ -656,7 +656,7 @@ public enum V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelectorPolicy
 {
@@ -680,7 +680,7 @@ public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicAr
 }
 
 /// <summary>Selector for a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelector
 {
@@ -705,7 +705,7 @@ public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicAr
 }
 
 /// <summary>Send the events to an SNS Topic destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderSnsDestination
 {
@@ -722,7 +722,7 @@ public partial class V1beta1EventDestinationSpecForProviderSnsDestination
     public V1beta1EventDestinationSpecForProviderSnsDestinationTopicArnSelector? TopicArnSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProvider
 {
@@ -766,7 +766,7 @@ public partial class V1beta1EventDestinationSpecForProvider
     public V1beta1EventDestinationSpecForProviderSnsDestination? SnsDestination { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderCloudwatchDestination
 {
@@ -789,7 +789,7 @@ public partial class V1beta1EventDestinationSpecInitProviderCloudwatchDestinatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderConfigurationSetNameRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameRefPolicyResolutionEnum
 {
@@ -805,7 +805,7 @@ public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderConfigurationSetNameRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameRefPolicyResolveEnum
 {
@@ -816,7 +816,7 @@ public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetNameRefPolicy
 {
@@ -840,7 +840,7 @@ public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetName
 }
 
 /// <summary>Reference to a ConfigurationSet in ses to populate configurationSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetNameRef
 {
@@ -863,7 +863,7 @@ public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelectorPolicyResolutionEnum
 {
@@ -879,7 +879,7 @@ public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelectorPolicyResolveEnum
 {
@@ -890,7 +890,7 @@ public enum V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelectorPolicy
 {
@@ -914,7 +914,7 @@ public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetName
 }
 
 /// <summary>Selector for a ConfigurationSet in ses to populate configurationSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetNameSelector
 {
@@ -944,7 +944,7 @@ public partial class V1beta1EventDestinationSpecInitProviderConfigurationSetName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRefPolicyResolutionEnum
 {
@@ -960,7 +960,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRefPolicyResolveEnum
 {
@@ -971,7 +971,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRefPolicy
 {
@@ -995,7 +995,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRo
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnRef
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSelectorPolicyResolutionEnum
 {
@@ -1034,7 +1034,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSelectorPolicyResolveEnum
 {
@@ -1045,7 +1045,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSelectorPolicy
 {
@@ -1069,7 +1069,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRo
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSelector
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationRo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRefPolicyResolutionEnum
 {
@@ -1115,7 +1115,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRefPolicyResolveEnum
 {
@@ -1126,7 +1126,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRefPolicy
 {
@@ -1150,7 +1150,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationSt
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnRef
 {
@@ -1173,7 +1173,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationSt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSelectorPolicyResolutionEnum
 {
@@ -1189,7 +1189,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSelectorPolicyResolveEnum
 {
@@ -1200,7 +1200,7 @@ public enum V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSelectorPolicy
 {
@@ -1224,7 +1224,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationSt
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationStreamArnSelector
 {
@@ -1249,7 +1249,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationSt
 }
 
 /// <summary>Send the events to a kinesis firehose destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestination
 {
@@ -1284,7 +1284,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRefPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRefPolicyResolutionEnum
 {
@@ -1300,7 +1300,7 @@ public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRefPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRefPolicyResolveEnum
 {
@@ -1311,7 +1311,7 @@ public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRefPolicy
 {
@@ -1335,7 +1335,7 @@ public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicA
 }
 
 /// <summary>Reference to a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnRef
 {
@@ -1358,7 +1358,7 @@ public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelectorPolicyResolutionEnum
 {
@@ -1374,7 +1374,7 @@ public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelectorPolicyResolveEnum>))]
 public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelectorPolicyResolveEnum
 {
@@ -1385,7 +1385,7 @@ public enum V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelectorPolicy
 {
@@ -1409,7 +1409,7 @@ public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicA
 }
 
 /// <summary>Selector for a Topic in sns to populate topicArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicArnSelector
 {
@@ -1434,7 +1434,7 @@ public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicA
 }
 
 /// <summary>Send the events to an SNS Topic destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderSnsDestination
 {
@@ -1463,7 +1463,7 @@ public partial class V1beta1EventDestinationSpecInitProviderSnsDestination
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProvider
 {
@@ -1504,7 +1504,7 @@ public partial class V1beta1EventDestinationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventDestinationSpecManagementPoliciesEnum>))]
 public enum V1beta1EventDestinationSpecManagementPoliciesEnum
 {
@@ -1527,7 +1527,7 @@ public enum V1beta1EventDestinationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecProviderConfigRef
 {
@@ -1546,7 +1546,7 @@ public partial class V1beta1EventDestinationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecWriteConnectionSecretToRef
 {
@@ -1556,7 +1556,7 @@ public partial class V1beta1EventDestinationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EventDestinationSpec defines the desired state of EventDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpec
 {
@@ -1607,7 +1607,7 @@ public partial class V1beta1EventDestinationSpec
     public V1beta1EventDestinationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProviderCloudwatchDestination
 {
@@ -1625,7 +1625,7 @@ public partial class V1beta1EventDestinationStatusAtProviderCloudwatchDestinatio
 }
 
 /// <summary>Send the events to a kinesis firehose destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProviderKinesisDestination
 {
@@ -1639,7 +1639,7 @@ public partial class V1beta1EventDestinationStatusAtProviderKinesisDestination
 }
 
 /// <summary>Send the events to an SNS Topic destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProviderSnsDestination
 {
@@ -1648,7 +1648,7 @@ public partial class V1beta1EventDestinationStatusAtProviderSnsDestination
     public string? TopicArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProvider
 {
@@ -1693,7 +1693,7 @@ public partial class V1beta1EventDestinationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusConditions
 {
@@ -1736,7 +1736,7 @@ public partial class V1beta1EventDestinationStatusConditions
 }
 
 /// <summary>EventDestinationStatus defines the observed state of EventDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatus
 {
@@ -1766,7 +1766,7 @@ public partial class V1beta1EventDestinationStatus
 }
 
 /// <summary>EventDestination is the Schema for the EventDestinations API. Provides an SES event destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EventDestination : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EventDestinationSpec>, IStatus<V1beta1EventDestinationStatus?>

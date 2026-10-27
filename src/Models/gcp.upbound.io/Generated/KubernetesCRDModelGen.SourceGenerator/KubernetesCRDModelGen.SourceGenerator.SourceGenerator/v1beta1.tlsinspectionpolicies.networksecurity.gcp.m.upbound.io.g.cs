@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networksecurity.gcp.m.upbound.io;
 /// <summary>TLSInspectionPolicy is the Schema for the TLSInspectionPolicys API. The TlsInspectionPolicy resource contains references to CA pools in Certificate Authority Service and associated metadata.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TLSInspectionPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TLSInspectionPolicy>
@@ -43,7 +43,7 @@ public partial class V1beta1TLSInspectionPolicyList : IKubernetesObject<V1ListMe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolRefPolicy
 }
 
 /// <summary>Reference to a CAPool in privateca to populate caPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolSelectorPoli
 }
 
 /// <summary>Selector for a CAPool in privateca to populate caPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderCaPoolSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigRefPoli
 }
 
 /// <summary>Reference to a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelecto
 }
 
 /// <summary>Selector for a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelecto
     public V1beta1TLSInspectionPolicySpecForProviderTrustConfigSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecForProvider
 {
@@ -421,7 +421,7 @@ public partial class V1beta1TLSInspectionPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicyResolutionEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicyResolveEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicy
 {
@@ -472,7 +472,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolRefPolicy
 }
 
 /// <summary>Reference to a CAPool in privateca to populate caPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolRef
 {
@@ -495,7 +495,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPolicyResolutionEnum
 {
@@ -511,7 +511,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPolicyResolveEnum
 {
@@ -522,7 +522,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPolicy
 {
@@ -546,7 +546,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelectorPol
 }
 
 /// <summary>Selector for a CAPool in privateca to populate caPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelector
 {
@@ -576,7 +576,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderCaPoolSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPolicyResolutionEnum
 {
@@ -592,7 +592,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPolicyResolveEnum
 {
@@ -603,7 +603,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPolicy
 {
@@ -627,7 +627,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRefPol
 }
 
 /// <summary>Reference to a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRef
 {
@@ -650,7 +650,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelectorPolicyResolutionEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelectorPolicyResolutionEnum
 {
@@ -666,7 +666,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelectorPolicyResolveEnum>))]
 public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelectorPolicyResolveEnum
 {
@@ -677,7 +677,7 @@ public enum V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelectorPolicy
 {
@@ -701,7 +701,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelect
 }
 
 /// <summary>Selector for a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelector
 {
@@ -737,7 +737,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProviderTrustConfigSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecInitProvider
 {
@@ -805,7 +805,7 @@ public partial class V1beta1TLSInspectionPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TLSInspectionPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1TLSInspectionPolicySpecManagementPoliciesEnum
 {
@@ -828,7 +828,7 @@ public enum V1beta1TLSInspectionPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecProviderConfigRef
 {
@@ -847,7 +847,7 @@ public partial class V1beta1TLSInspectionPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpecWriteConnectionSecretToRef
 {
@@ -857,7 +857,7 @@ public partial class V1beta1TLSInspectionPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>TLSInspectionPolicySpec defines the desired state of TLSInspectionPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicySpec
 {
@@ -908,7 +908,7 @@ public partial class V1beta1TLSInspectionPolicySpec
     public V1beta1TLSInspectionPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicyStatusAtProvider
 {
@@ -980,7 +980,7 @@ public partial class V1beta1TLSInspectionPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicyStatusConditions
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1TLSInspectionPolicyStatusConditions
 }
 
 /// <summary>TLSInspectionPolicyStatus defines the observed state of TLSInspectionPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TLSInspectionPolicyStatus
 {
@@ -1053,7 +1053,7 @@ public partial class V1beta1TLSInspectionPolicyStatus
 }
 
 /// <summary>TLSInspectionPolicy is the Schema for the TLSInspectionPolicys API. The TlsInspectionPolicy resource contains references to CA pools in Certificate Authority Service and associated metadata.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TLSInspectionPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TLSInspectionPolicySpec>, IStatus<V1beta1TLSInspectionPolicyStatus?>

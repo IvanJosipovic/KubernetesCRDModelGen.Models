@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /dnsresolver/resource-manager/Microsoft.Network/DnsResolver/stable/2022-07-01/dnsresolver.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/dnsForwardingRulesets/{dnsForwardingRulesetName}/virtualNetworkLinks/{virtualNetworkLinkName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkList : IKubernetesObject<V1ListMeta>, IItems<V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink>
@@ -47,7 +47,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpecOperatorSpecConfigMapExpressions
 {
@@ -88,7 +88,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpecOperatorSpecSecretExpressions
 {
@@ -128,7 +128,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// Storage version of v1api20220701.DnsForwardingRuleSetsVirtualNetworkLinkOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpecOperatorSpec
 {
@@ -151,7 +151,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a network.azure.com/DnsForwardingRuleset resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpecOwner
 {
@@ -164,7 +164,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpecVirtualNetworkReference
 {
@@ -193,7 +193,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// Storage version of v1api20220701.SubResource
 /// Reference to another ARM resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpecVirtualNetwork
 {
@@ -210,7 +210,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 }
 
 /// <summary>Storage version of v1api20220701.DnsForwardingRuleSetsVirtualNetworkLink_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpec
 {
@@ -258,7 +258,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkStatusConditions
 {
@@ -307,7 +307,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// Storage version of v1api20220701.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkStatusSystemData
 {
@@ -341,7 +341,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// Storage version of v1api20220701.SubResource_STATUS
 /// Reference to another ARM resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkStatusVirtualNetwork
 {
@@ -357,7 +357,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 }
 
 /// <summary>Storage version of v1api20220701.DnsForwardingRuleSetsVirtualNetworkLink_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkStatus
 {
@@ -410,7 +410,7 @@ public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink
 /// - Generated from: /dnsresolver/resource-manager/Microsoft.Network/DnsResolver/stable/2022-07-01/dnsresolver.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/dnsForwardingRulesets/{dnsForwardingRulesetName}/virtualNetworkLinks/{virtualNetworkLinkName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLink : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkSpec?>, IStatus<V1api20220701storageDnsForwardingRuleSetsVirtualNetworkLinkStatus?>

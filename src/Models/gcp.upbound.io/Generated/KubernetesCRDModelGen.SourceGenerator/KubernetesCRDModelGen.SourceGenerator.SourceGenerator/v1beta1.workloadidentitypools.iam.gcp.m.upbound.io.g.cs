@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iam.gcp.m.upbound.io;
 /// <summary>WorkloadIdentityPool is the Schema for the WorkloadIdentityPools API. Represents a collection of external workload identities.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkloadIdentityPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkloadIdentityPool>
@@ -37,7 +37,7 @@ public partial class V1beta1WorkloadIdentityPoolList : IKubernetesObject<V1ListM
     public required IList<V1beta1WorkloadIdentityPool> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecForProviderAttestationRules
 {
@@ -55,7 +55,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecForProviderAttestationRules
 /// required for issuance and rotation of mTLS workload certificates.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineCertificateIssuanceConfig
 {
@@ -102,7 +102,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineCertificate
     public bool? UseDefaultSharedCa { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineTrustConfigAdditionalTrustBundlesTrustAnchors
 {
@@ -114,7 +114,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineTrustConfig
     public string? PemCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineTrustConfigAdditionalTrustBundles
 {
@@ -149,7 +149,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineTrustConfig
 /// configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineTrustConfig
 {
@@ -167,7 +167,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecForProviderInlineTrustConfig
     public IList<V1beta1WorkloadIdentityPoolSpecForProviderInlineTrustConfigAdditionalTrustBundles>? AdditionalTrustBundles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecForProvider
 {
@@ -233,7 +233,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecForProvider
     public string? Project { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecInitProviderAttestationRules
 {
@@ -251,7 +251,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecInitProviderAttestationRules
 /// required for issuance and rotation of mTLS workload certificates.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineCertificateIssuanceConfig
 {
@@ -298,7 +298,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineCertificat
     public bool? UseDefaultSharedCa { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineTrustConfigAdditionalTrustBundlesTrustAnchors
 {
@@ -310,7 +310,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineTrustConfi
     public string? PemCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineTrustConfigAdditionalTrustBundles
 {
@@ -345,7 +345,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineTrustConfi
 /// configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineTrustConfig
 {
@@ -375,7 +375,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecInitProviderInlineTrustConfi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecInitProvider
 {
@@ -445,7 +445,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolSpecManagementPoliciesEnum>))]
 public enum V1beta1WorkloadIdentityPoolSpecManagementPoliciesEnum
 {
@@ -468,7 +468,7 @@ public enum V1beta1WorkloadIdentityPoolSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecProviderConfigRef
 {
@@ -487,7 +487,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpecWriteConnectionSecretToRef
 {
@@ -497,7 +497,7 @@ public partial class V1beta1WorkloadIdentityPoolSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WorkloadIdentityPoolSpec defines the desired state of WorkloadIdentityPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolSpec
 {
@@ -548,7 +548,7 @@ public partial class V1beta1WorkloadIdentityPoolSpec
     public V1beta1WorkloadIdentityPoolSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatusAtProviderAttestationRules
 {
@@ -566,7 +566,7 @@ public partial class V1beta1WorkloadIdentityPoolStatusAtProviderAttestationRules
 /// required for issuance and rotation of mTLS workload certificates.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineCertificateIssuanceConfig
 {
@@ -613,7 +613,7 @@ public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineCertificat
     public bool? UseDefaultSharedCa { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineTrustConfigAdditionalTrustBundlesTrustAnchors
 {
@@ -625,7 +625,7 @@ public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineTrustConfi
     public string? PemCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineTrustConfigAdditionalTrustBundles
 {
@@ -660,7 +660,7 @@ public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineTrustConfi
 /// configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineTrustConfig
 {
@@ -678,7 +678,7 @@ public partial class V1beta1WorkloadIdentityPoolStatusAtProviderInlineTrustConfi
     public IList<V1beta1WorkloadIdentityPoolStatusAtProviderInlineTrustConfigAdditionalTrustBundles>? AdditionalTrustBundles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatusAtProvider
 {
@@ -767,7 +767,7 @@ public partial class V1beta1WorkloadIdentityPoolStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatusConditions
 {
@@ -810,7 +810,7 @@ public partial class V1beta1WorkloadIdentityPoolStatusConditions
 }
 
 /// <summary>WorkloadIdentityPoolStatus defines the observed state of WorkloadIdentityPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolStatus
 {
@@ -840,7 +840,7 @@ public partial class V1beta1WorkloadIdentityPoolStatus
 }
 
 /// <summary>WorkloadIdentityPool is the Schema for the WorkloadIdentityPools API. Represents a collection of external workload identities.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkloadIdentityPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkloadIdentityPoolSpec>, IStatus<V1beta1WorkloadIdentityPoolStatus?>

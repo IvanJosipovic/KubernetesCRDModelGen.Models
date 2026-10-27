@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.eventing.keda.sh;
 /// <summary>CloudEventSource defines how a KEDA event will be sent to event sink</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudEventSourceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudEventSource>
@@ -38,7 +38,7 @@ public partial class V1alpha1CloudEventSourceList : IKubernetesObject<V1ListMeta
 }
 
 /// <summary>Kind of the resource being referred to. Defaults to TriggerAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1CloudEventSourceSpecAuthenticationRefKindEnum>))]
 public enum V1alpha1CloudEventSourceSpecAuthenticationRefKindEnum
 {
@@ -52,7 +52,7 @@ public enum V1alpha1CloudEventSourceSpecAuthenticationRefKindEnum
 /// AuthenticationRef points to the TriggerAuthentication or ClusterTriggerAuthentication object that
 /// is used to authenticate the scaler with the environment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceSpecAuthenticationRef
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1CloudEventSourceSpecAuthenticationRef
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceSpecDestinationAzureEventGridTopic
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1CloudEventSourceSpecDestinationAzureEventGridTopic
     public required string Endpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceSpecDestinationHttp
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1CloudEventSourceSpecDestinationHttp
 }
 
 /// <summary>Destination defines the various ways to emit events</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceSpecDestination
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1CloudEventSourceSpecDestination
     public V1alpha1CloudEventSourceSpecDestinationHttp? Http { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1CloudEventSourceSpecEventSubscriptionExcludedEventTypesEnum>))]
 public enum V1alpha1CloudEventSourceSpecEventSubscriptionExcludedEventTypesEnum
 {
@@ -136,7 +136,7 @@ public enum V1alpha1CloudEventSourceSpecEventSubscriptionExcludedEventTypesEnum
     KedaAuthenticationClustertriggerauthenticationRemovedV1
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1CloudEventSourceSpecEventSubscriptionIncludedEventTypesEnum>))]
 public enum V1alpha1CloudEventSourceSpecEventSubscriptionIncludedEventTypesEnum
 {
@@ -181,7 +181,7 @@ public enum V1alpha1CloudEventSourceSpecEventSubscriptionIncludedEventTypesEnum
 }
 
 /// <summary>EventSubscription defines filters for events</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceSpecEventSubscription
 {
@@ -193,7 +193,7 @@ public partial class V1alpha1CloudEventSourceSpecEventSubscription
 }
 
 /// <summary>CloudEventSourceSpec defines the spec of CloudEventSource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceSpec
 {
@@ -217,7 +217,7 @@ public partial class V1alpha1CloudEventSourceSpec
 }
 
 /// <summary>Condition to store the condition state</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceStatusConditions
 {
@@ -239,7 +239,7 @@ public partial class V1alpha1CloudEventSourceStatusConditions
 }
 
 /// <summary>CloudEventSourceStatus defines the observed state of CloudEventSource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudEventSourceStatus
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1CloudEventSourceStatus
 }
 
 /// <summary>CloudEventSource defines how a KEDA event will be sent to event sink</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudEventSource : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudEventSourceSpec>, IStatus<V1alpha1CloudEventSourceStatus?>

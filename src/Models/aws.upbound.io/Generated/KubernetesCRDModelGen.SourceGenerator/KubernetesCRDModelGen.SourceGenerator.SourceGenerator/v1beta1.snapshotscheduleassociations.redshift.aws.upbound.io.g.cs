@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.redshift.aws.upbound.io;
 /// <summary>SnapshotScheduleAssociation is the Schema for the SnapshotScheduleAssociations API. Provides an Association Redshift Cluster and Snapshot Schedule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SnapshotScheduleAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SnapshotScheduleAssociation>
@@ -46,7 +46,7 @@ public partial class V1beta1SnapshotScheduleAssociationList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIde
 }
 
 /// <summary>Reference to a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIde
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIde
 }
 
 /// <summary>Selector for a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIdentifierSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderClusterIde
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleId
 }
 
 /// <summary>Reference to a SnapshotSchedule in redshift to populate scheduleIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleId
 }
 
 /// <summary>Selector for a SnapshotSchedule in redshift to populate scheduleIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProviderScheduleId
     public V1beta1SnapshotScheduleAssociationSpecForProviderScheduleIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecForProvider
 {
@@ -392,7 +392,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierRefPolicyResolutionEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierRefPolicyResolveEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierRefPolicy
 {
@@ -443,7 +443,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterId
 }
 
 /// <summary>Reference to a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierRef
 {
@@ -462,7 +462,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -478,7 +478,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -489,7 +489,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierSelectorPolicy
 {
@@ -513,7 +513,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterId
 }
 
 /// <summary>Selector for a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterIdentifierSelector
 {
@@ -539,7 +539,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderClusterId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierRefPolicyResolutionEnum
 {
@@ -555,7 +555,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifier
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierRefPolicyResolveEnum
 {
@@ -566,7 +566,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifier
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierRefPolicy
 {
@@ -590,7 +590,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleI
 }
 
 /// <summary>Reference to a SnapshotSchedule in redshift to populate scheduleIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierRef
 {
@@ -609,7 +609,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierSelectorPolicyResolutionEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifier
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierSelectorPolicyResolveEnum
 {
@@ -636,7 +636,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifier
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierSelectorPolicy
 {
@@ -660,7 +660,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleI
 }
 
 /// <summary>Selector for a SnapshotSchedule in redshift to populate scheduleIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleIdentifierSelector
 {
@@ -692,7 +692,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProviderScheduleI
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecInitProvider
 {
@@ -725,7 +725,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecManagementPoliciesEnum
 {
@@ -749,7 +749,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPolicy
 {
@@ -804,7 +804,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecProviderConfigRef
 {
@@ -823,7 +823,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpecWriteConnectionSecretToRef
 {
@@ -837,7 +837,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpecWriteConnectionSecret
 }
 
 /// <summary>SnapshotScheduleAssociationSpec defines the desired state of SnapshotScheduleAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationSpec
 {
@@ -904,7 +904,7 @@ public partial class V1beta1SnapshotScheduleAssociationSpec
     public V1beta1SnapshotScheduleAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationStatusAtProvider
 {
@@ -928,7 +928,7 @@ public partial class V1beta1SnapshotScheduleAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationStatusConditions
 {
@@ -971,7 +971,7 @@ public partial class V1beta1SnapshotScheduleAssociationStatusConditions
 }
 
 /// <summary>SnapshotScheduleAssociationStatus defines the observed state of SnapshotScheduleAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleAssociationStatus
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta1SnapshotScheduleAssociationStatus
 }
 
 /// <summary>SnapshotScheduleAssociation is the Schema for the SnapshotScheduleAssociations API. Provides an Association Redshift Cluster and Snapshot Schedule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SnapshotScheduleAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SnapshotScheduleAssociationSpec>, IStatus<V1beta1SnapshotScheduleAssociationStatus?>

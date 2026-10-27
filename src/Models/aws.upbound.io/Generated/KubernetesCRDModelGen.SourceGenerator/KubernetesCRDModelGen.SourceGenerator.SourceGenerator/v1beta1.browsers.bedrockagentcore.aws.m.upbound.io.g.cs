@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.m.upbound.io;
 /// <summary>Browser is the Schema for the Browsers API. Manages an AWS Bedrock AgentCore Browser.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BrowserList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Browser>
@@ -38,7 +38,7 @@ public partial class V1beta1BrowserList : IKubernetesObject<V1ListMeta>, IItems<
 }
 
 /// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderBrowserSigning
 {
@@ -53,7 +53,7 @@ public partial class V1beta1BrowserSpecForProviderBrowserSigning
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecret
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum
 {
@@ -80,7 +80,7 @@ public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecret
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicy
 {
@@ -104,7 +104,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsMana
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRef
 {
@@ -127,7 +127,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsMana
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecret
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum
 {
@@ -154,7 +154,7 @@ public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecret
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicy
 {
@@ -178,7 +178,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsMana
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsMana
 }
 
 /// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManager
 {
@@ -221,7 +221,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsMana
 }
 
 /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificateLocation
 {
@@ -230,7 +230,7 @@ public partial class V1beta1BrowserSpecForProviderCertificateLocation
     public V1beta1BrowserSpecForProviderCertificateLocationSecretsManager? SecretsManager { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderCertificate
 {
@@ -240,7 +240,7 @@ public partial class V1beta1BrowserSpecForProviderCertificate
 }
 
 /// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderEnterprisePolicyLocationS3
 {
@@ -258,7 +258,7 @@ public partial class V1beta1BrowserSpecForProviderEnterprisePolicyLocationS3
 }
 
 /// <summary>Location of the enterprise policy file. See location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderEnterprisePolicyLocation
 {
@@ -267,7 +267,7 @@ public partial class V1beta1BrowserSpecForProviderEnterprisePolicyLocation
     public V1beta1BrowserSpecForProviderEnterprisePolicyLocationS3? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderEnterprisePolicy
 {
@@ -286,7 +286,7 @@ public partial class V1beta1BrowserSpecForProviderEnterprisePolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -302,7 +302,7 @@ public enum V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -313,7 +313,7 @@ public enum V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicy
 {
@@ -337,7 +337,7 @@ public partial class V1beta1BrowserSpecForProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderExecutionRoleArnRef
 {
@@ -360,7 +360,7 @@ public partial class V1beta1BrowserSpecForProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -376,7 +376,7 @@ public enum V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -387,7 +387,7 @@ public enum V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicy
 {
@@ -411,7 +411,7 @@ public partial class V1beta1BrowserSpecForProviderExecutionRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderExecutionRoleArnSelector
 {
@@ -436,7 +436,7 @@ public partial class V1beta1BrowserSpecForProviderExecutionRoleArnSelector
 }
 
 /// <summary>VPC configuration when network_mode is VPC. See vpc_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderNetworkConfigurationVpcConfig
 {
@@ -450,7 +450,7 @@ public partial class V1beta1BrowserSpecForProviderNetworkConfigurationVpcConfig
 }
 
 /// <summary>Network configuration for the browser. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderNetworkConfiguration
 {
@@ -469,7 +469,7 @@ public partial class V1beta1BrowserSpecForProviderNetworkConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPolicyResolutionEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPolicyResolveEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPolicy
 {
@@ -520,7 +520,7 @@ public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketRefPo
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketRef
 {
@@ -543,7 +543,7 @@ public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelectorPolicyResolutionEnum
 {
@@ -559,7 +559,7 @@ public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelectorPolicyResolveEnum
 {
@@ -570,7 +570,7 @@ public enum V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelectorPolicy
 {
@@ -594,7 +594,7 @@ public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelec
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelector
 {
@@ -619,7 +619,7 @@ public partial class V1beta1BrowserSpecForProviderRecordingS3LocationBucketSelec
 }
 
 /// <summary>S3 location where browser session recordings are stored. See s3_location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderRecordingS3Location
 {
@@ -641,7 +641,7 @@ public partial class V1beta1BrowserSpecForProviderRecordingS3Location
 }
 
 /// <summary>Recording configuration for browser sessions. See recording below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProviderRecording
 {
@@ -654,7 +654,7 @@ public partial class V1beta1BrowserSpecForProviderRecording
     public V1beta1BrowserSpecForProviderRecordingS3Location? S3Location { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProvider
 {
@@ -711,7 +711,7 @@ public partial class V1beta1BrowserSpecForProvider
 }
 
 /// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderBrowserSigning
 {
@@ -726,7 +726,7 @@ public partial class V1beta1BrowserSpecInitProviderBrowserSigning
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum
 {
@@ -742,7 +742,7 @@ public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecre
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum
 {
@@ -753,7 +753,7 @@ public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecre
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicy
 {
@@ -777,7 +777,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsMan
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRef
 {
@@ -800,7 +800,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum
 {
@@ -816,7 +816,7 @@ public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecre
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum
 {
@@ -827,7 +827,7 @@ public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecre
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicy
 {
@@ -851,7 +851,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsMan
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelector
 {
@@ -876,7 +876,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsMan
 }
 
 /// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManager
 {
@@ -894,7 +894,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsMan
 }
 
 /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificateLocation
 {
@@ -903,7 +903,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificateLocation
     public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManager? SecretsManager { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderCertificate
 {
@@ -913,7 +913,7 @@ public partial class V1beta1BrowserSpecInitProviderCertificate
 }
 
 /// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderEnterprisePolicyLocationS3
 {
@@ -931,7 +931,7 @@ public partial class V1beta1BrowserSpecInitProviderEnterprisePolicyLocationS3
 }
 
 /// <summary>Location of the enterprise policy file. See location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderEnterprisePolicyLocation
 {
@@ -940,7 +940,7 @@ public partial class V1beta1BrowserSpecInitProviderEnterprisePolicyLocation
     public V1beta1BrowserSpecInitProviderEnterprisePolicyLocationS3? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderEnterprisePolicy
 {
@@ -959,7 +959,7 @@ public partial class V1beta1BrowserSpecInitProviderEnterprisePolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -975,7 +975,7 @@ public enum V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -986,7 +986,7 @@ public enum V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicy
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnRef
 {
@@ -1033,7 +1033,7 @@ public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -1049,7 +1049,7 @@ public enum V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -1060,7 +1060,7 @@ public enum V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolicy
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnSelectorPolic
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnSelector
 {
@@ -1109,7 +1109,7 @@ public partial class V1beta1BrowserSpecInitProviderExecutionRoleArnSelector
 }
 
 /// <summary>VPC configuration when network_mode is VPC. See vpc_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderNetworkConfigurationVpcConfig
 {
@@ -1123,7 +1123,7 @@ public partial class V1beta1BrowserSpecInitProviderNetworkConfigurationVpcConfig
 }
 
 /// <summary>Network configuration for the browser. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderNetworkConfiguration
 {
@@ -1142,7 +1142,7 @@ public partial class V1beta1BrowserSpecInitProviderNetworkConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefPolicyResolutionEnum
 {
@@ -1158,7 +1158,7 @@ public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefPolicyResolveEnum
 {
@@ -1169,7 +1169,7 @@ public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefPolicy
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRefP
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRef
 {
@@ -1216,7 +1216,7 @@ public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelectorPolicyResolutionEnum
 {
@@ -1232,7 +1232,7 @@ public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelectorPolicyResolveEnum
 {
@@ -1243,7 +1243,7 @@ public enum V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelectorPolicy
 {
@@ -1267,7 +1267,7 @@ public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSele
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSelector
 {
@@ -1292,7 +1292,7 @@ public partial class V1beta1BrowserSpecInitProviderRecordingS3LocationBucketSele
 }
 
 /// <summary>S3 location where browser session recordings are stored. See s3_location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderRecordingS3Location
 {
@@ -1314,7 +1314,7 @@ public partial class V1beta1BrowserSpecInitProviderRecordingS3Location
 }
 
 /// <summary>Recording configuration for browser sessions. See recording below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProviderRecording
 {
@@ -1339,7 +1339,7 @@ public partial class V1beta1BrowserSpecInitProviderRecording
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProvider
 {
@@ -1392,7 +1392,7 @@ public partial class V1beta1BrowserSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecManagementPoliciesEnum>))]
 public enum V1beta1BrowserSpecManagementPoliciesEnum
 {
@@ -1415,7 +1415,7 @@ public enum V1beta1BrowserSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecProviderConfigRef
 {
@@ -1434,7 +1434,7 @@ public partial class V1beta1BrowserSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecWriteConnectionSecretToRef
 {
@@ -1444,7 +1444,7 @@ public partial class V1beta1BrowserSpecWriteConnectionSecretToRef
 }
 
 /// <summary>BrowserSpec defines the desired state of Browser</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpec
 {
@@ -1496,7 +1496,7 @@ public partial class V1beta1BrowserSpec
 }
 
 /// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderBrowserSigning
 {
@@ -1506,7 +1506,7 @@ public partial class V1beta1BrowserStatusAtProviderBrowserSigning
 }
 
 /// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderCertificateLocationSecretsManager
 {
@@ -1516,7 +1516,7 @@ public partial class V1beta1BrowserStatusAtProviderCertificateLocationSecretsMan
 }
 
 /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderCertificateLocation
 {
@@ -1525,7 +1525,7 @@ public partial class V1beta1BrowserStatusAtProviderCertificateLocation
     public V1beta1BrowserStatusAtProviderCertificateLocationSecretsManager? SecretsManager { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderCertificate
 {
@@ -1535,7 +1535,7 @@ public partial class V1beta1BrowserStatusAtProviderCertificate
 }
 
 /// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderEnterprisePolicyLocationS3
 {
@@ -1553,7 +1553,7 @@ public partial class V1beta1BrowserStatusAtProviderEnterprisePolicyLocationS3
 }
 
 /// <summary>Location of the enterprise policy file. See location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderEnterprisePolicyLocation
 {
@@ -1562,7 +1562,7 @@ public partial class V1beta1BrowserStatusAtProviderEnterprisePolicyLocation
     public V1beta1BrowserStatusAtProviderEnterprisePolicyLocationS3? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderEnterprisePolicy
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta1BrowserStatusAtProviderEnterprisePolicy
 }
 
 /// <summary>VPC configuration when network_mode is VPC. See vpc_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderNetworkConfigurationVpcConfig
 {
@@ -1590,7 +1590,7 @@ public partial class V1beta1BrowserStatusAtProviderNetworkConfigurationVpcConfig
 }
 
 /// <summary>Network configuration for the browser. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderNetworkConfiguration
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta1BrowserStatusAtProviderNetworkConfiguration
 }
 
 /// <summary>S3 location where browser session recordings are stored. See s3_location below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderRecordingS3Location
 {
@@ -1618,7 +1618,7 @@ public partial class V1beta1BrowserStatusAtProviderRecordingS3Location
 }
 
 /// <summary>Recording configuration for browser sessions. See recording below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProviderRecording
 {
@@ -1631,7 +1631,7 @@ public partial class V1beta1BrowserStatusAtProviderRecording
     public V1beta1BrowserStatusAtProviderRecordingS3Location? S3Location { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusAtProvider
 {
@@ -1695,7 +1695,7 @@ public partial class V1beta1BrowserStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatusConditions
 {
@@ -1738,7 +1738,7 @@ public partial class V1beta1BrowserStatusConditions
 }
 
 /// <summary>BrowserStatus defines the observed state of Browser.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserStatus
 {
@@ -1768,7 +1768,7 @@ public partial class V1beta1BrowserStatus
 }
 
 /// <summary>Browser is the Schema for the Browsers API. Manages an AWS Bedrock AgentCore Browser.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Browser : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BrowserSpec>, IStatus<V1beta1BrowserStatus?>

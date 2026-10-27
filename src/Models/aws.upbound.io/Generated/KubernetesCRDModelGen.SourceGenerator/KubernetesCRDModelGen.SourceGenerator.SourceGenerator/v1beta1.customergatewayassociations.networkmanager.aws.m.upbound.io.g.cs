@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkmanager.aws.m.upbound.io;
 /// <summary>CustomerGatewayAssociation is the Schema for the CustomerGatewayAssociations API. Manages a Network Manager Customer Gateway Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomerGatewayAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CustomerGatewayAssociation>
@@ -43,7 +43,7 @@ public partial class V1beta1CustomerGatewayAssociationList : IKubernetesObject<V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRefPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRefPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGat
 }
 
 /// <summary>Reference to a CustomerGateway in ec2 to populate customerGatewayArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSelectorPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGat
 }
 
 /// <summary>Selector for a CustomerGateway in ec2 to populate customerGatewayArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGatewayArnSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderCustomerGat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRefPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRefPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRef
 }
 
 /// <summary>Reference to a Device in networkmanager to populate deviceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSel
 }
 
 /// <summary>Selector for a Device in networkmanager to populate deviceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderDeviceIdSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRefPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRefPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetwo
 }
 
 /// <summary>Reference to a GlobalNetwork in networkmanager to populate globalNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetwo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetwo
 }
 
 /// <summary>Selector for a GlobalNetwork in networkmanager to populate globalNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetwo
     public V1beta1CustomerGatewayAssociationSpecForProviderGlobalNetworkIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecForProvider
 {
@@ -553,7 +553,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRefPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRefPolicyResolutionEnum
 {
@@ -569,7 +569,7 @@ public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRefPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRefPolicyResolveEnum
 {
@@ -580,7 +580,7 @@ public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRefPolicy
 {
@@ -604,7 +604,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRe
 }
 
 /// <summary>Reference to a Device in networkmanager to populate deviceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRef
 {
@@ -627,7 +627,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelectorPolicyResolutionEnum
 {
@@ -643,7 +643,7 @@ public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelectorPolicyResolveEnum
 {
@@ -654,7 +654,7 @@ public enum V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelectorPolicy
 {
@@ -678,7 +678,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSe
 }
 
 /// <summary>Selector for a Device in networkmanager to populate deviceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSelector
 {
@@ -714,7 +714,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecInitProviderDeviceIdSe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecInitProvider
 {
@@ -739,7 +739,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerGatewayAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1CustomerGatewayAssociationSpecManagementPoliciesEnum
 {
@@ -762,7 +762,7 @@ public enum V1beta1CustomerGatewayAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecProviderConfigRef
 {
@@ -781,7 +781,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpecWriteConnectionSecretToRef
 {
@@ -791,7 +791,7 @@ public partial class V1beta1CustomerGatewayAssociationSpecWriteConnectionSecretT
 }
 
 /// <summary>CustomerGatewayAssociationSpec defines the desired state of CustomerGatewayAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationSpec
 {
@@ -842,7 +842,7 @@ public partial class V1beta1CustomerGatewayAssociationSpec
     public V1beta1CustomerGatewayAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationStatusAtProvider
 {
@@ -867,7 +867,7 @@ public partial class V1beta1CustomerGatewayAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationStatusConditions
 {
@@ -910,7 +910,7 @@ public partial class V1beta1CustomerGatewayAssociationStatusConditions
 }
 
 /// <summary>CustomerGatewayAssociationStatus defines the observed state of CustomerGatewayAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomerGatewayAssociationStatus
 {
@@ -940,7 +940,7 @@ public partial class V1beta1CustomerGatewayAssociationStatus
 }
 
 /// <summary>CustomerGatewayAssociation is the Schema for the CustomerGatewayAssociations API. Manages a Network Manager Customer Gateway Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomerGatewayAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CustomerGatewayAssociationSpec>, IStatus<V1beta1CustomerGatewayAssociationStatus?>

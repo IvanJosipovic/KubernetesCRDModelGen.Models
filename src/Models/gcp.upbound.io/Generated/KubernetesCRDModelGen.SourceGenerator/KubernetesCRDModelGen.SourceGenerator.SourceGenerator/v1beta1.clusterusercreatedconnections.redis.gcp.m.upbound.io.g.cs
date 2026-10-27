@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.redis.gcp.m.upbound.io;
 /// <summary>ClusterUserCreatedConnections is the Schema for the ClusterUserCreatedConnectionss API. Manages user created connections for Redis cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterUserCreatedConnectionsList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ClusterUserCreatedConnections>
@@ -43,7 +43,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsList : IKubernetesObjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Reference to a Address in compute to populate address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Selector for a Address in compute to populate address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionAddressSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate forwardingRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate forwardingRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionNetworkSelector
 {
@@ -508,7 +508,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolutionEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolveEnum
 {
@@ -535,7 +535,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicy
 {
@@ -559,7 +559,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate pscConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRef
 {
@@ -582,7 +582,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolutionEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolveEnum
 {
@@ -609,7 +609,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicy
 {
@@ -633,7 +633,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate pscConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelector
 {
@@ -662,7 +662,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
 /// who owns the cluster.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnection
 {
@@ -733,7 +733,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
     public string? ServiceAttachment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnections
 {
@@ -746,7 +746,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
     public V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpoints
 {
@@ -755,7 +755,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterE
     public IList<V1beta1ClusterUserCreatedConnectionsSpecForProviderClusterEndpointsConnections>? Connections { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecForProvider
 {
@@ -784,7 +784,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolutionEnum
 {
@@ -800,7 +800,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicyResolveEnum
 {
@@ -811,7 +811,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressRefPolicy
 {
@@ -835,7 +835,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Reference to a Address in compute to populate address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressRef
 {
@@ -858,7 +858,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolutionEnum
 {
@@ -874,7 +874,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicyResolveEnum
 {
@@ -885,7 +885,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressSelectorPolicy
 {
@@ -909,7 +909,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Selector for a Address in compute to populate address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionAddressSelector
 {
@@ -939,7 +939,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolutionEnum
 {
@@ -955,7 +955,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicyResolveEnum
 {
@@ -966,7 +966,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRefPolicy
 {
@@ -990,7 +990,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate forwardingRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleRef
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolutionEnum
 {
@@ -1029,7 +1029,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicyResolveEnum
 {
@@ -1040,7 +1040,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelectorPolicy
 {
@@ -1064,7 +1064,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate forwardingRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionForwardingRuleSelector
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolutionEnum
 {
@@ -1110,7 +1110,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicyResolveEnum
 {
@@ -1121,7 +1121,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkRefPolicy
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkRef
 {
@@ -1168,7 +1168,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolutionEnum
 {
@@ -1184,7 +1184,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicyResolveEnum
 {
@@ -1195,7 +1195,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkSelectorPolicy
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionNetworkSelector
 {
@@ -1249,7 +1249,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolutionEnum
 {
@@ -1265,7 +1265,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicyResolveEnum
 {
@@ -1276,7 +1276,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRefPolicy
 {
@@ -1300,7 +1300,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate pscConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdRef
 {
@@ -1323,7 +1323,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolutionEnum
 {
@@ -1339,7 +1339,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicyResolveEnum
 {
@@ -1350,7 +1350,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelectorPolicy
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate pscConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnectionPscConnectionIdSelector
 {
@@ -1403,7 +1403,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// who owns the cluster.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnection
 {
@@ -1474,7 +1474,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
     public string? ServiceAttachment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnections
 {
@@ -1487,7 +1487,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
     public V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderClusterEndpoints
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProviderCluster
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProvider
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterUserCreatedConnectionsSpecManagementPoliciesEnum>))]
 public enum V1beta1ClusterUserCreatedConnectionsSpecManagementPoliciesEnum
 {
@@ -1554,7 +1554,7 @@ public enum V1beta1ClusterUserCreatedConnectionsSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecProviderConfigRef
 {
@@ -1573,7 +1573,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpecWriteConnectionSecretToRef
 {
@@ -1583,7 +1583,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpecWriteConnectionSecr
 }
 
 /// <summary>ClusterUserCreatedConnectionsSpec defines the desired state of ClusterUserCreatedConnections</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsSpec
 {
@@ -1639,7 +1639,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsSpec
 /// who owns the cluster.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProviderClusterEndpointsConnectionsPscConnection
 {
@@ -1699,7 +1699,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProviderCluster
     public string? ServiceAttachment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProviderClusterEndpointsConnections
 {
@@ -1712,7 +1712,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProviderCluster
     public V1beta1ClusterUserCreatedConnectionsStatusAtProviderClusterEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProviderClusterEndpoints
 {
@@ -1721,7 +1721,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProviderCluster
     public IList<V1beta1ClusterUserCreatedConnectionsStatusAtProviderClusterEndpointsConnections>? Connections { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProvider
 {
@@ -1756,7 +1756,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsStatusConditions
 {
@@ -1799,7 +1799,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsStatusConditions
 }
 
 /// <summary>ClusterUserCreatedConnectionsStatus defines the observed state of ClusterUserCreatedConnections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterUserCreatedConnectionsStatus
 {
@@ -1829,7 +1829,7 @@ public partial class V1beta1ClusterUserCreatedConnectionsStatus
 }
 
 /// <summary>ClusterUserCreatedConnections is the Schema for the ClusterUserCreatedConnectionss API. Manages user created connections for Redis cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterUserCreatedConnections : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ClusterUserCreatedConnectionsSpec>, IStatus<V1beta1ClusterUserCreatedConnectionsStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.keda.sh;
 /// <summary>TriggerAuthentication defines how a trigger can authenticate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TriggerAuthenticationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TriggerAuthentication>
@@ -37,7 +37,7 @@ public partial class V1alpha1TriggerAuthenticationList : IKubernetesObject<V1Lis
     public required IList<V1alpha1TriggerAuthentication> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessKeyValueFromSecretKeyRef
 {
@@ -48,7 +48,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessKeyValueFrom
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessKeyValueFromSecretKeyRef SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessKey
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessKeyValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessSecretKeyValueFromSecretKeyRef
 {
@@ -75,7 +75,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessSecretKeyValueFrom
 {
@@ -83,7 +83,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessSecretKeyValueFromSecretKeyRef SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessSecretKey
 {
@@ -91,7 +91,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessSecretKeyValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessTokenValueFromSecretKeyRef
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessTokenValueFrom
 {
@@ -110,7 +110,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessTokenValueFromSecretKeyRef SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessToken
 {
@@ -118,7 +118,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentialsAccessTokenValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredentials
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerCredential
 }
 
 /// <summary>IdentityOwner configures which identity has to be used during auto discovery, keda or the scaled workload. Mutually exclusive with roleArn</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentityIdentityOwnerEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentityIdentityOwnerEnum
 {
@@ -144,7 +144,7 @@ public enum V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentityIdentity
 }
 
 /// <summary>PodIdentityProvider contains the list of providers</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentityProviderEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentityProviderEnum
 {
@@ -164,7 +164,7 @@ public enum V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentityProvider
 /// AuthPodIdentity allows users to select the platform native identity
 /// mechanism
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentity
 {
@@ -196,7 +196,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerPodIdentit
     public string? RoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerSecrets
 {
@@ -217,7 +217,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManagerSecrets
 }
 
 /// <summary>AwsSecretManager is used to authenticate using AwsSecretManager</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManager
 {
@@ -238,7 +238,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAwsSecretManager
     public required IList<V1alpha1TriggerAuthenticationSpecAwsSecretManagerSecrets> Secrets { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCloud
 {
@@ -252,7 +252,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCloud
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsClientSecretValueFromSecretKeyRef
 {
@@ -263,7 +263,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsCl
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsClientSecretValueFrom
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsCl
     public required V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsClientSecretValueFromSecretKeyRef SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsClientSecret
 {
@@ -279,7 +279,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsCl
     public required V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentialsClientSecretValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentials
 {
@@ -294,7 +294,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultCredentials
 }
 
 /// <summary>IdentityOwner configures which identity has to be used during auto discovery, keda or the scaled workload. Mutually exclusive with roleArn</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentityIdentityOwnerEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentityIdentityOwnerEnum
 {
@@ -305,7 +305,7 @@ public enum V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentityIdentityOwn
 }
 
 /// <summary>PodIdentityProvider contains the list of providers</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentityProviderEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentityProviderEnum
 {
@@ -325,7 +325,7 @@ public enum V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentityProviderEnu
 /// AuthPodIdentity allows users to select the platform native identity
 /// mechanism
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentity
 {
@@ -357,7 +357,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultPodIdentity
     public string? RoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultSecrets
 {
@@ -372,7 +372,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVaultSecrets
 }
 
 /// <summary>AzureKeyVault is used to authenticate using Azure Key Vault</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVault
 {
@@ -396,7 +396,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVault
     public required string VaultUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificateValueFromSecretKeyRef
 {
@@ -407,7 +407,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificateValueFrom
 {
@@ -419,7 +419,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
 /// AzureServicePrincipalCredential references credential data stored in a
 /// Kubernetes Secret.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificate
 {
@@ -427,7 +427,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
     public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificateValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePasswordValueFromSecretKeyRef
 {
@@ -438,7 +438,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePasswordValueFrom
 {
@@ -450,7 +450,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
 /// AzureServicePrincipalCredential references credential data stored in a
 /// Kubernetes Secret.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePassword
 {
@@ -458,7 +458,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
     public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePasswordValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecretValueFromSecretKeyRef
 {
@@ -469,7 +469,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecretValueFrom
 {
@@ -481,7 +481,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
 /// AzureServicePrincipalCredential references credential data stored in a
 /// Kubernetes Secret.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecret
 {
@@ -493,7 +493,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClien
 /// AzureServicePrincipal defines Microsoft Entra service principal credentials
 /// that can be shared by Azure scalers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipal
 {
@@ -533,7 +533,7 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipal
     public required string TenantId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecBoundServiceAccountToken
 {
@@ -545,7 +545,7 @@ public partial class V1alpha1TriggerAuthenticationSpecBoundServiceAccountToken
 }
 
 /// <summary>AuthConfigMapTargetRef is used to authenticate using a reference to a config map</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecConfigMapTargetRef
 {
@@ -563,7 +563,7 @@ public partial class V1alpha1TriggerAuthenticationSpecConfigMapTargetRef
 /// AuthEnvironment is used to authenticate using environment variables
 /// in the destination ScaleTarget spec
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecEnv
 {
@@ -577,7 +577,7 @@ public partial class V1alpha1TriggerAuthenticationSpecEnv
     public required string Parameter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredentialsClientSecretValueFromSecretKeyRef
 {
@@ -588,7 +588,7 @@ public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredential
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredentialsClientSecretValueFrom
 {
@@ -596,7 +596,7 @@ public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredentialsClientSecretValueFromSecretKeyRef SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredentialsClientSecret
 {
@@ -604,7 +604,7 @@ public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredential
     public required V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredentialsClientSecretValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredentials
 {
@@ -613,7 +613,7 @@ public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerCredential
 }
 
 /// <summary>IdentityOwner configures which identity has to be used during auto discovery, keda or the scaled workload. Mutually exclusive with roleArn</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentityIdentityOwnerEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentityIdentityOwnerEnum
 {
@@ -624,7 +624,7 @@ public enum V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentityIdentity
 }
 
 /// <summary>PodIdentityProvider contains the list of providers</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentityProviderEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentityProviderEnum
 {
@@ -644,7 +644,7 @@ public enum V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentityProvider
 /// AuthPodIdentity allows users to select the platform native identity
 /// mechanism
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentity
 {
@@ -676,7 +676,7 @@ public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerPodIdentit
     public string? RoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerSecrets
 {
@@ -690,7 +690,7 @@ public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManagerSecrets
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManager
 {
@@ -709,7 +709,7 @@ public partial class V1alpha1TriggerAuthenticationSpecGcpSecretManager
 }
 
 /// <summary>VaultAuthentication contains the list of Hashicorp Vault authentication methods</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecHashiCorpVaultAuthenticationEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecHashiCorpVaultAuthenticationEnum
 {
@@ -720,7 +720,7 @@ public enum V1alpha1TriggerAuthenticationSpecHashiCorpVaultAuthenticationEnum
 }
 
 /// <summary>Credential defines the Hashicorp Vault credentials depending on the authentication method</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVaultCredential
 {
@@ -734,7 +734,7 @@ public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVaultCredential
     public string? Token { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecretsPkiData
 {
@@ -761,7 +761,7 @@ public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecretsPkiDa
 }
 
 /// <summary>VaultSecretType defines the type of vault secret</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecretsTypeEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecretsTypeEnum
 {
@@ -776,7 +776,7 @@ public enum V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecretsTypeEnum
 }
 
 /// <summary>VaultSecret defines the mapping between the path of the secret in Vault to the parameter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecrets
 {
@@ -798,7 +798,7 @@ public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecrets
 }
 
 /// <summary>HashiCorpVault is used to authenticate using Hashicorp Vault</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVault
 {
@@ -826,7 +826,7 @@ public partial class V1alpha1TriggerAuthenticationSpecHashiCorpVault
     public required IList<V1alpha1TriggerAuthenticationSpecHashiCorpVaultSecrets> Secrets { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecOauth2ClientSecretValueFromSecretKeyRef
 {
@@ -837,7 +837,7 @@ public partial class V1alpha1TriggerAuthenticationSpecOauth2ClientSecretValueFro
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecOauth2ClientSecretValueFrom
 {
@@ -845,7 +845,7 @@ public partial class V1alpha1TriggerAuthenticationSpecOauth2ClientSecretValueFro
     public required V1alpha1TriggerAuthenticationSpecOauth2ClientSecretValueFromSecretKeyRef SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecOauth2ClientSecret
 {
@@ -853,7 +853,7 @@ public partial class V1alpha1TriggerAuthenticationSpecOauth2ClientSecret
     public required V1alpha1TriggerAuthenticationSpecOauth2ClientSecretValueFrom ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecOauth2TypeEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecOauth2TypeEnum
 {
@@ -861,7 +861,7 @@ public enum V1alpha1TriggerAuthenticationSpecOauth2TypeEnum
     ClientCredentials
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecOauth2
 {
@@ -885,7 +885,7 @@ public partial class V1alpha1TriggerAuthenticationSpecOauth2
 }
 
 /// <summary>IdentityOwner configures which identity has to be used during auto discovery, keda or the scaled workload. Mutually exclusive with roleArn</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecPodIdentityIdentityOwnerEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecPodIdentityIdentityOwnerEnum
 {
@@ -896,7 +896,7 @@ public enum V1alpha1TriggerAuthenticationSpecPodIdentityIdentityOwnerEnum
 }
 
 /// <summary>PodIdentityProvider contains the list of providers</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TriggerAuthenticationSpecPodIdentityProviderEnum>))]
 public enum V1alpha1TriggerAuthenticationSpecPodIdentityProviderEnum
 {
@@ -916,7 +916,7 @@ public enum V1alpha1TriggerAuthenticationSpecPodIdentityProviderEnum
 /// AuthPodIdentity allows users to select the platform native identity
 /// mechanism
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecPodIdentity
 {
@@ -949,7 +949,7 @@ public partial class V1alpha1TriggerAuthenticationSpecPodIdentity
 }
 
 /// <summary>AuthSecretTargetRef is used to authenticate using a reference to a secret</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecSecretTargetRef
 {
@@ -964,7 +964,7 @@ public partial class V1alpha1TriggerAuthenticationSpecSecretTargetRef
 }
 
 /// <summary>TriggerAuthenticationSpec defines the various ways to authenticate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpec
 {
@@ -1021,7 +1021,7 @@ public partial class V1alpha1TriggerAuthenticationSpec
 }
 
 /// <summary>TriggerAuthenticationStatus defines the observed state of TriggerAuthentication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationStatus
 {
@@ -1033,7 +1033,7 @@ public partial class V1alpha1TriggerAuthenticationStatus
 }
 
 /// <summary>TriggerAuthentication defines how a trigger can authenticate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TriggerAuthentication : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TriggerAuthenticationSpec>, IStatus<V1alpha1TriggerAuthenticationStatus?>

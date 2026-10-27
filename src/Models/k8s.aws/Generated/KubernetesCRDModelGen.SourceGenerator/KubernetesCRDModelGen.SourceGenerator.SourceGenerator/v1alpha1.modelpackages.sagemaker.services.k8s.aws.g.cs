@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>ModelPackage is the Schema for the ModelPackages API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelPackageList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ModelPackage>
@@ -41,7 +41,7 @@ public partial class V1alpha1ModelPackageList : IKubernetesObject<V1ListMeta>, I
 /// A data source used for training or inference that is in addition to the input
 /// dataset or model data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecificationsContainersAdditionalS3DataSource
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecificationsCo
 }
 
 /// <summary>Input object for the model.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecificationsContainersModelInput
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecificationsCo
 }
 
 /// <summary>Describes the Docker container for the model package.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecificationsContainers
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecificationsCo
 /// specifies details about inference jobs that can be run with models based
 /// on this model package
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecifications
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1ModelPackageSpecAdditionalInferenceSpecifications
 }
 
 /// <summary>Contains details regarding the file source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBiasConfigFile
 {
@@ -155,7 +155,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBiasConfigFile
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBiasPostTrainingConstraints
 {
@@ -170,7 +170,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBiasPostTraining
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBiasPreTrainingConstraints
 {
@@ -188,7 +188,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBiasPreTrainingC
 /// Represents the drift check bias baselines that can be used when the model
 /// monitor is set using the model package.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBias
 {
@@ -206,7 +206,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesBias
 }
 
 /// <summary>Contains details regarding the file source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesExplainabilityConfigFile
 {
@@ -221,7 +221,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesExplainabilityCo
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesExplainabilityConstraints
 {
@@ -239,7 +239,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesExplainabilityCo
 /// Represents the drift check explainability baselines that can be used when
 /// the model monitor is set using the model package.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesExplainability
 {
@@ -253,7 +253,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesExplainability
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelDataQualityConstraints
 {
@@ -268,7 +268,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelDataQuality
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelDataQualityStatistics
 {
@@ -286,7 +286,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelDataQuality
 /// Represents the drift check data quality baselines that can be used when the
 /// model monitor is set using the model package.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelDataQuality
 {
@@ -300,7 +300,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelDataQuality
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelQualityConstraints
 {
@@ -315,7 +315,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelQualityCons
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelQualityStatistics
 {
@@ -333,7 +333,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelQualityStat
 /// Represents the drift check model quality baselines that can be used when
 /// the model monitor is set using the model package.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelQuality
 {
@@ -352,7 +352,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselinesModelQuality
 /// Detection against Previous Baselines in SageMaker Pipelines (https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-quality-clarify-baseline-lifecycle.html#pipelines-quality-clarify-baseline-drift-detection)
 /// in the Amazon SageMaker Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecDriftCheckBaselines
 {
@@ -389,7 +389,7 @@ public partial class V1alpha1ModelPackageSpecDriftCheckBaselines
 /// A data source used for training or inference that is in addition to the input
 /// dataset or model data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecInferenceSpecificationContainersAdditionalS3DataSource
 {
@@ -404,7 +404,7 @@ public partial class V1alpha1ModelPackageSpecInferenceSpecificationContainersAdd
 }
 
 /// <summary>Input object for the model.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecInferenceSpecificationContainersModelInput
 {
@@ -413,7 +413,7 @@ public partial class V1alpha1ModelPackageSpecInferenceSpecificationContainersMod
 }
 
 /// <summary>Describes the Docker container for the model package.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecInferenceSpecificationContainers
 {
@@ -469,7 +469,7 @@ public partial class V1alpha1ModelPackageSpecInferenceSpecificationContainers
 ///    * The input and output content formats that the model package supports
 ///    for inference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecInferenceSpecification
 {
@@ -490,7 +490,7 @@ public partial class V1alpha1ModelPackageSpecInferenceSpecification
 }
 
 /// <summary>Metadata properties of the tracking entity, trial, or trial component.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecMetadataProperties
 {
@@ -508,7 +508,7 @@ public partial class V1alpha1ModelPackageSpecMetadataProperties
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsBiasPostTrainingReport
 {
@@ -523,7 +523,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsBiasPostTrainingReport
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsBiasPreTrainingReport
 {
@@ -538,7 +538,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsBiasPreTrainingReport
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsBiasReport
 {
@@ -553,7 +553,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsBiasReport
 }
 
 /// <summary>Contains bias metrics for a model.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsBias
 {
@@ -571,7 +571,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsBias
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsExplainabilityReport
 {
@@ -586,7 +586,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsExplainabilityReport
 }
 
 /// <summary>Contains explainability metrics for a model.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsExplainability
 {
@@ -596,7 +596,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsExplainability
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsModelDataQualityConstraints
 {
@@ -611,7 +611,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsModelDataQualityConstra
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsModelDataQualityStatistics
 {
@@ -626,7 +626,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsModelDataQualityStatist
 }
 
 /// <summary>Data quality constraints and statistics for a model.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsModelDataQuality
 {
@@ -640,7 +640,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsModelDataQuality
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsModelQualityConstraints
 {
@@ -655,7 +655,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsModelQualityConstraints
 }
 
 /// <summary>Details about the metrics source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsModelQualityStatistics
 {
@@ -670,7 +670,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsModelQualityStatistics
 }
 
 /// <summary>Model quality statistics and constraints.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetricsModelQuality
 {
@@ -684,7 +684,7 @@ public partial class V1alpha1ModelPackageSpecModelMetricsModelQuality
 }
 
 /// <summary>A structure that contains model metrics reports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecModelMetrics
 {
@@ -710,7 +710,7 @@ public partial class V1alpha1ModelPackageSpecModelMetrics
 /// must be either an algorithm resource in your SageMaker account or an algorithm
 /// in Amazon Web Services Marketplace that you are subscribed to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecSourceAlgorithmSpecificationSourceAlgorithms
 {
@@ -722,7 +722,7 @@ public partial class V1alpha1ModelPackageSpecSourceAlgorithmSpecificationSourceA
 }
 
 /// <summary>Details about the algorithm that was used to create the model package.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecSourceAlgorithmSpecification
 {
@@ -745,7 +745,7 @@ public partial class V1alpha1ModelPackageSpecSourceAlgorithmSpecification
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecTags
 {
@@ -757,7 +757,7 @@ public partial class V1alpha1ModelPackageSpecTags
 }
 
 /// <summary>Describes the S3 data source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSourceS3DataSource
 {
@@ -769,7 +769,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationPr
 }
 
 /// <summary>Describes the location of the channel data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationProfilesTransformJobDefinitionTransformInputDataSource
 {
@@ -782,7 +782,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationPr
 /// Describes the input source of a transform job and the way the transform job
 /// consumes it.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationProfilesTransformJobDefinitionTransformInput
 {
@@ -801,7 +801,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationPr
 }
 
 /// <summary>Describes the results of a transform job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationProfilesTransformJobDefinitionTransformOutput
 {
@@ -822,7 +822,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationPr
 /// Describes the resources, including ML instance types and ML instance count,
 /// to use for transform job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationProfilesTransformJobDefinitionTransformResources
 {
@@ -843,7 +843,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationPr
 /// Defines the input needed to run a transform job using the inference specification
 /// specified in the algorithm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationProfilesTransformJobDefinition
 {
@@ -885,7 +885,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationPr
 /// The data provided in the validation profile is made available to your buyers
 /// on Amazon Web Services Marketplace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationProfiles
 {
@@ -904,7 +904,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecificationValidationPr
 /// Specifies configurations for one or more transform jobs that SageMaker runs
 /// to test the model package.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpecValidationSpecification
 {
@@ -929,7 +929,7 @@ public partial class V1alpha1ModelPackageSpecValidationSpecification
 /// 
 /// For more information, see CreateModelPackage (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModelPackage.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageSpec
 {
@@ -1113,7 +1113,7 @@ public partial class V1alpha1ModelPackageSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageStatusAckResourceMetadata
 {
@@ -1150,7 +1150,7 @@ public partial class V1alpha1ModelPackageStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageStatusConditions
 {
@@ -1176,7 +1176,7 @@ public partial class V1alpha1ModelPackageStatusConditions
 }
 
 /// <summary>Represents the overall status of a model package.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageStatusModelPackageStatusDetailsImageScanStatuses
 {
@@ -1191,7 +1191,7 @@ public partial class V1alpha1ModelPackageStatusModelPackageStatusDetailsImageSca
 }
 
 /// <summary>Represents the overall status of a model package.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageStatusModelPackageStatusDetailsValidationStatuses
 {
@@ -1206,7 +1206,7 @@ public partial class V1alpha1ModelPackageStatusModelPackageStatusDetailsValidati
 }
 
 /// <summary>Details about the current status of the model package.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageStatusModelPackageStatusDetails
 {
@@ -1218,7 +1218,7 @@ public partial class V1alpha1ModelPackageStatusModelPackageStatusDetails
 }
 
 /// <summary>ModelPackageStatus defines the observed state of ModelPackage</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelPackageStatus
 {
@@ -1257,7 +1257,7 @@ public partial class V1alpha1ModelPackageStatus
 }
 
 /// <summary>ModelPackage is the Schema for the ModelPackages API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelPackage : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ModelPackageSpec?>, IStatus<V1alpha1ModelPackageStatus?>

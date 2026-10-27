@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>VPCDHCPOptionsAssociation is the Schema for the VPCDHCPOptionsAssociations API. Provides a VPC DHCP Options Association resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCDHCPOptionsAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCDHCPOptionsAssociation>
@@ -43,7 +43,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationList : IKubernetesObject<V1
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsI
 }
 
 /// <summary>Reference to a VPCDHCPOptions in ec2 to populate dhcpOptionsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsI
 }
 
 /// <summary>Selector for a VPCDHCPOptions in ec2 to populate dhcpOptionsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderDhcpOptionsI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRefPoli
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelecto
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelecto
     public V1beta1VPCDHCPOptionsAssociationSpecForProviderVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecForProvider
 {
@@ -389,7 +389,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRefPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRefPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRefPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptions
 }
 
 /// <summary>Reference to a VPCDHCPOptions in ec2 to populate dhcpOptionsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptions
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelectorPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelectorPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelectorPolicy
 {
@@ -514,7 +514,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptions
 }
 
 /// <summary>Selector for a VPCDHCPOptions in ec2 to populate dhcpOptionsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptionsIdSelector
 {
@@ -544,7 +544,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderDhcpOptions
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPolicyResolutionEnum
 {
@@ -560,7 +560,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPolicyResolveEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPolicy
 {
@@ -595,7 +595,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRefPol
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRef
 {
@@ -618,7 +618,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -634,7 +634,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -645,7 +645,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelectorPolicy
 {
@@ -669,7 +669,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelect
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelector
 {
@@ -705,7 +705,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProviderVpcIdSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProvider
 {
@@ -738,7 +738,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCDHCPOptionsAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1VPCDHCPOptionsAssociationSpecManagementPoliciesEnum
 {
@@ -761,7 +761,7 @@ public enum V1beta1VPCDHCPOptionsAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecProviderConfigRef
 {
@@ -780,7 +780,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpecWriteConnectionSecretToRef
 {
@@ -790,7 +790,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpecWriteConnectionSecretTo
 }
 
 /// <summary>VPCDHCPOptionsAssociationSpec defines the desired state of VPCDHCPOptionsAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationSpec
 {
@@ -841,7 +841,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationSpec
     public V1beta1VPCDHCPOptionsAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationStatusAtProvider
 {
@@ -866,7 +866,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationStatusConditions
 {
@@ -909,7 +909,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationStatusConditions
 }
 
 /// <summary>VPCDHCPOptionsAssociationStatus defines the observed state of VPCDHCPOptionsAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCDHCPOptionsAssociationStatus
 {
@@ -939,7 +939,7 @@ public partial class V1beta1VPCDHCPOptionsAssociationStatus
 }
 
 /// <summary>VPCDHCPOptionsAssociation is the Schema for the VPCDHCPOptionsAssociations API. Provides a VPC DHCP Options Association resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCDHCPOptionsAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCDHCPOptionsAssociationSpec>, IStatus<V1beta1VPCDHCPOptionsAssociationStatus?>

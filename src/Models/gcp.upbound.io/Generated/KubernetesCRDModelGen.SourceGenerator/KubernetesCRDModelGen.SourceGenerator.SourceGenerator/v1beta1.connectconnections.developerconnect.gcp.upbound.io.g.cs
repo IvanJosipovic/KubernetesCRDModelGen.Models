@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.developerconnect.gcp.upbound.io;
 /// <summary>ConnectConnection is the Schema for the ConnectConnections API. A connection for GitHub, GitHub Enterprise, GitLab, and GitLab Enterprise.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ConnectConnection>
@@ -46,7 +46,7 @@ public partial class V1beta1ConnectConnectionList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecDeletionPolicyEnum>))]
 public enum V1beta1ConnectConnectionSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ConnectConnectionSpecDeletionPolicyEnum
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderBitbucketCloudConfigAuthorizerCredential
 {
@@ -79,7 +79,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderBitbucketCloudConfig
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderBitbucketCloudConfigReadAuthorizerCredential
 {
@@ -96,7 +96,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderBitbucketCloudConfig
 /// Configuration for connections to an instance of Bitbucket Cloud.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderBitbucketCloudConfig
 {
@@ -134,7 +134,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderBitbucketCloudConfig
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterConfigAuthorizerCredential
 {
@@ -152,7 +152,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterC
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterConfigReadAuthorizerCredential
 {
@@ -170,7 +170,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterC
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterConfigServiceDirectoryConfig
 {
@@ -187,7 +187,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterC
 /// Configuration for connections to an instance of Bitbucket Data Center.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterConfig
 {
@@ -240,7 +240,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderBitbucketDataCenterC
 /// encryption keys (CMEK) feature.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderCryptoKeyConfig
 {
@@ -259,7 +259,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderCryptoKeyConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolutionEnum
 {
@@ -275,7 +275,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredent
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolveEnum
 {
@@ -286,7 +286,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredent
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicy
 {
@@ -310,7 +310,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthoriz
 }
 
 /// <summary>Reference to a SecretVersion in secretmanager to populate oauthTokenSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRef
 {
@@ -329,7 +329,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthoriz
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolutionEnum
 {
@@ -345,7 +345,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredent
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolveEnum
 {
@@ -356,7 +356,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredent
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicy
 {
@@ -380,7 +380,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthoriz
 }
 
 /// <summary>Selector for a SecretVersion in secretmanager to populate oauthTokenSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelector
 {
@@ -405,7 +405,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthoriz
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthorizerCredential
 {
@@ -429,7 +429,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubConfigAuthoriz
 /// Configuration for connections to github.com.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubConfig
 {
@@ -463,7 +463,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivate
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicy
 {
@@ -514,7 +514,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 }
 
 /// <summary>Reference to a SecretVersion in secretmanager to populate privateKeySecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionRef
 {
@@ -533,7 +533,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolutionEnum
 {
@@ -549,7 +549,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolveEnum
 {
@@ -560,7 +560,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivate
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicy
 {
@@ -584,7 +584,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 }
 
 /// <summary>Selector for a SecretVersion in secretmanager to populate privateKeySecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigPrivateKeySecretVersionSelector
 {
@@ -609,7 +609,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigServiceDirectoryConfig
 {
@@ -628,7 +628,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolutionEnum
 {
@@ -644,7 +644,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhook
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolveEnum
 {
@@ -655,7 +655,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhook
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicy
 {
@@ -679,7 +679,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 }
 
 /// <summary>Reference to a SecretVersion in secretmanager to populate webhookSecretSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionRef
 {
@@ -698,7 +698,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolutionEnum
 {
@@ -714,7 +714,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhook
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolveEnum
 {
@@ -725,7 +725,7 @@ public enum V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhook
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicy
 {
@@ -749,7 +749,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 }
 
 /// <summary>Selector for a SecretVersion in secretmanager to populate webhookSecretSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelector
 {
@@ -773,7 +773,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 /// Configuration for connections to an instance of GitHub Enterprise.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConfig
 {
@@ -837,7 +837,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGithubEnterpriseConf
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGitlabConfigAuthorizerCredential
 {
@@ -855,7 +855,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabConfigAuthoriz
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGitlabConfigReadAuthorizerCredential
 {
@@ -872,7 +872,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabConfigReadAuth
 /// Configuration for connections to gitlab.com.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGitlabConfig
 {
@@ -906,7 +906,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabConfig
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConfigAuthorizerCredential
 {
@@ -924,7 +924,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConf
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConfigReadAuthorizerCredential
 {
@@ -942,7 +942,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConf
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConfigServiceDirectoryConfig
 {
@@ -959,7 +959,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConf
 /// Configuration for connections to an instance of GitLab Enterprise.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConfig
 {
@@ -1011,7 +1011,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderGitlabEnterpriseConf
 /// Basic authentication with username and password.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigBasicAuthentication
 {
@@ -1031,7 +1031,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigBasicAuthe
 /// Bearer token authentication with a token.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigBearerTokenAuthentication
 {
@@ -1045,7 +1045,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigBearerToke
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigServiceDirectoryConfig
 {
@@ -1062,7 +1062,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderHttpConfigServiceDir
 /// Configuration for connections to an HTTP service provider.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProviderHttpConfig
 {
@@ -1097,7 +1097,7 @@ public partial class V1beta1ConnectConnectionSpecForProviderHttpConfig
     public string? SslCaCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecForProvider
 {
@@ -1207,7 +1207,7 @@ public partial class V1beta1ConnectConnectionSpecForProvider
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketCloudConfigAuthorizerCredential
 {
@@ -1225,7 +1225,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketCloudConfi
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketCloudConfigReadAuthorizerCredential
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketCloudConfi
 /// Configuration for connections to an instance of Bitbucket Cloud.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketCloudConfig
 {
@@ -1280,7 +1280,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketCloudConfi
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenterConfigAuthorizerCredential
 {
@@ -1298,7 +1298,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenter
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenterConfigReadAuthorizerCredential
 {
@@ -1316,7 +1316,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenter
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenterConfigServiceDirectoryConfig
 {
@@ -1333,7 +1333,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenter
 /// Configuration for connections to an instance of Bitbucket Data Center.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenterConfig
 {
@@ -1386,7 +1386,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderBitbucketDataCenter
 /// encryption keys (CMEK) feature.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderCryptoKeyConfig
 {
@@ -1405,7 +1405,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderCryptoKeyConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolutionEnum
 {
@@ -1421,7 +1421,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCreden
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicyResolveEnum
 {
@@ -1432,7 +1432,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCreden
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRefPolicy
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthori
 }
 
 /// <summary>Reference to a SecretVersion in secretmanager to populate oauthTokenSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionRef
 {
@@ -1475,7 +1475,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthori
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolutionEnum
 {
@@ -1491,7 +1491,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCreden
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicyResolveEnum
 {
@@ -1502,7 +1502,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCreden
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelectorPolicy
 {
@@ -1526,7 +1526,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthori
 }
 
 /// <summary>Selector for a SecretVersion in secretmanager to populate oauthTokenSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredentialOauthTokenSecretVersionSelector
 {
@@ -1551,7 +1551,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthori
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthorizerCredential
 {
@@ -1575,7 +1575,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfigAuthori
 /// Configuration for connections to github.com.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfig
 {
@@ -1609,7 +1609,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolutionEnum
 {
@@ -1625,7 +1625,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicyResolveEnum
 {
@@ -1636,7 +1636,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionRefPolicy
 {
@@ -1660,7 +1660,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 }
 
 /// <summary>Reference to a SecretVersion in secretmanager to populate privateKeySecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionRef
 {
@@ -1679,7 +1679,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolutionEnum
 {
@@ -1695,7 +1695,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicyResolveEnum
 {
@@ -1706,7 +1706,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionSelectorPolicy
 {
@@ -1730,7 +1730,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 }
 
 /// <summary>Selector for a SecretVersion in secretmanager to populate privateKeySecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigPrivateKeySecretVersionSelector
 {
@@ -1755,7 +1755,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigServiceDirectoryConfig
 {
@@ -1774,7 +1774,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolutionEnum
 {
@@ -1790,7 +1790,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicyResolveEnum
 {
@@ -1801,7 +1801,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhoo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionRefPolicy
 {
@@ -1825,7 +1825,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 }
 
 /// <summary>Reference to a SecretVersion in secretmanager to populate webhookSecretSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionRef
 {
@@ -1844,7 +1844,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolutionEnum
 {
@@ -1860,7 +1860,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicyResolveEnum
 {
@@ -1871,7 +1871,7 @@ public enum V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhoo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelectorPolicy
 {
@@ -1895,7 +1895,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 }
 
 /// <summary>Selector for a SecretVersion in secretmanager to populate webhookSecretSecretVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfigWebhookSecretSecretVersionSelector
 {
@@ -1919,7 +1919,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 /// Configuration for connections to an instance of GitHub Enterprise.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseConfig
 {
@@ -1983,7 +1983,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGithubEnterpriseCon
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGitlabConfigAuthorizerCredential
 {
@@ -2001,7 +2001,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabConfigAuthori
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGitlabConfigReadAuthorizerCredential
 {
@@ -2018,7 +2018,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabConfigReadAut
 /// Configuration for connections to gitlab.com.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGitlabConfig
 {
@@ -2052,7 +2052,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabConfig
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseConfigAuthorizerCredential
 {
@@ -2070,7 +2070,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseCon
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseConfigReadAuthorizerCredential
 {
@@ -2088,7 +2088,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseCon
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseConfigServiceDirectoryConfig
 {
@@ -2105,7 +2105,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseCon
 /// Configuration for connections to an instance of GitLab Enterprise.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseConfig
 {
@@ -2157,7 +2157,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderGitlabEnterpriseCon
 /// Basic authentication with username and password.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigBasicAuthentication
 {
@@ -2177,7 +2177,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigBasicAuth
 /// Bearer token authentication with a token.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigBearerTokenAuthentication
 {
@@ -2191,7 +2191,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigBearerTok
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigServiceDirectoryConfig
 {
@@ -2208,7 +2208,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfigServiceDi
 /// Configuration for connections to an HTTP service provider.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfig
 {
@@ -2255,7 +2255,7 @@ public partial class V1beta1ConnectConnectionSpecInitProviderHttpConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecInitProvider
 {
@@ -2360,7 +2360,7 @@ public partial class V1beta1ConnectConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecManagementPoliciesEnum>))]
 public enum V1beta1ConnectConnectionSpecManagementPoliciesEnum
 {
@@ -2384,7 +2384,7 @@ public enum V1beta1ConnectConnectionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2400,7 +2400,7 @@ public enum V1beta1ConnectConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectConnectionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ConnectConnectionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2411,7 +2411,7 @@ public enum V1beta1ConnectConnectionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecProviderConfigRefPolicy
 {
@@ -2439,7 +2439,7 @@ public partial class V1beta1ConnectConnectionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecProviderConfigRef
 {
@@ -2458,7 +2458,7 @@ public partial class V1beta1ConnectConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpecWriteConnectionSecretToRef
 {
@@ -2472,7 +2472,7 @@ public partial class V1beta1ConnectConnectionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ConnectConnectionSpec defines the desired state of ConnectConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionSpec
 {
@@ -2544,7 +2544,7 @@ public partial class V1beta1ConnectConnectionSpec
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketCloudConfigAuthorizerCredential
 {
@@ -2569,7 +2569,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketCloudConfi
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketCloudConfigReadAuthorizerCredential
 {
@@ -2593,7 +2593,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketCloudConfi
 /// Configuration for connections to an instance of Bitbucket Cloud.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketCloudConfig
 {
@@ -2631,7 +2631,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketCloudConfi
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenterConfigAuthorizerCredential
 {
@@ -2656,7 +2656,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenter
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenterConfigReadAuthorizerCredential
 {
@@ -2681,7 +2681,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenter
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenterConfigServiceDirectoryConfig
 {
@@ -2698,7 +2698,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenter
 /// Configuration for connections to an instance of Bitbucket Data Center.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenterConfig
 {
@@ -2758,7 +2758,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderBitbucketDataCenter
 /// encryption keys (CMEK) feature.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderCryptoKeyConfig
 {
@@ -2776,7 +2776,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderCryptoKeyConfig
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGithubConfigAuthorizerCredential
 {
@@ -2799,7 +2799,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGithubConfigAuthori
 /// Configuration for connections to github.com.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGithubConfig
 {
@@ -2840,7 +2840,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGithubConfig
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGithubEnterpriseConfigServiceDirectoryConfig
 {
@@ -2857,7 +2857,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGithubEnterpriseCon
 /// Configuration for connections to an instance of GitHub Enterprise.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGithubEnterpriseConfig
 {
@@ -2927,7 +2927,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGithubEnterpriseCon
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGitlabConfigAuthorizerCredential
 {
@@ -2952,7 +2952,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabConfigAuthori
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGitlabConfigReadAuthorizerCredential
 {
@@ -2976,7 +2976,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabConfigReadAut
 /// Configuration for connections to gitlab.com.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGitlabConfig
 {
@@ -3010,7 +3010,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabConfig
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseConfigAuthorizerCredential
 {
@@ -3035,7 +3035,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseCon
 /// and associated metadata.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseConfigReadAuthorizerCredential
 {
@@ -3060,7 +3060,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseCon
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseConfigServiceDirectoryConfig
 {
@@ -3077,7 +3077,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseCon
 /// Configuration for connections to an instance of GitLab Enterprise.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseConfig
 {
@@ -3136,7 +3136,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderGitlabEnterpriseCon
 /// Basic authentication with username and password.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigBasicAuthentication
 {
@@ -3156,7 +3156,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigBasicAuth
 /// Bearer token authentication with a token.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigBearerTokenAuthentication
 {
@@ -3170,7 +3170,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigBearerTok
 /// connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigServiceDirectoryConfig
 {
@@ -3187,7 +3187,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfigServiceDi
 /// Configuration for connections to an HTTP service provider.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfig
 {
@@ -3222,7 +3222,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderHttpConfig
     public string? SslCaCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProviderInstallationState
 {
@@ -3254,7 +3254,7 @@ public partial class V1beta1ConnectConnectionStatusAtProviderInstallationState
     public string? Stage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusAtProvider
 {
@@ -3423,7 +3423,7 @@ public partial class V1beta1ConnectConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatusConditions
 {
@@ -3466,7 +3466,7 @@ public partial class V1beta1ConnectConnectionStatusConditions
 }
 
 /// <summary>ConnectConnectionStatus defines the observed state of ConnectConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectConnectionStatus
 {
@@ -3496,7 +3496,7 @@ public partial class V1beta1ConnectConnectionStatus
 }
 
 /// <summary>ConnectConnection is the Schema for the ConnectConnections API. A connection for GitHub, GitHub Enterprise, GitLab, and GitLab Enterprise.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectConnectionSpec>, IStatus<V1beta1ConnectConnectionStatus?>

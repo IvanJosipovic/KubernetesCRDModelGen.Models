@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudwatch.aws.m.upbound.io;
 /// <summary>MetricAlarm is the Schema for the MetricAlarms API. Provides a CloudWatch Metric Alarm resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MetricAlarmList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MetricAlarm>
@@ -43,7 +43,7 @@ public partial class V1beta1MetricAlarmList : IKubernetesObject<V1ListMeta>, IIt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsRefs
 {
@@ -117,7 +117,7 @@ public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicy
 }
 
 /// <summary>Selector for a list of Policy in autoscaling to populate alarmActions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsSelector
 }
 
 /// <summary>The PromQL criteria for the alarm evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderEvaluationCriteriaPromqlCriteria
 {
@@ -211,7 +211,7 @@ public partial class V1beta1MetricAlarmSpecForProviderEvaluationCriteriaPromqlCr
 }
 
 /// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderEvaluationCriteria
 {
@@ -221,7 +221,7 @@ public partial class V1beta1MetricAlarmSpecForProviderEvaluationCriteria
 }
 
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderMetricQueryMetric
 {
@@ -263,7 +263,7 @@ public partial class V1beta1MetricAlarmSpecForProviderMetricQueryMetric
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderMetricQuery
 {
@@ -310,7 +310,7 @@ public partial class V1beta1MetricAlarmSpecForProviderMetricQuery
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicyResolutionEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicyResolveEnum
 {
@@ -337,7 +337,7 @@ public enum V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicy
 {
@@ -361,7 +361,7 @@ public partial class V1beta1MetricAlarmSpecForProviderOkActionsRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderOkActionsRefs
 {
@@ -384,7 +384,7 @@ public partial class V1beta1MetricAlarmSpecForProviderOkActionsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicyResolutionEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicyResolveEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicy
 {
@@ -435,7 +435,7 @@ public partial class V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicy
 }
 
 /// <summary>Selector for a list of Topic in sns to populate okActions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderOkActionsSelector
 {
@@ -460,7 +460,7 @@ public partial class V1beta1MetricAlarmSpecForProviderOkActionsSelector
 }
 
 /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProviderWarmUpConfiguration
 {
@@ -473,7 +473,7 @@ public partial class V1beta1MetricAlarmSpecForProviderWarmUpConfiguration
     public double? WarmUpPeriodDurationInMinutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProvider
 {
@@ -620,7 +620,7 @@ public partial class V1beta1MetricAlarmSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicyResolutionEnum
 {
@@ -636,7 +636,7 @@ public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicyResolveEnum
 {
@@ -647,7 +647,7 @@ public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicy
 {
@@ -671,7 +671,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsRefs
 {
@@ -694,7 +694,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicyResolutionEnum
 {
@@ -710,7 +710,7 @@ public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicyResolveEnum
 {
@@ -721,7 +721,7 @@ public enum V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicy
 {
@@ -745,7 +745,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolic
 }
 
 /// <summary>Selector for a list of Policy in autoscaling to populate alarmActions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsSelector
 {
@@ -770,7 +770,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsSelector
 }
 
 /// <summary>The PromQL criteria for the alarm evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderEvaluationCriteriaPromqlCriteria
 {
@@ -788,7 +788,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderEvaluationCriteriaPromqlC
 }
 
 /// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderEvaluationCriteria
 {
@@ -798,7 +798,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderEvaluationCriteria
 }
 
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderMetricQueryMetric
 {
@@ -840,7 +840,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderMetricQueryMetric
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderMetricQuery
 {
@@ -887,7 +887,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderMetricQuery
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicyResolutionEnum
 {
@@ -903,7 +903,7 @@ public enum V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicyResolveEnum
 {
@@ -914,7 +914,7 @@ public enum V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicy
 {
@@ -938,7 +938,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderOkActionsRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderOkActionsRefs
 {
@@ -961,7 +961,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderOkActionsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicyResolutionEnum
 {
@@ -977,7 +977,7 @@ public enum V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicyResolveEnum>))]
 public enum V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicyResolveEnum
 {
@@ -988,7 +988,7 @@ public enum V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicy
 {
@@ -1012,7 +1012,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicy
 }
 
 /// <summary>Selector for a list of Topic in sns to populate okActions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderOkActionsSelector
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderOkActionsSelector
 }
 
 /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProviderWarmUpConfiguration
 {
@@ -1062,7 +1062,7 @@ public partial class V1beta1MetricAlarmSpecInitProviderWarmUpConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecInitProvider
 {
@@ -1200,7 +1200,7 @@ public partial class V1beta1MetricAlarmSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricAlarmSpecManagementPoliciesEnum>))]
 public enum V1beta1MetricAlarmSpecManagementPoliciesEnum
 {
@@ -1223,7 +1223,7 @@ public enum V1beta1MetricAlarmSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecProviderConfigRef
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta1MetricAlarmSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecWriteConnectionSecretToRef
 {
@@ -1252,7 +1252,7 @@ public partial class V1beta1MetricAlarmSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MetricAlarmSpec defines the desired state of MetricAlarm</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpec
 {
@@ -1304,7 +1304,7 @@ public partial class V1beta1MetricAlarmSpec
 }
 
 /// <summary>The PromQL criteria for the alarm evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusAtProviderEvaluationCriteriaPromqlCriteria
 {
@@ -1322,7 +1322,7 @@ public partial class V1beta1MetricAlarmStatusAtProviderEvaluationCriteriaPromqlC
 }
 
 /// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusAtProviderEvaluationCriteria
 {
@@ -1332,7 +1332,7 @@ public partial class V1beta1MetricAlarmStatusAtProviderEvaluationCriteria
 }
 
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusAtProviderMetricQueryMetric
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta1MetricAlarmStatusAtProviderMetricQueryMetric
     public string? Unit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusAtProviderMetricQuery
 {
@@ -1416,7 +1416,7 @@ public partial class V1beta1MetricAlarmStatusAtProviderMetricQuery
 }
 
 /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusAtProviderWarmUpConfiguration
 {
@@ -1429,7 +1429,7 @@ public partial class V1beta1MetricAlarmStatusAtProviderWarmUpConfiguration
     public double? WarmUpPeriodDurationInMinutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusAtProvider
 {
@@ -1567,7 +1567,7 @@ public partial class V1beta1MetricAlarmStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusConditions
 {
@@ -1610,7 +1610,7 @@ public partial class V1beta1MetricAlarmStatusConditions
 }
 
 /// <summary>MetricAlarmStatus defines the observed state of MetricAlarm.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatus
 {
@@ -1640,7 +1640,7 @@ public partial class V1beta1MetricAlarmStatus
 }
 
 /// <summary>MetricAlarm is the Schema for the MetricAlarms API. Provides a CloudWatch Metric Alarm resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MetricAlarm : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MetricAlarmSpec>, IStatus<V1beta1MetricAlarmStatus?>

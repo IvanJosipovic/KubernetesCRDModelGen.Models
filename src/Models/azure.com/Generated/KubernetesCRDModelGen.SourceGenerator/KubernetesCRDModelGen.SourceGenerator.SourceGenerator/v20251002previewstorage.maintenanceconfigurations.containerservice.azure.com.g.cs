@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.containerservice.azure.com;
 /// - Generated from: /containerservice/resource-manager/Microsoft.ContainerService/aks/preview/2025-10-02-preview/managedClusters.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}/maintenanceConfigurations/{configName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20251002previewstorageMaintenanceConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V20251002previewstorageMaintenanceConfiguration>
@@ -46,7 +46,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationList : IKube
 /// Storage version of v20251002preview.DateSpan
 /// A date range. For example, between &apos;2022-12-23&apos; and &apos;2023-01-05&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintenanceWindowNotAllowedDates
 {
@@ -68,7 +68,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintena
 /// Storage version of v20251002preview.AbsoluteMonthlySchedule
 /// For schedules like: &apos;recur every month on the 15th&apos; or &apos;recur every 3 months on the 20th&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintenanceWindowScheduleAbsoluteMonthly
 {
@@ -90,7 +90,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintena
 /// Storage version of v20251002preview.DailySchedule
 /// For schedules like: &apos;recur every day&apos; or &apos;recur every 3 days&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintenanceWindowScheduleDaily
 {
@@ -109,7 +109,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintena
 /// Storage version of v20251002preview.RelativeMonthlySchedule
 /// For schedules like: &apos;recur every month on the first Monday&apos; or &apos;recur every 3 months on last Friday&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintenanceWindowScheduleRelativeMonthly
 {
@@ -134,7 +134,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintena
 /// Storage version of v20251002preview.WeeklySchedule
 /// For schedules like: &apos;recur every Monday&apos; or &apos;recur every 3 weeks on Wednesday&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintenanceWindowScheduleWeekly
 {
@@ -157,7 +157,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintena
 /// One and only one of the schedule types should be specified. Choose either &apos;daily&apos;, &apos;weekly&apos;, &apos;absoluteMonthly&apos; or
 /// &apos;relativeMonthly&apos; for your maintenance schedule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintenanceWindowSchedule
 {
@@ -201,7 +201,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintena
 /// Storage version of v20251002preview.MaintenanceWindow
 /// Maintenance window used to configure scheduled auto-upgrade for a Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintenanceWindow
 {
@@ -240,7 +240,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecMaintena
 /// Storage version of v20251002preview.TimeSpan
 /// A time range. For example, between 2021-05-25T13:00:00Z and 2021-05-25T14:00:00Z.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecNotAllowedTime
 {
@@ -263,7 +263,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecNotAllow
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecOperatorSpecConfigMapExpressions
 {
@@ -304,7 +304,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecOperator
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecOperatorSpecSecretExpressions
 {
@@ -344,7 +344,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecOperator
 /// Storage version of v20251002preview.MaintenanceConfigurationOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecOperatorSpec
 {
@@ -367,7 +367,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecOperator
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a containerservice.azure.com/ManagedCluster resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecOwner
 {
@@ -383,7 +383,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecOwner
 /// Storage version of v20251002preview.TimeInWeek
 /// Time in a week.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpecTimeInWeek
 {
@@ -402,7 +402,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpecTimeInWe
 }
 
 /// <summary>Storage version of v20251002preview.MaintenanceConfiguration_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationSpec
 {
@@ -453,7 +453,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusConditions
 {
@@ -502,7 +502,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusCondit
 /// Storage version of v20251002preview.DateSpan_STATUS
 /// A date range. For example, between &apos;2022-12-23&apos; and &apos;2023-01-05&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusMaintenanceWindowNotAllowedDates
 {
@@ -524,7 +524,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusMainte
 /// Storage version of v20251002preview.AbsoluteMonthlySchedule_STATUS
 /// For schedules like: &apos;recur every month on the 15th&apos; or &apos;recur every 3 months on the 20th&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusMaintenanceWindowScheduleAbsoluteMonthly
 {
@@ -546,7 +546,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusMainte
 /// Storage version of v20251002preview.DailySchedule_STATUS
 /// For schedules like: &apos;recur every day&apos; or &apos;recur every 3 days&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusMaintenanceWindowScheduleDaily
 {
@@ -565,7 +565,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusMainte
 /// Storage version of v20251002preview.RelativeMonthlySchedule_STATUS
 /// For schedules like: &apos;recur every month on the first Monday&apos; or &apos;recur every 3 months on last Friday&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusMaintenanceWindowScheduleRelativeMonthly
 {
@@ -590,7 +590,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusMainte
 /// Storage version of v20251002preview.WeeklySchedule_STATUS
 /// For schedules like: &apos;recur every Monday&apos; or &apos;recur every 3 weeks on Wednesday&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusMaintenanceWindowScheduleWeekly
 {
@@ -613,7 +613,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusMainte
 /// One and only one of the schedule types should be specified. Choose either &apos;daily&apos;, &apos;weekly&apos;, &apos;absoluteMonthly&apos; or
 /// &apos;relativeMonthly&apos; for your maintenance schedule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusMaintenanceWindowSchedule
 {
@@ -657,7 +657,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusMainte
 /// Storage version of v20251002preview.MaintenanceWindow_STATUS
 /// Maintenance window used to configure scheduled auto-upgrade for a Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusMaintenanceWindow
 {
@@ -696,7 +696,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusMainte
 /// Storage version of v20251002preview.TimeSpan_STATUS
 /// A time range. For example, between 2021-05-25T13:00:00Z and 2021-05-25T14:00:00Z.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusNotAllowedTime
 {
@@ -718,7 +718,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusNotAll
 /// Storage version of v20251002preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusSystemData
 {
@@ -752,7 +752,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusSystem
 /// Storage version of v20251002preview.TimeInWeek_STATUS
 /// Time in a week.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatusTimeInWeek
 {
@@ -771,7 +771,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatusTimeIn
 }
 
 /// <summary>Storage version of v20251002preview.MaintenanceConfiguration_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageMaintenanceConfigurationStatus
 {
@@ -821,7 +821,7 @@ public partial class V20251002previewstorageMaintenanceConfigurationStatus
 /// - Generated from: /containerservice/resource-manager/Microsoft.ContainerService/aks/preview/2025-10-02-preview/managedClusters.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}/maintenanceConfigurations/{configName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20251002previewstorageMaintenanceConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V20251002previewstorageMaintenanceConfigurationSpec?>, IStatus<V20251002previewstorageMaintenanceConfigurationStatus?>

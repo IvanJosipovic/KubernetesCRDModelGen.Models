@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.search.azure.com;
 /// - Generated from: /search/resource-manager/Microsoft.Search/Search/stable/2022-09-01/search.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220901storageSearchServiceList : IKubernetesObject<V1ListMeta>, IItems<V1api20220901storageSearchService>
@@ -46,7 +46,7 @@ public partial class V1api20220901storageSearchServiceList : IKubernetesObject<V
 /// Storage version of v1api20220901.DataPlaneAadOrApiKeyAuthOption
 /// Indicates that either the API key or an access token from Azure Active Directory can be used for authentication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecAuthOptionsAadOrApiKey
 {
@@ -66,7 +66,7 @@ public partial class V1api20220901storageSearchServiceSpecAuthOptionsAadOrApiKey
 /// Defines the options for how the data plane API of a Search service authenticates requests. This cannot be set if
 /// &apos;disableLocalAuth&apos; is set to true.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecAuthOptions
 {
@@ -90,7 +90,7 @@ public partial class V1api20220901storageSearchServiceSpecAuthOptions
 /// Describes a policy that determines how resources within the search service are to be encrypted with Customer Managed
 /// Keys.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecEncryptionWithCmk
 {
@@ -109,7 +109,7 @@ public partial class V1api20220901storageSearchServiceSpecEncryptionWithCmk
 /// Storage version of v1api20220901.Identity
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecIdentity
 {
@@ -128,7 +128,7 @@ public partial class V1api20220901storageSearchServiceSpecIdentity
 /// Storage version of v1api20220901.IpRule
 /// The IP restriction rule of the Azure Cognitive Search service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecNetworkRuleSetIpRules
 {
@@ -147,7 +147,7 @@ public partial class V1api20220901storageSearchServiceSpecNetworkRuleSetIpRules
 /// Storage version of v1api20220901.NetworkRuleSet
 /// Network specific rules that determine how the Azure Cognitive Search service may be reached.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecNetworkRuleSet
 {
@@ -167,7 +167,7 @@ public partial class V1api20220901storageSearchServiceSpecNetworkRuleSet
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMapExpressions
 {
@@ -208,7 +208,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMapE
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMapsIdentityPrincipalId
 {
@@ -237,7 +237,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMaps
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMapsIdentityTenantId
 {
@@ -262,7 +262,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMaps
 }
 
 /// <summary>Storage version of v1api20220901.SearchServiceOperatorConfigMaps</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMaps
 {
@@ -295,7 +295,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretExpressions
 {
@@ -336,7 +336,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretExpr
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretsAdminPrimaryKey
 {
@@ -365,7 +365,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretsAdm
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretsAdminSecondaryKey
 {
@@ -394,7 +394,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretsAdm
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretsQueryKey
 {
@@ -419,7 +419,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecretsQue
 }
 
 /// <summary>Storage version of v1api20220901.SearchServiceOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecrets
 {
@@ -459,7 +459,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpecSecrets
 /// Storage version of v1api20220901.SearchServiceOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOperatorSpec
 {
@@ -490,7 +490,7 @@ public partial class V1api20220901storageSearchServiceSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecOwner
 {
@@ -506,7 +506,7 @@ public partial class V1api20220901storageSearchServiceSpecOwner
 /// Storage version of v1api20220901.Sku
 /// Defines the SKU of an Azure Cognitive Search Service, which determines price tier and capacity limits.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpecSku
 {
@@ -522,7 +522,7 @@ public partial class V1api20220901storageSearchServiceSpecSku
 }
 
 /// <summary>Storage version of v1api20220901.SearchService_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceSpec
 {
@@ -621,7 +621,7 @@ public partial class V1api20220901storageSearchServiceSpec
 /// Storage version of v1api20220901.DataPlaneAadOrApiKeyAuthOption_STATUS
 /// Indicates that either the API key or an access token from Azure Active Directory can be used for authentication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusAuthOptionsAadOrApiKey
 {
@@ -641,7 +641,7 @@ public partial class V1api20220901storageSearchServiceStatusAuthOptionsAadOrApiK
 /// Defines the options for how the data plane API of a Search service authenticates requests. This cannot be set if
 /// &apos;disableLocalAuth&apos; is set to true.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusAuthOptions
 {
@@ -664,7 +664,7 @@ public partial class V1api20220901storageSearchServiceStatusAuthOptions
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusConditions
 {
@@ -714,7 +714,7 @@ public partial class V1api20220901storageSearchServiceStatusConditions
 /// Describes a policy that determines how resources within the search service are to be encrypted with Customer Managed
 /// Keys.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusEncryptionWithCmk
 {
@@ -736,7 +736,7 @@ public partial class V1api20220901storageSearchServiceStatusEncryptionWithCmk
 /// Storage version of v1api20220901.Identity_STATUS
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusIdentity
 {
@@ -761,7 +761,7 @@ public partial class V1api20220901storageSearchServiceStatusIdentity
 /// Storage version of v1api20220901.IpRule_STATUS
 /// The IP restriction rule of the Azure Cognitive Search service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusNetworkRuleSetIpRules
 {
@@ -780,7 +780,7 @@ public partial class V1api20220901storageSearchServiceStatusNetworkRuleSetIpRule
 /// Storage version of v1api20220901.NetworkRuleSet_STATUS
 /// Network specific rules that determine how the Azure Cognitive Search service may be reached.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusNetworkRuleSet
 {
@@ -799,7 +799,7 @@ public partial class V1api20220901storageSearchServiceStatusNetworkRuleSet
 /// Storage version of v1api20220901.PrivateEndpointConnection_STATUS
 /// Describes an existing Private Endpoint connection to the Azure Cognitive Search service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusPrivateEndpointConnections
 {
@@ -818,7 +818,7 @@ public partial class V1api20220901storageSearchServiceStatusPrivateEndpointConne
 /// Storage version of v1api20220901.SharedPrivateLinkResource_STATUS
 /// Describes a Shared Private Link Resource managed by the Azure Cognitive Search service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusSharedPrivateLinkResources
 {
@@ -837,7 +837,7 @@ public partial class V1api20220901storageSearchServiceStatusSharedPrivateLinkRes
 /// Storage version of v1api20220901.Sku_STATUS
 /// Defines the SKU of an Azure Cognitive Search Service, which determines price tier and capacity limits.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatusSku
 {
@@ -856,7 +856,7 @@ public partial class V1api20220901storageSearchServiceStatusSku
 /// Storage version of v1api20220901.SearchService_STATUS
 /// Describes an Azure Cognitive Search service and its current state.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901storageSearchServiceStatus
 {
@@ -959,7 +959,7 @@ public partial class V1api20220901storageSearchServiceStatus
 /// - Generated from: /search/resource-manager/Microsoft.Search/Search/stable/2022-09-01/search.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220901storageSearchService : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20220901storageSearchServiceSpec?>, IStatus<V1api20220901storageSearchServiceStatus?>

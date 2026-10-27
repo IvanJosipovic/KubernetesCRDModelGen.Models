@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.servicebus.azure.upbound.io;
 /// <summary>NamespaceDisasterRecoveryConfig is the Schema for the NamespaceDisasterRecoveryConfigs API. Manages a Disaster Recovery Config for a Service Bus Namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NamespaceDisasterRecoveryConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1NamespaceDisasterRecoveryConfig>
@@ -46,7 +46,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigList : IKubernetesObj
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecDeletionPolicyEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdRefPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasA
 }
 
 /// <summary>Reference to a NamespaceAuthorizationRule in servicebus to populate aliasAuthorizationRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasA
 }
 
 /// <summary>Selector for a NamespaceAuthorizationRule in servicebus to populate aliasAuthorizationRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasAuthorizationRuleIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderAliasA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespac
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdRefPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespac
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartne
 }
 
 /// <summary>Reference to a ServiceBusNamespace in servicebus to populate partnerNamespaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartne
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespac
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespac
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartne
 }
 
 /// <summary>Selector for a ServiceBusNamespace in servicebus to populate partnerNamespaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartnerNamespaceIdSelector
 {
@@ -356,7 +356,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPartne
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdRefPolicyResolutionEnum
 {
@@ -372,7 +372,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespac
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdRefPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdRefPolicyResolveEnum
 {
@@ -383,7 +383,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespac
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdRefPolicy
 {
@@ -407,7 +407,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimar
 }
 
 /// <summary>Reference to a ServiceBusNamespace in servicebus to populate primaryNamespaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimar
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespac
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespac
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimar
 }
 
 /// <summary>Selector for a ServiceBusNamespace in servicebus to populate primaryNamespaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdSelector
 {
@@ -497,7 +497,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimar
     public V1beta1NamespaceDisasterRecoveryConfigSpecForProviderPrimaryNamespaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProvider
 {
@@ -544,7 +544,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdRefPolicyResolutionEnum
 {
@@ -560,7 +560,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthoriza
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdRefPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdRefPolicyResolveEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthoriza
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdRefPolicy
 {
@@ -595,7 +595,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAlias
 }
 
 /// <summary>Reference to a NamespaceAuthorizationRule in servicebus to populate aliasAuthorizationRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdRef
 {
@@ -614,7 +614,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAlias
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdSelectorPolicyResolutionEnum
 {
@@ -630,7 +630,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthoriza
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdSelectorPolicyResolveEnum
 {
@@ -641,7 +641,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthoriza
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdSelectorPolicy
 {
@@ -665,7 +665,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAlias
 }
 
 /// <summary>Selector for a NamespaceAuthorizationRule in servicebus to populate aliasAuthorizationRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAliasAuthorizationRuleIdSelector
 {
@@ -691,7 +691,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderAlias
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdRefPolicyResolutionEnum
 {
@@ -707,7 +707,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdRefPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdRefPolicyResolveEnum
 {
@@ -718,7 +718,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdRefPolicy
 {
@@ -742,7 +742,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartn
 }
 
 /// <summary>Reference to a ServiceBusNamespace in servicebus to populate partnerNamespaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdRef
 {
@@ -761,7 +761,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdSelectorPolicyResolutionEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdSelectorPolicyResolveEnum
 {
@@ -788,7 +788,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdSelectorPolicy
 {
@@ -812,7 +812,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartn
 }
 
 /// <summary>Selector for a ServiceBusNamespace in servicebus to populate partnerNamespaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartnerNamespaceIdSelector
 {
@@ -844,7 +844,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProviderPartn
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProvider
 {
@@ -877,7 +877,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecManagementPoliciesEnum
 {
@@ -901,7 +901,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -917,7 +917,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -928,7 +928,7 @@ public enum V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRefPolicy
 {
@@ -956,7 +956,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRef
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRef
 {
@@ -975,7 +975,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpecWriteConnectionSecretToRef
 {
@@ -989,7 +989,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpecWriteConnectionSe
 }
 
 /// <summary>NamespaceDisasterRecoveryConfigSpec defines the desired state of NamespaceDisasterRecoveryConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigSpec
 {
@@ -1056,7 +1056,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigSpec
     public V1beta1NamespaceDisasterRecoveryConfigSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigStatusAtProvider
 {
@@ -1078,7 +1078,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigStatusConditions
 {
@@ -1121,7 +1121,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigStatusConditions
 }
 
 /// <summary>NamespaceDisasterRecoveryConfigStatus defines the observed state of NamespaceDisasterRecoveryConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NamespaceDisasterRecoveryConfigStatus
 {
@@ -1151,7 +1151,7 @@ public partial class V1beta1NamespaceDisasterRecoveryConfigStatus
 }
 
 /// <summary>NamespaceDisasterRecoveryConfig is the Schema for the NamespaceDisasterRecoveryConfigs API. Manages a Disaster Recovery Config for a Service Bus Namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NamespaceDisasterRecoveryConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1NamespaceDisasterRecoveryConfigSpec>, IStatus<V1beta1NamespaceDisasterRecoveryConfigStatus?>

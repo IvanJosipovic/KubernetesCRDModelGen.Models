@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.documentdb.azure.com;
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2024-08-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240815DatabaseAccountList : IKubernetesObject<V1ListMeta>, IItems<V1api20240815DatabaseAccount>
@@ -42,7 +42,7 @@ public partial class V1api20240815DatabaseAccountList : IKubernetesObject<V1List
 }
 
 /// <summary>SchemaType: Describes the types of schema for analytical storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecAnalyticalStorageConfigurationSchemaTypeEnum>))]
 public enum V1api20240815DatabaseAccountSpecAnalyticalStorageConfigurationSchemaTypeEnum
 {
@@ -53,7 +53,7 @@ public enum V1api20240815DatabaseAccountSpecAnalyticalStorageConfigurationSchema
 }
 
 /// <summary>AnalyticalStorageConfiguration: Analytical storage specific properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecAnalyticalStorageConfiguration
 {
@@ -63,7 +63,7 @@ public partial class V1api20240815DatabaseAccountSpecAnalyticalStorageConfigurat
 }
 
 /// <summary>ServerVersion: Describes the version of the MongoDB account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecApiPropertiesServerVersionEnum>))]
 public enum V1api20240815DatabaseAccountSpecApiPropertiesServerVersionEnum
 {
@@ -84,7 +84,7 @@ public enum V1api20240815DatabaseAccountSpecApiPropertiesServerVersionEnum
 }
 
 /// <summary>ApiProperties: API specific properties. Currently, supported only for MongoDB API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecApiProperties
 {
@@ -94,7 +94,7 @@ public partial class V1api20240815DatabaseAccountSpecApiProperties
 }
 
 /// <summary>Tier: Enum to indicate type of Continuous backup mode</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyContinuousContinuousModePropertiesTierEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousContinuousModePropertiesTierEnum
 {
@@ -105,7 +105,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousContinuousMode
 }
 
 /// <summary>ContinuousModeProperties: Configuration values for continuous mode backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecBackupPolicyContinuousContinuousModeProperties
 {
@@ -115,7 +115,7 @@ public partial class V1api20240815DatabaseAccountSpecBackupPolicyContinuousConti
 }
 
 /// <summary>Status: Describes the status of migration between backup policy types.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigrationStateStatusEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigrationStateStatusEnum
 {
@@ -130,7 +130,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigrationState
 }
 
 /// <summary>TargetType: Describes the target backup policy type of the backup policy migration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigrationStateTargetTypeEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigrationStateTargetTypeEnum
 {
@@ -141,7 +141,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigrationState
 }
 
 /// <summary>MigrationState: The object representing the state of the migration between the backup policies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigrationState
 {
@@ -159,7 +159,7 @@ public partial class V1api20240815DatabaseAccountSpecBackupPolicyContinuousMigra
 }
 
 /// <summary>Type: Describes the mode of backups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyContinuousTypeEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousTypeEnum
 {
@@ -168,7 +168,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyContinuousTypeEnum
 }
 
 /// <summary>Continuous: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecBackupPolicyContinuous
 {
@@ -186,7 +186,7 @@ public partial class V1api20240815DatabaseAccountSpecBackupPolicyContinuous
 }
 
 /// <summary>Status: Describes the status of migration between backup policy types.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrationStateStatusEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrationStateStatusEnum
 {
@@ -201,7 +201,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrationStateSt
 }
 
 /// <summary>TargetType: Describes the target backup policy type of the backup policy migration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrationStateTargetTypeEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrationStateTargetTypeEnum
 {
@@ -212,7 +212,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrationStateTa
 }
 
 /// <summary>MigrationState: The object representing the state of the migration between the backup policies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrationState
 {
@@ -230,7 +230,7 @@ public partial class V1api20240815DatabaseAccountSpecBackupPolicyPeriodicMigrati
 }
 
 /// <summary>BackupStorageRedundancy: Enum to indicate type of backup residency</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyPeriodicPeriodicModePropertiesBackupStorageRedundancyEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicPeriodicModePropertiesBackupStorageRedundancyEnum
 {
@@ -243,7 +243,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicPeriodicModeProp
 }
 
 /// <summary>PeriodicModeProperties: Configuration values for periodic mode backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecBackupPolicyPeriodicPeriodicModeProperties
 {
@@ -261,7 +261,7 @@ public partial class V1api20240815DatabaseAccountSpecBackupPolicyPeriodicPeriodi
 }
 
 /// <summary>Type: Describes the mode of backups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecBackupPolicyPeriodicTypeEnum>))]
 public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicTypeEnum
 {
@@ -270,7 +270,7 @@ public enum V1api20240815DatabaseAccountSpecBackupPolicyPeriodicTypeEnum
 }
 
 /// <summary>Periodic: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecBackupPolicyPeriodic
 {
@@ -288,7 +288,7 @@ public partial class V1api20240815DatabaseAccountSpecBackupPolicyPeriodic
 }
 
 /// <summary>BackupPolicy: The object representing the policy for taking backups on an account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecBackupPolicy
 {
@@ -302,7 +302,7 @@ public partial class V1api20240815DatabaseAccountSpecBackupPolicy
 }
 
 /// <summary>Cosmos DB capability object</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecCapabilities
 {
@@ -315,7 +315,7 @@ public partial class V1api20240815DatabaseAccountSpecCapabilities
 }
 
 /// <summary>Capacity: The object that represents all properties related to capacity enforcement on an account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecCapacity
 {
@@ -329,7 +329,7 @@ public partial class V1api20240815DatabaseAccountSpecCapacity
 }
 
 /// <summary>ConnectorOffer: The cassandra connector offer type for the Cosmos DB database C* account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecConnectorOfferEnum>))]
 public enum V1api20240815DatabaseAccountSpecConnectorOfferEnum
 {
@@ -338,7 +338,7 @@ public enum V1api20240815DatabaseAccountSpecConnectorOfferEnum
 }
 
 /// <summary>DefaultConsistencyLevel: The default consistency level and configuration settings of the Cosmos DB account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecConsistencyPolicyDefaultConsistencyLevelEnum>))]
 public enum V1api20240815DatabaseAccountSpecConsistencyPolicyDefaultConsistencyLevelEnum
 {
@@ -355,7 +355,7 @@ public enum V1api20240815DatabaseAccountSpecConsistencyPolicyDefaultConsistencyL
 }
 
 /// <summary>ConsistencyPolicy: The consistency policy for the Cosmos DB account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecConsistencyPolicy
 {
@@ -381,7 +381,7 @@ public partial class V1api20240815DatabaseAccountSpecConsistencyPolicy
 }
 
 /// <summary>The CORS policy for the Cosmos DB database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecCors
 {
@@ -410,7 +410,7 @@ public partial class V1api20240815DatabaseAccountSpecCors
 }
 
 /// <summary>CreateMode: Enum to indicate the mode of account creation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecCreateModeEnum>))]
 public enum V1api20240815DatabaseAccountSpecCreateModeEnum
 {
@@ -421,7 +421,7 @@ public enum V1api20240815DatabaseAccountSpecCreateModeEnum
 }
 
 /// <summary>DatabaseAccountOfferType: The offer type for the database</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecDatabaseAccountOfferTypeEnum>))]
 public enum V1api20240815DatabaseAccountSpecDatabaseAccountOfferTypeEnum
 {
@@ -433,7 +433,7 @@ public enum V1api20240815DatabaseAccountSpecDatabaseAccountOfferTypeEnum
 /// Type: The type of identity used for the resource. The type &apos;SystemAssigned,UserAssigned&apos; includes both an implicitly
 /// created identity and a set of user assigned identities. The type &apos;None&apos; will remove any identities from the service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecIdentityTypeEnum>))]
 public enum V1api20240815DatabaseAccountSpecIdentityTypeEnum
 {
@@ -448,7 +448,7 @@ public enum V1api20240815DatabaseAccountSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecIdentityUserAssignedIdentitiesReference
 {
@@ -474,7 +474,7 @@ public partial class V1api20240815DatabaseAccountSpecIdentityUserAssignedIdentit
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecIdentityUserAssignedIdentities
 {
@@ -484,7 +484,7 @@ public partial class V1api20240815DatabaseAccountSpecIdentityUserAssignedIdentit
 }
 
 /// <summary>Identity: Identity for the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecIdentity
 {
@@ -505,7 +505,7 @@ public partial class V1api20240815DatabaseAccountSpecIdentity
 }
 
 /// <summary>IpAddressOrRange object</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecIpRules
 {
@@ -520,7 +520,7 @@ public partial class V1api20240815DatabaseAccountSpecIpRules
 }
 
 /// <summary>Kind: Indicates the type of database account. This can only be set at database account creation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecKindEnum>))]
 public enum V1api20240815DatabaseAccountSpecKindEnum
 {
@@ -533,7 +533,7 @@ public enum V1api20240815DatabaseAccountSpecKindEnum
 }
 
 /// <summary>A region in which the Azure Cosmos DB database account is deployed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecLocations
 {
@@ -558,7 +558,7 @@ public partial class V1api20240815DatabaseAccountSpecLocations
 /// MinimalTlsVersion: Indicates the minimum allowed Tls version. The default value is Tls 1.2. Cassandra and Mongo APIs
 /// only work with Tls 1.2.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecMinimalTlsVersionEnum>))]
 public enum V1api20240815DatabaseAccountSpecMinimalTlsVersionEnum
 {
@@ -571,7 +571,7 @@ public enum V1api20240815DatabaseAccountSpecMinimalTlsVersionEnum
 }
 
 /// <summary>NetworkAclBypass: Indicates what services are allowed to bypass firewall checks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecNetworkAclBypassEnum>))]
 public enum V1api20240815DatabaseAccountSpecNetworkAclBypassEnum
 {
@@ -582,7 +582,7 @@ public enum V1api20240815DatabaseAccountSpecNetworkAclBypassEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecNetworkAclBypassResourceReferences
 {
@@ -612,7 +612,7 @@ public partial class V1api20240815DatabaseAccountSpecNetworkAclBypassResourceRef
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecConfigMapExpressions
 {
@@ -653,7 +653,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecConfigMapExpres
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretExpressions
 {
@@ -693,7 +693,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretExpressio
 /// DocumentEndpoint: indicates where the DocumentEndpoint secret should be placed. If omitted, the secret will not be
 /// retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsDocumentEndpoint
 {
@@ -721,7 +721,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsDocument
 /// PrimaryMasterKey: indicates where the PrimaryMasterKey secret should be placed. If omitted, the secret will not be
 /// retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsPrimaryMasterKey
 {
@@ -749,7 +749,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsPrimaryM
 /// PrimaryReadonlyMasterKey: indicates where the PrimaryReadonlyMasterKey secret should be placed. If omitted, the secret
 /// will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsPrimaryReadonlyMasterKey
 {
@@ -777,7 +777,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsPrimaryR
 /// SecondaryMasterKey: indicates where the SecondaryMasterKey secret should be placed. If omitted, the secret will not be
 /// retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsSecondaryMasterKey
 {
@@ -805,7 +805,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsSecondar
 /// SecondaryReadonlyMasterKey: indicates where the SecondaryReadonlyMasterKey secret should be placed. If omitted, the
 /// secret will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsSecondaryReadonlyMasterKey
 {
@@ -830,7 +830,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecretsSecondar
 }
 
 /// <summary>Secrets: configures where to place Azure generated secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecrets
 {
@@ -874,7 +874,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpecSecrets
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOperatorSpec
 {
@@ -896,7 +896,7 @@ public partial class V1api20240815DatabaseAccountSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecOwner
 {
@@ -909,7 +909,7 @@ public partial class V1api20240815DatabaseAccountSpecOwner
 }
 
 /// <summary>PublicNetworkAccess: Whether requests from Public Network are allowed</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecPublicNetworkAccessEnum>))]
 public enum V1api20240815DatabaseAccountSpecPublicNetworkAccessEnum
 {
@@ -922,7 +922,7 @@ public enum V1api20240815DatabaseAccountSpecPublicNetworkAccessEnum
 }
 
 /// <summary>Specific Databases to restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecRestoreParametersDatabasesToRestore
 {
@@ -936,7 +936,7 @@ public partial class V1api20240815DatabaseAccountSpecRestoreParametersDatabasesT
 }
 
 /// <summary>Specific Gremlin Databases to restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecRestoreParametersGremlinDatabasesToRestore
 {
@@ -950,7 +950,7 @@ public partial class V1api20240815DatabaseAccountSpecRestoreParametersGremlinDat
 }
 
 /// <summary>RestoreMode: Describes the mode of the restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240815DatabaseAccountSpecRestoreParametersRestoreModeEnum>))]
 public enum V1api20240815DatabaseAccountSpecRestoreParametersRestoreModeEnum
 {
@@ -959,7 +959,7 @@ public enum V1api20240815DatabaseAccountSpecRestoreParametersRestoreModeEnum
 }
 
 /// <summary>RestoreParameters: Parameters to indicate the information about the restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecRestoreParameters
 {
@@ -1002,7 +1002,7 @@ public partial class V1api20240815DatabaseAccountSpecRestoreParameters
 /// Reference: Resource ID of a subnet, for example:
 /// /subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}/subnets/{subnetName}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecVirtualNetworkRulesReference
 {
@@ -1028,7 +1028,7 @@ public partial class V1api20240815DatabaseAccountSpecVirtualNetworkRulesReferenc
 }
 
 /// <summary>Virtual Network ACL Rule object</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpecVirtualNetworkRules
 {
@@ -1044,7 +1044,7 @@ public partial class V1api20240815DatabaseAccountSpecVirtualNetworkRules
     public V1api20240815DatabaseAccountSpecVirtualNetworkRulesReference? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountSpec
 {
@@ -1223,7 +1223,7 @@ public partial class V1api20240815DatabaseAccountSpec
 }
 
 /// <summary>AnalyticalStorageConfiguration: Analytical storage specific properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusAnalyticalStorageConfiguration
 {
@@ -1233,7 +1233,7 @@ public partial class V1api20240815DatabaseAccountStatusAnalyticalStorageConfigur
 }
 
 /// <summary>ApiProperties: API specific properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusApiProperties
 {
@@ -1243,7 +1243,7 @@ public partial class V1api20240815DatabaseAccountStatusApiProperties
 }
 
 /// <summary>ContinuousModeProperties: Configuration values for continuous mode backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusBackupPolicyContinuousContinuousModeProperties
 {
@@ -1253,7 +1253,7 @@ public partial class V1api20240815DatabaseAccountStatusBackupPolicyContinuousCon
 }
 
 /// <summary>MigrationState: The object representing the state of the migration between the backup policies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusBackupPolicyContinuousMigrationState
 {
@@ -1271,7 +1271,7 @@ public partial class V1api20240815DatabaseAccountStatusBackupPolicyContinuousMig
 }
 
 /// <summary>Continuous: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusBackupPolicyContinuous
 {
@@ -1289,7 +1289,7 @@ public partial class V1api20240815DatabaseAccountStatusBackupPolicyContinuous
 }
 
 /// <summary>MigrationState: The object representing the state of the migration between the backup policies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusBackupPolicyPeriodicMigrationState
 {
@@ -1307,7 +1307,7 @@ public partial class V1api20240815DatabaseAccountStatusBackupPolicyPeriodicMigra
 }
 
 /// <summary>PeriodicModeProperties: Configuration values for periodic mode backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusBackupPolicyPeriodicPeriodicModeProperties
 {
@@ -1325,7 +1325,7 @@ public partial class V1api20240815DatabaseAccountStatusBackupPolicyPeriodicPerio
 }
 
 /// <summary>Periodic: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusBackupPolicyPeriodic
 {
@@ -1343,7 +1343,7 @@ public partial class V1api20240815DatabaseAccountStatusBackupPolicyPeriodic
 }
 
 /// <summary>BackupPolicy: The object representing the policy for taking backups on an account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusBackupPolicy
 {
@@ -1357,7 +1357,7 @@ public partial class V1api20240815DatabaseAccountStatusBackupPolicy
 }
 
 /// <summary>Cosmos DB capability object</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusCapabilities
 {
@@ -1370,7 +1370,7 @@ public partial class V1api20240815DatabaseAccountStatusCapabilities
 }
 
 /// <summary>Capacity: The object that represents all properties related to capacity enforcement on an account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusCapacity
 {
@@ -1384,7 +1384,7 @@ public partial class V1api20240815DatabaseAccountStatusCapacity
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusConditions
 {
@@ -1430,7 +1430,7 @@ public partial class V1api20240815DatabaseAccountStatusConditions
 }
 
 /// <summary>ConsistencyPolicy: The consistency policy for the Cosmos DB database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusConsistencyPolicy
 {
@@ -1456,7 +1456,7 @@ public partial class V1api20240815DatabaseAccountStatusConsistencyPolicy
 }
 
 /// <summary>The CORS policy for the Cosmos DB database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusCors
 {
@@ -1485,7 +1485,7 @@ public partial class V1api20240815DatabaseAccountStatusCors
 }
 
 /// <summary>The failover policy for a given region of a database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusFailoverPolicies
 {
@@ -1509,7 +1509,7 @@ public partial class V1api20240815DatabaseAccountStatusFailoverPolicies
     public string? LocationName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusIdentityUserAssignedIdentities
 {
@@ -1523,7 +1523,7 @@ public partial class V1api20240815DatabaseAccountStatusIdentityUserAssignedIdent
 }
 
 /// <summary>Identity: Identity for the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusIdentity
 {
@@ -1558,7 +1558,7 @@ public partial class V1api20240815DatabaseAccountStatusIdentity
 }
 
 /// <summary>IpAddressOrRange object</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusIpRules
 {
@@ -1573,7 +1573,7 @@ public partial class V1api20240815DatabaseAccountStatusIpRules
 }
 
 /// <summary>PrimaryMasterKey: The metadata related to the Primary Read-Write Key for the given Cosmos DB database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusKeysMetadataPrimaryMasterKey
 {
@@ -1586,7 +1586,7 @@ public partial class V1api20240815DatabaseAccountStatusKeysMetadataPrimaryMaster
 }
 
 /// <summary>PrimaryReadonlyMasterKey: The metadata related to the Primary Read-Only Key for the given Cosmos DB database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusKeysMetadataPrimaryReadonlyMasterKey
 {
@@ -1599,7 +1599,7 @@ public partial class V1api20240815DatabaseAccountStatusKeysMetadataPrimaryReadon
 }
 
 /// <summary>SecondaryMasterKey: The metadata related to the Secondary Read-Write Key for the given Cosmos DB database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusKeysMetadataSecondaryMasterKey
 {
@@ -1612,7 +1612,7 @@ public partial class V1api20240815DatabaseAccountStatusKeysMetadataSecondaryMast
 }
 
 /// <summary>SecondaryReadonlyMasterKey: The metadata related to the Secondary Read-Only Key for the given Cosmos DB database account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusKeysMetadataSecondaryReadonlyMasterKey
 {
@@ -1625,7 +1625,7 @@ public partial class V1api20240815DatabaseAccountStatusKeysMetadataSecondaryRead
 }
 
 /// <summary>KeysMetadata: The object that represents the metadata for the Account Keys of the Cosmos DB account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusKeysMetadata
 {
@@ -1647,7 +1647,7 @@ public partial class V1api20240815DatabaseAccountStatusKeysMetadata
 }
 
 /// <summary>A region in which the Azure Cosmos DB database account is deployed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusLocations
 {
@@ -1683,7 +1683,7 @@ public partial class V1api20240815DatabaseAccountStatusLocations
 }
 
 /// <summary>A private endpoint connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusPrivateEndpointConnections
 {
@@ -1696,7 +1696,7 @@ public partial class V1api20240815DatabaseAccountStatusPrivateEndpointConnection
 }
 
 /// <summary>A region in which the Azure Cosmos DB database account is deployed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusReadLocations
 {
@@ -1732,7 +1732,7 @@ public partial class V1api20240815DatabaseAccountStatusReadLocations
 }
 
 /// <summary>Specific Databases to restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusRestoreParametersDatabasesToRestore
 {
@@ -1746,7 +1746,7 @@ public partial class V1api20240815DatabaseAccountStatusRestoreParametersDatabase
 }
 
 /// <summary>Specific Gremlin Databases to restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusRestoreParametersGremlinDatabasesToRestore
 {
@@ -1760,7 +1760,7 @@ public partial class V1api20240815DatabaseAccountStatusRestoreParametersGremlinD
 }
 
 /// <summary>RestoreParameters: Parameters to indicate the information about the restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusRestoreParameters
 {
@@ -1800,7 +1800,7 @@ public partial class V1api20240815DatabaseAccountStatusRestoreParameters
 }
 
 /// <summary>SystemData: The system meta data relating to this resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusSystemData
 {
@@ -1830,7 +1830,7 @@ public partial class V1api20240815DatabaseAccountStatusSystemData
 }
 
 /// <summary>Virtual Network ACL Rule object</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusVirtualNetworkRules
 {
@@ -1847,7 +1847,7 @@ public partial class V1api20240815DatabaseAccountStatusVirtualNetworkRules
 }
 
 /// <summary>A region in which the Azure Cosmos DB database account is deployed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatusWriteLocations
 {
@@ -1882,7 +1882,7 @@ public partial class V1api20240815DatabaseAccountStatusWriteLocations
     public string? ProvisioningState { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240815DatabaseAccountStatus
 {
@@ -2098,7 +2098,7 @@ public partial class V1api20240815DatabaseAccountStatus
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2024-08-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240815DatabaseAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240815DatabaseAccountSpec?>, IStatus<V1api20240815DatabaseAccountStatus?>

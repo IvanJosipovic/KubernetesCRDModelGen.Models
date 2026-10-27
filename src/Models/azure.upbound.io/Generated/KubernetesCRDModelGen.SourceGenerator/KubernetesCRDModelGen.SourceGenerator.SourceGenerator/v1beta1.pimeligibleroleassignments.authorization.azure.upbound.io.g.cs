@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.authorization.azure.upbound.io;
 /// <summary>PimEligibleRoleAssignment is the Schema for the PimEligibleRoleAssignments API. Manages a PIM Eligible Role Assignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PimEligibleRoleAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PimEligibleRoleAssignment>
@@ -46,7 +46,7 @@ public partial class V1beta1PimEligibleRoleAssignmentList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecDeletionPolicyEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecDeletionPolicyEnum
 }
 
 /// <summary>An expiration block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScheduleExpiration
 {
@@ -87,7 +87,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScheduleExpi
 /// A schedule block as defined below. Changing this forces a new resource to be created.
 /// The schedule details for this eligible role assignment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderSchedule
 {
@@ -109,7 +109,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderSchedule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPolicyResolutionEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPolicyResolutionEnum
 {
@@ -125,7 +125,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPolicyResolveEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPolicyResolveEnum
 {
@@ -136,7 +136,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPolicy
 {
@@ -160,7 +160,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRefPoli
 }
 
 /// <summary>Reference to a ManagementGroup in management to populate scope.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRef
 {
@@ -179,7 +179,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelectorPolicyResolutionEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelectorPolicyResolutionEnum
 {
@@ -195,7 +195,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelectorPolicyResolveEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelectorPolicyResolveEnum
 {
@@ -206,7 +206,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelectorPolicy
 {
@@ -230,7 +230,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelecto
 }
 
 /// <summary>Selector for a ManagementGroup in management to populate scope.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelector
 {
@@ -254,7 +254,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderScopeSelecto
 /// A ticket block as defined below. Changing this forces a new resource to be created.
 /// Ticket details relating to the eligible assignment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderTicket
 {
@@ -273,7 +273,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProviderTicket
     public string? System { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecForProvider
 {
@@ -337,7 +337,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecForProvider
 }
 
 /// <summary>An expiration block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScheduleExpiration
 {
@@ -367,7 +367,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScheduleExp
 /// A schedule block as defined below. Changing this forces a new resource to be created.
 /// The schedule details for this eligible role assignment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderSchedule
 {
@@ -389,7 +389,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderSchedule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPolicyResolutionEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPolicyResolveEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRefPol
 }
 
 /// <summary>Reference to a ManagementGroup in management to populate scope.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRef
 {
@@ -459,7 +459,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelectorPolicyResolutionEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelectorPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelectorPolicyResolveEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelectorPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelectorPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelect
 }
 
 /// <summary>Selector for a ManagementGroup in management to populate scope.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelector
 {
@@ -534,7 +534,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderScopeSelect
 /// A ticket block as defined below. Changing this forces a new resource to be created.
 /// Ticket details relating to the eligible assignment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderTicket
 {
@@ -565,7 +565,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProviderTicket
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecInitProvider
 {
@@ -632,7 +632,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecManagementPoliciesEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecManagementPoliciesEnum
 {
@@ -656,7 +656,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -672,7 +672,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -683,7 +683,7 @@ public enum V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicy
 {
@@ -711,7 +711,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecProviderConfigRef
 {
@@ -730,7 +730,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpecWriteConnectionSecretToRef
 {
@@ -744,7 +744,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpecWriteConnectionSecretTo
 }
 
 /// <summary>PimEligibleRoleAssignmentSpec defines the desired state of PimEligibleRoleAssignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentSpec
 {
@@ -812,7 +812,7 @@ public partial class V1beta1PimEligibleRoleAssignmentSpec
 }
 
 /// <summary>An expiration block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentStatusAtProviderScheduleExpiration
 {
@@ -842,7 +842,7 @@ public partial class V1beta1PimEligibleRoleAssignmentStatusAtProviderScheduleExp
 /// A schedule block as defined below. Changing this forces a new resource to be created.
 /// The schedule details for this eligible role assignment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentStatusAtProviderSchedule
 {
@@ -862,7 +862,7 @@ public partial class V1beta1PimEligibleRoleAssignmentStatusAtProviderSchedule
 /// A ticket block as defined below. Changing this forces a new resource to be created.
 /// Ticket details relating to the eligible assignment
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentStatusAtProviderTicket
 {
@@ -881,7 +881,7 @@ public partial class V1beta1PimEligibleRoleAssignmentStatusAtProviderTicket
     public string? System { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentStatusAtProvider
 {
@@ -948,7 +948,7 @@ public partial class V1beta1PimEligibleRoleAssignmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentStatusConditions
 {
@@ -991,7 +991,7 @@ public partial class V1beta1PimEligibleRoleAssignmentStatusConditions
 }
 
 /// <summary>PimEligibleRoleAssignmentStatus defines the observed state of PimEligibleRoleAssignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PimEligibleRoleAssignmentStatus
 {
@@ -1021,7 +1021,7 @@ public partial class V1beta1PimEligibleRoleAssignmentStatus
 }
 
 /// <summary>PimEligibleRoleAssignment is the Schema for the PimEligibleRoleAssignments API. Manages a PIM Eligible Role Assignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PimEligibleRoleAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PimEligibleRoleAssignmentSpec>, IStatus<V1beta1PimEligibleRoleAssignmentStatus?>

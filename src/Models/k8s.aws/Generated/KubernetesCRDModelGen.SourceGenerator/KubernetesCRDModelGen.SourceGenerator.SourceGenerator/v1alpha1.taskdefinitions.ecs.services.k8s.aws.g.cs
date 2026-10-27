@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecs.services.k8s.aws;
 /// <summary>TaskDefinition is the Schema for the TaskDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TaskDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TaskDefinition>
@@ -66,7 +66,7 @@ public partial class V1alpha1TaskDefinitionList : IKubernetesObject<V1ListMeta>,
 /// dependency (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html#example_task_definition-containerdependency)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsDependsOn
 {
@@ -78,7 +78,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsDependsOn
 }
 
 /// <summary>A key-value pair object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsEnvironment
 {
@@ -121,7 +121,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsEnvironment
 /// 
 ///   - The container entry point interperts the VARIABLE values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsEnvironmentFiles
 {
@@ -136,7 +136,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsEnvironmentFi
 /// Hostnames and IP address entries that are added to the /etc/hosts file of
 /// a container via the extraHosts parameter of its ContainerDefinition (https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsExtraHosts
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsExtraHosts
 /// log routing (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_firelens.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsFirelensConfiguration
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsFirelensConfi
 /// where container dependency is specified, see Container dependency (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html#example_task_definition-containerdependency)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsHealthCheck
 {
@@ -361,7 +361,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsHealthCheck
 ///    request parameter, and then add the capabilities specified in the add
 ///    request parameter.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParametersCapabilities
 {
@@ -373,7 +373,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParamete
 }
 
 /// <summary>An object representing a container instance host device.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParametersDevices
 {
@@ -388,7 +388,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParamete
 }
 
 /// <summary>The container path, mount options, and size of the tmpfs mount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParametersTmpfs
 {
@@ -406,7 +406,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParamete
 /// The Linux-specific options that are applied to the container, such as Linux
 /// KernelCapabilities (https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_KernelCapabilities.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParameters
 {
@@ -475,7 +475,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLinuxParamete
 /// For more information, see Specifying sensitive data (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLogConfigurationSecretOptions
 {
@@ -520,7 +520,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLogConfigurat
 ///    output aggregators or a remote host running Logstash to send Gelf logs
 ///    to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLogConfiguration
 {
@@ -535,7 +535,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsLogConfigurat
 }
 
 /// <summary>The details for a volume mount point that&apos;s used in a container definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsMountPoints
 {
@@ -571,7 +571,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsMountPoints
 /// (https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeTasks.html)
 /// API responses.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsPortMappings
 {
@@ -595,7 +595,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsPortMappings
 }
 
 /// <summary>The repository credentials for private registry authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsRepositoryCredentials
 {
@@ -610,7 +610,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsRepositoryCre
 /// or Working with Amazon Elastic Inference on Amazon ECS (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html)
 /// in the Amazon Elastic Container Service Developer Guide
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsResourceRequirements
 {
@@ -634,7 +634,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsResourceRequi
 /// For more information, see Specifying sensitive data (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsSecrets
 {
@@ -680,7 +680,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsSecrets
 /// the tasks are using platform version 1.4.0 or later (Linux). This isn&apos;t supported
 /// for Windows containers on Fargate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsSystemControls
 {
@@ -702,7 +702,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsSystemControl
 /// 
 /// You can specify the ulimit settings for a container in a task definition.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsUlimits
 {
@@ -717,7 +717,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsUlimits
 }
 
 /// <summary>Details on a data volume from another container in the same task definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsVolumesFrom
 {
@@ -732,7 +732,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitionsVolumesFrom
 /// Container definitions are used in task definitions to describe the different
 /// containers that are launched as part of a task.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecContainerDefinitions
 {
@@ -1063,7 +1063,7 @@ public partial class V1alpha1TaskDefinitionSpecContainerDefinitions
 /// 
 ///    * Windows platform version 1.0.0 or later.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecEphemeralStorage
 {
@@ -1075,7 +1075,7 @@ public partial class V1alpha1TaskDefinitionSpecEphemeralStorage
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecExecutionRoleRefFrom
 {
@@ -1095,7 +1095,7 @@ public partial class V1alpha1TaskDefinitionSpecExecutionRoleRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecExecutionRoleRef
 {
@@ -1112,7 +1112,7 @@ public partial class V1alpha1TaskDefinitionSpecExecutionRoleRef
 /// with Amazon Elastic Inference on Amazon ECS (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecInferenceAccelerators
 {
@@ -1130,7 +1130,7 @@ public partial class V1alpha1TaskDefinitionSpecInferenceAccelerators
 /// 
 /// Task placement constraints aren&apos;t supported for tasks run on Fargate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecPlacementConstraints
 {
@@ -1142,7 +1142,7 @@ public partial class V1alpha1TaskDefinitionSpecPlacementConstraints
 }
 
 /// <summary>A key-value pair object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecProxyConfigurationProperties
 {
@@ -1164,7 +1164,7 @@ public partial class V1alpha1TaskDefinitionSpecProxyConfigurationProperties
 /// For more information, see Amazon ECS-optimized AMI versions (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-ami-versions.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecProxyConfiguration
 {
@@ -1179,7 +1179,7 @@ public partial class V1alpha1TaskDefinitionSpecProxyConfiguration
 }
 
 /// <summary>The operating system that your tasks definitions run on.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecRuntimePlatform
 {
@@ -1217,7 +1217,7 @@ public partial class V1alpha1TaskDefinitionSpecRuntimePlatform
 ///     Services use. You cannot edit or delete tag keys or values with this prefix.
 ///     Tags with this prefix do not count against your tags per resource limit.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecTags
 {
@@ -1232,7 +1232,7 @@ public partial class V1alpha1TaskDefinitionSpecTags
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecTaskRoleRefFrom
 {
@@ -1252,7 +1252,7 @@ public partial class V1alpha1TaskDefinitionSpecTaskRoleRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecTaskRoleRef
 {
@@ -1270,7 +1270,7 @@ public partial class V1alpha1TaskDefinitionSpecTaskRoleRef
 /// only support the use of the local driver. To use bind mounts, specify a host
 /// instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecVolumesDockerVolumeConfiguration
 {
@@ -1291,7 +1291,7 @@ public partial class V1alpha1TaskDefinitionSpecVolumesDockerVolumeConfiguration
 }
 
 /// <summary>The authorization configuration details for the Amazon EFS file system.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecVolumesEfsVolumeConfigurationAuthorizationConfig
 {
@@ -1308,7 +1308,7 @@ public partial class V1alpha1TaskDefinitionSpecVolumesEfsVolumeConfigurationAuth
 /// (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/efs-volumes.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecVolumesEfsVolumeConfiguration
 {
@@ -1338,7 +1338,7 @@ public partial class V1alpha1TaskDefinitionSpecVolumesEfsVolumeConfiguration
 /// Server Volumes (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/wfsx-volumes.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecVolumesFsxWindowsFileServerVolumeConfigurationAuthorizationConfig
 {
@@ -1358,7 +1358,7 @@ public partial class V1alpha1TaskDefinitionSpecVolumesFsxWindowsFileServerVolume
 /// Server volumes (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/wfsx-volumes.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecVolumesFsxWindowsFileServerVolumeConfiguration
 {
@@ -1382,7 +1382,7 @@ public partial class V1alpha1TaskDefinitionSpecVolumesFsxWindowsFileServerVolume
 }
 
 /// <summary>Details on a container instance bind mount host volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecVolumesHost
 {
@@ -1401,7 +1401,7 @@ public partial class V1alpha1TaskDefinitionSpecVolumesHost
 /// ECS uses a host volume. For more information, see Using data volumes in tasks
 /// (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_data_volumes.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpecVolumes
 {
@@ -1455,7 +1455,7 @@ public partial class V1alpha1TaskDefinitionSpecVolumes
 /// related to launching the task definition through an Amazon ECS service or
 /// task.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionSpec
 {
@@ -1773,7 +1773,7 @@ public partial class V1alpha1TaskDefinitionSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionStatusAckResourceMetadata
 {
@@ -1810,7 +1810,7 @@ public partial class V1alpha1TaskDefinitionStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionStatusConditions
 {
@@ -1841,7 +1841,7 @@ public partial class V1alpha1TaskDefinitionStatusConditions
 /// to your resources. For more information, see Attributes (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html#attributes)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionStatusRequiresAttributes
 {
@@ -1859,7 +1859,7 @@ public partial class V1alpha1TaskDefinitionStatusRequiresAttributes
 }
 
 /// <summary>TaskDefinitionStatus defines the observed state of TaskDefinition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TaskDefinitionStatus
 {
@@ -1932,7 +1932,7 @@ public partial class V1alpha1TaskDefinitionStatus
 }
 
 /// <summary>TaskDefinition is the Schema for the TaskDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TaskDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TaskDefinitionSpec?>, IStatus<V1alpha1TaskDefinitionStatus?>

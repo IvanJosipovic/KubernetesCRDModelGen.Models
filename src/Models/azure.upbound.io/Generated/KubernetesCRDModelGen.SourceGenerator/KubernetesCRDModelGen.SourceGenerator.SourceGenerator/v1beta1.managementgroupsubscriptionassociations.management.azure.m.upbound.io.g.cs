@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.management.azure.m.upbound.io;
 /// <summary>ManagementGroupSubscriptionAssociation is the Schema for the ManagementGroupSubscriptionAssociations API. Manages a Management Group Subscription Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagementGroupSubscriptionAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagementGroupSubscriptionAssociation>
@@ -43,7 +43,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationList : IKubern
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManageme
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManageme
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 }
 
 /// <summary>Reference to a ManagementGroup in management to populate managementGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManageme
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManageme
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 }
 
 /// <summary>Selector for a ManagementGroup in management to populate managementGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderManagementGroupIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscrip
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscrip
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 }
 
 /// <summary>Reference to a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscrip
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscrip
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 }
 
 /// <summary>Selector for a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
     public V1beta1ManagementGroupSubscriptionAssociationSpecForProviderSubscriptionIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvider
 {
@@ -382,7 +382,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdRefPolicyResolutionEnum
 {
@@ -398,7 +398,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdRefPolicyResolveEnum
 {
@@ -409,7 +409,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagem
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdRefPolicy
 {
@@ -433,7 +433,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 }
 
 /// <summary>Reference to a ManagementGroup in management to populate managementGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdSelectorPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdSelectorPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagem
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdSelectorPolicy
 {
@@ -507,7 +507,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 }
 
 /// <summary>Selector for a ManagementGroup in management to populate managementGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderManagementGroupIdSelector
 {
@@ -537,7 +537,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdRefPolicyResolutionEnum
 {
@@ -553,7 +553,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscri
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdRefPolicyResolveEnum
 {
@@ -564,7 +564,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscri
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdRefPolicy
 {
@@ -588,7 +588,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 }
 
 /// <summary>Reference to a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdRef
 {
@@ -611,7 +611,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdSelectorPolicyResolutionEnum
 {
@@ -627,7 +627,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscri
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdSelectorPolicyResolveEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscri
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdSelectorPolicy
 {
@@ -662,7 +662,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 }
 
 /// <summary>Selector for a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProviderSubscriptionIdSelector
 {
@@ -698,7 +698,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvider
 {
@@ -731,7 +731,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecInitProvid
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementGroupSubscriptionAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagementGroupSubscriptionAssociationSpecManagementPoliciesEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta1ManagementGroupSubscriptionAssociationSpecManagementPoliciesE
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecProviderConfigRef
 {
@@ -773,7 +773,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecProviderCo
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpecWriteConnectionSecretToRef
 {
@@ -783,7 +783,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpecWriteConne
 }
 
 /// <summary>ManagementGroupSubscriptionAssociationSpec defines the desired state of ManagementGroupSubscriptionAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationSpec
 {
@@ -834,7 +834,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationSpec
     public V1beta1ManagementGroupSubscriptionAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationStatusAtProvider
 {
@@ -852,7 +852,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationStatusAtProvid
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationStatusConditions
 {
@@ -895,7 +895,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationStatusConditio
 }
 
 /// <summary>ManagementGroupSubscriptionAssociationStatus defines the observed state of ManagementGroupSubscriptionAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagementGroupSubscriptionAssociationStatus
 {
@@ -925,7 +925,7 @@ public partial class V1beta1ManagementGroupSubscriptionAssociationStatus
 }
 
 /// <summary>ManagementGroupSubscriptionAssociation is the Schema for the ManagementGroupSubscriptionAssociations API. Manages a Management Group Subscription Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagementGroupSubscriptionAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagementGroupSubscriptionAssociationSpec>, IStatus<V1beta1ManagementGroupSubscriptionAssociationStatus?>

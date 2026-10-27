@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.web.azure.upbound.io;
 /// <summary>LinuxWebApp is the Schema for the LinuxWebApps API. Manages a Linux Web App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinuxWebAppList : IKubernetesObject<V1ListMeta>, IItems<V1beta2LinuxWebApp>
@@ -46,7 +46,7 @@ public partial class V1beta2LinuxWebAppList : IKubernetesObject<V1ListMeta>, IIt
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecDeletionPolicyEnum>))]
 public enum V1beta2LinuxWebAppSpecDeletionPolicyEnum
 {
@@ -60,7 +60,7 @@ public enum V1beta2LinuxWebAppSpecDeletionPolicyEnum
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsActiveDirectoryClientSecretSecretRef
 {
@@ -78,7 +78,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsActiveDirector
 }
 
 /// <summary>An active_directory block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsActiveDirectory
 {
@@ -115,7 +115,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsActiveDirector
 /// The App Secret of the Facebook app used for Facebook login. Cannot be specified with app_secret_setting_name.
 /// The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsFacebookAppSecretSecretRef
 {
@@ -133,7 +133,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsFacebookAppSec
 }
 
 /// <summary>A facebook block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsFacebook
 {
@@ -170,7 +170,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsFacebook
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGithubClientSecretSecretRef
 {
@@ -188,7 +188,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGithubClientSe
 }
 
 /// <summary>A github block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGithub
 {
@@ -225,7 +225,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGithub
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGoogleClientSecretSecretRef
 {
@@ -243,7 +243,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGoogleClientSe
 }
 
 /// <summary>A google block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGoogle
 {
@@ -280,7 +280,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsGoogle
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsMicrosoftClientSecretSecretRef
 {
@@ -298,7 +298,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsMicrosoftClien
 }
 
 /// <summary>A microsoft block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsMicrosoft
 {
@@ -335,7 +335,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsMicrosoft
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with consumer_secret_setting_name.
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsTwitterConsumerSecretSecretRef
 {
@@ -353,7 +353,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsTwitterConsume
 }
 
 /// <summary>A twitter block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsTwitter
 {
@@ -380,7 +380,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsTwitter
 }
 
 /// <summary>A auth_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettings
 {
@@ -473,7 +473,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettings
 }
 
 /// <summary>An active_directory_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2ActiveDirectoryV2
 {
@@ -563,7 +563,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2ActiveDirect
 }
 
 /// <summary>An apple_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2AppleV2
 {
@@ -583,7 +583,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2AppleV2
 }
 
 /// <summary>An azure_static_web_app_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2AzureStaticWebAppV2
 {
@@ -595,7 +595,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2AzureStaticW
     public string? ClientId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2CustomOidcV2
 {
@@ -636,7 +636,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2CustomOidcV2
 }
 
 /// <summary>A facebook_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2FacebookV2
 {
@@ -670,7 +670,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2FacebookV2
 }
 
 /// <summary>A github_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2GithubV2
 {
@@ -697,7 +697,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2GithubV2
 }
 
 /// <summary>A google_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2GoogleV2
 {
@@ -731,7 +731,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2GoogleV2
 }
 
 /// <summary>A login block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2Login
 {
@@ -814,7 +814,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2Login
 }
 
 /// <summary>A microsoft_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2MicrosoftV2
 {
@@ -848,7 +848,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2MicrosoftV2
 }
 
 /// <summary>A twitter_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2TwitterV2
 {
@@ -868,7 +868,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2TwitterV2
 }
 
 /// <summary>An auth_settings_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2
 {
@@ -998,7 +998,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderAuthSettingsV2
 }
 
 /// <summary>A schedule block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderBackupSchedule
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderBackupSchedule
 /// The SAS URL to the container.
 /// The SAS URL to the container.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderBackupStorageAccountUrlSecretRef
 {
@@ -1060,7 +1060,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderBackupStorageAccountUrlSec
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderBackup
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderBackup
 /// The connection string value.
 /// The connection string value.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderConnectionStringValueSecretRef
 {
@@ -1111,7 +1111,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderConnectionStringValueSecre
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderConnectionString
 {
@@ -1138,7 +1138,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderConnectionString
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderIdentity
 {
@@ -1152,7 +1152,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderIdentity
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderLogsApplicationLogsAzureBlobStorage
 {
@@ -1170,7 +1170,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderLogsApplicationLogsAzureBl
 }
 
 /// <summary>A application_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderLogsApplicationLogs
 {
@@ -1184,7 +1184,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderLogsApplicationLogs
 }
 
 /// <summary>SAS url to an Azure blob container with read/write/list/delete permissions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogsAzureBlobStorageSasurlSecretRef
 {
@@ -1202,7 +1202,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogsAzureBlobStora
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogsAzureBlobStorage
 {
@@ -1216,7 +1216,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogsAzureBlobStora
 }
 
 /// <summary>A file_system block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogsFileSystem
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogsFileSystem
 }
 
 /// <summary>An http_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogs
 {
@@ -1244,7 +1244,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderLogsHttpLogs
 }
 
 /// <summary>A logs block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderLogs
 {
@@ -1271,7 +1271,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderLogs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -1287,7 +1287,7 @@ public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -1298,7 +1298,7 @@ public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicy
 {
@@ -1322,7 +1322,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameRefPolicy
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameRef
 {
@@ -1341,7 +1341,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -1357,7 +1357,7 @@ public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -1368,7 +1368,7 @@ public enum V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -1392,7 +1392,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelectorP
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelector
 {
@@ -1418,7 +1418,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderResourceGroupNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicyResolutionEnum
 {
@@ -1434,7 +1434,7 @@ public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicyResolveEnum
 {
@@ -1445,7 +1445,7 @@ public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicy
 {
@@ -1469,7 +1469,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdRefPolicy
 }
 
 /// <summary>Reference to a ServicePlan in web to populate servicePlanId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdRef
 {
@@ -1488,7 +1488,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolicyResolutionEnum
 {
@@ -1504,7 +1504,7 @@ public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolicyResolveEnum
 {
@@ -1515,7 +1515,7 @@ public enum V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolicy
 {
@@ -1539,7 +1539,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdSelectorPolic
 }
 
 /// <summary>Selector for a ServicePlan in web to populate servicePlanId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdSelector
 {
@@ -1560,7 +1560,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderServicePlanIdSelector
 }
 
 /// <summary>The User Name to use for authentication against the registry to pull the image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigApplicationStackDockerRegistryPasswordSecretRef
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigApplicationStack
 }
 
 /// <summary>A application_stack block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigApplicationStack
 {
@@ -1636,7 +1636,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigApplicationStack
 }
 
 /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingAction
 {
@@ -1650,7 +1650,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingA
 }
 
 /// <summary>A requests block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingTriggerRequests
 {
@@ -1664,7 +1664,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingT
 }
 
 /// <summary>A slow_request blocks as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
@@ -1681,7 +1681,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingT
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
@@ -1702,7 +1702,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingT
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
@@ -1732,7 +1732,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingT
 }
 
 /// <summary>A trigger block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingTrigger
 {
@@ -1754,7 +1754,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSettingT
 }
 
 /// <summary>A auto_heal_setting block as defined above. Required with auto_heal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSetting
 {
@@ -1768,7 +1768,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A cors block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigCors
 {
@@ -1788,7 +1788,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigCors
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionHeaders
 {
@@ -1815,7 +1815,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionHea
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -1831,7 +1831,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetwo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -1842,7 +1842,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetwo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -1866,7 +1866,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVir
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -1885,7 +1885,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVir
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1901,7 +1901,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetwo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -1912,7 +1912,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetwo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVir
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -1956,7 +1956,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVir
     public V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestriction
 {
@@ -2023,7 +2023,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigIpRestriction
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionHeaders
 {
@@ -2050,7 +2050,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestriction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -2066,7 +2066,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -2077,7 +2077,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -2101,7 +2101,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestriction
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -2120,7 +2120,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestriction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2136,7 +2136,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -2147,7 +2147,7 @@ public enum V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -2171,7 +2171,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestriction
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -2191,7 +2191,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestriction
     public V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestriction
 {
@@ -2258,7 +2258,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfigScmIpRestriction
 }
 
 /// <summary>A site_config block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderSiteConfig
 {
@@ -2397,7 +2397,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderSiteConfig
 }
 
 /// <summary>A sticky_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderStickySettings
 {
@@ -2411,7 +2411,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderStickySettings
 }
 
 /// <summary>The Access key for the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderStorageAccountAccessKeySecretRef
 {
@@ -2428,7 +2428,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderStorageAccountAccessKeySec
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderStorageAccount
 {
@@ -2463,7 +2463,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderStorageAccount
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -2479,7 +2479,7 @@ public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -2490,7 +2490,7 @@ public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefPolicy
 {
@@ -2514,7 +2514,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRefP
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRef
 {
@@ -2533,7 +2533,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2549,7 +2549,7 @@ public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -2560,7 +2560,7 @@ public enum V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -2584,7 +2584,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSele
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelector
 {
@@ -2604,7 +2604,7 @@ public partial class V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSele
     public V1beta2LinuxWebAppSpecForProviderVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecForProvider
 {
@@ -2755,7 +2755,7 @@ public partial class V1beta2LinuxWebAppSpecForProvider
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsActiveDirectoryClientSecretSecretRef
 {
@@ -2773,7 +2773,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsActiveDirecto
 }
 
 /// <summary>An active_directory block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsActiveDirectory
 {
@@ -2810,7 +2810,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsActiveDirecto
 /// The App Secret of the Facebook app used for Facebook login. Cannot be specified with app_secret_setting_name.
 /// The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsFacebookAppSecretSecretRef
 {
@@ -2828,7 +2828,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsFacebookAppSe
 }
 
 /// <summary>A facebook block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsFacebook
 {
@@ -2865,7 +2865,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsFacebook
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGithubClientSecretSecretRef
 {
@@ -2883,7 +2883,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGithubClientS
 }
 
 /// <summary>A github block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGithub
 {
@@ -2920,7 +2920,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGithub
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGoogleClientSecretSecretRef
 {
@@ -2938,7 +2938,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGoogleClientS
 }
 
 /// <summary>A google block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGoogle
 {
@@ -2975,7 +2975,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsGoogle
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsMicrosoftClientSecretSecretRef
 {
@@ -2993,7 +2993,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsMicrosoftClie
 }
 
 /// <summary>A microsoft block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsMicrosoft
 {
@@ -3030,7 +3030,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsMicrosoft
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with consumer_secret_setting_name.
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsTwitterConsumerSecretSecretRef
 {
@@ -3048,7 +3048,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsTwitterConsum
 }
 
 /// <summary>A twitter block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsTwitter
 {
@@ -3075,7 +3075,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsTwitter
 }
 
 /// <summary>A auth_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettings
 {
@@ -3168,7 +3168,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettings
 }
 
 /// <summary>An active_directory_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2ActiveDirectoryV2
 {
@@ -3258,7 +3258,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2ActiveDirec
 }
 
 /// <summary>An apple_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2AppleV2
 {
@@ -3278,7 +3278,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2AppleV2
 }
 
 /// <summary>An azure_static_web_app_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2AzureStaticWebAppV2
 {
@@ -3290,7 +3290,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2AzureStatic
     public string? ClientId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2CustomOidcV2
 {
@@ -3331,7 +3331,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2CustomOidcV
 }
 
 /// <summary>A facebook_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2FacebookV2
 {
@@ -3365,7 +3365,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2FacebookV2
 }
 
 /// <summary>A github_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2GithubV2
 {
@@ -3392,7 +3392,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2GithubV2
 }
 
 /// <summary>A google_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2GoogleV2
 {
@@ -3426,7 +3426,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2GoogleV2
 }
 
 /// <summary>A login block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2Login
 {
@@ -3509,7 +3509,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2Login
 }
 
 /// <summary>A microsoft_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2MicrosoftV2
 {
@@ -3543,7 +3543,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2MicrosoftV2
 }
 
 /// <summary>A twitter_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2TwitterV2
 {
@@ -3563,7 +3563,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2TwitterV2
 }
 
 /// <summary>An auth_settings_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2
 {
@@ -3693,7 +3693,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderAuthSettingsV2
 }
 
 /// <summary>A schedule block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderBackupSchedule
 {
@@ -3737,7 +3737,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderBackupSchedule
 /// The SAS URL to the container.
 /// The SAS URL to the container.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderBackupStorageAccountUrlSecretRef
 {
@@ -3755,7 +3755,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderBackupStorageAccountUrlSe
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderBackup
 {
@@ -3789,7 +3789,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderBackup
 /// The connection string value.
 /// The connection string value.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderConnectionStringValueSecretRef
 {
@@ -3806,7 +3806,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderConnectionStringValueSecr
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderConnectionString
 {
@@ -3833,7 +3833,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderConnectionString
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderIdentity
 {
@@ -3847,7 +3847,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderIdentity
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderLogsApplicationLogsAzureBlobStorage
 {
@@ -3865,7 +3865,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderLogsApplicationLogsAzureB
 }
 
 /// <summary>A application_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderLogsApplicationLogs
 {
@@ -3879,7 +3879,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderLogsApplicationLogs
 }
 
 /// <summary>SAS url to an Azure blob container with read/write/list/delete permissions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogsAzureBlobStorageSasurlSecretRef
 {
@@ -3897,7 +3897,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogsAzureBlobStor
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogsAzureBlobStorage
 {
@@ -3911,7 +3911,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogsAzureBlobStor
 }
 
 /// <summary>A file_system block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogsFileSystem
 {
@@ -3925,7 +3925,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogsFileSystem
 }
 
 /// <summary>An http_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogs
 {
@@ -3939,7 +3939,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderLogsHttpLogs
 }
 
 /// <summary>A logs block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderLogs
 {
@@ -3966,7 +3966,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderLogs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicyResolutionEnum
 {
@@ -3982,7 +3982,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicyResolveEnum
 {
@@ -3993,7 +3993,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicy
 {
@@ -4017,7 +4017,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdRefPolicy
 }
 
 /// <summary>Reference to a ServicePlan in web to populate servicePlanId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdRef
 {
@@ -4036,7 +4036,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPolicyResolutionEnum
 {
@@ -4052,7 +4052,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPolicyResolveEnum
 {
@@ -4063,7 +4063,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPolicy
 {
@@ -4087,7 +4087,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelectorPoli
 }
 
 /// <summary>Selector for a ServicePlan in web to populate servicePlanId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelector
 {
@@ -4108,7 +4108,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderServicePlanIdSelector
 }
 
 /// <summary>The User Name to use for authentication against the registry to pull the image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigApplicationStackDockerRegistryPasswordSecretRef
 {
@@ -4126,7 +4126,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigApplicationStac
 }
 
 /// <summary>A application_stack block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigApplicationStack
 {
@@ -4184,7 +4184,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigApplicationStac
 }
 
 /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSettingAction
 {
@@ -4198,7 +4198,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A requests block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSettingTriggerRequests
 {
@@ -4212,7 +4212,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A slow_request blocks as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
@@ -4229,7 +4229,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
@@ -4250,7 +4250,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
@@ -4280,7 +4280,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A trigger block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSettingTrigger
 {
@@ -4302,7 +4302,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A auto_heal_setting block as defined above. Required with auto_heal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
 {
@@ -4316,7 +4316,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A cors block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigCors
 {
@@ -4336,7 +4336,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigCors
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionHeaders
 {
@@ -4363,7 +4363,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionHe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -4379,7 +4379,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetw
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -4390,7 +4390,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetw
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -4414,7 +4414,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVi
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -4433,7 +4433,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -4449,7 +4449,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetw
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -4460,7 +4460,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetw
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -4484,7 +4484,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVi
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -4504,7 +4504,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVi
     public V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestriction
 {
@@ -4571,7 +4571,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigIpRestriction
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionHeaders
 {
@@ -4598,7 +4598,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -4614,7 +4614,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -4625,7 +4625,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -4649,7 +4649,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictio
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -4668,7 +4668,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -4684,7 +4684,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -4695,7 +4695,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -4719,7 +4719,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictio
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -4739,7 +4739,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictio
     public V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestriction
 {
@@ -4806,7 +4806,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfigScmIpRestrictio
 }
 
 /// <summary>A site_config block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfig
 {
@@ -4945,7 +4945,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderSiteConfig
 }
 
 /// <summary>A sticky_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderStickySettings
 {
@@ -4959,7 +4959,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderStickySettings
 }
 
 /// <summary>The Access key for the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderStorageAccountAccessKeySecretRef
 {
@@ -4976,7 +4976,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderStorageAccountAccessKeySe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderStorageAccount
 {
@@ -5011,7 +5011,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderStorageAccount
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -5027,7 +5027,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -5038,7 +5038,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRefPolicy
 {
@@ -5062,7 +5062,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRef
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRef
 {
@@ -5081,7 +5081,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -5097,7 +5097,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -5108,7 +5108,7 @@ public enum V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -5132,7 +5132,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSel
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSelector
 {
@@ -5164,7 +5164,7 @@ public partial class V1beta2LinuxWebAppSpecInitProviderVirtualNetworkSubnetIdSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecInitProvider
 {
@@ -5303,7 +5303,7 @@ public partial class V1beta2LinuxWebAppSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecManagementPoliciesEnum>))]
 public enum V1beta2LinuxWebAppSpecManagementPoliciesEnum
 {
@@ -5327,7 +5327,7 @@ public enum V1beta2LinuxWebAppSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxWebAppSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -5343,7 +5343,7 @@ public enum V1beta2LinuxWebAppSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxWebAppSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2LinuxWebAppSpecProviderConfigRefPolicyResolveEnum
 {
@@ -5354,7 +5354,7 @@ public enum V1beta2LinuxWebAppSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecProviderConfigRefPolicy
 {
@@ -5382,7 +5382,7 @@ public partial class V1beta2LinuxWebAppSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecProviderConfigRef
 {
@@ -5401,7 +5401,7 @@ public partial class V1beta2LinuxWebAppSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpecWriteConnectionSecretToRef
 {
@@ -5415,7 +5415,7 @@ public partial class V1beta2LinuxWebAppSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LinuxWebAppSpec defines the desired state of LinuxWebApp</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppSpec
 {
@@ -5483,7 +5483,7 @@ public partial class V1beta2LinuxWebAppSpec
 }
 
 /// <summary>An active_directory block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsActiveDirectory
 {
@@ -5510,7 +5510,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsActiveDirecto
 }
 
 /// <summary>A facebook block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsFacebook
 {
@@ -5537,7 +5537,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsFacebook
 }
 
 /// <summary>A github block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsGithub
 {
@@ -5564,7 +5564,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsGithub
 }
 
 /// <summary>A google block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsGoogle
 {
@@ -5591,7 +5591,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsGoogle
 }
 
 /// <summary>A microsoft block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsMicrosoft
 {
@@ -5618,7 +5618,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsMicrosoft
 }
 
 /// <summary>A twitter block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsTwitter
 {
@@ -5638,7 +5638,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsTwitter
 }
 
 /// <summary>A auth_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettings
 {
@@ -5731,7 +5731,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettings
 }
 
 /// <summary>An active_directory_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2ActiveDirectoryV2
 {
@@ -5821,7 +5821,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2ActiveDirec
 }
 
 /// <summary>An apple_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2AppleV2
 {
@@ -5845,7 +5845,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2AppleV2
 }
 
 /// <summary>An azure_static_web_app_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2AzureStaticWebAppV2
 {
@@ -5857,7 +5857,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2AzureStatic
     public string? ClientId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2CustomOidcV2
 {
@@ -5940,7 +5940,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2CustomOidcV
 }
 
 /// <summary>A facebook_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2FacebookV2
 {
@@ -5974,7 +5974,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2FacebookV2
 }
 
 /// <summary>A github_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2GithubV2
 {
@@ -6001,7 +6001,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2GithubV2
 }
 
 /// <summary>A google_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2GoogleV2
 {
@@ -6035,7 +6035,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2GoogleV2
 }
 
 /// <summary>A login block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2Login
 {
@@ -6118,7 +6118,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2Login
 }
 
 /// <summary>A microsoft_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2MicrosoftV2
 {
@@ -6152,7 +6152,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2MicrosoftV2
 }
 
 /// <summary>A twitter_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2TwitterV2
 {
@@ -6172,7 +6172,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2TwitterV2
 }
 
 /// <summary>An auth_settings_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2
 {
@@ -6302,7 +6302,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderAuthSettingsV2
 }
 
 /// <summary>A schedule block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderBackupSchedule
 {
@@ -6347,7 +6347,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderBackupSchedule
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderBackup
 {
@@ -6370,7 +6370,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderBackup
     public V1beta2LinuxWebAppStatusAtProviderBackupSchedule? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderConnectionString
 {
@@ -6390,7 +6390,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderConnectionString
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderIdentity
 {
@@ -6412,7 +6412,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderIdentity
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderLogsApplicationLogsAzureBlobStorage
 {
@@ -6430,7 +6430,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderLogsApplicationLogsAzureB
 }
 
 /// <summary>A application_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderLogsApplicationLogs
 {
@@ -6444,7 +6444,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderLogsApplicationLogs
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderLogsHttpLogsAzureBlobStorage
 {
@@ -6454,7 +6454,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderLogsHttpLogsAzureBlobStor
 }
 
 /// <summary>A file_system block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderLogsHttpLogsFileSystem
 {
@@ -6468,7 +6468,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderLogsHttpLogsFileSystem
 }
 
 /// <summary>An http_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderLogsHttpLogs
 {
@@ -6482,7 +6482,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderLogsHttpLogs
 }
 
 /// <summary>A logs block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderLogs
 {
@@ -6504,7 +6504,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderLogs
 }
 
 /// <summary>A application_stack block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigApplicationStack
 {
@@ -6558,7 +6558,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigApplicationStac
 }
 
 /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSettingAction
 {
@@ -6572,7 +6572,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A requests block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSettingTriggerRequests
 {
@@ -6586,7 +6586,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A slow_request blocks as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
@@ -6603,7 +6603,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
@@ -6624,7 +6624,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
@@ -6654,7 +6654,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A trigger block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSettingTrigger
 {
@@ -6676,7 +6676,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A auto_heal_setting block as defined above. Required with auto_heal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
 {
@@ -6690,7 +6690,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigAutoHealSetting
 }
 
 /// <summary>A cors block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigCors
 {
@@ -6710,7 +6710,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigCors
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigIpRestrictionHeaders
 {
@@ -6731,7 +6731,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigIpRestrictionHe
     public IList<string>? XForwardedHost { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigIpRestriction
 {
@@ -6790,7 +6790,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigIpRestriction
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigScmIpRestrictionHeaders
 {
@@ -6811,7 +6811,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigScmIpRestrictio
     public IList<string>? XForwardedHost { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigScmIpRestriction
 {
@@ -6870,7 +6870,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfigScmIpRestrictio
 }
 
 /// <summary>A site_config block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfig
 {
@@ -7019,7 +7019,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderSiteConfig
 }
 
 /// <summary>A sticky_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderStickySettings
 {
@@ -7032,7 +7032,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderStickySettings
     public IList<string>? ConnectionStringNames { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProviderStorageAccount
 {
@@ -7057,7 +7057,7 @@ public partial class V1beta2LinuxWebAppStatusAtProviderStorageAccount
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusAtProvider
 {
@@ -7213,7 +7213,7 @@ public partial class V1beta2LinuxWebAppStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatusConditions
 {
@@ -7256,7 +7256,7 @@ public partial class V1beta2LinuxWebAppStatusConditions
 }
 
 /// <summary>LinuxWebAppStatus defines the observed state of LinuxWebApp.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxWebAppStatus
 {
@@ -7286,7 +7286,7 @@ public partial class V1beta2LinuxWebAppStatus
 }
 
 /// <summary>LinuxWebApp is the Schema for the LinuxWebApps API. Manages a Linux Web App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinuxWebApp : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2LinuxWebAppSpec>, IStatus<V1beta2LinuxWebAppStatus?>

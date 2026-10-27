@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigateway.aws.m.upbound.io;
 /// <summary>DomainNameAccessAssociation is the Schema for the DomainNameAccessAssociations API. Creates a domain name access association resource between an access association source and a private custom domain name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DomainNameAccessAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DomainNameAccessAssociation>
@@ -43,7 +43,7 @@ public partial class V1beta1DomainNameAccessAssociationList : IKubernetesObject<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceRefPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceRefPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAsso
 }
 
 /// <summary>Reference to a VPCEndpoint in ec2 to populate accessAssociationSource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAsso
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceSelectorPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceSelectorPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAsso
 }
 
 /// <summary>Selector for a VPCEndpoint in ec2 to populate accessAssociationSource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAssociationSourceSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderAccessAsso
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRefPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRefPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainName
 }
 
 /// <summary>Reference to a DomainName in apigateway to populate domainNameArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainName
 }
 
 /// <summary>Selector for a DomainName in apigateway to populate domainNameArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProviderDomainName
     public V1beta1DomainNameAccessAssociationSpecForProviderDomainNameArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecForProvider
 {
@@ -397,7 +397,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceRefPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceRefPolicyResolutionEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceRefPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceRefPolicyResolveEnum
 {
@@ -424,7 +424,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceRefPolicy
 {
@@ -448,7 +448,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAss
 }
 
 /// <summary>Reference to a VPCEndpoint in ec2 to populate accessAssociationSource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceRef
 {
@@ -471,7 +471,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAss
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceSelectorPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceSelectorPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceSelectorPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceSelectorPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceSelectorPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAss
 }
 
 /// <summary>Selector for a VPCEndpoint in ec2 to populate accessAssociationSource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAssociationSourceSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderAccessAss
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRefPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRefPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNam
 }
 
 /// <summary>Reference to a DomainName in apigateway to populate domainNameArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNam
 }
 
 /// <summary>Selector for a DomainName in apigateway to populate domainNameArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNameArnSelector
 {
@@ -713,7 +713,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProviderDomainNam
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecInitProvider
 {
@@ -754,7 +754,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainNameAccessAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1DomainNameAccessAssociationSpecManagementPoliciesEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1DomainNameAccessAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecProviderConfigRef
 {
@@ -796,7 +796,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpecWriteConnectionSecretToRef
 {
@@ -806,7 +806,7 @@ public partial class V1beta1DomainNameAccessAssociationSpecWriteConnectionSecret
 }
 
 /// <summary>DomainNameAccessAssociationSpec defines the desired state of DomainNameAccessAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationSpec
 {
@@ -857,7 +857,7 @@ public partial class V1beta1DomainNameAccessAssociationSpec
     public V1beta1DomainNameAccessAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationStatusAtProvider
 {
@@ -898,7 +898,7 @@ public partial class V1beta1DomainNameAccessAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationStatusConditions
 {
@@ -941,7 +941,7 @@ public partial class V1beta1DomainNameAccessAssociationStatusConditions
 }
 
 /// <summary>DomainNameAccessAssociationStatus defines the observed state of DomainNameAccessAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainNameAccessAssociationStatus
 {
@@ -971,7 +971,7 @@ public partial class V1beta1DomainNameAccessAssociationStatus
 }
 
 /// <summary>DomainNameAccessAssociation is the Schema for the DomainNameAccessAssociations API. Creates a domain name access association resource between an access association source and a private custom domain name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DomainNameAccessAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DomainNameAccessAssociationSpec>, IStatus<V1beta1DomainNameAccessAssociationStatus?>

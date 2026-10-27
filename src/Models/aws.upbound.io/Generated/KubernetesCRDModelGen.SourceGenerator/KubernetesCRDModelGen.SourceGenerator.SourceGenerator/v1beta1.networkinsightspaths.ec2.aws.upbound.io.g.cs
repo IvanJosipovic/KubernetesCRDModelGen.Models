@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
 /// <summary>NetworkInsightsPath is the Schema for the NetworkInsightsPaths API. Provides a Network Insights Path resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NetworkInsightsPathList : IKubernetesObject<V1ListMeta>, IItems<V1beta1NetworkInsightsPath>
@@ -46,7 +46,7 @@ public partial class V1beta1NetworkInsightsPathList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecDeletionPolicyEnum>))]
 public enum V1beta1NetworkInsightsPathSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1NetworkInsightsPathSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderDestinationRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderDestinationRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderDestinationRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderDestinationRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderDestinationRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderDestinationRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationRefPoli
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderDestinationSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderDestinationSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderDestinationSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderDestinationSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationSelecto
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderDestinationSelecto
 }
 
 /// <summary>The destination port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtDestinationDestinationPortRange
 {
@@ -218,7 +218,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtDestinatio
 }
 
 /// <summary>The source port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtDestinationSourcePortRange
 {
@@ -232,7 +232,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtDestinatio
 }
 
 /// <summary>Scopes the analysis to network paths that match specific filters at the destination. If you specify this parameter, you can&apos;t specify destination_ip. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtDestination
 {
@@ -254,7 +254,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtDestinatio
 }
 
 /// <summary>The destination port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtSourceDestinationPortRange
 {
@@ -268,7 +268,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtSourceDest
 }
 
 /// <summary>The source port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtSourceSourcePortRange
 {
@@ -282,7 +282,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtSourceSour
 }
 
 /// <summary>Scopes the analysis to network paths that match specific filters at the source. If you specify this parameter, you can&apos;t specify source_ip or destination_port. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtSource
 {
@@ -309,7 +309,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderFilterAtSource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicyResolutionEnum
 {
@@ -325,7 +325,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicyResolveEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicy
 {
@@ -360,7 +360,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderSourceRefPolicy
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderSourceRef
 {
@@ -379,7 +379,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderSourceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicyResolutionEnum
 {
@@ -395,7 +395,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicyResolveEnum
 {
@@ -406,7 +406,7 @@ public enum V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicy
 {
@@ -430,7 +430,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPoli
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProviderSourceSelector
 {
@@ -450,7 +450,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProviderSourceSelector
     public V1beta1NetworkInsightsPathSpecForProviderSourceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecForProvider
 {
@@ -520,7 +520,7 @@ public partial class V1beta1NetworkInsightsPathSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPolicyResolutionEnum
 {
@@ -536,7 +536,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPolicyResolveEnum
 {
@@ -547,7 +547,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPolicy
 {
@@ -571,7 +571,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationRefPol
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationRef
 {
@@ -590,7 +590,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationSelectorPolicyResolutionEnum
 {
@@ -606,7 +606,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationSelectorPolicyResolveEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderDestinationSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationSelectorPolicy
 {
@@ -641,7 +641,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationSelect
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationSelector
 {
@@ -662,7 +662,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderDestinationSelect
 }
 
 /// <summary>The destination port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtDestinationDestinationPortRange
 {
@@ -676,7 +676,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtDestinati
 }
 
 /// <summary>The source port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtDestinationSourcePortRange
 {
@@ -690,7 +690,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtDestinati
 }
 
 /// <summary>Scopes the analysis to network paths that match specific filters at the destination. If you specify this parameter, you can&apos;t specify destination_ip. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtDestination
 {
@@ -712,7 +712,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtDestinati
 }
 
 /// <summary>The destination port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtSourceDestinationPortRange
 {
@@ -726,7 +726,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtSourceDes
 }
 
 /// <summary>The source port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtSourceSourcePortRange
 {
@@ -740,7 +740,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtSourceSou
 }
 
 /// <summary>Scopes the analysis to network paths that match specific filters at the source. If you specify this parameter, you can&apos;t specify source_ip or destination_port. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtSource
 {
@@ -767,7 +767,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderFilterAtSource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicyResolutionEnum
 {
@@ -783,7 +783,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicyResolveEnum
 {
@@ -794,7 +794,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicy
 {
@@ -818,7 +818,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceRefPolicy
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceRef
 {
@@ -837,7 +837,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPolicyResolutionEnum
 {
@@ -853,7 +853,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPolicyResolveEnum
 {
@@ -864,7 +864,7 @@ public enum V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPolicy
 {
@@ -888,7 +888,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceSelectorPol
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceSelector
 {
@@ -920,7 +920,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProviderSourceSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecInitProvider
 {
@@ -981,7 +981,7 @@ public partial class V1beta1NetworkInsightsPathSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecManagementPoliciesEnum>))]
 public enum V1beta1NetworkInsightsPathSpecManagementPoliciesEnum
 {
@@ -1005,7 +1005,7 @@ public enum V1beta1NetworkInsightsPathSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInsightsPathSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1021,7 +1021,7 @@ public enum V1beta1NetworkInsightsPathSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInsightsPathSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInsightsPathSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1032,7 +1032,7 @@ public enum V1beta1NetworkInsightsPathSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecProviderConfigRefPolicy
 {
@@ -1060,7 +1060,7 @@ public partial class V1beta1NetworkInsightsPathSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecProviderConfigRef
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta1NetworkInsightsPathSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpecWriteConnectionSecretToRef
 {
@@ -1093,7 +1093,7 @@ public partial class V1beta1NetworkInsightsPathSpecWriteConnectionSecretToRef
 }
 
 /// <summary>NetworkInsightsPathSpec defines the desired state of NetworkInsightsPath</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathSpec
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta1NetworkInsightsPathSpec
 }
 
 /// <summary>The destination port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtDestinationDestinationPortRange
 {
@@ -1175,7 +1175,7 @@ public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtDestinati
 }
 
 /// <summary>The source port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtDestinationSourcePortRange
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtDestinati
 }
 
 /// <summary>Scopes the analysis to network paths that match specific filters at the destination. If you specify this parameter, you can&apos;t specify destination_ip. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtDestination
 {
@@ -1211,7 +1211,7 @@ public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtDestinati
 }
 
 /// <summary>The destination port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtSourceDestinationPortRange
 {
@@ -1225,7 +1225,7 @@ public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtSourceDes
 }
 
 /// <summary>The source port range. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtSourceSourcePortRange
 {
@@ -1239,7 +1239,7 @@ public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtSourceSou
 }
 
 /// <summary>Scopes the analysis to network paths that match specific filters at the source. If you specify this parameter, you can&apos;t specify source_ip or destination_port. See below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtSource
 {
@@ -1260,7 +1260,7 @@ public partial class V1beta1NetworkInsightsPathStatusAtProviderFilterAtSource
     public V1beta1NetworkInsightsPathStatusAtProviderFilterAtSourceSourcePortRange? SourcePortRange { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusAtProvider
 {
@@ -1329,7 +1329,7 @@ public partial class V1beta1NetworkInsightsPathStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatusConditions
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta1NetworkInsightsPathStatusConditions
 }
 
 /// <summary>NetworkInsightsPathStatus defines the observed state of NetworkInsightsPath.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsPathStatus
 {
@@ -1402,7 +1402,7 @@ public partial class V1beta1NetworkInsightsPathStatus
 }
 
 /// <summary>NetworkInsightsPath is the Schema for the NetworkInsightsPaths API. Provides a Network Insights Path resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NetworkInsightsPath : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1NetworkInsightsPathSpec>, IStatus<V1beta1NetworkInsightsPathStatus?>

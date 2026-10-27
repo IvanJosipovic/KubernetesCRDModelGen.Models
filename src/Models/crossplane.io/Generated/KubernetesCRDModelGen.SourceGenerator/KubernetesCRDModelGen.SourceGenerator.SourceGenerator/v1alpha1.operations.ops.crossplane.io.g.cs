@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.ops.crossplane.io;
 /// An Operation defines a pipeline of functions that together constitute a day
 /// two operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OperationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Operation>
@@ -46,7 +46,7 @@ public partial class V1alpha1OperationList : IKubernetesObject<V1ListMeta>, IIte
 /// &quot;Pipeline&quot; indicates that an Operation specifies a pipeline of
 /// functions, each of which is responsible for implementing its logic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OperationSpecModeEnum>))]
 public enum V1alpha1OperationSpecModeEnum
 {
@@ -58,7 +58,7 @@ public enum V1alpha1OperationSpecModeEnum
 /// A SecretRef is a reference to a secret containing credentials that should
 /// be supplied to the function.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpecPipelineCredentialsSecretRef
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1OperationSpecPipelineCredentialsSecretRef
 }
 
 /// <summary>Source of the function credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OperationSpecPipelineCredentialsSourceEnum>))]
 public enum V1alpha1OperationSpecPipelineCredentialsSourceEnum
 {
@@ -86,7 +86,7 @@ public enum V1alpha1OperationSpecPipelineCredentialsSourceEnum
 /// FunctionCredentials are optional credentials that a function
 /// needs to run.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpecPipelineCredentials
 {
@@ -110,7 +110,7 @@ public partial class V1alpha1OperationSpecPipelineCredentials
 /// FunctionRef is a reference to the function this step should
 /// execute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpecPipelineFunctionRef
 {
@@ -123,7 +123,7 @@ public partial class V1alpha1OperationSpecPipelineFunctionRef
 /// RequiredResourceSelector selects resources that should be fetched before
 /// a pipeline step runs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpecPipelineRequirementsRequiredResources
 {
@@ -165,7 +165,7 @@ public partial class V1alpha1OperationSpecPipelineRequirementsRequiredResources
 /// RequiredSchemaSelector selects an OpenAPI schema that should be fetched
 /// before a pipeline step runs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpecPipelineRequirementsRequiredSchemas
 {
@@ -191,7 +191,7 @@ public partial class V1alpha1OperationSpecPipelineRequirementsRequiredSchemas
 /// pre-populating required resources without requiring a function to
 /// request them first.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpecPipelineRequirements
 {
@@ -211,7 +211,7 @@ public partial class V1alpha1OperationSpecPipelineRequirements
 }
 
 /// <summary>A PipelineStep in an operation function pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpecPipeline
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1OperationSpecPipeline
 }
 
 /// <summary>OperationSpec specifies desired state of an operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationSpec
 {
@@ -278,7 +278,7 @@ public partial class V1alpha1OperationSpec
 }
 
 /// <summary>An AppliedResourceRef is a reference to a resource an Operation applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationStatusAppliedResourceRefs
 {
@@ -300,7 +300,7 @@ public partial class V1alpha1OperationStatusAppliedResourceRefs
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationStatusConditions
 {
@@ -343,7 +343,7 @@ public partial class V1alpha1OperationStatusConditions
 }
 
 /// <summary>PipelineStepStatus represents the status of an individual pipeline step.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationStatusPipeline
 {
@@ -357,7 +357,7 @@ public partial class V1alpha1OperationStatusPipeline
 }
 
 /// <summary>OperationStatus represents the observed state of an operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OperationStatus
 {
@@ -385,7 +385,7 @@ public partial class V1alpha1OperationStatus
 /// An Operation defines a pipeline of functions that together constitute a day
 /// two operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Operation : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1OperationSpec?>, IStatus<V1alpha1OperationStatus?>

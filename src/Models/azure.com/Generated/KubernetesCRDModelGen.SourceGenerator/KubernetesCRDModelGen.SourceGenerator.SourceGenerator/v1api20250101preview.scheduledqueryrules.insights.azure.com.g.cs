@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250101previewScheduledQueryRuleList : IKubernetesObject<V1ListMeta>, IItems<V1api20250101previewScheduledQueryRule>
@@ -42,7 +42,7 @@ public partial class V1api20250101previewScheduledQueryRuleList : IKubernetesObj
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecActionsActionGroupsReferences
 {
@@ -68,7 +68,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecActionsActionGrou
 }
 
 /// <summary>Actions: Actions to invoke when the alert fires.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecActions
 {
@@ -86,7 +86,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecActions
 }
 
 /// <summary>CriterionType: Specifies the type of threshold criteria</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfCriterionTypeEnum>))]
 public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfCriterionTypeEnum
 {
@@ -97,7 +97,7 @@ public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfCriterionType
 }
 
 /// <summary>Operator: Operator for dimension values</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfDimensionsOperatorEnum>))]
 public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfDimensionsOperatorEnum
 {
@@ -108,7 +108,7 @@ public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfDimensionsOpe
 }
 
 /// <summary>Dimension splitting and filtering definition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfDimensions
 {
@@ -129,7 +129,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfDime
 /// FailingPeriods: The minimum number of violations required within the selected lookback time window required to raise an
 /// alert. Relevant only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfFailingPeriods
 {
@@ -149,7 +149,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfFail
 }
 
 /// <summary>Operator: The criteria operator. Relevant and required only for rules of the kind LogAlert.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfOperatorEnum>))]
 public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfOperatorEnum
 {
@@ -171,7 +171,7 @@ public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfOperatorEnum
 /// ResourceIdColumnReference: The column containing the resource id. The content of the column must be a uri formatted as
 /// resource id. Relevant only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfResourceIdColumnReference
 {
@@ -197,7 +197,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfReso
 }
 
 /// <summary>TimeAggregation: Aggregation type. Relevant and required only for rules of the kind LogAlert.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfTimeAggregationEnum>))]
 public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfTimeAggregationEnum
 {
@@ -214,7 +214,7 @@ public enum V1api20250101previewScheduledQueryRuleSpecCriteriaAllOfTimeAggregati
 }
 
 /// <summary>A condition of the scheduled query rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOf
 {
@@ -291,7 +291,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecCriteriaAllOf
 }
 
 /// <summary>Criteria: The rule criteria that defines the conditions of the scheduled query rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecCriteria
 {
@@ -301,7 +301,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecCriteria
 }
 
 /// <summary>Type: Type of managed service identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250101previewScheduledQueryRuleSpecIdentityTypeEnum>))]
 public enum V1api20250101previewScheduledQueryRuleSpecIdentityTypeEnum
 {
@@ -314,7 +314,7 @@ public enum V1api20250101previewScheduledQueryRuleSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecIdentityUserAssignedIdentitiesReference
 {
@@ -340,7 +340,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecIdentityUserAssig
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecIdentityUserAssignedIdentities
 {
@@ -350,7 +350,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecIdentityUserAssig
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecIdentity
 {
@@ -368,7 +368,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecIdentity
 }
 
 /// <summary>Kind: Indicates the type of scheduled query rule. The default is LogAlert.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250101previewScheduledQueryRuleSpecKindEnum>))]
 public enum V1api20250101previewScheduledQueryRuleSpecKindEnum
 {
@@ -385,7 +385,7 @@ public enum V1api20250101previewScheduledQueryRuleSpecKindEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecOperatorSpecConfigMapExpressions
 {
@@ -426,7 +426,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecOperatorSpecConfi
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecOperatorSpecSecretExpressions
 {
@@ -466,7 +466,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecOperatorSpecSecre
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecOperatorSpec
 {
@@ -484,7 +484,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecOwner
 {
@@ -500,7 +500,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecOwner
 /// ResolveConfiguration: Defines the configuration for resolving fired alerts. Relevant only for rules of kinds LogAlert
 /// and SimpleLogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecResolveConfiguration
 {
@@ -517,7 +517,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecResolveConfigurat
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpecScopesReferences
 {
@@ -542,7 +542,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpecScopesReferences
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleSpec
 {
@@ -682,7 +682,7 @@ public partial class V1api20250101previewScheduledQueryRuleSpec
 }
 
 /// <summary>Actions: Actions to invoke when the alert fires.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusActions
 {
@@ -700,7 +700,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusActions
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusConditions
 {
@@ -746,7 +746,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusConditions
 }
 
 /// <summary>Dimension splitting and filtering definition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusCriteriaAllOfDimensions
 {
@@ -767,7 +767,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusCriteriaAllOfDi
 /// FailingPeriods: The minimum number of violations required within the selected lookback time window required to raise an
 /// alert. Relevant only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusCriteriaAllOfFailingPeriods
 {
@@ -787,7 +787,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusCriteriaAllOfFa
 }
 
 /// <summary>A condition of the scheduled query rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusCriteriaAllOf
 {
@@ -864,7 +864,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusCriteriaAllOf
 }
 
 /// <summary>Criteria: The rule criteria that defines the conditions of the scheduled query rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusCriteria
 {
@@ -874,7 +874,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusCriteria
 }
 
 /// <summary>Properties of the user assigned identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusIdentityUserAssignedIdentities
 {
@@ -888,7 +888,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusIdentityUserAss
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusIdentity
 {
@@ -917,7 +917,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusIdentity
 /// ResolveConfiguration: Defines the configuration for resolving fired alerts. Relevant only for rules of kinds LogAlert
 /// and SimpleLogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusResolveConfiguration
 {
@@ -934,7 +934,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusResolveConfigur
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusSystemData
 {
@@ -963,7 +963,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusSystemData
     public string? LastModifiedByType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatus
 {
@@ -1132,7 +1132,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatus
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250101previewScheduledQueryRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20250101previewScheduledQueryRuleSpec?>, IStatus<V1api20250101previewScheduledQueryRuleStatus?>

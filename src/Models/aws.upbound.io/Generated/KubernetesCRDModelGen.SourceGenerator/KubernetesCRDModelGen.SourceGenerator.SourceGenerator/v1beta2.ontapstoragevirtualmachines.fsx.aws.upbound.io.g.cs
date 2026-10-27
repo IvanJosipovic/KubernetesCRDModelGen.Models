@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.fsx.aws.upbound.io;
 /// <summary>OntapStorageVirtualMachine is the Schema for the OntapStorageVirtualMachines API. Manages a FSx Storage Virtual Machine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2OntapStorageVirtualMachineList : IKubernetesObject<V1ListMeta>, IItems<V1beta2OntapStorageVirtualMachine>
@@ -46,7 +46,7 @@ public partial class V1beta2OntapStorageVirtualMachineList : IKubernetesObject<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecDeletionPolicyEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecDeletionPolicyEnum
 }
 
 /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef
 {
@@ -75,7 +75,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderActiveDirec
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
@@ -105,7 +105,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderActiveDirec
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfiguration
 {
@@ -124,7 +124,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderActiveDirec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolutionEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolutionEnum
 {
@@ -140,7 +140,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolveEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolveEnum
 {
@@ -151,7 +151,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicy
 {
@@ -175,7 +175,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemI
 }
 
 /// <summary>Reference to a OntapFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdRef
 {
@@ -194,7 +194,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolutionEnum
 {
@@ -210,7 +210,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolveEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolveEnum
 {
@@ -221,7 +221,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicy
 {
@@ -245,7 +245,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemI
 }
 
 /// <summary>Selector for a OntapFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemIdSelector
 {
@@ -266,7 +266,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderFileSystemI
 }
 
 /// <summary>Password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProviderSvmAdminPasswordSecretRef
 {
@@ -283,7 +283,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProviderSvmAdminPas
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecForProvider
 {
@@ -328,7 +328,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecForProvider
 }
 
 /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef
 {
@@ -346,7 +346,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderActiveDire
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
@@ -376,7 +376,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderActiveDire
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfiguration
 {
@@ -395,7 +395,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderActiveDire
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolutionEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolutionEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolveEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolveEnum
 {
@@ -422,7 +422,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicy
 {
@@ -446,7 +446,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystem
 }
 
 /// <summary>Reference to a OntapFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdRef
 {
@@ -465,7 +465,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolutionEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolveEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolveEnum
 {
@@ -492,7 +492,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicy
 {
@@ -516,7 +516,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystem
 }
 
 /// <summary>Selector for a OntapFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelector
 {
@@ -537,7 +537,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderFileSystem
 }
 
 /// <summary>Password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderSvmAdminPasswordSecretRef
 {
@@ -566,7 +566,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProviderSvmAdminPa
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecInitProvider
 {
@@ -607,7 +607,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecManagementPoliciesEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecManagementPoliciesEnum
 {
@@ -631,7 +631,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -647,7 +647,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolveEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolicy
 {
@@ -686,7 +686,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecProviderConfigRefPolic
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecProviderConfigRef
 {
@@ -705,7 +705,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpecWriteConnectionSecretToRef
 {
@@ -719,7 +719,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpecWriteConnectionSecretT
 }
 
 /// <summary>OntapStorageVirtualMachineSpec defines the desired state of OntapStorageVirtualMachine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineSpec
 {
@@ -787,7 +787,7 @@ public partial class V1beta2OntapStorageVirtualMachineSpec
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
@@ -813,7 +813,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderActiveDire
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfiguration
 {
@@ -826,7 +826,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderActiveDire
     public V1beta2OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration? SelfManagedActiveDirectoryConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsIscsi
 {
@@ -839,7 +839,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsI
     public IList<string>? IpAddresses { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsManagement
 {
@@ -852,7 +852,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsM
     public IList<string>? IpAddresses { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsNfs
 {
@@ -865,7 +865,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsN
     public IList<string>? IpAddresses { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsSmb
 {
@@ -878,7 +878,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsS
     public IList<string>? IpAddresses { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpoints
 {
@@ -899,7 +899,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProviderEndpoints
     public IList<V1beta2OntapStorageVirtualMachineStatusAtProviderEndpointsSmb>? Smb { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusAtProvider
 {
@@ -956,7 +956,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatusConditions
 {
@@ -999,7 +999,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatusConditions
 }
 
 /// <summary>OntapStorageVirtualMachineStatus defines the observed state of OntapStorageVirtualMachine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OntapStorageVirtualMachineStatus
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta2OntapStorageVirtualMachineStatus
 }
 
 /// <summary>OntapStorageVirtualMachine is the Schema for the OntapStorageVirtualMachines API. Manages a FSx Storage Virtual Machine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2OntapStorageVirtualMachine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2OntapStorageVirtualMachineSpec>, IStatus<V1beta2OntapStorageVirtualMachineStatus?>

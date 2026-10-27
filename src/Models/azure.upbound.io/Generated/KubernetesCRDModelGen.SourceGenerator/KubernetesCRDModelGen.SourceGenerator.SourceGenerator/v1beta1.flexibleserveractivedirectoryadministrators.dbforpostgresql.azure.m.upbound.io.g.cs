@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dbforpostgresql.azure.m.upbound.io;
 /// <summary>FlexibleServerActiveDirectoryAdministrator is the Schema for the FlexibleServerActiveDirectoryAdministrators API. Manages an Active Directory administrator on a PostgreSQL Flexible server</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FlexibleServerActiveDirectoryAdministrator>
@@ -43,7 +43,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorList : IKu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderResourceGroupNameSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServ
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameRefPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServ
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 }
 
 /// <summary>Reference to a FlexibleServer in dbforpostgresql to populate serverName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServ
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServ
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 }
 
 /// <summary>Selector for a FlexibleServer in dbforpostgresql to populate serverName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
     public V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProviderServerNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecForPro
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecInitProvider
 {
@@ -425,7 +425,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecInitPr
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerActiveDirectoryAdministratorSpecManagementPoliciesEnum>))]
 public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecManagementPoliciesEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1FlexibleServerActiveDirectoryAdministratorSpecManagementPolic
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecProviderConfigRef
 {
@@ -467,7 +467,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecProvid
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecWriteConnectionSecretToRef
 {
@@ -477,7 +477,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpecWriteC
 }
 
 /// <summary>FlexibleServerActiveDirectoryAdministratorSpec defines the desired state of FlexibleServerActiveDirectoryAdministrator</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpec
 {
@@ -528,7 +528,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorSpec
     public V1beta1FlexibleServerActiveDirectoryAdministratorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorStatusAtProvider
 {
@@ -562,7 +562,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorStatusAtPr
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorStatusConditions
 {
@@ -605,7 +605,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorStatusCond
 }
 
 /// <summary>FlexibleServerActiveDirectoryAdministratorStatus defines the observed state of FlexibleServerActiveDirectoryAdministrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministratorStatus
 {
@@ -635,7 +635,7 @@ public partial class V1beta1FlexibleServerActiveDirectoryAdministratorStatus
 }
 
 /// <summary>FlexibleServerActiveDirectoryAdministrator is the Schema for the FlexibleServerActiveDirectoryAdministrators API. Manages an Active Directory administrator on a PostgreSQL Flexible server</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlexibleServerActiveDirectoryAdministrator : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FlexibleServerActiveDirectoryAdministratorSpec>, IStatus<V1beta1FlexibleServerActiveDirectoryAdministratorStatus?>

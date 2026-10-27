@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storagecache.azure.m.upbound.io;
 /// <summary>HPCCacheBlobTarget is the Schema for the HPCCacheBlobTargets API. Manages a Blob Target within a HPC Cache.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HPCCacheBlobTargetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HPCCacheBlobTarget>
@@ -43,7 +43,7 @@ public partial class V1beta1HPCCacheBlobTargetList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRefPolicy
 }
 
 /// <summary>Reference to a HPCCache in storagecache to populate cacheName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelectorPo
 }
 
 /// <summary>Selector for a HPCCache in storagecache to populate cacheName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderCacheNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRe
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSe
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderResourceGroupNameSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRefPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdR
 }
 
 /// <summary>Reference to a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdS
 }
 
 /// <summary>Selector for a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdS
     public V1beta1HPCCacheBlobTargetSpecForProviderStorageContainerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecForProvider
 {
@@ -557,7 +557,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicyResolutionEnum
 {
@@ -573,7 +573,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicyResolveEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicy
 {
@@ -608,7 +608,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRefPolicy
 }
 
 /// <summary>Reference to a HPCCache in storagecache to populate cacheName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRef
 {
@@ -631,7 +631,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorPolicyResolutionEnum
 {
@@ -647,7 +647,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorPolicyResolveEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorPolicy
 {
@@ -682,7 +682,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelectorP
 }
 
 /// <summary>Selector for a HPCCache in storagecache to populate cacheName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelector
 {
@@ -712,7 +712,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderCacheNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRefPolicyResolutionEnum
 {
@@ -728,7 +728,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRefPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRefPolicyResolveEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRefPolicy
 {
@@ -763,7 +763,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerId
 }
 
 /// <summary>Reference to a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdRef
 {
@@ -786,7 +786,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelectorPolicyResolutionEnum
 {
@@ -802,7 +802,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelectorPolicyResolveEnum
 {
@@ -813,7 +813,7 @@ public enum V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelectorPolicy
 {
@@ -837,7 +837,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerId
 }
 
 /// <summary>Selector for a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerIdSelector
 {
@@ -873,7 +873,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProviderStorageContainerId
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecInitProvider
 {
@@ -914,7 +914,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HPCCacheBlobTargetSpecManagementPoliciesEnum>))]
 public enum V1beta1HPCCacheBlobTargetSpecManagementPoliciesEnum
 {
@@ -937,7 +937,7 @@ public enum V1beta1HPCCacheBlobTargetSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecProviderConfigRef
 {
@@ -956,7 +956,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpecWriteConnectionSecretToRef
 {
@@ -966,7 +966,7 @@ public partial class V1beta1HPCCacheBlobTargetSpecWriteConnectionSecretToRef
 }
 
 /// <summary>HPCCacheBlobTargetSpec defines the desired state of HPCCacheBlobTarget</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetSpec
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta1HPCCacheBlobTargetSpec
     public V1beta1HPCCacheBlobTargetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetStatusAtProvider
 {
@@ -1047,7 +1047,7 @@ public partial class V1beta1HPCCacheBlobTargetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetStatusConditions
 {
@@ -1090,7 +1090,7 @@ public partial class V1beta1HPCCacheBlobTargetStatusConditions
 }
 
 /// <summary>HPCCacheBlobTargetStatus defines the observed state of HPCCacheBlobTarget.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheBlobTargetStatus
 {
@@ -1120,7 +1120,7 @@ public partial class V1beta1HPCCacheBlobTargetStatus
 }
 
 /// <summary>HPCCacheBlobTarget is the Schema for the HPCCacheBlobTargets API. Manages a Blob Target within a HPC Cache.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HPCCacheBlobTarget : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HPCCacheBlobTargetSpec>, IStatus<V1beta1HPCCacheBlobTargetStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.m.upbound.io;
 /// <summary>Memory is the Schema for the Memorys API. Manages an AWS Bedrock AgentCore Memory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MemoryList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Memory>
@@ -43,7 +43,7 @@ public partial class V1beta1MemoryList : IKubernetesObject<V1ListMeta>, IItems<V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1MemorySpecForProviderEncryptionKeyArnRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate encryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderEncryptionKeyArnRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1MemorySpecForProviderEncryptionKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicy
 }
 
 /// <summary>Selector for a Key in kms to populate encryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderEncryptionKeyArnSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1MemorySpecForProviderEncryptionKeyArnSelector
     public V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderIndexedKey
 {
@@ -211,7 +211,7 @@ public partial class V1beta1MemorySpecForProviderIndexedKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -227,7 +227,7 @@ public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicyResolveEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicy
 {
@@ -262,7 +262,7 @@ public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate memoryExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -301,7 +301,7 @@ public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicy
 {
@@ -336,7 +336,7 @@ public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorP
 }
 
 /// <summary>Selector for a Role in iam to populate memoryExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelector
 {
@@ -361,7 +361,7 @@ public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelector
 }
 
 /// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
 {
@@ -380,7 +380,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum
 {
@@ -396,7 +396,7 @@ public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum
 {
@@ -407,7 +407,7 @@ public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicy
 {
@@ -431,7 +431,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 }
 
 /// <summary>Reference to a Stream in kinesis to populate dataStreamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRef
 {
@@ -454,7 +454,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy
 {
@@ -505,7 +505,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 }
 
 /// <summary>Selector for a Stream in kinesis to populate dataStreamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector
 {
@@ -530,7 +530,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 }
 
 /// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesis
 {
@@ -552,7 +552,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 }
 
 /// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 {
@@ -562,7 +562,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 }
 
 /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResources
 {
@@ -571,7 +571,7 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResources
     public V1beta1MemorySpecForProviderStreamDeliveryResourcesResource? Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProvider
 {
@@ -637,7 +637,7 @@ public partial class V1beta1MemorySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicyResolutionEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicyResolveEnum
 {
@@ -664,7 +664,7 @@ public enum V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicy
 {
@@ -688,7 +688,7 @@ public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate encryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnRef
 {
@@ -711,7 +711,7 @@ public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicyResolutionEnum
 {
@@ -727,7 +727,7 @@ public enum V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicyResolveEnum
 {
@@ -738,7 +738,7 @@ public enum V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicy
 {
@@ -762,7 +762,7 @@ public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicy
 }
 
 /// <summary>Selector for a Key in kms to populate encryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnSelector
 {
@@ -786,7 +786,7 @@ public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnSelector
     public V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderIndexedKey
 {
@@ -805,7 +805,7 @@ public partial class V1beta1MemorySpecInitProviderIndexedKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -821,7 +821,7 @@ public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolicyResolveEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolicy
 {
@@ -856,7 +856,7 @@ public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRefPolic
 }
 
 /// <summary>Reference to a Role in iam to populate memoryExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRef
 {
@@ -879,7 +879,7 @@ public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -895,7 +895,7 @@ public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -906,7 +906,7 @@ public enum V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicy
 {
@@ -930,7 +930,7 @@ public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelector
 }
 
 /// <summary>Selector for a Role in iam to populate memoryExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelector
 {
@@ -955,7 +955,7 @@ public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelector
 }
 
 /// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
 {
@@ -974,7 +974,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum
 {
@@ -990,7 +990,7 @@ public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisD
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum
 {
@@ -1001,7 +1001,7 @@ public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisD
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicy
 {
@@ -1025,7 +1025,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>Reference to a Stream in kinesis to populate dataStreamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRef
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum
 {
@@ -1064,7 +1064,7 @@ public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisD
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum
 {
@@ -1075,7 +1075,7 @@ public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisD
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>Selector for a Stream in kinesis to populate dataStreamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector
 {
@@ -1124,7 +1124,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesis
 {
@@ -1146,7 +1146,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResource
 {
@@ -1156,7 +1156,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResources
 {
@@ -1177,7 +1177,7 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResources
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProvider
 {
@@ -1234,7 +1234,7 @@ public partial class V1beta1MemorySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecManagementPoliciesEnum>))]
 public enum V1beta1MemorySpecManagementPoliciesEnum
 {
@@ -1257,7 +1257,7 @@ public enum V1beta1MemorySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecProviderConfigRef
 {
@@ -1276,7 +1276,7 @@ public partial class V1beta1MemorySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecWriteConnectionSecretToRef
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta1MemorySpecWriteConnectionSecretToRef
 }
 
 /// <summary>MemorySpec defines the desired state of Memory</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpec
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta1MemorySpec
     public V1beta1MemorySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderIndexedKey
 {
@@ -1351,7 +1351,7 @@ public partial class V1beta1MemoryStatusAtProviderIndexedKey
 }
 
 /// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
 {
@@ -1365,7 +1365,7 @@ public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesis
 {
@@ -1379,7 +1379,7 @@ public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResource
 {
@@ -1389,7 +1389,7 @@ public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourc
 }
 
 /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResources
 {
@@ -1398,7 +1398,7 @@ public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResources
     public V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResource? Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProvider
 {
@@ -1455,7 +1455,7 @@ public partial class V1beta1MemoryStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusConditions
 {
@@ -1498,7 +1498,7 @@ public partial class V1beta1MemoryStatusConditions
 }
 
 /// <summary>MemoryStatus defines the observed state of Memory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatus
 {
@@ -1528,7 +1528,7 @@ public partial class V1beta1MemoryStatus
 }
 
 /// <summary>Memory is the Schema for the Memorys API. Manages an AWS Bedrock AgentCore Memory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Memory : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MemorySpec>, IStatus<V1beta1MemoryStatus?>

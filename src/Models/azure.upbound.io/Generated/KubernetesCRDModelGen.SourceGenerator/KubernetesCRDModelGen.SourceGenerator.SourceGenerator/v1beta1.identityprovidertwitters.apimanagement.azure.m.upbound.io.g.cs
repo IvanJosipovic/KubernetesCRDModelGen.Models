@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apimanagement.azure.m.upbound.io;
 /// <summary>IdentityProviderTwitter is the Schema for the IdentityProviderTwitters API. Manages an API Management Twitter Identity Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IdentityProviderTwitterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IdentityProviderTwitter>
@@ -38,7 +38,7 @@ public partial class V1beta1IdentityProviderTwitterList : IKubernetesObject<V1Li
 }
 
 /// <summary>App Consumer API key for Twitter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderApiKeySecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderApiKeySecretRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRefPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRefPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementN
 }
 
 /// <summary>Reference to a Management in apimanagement to populate apiManagementName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementN
 }
 
 /// <summary>Selector for a Management in apimanagement to populate apiManagementName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementNameSelector
 {
@@ -206,7 +206,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderApiManagementN
 }
 
 /// <summary>App Consumer API secret key for Twitter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderApiSecretKeySecretRef
 {
@@ -224,7 +224,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderApiSecretKeySe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -240,7 +240,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -251,7 +251,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRefPolicy
 {
@@ -275,7 +275,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupN
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameRef
 {
@@ -298,7 +298,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -314,7 +314,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -325,7 +325,7 @@ public enum V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -349,7 +349,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupN
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelector
 {
@@ -373,7 +373,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProviderResourceGroupN
     public V1beta1IdentityProviderTwitterSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecForProvider
 {
@@ -411,7 +411,7 @@ public partial class V1beta1IdentityProviderTwitterSpecForProvider
 }
 
 /// <summary>App Consumer API key for Twitter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiKeySecretRef
 {
@@ -429,7 +429,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiKeySecretR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRefPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRefPolicyResolutionEnum
 {
@@ -445,7 +445,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRefPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRefPolicyResolveEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRefPolicy
 {
@@ -480,7 +480,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagement
 }
 
 /// <summary>Reference to a Management in apimanagement to populate apiManagementName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameRef
 {
@@ -503,7 +503,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagement
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelectorPolicyResolutionEnum
 {
@@ -519,7 +519,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelectorPolicyResolveEnum
 {
@@ -530,7 +530,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelectorPolicy
 {
@@ -554,7 +554,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagement
 }
 
 /// <summary>Selector for a Management in apimanagement to populate apiManagementName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagementNameSelector
 {
@@ -579,7 +579,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiManagement
 }
 
 /// <summary>App Consumer API secret key for Twitter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiSecretKeySecretRef
 {
@@ -597,7 +597,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderApiSecretKeyS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -613,7 +613,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -624,7 +624,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -648,7 +648,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroup
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameRef
 {
@@ -671,7 +671,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -687,7 +687,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -698,7 +698,7 @@ public enum V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -722,7 +722,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroup
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroupNameSelector
 {
@@ -758,7 +758,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProviderResourceGroup
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecInitProvider
 {
@@ -799,7 +799,7 @@ public partial class V1beta1IdentityProviderTwitterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IdentityProviderTwitterSpecManagementPoliciesEnum>))]
 public enum V1beta1IdentityProviderTwitterSpecManagementPoliciesEnum
 {
@@ -822,7 +822,7 @@ public enum V1beta1IdentityProviderTwitterSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecProviderConfigRef
 {
@@ -841,7 +841,7 @@ public partial class V1beta1IdentityProviderTwitterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpecWriteConnectionSecretToRef
 {
@@ -851,7 +851,7 @@ public partial class V1beta1IdentityProviderTwitterSpecWriteConnectionSecretToRe
 }
 
 /// <summary>IdentityProviderTwitterSpec defines the desired state of IdentityProviderTwitter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterSpec
 {
@@ -902,7 +902,7 @@ public partial class V1beta1IdentityProviderTwitterSpec
     public V1beta1IdentityProviderTwitterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterStatusAtProvider
 {
@@ -920,7 +920,7 @@ public partial class V1beta1IdentityProviderTwitterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterStatusConditions
 {
@@ -963,7 +963,7 @@ public partial class V1beta1IdentityProviderTwitterStatusConditions
 }
 
 /// <summary>IdentityProviderTwitterStatus defines the observed state of IdentityProviderTwitter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityProviderTwitterStatus
 {
@@ -993,7 +993,7 @@ public partial class V1beta1IdentityProviderTwitterStatus
 }
 
 /// <summary>IdentityProviderTwitter is the Schema for the IdentityProviderTwitters API. Manages an API Management Twitter Identity Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IdentityProviderTwitter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IdentityProviderTwitterSpec>, IStatus<V1beta1IdentityProviderTwitterStatus?>

@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250101previewstorageScheduledQueryRuleList : IKubernetesObject<V1ListMeta>, IItems<V1api20250101previewstorageScheduledQueryRule>
@@ -43,7 +43,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleList : IKubern
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecActionsActionGroupsReferences
 {
@@ -72,7 +72,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecActionsAct
 /// Storage version of v1api20250101preview.Actions
 /// Actions to invoke when the alert fires.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecActions
 {
@@ -97,7 +97,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecActions
 /// Storage version of v1api20250101preview.Dimension
 /// Dimension splitting and filtering definition
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAllOfDimensions
 {
@@ -123,7 +123,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAl
 /// The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
 /// only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAllOfFailingPeriods
 {
@@ -145,7 +145,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAl
 /// ResourceIdColumnReference: The column containing the resource id. The content of the column must be a uri formatted as
 /// resource id. Relevant only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAllOfResourceIdColumnReference
 {
@@ -174,7 +174,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAl
 /// Storage version of v1api20250101preview.Condition
 /// A condition of the scheduled query rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAllOf
 {
@@ -238,7 +238,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAl
 /// Storage version of v1api20250101preview.ScheduledQueryRuleCriteria
 /// The rule criteria that defines the conditions of the scheduled query rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteria
 {
@@ -254,7 +254,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteria
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecIdentityUserAssignedIdentitiesReference
 {
@@ -283,7 +283,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecIdentityUs
 /// Storage version of v1api20250101preview.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecIdentityUserAssignedIdentities
 {
@@ -303,7 +303,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecIdentityUs
 /// Storage version of v1api20250101preview.MicrosoftCommonIdentity
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecIdentity
 {
@@ -326,7 +326,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecIdentity
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecOperatorSpecConfigMapExpressions
 {
@@ -367,7 +367,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecOperatorSp
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecOperatorSpecSecretExpressions
 {
@@ -407,7 +407,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecOperatorSp
 /// Storage version of v1api20250101preview.ScheduledQueryRuleOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecOperatorSpec
 {
@@ -430,7 +430,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecOperatorSp
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecOwner
 {
@@ -446,7 +446,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecOwner
 /// Storage version of v1api20250101preview.RuleResolveConfiguration
 /// TBD. Relevant only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecResolveConfiguration
 {
@@ -465,7 +465,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecResolveCon
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecScopesReferences
 {
@@ -491,7 +491,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecScopesRefe
 }
 
 /// <summary>Storage version of v1api20250101preview.ScheduledQueryRule_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpec
 {
@@ -608,7 +608,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpec
 /// Storage version of v1api20250101preview.Actions_STATUS
 /// Actions to invoke when the alert fires.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusActions
 {
@@ -630,7 +630,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusActions
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusConditions
 {
@@ -679,7 +679,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusConditio
 /// Storage version of v1api20250101preview.Dimension_STATUS
 /// Dimension splitting and filtering definition
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteriaAllOfDimensions
 {
@@ -705,7 +705,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
 /// The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
 /// only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteriaAllOfFailingPeriods
 {
@@ -727,7 +727,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
 /// Storage version of v1api20250101preview.Condition_STATUS
 /// A condition of the scheduled query rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteriaAllOf
 {
@@ -787,7 +787,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
 /// Storage version of v1api20250101preview.ScheduledQueryRuleCriteria_STATUS
 /// The rule criteria that defines the conditions of the scheduled query rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
 {
@@ -806,7 +806,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
 /// Storage version of v1api20250101preview.MicrosoftCommonUserIdentityProperties_STATUS
 /// Properties of the user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusIdentityUserAssignedIdentities
 {
@@ -828,7 +828,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusIdentity
 /// Storage version of v1api20250101preview.MicrosoftCommonIdentity_STATUS
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusIdentity
 {
@@ -856,7 +856,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusIdentity
 /// Storage version of v1api20250101preview.RuleResolveConfiguration_STATUS
 /// TBD. Relevant only for rules of the kind LogAlert.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusResolveConfiguration
 {
@@ -878,7 +878,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusResolveC
 /// Storage version of v1api20250101preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusSystemData
 {
@@ -909,7 +909,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusSystemDa
 }
 
 /// <summary>Storage version of v1api20250101preview.ScheduledQueryRule_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatus
 {
@@ -1034,7 +1034,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatus
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250101previewstorageScheduledQueryRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20250101previewstorageScheduledQueryRuleSpec?>, IStatus<V1api20250101previewstorageScheduledQueryRuleStatus?>

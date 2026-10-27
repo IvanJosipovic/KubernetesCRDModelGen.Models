@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.postgres.databricks.m.crossplane.io;
 /// <summary>PostgresSyncedTable is the Schema for the PostgresSyncedTables API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PostgresSyncedTableList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PostgresSyncedTable>
@@ -38,7 +38,7 @@ public partial class V1beta1PostgresSyncedTableList : IKubernetesObject<V1ListMe
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecForProviderProviderConfig
 {
@@ -51,7 +51,7 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderProviderConfig
 /// Specification for creating a new pipeline.
 /// At most one of existing_pipeline_id and new_pipeline_spec should be defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecForProviderSpecNewPipelineSpec
 {
@@ -74,7 +74,7 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderSpecNewPipelineSpe
     public string? StorageSchema { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecForProviderSpecTypeOverrides
 {
@@ -98,7 +98,7 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderSpecTypeOverrides
 /// Configuration details of the synced table, such as the source table, scheduling policy, etc.
 /// This attribute is specified at creation time and most fields are returned as is on subsequent queries
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecForProviderSpec
 {
@@ -164,7 +164,7 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderSpec
     public IList<V1beta1PostgresSyncedTableSpecForProviderSpecTypeOverrides>? TypeOverrides { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecForProvider
 {
@@ -185,7 +185,7 @@ public partial class V1beta1PostgresSyncedTableSpecForProvider
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecInitProviderProviderConfig
 {
@@ -198,7 +198,7 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderProviderConfig
 /// Specification for creating a new pipeline.
 /// At most one of existing_pipeline_id and new_pipeline_spec should be defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecNewPipelineSpec
 {
@@ -221,7 +221,7 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecNewPipelineSp
     public string? StorageSchema { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecTypeOverrides
 {
@@ -245,7 +245,7 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecTypeOverrides
 /// Configuration details of the synced table, such as the source table, scheduling policy, etc.
 /// This attribute is specified at creation time and most fields are returned as is on subsequent queries
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecInitProviderSpec
 {
@@ -323,7 +323,7 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderSpec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecInitProvider
 {
@@ -347,7 +347,7 @@ public partial class V1beta1PostgresSyncedTableSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PostgresSyncedTableSpecManagementPoliciesEnum>))]
 public enum V1beta1PostgresSyncedTableSpecManagementPoliciesEnum
 {
@@ -370,7 +370,7 @@ public enum V1beta1PostgresSyncedTableSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecProviderConfigRef
 {
@@ -389,7 +389,7 @@ public partial class V1beta1PostgresSyncedTableSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecWriteConnectionSecretToRef
 {
@@ -399,7 +399,7 @@ public partial class V1beta1PostgresSyncedTableSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PostgresSyncedTableSpec defines the desired state of PostgresSyncedTable</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpec
 {
@@ -451,7 +451,7 @@ public partial class V1beta1PostgresSyncedTableSpec
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderProviderConfig
 {
@@ -464,7 +464,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderProviderConfig
 /// Specification for creating a new pipeline.
 /// At most one of existing_pipeline_id and new_pipeline_spec should be defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecNewPipelineSpec
 {
@@ -487,7 +487,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecNewPipelineSp
     public string? StorageSchema { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecTypeOverrides
 {
@@ -511,7 +511,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecTypeOverrides
 /// Configuration details of the synced table, such as the source table, scheduling policy, etc.
 /// This attribute is specified at creation time and most fields are returned as is on subsequent queries
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderSpec
 {
@@ -578,7 +578,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderSpec
 }
 
 /// <summary>(DeltaTableSyncInfo)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderStatusLastSyncDeltaTableSyncInfo
 {
@@ -595,7 +595,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderStatusLastSyncDel
 }
 
 /// <summary>Summary of the last successful synchronization from source to destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderStatusLastSync
 {
@@ -621,7 +621,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderStatusLastSync
 }
 
 /// <summary>(SyncedTablePipelineProgress)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderStatusOngoingSyncProgress
 {
@@ -650,7 +650,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderStatusOngoingSync
 }
 
 /// <summary>Synced Table data synchronization status</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderStatus
 {
@@ -698,7 +698,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderStatus
     public string? UnityCatalogProvisioningState { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProvider
 {
@@ -741,7 +741,7 @@ public partial class V1beta1PostgresSyncedTableStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusConditions
 {
@@ -784,7 +784,7 @@ public partial class V1beta1PostgresSyncedTableStatusConditions
 }
 
 /// <summary>PostgresSyncedTableStatus defines the observed state of PostgresSyncedTable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatus
 {
@@ -814,7 +814,7 @@ public partial class V1beta1PostgresSyncedTableStatus
 }
 
 /// <summary>PostgresSyncedTable is the Schema for the PostgresSyncedTables API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PostgresSyncedTable : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PostgresSyncedTableSpec>, IStatus<V1beta1PostgresSyncedTableStatus?>

@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/openapi.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210501previewstorageDiagnosticSettingList : IKubernetesObject<V1ListMeta>, IItems<V1api20210501previewstorageDiagnosticSetting>
@@ -43,7 +43,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingList : IKuberne
 }
 
 /// <summary>EventHubAuthorizationRuleReference: The resource Id for the event hub authorization rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecEventHubAuthorizationRuleReference
 {
@@ -72,7 +72,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecEventHubAut
 /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy
 /// Specifies the retention policy for the log.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecLogsRetentionPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecLogsRetenti
 /// Storage version of v1api20210501preview.DiagnosticsLogSettings
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular log.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecLogs
 {
@@ -126,7 +126,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecLogs
 /// MarketplacePartnerReference: The full ARM resource ID of the Marketplace resource to which you would like to send
 /// Diagnostic Logs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecMarketplacePartnerReference
 {
@@ -155,7 +155,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecMarketplace
 /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy
 /// Specifies the retention policy for the log.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecMetricsRetentionPolicy
 {
@@ -177,7 +177,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecMetricsRete
 /// Storage version of v1api20210501preview.DiagnosticsMetricSettings
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular metric.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecMetrics
 {
@@ -210,7 +210,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecMetrics
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecOperatorSpecConfigMapExpressions
 {
@@ -251,7 +251,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecOperatorSpe
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecOperatorSpecSecretExpressions
 {
@@ -291,7 +291,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecOperatorSpe
 /// Storage version of v1api20210501preview.DiagnosticSettingOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecOperatorSpec
 {
@@ -314,7 +314,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecOperatorSpe
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. This resource is an
 /// extension resource, which means that any other Azure resource can be its owner.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecOwner
 {
@@ -336,7 +336,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecOwner
 }
 
 /// <summary>StorageAccountReference: The resource ID of the storage account to which you would like to send Diagnostic Logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecStorageAccountReference
 {
@@ -366,7 +366,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecStorageAcco
 /// Logs. Example:
 /// /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpecWorkspaceReference
 {
@@ -392,7 +392,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecWorkspaceRe
 }
 
 /// <summary>Storage version of v1api20210501preview.DiagnosticSetting_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingSpec
 {
@@ -468,7 +468,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingStatusConditions
 {
@@ -517,7 +517,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusCondition
 /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy_STATUS
 /// Specifies the retention policy for the log.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingStatusLogsRetentionPolicy
 {
@@ -539,7 +539,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusLogsReten
 /// Storage version of v1api20210501preview.DiagnosticsLogSettings_STATUS
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular log.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingStatusLogs
 {
@@ -571,7 +571,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusLogs
 /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy_STATUS
 /// Specifies the retention policy for the log.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingStatusMetricsRetentionPolicy
 {
@@ -593,7 +593,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusMetricsRe
 /// Storage version of v1api20210501preview.DiagnosticsMetricSettings_STATUS
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular metric.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingStatusMetrics
 {
@@ -625,7 +625,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusMetrics
 /// Storage version of v1api20210501preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingStatusSystemData
 {
@@ -656,7 +656,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusSystemDat
 }
 
 /// <summary>Storage version of v1api20210501preview.DiagnosticSetting_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewstorageDiagnosticSettingStatus
 {
@@ -720,7 +720,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatus
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/openapi.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210501previewstorageDiagnosticSetting : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20210501previewstorageDiagnosticSettingSpec?>, IStatus<V1api20210501previewstorageDiagnosticSettingStatus?>

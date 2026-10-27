@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.longhorn.io;
 /// <summary>BackingImageDataSource is where Longhorn stores backing image data source object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackingImageDataSourceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2BackingImageDataSource>
@@ -37,7 +37,7 @@ public partial class V1beta2BackingImageDataSourceList : IKubernetesObject<V1Lis
     public required IList<V1beta2BackingImageDataSource> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackingImageDataSourceSpecSourceTypeEnum>))]
 public enum V1beta2BackingImageDataSourceSpecSourceTypeEnum
 {
@@ -54,7 +54,7 @@ public enum V1beta2BackingImageDataSourceSpecSourceTypeEnum
 }
 
 /// <summary>BackingImageDataSourceSpec defines the desired state of the Longhorn backing image data source</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackingImageDataSourceSpec
 {
@@ -84,7 +84,7 @@ public partial class V1beta2BackingImageDataSourceSpec
 }
 
 /// <summary>BackingImageDataSourceStatus defines the observed state of the Longhorn backing image data source</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackingImageDataSourceStatus
 {
@@ -117,7 +117,7 @@ public partial class V1beta2BackingImageDataSourceStatus
 }
 
 /// <summary>BackingImageDataSource is where Longhorn stores backing image data source object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackingImageDataSource : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BackingImageDataSourceSpec?>, IStatus<V1beta2BackingImageDataSourceStatus?>

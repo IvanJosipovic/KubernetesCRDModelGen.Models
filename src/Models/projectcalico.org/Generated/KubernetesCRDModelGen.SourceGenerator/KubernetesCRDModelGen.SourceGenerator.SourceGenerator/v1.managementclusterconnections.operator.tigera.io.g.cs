@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.@operator.tigera.io;
 /// ManagementClusterConnection represents a link between a managed cluster and a management cluster. At most one
 /// instance of this resource is supported. It must be named &quot;tigera-secure&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ManagementClusterConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1ManagementClusterConnection>
@@ -44,7 +44,7 @@ public partial class V1ManagementClusterConnectionList : IKubernetesObject<V1Lis
 /// LivenessProbe allows customization of the liveness probe timing parameters.
 /// The probe handler is set by the operator and cannot be overridden.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecContainersLivenessProbe
 {
@@ -75,7 +75,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 /// Name is an enum which identifies the guardian Deployment container by name.
 /// Supported values are: tigera-guardian
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecContainersNameEnum>))]
 public enum V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecContainersNameEnum
 {
@@ -87,7 +87,7 @@ public enum V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecC
 /// ReadinessProbe allows customization of the readiness probe timing parameters.
 /// The probe handler is set by the operator and cannot be overridden.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecContainersReadinessProbe
 {
@@ -115,7 +115,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecContainersResourcesClaims
 {
@@ -141,7 +141,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 /// If specified, this overrides the named guardian Deployment container&apos;s resources.
 /// If omitted, the guardian Deployment will use its default value for this container&apos;s resources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecContainersResources
 {
@@ -173,7 +173,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 }
 
 /// <summary>GuardianDeploymentContainer is a guardian Deployment container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecContainers
 {
@@ -208,7 +208,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecInitContainersResourcesClaims
 {
@@ -234,7 +234,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 /// If specified, this overrides the named guardian Deployment init container&apos;s resources.
 /// If omitted, the guardian Deployment will use its default value for this init container&apos;s resources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecInitContainersResources
 {
@@ -266,7 +266,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 }
 
 /// <summary>GuardianDeploymentInitContainer is a guardian Deployment init container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpecInitContainers
 {
@@ -284,7 +284,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 }
 
 /// <summary>Spec is the guardian Deployment&apos;s PodSpec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplateSpec
 {
@@ -306,7 +306,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 }
 
 /// <summary>Template describes the guardian Deployment pod that will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemplate
 {
@@ -316,7 +316,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpecTemp
 }
 
 /// <summary>Spec is the specification of the guardian Deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpec
 {
@@ -326,7 +326,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeploymentSpec
 }
 
 /// <summary>GuardianDeployment configures the guardian Deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecGuardianDeployment
 {
@@ -344,7 +344,7 @@ public partial class V1ManagementClusterConnectionSpecGuardianDeployment
 /// having NO impersonation permissions. Similarly, if you specify `users` but omit `groups`,
 /// guardian will lose its default permissions to impersonate groups.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecImpersonation
 {
@@ -377,7 +377,7 @@ public partial class V1ManagementClusterConnectionSpecImpersonation
 /// When set to &apos;Public&apos;, the tunnel client will use its installed system certs and will use the managementClusterAddr to verify the tunnel server&apos;s identity.
 /// Default: Tigera
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ManagementClusterConnectionSpecTlsCaEnum>))]
 public enum V1ManagementClusterConnectionSpecTlsCaEnum
 {
@@ -388,7 +388,7 @@ public enum V1ManagementClusterConnectionSpecTlsCaEnum
 }
 
 /// <summary>TLS provides options for configuring how Managed Clusters can establish an mTLS connection with the Management Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpecTls
 {
@@ -404,7 +404,7 @@ public partial class V1ManagementClusterConnectionSpecTls
 }
 
 /// <summary>ManagementClusterConnectionSpec defines the desired state of ManagementClusterConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionSpec
 {
@@ -437,7 +437,7 @@ public partial class V1ManagementClusterConnectionSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ManagementClusterConnectionStatusConditionsStatusEnum>))]
 public enum V1ManagementClusterConnectionStatusConditionsStatusEnum
 {
@@ -450,7 +450,7 @@ public enum V1ManagementClusterConnectionStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionStatusConditions
 {
@@ -496,7 +496,7 @@ public partial class V1ManagementClusterConnectionStatusConditions
 }
 
 /// <summary>ManagementClusterConnectionStatus defines the observed state of ManagementClusterConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ManagementClusterConnectionStatus
 {
@@ -512,7 +512,7 @@ public partial class V1ManagementClusterConnectionStatus
 /// ManagementClusterConnection represents a link between a managed cluster and a management cluster. At most one
 /// instance of this resource is supported. It must be named &quot;tigera-secure&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ManagementClusterConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1ManagementClusterConnectionSpec?>, IStatus<V1ManagementClusterConnectionStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
 /// <summary>ManagerSubscriptionConnection is the Schema for the ManagerSubscriptionConnections API. Manages a Network Manager Subscription Connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagerSubscriptionConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagerSubscriptionConnection>
@@ -43,7 +43,7 @@ public partial class V1beta1ManagerSubscriptionConnectionList : IKubernetesObjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkM
 }
 
 /// <summary>Reference to a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkM
 }
 
 /// <summary>Selector for a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkM
     public V1beta1ManagerSubscriptionConnectionSpecForProviderNetworkManagerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecForProvider
 {
@@ -223,7 +223,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdRefPolicyResolutionEnum
 {
@@ -239,7 +239,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdRefPolicyResolveEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdRefPolicy
 {
@@ -274,7 +274,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetwork
 }
 
 /// <summary>Reference to a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdRef
 {
@@ -297,7 +297,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdSelectorPolicyResolutionEnum
 {
@@ -313,7 +313,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdSelectorPolicyResolveEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdSelectorPolicy
 {
@@ -348,7 +348,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetwork
 }
 
 /// <summary>Selector for a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetworkManagerIdSelector
 {
@@ -384,7 +384,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecInitProviderNetwork
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecInitProvider
 {
@@ -413,7 +413,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerSubscriptionConnectionSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagerSubscriptionConnectionSpecManagementPoliciesEnum
 {
@@ -436,7 +436,7 @@ public enum V1beta1ManagerSubscriptionConnectionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecProviderConfigRef
 {
@@ -455,7 +455,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpecWriteConnectionSecretToRef
 {
@@ -465,7 +465,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpecWriteConnectionSecr
 }
 
 /// <summary>ManagerSubscriptionConnectionSpec defines the desired state of ManagerSubscriptionConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionSpec
 {
@@ -516,7 +516,7 @@ public partial class V1beta1ManagerSubscriptionConnectionSpec
     public V1beta1ManagerSubscriptionConnectionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionStatusAtProvider
 {
@@ -542,7 +542,7 @@ public partial class V1beta1ManagerSubscriptionConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionStatusConditions
 {
@@ -585,7 +585,7 @@ public partial class V1beta1ManagerSubscriptionConnectionStatusConditions
 }
 
 /// <summary>ManagerSubscriptionConnectionStatus defines the observed state of ManagerSubscriptionConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerSubscriptionConnectionStatus
 {
@@ -615,7 +615,7 @@ public partial class V1beta1ManagerSubscriptionConnectionStatus
 }
 
 /// <summary>ManagerSubscriptionConnection is the Schema for the ManagerSubscriptionConnections API. Manages a Network Manager Subscription Connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagerSubscriptionConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagerSubscriptionConnectionSpec>, IStatus<V1beta1ManagerSubscriptionConnectionStatus?>

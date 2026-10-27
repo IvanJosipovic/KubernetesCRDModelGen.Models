@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>RouterNAT is the Schema for the RouterNATs API. A NAT service created in a router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RouterNATList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RouterNAT>
@@ -41,7 +41,7 @@ public partial class V1beta1RouterNATList : IKubernetesObject<V1ListMeta>, IItem
 /// Configuration for logging on NAT
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderLogConfig
 {
@@ -57,7 +57,7 @@ public partial class V1beta1RouterNATSpecForProviderLogConfig
     public string? Filter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderNat64Subnetwork
 {
@@ -72,7 +72,7 @@ public partial class V1beta1RouterNATSpecForProviderNat64Subnetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderNatIpsRefsPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderNatIpsRefsPolicyResolutionEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1RouterNATSpecForProviderNatIpsRefsPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderNatIpsRefsPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderNatIpsRefsPolicyResolveEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta1RouterNATSpecForProviderNatIpsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderNatIpsRefsPolicy
 {
@@ -123,7 +123,7 @@ public partial class V1beta1RouterNATSpecForProviderNatIpsRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderNatIpsRefs
 {
@@ -146,7 +146,7 @@ public partial class V1beta1RouterNATSpecForProviderNatIpsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderNatIpsSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderNatIpsSelectorPolicyResolutionEnum
 {
@@ -162,7 +162,7 @@ public enum V1beta1RouterNATSpecForProviderNatIpsSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderNatIpsSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderNatIpsSelectorPolicyResolveEnum
 {
@@ -173,7 +173,7 @@ public enum V1beta1RouterNATSpecForProviderNatIpsSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderNatIpsSelectorPolicy
 {
@@ -197,7 +197,7 @@ public partial class V1beta1RouterNATSpecForProviderNatIpsSelectorPolicy
 }
 
 /// <summary>Selector for a list of Address in compute to populate natIps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderNatIpsSelector
 {
@@ -227,7 +227,7 @@ public partial class V1beta1RouterNATSpecForProviderNatIpsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRouterRefPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderRouterRefPolicyResolutionEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta1RouterNATSpecForProviderRouterRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRouterRefPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderRouterRefPolicyResolveEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta1RouterNATSpecForProviderRouterRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRouterRefPolicy
 {
@@ -278,7 +278,7 @@ public partial class V1beta1RouterNATSpecForProviderRouterRefPolicy
 }
 
 /// <summary>Reference to a Router in compute to populate router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRouterRef
 {
@@ -301,7 +301,7 @@ public partial class V1beta1RouterNATSpecForProviderRouterRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRouterSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderRouterSelectorPolicyResolutionEnum
 {
@@ -317,7 +317,7 @@ public enum V1beta1RouterNATSpecForProviderRouterSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRouterSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderRouterSelectorPolicyResolveEnum
 {
@@ -328,7 +328,7 @@ public enum V1beta1RouterNATSpecForProviderRouterSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRouterSelectorPolicy
 {
@@ -352,7 +352,7 @@ public partial class V1beta1RouterNATSpecForProviderRouterSelectorPolicy
 }
 
 /// <summary>Selector for a Router in compute to populate router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRouterSelector
 {
@@ -382,7 +382,7 @@ public partial class V1beta1RouterNATSpecForProviderRouterSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefsPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefsPolicyResolutionEnum
 {
@@ -398,7 +398,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefsPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefsPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefsPolicyResolveEnum
 {
@@ -409,7 +409,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefsPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefsPolicy
 {
@@ -433,7 +433,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIp
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsRefs
 {
@@ -456,7 +456,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelectorPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelectorPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelectorPolicy
 {
@@ -507,7 +507,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIp
 }
 
 /// <summary>Selector for a list of Address in compute to populate sourceNatActiveIps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIpsSelector
 {
@@ -537,7 +537,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveIp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefsPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefsPolicyResolutionEnum
 {
@@ -553,7 +553,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefsP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefsPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefsPolicyResolveEnum
 {
@@ -564,7 +564,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefsP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefsPolicy
 {
@@ -588,7 +588,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRa
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesRefs
 {
@@ -611,7 +611,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelectorPolicyResolutionEnum
 {
@@ -627,7 +627,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelectorPolicyResolveEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelectorPolicy
 {
@@ -662,7 +662,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRa
 }
 
 /// <summary>Selector for a list of Subnetwork in compute to populate sourceNatActiveRanges.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRangesSelector
 {
@@ -690,7 +690,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesActionSourceNatActiveRa
 /// The action to be enforced for traffic that matches this rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRulesAction
 {
@@ -744,7 +744,7 @@ public partial class V1beta1RouterNATSpecForProviderRulesAction
     public IList<string>? SourceNatDrainRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderRules
 {
@@ -785,7 +785,7 @@ public partial class V1beta1RouterNATSpecForProviderRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicyResolutionEnum
 {
@@ -801,7 +801,7 @@ public enum V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicyResolveEnum
 {
@@ -812,7 +812,7 @@ public enum V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicy
 {
@@ -836,7 +836,7 @@ public partial class V1beta1RouterNATSpecForProviderSubnetworkNameRefPolicy
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderSubnetworkNameRef
 {
@@ -859,7 +859,7 @@ public partial class V1beta1RouterNATSpecForProviderSubnetworkNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicyResolutionEnum
 {
@@ -875,7 +875,7 @@ public enum V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicyResolveEnum
 {
@@ -886,7 +886,7 @@ public enum V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicy
 {
@@ -910,7 +910,7 @@ public partial class V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicy
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderSubnetworkNameSelector
 {
@@ -934,7 +934,7 @@ public partial class V1beta1RouterNATSpecForProviderSubnetworkNameSelector
     public V1beta1RouterNATSpecForProviderSubnetworkNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProviderSubnetwork
 {
@@ -969,7 +969,7 @@ public partial class V1beta1RouterNATSpecForProviderSubnetwork
     public IList<string>? SourceIpRangesToNat { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecForProvider
 {
@@ -1186,7 +1186,7 @@ public partial class V1beta1RouterNATSpecForProvider
 /// Configuration for logging on NAT
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderLogConfig
 {
@@ -1202,7 +1202,7 @@ public partial class V1beta1RouterNATSpecInitProviderLogConfig
     public string? Filter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderNat64Subnetwork
 {
@@ -1217,7 +1217,7 @@ public partial class V1beta1RouterNATSpecInitProviderNat64Subnetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderNatIpsRefsPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderNatIpsRefsPolicyResolutionEnum
 {
@@ -1233,7 +1233,7 @@ public enum V1beta1RouterNATSpecInitProviderNatIpsRefsPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderNatIpsRefsPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderNatIpsRefsPolicyResolveEnum
 {
@@ -1244,7 +1244,7 @@ public enum V1beta1RouterNATSpecInitProviderNatIpsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderNatIpsRefsPolicy
 {
@@ -1268,7 +1268,7 @@ public partial class V1beta1RouterNATSpecInitProviderNatIpsRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderNatIpsRefs
 {
@@ -1291,7 +1291,7 @@ public partial class V1beta1RouterNATSpecInitProviderNatIpsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicyResolutionEnum
 {
@@ -1307,7 +1307,7 @@ public enum V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicyResolveEnum
 {
@@ -1318,7 +1318,7 @@ public enum V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicy
 {
@@ -1342,7 +1342,7 @@ public partial class V1beta1RouterNATSpecInitProviderNatIpsSelectorPolicy
 }
 
 /// <summary>Selector for a list of Address in compute to populate natIps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderNatIpsSelector
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta1RouterNATSpecInitProviderNatIpsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefsPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefsPolicyResolutionEnum
 {
@@ -1388,7 +1388,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefsPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefsPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefsPolicyResolveEnum
 {
@@ -1399,7 +1399,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefsPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefsPolicy
 {
@@ -1423,7 +1423,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveI
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsRefs
 {
@@ -1446,7 +1446,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelectorPolicyResolutionEnum
 {
@@ -1462,7 +1462,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelectorPolicyResolveEnum
 {
@@ -1473,7 +1473,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelectorPolicy
 {
@@ -1497,7 +1497,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveI
 }
 
 /// <summary>Selector for a list of Address in compute to populate sourceNatActiveIps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveIpsSelector
 {
@@ -1527,7 +1527,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefsPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefsPolicyResolutionEnum
 {
@@ -1543,7 +1543,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefs
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefsPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefsPolicyResolveEnum
 {
@@ -1554,7 +1554,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefs
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefsPolicy
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveR
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesRefs
 {
@@ -1601,7 +1601,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSelectorPolicyResolutionEnum
 {
@@ -1617,7 +1617,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSelectorPolicyResolveEnum
 {
@@ -1628,7 +1628,7 @@ public enum V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSelectorPolicy
 {
@@ -1652,7 +1652,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveR
 }
 
 /// <summary>Selector for a list of Subnetwork in compute to populate sourceNatActiveRanges.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveRangesSelector
 {
@@ -1680,7 +1680,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesActionSourceNatActiveR
 /// The action to be enforced for traffic that matches this rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRulesAction
 {
@@ -1734,7 +1734,7 @@ public partial class V1beta1RouterNATSpecInitProviderRulesAction
     public IList<string>? SourceNatDrainRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderRules
 {
@@ -1775,7 +1775,7 @@ public partial class V1beta1RouterNATSpecInitProviderRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicyResolutionEnum
 {
@@ -1791,7 +1791,7 @@ public enum V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicyResolveEnum
 {
@@ -1802,7 +1802,7 @@ public enum V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicy
 {
@@ -1826,7 +1826,7 @@ public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameRefPolicy
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameRef
 {
@@ -1849,7 +1849,7 @@ public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicyResolutionEnum
 {
@@ -1865,7 +1865,7 @@ public enum V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicyResolveEnum
 {
@@ -1876,7 +1876,7 @@ public enum V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicy
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolic
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameSelector
 {
@@ -1924,7 +1924,7 @@ public partial class V1beta1RouterNATSpecInitProviderSubnetworkNameSelector
     public V1beta1RouterNATSpecInitProviderSubnetworkNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProviderSubnetwork
 {
@@ -1971,7 +1971,7 @@ public partial class V1beta1RouterNATSpecInitProviderSubnetwork
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecInitProvider
 {
@@ -2172,7 +2172,7 @@ public partial class V1beta1RouterNATSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterNATSpecManagementPoliciesEnum>))]
 public enum V1beta1RouterNATSpecManagementPoliciesEnum
 {
@@ -2195,7 +2195,7 @@ public enum V1beta1RouterNATSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecProviderConfigRef
 {
@@ -2214,7 +2214,7 @@ public partial class V1beta1RouterNATSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpecWriteConnectionSecretToRef
 {
@@ -2224,7 +2224,7 @@ public partial class V1beta1RouterNATSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RouterNATSpec defines the desired state of RouterNAT</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATSpec
 {
@@ -2279,7 +2279,7 @@ public partial class V1beta1RouterNATSpec
 /// Configuration for logging on NAT
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusAtProviderLogConfig
 {
@@ -2295,7 +2295,7 @@ public partial class V1beta1RouterNATStatusAtProviderLogConfig
     public string? Filter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusAtProviderNat64Subnetwork
 {
@@ -2308,7 +2308,7 @@ public partial class V1beta1RouterNATStatusAtProviderNat64Subnetwork
 /// The action to be enforced for traffic that matches this rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusAtProviderRulesAction
 {
@@ -2346,7 +2346,7 @@ public partial class V1beta1RouterNATStatusAtProviderRulesAction
     public IList<string>? SourceNatDrainRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusAtProviderRules
 {
@@ -2381,7 +2381,7 @@ public partial class V1beta1RouterNATStatusAtProviderRules
     public double? RuleNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusAtProviderSubnetwork
 {
@@ -2408,7 +2408,7 @@ public partial class V1beta1RouterNATStatusAtProviderSubnetwork
     public IList<string>? SourceIpRangesToNat { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusAtProvider
 {
@@ -2617,7 +2617,7 @@ public partial class V1beta1RouterNATStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusConditions
 {
@@ -2660,7 +2660,7 @@ public partial class V1beta1RouterNATStatusConditions
 }
 
 /// <summary>RouterNATStatus defines the observed state of RouterNAT.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatus
 {
@@ -2690,7 +2690,7 @@ public partial class V1beta1RouterNATStatus
 }
 
 /// <summary>RouterNAT is the Schema for the RouterNATs API. A NAT service created in a router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RouterNAT : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RouterNATSpec>, IStatus<V1beta1RouterNATStatus?>

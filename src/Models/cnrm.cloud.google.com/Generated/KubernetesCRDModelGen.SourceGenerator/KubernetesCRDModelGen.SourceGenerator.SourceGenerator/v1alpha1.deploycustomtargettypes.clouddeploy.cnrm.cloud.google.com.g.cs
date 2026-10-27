@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.clouddeploy.cnrm.cloud.google.com;
 /// <summary>DeployCustomTargetType is the Schema for the DeployCustomTargetType API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DeployCustomTargetTypeList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DeployCustomTargetType>
@@ -38,7 +38,7 @@ public partial class V1alpha1DeployCustomTargetTypeList : IKubernetesObject<V1Li
 }
 
 /// <summary>Optional. Remote git repository containing the Skaffold Config modules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGit
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaff
 }
 
 /// <summary>Required. Name of the Cloud Build V2 RepositoryRef. Format is projects/{project}/locations/{location}/connections/{connection}/repositories/{repository}.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoRepositoryRef
 {
@@ -74,7 +74,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaff
 }
 
 /// <summary>Optional. Cloud Build V2 repository containing the Skaffold Config modules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaff
 }
 
 /// <summary>Optional. Cloud Storage bucket containing the Skaffold Config modules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModulesGoogleCloudStorage
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaff
     public string? Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaffoldModules
 {
@@ -127,7 +127,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpecCustomActionsIncludeSkaff
 }
 
 /// <summary>Configures render and deploy for the `CustomTargetType` using Skaffold custom actions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpecCustomActions
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpecCustomActions
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpecProjectRef
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpecProjectRef
 }
 
 /// <summary>CustomTargetTypeSpec defines the desired state of DeployCustomTargetType</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeSpec
 {
@@ -191,7 +191,7 @@ public partial class V1alpha1DeployCustomTargetTypeSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeStatusConditions
 {
@@ -217,7 +217,7 @@ public partial class V1alpha1DeployCustomTargetTypeStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeStatusObservedState
 {
@@ -239,7 +239,7 @@ public partial class V1alpha1DeployCustomTargetTypeStatusObservedState
 }
 
 /// <summary>CustomTargetTypeStatus defines the config connector machine state of DeployCustomTargetType</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeployCustomTargetTypeStatus
 {
@@ -261,7 +261,7 @@ public partial class V1alpha1DeployCustomTargetTypeStatus
 }
 
 /// <summary>DeployCustomTargetType is the Schema for the DeployCustomTargetType API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DeployCustomTargetType : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DeployCustomTargetTypeSpec>, IStatus<V1alpha1DeployCustomTargetTypeStatus?>

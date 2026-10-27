@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.gcp.upbound.io;
 /// <summary>UptimeCheckConfig is the Schema for the UptimeCheckConfigs API. This message configures which resources and services to monitor for availability.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2UptimeCheckConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta2UptimeCheckConfig>
@@ -46,7 +46,7 @@ public partial class V1beta2UptimeCheckConfigList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecDeletionPolicyEnum>))]
 public enum V1beta2UptimeCheckConfigSpecDeletionPolicyEnum
 {
@@ -60,7 +60,7 @@ public enum V1beta2UptimeCheckConfigSpecDeletionPolicyEnum
 /// Information needed to perform a JSONPath content match. Used for ContentMatcherOption::MATCHES_JSON_PATH and ContentMatcherOption::NOT_MATCHES_JSON_PATH.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderContentMatchersJsonPathMatcher
 {
@@ -77,7 +77,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderContentMatchersJsonP
     public string? JsonPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderContentMatchers
 {
@@ -101,7 +101,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderContentMatchers
     public string? Matcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckAcceptedResponseStatusCodes
 {
@@ -121,7 +121,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckAcceptedRes
 /// The password to authenticate.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckAuthInfoPasswordSecretRef
 {
@@ -142,7 +142,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckAuthInfoPas
 /// The authentication information using username and password. Optional when creating an HTTP check; defaults to empty. Do not use with other authentication fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckAuthInfo
 {
@@ -162,7 +162,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckAuthInfo
 /// Contains information needed to add pings to an HTTP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckPingConfig
 {
@@ -175,7 +175,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckPingConfig
 /// The authentication information using the Monitoring Service Agent. Optional when creating an HTTPS check; defaults to empty. Do not use with other authentication fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckServiceAgentAuthentication
 {
@@ -191,7 +191,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheckServiceAgen
 /// Contains information needed to make an HTTP or HTTPS check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheck
 {
@@ -277,7 +277,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderHttpCheck
 /// configuration. The following monitored resource types are supported for
 /// uptime checks:
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderMonitoredResource
 {
@@ -296,7 +296,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderMonitoredResource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolutionEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolveEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicy
 {
@@ -347,7 +347,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupId
 }
 
 /// <summary>Reference to a Group in monitoring to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdRef
 {
@@ -366,7 +366,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolutionEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolveEnum
 {
@@ -393,7 +393,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicy
 {
@@ -417,7 +417,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupId
 }
 
 /// <summary>Selector for a Group in monitoring to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelector
 {
@@ -441,7 +441,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroupGroupId
 /// The group resource associated with the configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroup
 {
@@ -471,7 +471,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderResourceGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 }
 
 /// <summary>Reference to a Function in cloudfunctions2 to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRef
 {
@@ -541,7 +541,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum
 {
@@ -557,7 +557,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicy
 {
@@ -592,7 +592,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 }
 
 /// <summary>Selector for a Function in cloudfunctions2 to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelector
 {
@@ -616,7 +616,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 /// Target a Synthetic Monitor GCFv2 Instance
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2
 {
@@ -637,7 +637,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 /// A Synthetic Monitor deployed to a Cloud Functions V2 instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitor
 {
@@ -653,7 +653,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderSyntheticMonitor
 /// Contains information needed to add pings to a TCP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderTcpCheckPingConfig
 {
@@ -666,7 +666,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderTcpCheckPingConfig
 /// Contains information needed to make a TCP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProviderTcpCheck
 {
@@ -682,7 +682,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProviderTcpCheck
     public double? Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecForProvider
 {
@@ -773,7 +773,7 @@ public partial class V1beta2UptimeCheckConfigSpecForProvider
 /// Information needed to perform a JSONPath content match. Used for ContentMatcherOption::MATCHES_JSON_PATH and ContentMatcherOption::NOT_MATCHES_JSON_PATH.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderContentMatchersJsonPathMatcher
 {
@@ -790,7 +790,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderContentMatchersJson
     public string? JsonPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderContentMatchers
 {
@@ -814,7 +814,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderContentMatchers
     public string? Matcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckAcceptedResponseStatusCodes
 {
@@ -834,7 +834,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckAcceptedRe
 /// The password to authenticate.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckAuthInfoPasswordSecretRef
 {
@@ -855,7 +855,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckAuthInfoPa
 /// The authentication information using username and password. Optional when creating an HTTP check; defaults to empty. Do not use with other authentication fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckAuthInfo
 {
@@ -875,7 +875,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckAuthInfo
 /// Contains information needed to add pings to an HTTP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckPingConfig
 {
@@ -888,7 +888,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckPingConfig
 /// The authentication information using the Monitoring Service Agent. Optional when creating an HTTPS check; defaults to empty. Do not use with other authentication fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckServiceAgentAuthentication
 {
@@ -904,7 +904,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheckServiceAge
 /// Contains information needed to make an HTTP or HTTPS check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheck
 {
@@ -990,7 +990,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderHttpCheck
 /// configuration. The following monitored resource types are supported for
 /// uptime checks:
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderMonitoredResource
 {
@@ -1009,7 +1009,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderMonitoredResource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolutionEnum
 {
@@ -1025,7 +1025,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolveEnum
 {
@@ -1036,7 +1036,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicy
 {
@@ -1060,7 +1060,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 }
 
 /// <summary>Reference to a Group in monitoring to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRef
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolutionEnum
 {
@@ -1095,7 +1095,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolveEnum
 {
@@ -1106,7 +1106,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicy
 {
@@ -1130,7 +1130,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 }
 
 /// <summary>Selector for a Group in monitoring to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelector
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 /// The group resource associated with the configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroup
 {
@@ -1184,7 +1184,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderResourceGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum
 {
@@ -1200,7 +1200,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum
 {
@@ -1211,7 +1211,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicy
 {
@@ -1235,7 +1235,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 }
 
 /// <summary>Reference to a Function in cloudfunctions2 to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRef
 {
@@ -1254,7 +1254,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum
 {
@@ -1270,7 +1270,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum
 {
@@ -1281,7 +1281,7 @@ public enum V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicy
 {
@@ -1305,7 +1305,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 }
 
 /// <summary>Selector for a Function in cloudfunctions2 to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelector
 {
@@ -1329,7 +1329,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 /// Target a Synthetic Monitor GCFv2 Instance
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 /// A Synthetic Monitor deployed to a Cloud Functions V2 instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitor
 {
@@ -1366,7 +1366,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderSyntheticMonitor
 /// Contains information needed to add pings to a TCP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderTcpCheckPingConfig
 {
@@ -1379,7 +1379,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderTcpCheckPingConfig
 /// Contains information needed to make a TCP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProviderTcpCheck
 {
@@ -1407,7 +1407,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProviderTcpCheck
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecInitProvider
 {
@@ -1498,7 +1498,7 @@ public partial class V1beta2UptimeCheckConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecManagementPoliciesEnum>))]
 public enum V1beta2UptimeCheckConfigSpecManagementPoliciesEnum
 {
@@ -1522,7 +1522,7 @@ public enum V1beta2UptimeCheckConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2UptimeCheckConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1538,7 +1538,7 @@ public enum V1beta2UptimeCheckConfigSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2UptimeCheckConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2UptimeCheckConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1549,7 +1549,7 @@ public enum V1beta2UptimeCheckConfigSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecProviderConfigRefPolicy
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta2UptimeCheckConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecProviderConfigRef
 {
@@ -1596,7 +1596,7 @@ public partial class V1beta2UptimeCheckConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpecWriteConnectionSecretToRef
 {
@@ -1610,7 +1610,7 @@ public partial class V1beta2UptimeCheckConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>UptimeCheckConfigSpec defines the desired state of UptimeCheckConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigSpec
 {
@@ -1681,7 +1681,7 @@ public partial class V1beta2UptimeCheckConfigSpec
 /// Information needed to perform a JSONPath content match. Used for ContentMatcherOption::MATCHES_JSON_PATH and ContentMatcherOption::NOT_MATCHES_JSON_PATH.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderContentMatchersJsonPathMatcher
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderContentMatchersJson
     public string? JsonPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderContentMatchers
 {
@@ -1722,7 +1722,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderContentMatchers
     public string? Matcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckAcceptedResponseStatusCodes
 {
@@ -1742,7 +1742,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckAcceptedRe
 /// The authentication information using username and password. Optional when creating an HTTP check; defaults to empty. Do not use with other authentication fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckAuthInfo
 {
@@ -1755,7 +1755,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckAuthInfo
 /// Contains information needed to add pings to an HTTP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckPingConfig
 {
@@ -1768,7 +1768,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckPingConfig
 /// The authentication information using the Monitoring Service Agent. Optional when creating an HTTPS check; defaults to empty. Do not use with other authentication fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckServiceAgentAuthentication
 {
@@ -1784,7 +1784,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheckServiceAge
 /// Contains information needed to make an HTTP or HTTPS check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheck
 {
@@ -1870,7 +1870,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderHttpCheck
 /// configuration. The following monitored resource types are supported for
 /// uptime checks:
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderMonitoredResource
 {
@@ -1887,7 +1887,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderMonitoredResource
 /// The group resource associated with the configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderResourceGroup
 {
@@ -1907,7 +1907,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderResourceGroup
 /// Target a Synthetic Monitor GCFv2 Instance
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderSyntheticMonitorCloudFunctionV2
 {
@@ -1920,7 +1920,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderSyntheticMonitorClo
 /// A Synthetic Monitor deployed to a Cloud Functions V2 instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderSyntheticMonitor
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderSyntheticMonitor
 /// Contains information needed to add pings to a TCP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderTcpCheckPingConfig
 {
@@ -1949,7 +1949,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderTcpCheckPingConfig
 /// Contains information needed to make a TCP check.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProviderTcpCheck
 {
@@ -1965,7 +1965,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProviderTcpCheck
     public double? Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusAtProvider
 {
@@ -2072,7 +2072,7 @@ public partial class V1beta2UptimeCheckConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatusConditions
 {
@@ -2115,7 +2115,7 @@ public partial class V1beta2UptimeCheckConfigStatusConditions
 }
 
 /// <summary>UptimeCheckConfigStatus defines the observed state of UptimeCheckConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UptimeCheckConfigStatus
 {
@@ -2145,7 +2145,7 @@ public partial class V1beta2UptimeCheckConfigStatus
 }
 
 /// <summary>UptimeCheckConfig is the Schema for the UptimeCheckConfigs API. This message configures which resources and services to monitor for availability.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2UptimeCheckConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2UptimeCheckConfigSpec>, IStatus<V1beta2UptimeCheckConfigStatus?>

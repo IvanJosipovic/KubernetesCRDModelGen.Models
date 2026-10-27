@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.logic.azure.m.upbound.io;
 /// <summary>AppIntegrationAccountBatchConfiguration is the Schema for the AppIntegrationAccountBatchConfigurations API. Manages a Logic App Integration Account Batch Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AppIntegrationAccountBatchConfiguration>
@@ -43,7 +43,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationList : IKuber
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameRefPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameRefPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegra
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 }
 
 /// <summary>Reference to a AppIntegrationAccount in logic to populate integrationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegra
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 }
 
 /// <summary>Selector for a AppIntegrationAccount in logic to populate integrationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
     public V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderIntegrationAccountNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderReleaseCriteriaRecurrenceScheduleMonthly
 {
@@ -206,7 +206,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 }
 
 /// <summary>A schedule block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderReleaseCriteriaRecurrenceSchedule
 {
@@ -232,7 +232,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 }
 
 /// <summary>A recurrence block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderReleaseCriteriaRecurrence
 {
@@ -262,7 +262,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 }
 
 /// <summary>A release_criteria block as documented below, which is used to select the criteria to meet before processing each batch.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderReleaseCriteria
 {
@@ -285,7 +285,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -301,7 +301,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameRefPolicy
 {
@@ -336,7 +336,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameRef
 {
@@ -359,7 +359,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -375,7 +375,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -386,7 +386,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -410,7 +410,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameSelector
 {
@@ -434,7 +434,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
     public V1beta1AppIntegrationAccountBatchConfigurationSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvider
 {
@@ -485,7 +485,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameRefPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameRefPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameRefPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameRefPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameRefPolicy
 {
@@ -536,7 +536,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 }
 
 /// <summary>Reference to a AppIntegrationAccount in logic to populate integrationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameRef
 {
@@ -559,7 +559,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameSelectorPolicyResolutionEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameSelectorPolicyResolveEnum
 {
@@ -586,7 +586,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameSelectorPolicy
 {
@@ -610,7 +610,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 }
 
 /// <summary>Selector for a AppIntegrationAccount in logic to populate integrationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameSelector
 {
@@ -634,7 +634,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
     public V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderIntegrationAccountNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderReleaseCriteriaRecurrenceScheduleMonthly
 {
@@ -648,7 +648,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 }
 
 /// <summary>A schedule block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderReleaseCriteriaRecurrenceSchedule
 {
@@ -674,7 +674,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 }
 
 /// <summary>A recurrence block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderReleaseCriteriaRecurrence
 {
@@ -704,7 +704,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 }
 
 /// <summary>A release_criteria block as documented below, which is used to select the criteria to meet before processing each batch.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderReleaseCriteria
 {
@@ -727,7 +727,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -743,7 +743,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResour
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -778,7 +778,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameRef
 {
@@ -801,7 +801,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -817,7 +817,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -828,7 +828,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResour
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -852,7 +852,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProviderResourceGroupNameSelector
 {
@@ -888,7 +888,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvider
 {
@@ -937,7 +937,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecInitProvi
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppIntegrationAccountBatchConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1AppIntegrationAccountBatchConfigurationSpecManagementPoliciesEnum
 {
@@ -960,7 +960,7 @@ public enum V1beta1AppIntegrationAccountBatchConfigurationSpecManagementPolicies
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecProviderConfigRef
 {
@@ -979,7 +979,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecProviderC
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecWriteConnectionSecretToRef
 {
@@ -989,7 +989,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpecWriteConn
 }
 
 /// <summary>AppIntegrationAccountBatchConfigurationSpec defines the desired state of AppIntegrationAccountBatchConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationSpec
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationSpec
     public V1beta1AppIntegrationAccountBatchConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProviderReleaseCriteriaRecurrenceScheduleMonthly
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProvi
 }
 
 /// <summary>A schedule block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProviderReleaseCriteriaRecurrenceSchedule
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProvi
 }
 
 /// <summary>A recurrence block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProviderReleaseCriteriaRecurrence
 {
@@ -1110,7 +1110,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProvi
 }
 
 /// <summary>A release_criteria block as documented below, which is used to select the criteria to meet before processing each batch.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProviderReleaseCriteria
 {
@@ -1127,7 +1127,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProvi
     public V1beta1AppIntegrationAccountBatchConfigurationStatusAtProviderReleaseCriteriaRecurrence? Recurrence { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProvider
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusAtProvi
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusConditions
 {
@@ -1204,7 +1204,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationStatusConditi
 }
 
 /// <summary>AppIntegrationAccountBatchConfigurationStatus defines the observed state of AppIntegrationAccountBatchConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppIntegrationAccountBatchConfigurationStatus
 {
@@ -1234,7 +1234,7 @@ public partial class V1beta1AppIntegrationAccountBatchConfigurationStatus
 }
 
 /// <summary>AppIntegrationAccountBatchConfiguration is the Schema for the AppIntegrationAccountBatchConfigurations API. Manages a Logic App Integration Account Batch Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppIntegrationAccountBatchConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AppIntegrationAccountBatchConfigurationSpec>, IStatus<V1beta1AppIntegrationAccountBatchConfigurationStatus?>

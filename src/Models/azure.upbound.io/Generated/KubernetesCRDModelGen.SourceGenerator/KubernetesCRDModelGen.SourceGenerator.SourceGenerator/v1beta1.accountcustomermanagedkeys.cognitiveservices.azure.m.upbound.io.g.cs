@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitiveservices.azure.m.upbound.io;
 /// <summary>AccountCustomerManagedKey is the Schema for the AccountCustomerManagedKeys API. Manages a Customer Managed Key for a Cognitive Services Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountCustomerManagedKeyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccountCustomerManagedKey>
@@ -43,7 +43,7 @@ public partial class V1beta1AccountCustomerManagedKeyList : IKubernetesObject<V1
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAcc
 }
 
 /// <summary>Reference to a Account in cognitiveservices to populate cognitiveAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAcc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAcc
 }
 
 /// <summary>Selector for a Account in cognitiveservices to populate cognitiveAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAccountIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderCognitiveAcc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClie
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identityClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClie
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClie
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identityClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClientIdSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderIdentityClie
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyI
 }
 
 /// <summary>Reference to a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyI
 }
 
 /// <summary>Selector for a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyI
     public V1beta1AccountCustomerManagedKeySpecForProviderKeyVaultKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecForProvider
 {
@@ -549,7 +549,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRefPolicyResolutionEnum
 {
@@ -565,7 +565,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRefPolicyResolveEnum
 {
@@ -576,7 +576,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRefPolicy
 {
@@ -600,7 +600,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityCli
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identityClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdRef
 {
@@ -623,7 +623,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityCli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSelectorPolicyResolutionEnum
 {
@@ -639,7 +639,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSelectorPolicyResolveEnum
 {
@@ -650,7 +650,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSelectorPolicy
 {
@@ -674,7 +674,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityCli
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identityClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityClientIdSelector
 {
@@ -704,7 +704,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderIdentityCli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -720,7 +720,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -731,7 +731,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRefPolicy
 {
@@ -755,7 +755,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKey
 }
 
 /// <summary>Reference to a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdRef
 {
@@ -778,7 +778,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -794,7 +794,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -805,7 +805,7 @@ public enum V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelectorPolicy
 {
@@ -829,7 +829,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKey
 }
 
 /// <summary>Selector for a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKeyIdSelector
 {
@@ -865,7 +865,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProviderKeyVaultKey
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecInitProvider
 {
@@ -898,7 +898,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountCustomerManagedKeySpecManagementPoliciesEnum>))]
 public enum V1beta1AccountCustomerManagedKeySpecManagementPoliciesEnum
 {
@@ -921,7 +921,7 @@ public enum V1beta1AccountCustomerManagedKeySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecProviderConfigRef
 {
@@ -940,7 +940,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpecWriteConnectionSecretToRef
 {
@@ -950,7 +950,7 @@ public partial class V1beta1AccountCustomerManagedKeySpecWriteConnectionSecretTo
 }
 
 /// <summary>AccountCustomerManagedKeySpec defines the desired state of AccountCustomerManagedKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeySpec
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta1AccountCustomerManagedKeySpec
     public V1beta1AccountCustomerManagedKeySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeyStatusAtProvider
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1AccountCustomerManagedKeyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeyStatusConditions
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta1AccountCustomerManagedKeyStatusConditions
 }
 
 /// <summary>AccountCustomerManagedKeyStatus defines the observed state of AccountCustomerManagedKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountCustomerManagedKeyStatus
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta1AccountCustomerManagedKeyStatus
 }
 
 /// <summary>AccountCustomerManagedKey is the Schema for the AccountCustomerManagedKeys API. Manages a Customer Managed Key for a Cognitive Services Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountCustomerManagedKey : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccountCustomerManagedKeySpec>, IStatus<V1beta1AccountCustomerManagedKeyStatus?>

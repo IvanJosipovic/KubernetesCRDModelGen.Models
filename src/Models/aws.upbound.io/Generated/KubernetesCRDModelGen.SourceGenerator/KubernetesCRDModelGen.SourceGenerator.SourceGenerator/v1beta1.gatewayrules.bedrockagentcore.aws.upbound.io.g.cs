@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.upbound.io;
 /// <summary>GatewayRule is the Schema for the GatewayRules API. Manages an AWS Bedrock AgentCore Gateway Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GatewayRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GatewayRule>
@@ -46,7 +46,7 @@ public partial class V1beta1GatewayRuleList : IKubernetesObject<V1ListMeta>, IIt
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecDeletionPolicyEnum>))]
 public enum V1beta1GatewayRuleSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1GatewayRuleSpecDeletionPolicyEnum
 }
 
 /// <summary>Statically override the configuration bundle used for the matched request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleStaticOverride
 {
@@ -71,7 +71,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleS
 }
 
 /// <summary>Apply a configuration bundle when the rule&apos;s conditions match. See configuration_bundle below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleWeightedOverrideTrafficSplitConfigurationBundle
 {
@@ -84,7 +84,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleW
     public string? BundleVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleWeightedOverrideTrafficSplit
 {
@@ -110,7 +110,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleW
 }
 
 /// <summary>Distribute the request across two configuration bundle versions by weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleWeightedOverride
 {
@@ -120,7 +120,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundleW
 }
 
 /// <summary>Apply a configuration bundle when the rule&apos;s conditions match. See configuration_bundle below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundle
 {
@@ -139,7 +139,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionConfigurationBundle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolutionEnum
 {
@@ -155,7 +155,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTarge
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolveEnum
 {
@@ -166,7 +166,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTarge
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameRefPolicy
 {
@@ -190,7 +190,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticR
 }
 
 /// <summary>Reference to a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameRef
 {
@@ -209,7 +209,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTarge
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTarge
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticR
 }
 
 /// <summary>Selector for a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRouteTargetNameSelector
 {
@@ -281,7 +281,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticR
 }
 
 /// <summary>Route all matching requests to a single named gateway target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticRoute
 {
@@ -304,7 +304,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetStaticR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolutionEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolveEnum
 {
@@ -331,7 +331,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTra
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicy
 {
@@ -355,7 +355,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeighte
 }
 
 /// <summary>Reference to a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRef
 {
@@ -374,7 +374,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeighte
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolutionEnum
 {
@@ -390,7 +390,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolveEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTra
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicy
 {
@@ -425,7 +425,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeighte
 }
 
 /// <summary>Selector for a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelector
 {
@@ -445,7 +445,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeighte
     public V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRouteTrafficSplit
 {
@@ -479,7 +479,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeighte
 }
 
 /// <summary>Distribute requests across two named targets by weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRoute
 {
@@ -489,7 +489,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeighte
 }
 
 /// <summary>Route requests to a gateway target when the rule&apos;s conditions match. See route_to_target below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTarget
 {
@@ -502,7 +502,7 @@ public partial class V1beta1GatewayRuleSpecForProviderActionRouteToTarget
     public V1beta1GatewayRuleSpecForProviderActionRouteToTargetWeightedRoute? WeightedRoute { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderAction
 {
@@ -516,7 +516,7 @@ public partial class V1beta1GatewayRuleSpecForProviderAction
 }
 
 /// <summary>Match when the request path matches any of the supplied glob patterns (e.g. /api/*).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPaths
 {
@@ -526,7 +526,7 @@ public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPaths
 }
 
 /// <summary>Match an IAM user, role, or assumed-role ARN. Exactly one iam_principal block is required per entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPrincipalsAnyOfIamPrincipal
 {
@@ -539,7 +539,7 @@ public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPrincipalsAn
     public string? Operator { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPrincipalsAnyOf
 {
@@ -549,7 +549,7 @@ public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPrincipalsAn
 }
 
 /// <summary>Match when the caller&apos;s IAM identity matches any of the supplied principal entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPrincipals
 {
@@ -558,7 +558,7 @@ public partial class V1beta1GatewayRuleSpecForProviderConditionMatchPrincipals
     public IList<V1beta1GatewayRuleSpecForProviderConditionMatchPrincipalsAnyOf>? AnyOf { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderCondition
 {
@@ -577,7 +577,7 @@ public partial class V1beta1GatewayRuleSpecForProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicyResolutionEnum
 {
@@ -593,7 +593,7 @@ public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicyResolveEnum
 {
@@ -604,7 +604,7 @@ public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicy
 {
@@ -628,7 +628,7 @@ public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierRefPolicy
 }
 
 /// <summary>Reference to a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierRef
 {
@@ -647,7 +647,7 @@ public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicyResolutionEnum
 {
@@ -663,7 +663,7 @@ public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicyResolveEnum
 {
@@ -674,7 +674,7 @@ public enum V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicy
 {
@@ -698,7 +698,7 @@ public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorP
 }
 
 /// <summary>Selector for a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelector
 {
@@ -718,7 +718,7 @@ public partial class V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelector
     public V1beta1GatewayRuleSpecForProviderGatewayIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecForProvider
 {
@@ -759,7 +759,7 @@ public partial class V1beta1GatewayRuleSpecForProvider
 }
 
 /// <summary>Statically override the configuration bundle used for the matched request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundleStaticOverride
 {
@@ -773,7 +773,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundle
 }
 
 /// <summary>Apply a configuration bundle when the rule&apos;s conditions match. See configuration_bundle below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundleWeightedOverrideTrafficSplitConfigurationBundle
 {
@@ -786,7 +786,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundle
     public string? BundleVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundleWeightedOverrideTrafficSplit
 {
@@ -812,7 +812,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundle
 }
 
 /// <summary>Distribute the request across two configuration bundle versions by weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundleWeightedOverride
 {
@@ -822,7 +822,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundle
 }
 
 /// <summary>Apply a configuration bundle when the rule&apos;s conditions match. See configuration_bundle below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundle
 {
@@ -841,7 +841,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionConfigurationBundle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolutionEnum
 {
@@ -857,7 +857,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTarg
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameRefPolicyResolveEnum
 {
@@ -868,7 +868,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTarg
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameRefPolicy
 {
@@ -892,7 +892,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStatic
 }
 
 /// <summary>Reference to a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameRef
 {
@@ -911,7 +911,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStatic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolutionEnum
 {
@@ -927,7 +927,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTarg
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicyResolveEnum
 {
@@ -938,7 +938,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTarg
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameSelectorPolicy
 {
@@ -962,7 +962,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStatic
 }
 
 /// <summary>Selector for a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRouteTargetNameSelector
 {
@@ -983,7 +983,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStatic
 }
 
 /// <summary>Route all matching requests to a single named gateway target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStaticRoute
 {
@@ -1006,7 +1006,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetStatic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolutionEnum
 {
@@ -1022,7 +1022,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicyResolveEnum
 {
@@ -1033,7 +1033,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRefPolicy
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeight
 }
 
 /// <summary>Reference to a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameRef
 {
@@ -1076,7 +1076,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeight
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolutionEnum
 {
@@ -1092,7 +1092,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicyResolveEnum
 {
@@ -1103,7 +1103,7 @@ public enum V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicy
 {
@@ -1127,7 +1127,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeight
 }
 
 /// <summary>Selector for a GatewayTarget in bedrockagentcore to populate targetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelector
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeight
     public V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplitTargetNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRouteTrafficSplit
 {
@@ -1181,7 +1181,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeight
 }
 
 /// <summary>Distribute requests across two named targets by weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRoute
 {
@@ -1191,7 +1191,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeight
 }
 
 /// <summary>Route requests to a gateway target when the rule&apos;s conditions match. See route_to_target below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTarget
 {
@@ -1204,7 +1204,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderActionRouteToTarget
     public V1beta1GatewayRuleSpecInitProviderActionRouteToTargetWeightedRoute? WeightedRoute { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderAction
 {
@@ -1218,7 +1218,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderAction
 }
 
 /// <summary>Match when the request path matches any of the supplied glob patterns (e.g. /api/*).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPaths
 {
@@ -1228,7 +1228,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPaths
 }
 
 /// <summary>Match an IAM user, role, or assumed-role ARN. Exactly one iam_principal block is required per entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPrincipalsAnyOfIamPrincipal
 {
@@ -1241,7 +1241,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPrincipalsA
     public string? Operator { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPrincipalsAnyOf
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPrincipalsA
 }
 
 /// <summary>Match when the caller&apos;s IAM identity matches any of the supplied principal entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPrincipals
 {
@@ -1260,7 +1260,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderConditionMatchPrincipals
     public IList<V1beta1GatewayRuleSpecInitProviderConditionMatchPrincipalsAnyOf>? AnyOf { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderCondition
 {
@@ -1279,7 +1279,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolicyResolutionEnum
 {
@@ -1295,7 +1295,7 @@ public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolicyResolveEnum
 {
@@ -1306,7 +1306,7 @@ public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolicy
 {
@@ -1330,7 +1330,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRefPolic
 }
 
 /// <summary>Reference to a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRef
 {
@@ -1349,7 +1349,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelectorPolicyResolutionEnum
 {
@@ -1365,7 +1365,7 @@ public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelectorPolicyResolveEnum
 {
@@ -1376,7 +1376,7 @@ public enum V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelectorPolicy
 {
@@ -1400,7 +1400,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelector
 }
 
 /// <summary>Selector for a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelector
 {
@@ -1432,7 +1432,7 @@ public partial class V1beta1GatewayRuleSpecInitProviderGatewayIdentifierSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecInitProvider
 {
@@ -1469,7 +1469,7 @@ public partial class V1beta1GatewayRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1GatewayRuleSpecManagementPoliciesEnum
 {
@@ -1493,7 +1493,7 @@ public enum V1beta1GatewayRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1509,7 +1509,7 @@ public enum V1beta1GatewayRuleSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1GatewayRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1520,7 +1520,7 @@ public enum V1beta1GatewayRuleSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecProviderConfigRefPolicy
 {
@@ -1548,7 +1548,7 @@ public partial class V1beta1GatewayRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecProviderConfigRef
 {
@@ -1567,7 +1567,7 @@ public partial class V1beta1GatewayRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpecWriteConnectionSecretToRef
 {
@@ -1581,7 +1581,7 @@ public partial class V1beta1GatewayRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GatewayRuleSpec defines the desired state of GatewayRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleSpec
 {
@@ -1649,7 +1649,7 @@ public partial class V1beta1GatewayRuleSpec
 }
 
 /// <summary>Statically override the configuration bundle used for the matched request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundleStaticOverride
 {
@@ -1663,7 +1663,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundle
 }
 
 /// <summary>Apply a configuration bundle when the rule&apos;s conditions match. See configuration_bundle below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundleWeightedOverrideTrafficSplitConfigurationBundle
 {
@@ -1676,7 +1676,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundle
     public string? BundleVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundleWeightedOverrideTrafficSplit
 {
@@ -1702,7 +1702,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundle
 }
 
 /// <summary>Distribute the request across two configuration bundle versions by weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundleWeightedOverride
 {
@@ -1712,7 +1712,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundle
 }
 
 /// <summary>Apply a configuration bundle when the rule&apos;s conditions match. See configuration_bundle below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundle
 {
@@ -1726,7 +1726,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionConfigurationBundle
 }
 
 /// <summary>Route all matching requests to a single named gateway target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTargetStaticRoute
 {
@@ -1735,7 +1735,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTargetStatic
     public string? TargetName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTargetWeightedRouteTrafficSplit
 {
@@ -1761,7 +1761,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTargetWeight
 }
 
 /// <summary>Distribute requests across two named targets by weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTargetWeightedRoute
 {
@@ -1771,7 +1771,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTargetWeight
 }
 
 /// <summary>Route requests to a gateway target when the rule&apos;s conditions match. See route_to_target below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTarget
 {
@@ -1784,7 +1784,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderActionRouteToTarget
     public V1beta1GatewayRuleStatusAtProviderActionRouteToTargetWeightedRoute? WeightedRoute { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderAction
 {
@@ -1798,7 +1798,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderAction
 }
 
 /// <summary>Match when the request path matches any of the supplied glob patterns (e.g. /api/*).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPaths
 {
@@ -1808,7 +1808,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPaths
 }
 
 /// <summary>Match an IAM user, role, or assumed-role ARN. Exactly one iam_principal block is required per entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipalsAnyOfIamPrincipal
 {
@@ -1821,7 +1821,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipalsA
     public string? Operator { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipalsAnyOf
 {
@@ -1831,7 +1831,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipalsA
 }
 
 /// <summary>Match when the caller&apos;s IAM identity matches any of the supplied principal entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipals
 {
@@ -1840,7 +1840,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipals
     public IList<V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipalsAnyOf>? AnyOf { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderCondition
 {
@@ -1853,7 +1853,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderCondition
     public V1beta1GatewayRuleStatusAtProviderConditionMatchPrincipals? MatchPrincipals { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProviderSystem
 {
@@ -1862,7 +1862,7 @@ public partial class V1beta1GatewayRuleStatusAtProviderSystem
     public string? ManagedBy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusAtProvider
 {
@@ -1910,7 +1910,7 @@ public partial class V1beta1GatewayRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatusConditions
 {
@@ -1953,7 +1953,7 @@ public partial class V1beta1GatewayRuleStatusConditions
 }
 
 /// <summary>GatewayRuleStatus defines the observed state of GatewayRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRuleStatus
 {
@@ -1983,7 +1983,7 @@ public partial class V1beta1GatewayRuleStatus
 }
 
 /// <summary>GatewayRule is the Schema for the GatewayRules API. Manages an AWS Bedrock AgentCore Gateway Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GatewayRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GatewayRuleSpec>, IStatus<V1beta1GatewayRuleStatus?>

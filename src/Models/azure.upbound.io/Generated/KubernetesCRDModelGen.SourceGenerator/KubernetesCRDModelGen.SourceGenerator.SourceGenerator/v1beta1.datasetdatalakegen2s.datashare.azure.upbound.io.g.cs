@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datashare.azure.upbound.io;
 /// <summary>DataSetDataLakeGen2 is the Schema for the DataSetDataLakeGen2s API. Manages a Data Share Data Lake Gen2 Dataset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetDataLakeGen2List : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataSetDataLakeGen2>
@@ -46,7 +46,7 @@ public partial class V1beta1DataSetDataLakeGen2List : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecDeletionPolicyEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1DataSetDataLakeGen2SpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRefP
 }
 
 /// <summary>Reference to a DataLakeGen2FileSystem in storage to populate fileSystemName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSele
 }
 
 /// <summary>Selector for a DataLakeGen2FileSystem in storage to populate fileSystemName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderFileSystemNameSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdRefPolicy
 }
 
 /// <summary>Reference to a DataShare in datashare to populate shareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelectorPol
 }
 
 /// <summary>Selector for a DataShare in datashare to populate shareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelector
 {
@@ -356,7 +356,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderShareIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -372,7 +372,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -383,7 +383,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRefPolicy
 {
@@ -407,7 +407,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRe
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSe
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelector
 {
@@ -497,7 +497,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSe
     public V1beta1DataSetDataLakeGen2SpecForProviderStorageAccountIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecForProvider
 {
@@ -552,7 +552,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRef
 }
 
 /// <summary>Reference to a DataLakeGen2FileSystem in storage to populate fileSystemName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRef
 {
@@ -622,7 +622,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelectorPolicyResolutionEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelectorPolicyResolveEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelectorPolicy
 {
@@ -673,7 +673,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSel
 }
 
 /// <summary>Selector for a DataLakeGen2FileSystem in storage to populate fileSystemName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSelector
 {
@@ -699,7 +699,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderFileSystemNameSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -715,7 +715,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -726,7 +726,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRefPolicy
 {
@@ -750,7 +750,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdR
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdRef
 {
@@ -769,7 +769,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -785,7 +785,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -796,7 +796,7 @@ public enum V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelectorPolicy
 {
@@ -820,7 +820,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdS
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdSelector
 {
@@ -852,7 +852,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProviderStorageAccountIdS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecInitProvider
 {
@@ -893,7 +893,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecManagementPoliciesEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecManagementPoliciesEnum
 {
@@ -917,7 +917,7 @@ public enum V1beta1DataSetDataLakeGen2SpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicyResolutionEnum
 {
@@ -933,7 +933,7 @@ public enum V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicyResolveEnum
 {
@@ -944,7 +944,7 @@ public enum V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicy
 {
@@ -972,7 +972,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecProviderConfigRef
 {
@@ -991,7 +991,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2SpecWriteConnectionSecretToRef
 {
@@ -1005,7 +1005,7 @@ public partial class V1beta1DataSetDataLakeGen2SpecWriteConnectionSecretToRef
 }
 
 /// <summary>DataSetDataLakeGen2Spec defines the desired state of DataSetDataLakeGen2</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2Spec
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1DataSetDataLakeGen2Spec
     public V1beta1DataSetDataLakeGen2SpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2StatusAtProvider
 {
@@ -1106,7 +1106,7 @@ public partial class V1beta1DataSetDataLakeGen2StatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2StatusConditions
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta1DataSetDataLakeGen2StatusConditions
 }
 
 /// <summary>DataSetDataLakeGen2Status defines the observed state of DataSetDataLakeGen2.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDataLakeGen2Status
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta1DataSetDataLakeGen2Status
 }
 
 /// <summary>DataSetDataLakeGen2 is the Schema for the DataSetDataLakeGen2s API. Manages a Data Share Data Lake Gen2 Dataset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetDataLakeGen2 : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataSetDataLakeGen2Spec>, IStatus<V1beta1DataSetDataLakeGen2Status?>

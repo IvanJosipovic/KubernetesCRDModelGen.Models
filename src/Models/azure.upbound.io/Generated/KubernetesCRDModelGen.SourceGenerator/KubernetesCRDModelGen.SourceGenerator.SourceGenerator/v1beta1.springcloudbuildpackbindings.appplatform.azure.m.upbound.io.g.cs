@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.m.upbound.io;
 /// <summary>SpringCloudBuildPackBinding is the Schema for the SpringCloudBuildPackBindings API. Manages a Spring Cloud Build Pack Binding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudBuildPackBindingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudBuildPackBinding>
@@ -38,7 +38,7 @@ public partial class V1beta1SpringCloudBuildPackBindingList : IKubernetesObject<
 }
 
 /// <summary>A launch block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderLaunch
 {
@@ -57,7 +57,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderLaunch
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolutionEnum
 {
@@ -73,7 +73,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolveEnum
 {
@@ -84,7 +84,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicy
 {
@@ -108,7 +108,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
 }
 
 /// <summary>Reference to a SpringCloudBuilder in appplatform to populate springCloudBuilderId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
 }
 
 /// <summary>Selector for a SpringCloudBuilder in appplatform to populate springCloudBuilderId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelector
 {
@@ -206,7 +206,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
     public V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProvider
 {
@@ -232,7 +232,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProvider
 }
 
 /// <summary>A launch block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecInitProviderLaunch
 {
@@ -257,7 +257,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecInitProviderLaunch
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecInitProvider
 {
@@ -274,7 +274,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecManagementPoliciesEnum>))]
 public enum V1beta1SpringCloudBuildPackBindingSpecManagementPoliciesEnum
 {
@@ -297,7 +297,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecProviderConfigRef
 {
@@ -316,7 +316,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpecWriteConnectionSecretToRef
 {
@@ -326,7 +326,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecWriteConnectionSecret
 }
 
 /// <summary>SpringCloudBuildPackBindingSpec defines the desired state of SpringCloudBuildPackBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingSpec
 {
@@ -378,7 +378,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpec
 }
 
 /// <summary>A launch block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingStatusAtProviderLaunch
 {
@@ -391,7 +391,7 @@ public partial class V1beta1SpringCloudBuildPackBindingStatusAtProviderLaunch
     public IDictionary<string, string>? Secrets { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingStatusAtProvider
 {
@@ -413,7 +413,7 @@ public partial class V1beta1SpringCloudBuildPackBindingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingStatusConditions
 {
@@ -456,7 +456,7 @@ public partial class V1beta1SpringCloudBuildPackBindingStatusConditions
 }
 
 /// <summary>SpringCloudBuildPackBindingStatus defines the observed state of SpringCloudBuildPackBinding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudBuildPackBindingStatus
 {
@@ -486,7 +486,7 @@ public partial class V1beta1SpringCloudBuildPackBindingStatus
 }
 
 /// <summary>SpringCloudBuildPackBinding is the Schema for the SpringCloudBuildPackBindings API. Manages a Spring Cloud Build Pack Binding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudBuildPackBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudBuildPackBindingSpec>, IStatus<V1beta1SpringCloudBuildPackBindingStatus?>

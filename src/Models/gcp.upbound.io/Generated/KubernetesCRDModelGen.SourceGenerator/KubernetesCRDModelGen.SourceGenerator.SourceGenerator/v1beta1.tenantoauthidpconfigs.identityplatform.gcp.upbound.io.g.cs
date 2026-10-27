@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.identityplatform.gcp.upbound.io;
 /// <summary>TenantOAuthIdPConfig is the Schema for the TenantOAuthIdPConfigs API. OIDC IdP configuration for a Identity Toolkit project within a tenant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TenantOAuthIdPConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TenantOAuthIdPConfig>
@@ -46,7 +46,7 @@ public partial class V1beta1TenantOAuthIdPConfigList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecDeletionPolicyEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecDeletionPolicyEnum
 }
 
 /// <summary>The client id of an OAuth client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecForProviderClientIdSecretRef
 {
@@ -75,7 +75,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecForProviderClientIdSecretRef
 }
 
 /// <summary>The client secret of the OAuth client, to enable OIDC code flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecForProviderClientSecretSecretRef
 {
@@ -98,7 +98,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecForProviderClientSecretSecre
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicyResolutionEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicyResolutionEnum
 {
@@ -114,7 +114,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicyResolveEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicyResolveEnum
 {
@@ -125,7 +125,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicy
 {
@@ -149,7 +149,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantRefPolicy
 }
 
 /// <summary>Reference to a Tenant in identityplatform to populate tenant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantRef
 {
@@ -168,7 +168,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicyResolutionEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicyResolutionEnum
 {
@@ -184,7 +184,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicyResolveEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicyResolveEnum
 {
@@ -195,7 +195,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicy
 {
@@ -219,7 +219,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPol
 }
 
 /// <summary>Selector for a Tenant in identityplatform to populate tenant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelector
 {
@@ -239,7 +239,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelector
     public V1beta1TenantOAuthIdPConfigSpecForProviderTenantSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecForProvider
 {
@@ -288,7 +288,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecForProvider
 }
 
 /// <summary>The client id of an OAuth client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderClientIdSecretRef
 {
@@ -306,7 +306,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderClientIdSecretRe
 }
 
 /// <summary>The client secret of the OAuth client, to enable OIDC code flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderClientSecretSecretRef
 {
@@ -329,7 +329,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderClientSecretSecr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicyResolutionEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicyResolutionEnum
 {
@@ -345,7 +345,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicyResolveEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicyResolveEnum
 {
@@ -356,7 +356,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicy
 {
@@ -380,7 +380,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRefPolicy
 }
 
 /// <summary>Reference to a Tenant in identityplatform to populate tenant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRef
 {
@@ -399,7 +399,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPolicyResolutionEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPolicyResolutionEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPolicyResolveEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPolicyResolveEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPolicy
 {
@@ -450,7 +450,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelectorPo
 }
 
 /// <summary>Selector for a Tenant in identityplatform to populate tenant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelector
 {
@@ -482,7 +482,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecInitProviderTenantSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecInitProvider
 {
@@ -534,7 +534,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecManagementPoliciesEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -574,7 +574,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -585,7 +585,7 @@ public enum V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicy
 {
@@ -613,7 +613,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecProviderConfigRef
 {
@@ -632,7 +632,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpecWriteConnectionSecretToRef
 {
@@ -646,7 +646,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TenantOAuthIdPConfigSpec defines the desired state of TenantOAuthIdPConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigSpec
 {
@@ -713,7 +713,7 @@ public partial class V1beta1TenantOAuthIdPConfigSpec
     public V1beta1TenantOAuthIdPConfigSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigStatusAtProvider
 {
@@ -757,7 +757,7 @@ public partial class V1beta1TenantOAuthIdPConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigStatusConditions
 {
@@ -800,7 +800,7 @@ public partial class V1beta1TenantOAuthIdPConfigStatusConditions
 }
 
 /// <summary>TenantOAuthIdPConfigStatus defines the observed state of TenantOAuthIdPConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TenantOAuthIdPConfigStatus
 {
@@ -830,7 +830,7 @@ public partial class V1beta1TenantOAuthIdPConfigStatus
 }
 
 /// <summary>TenantOAuthIdPConfig is the Schema for the TenantOAuthIdPConfigs API. OIDC IdP configuration for a Identity Toolkit project within a tenant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TenantOAuthIdPConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TenantOAuthIdPConfigSpec>, IStatus<V1beta1TenantOAuthIdPConfigStatus?>

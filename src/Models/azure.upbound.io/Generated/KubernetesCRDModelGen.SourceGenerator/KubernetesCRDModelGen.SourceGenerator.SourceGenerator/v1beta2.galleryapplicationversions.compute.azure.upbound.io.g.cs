@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
 /// <summary>GalleryApplicationVersion is the Schema for the GalleryApplicationVersions API. Manages a Gallery Application Version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GalleryApplicationVersionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2GalleryApplicationVersion>
@@ -46,7 +46,7 @@ public partial class V1beta2GalleryApplicationVersionList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecDeletionPolicyEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2GalleryApplicationVersionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryAppli
 }
 
 /// <summary>Reference to a GalleryApplication in compute to populate galleryApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryAppli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryAppli
 }
 
 /// <summary>Selector for a GalleryApplication in compute to populate galleryApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderGalleryAppli
 }
 
 /// <summary>A manage_action block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderManageAction
 {
@@ -227,7 +227,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderManageAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolutionEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolveEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicy
 {
@@ -278,7 +278,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaL
 }
 
 /// <summary>Reference to a Blob in storage to populate mediaLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkRef
 {
@@ -297,7 +297,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolutionEnum
 {
@@ -313,7 +313,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolveEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicy
 {
@@ -348,7 +348,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaL
 }
 
 /// <summary>Selector for a Blob in storage to populate mediaLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaLinkSelector
 {
@@ -369,7 +369,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderSourceMediaL
 }
 
 /// <summary>A source block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderSource
 {
@@ -396,7 +396,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderSource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolutionEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolveEnum
 {
@@ -423,7 +423,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicy
 {
@@ -447,7 +447,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegion
 }
 
 /// <summary>Reference to a GalleryApplication in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameRef
 {
@@ -466,7 +466,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegion
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolutionEnum
 {
@@ -482,7 +482,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolveEnum
 {
@@ -493,7 +493,7 @@ public enum V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicy
 {
@@ -517,7 +517,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegion
 }
 
 /// <summary>Selector for a GalleryApplication in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelector
 {
@@ -537,7 +537,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegion
     public V1beta2GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegion
 {
@@ -566,7 +566,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProviderTargetRegion
     public string? StorageAccountType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecForProvider
 {
@@ -633,7 +633,7 @@ public partial class V1beta2GalleryApplicationVersionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolutionEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolveEnum
 {
@@ -660,7 +660,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicy
 {
@@ -684,7 +684,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryAppl
 }
 
 /// <summary>Reference to a GalleryApplication in compute to populate galleryApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRef
 {
@@ -703,7 +703,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryAppl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolutionEnum
 {
@@ -719,7 +719,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolveEnum
 {
@@ -730,7 +730,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicy
 {
@@ -754,7 +754,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryAppl
 }
 
 /// <summary>Selector for a GalleryApplication in compute to populate galleryApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelector
 {
@@ -775,7 +775,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderGalleryAppl
 }
 
 /// <summary>A manage_action block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderManageAction
 {
@@ -798,7 +798,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderManageActio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolutionEnum
 {
@@ -814,7 +814,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolveEnum
 {
@@ -825,7 +825,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicy
 {
@@ -849,7 +849,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMedia
 }
 
 /// <summary>Reference to a Blob in storage to populate mediaLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkRef
 {
@@ -868,7 +868,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMedia
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolutionEnum
 {
@@ -884,7 +884,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolveEnum
 {
@@ -895,7 +895,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicy
 {
@@ -919,7 +919,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMedia
 }
 
 /// <summary>Selector for a Blob in storage to populate mediaLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelector
 {
@@ -940,7 +940,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderSourceMedia
 }
 
 /// <summary>A source block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderSource
 {
@@ -967,7 +967,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderSource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolutionEnum
 {
@@ -983,7 +983,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolveEnum
 {
@@ -994,7 +994,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicy
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegio
 }
 
 /// <summary>Reference to a GalleryApplication in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameRef
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolutionEnum
 {
@@ -1053,7 +1053,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolveEnum
 {
@@ -1064,7 +1064,7 @@ public enum V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicy
 {
@@ -1088,7 +1088,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegio
 }
 
 /// <summary>Selector for a GalleryApplication in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSelector
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegio
     public V1beta2GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegion
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProviderTargetRegio
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecInitProvider
 {
@@ -1214,7 +1214,7 @@ public partial class V1beta2GalleryApplicationVersionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecManagementPoliciesEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecManagementPoliciesEnum
 {
@@ -1238,7 +1238,7 @@ public enum V1beta2GalleryApplicationVersionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1254,7 +1254,7 @@ public enum V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1265,7 +1265,7 @@ public enum V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicy
 {
@@ -1293,7 +1293,7 @@ public partial class V1beta2GalleryApplicationVersionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecProviderConfigRef
 {
@@ -1312,7 +1312,7 @@ public partial class V1beta2GalleryApplicationVersionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpecWriteConnectionSecretToRef
 {
@@ -1326,7 +1326,7 @@ public partial class V1beta2GalleryApplicationVersionSpecWriteConnectionSecretTo
 }
 
 /// <summary>GalleryApplicationVersionSpec defines the desired state of GalleryApplicationVersion</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionSpec
 {
@@ -1394,7 +1394,7 @@ public partial class V1beta2GalleryApplicationVersionSpec
 }
 
 /// <summary>A manage_action block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionStatusAtProviderManageAction
 {
@@ -1412,7 +1412,7 @@ public partial class V1beta2GalleryApplicationVersionStatusAtProviderManageActio
 }
 
 /// <summary>A source block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionStatusAtProviderSource
 {
@@ -1425,7 +1425,7 @@ public partial class V1beta2GalleryApplicationVersionStatusAtProviderSource
     public string? MediaLink { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionStatusAtProviderTargetRegion
 {
@@ -1446,7 +1446,7 @@ public partial class V1beta2GalleryApplicationVersionStatusAtProviderTargetRegio
     public string? StorageAccountType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionStatusAtProvider
 {
@@ -1504,7 +1504,7 @@ public partial class V1beta2GalleryApplicationVersionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionStatusConditions
 {
@@ -1547,7 +1547,7 @@ public partial class V1beta2GalleryApplicationVersionStatusConditions
 }
 
 /// <summary>GalleryApplicationVersionStatus defines the observed state of GalleryApplicationVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GalleryApplicationVersionStatus
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta2GalleryApplicationVersionStatus
 }
 
 /// <summary>GalleryApplicationVersion is the Schema for the GalleryApplicationVersions API. Manages a Gallery Application Version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GalleryApplicationVersion : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2GalleryApplicationVersionSpec>, IStatus<V1beta2GalleryApplicationVersionStatus?>

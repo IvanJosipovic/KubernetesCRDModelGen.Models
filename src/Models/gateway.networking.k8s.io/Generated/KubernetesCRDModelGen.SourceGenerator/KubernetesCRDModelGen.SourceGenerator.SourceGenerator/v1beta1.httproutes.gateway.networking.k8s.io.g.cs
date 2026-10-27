@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.gateway.networking.k8s.io;
 /// used to specify additional processing steps. Backends specify where matching
 /// requests should be routed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HTTPRouteList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HTTPRoute>
@@ -56,7 +56,7 @@ public partial class V1beta1HTTPRouteList : IKubernetesObject<V1ListMeta>, IItem
 /// The API object must be valid in the cluster; the Group and Kind must
 /// be registered in the cluster for this reference to be valid.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecParentRefs
 {
@@ -166,7 +166,7 @@ public partial class V1beta1HTTPRouteSpecParentRefs
     public string? SectionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesBackendRefsFiltersCorsAllowMethodsEnum>))]
 public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersCorsAllowMethodsEnum
 {
@@ -198,7 +198,7 @@ public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersCorsAllowMethodsEnum
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersCors
 {
@@ -439,7 +439,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersCors
 /// 
 /// Support: Implementation-specific
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersExtensionRef
 {
@@ -460,7 +460,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersExtensionRef
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestHeaderModifierAdd
 {
@@ -483,7 +483,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestHeaderMod
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestHeaderModifierSet
 {
@@ -511,7 +511,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestHeaderMod
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestHeaderModifier
 {
@@ -608,7 +608,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestHeaderMod
 /// implementation to supply the TLS details to be used to connect to that
 /// backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestMirrorBackendRef
 {
@@ -674,7 +674,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestMirrorBac
 /// Only one of Fraction or Percent may be specified. If neither field
 /// is specified, 100% of requests will be mirrored.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestMirrorFraction
 {
@@ -696,7 +696,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestMirrorFra
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestMirror
 {
@@ -765,7 +765,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestMirror
 /// Accepted Condition for the Route to `status: False`, with a
 /// Reason of `UnsupportedValue`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectPathTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectPathTypeEnum
 {
@@ -782,7 +782,7 @@ public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectPathTypeEn
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectPath
 {
@@ -845,7 +845,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectP
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectSchemeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectSchemeEnum
 {
@@ -861,7 +861,7 @@ public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirectSchemeEnum
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirect
 {
@@ -948,7 +948,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirect
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersResponseHeaderModifierAdd
 {
@@ -971,7 +971,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersResponseHeaderMo
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersResponseHeaderModifierSet
 {
@@ -999,7 +999,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersResponseHeaderMo
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersResponseHeaderModifier
 {
@@ -1101,7 +1101,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersResponseHeaderMo
 /// Accepted Condition for the Route to `status: False`, with a
 /// Reason of `UnsupportedValue`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesBackendRefsFiltersTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersTypeEnum
 {
@@ -1132,7 +1132,7 @@ public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersTypeEnum
 /// Accepted Condition for the Route to `status: False`, with a
 /// Reason of `UnsupportedValue`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesBackendRefsFiltersUrlRewritePathTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersUrlRewritePathTypeEnum
 {
@@ -1147,7 +1147,7 @@ public enum V1beta1HTTPRouteSpecRulesBackendRefsFiltersUrlRewritePathTypeEnum
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersUrlRewritePath
 {
@@ -1199,7 +1199,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersUrlRewritePath
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersUrlRewrite
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersUrlRewrite
 /// authentication strategies, rate-limiting, and traffic shaping. API
 /// guarantee/conformance is defined based on the type of the filter.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefsFilters
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFilters
 /// namespace&apos;s owner to accept the reference. See the ReferenceGrant
 /// documentation for details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesBackendRefs
 {
@@ -1437,7 +1437,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefs
     public int? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesFiltersCorsAllowMethodsEnum>))]
 public enum V1beta1HTTPRouteSpecRulesFiltersCorsAllowMethodsEnum
 {
@@ -1469,7 +1469,7 @@ public enum V1beta1HTTPRouteSpecRulesFiltersCorsAllowMethodsEnum
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersCors
 {
@@ -1710,7 +1710,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersCors
 /// 
 /// Support: Implementation-specific
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersExtensionRef
 {
@@ -1731,7 +1731,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersExtensionRef
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestHeaderModifierAdd
 {
@@ -1754,7 +1754,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestHeaderModifierAdd
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestHeaderModifierSet
 {
@@ -1782,7 +1782,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestHeaderModifierSet
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestHeaderModifier
 {
@@ -1879,7 +1879,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestHeaderModifier
 /// implementation to supply the TLS details to be used to connect to that
 /// backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestMirrorBackendRef
 {
@@ -1945,7 +1945,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestMirrorBackendRef
 /// Only one of Fraction or Percent may be specified. If neither field
 /// is specified, 100% of requests will be mirrored.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestMirrorFraction
 {
@@ -1967,7 +1967,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestMirrorFraction
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestMirror
 {
@@ -2036,7 +2036,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestMirror
 /// Accepted Condition for the Route to `status: False`, with a
 /// Reason of `UnsupportedValue`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesFiltersRequestRedirectPathTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesFiltersRequestRedirectPathTypeEnum
 {
@@ -2053,7 +2053,7 @@ public enum V1beta1HTTPRouteSpecRulesFiltersRequestRedirectPathTypeEnum
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestRedirectPath
 {
@@ -2116,7 +2116,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestRedirectPath
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesFiltersRequestRedirectSchemeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesFiltersRequestRedirectSchemeEnum
 {
@@ -2132,7 +2132,7 @@ public enum V1beta1HTTPRouteSpecRulesFiltersRequestRedirectSchemeEnum
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersRequestRedirect
 {
@@ -2219,7 +2219,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestRedirect
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersResponseHeaderModifierAdd
 {
@@ -2242,7 +2242,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersResponseHeaderModifierAdd
 }
 
 /// <summary>HTTPHeader represents an HTTP Header name and value as defined by RFC 7230.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersResponseHeaderModifierSet
 {
@@ -2270,7 +2270,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersResponseHeaderModifierSet
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersResponseHeaderModifier
 {
@@ -2372,7 +2372,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersResponseHeaderModifier
 /// Accepted Condition for the Route to `status: False`, with a
 /// Reason of `UnsupportedValue`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesFiltersTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesFiltersTypeEnum
 {
@@ -2403,7 +2403,7 @@ public enum V1beta1HTTPRouteSpecRulesFiltersTypeEnum
 /// Accepted Condition for the Route to `status: False`, with a
 /// Reason of `UnsupportedValue`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesFiltersUrlRewritePathTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesFiltersUrlRewritePathTypeEnum
 {
@@ -2418,7 +2418,7 @@ public enum V1beta1HTTPRouteSpecRulesFiltersUrlRewritePathTypeEnum
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersUrlRewritePath
 {
@@ -2470,7 +2470,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersUrlRewritePath
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFiltersUrlRewrite
 {
@@ -2500,7 +2500,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersUrlRewrite
 /// authentication strategies, rate-limiting, and traffic shaping. API
 /// guarantee/conformance is defined based on the type of the filter.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesFilters
 {
@@ -2625,7 +2625,7 @@ public partial class V1beta1HTTPRouteSpecRulesFilters
 /// of regular expressions. Please read the implementation&apos;s documentation to
 /// determine the supported dialect.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesMatchesHeadersTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesMatchesHeadersTypeEnum
 {
@@ -2639,7 +2639,7 @@ public enum V1beta1HTTPRouteSpecRulesMatchesHeadersTypeEnum
 /// HTTPHeaderMatch describes how to select a HTTP route by matching HTTP request
 /// headers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesMatchesHeaders
 {
@@ -2689,7 +2689,7 @@ public partial class V1beta1HTTPRouteSpecRulesMatchesHeaders
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesMatchesMethodEnum>))]
 public enum V1beta1HTTPRouteSpecRulesMatchesMethodEnum
 {
@@ -2720,7 +2720,7 @@ public enum V1beta1HTTPRouteSpecRulesMatchesMethodEnum
 /// 
 /// Support: Implementation-specific (RegularExpression)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesMatchesPathTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesMatchesPathTypeEnum
 {
@@ -2736,7 +2736,7 @@ public enum V1beta1HTTPRouteSpecRulesMatchesPathTypeEnum
 /// Path specifies a HTTP request path matcher. If this field is not
 /// specified, a default prefix match on the &quot;/&quot; path is provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesMatchesPath
 {
@@ -2767,7 +2767,7 @@ public partial class V1beta1HTTPRouteSpecRulesMatchesPath
 /// dialects of regular expressions. Please read the implementation&apos;s
 /// documentation to determine the supported dialect.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteSpecRulesMatchesQueryParamsTypeEnum>))]
 public enum V1beta1HTTPRouteSpecRulesMatchesQueryParamsTypeEnum
 {
@@ -2781,7 +2781,7 @@ public enum V1beta1HTTPRouteSpecRulesMatchesQueryParamsTypeEnum
 /// HTTPQueryParamMatch describes how to select a HTTP route by matching HTTP
 /// query parameters.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesMatchesQueryParams
 {
@@ -2846,7 +2846,7 @@ public partial class V1beta1HTTPRouteSpecRulesMatchesQueryParams
 /// 
 /// ```
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesMatches
 {
@@ -2891,7 +2891,7 @@ public partial class V1beta1HTTPRouteSpecRulesMatches
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRulesTimeouts
 {
@@ -2952,7 +2952,7 @@ public partial class V1beta1HTTPRouteSpecRulesTimeouts
 /// conditions (matches), processing it (filters), and forwarding the request to
 /// an API object (backendRefs).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpecRules
 {
@@ -3116,7 +3116,7 @@ public partial class V1beta1HTTPRouteSpecRules
 }
 
 /// <summary>Spec defines the desired state of HTTPRoute.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteSpec
 {
@@ -3239,7 +3239,7 @@ public partial class V1beta1HTTPRouteSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HTTPRouteStatusParentsConditionsStatusEnum>))]
 public enum V1beta1HTTPRouteStatusParentsConditionsStatusEnum
 {
@@ -3252,7 +3252,7 @@ public enum V1beta1HTTPRouteStatusParentsConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteStatusParentsConditions
 {
@@ -3301,7 +3301,7 @@ public partial class V1beta1HTTPRouteStatusParentsConditions
 /// ParentRef corresponds with a ParentRef in the spec that this
 /// RouteParentStatus struct describes the status of.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteStatusParentsParentRef
 {
@@ -3415,7 +3415,7 @@ public partial class V1beta1HTTPRouteStatusParentsParentRef
 /// RouteParentStatus describes the status of a route with respect to an
 /// associated Parent.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteStatusParents
 {
@@ -3470,7 +3470,7 @@ public partial class V1beta1HTTPRouteStatusParents
 }
 
 /// <summary>Status defines the current state of HTTPRoute.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HTTPRouteStatus
 {
@@ -3500,7 +3500,7 @@ public partial class V1beta1HTTPRouteStatus
 /// used to specify additional processing steps. Backends specify where matching
 /// requests should be routed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HTTPRoute : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HTTPRouteSpec>, IStatus<V1beta1HTTPRouteStatus?>

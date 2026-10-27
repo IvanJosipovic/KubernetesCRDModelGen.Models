@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
 /// <summary>ManagedDiskSASToken is the Schema for the ManagedDiskSASTokens API. Manages a Disk SAS Token.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedDiskSASTokenList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagedDiskSASToken>
@@ -46,7 +46,7 @@ public partial class V1beta1ManagedDiskSASTokenList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecDeletionPolicyEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1ManagedDiskSASTokenSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRefPo
 }
 
 /// <summary>Reference to a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelec
 }
 
 /// <summary>Selector for a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelec
     public V1beta1ManagedDiskSASTokenSpecForProviderManagedDiskIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecForProvider
 {
@@ -234,7 +234,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefPolicyResolutionEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefPolicyResolveEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefPolicy
 {
@@ -285,7 +285,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRefP
 }
 
 /// <summary>Reference to a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRef
 {
@@ -304,7 +304,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelectorPolicyResolutionEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelectorPolicyResolveEnum
 {
@@ -331,7 +331,7 @@ public enum V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelectorPolicy
 {
@@ -355,7 +355,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSele
 }
 
 /// <summary>Selector for a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSelector
 {
@@ -387,7 +387,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecInitProviderManagedDiskIdSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecInitProvider
 {
@@ -416,7 +416,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecManagementPoliciesEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta1ManagedDiskSASTokenSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicyResolveEnum
 {
@@ -467,7 +467,7 @@ public enum V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicy
 {
@@ -495,7 +495,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecProviderConfigRef
 {
@@ -514,7 +514,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpecWriteConnectionSecretToRef
 {
@@ -528,7 +528,7 @@ public partial class V1beta1ManagedDiskSASTokenSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ManagedDiskSASTokenSpec defines the desired state of ManagedDiskSASToken</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenSpec
 {
@@ -595,7 +595,7 @@ public partial class V1beta1ManagedDiskSASTokenSpec
     public V1beta1ManagedDiskSASTokenSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenStatusAtProvider
 {
@@ -617,7 +617,7 @@ public partial class V1beta1ManagedDiskSASTokenStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenStatusConditions
 {
@@ -660,7 +660,7 @@ public partial class V1beta1ManagedDiskSASTokenStatusConditions
 }
 
 /// <summary>ManagedDiskSASTokenStatus defines the observed state of ManagedDiskSASToken.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedDiskSASTokenStatus
 {
@@ -690,7 +690,7 @@ public partial class V1beta1ManagedDiskSASTokenStatus
 }
 
 /// <summary>ManagedDiskSASToken is the Schema for the ManagedDiskSASTokens API. Manages a Disk SAS Token.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedDiskSASToken : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagedDiskSASTokenSpec>, IStatus<V1beta1ManagedDiskSASTokenStatus?>

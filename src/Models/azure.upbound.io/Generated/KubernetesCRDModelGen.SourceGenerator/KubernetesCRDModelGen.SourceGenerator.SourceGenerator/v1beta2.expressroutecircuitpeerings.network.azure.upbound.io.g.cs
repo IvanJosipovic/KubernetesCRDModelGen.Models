@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>ExpressRouteCircuitPeering is the Schema for the ExpressRouteCircuitPeerings API. Manages an ExpressRoute Circuit Peering.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ExpressRouteCircuitPeeringList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ExpressRouteCircuitPeering>
@@ -46,7 +46,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringList : IKubernetesObject<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecDeletionPolicyEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolutionEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolveEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRout
 }
 
 /// <summary>Reference to a ExpressRouteCircuit in network to populate expressRouteCircuitName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRout
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRout
 }
 
 /// <summary>Selector for a ExpressRouteCircuit in network to populate expressRouteCircuitName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderExpressRout
 }
 
 /// <summary>A microsoft_peering block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderIpv6MicrosoftPeering
 {
@@ -226,7 +226,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderIpv6Microso
 }
 
 /// <summary>A ipv6 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderIpv6
 {
@@ -252,7 +252,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderIpv6
 }
 
 /// <summary>A microsoft_peering_config block as defined below. Required when peering_type is set to MicrosoftPeering and config for IPv4.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderMicrosoftPeeringConfig
 {
@@ -279,7 +279,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderMicrosoftPe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGro
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRef
 {
@@ -349,7 +349,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -365,7 +365,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -376,7 +376,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -400,7 +400,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGro
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelector
 {
@@ -421,7 +421,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderResourceGro
 }
 
 /// <summary>The shared key. Can be a maximum of 25 characters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderSharedKeySecretRef
 {
@@ -438,7 +438,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProviderSharedKeySe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecForProvider
 {
@@ -504,7 +504,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecForProvider
 }
 
 /// <summary>A microsoft_peering block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderIpv6MicrosoftPeering
 {
@@ -526,7 +526,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderIpv6Micros
 }
 
 /// <summary>A ipv6 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderIpv6
 {
@@ -552,7 +552,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderIpv6
 }
 
 /// <summary>A microsoft_peering_config block as defined below. Required when peering_type is set to MicrosoftPeering and config for IPv4.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderMicrosoftPeeringConfig
 {
@@ -574,7 +574,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderMicrosoftP
 }
 
 /// <summary>The shared key. Can be a maximum of 25 characters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderSharedKeySecretRef
 {
@@ -603,7 +603,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProviderSharedKeyS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProvider
 {
@@ -648,7 +648,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecManagementPoliciesEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecManagementPoliciesEnum
 {
@@ -672,7 +672,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -688,7 +688,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolveEnum
 {
@@ -699,7 +699,7 @@ public enum V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolicy
 {
@@ -727,7 +727,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRefPolic
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRef
 {
@@ -746,7 +746,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpecWriteConnectionSecretToRef
 {
@@ -760,7 +760,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpecWriteConnectionSecretT
 }
 
 /// <summary>ExpressRouteCircuitPeeringSpec defines the desired state of ExpressRouteCircuitPeering</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringSpec
 {
@@ -828,7 +828,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringSpec
 }
 
 /// <summary>A microsoft_peering block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProviderIpv6MicrosoftPeering
 {
@@ -850,7 +850,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProviderIpv6Micros
 }
 
 /// <summary>A ipv6 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProviderIpv6
 {
@@ -876,7 +876,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProviderIpv6
 }
 
 /// <summary>A microsoft_peering_config block as defined below. Required when peering_type is set to MicrosoftPeering and config for IPv4.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProviderMicrosoftPeeringConfig
 {
@@ -897,7 +897,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProviderMicrosoftP
     public string? RoutingRegistryName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProvider
 {
@@ -962,7 +962,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringStatusConditions
 {
@@ -1005,7 +1005,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringStatusConditions
 }
 
 /// <summary>ExpressRouteCircuitPeeringStatus defines the observed state of ExpressRouteCircuitPeering.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ExpressRouteCircuitPeeringStatus
 {
@@ -1035,7 +1035,7 @@ public partial class V1beta2ExpressRouteCircuitPeeringStatus
 }
 
 /// <summary>ExpressRouteCircuitPeering is the Schema for the ExpressRouteCircuitPeerings API. Manages an ExpressRoute Circuit Peering.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ExpressRouteCircuitPeering : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ExpressRouteCircuitPeeringSpec>, IStatus<V1beta2ExpressRouteCircuitPeeringStatus?>

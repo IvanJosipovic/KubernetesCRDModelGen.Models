@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.helm.toolkit.fluxcd.io;
 /// <summary>HelmRelease is the Schema for the helmreleases API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2HelmReleaseList : IKubernetesObject<V1ListMeta>, IItems<V2HelmRelease>
@@ -49,7 +49,7 @@ public partial class V2HelmReleaseList : IKubernetesObject<V1ListMeta>, IItems<V
 /// Use OCIRepository for charts hosted in OCI registries; use HelmChart for
 /// HelmRepository, GitRepository or Bucket sources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartKindEnum>))]
 public enum V2HelmReleaseSpecChartKindEnum
 {
@@ -60,7 +60,7 @@ public enum V2HelmReleaseSpecChartKindEnum
 }
 
 /// <summary>ObjectMeta holds the template for metadata like labels and annotations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartMetadata
 {
@@ -96,7 +96,7 @@ public partial class V2HelmReleaseSpecChartMetadata
 /// you are using a self-signed server certificate. The Secret must
 /// be of type `Opaque` or `kubernetes.io/tls`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecCertSecretRef
 {
@@ -111,7 +111,7 @@ public partial class V2HelmReleaseSpecChartSpecCertSecretRef
 /// When the operation is set to &apos;copy&apos;, the layer compressed content
 /// is persisted to storage as it is.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecLayerSelectorOperationEnum>))]
 public enum V2HelmReleaseSpecChartSpecLayerSelectorOperationEnum
 {
@@ -125,7 +125,7 @@ public enum V2HelmReleaseSpecChartSpecLayerSelectorOperationEnum
 /// LayerSelector specifies which layer should be extracted from the OCI artifact.
 /// When not specified, the first layer found in the artifact is selected.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecLayerSelector
 {
@@ -151,7 +151,7 @@ public partial class V2HelmReleaseSpecChartSpecLayerSelector
 /// The provider used for authentication, can be &apos;aws&apos;, &apos;azure&apos;, &apos;gcp&apos; or &apos;generic&apos;.
 /// When not specified, defaults to &apos;generic&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecProviderEnum>))]
 public enum V2HelmReleaseSpecChartSpecProviderEnum
 {
@@ -169,7 +169,7 @@ public enum V2HelmReleaseSpecChartSpecProviderEnum
 /// ProxySecretRef specifies the Secret containing the proxy configuration
 /// to use while communicating with the container registry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecProxySecretRef
 {
@@ -184,7 +184,7 @@ public partial class V2HelmReleaseSpecChartSpecProxySecretRef
 /// See the documentation of the values for an explanation on their behavior.
 /// Defaults to ChartVersion when omitted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecReconcileStrategyEnum>))]
 public enum V2HelmReleaseSpecChartSpecReconcileStrategyEnum
 {
@@ -198,7 +198,7 @@ public enum V2HelmReleaseSpecChartSpecReconcileStrategyEnum
 /// The OCI reference to pull and monitor for changes,
 /// defaults to the latest tag.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecRef
 {
@@ -230,7 +230,7 @@ public partial class V2HelmReleaseSpecChartSpecRef
 /// credentials to resolve image metadata.
 /// The secret must be of type kubernetes.io/dockerconfigjson.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecSecretRef
 {
@@ -240,7 +240,7 @@ public partial class V2HelmReleaseSpecChartSpecSecretRef
 }
 
 /// <summary>Kind of the referent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecSourceRefKindEnum>))]
 public enum V2HelmReleaseSpecChartSpecSourceRefKindEnum
 {
@@ -253,7 +253,7 @@ public enum V2HelmReleaseSpecChartSpecSourceRefKindEnum
 }
 
 /// <summary>The name and namespace of the v1.Source the chart is available at.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecSourceRef
 {
@@ -278,7 +278,7 @@ public partial class V2HelmReleaseSpecChartSpecSourceRef
 /// OIDCIdentityMatch specifies options for verifying the certificate identity,
 /// i.e. the issuer and the subject of the certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecVerifyMatchOIDCIdentity
 {
@@ -300,7 +300,7 @@ public partial class V2HelmReleaseSpecChartSpecVerifyMatchOIDCIdentity
 }
 
 /// <summary>Provider specifies the technology used to sign the OCI Artifact.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecVerifyProviderEnum>))]
 public enum V2HelmReleaseSpecChartSpecVerifyProviderEnum
 {
@@ -314,7 +314,7 @@ public enum V2HelmReleaseSpecChartSpecVerifyProviderEnum
 /// SecretRef specifies the Kubernetes Secret containing the
 /// trusted public keys.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecVerifySecretRef
 {
@@ -329,7 +329,7 @@ public partial class V2HelmReleaseSpecChartSpecVerifySecretRef
 /// self-hosted Sigstore infrastructure (custom Fulcio CA, self-hosted
 /// Rekor instance). The Secret must contain a key named &quot;trusted_root.json&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecVerifyTrustedRootSecretRef
 {
@@ -343,7 +343,7 @@ public partial class V2HelmReleaseSpecChartSpecVerifyTrustedRootSecretRef
 /// used to verify the signature and specifies which provider to use to check
 /// whether OCI image is authentic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecVerify
 {
@@ -378,7 +378,7 @@ public partial class V2HelmReleaseSpecChartSpecVerify
 }
 
 /// <summary>Spec holds the spec of the object generated for this HelmRelease.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpec
 {
@@ -533,7 +533,7 @@ public partial class V2HelmReleaseSpecChartSpec
 /// created for this HelmRelease. The Kind field determines whether a
 /// sourcev1.HelmChart or sourcev1.OCIRepository is created.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChart
 {
@@ -562,7 +562,7 @@ public partial class V2HelmReleaseSpecChart
 }
 
 /// <summary>Kind of the referent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartRefKindEnum>))]
 public enum V2HelmReleaseSpecChartRefKindEnum
 {
@@ -578,7 +578,7 @@ public enum V2HelmReleaseSpecChartRefKindEnum
 /// ChartRef holds a reference to a source controller resource containing the
 /// Helm chart artifact.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartRef
 {
@@ -607,7 +607,7 @@ public partial class V2HelmReleaseSpecChartRef
 /// applied to all resources. Any existing label or annotation will be
 /// overridden if its key matches a common one.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecCommonMetadata
 {
@@ -624,7 +624,7 @@ public partial class V2HelmReleaseSpecCommonMetadata
 /// DependencyReference contains enough information to locate the referenced Kubernetes resource object
 /// and optional CEL expression to assess its readiness.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecDependsOn
 {
@@ -656,7 +656,7 @@ public partial class V2HelmReleaseSpecDependsOn
 /// If Target is not set, the Paths will be ignored for all Kubernetes
 /// objects within the manifest of the Helm release.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecDriftDetectionIgnoreTarget
 {
@@ -714,7 +714,7 @@ public partial class V2HelmReleaseSpecDriftDetectionIgnoreTarget
 /// IgnoreRule defines a rule to selectively disregard specific changes during
 /// the drift detection process.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecDriftDetectionIgnore
 {
@@ -740,7 +740,7 @@ public partial class V2HelmReleaseSpecDriftDetectionIgnore
 /// and the manifest currently applied to the cluster.
 /// If not explicitly set, it defaults to DiffModeDisabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecDriftDetectionModeEnum>))]
 public enum V2HelmReleaseSpecDriftDetectionModeEnum
 {
@@ -757,7 +757,7 @@ public enum V2HelmReleaseSpecDriftDetectionModeEnum
 /// differences between the manifest in the Helm storage and the resources
 /// currently existing in the cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecDriftDetection
 {
@@ -778,7 +778,7 @@ public partial class V2HelmReleaseSpecDriftDetection
 }
 
 /// <summary>CustomHealthCheck defines the health check for custom resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecHealthCheckExprs
 {
@@ -830,7 +830,7 @@ public partial class V2HelmReleaseSpecHealthCheckExprs
 /// install actions, which is not (yet) natively supported by Helm.
 /// https://helm.sh/docs/chart_best_practices/custom_resource_definitions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecInstallCrdsEnum>))]
 public enum V2HelmReleaseSpecInstallCrdsEnum
 {
@@ -846,7 +846,7 @@ public enum V2HelmReleaseSpecInstallCrdsEnum
 /// Remediation holds the remediation configuration for when the Helm install
 /// action for the HelmRelease fails. The default is to not perform any action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecInstallRemediation
 {
@@ -875,7 +875,7 @@ public partial class V2HelmReleaseSpecInstallRemediation
 }
 
 /// <summary>Name of the install strategy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecInstallStrategyNameEnum>))]
 public enum V2HelmReleaseSpecInstallStrategyNameEnum
 {
@@ -890,7 +890,7 @@ public enum V2HelmReleaseSpecInstallStrategyNameEnum
 /// Defaults to &apos;RemediateOnFailure&apos;, or &apos;RetryOnFailure&apos; when the
 /// DefaultToRetryOnFailure feature gate is enabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecInstallStrategy
 {
@@ -908,7 +908,7 @@ public partial class V2HelmReleaseSpecInstallStrategy
 }
 
 /// <summary>Install holds the configuration for Helm install actions for this HelmRelease.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecInstall
 {
@@ -1058,7 +1058,7 @@ public partial class V2HelmReleaseSpecInstall
 /// 
 /// Mutually exclusive with SecretRef.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecKubeConfigConfigMapRef
 {
@@ -1077,7 +1077,7 @@ public partial class V2HelmReleaseSpecKubeConfigConfigMapRef
 /// binaries and credentials to the Pod that is responsible for reconciling
 /// Kubernetes resources. Supported only for the generic provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecKubeConfigSecretRef
 {
@@ -1098,7 +1098,7 @@ public partial class V2HelmReleaseSpecKubeConfigSecretRef
 /// If the --default-service-account flag is set, its value will be used as
 /// the default for HelmReleaseSpec.ServiceAccountName when it is empty.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecKubeConfig
 {
@@ -1157,7 +1157,7 @@ public partial class V2HelmReleaseSpecKubeConfig
 /// (hooks and templates sent in separate streams, Helm 4.2 opt-in).
 /// Defaults to &apos;combined&apos;, or &apos;nohooks&apos; when the UseHelm3Defaults feature gate is enabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecPostRenderStrategyEnum>))]
 public enum V2HelmReleaseSpecPostRenderStrategyEnum
 {
@@ -1170,7 +1170,7 @@ public enum V2HelmReleaseSpecPostRenderStrategyEnum
 }
 
 /// <summary>Image contains an image name, a new name, a new tag or digest, which will replace the original name and tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecPostRenderersKustomizeImages
 {
@@ -1195,7 +1195,7 @@ public partial class V2HelmReleaseSpecPostRenderersKustomizeImages
 }
 
 /// <summary>Target points to the resources that the patch document should be applied to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecPostRenderersKustomizePatchesTarget
 {
@@ -1253,7 +1253,7 @@ public partial class V2HelmReleaseSpecPostRenderersKustomizePatchesTarget
 /// Patch contains an inline StrategicMerge or JSON6902 patch, and the target the patch should
 /// be applied to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecPostRenderersKustomizePatches
 {
@@ -1270,7 +1270,7 @@ public partial class V2HelmReleaseSpecPostRenderersKustomizePatches
 }
 
 /// <summary>Kustomization to apply as PostRenderer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecPostRenderersKustomize
 {
@@ -1291,7 +1291,7 @@ public partial class V2HelmReleaseSpecPostRenderersKustomize
 }
 
 /// <summary>PostRenderer contains a Helm PostRenderer specification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecPostRenderers
 {
@@ -1306,7 +1306,7 @@ public partial class V2HelmReleaseSpecPostRenderers
 /// When &quot;auto&quot;, server-side apply usage will be based on the release&apos;s previous usage.
 /// Defaults to &quot;auto&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecRollbackServerSideApplyEnum>))]
 public enum V2HelmReleaseSpecRollbackServerSideApplyEnum
 {
@@ -1319,7 +1319,7 @@ public enum V2HelmReleaseSpecRollbackServerSideApplyEnum
 }
 
 /// <summary>Rollback holds the configuration for Helm rollback actions for this HelmRelease.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecRollback
 {
@@ -1390,7 +1390,7 @@ public partial class V2HelmReleaseSpecRollback
 }
 
 /// <summary>Filter holds the configuration for individual Helm test filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecTestFilters
 {
@@ -1404,7 +1404,7 @@ public partial class V2HelmReleaseSpecTestFilters
 }
 
 /// <summary>Test holds the configuration for Helm test actions for this HelmRelease.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecTest
 {
@@ -1439,7 +1439,7 @@ public partial class V2HelmReleaseSpecTest
 /// DeletionPropagation specifies the deletion propagation policy when
 /// a Helm uninstall is performed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecUninstallDeletionPropagationEnum>))]
 public enum V2HelmReleaseSpecUninstallDeletionPropagationEnum
 {
@@ -1452,7 +1452,7 @@ public enum V2HelmReleaseSpecUninstallDeletionPropagationEnum
 }
 
 /// <summary>Uninstall holds the configuration for Helm uninstall actions for this HelmRelease.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecUninstall
 {
@@ -1498,7 +1498,7 @@ public partial class V2HelmReleaseSpecUninstall
 /// 
 /// InPlaceUpdate: Update the Helm release in place.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecUpgradeChartNameChangeStrategyEnum>))]
 public enum V2HelmReleaseSpecUpgradeChartNameChangeStrategyEnum
 {
@@ -1525,7 +1525,7 @@ public enum V2HelmReleaseSpecUpgradeChartNameChangeStrategyEnum
 /// option users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm.
 /// https://helm.sh/docs/chart_best_practices/custom_resource_definitions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecUpgradeCrdsEnum>))]
 public enum V2HelmReleaseSpecUpgradeCrdsEnum
 {
@@ -1538,7 +1538,7 @@ public enum V2HelmReleaseSpecUpgradeCrdsEnum
 }
 
 /// <summary>Strategy to use for failure remediation. Defaults to &apos;rollback&apos;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecUpgradeRemediationStrategyEnum>))]
 public enum V2HelmReleaseSpecUpgradeRemediationStrategyEnum
 {
@@ -1552,7 +1552,7 @@ public enum V2HelmReleaseSpecUpgradeRemediationStrategyEnum
 /// Remediation holds the remediation configuration for when the Helm upgrade
 /// action for the HelmRelease fails. The default is to not perform any action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecUpgradeRemediation
 {
@@ -1590,7 +1590,7 @@ public partial class V2HelmReleaseSpecUpgradeRemediation
 /// When &quot;auto&quot;, server-side apply usage will be based on the release&apos;s previous usage.
 /// Defaults to &quot;auto&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecUpgradeServerSideApplyEnum>))]
 public enum V2HelmReleaseSpecUpgradeServerSideApplyEnum
 {
@@ -1603,7 +1603,7 @@ public enum V2HelmReleaseSpecUpgradeServerSideApplyEnum
 }
 
 /// <summary>Name of the upgrade strategy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecUpgradeStrategyNameEnum>))]
 public enum V2HelmReleaseSpecUpgradeStrategyNameEnum
 {
@@ -1618,7 +1618,7 @@ public enum V2HelmReleaseSpecUpgradeStrategyNameEnum
 /// Defaults to &apos;RemediateOnFailure&apos;, or &apos;RetryOnFailure&apos; when the
 /// DefaultToRetryOnFailure feature gate is enabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecUpgradeStrategy
 {
@@ -1636,7 +1636,7 @@ public partial class V2HelmReleaseSpecUpgradeStrategy
 }
 
 /// <summary>Upgrade holds the configuration for Helm upgrade actions for this HelmRelease.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecUpgrade
 {
@@ -1768,7 +1768,7 @@ public partial class V2HelmReleaseSpecUpgrade
 }
 
 /// <summary>Kind of the values referent, valid values are (&apos;Secret&apos;, &apos;ConfigMap&apos;).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecValuesFromKindEnum>))]
 public enum V2HelmReleaseSpecValuesFromKindEnum
 {
@@ -1782,7 +1782,7 @@ public enum V2HelmReleaseSpecValuesFromKindEnum
 /// ValuesReference contains a reference to a resource containing Helm values,
 /// and optionally the key they can be found at.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecValuesFrom
 {
@@ -1842,7 +1842,7 @@ public partial class V2HelmReleaseSpecValuesFrom
 /// Defaults to &apos;poller&apos;, or to &apos;legacy&apos; when UseHelm3Defaults feature
 /// gate is enabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecWaitStrategyNameEnum>))]
 public enum V2HelmReleaseSpecWaitStrategyNameEnum
 {
@@ -1856,7 +1856,7 @@ public enum V2HelmReleaseSpecWaitStrategyNameEnum
 /// WaitStrategy defines Helm&apos;s wait strategy for waiting for applied
 /// resources to become ready.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecWaitStrategy
 {
@@ -1873,7 +1873,7 @@ public partial class V2HelmReleaseSpecWaitStrategy
 }
 
 /// <summary>HelmReleaseSpec defines the desired state of a Helm release.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpec
 {
@@ -2063,7 +2063,7 @@ public partial class V2HelmReleaseSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseStatusConditionsStatusEnum>))]
 public enum V2HelmReleaseStatusConditionsStatusEnum
 {
@@ -2076,7 +2076,7 @@ public enum V2HelmReleaseStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseStatusConditions
 {
@@ -2125,7 +2125,7 @@ public partial class V2HelmReleaseStatusConditions
 /// TestHookStatus holds the status information for a test hook as observed
 /// to be run by the controller.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseStatusHistoryTestHooks
 {
@@ -2146,7 +2146,7 @@ public partial class V2HelmReleaseStatusHistoryTestHooks
 /// Snapshot captures a point-in-time copy of the status information for a Helm release,
 /// as managed by the controller.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseStatusHistory
 {
@@ -2233,7 +2233,7 @@ public partial class V2HelmReleaseStatusHistory
 }
 
 /// <summary>ResourceRef contains the information necessary to locate a resource within a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseStatusInventoryEntries
 {
@@ -2253,7 +2253,7 @@ public partial class V2HelmReleaseStatusInventoryEntries
 /// Inventory contains the list of Kubernetes resource object references
 /// that have been applied for this release.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseStatusInventory
 {
@@ -2267,7 +2267,7 @@ public partial class V2HelmReleaseStatusInventory
 /// HelmRelease. It is used to determine the active retry or remediation
 /// strategy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseStatusLastAttemptedReleaseActionEnum>))]
 public enum V2HelmReleaseStatusLastAttemptedReleaseActionEnum
 {
@@ -2278,7 +2278,7 @@ public enum V2HelmReleaseStatusLastAttemptedReleaseActionEnum
 }
 
 /// <summary>HelmReleaseStatus defines the observed state of a HelmRelease.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseStatus
 {
@@ -2441,7 +2441,7 @@ public partial class V2HelmReleaseStatus
 }
 
 /// <summary>HelmRelease is the Schema for the helmreleases API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2HelmRelease : IKubernetesObject<V1ObjectMeta>, ISpec<V2HelmReleaseSpec?>, IStatus<V2HelmReleaseStatus?>

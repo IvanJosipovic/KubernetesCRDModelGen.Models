@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.m.upbound.io;
 /// <summary>AgentRuntime is the Schema for the AgentRuntimes API. Manages an AWS Bedrock AgentCore Agent Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AgentRuntimeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AgentRuntime>
@@ -38,7 +38,7 @@ public partial class V1beta1AgentRuntimeList : IKubernetesObject<V1ListMeta>, II
 }
 
 /// <summary>Configuration block for the Amazon S3 object that contains the source code for the agent runtime. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeConfigurationCodeS3
 {
@@ -56,7 +56,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeC
 }
 
 /// <summary>Configuration block for the source code location and configuration details. See code below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeConfigurationCode
 {
@@ -66,7 +66,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeC
 }
 
 /// <summary>Code configuration block for the agent runtime artifact, including the source code location and execution settings. Exactly one of code_configuration or container_configuration must be specified. See code_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeConfiguration
 {
@@ -84,7 +84,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeC
 }
 
 /// <summary>Container configuration block for the agent artifact. Exactly one of code_configuration or container_configuration must be specified. See container_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactContainerConfiguration
 {
@@ -94,7 +94,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactConta
 }
 
 /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifact
 {
@@ -107,7 +107,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifact
     public V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
 {
@@ -117,7 +117,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
 {
@@ -131,7 +131,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Value or values to match for. See claim_match_value below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
 {
@@ -145,7 +145,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
 {
@@ -158,7 +158,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
     public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
 {
@@ -176,7 +176,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
 {
@@ -206,7 +206,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
 {
@@ -216,7 +216,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 {
@@ -230,7 +230,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
 {
@@ -260,7 +260,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
 {
@@ -270,7 +270,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
 {
@@ -283,7 +283,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
     public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
 {
@@ -297,7 +297,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizer
 {
@@ -335,7 +335,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfiguration
 {
@@ -350,7 +350,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum
 {
@@ -366,7 +366,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum
 {
@@ -377,7 +377,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicy
 {
@@ -401,7 +401,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEf
 }
 
 /// <summary>Reference to a AccessPoint in efs to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRef
 {
@@ -424,7 +424,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum
 {
@@ -451,7 +451,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicy
 {
@@ -475,7 +475,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEf
 }
 
 /// <summary>Selector for a AccessPoint in efs to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelector
 {
@@ -500,7 +500,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEf
 }
 
 /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPoint
 {
@@ -527,7 +527,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum
 {
@@ -543,7 +543,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAcce
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum
 {
@@ -554,7 +554,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAcce
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicy
 {
@@ -578,7 +578,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3
 }
 
 /// <summary>Reference to a AccessPoint in s3control to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRef
 {
@@ -601,7 +601,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAcce
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAcce
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicy
 {
@@ -652,7 +652,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3
 }
 
 /// <summary>Selector for a AccessPoint in s3control to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector
 {
@@ -677,7 +677,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3
 }
 
 /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPoint
 {
@@ -699,7 +699,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3
 }
 
 /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationSessionStorage
 {
@@ -708,7 +708,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationSe
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfiguration
 {
@@ -726,7 +726,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfiguration
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderLifecycleConfiguration
 {
@@ -740,7 +740,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderLifecycleConfiguration
 }
 
 /// <summary>Network mode configuration. See network_mode_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfigurationNetworkModeConfig
 {
@@ -754,7 +754,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfigurationNetwo
 }
 
 /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfiguration
 {
@@ -768,7 +768,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfiguration
 }
 
 /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderProtocolConfiguration
 {
@@ -778,7 +778,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderProtocolConfiguration
 }
 
 /// <summary>Configuration for HTTP request headers that will be passed through to the runtime. See request_header_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRequestHeaderConfiguration
 {
@@ -793,7 +793,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRequestHeaderConfiguratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -809,7 +809,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -820,7 +820,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicy
 {
@@ -844,7 +844,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRef
 {
@@ -867,7 +867,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -883,7 +883,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -894,7 +894,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicy
 {
@@ -918,7 +918,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelector
 {
@@ -942,7 +942,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelector
     public V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProvider
 {
@@ -1011,7 +1011,7 @@ public partial class V1beta1AgentRuntimeSpecForProvider
 }
 
 /// <summary>Configuration block for the Amazon S3 object that contains the source code for the agent runtime. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCodeConfigurationCodeS3
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Configuration block for the source code location and configuration details. See code below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCodeConfigurationCode
 {
@@ -1039,7 +1039,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Code configuration block for the agent runtime artifact, including the source code location and execution settings. Exactly one of code_configuration or container_configuration must be specified. See code_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCodeConfiguration
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Container configuration block for the agent artifact. Exactly one of code_configuration or container_configuration must be specified. See container_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactContainerConfiguration
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCont
 }
 
 /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifact
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifact
     public V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
 {
@@ -1090,7 +1090,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Value or values to match for. See claim_match_value below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
 {
@@ -1131,7 +1131,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
     public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 {
@@ -1203,7 +1203,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
 {
@@ -1233,7 +1233,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
 {
@@ -1243,7 +1243,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
     public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
 {
@@ -1270,7 +1270,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizer
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfiguration
 {
@@ -1323,7 +1323,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum
 {
@@ -1339,7 +1339,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum
 {
@@ -1350,7 +1350,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicy
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationE
 }
 
 /// <summary>Reference to a AccessPoint in efs to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRef
 {
@@ -1397,7 +1397,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum
 {
@@ -1413,7 +1413,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum
 {
@@ -1424,7 +1424,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicy
 {
@@ -1448,7 +1448,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationE
 }
 
 /// <summary>Selector for a AccessPoint in efs to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelector
 {
@@ -1473,7 +1473,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationE
 }
 
 /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPoint
 {
@@ -1500,7 +1500,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum
 {
@@ -1516,7 +1516,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAcc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum
 {
@@ -1527,7 +1527,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAcc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicy
 {
@@ -1551,7 +1551,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS
 }
 
 /// <summary>Reference to a AccessPoint in s3control to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRef
 {
@@ -1574,7 +1574,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum
 {
@@ -1590,7 +1590,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAcc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum
 {
@@ -1601,7 +1601,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAcc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicy
 {
@@ -1625,7 +1625,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS
 }
 
 /// <summary>Selector for a AccessPoint in s3control to populate accessPointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector
 {
@@ -1650,7 +1650,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS
 }
 
 /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPoint
 {
@@ -1672,7 +1672,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS
 }
 
 /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationSessionStorage
 {
@@ -1681,7 +1681,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfiguration
 {
@@ -1699,7 +1699,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfiguration
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderLifecycleConfiguration
 {
@@ -1713,7 +1713,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderLifecycleConfiguration
 }
 
 /// <summary>Network mode configuration. See network_mode_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfigurationNetworkModeConfig
 {
@@ -1727,7 +1727,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfigurationNetw
 }
 
 /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfiguration
 {
@@ -1741,7 +1741,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfiguration
 }
 
 /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderProtocolConfiguration
 {
@@ -1751,7 +1751,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderProtocolConfiguration
 }
 
 /// <summary>Configuration for HTTP request headers that will be passed through to the runtime. See request_header_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRequestHeaderConfiguration
 {
@@ -1766,7 +1766,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRequestHeaderConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -1782,7 +1782,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -1793,7 +1793,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicy
 {
@@ -1817,7 +1817,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRef
 {
@@ -1840,7 +1840,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -1856,7 +1856,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -1867,7 +1867,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicy
 {
@@ -1891,7 +1891,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelector
 {
@@ -1927,7 +1927,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProvider
 {
@@ -1992,7 +1992,7 @@ public partial class V1beta1AgentRuntimeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecManagementPoliciesEnum>))]
 public enum V1beta1AgentRuntimeSpecManagementPoliciesEnum
 {
@@ -2015,7 +2015,7 @@ public enum V1beta1AgentRuntimeSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecProviderConfigRef
 {
@@ -2034,7 +2034,7 @@ public partial class V1beta1AgentRuntimeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecWriteConnectionSecretToRef
 {
@@ -2044,7 +2044,7 @@ public partial class V1beta1AgentRuntimeSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AgentRuntimeSpec defines the desired state of AgentRuntime</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpec
 {
@@ -2096,7 +2096,7 @@ public partial class V1beta1AgentRuntimeSpec
 }
 
 /// <summary>Configuration block for the Amazon S3 object that contains the source code for the agent runtime. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCodeConfigurationCodeS3
 {
@@ -2114,7 +2114,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Configuration block for the source code location and configuration details. See code below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCodeConfigurationCode
 {
@@ -2124,7 +2124,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Code configuration block for the agent runtime artifact, including the source code location and execution settings. Exactly one of code_configuration or container_configuration must be specified. See code_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCodeConfiguration
 {
@@ -2142,7 +2142,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Container configuration block for the agent artifact. Exactly one of code_configuration or container_configuration must be specified. See container_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactContainerConfiguration
 {
@@ -2152,7 +2152,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCont
 }
 
 /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifact
 {
@@ -2165,7 +2165,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifact
     public V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
 {
@@ -2175,7 +2175,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
 {
@@ -2189,7 +2189,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Value or values to match for. See claim_match_value below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
 {
@@ -2203,7 +2203,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
 {
@@ -2216,7 +2216,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
     public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
 {
@@ -2234,7 +2234,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
 {
@@ -2264,7 +2264,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
 {
@@ -2274,7 +2274,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 {
@@ -2288,7 +2288,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
 {
@@ -2318,7 +2318,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
 {
@@ -2328,7 +2328,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
 {
@@ -2341,7 +2341,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
     public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
 {
@@ -2355,7 +2355,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizer
 {
@@ -2393,7 +2393,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfiguration
 {
@@ -2403,7 +2403,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfiguration
 }
 
 /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationEfsAccessPoint
 {
@@ -2417,7 +2417,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationE
 }
 
 /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationS3FilesAccessPoint
 {
@@ -2431,7 +2431,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationS
 }
 
 /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationSessionStorage
 {
@@ -2440,7 +2440,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationS
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfiguration
 {
@@ -2458,7 +2458,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfiguration
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderLifecycleConfiguration
 {
@@ -2472,7 +2472,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderLifecycleConfiguration
 }
 
 /// <summary>Network mode configuration. See network_mode_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfigurationNetworkModeConfig
 {
@@ -2490,7 +2490,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfigurationNetw
 }
 
 /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfiguration
 {
@@ -2504,7 +2504,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfiguration
 }
 
 /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderProtocolConfiguration
 {
@@ -2514,7 +2514,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderProtocolConfiguration
 }
 
 /// <summary>Configuration for HTTP request headers that will be passed through to the runtime. See request_header_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderRequestHeaderConfiguration
 {
@@ -2523,7 +2523,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderRequestHeaderConfigurati
     public IList<string>? RequestHeaderAllowlist { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderWorkloadIdentityDetails
 {
@@ -2532,7 +2532,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderWorkloadIdentityDetails
     public string? WorkloadIdentityArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProvider
 {
@@ -2616,7 +2616,7 @@ public partial class V1beta1AgentRuntimeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusConditions
 {
@@ -2659,7 +2659,7 @@ public partial class V1beta1AgentRuntimeStatusConditions
 }
 
 /// <summary>AgentRuntimeStatus defines the observed state of AgentRuntime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatus
 {
@@ -2689,7 +2689,7 @@ public partial class V1beta1AgentRuntimeStatus
 }
 
 /// <summary>AgentRuntime is the Schema for the AgentRuntimes API. Manages an AWS Bedrock AgentCore Agent Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AgentRuntime : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AgentRuntimeSpec>, IStatus<V1beta1AgentRuntimeStatus?>

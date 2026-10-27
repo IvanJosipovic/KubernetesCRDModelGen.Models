@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.actions.github.m.upbound.io;
 /// <summary>OrganizationActionsSecret is the Schema for the OrganizationActionsSecrets API. Creates and manages an Action Secret within a GitHub organization</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OrganizationActionsSecretList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1OrganizationActionsSecret>
@@ -41,7 +41,7 @@ public partial class V1alpha1OrganizationActionsSecretList : IKubernetesObject<V
 /// (DEPRECATED) Please use value_encrypted.
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecForProviderEncryptedValueSecretRef
 {
@@ -57,7 +57,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecForProviderEncryptedVa
 /// (DEPRECATED) Please use value.
 /// Plaintext value of the secret to be encrypted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecForProviderPlaintextValueSecretRef
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecForProviderPlaintextVa
 /// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
 /// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecForProviderValueEncryptedSecretRef
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecForProviderValueEncryp
 /// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
 /// Plaintext value to be encrypted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecForProviderValueSecretRef
 {
@@ -101,7 +101,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecForProviderValueSecret
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecForProvider
 {
@@ -170,7 +170,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecForProvider
 /// (DEPRECATED) Please use value_encrypted.
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecInitProviderEncryptedValueSecretRef
 {
@@ -186,7 +186,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecInitProviderEncryptedV
 /// (DEPRECATED) Please use value.
 /// Plaintext value of the secret to be encrypted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecInitProviderPlaintextValueSecretRef
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecInitProviderPlaintextV
 /// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
 /// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecInitProviderValueEncryptedSecretRef
 {
@@ -218,7 +218,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecInitProviderValueEncry
 /// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
 /// Plaintext value to be encrypted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecInitProviderValueSecretRef
 {
@@ -242,7 +242,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecInitProviderValueSecre
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecInitProvider
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationActionsSecretSpecManagementPoliciesEnum>))]
 public enum V1alpha1OrganizationActionsSecretSpecManagementPoliciesEnum
 {
@@ -334,7 +334,7 @@ public enum V1alpha1OrganizationActionsSecretSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecProviderConfigRef
 {
@@ -353,7 +353,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpecWriteConnectionSecretToRef
 {
@@ -363,7 +363,7 @@ public partial class V1alpha1OrganizationActionsSecretSpecWriteConnectionSecretT
 }
 
 /// <summary>OrganizationActionsSecretSpec defines the desired state of OrganizationActionsSecret</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretSpec
 {
@@ -414,7 +414,7 @@ public partial class V1alpha1OrganizationActionsSecretSpec
     public V1alpha1OrganizationActionsSecretSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretStatusAtProvider
 {
@@ -476,7 +476,7 @@ public partial class V1alpha1OrganizationActionsSecretStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretStatusConditions
 {
@@ -519,7 +519,7 @@ public partial class V1alpha1OrganizationActionsSecretStatusConditions
 }
 
 /// <summary>OrganizationActionsSecretStatus defines the observed state of OrganizationActionsSecret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationActionsSecretStatus
 {
@@ -540,7 +540,7 @@ public partial class V1alpha1OrganizationActionsSecretStatus
 }
 
 /// <summary>OrganizationActionsSecret is the Schema for the OrganizationActionsSecrets API. Creates and manages an Action Secret within a GitHub organization</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OrganizationActionsSecret : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1OrganizationActionsSecretSpec>, IStatus<V1alpha1OrganizationActionsSecretStatus?>

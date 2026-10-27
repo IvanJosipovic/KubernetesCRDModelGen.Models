@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.machinelearningservices.azure.com;
 /// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2021-07-01/machineLearningServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210701WorkspaceList : IKubernetesObject<V1ListMeta>, IItems<V1api20210701Workspace>
@@ -45,7 +45,7 @@ public partial class V1api20210701WorkspaceList : IKubernetesObject<V1ListMeta>,
 /// ApplicationInsightsReference: ARM id of the application insights associated with this workspace. This cannot be changed
 /// once the workspace has been created
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecApplicationInsightsReference
 {
@@ -74,7 +74,7 @@ public partial class V1api20210701WorkspaceSpecApplicationInsightsReference
 /// ContainerRegistryReference: ARM id of the container registry associated with this workspace. This cannot be changed once
 /// the workspace has been created
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecContainerRegistryReference
 {
@@ -103,7 +103,7 @@ public partial class V1api20210701WorkspaceSpecContainerRegistryReference
 /// UserAssignedIdentityReference: The ArmId of the user assigned identity that will be used to access the customer managed
 /// key vault
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecEncryptionIdentityUserAssignedIdentityReference
 {
@@ -129,7 +129,7 @@ public partial class V1api20210701WorkspaceSpecEncryptionIdentityUserAssignedIde
 }
 
 /// <summary>Identity: The identity that will be used to access the key vault for encryption at rest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecEncryptionIdentity
 {
@@ -146,7 +146,7 @@ public partial class V1api20210701WorkspaceSpecEncryptionIdentity
 }
 
 /// <summary>KeyVaultArmReference: The ArmId of the keyVault where the customer owned encryption key is present.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecEncryptionKeyVaultPropertiesKeyVaultArmReference
 {
@@ -172,7 +172,7 @@ public partial class V1api20210701WorkspaceSpecEncryptionKeyVaultPropertiesKeyVa
 }
 
 /// <summary>KeyVaultProperties: Customer Key vault properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecEncryptionKeyVaultProperties
 {
@@ -194,7 +194,7 @@ public partial class V1api20210701WorkspaceSpecEncryptionKeyVaultProperties
 }
 
 /// <summary>Encryption: The encryption settings of Azure ML workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecEncryption
 {
@@ -208,7 +208,7 @@ public partial class V1api20210701WorkspaceSpecEncryption
 }
 
 /// <summary>Type: The identity type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210701WorkspaceSpecIdentityTypeEnum>))]
 public enum V1api20210701WorkspaceSpecIdentityTypeEnum
 {
@@ -223,7 +223,7 @@ public enum V1api20210701WorkspaceSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecIdentityUserAssignedIdentitiesReference
 {
@@ -249,7 +249,7 @@ public partial class V1api20210701WorkspaceSpecIdentityUserAssignedIdentitiesRef
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecIdentityUserAssignedIdentities
 {
@@ -259,7 +259,7 @@ public partial class V1api20210701WorkspaceSpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecIdentity
 {
@@ -276,7 +276,7 @@ public partial class V1api20210701WorkspaceSpecIdentity
 /// KeyVaultReference: ARM id of the key vault associated with this workspace. This cannot be changed once the workspace has
 /// been created
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecKeyVaultReference
 {
@@ -306,7 +306,7 @@ public partial class V1api20210701WorkspaceSpecKeyVaultReference
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecConfigMapExpressions
 {
@@ -347,7 +347,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretExpressions
 {
@@ -387,7 +387,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretExpressions
 /// AppInsightsInstrumentationKey: indicates where the AppInsightsInstrumentationKey secret should be placed. If omitted,
 /// the secret will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsAppInsightsInstrumentationKey
 {
@@ -415,7 +415,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsAppInsightsIns
 /// ContainerRegistryPassword: indicates where the ContainerRegistryPassword secret should be placed. If omitted, the secret
 /// will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsContainerRegistryPassword
 {
@@ -443,7 +443,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsContainerRegis
 /// ContainerRegistryPassword2: indicates where the ContainerRegistryPassword2 secret should be placed. If omitted, the
 /// secret will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsContainerRegistryPassword2
 {
@@ -471,7 +471,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsContainerRegis
 /// ContainerRegistryUserName: indicates where the ContainerRegistryUserName secret should be placed. If omitted, the secret
 /// will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsContainerRegistryUserName
 {
@@ -499,7 +499,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsContainerRegis
 /// PrimaryNotebookAccessKey: indicates where the PrimaryNotebookAccessKey secret should be placed. If omitted, the secret
 /// will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsPrimaryNotebookAccessKey
 {
@@ -527,7 +527,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsPrimaryNoteboo
 /// SecondaryNotebookAccessKey: indicates where the SecondaryNotebookAccessKey secret should be placed. If omitted, the
 /// secret will not be retrieved from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsSecondaryNotebookAccessKey
 {
@@ -555,7 +555,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsSecondaryNoteb
 /// UserStorageKey: indicates where the UserStorageKey secret should be placed. If omitted, the secret will not be retrieved
 /// from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsUserStorageKey
 {
@@ -580,7 +580,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecretsUserStorageKey
 }
 
 /// <summary>Secrets: configures where to place Azure generated secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpecSecrets
 {
@@ -638,7 +638,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpecSecrets
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOperatorSpec
 {
@@ -660,7 +660,7 @@ public partial class V1api20210701WorkspaceSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecOwner
 {
@@ -673,7 +673,7 @@ public partial class V1api20210701WorkspaceSpecOwner
 }
 
 /// <summary>PrimaryUserAssignedIdentityReference: The user assigned identity resource id that represents the workspace identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecPrimaryUserAssignedIdentityReference
 {
@@ -699,7 +699,7 @@ public partial class V1api20210701WorkspaceSpecPrimaryUserAssignedIdentityRefere
 }
 
 /// <summary>PublicNetworkAccess: Whether requests from Public Network are allowed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210701WorkspaceSpecPublicNetworkAccessEnum>))]
 public enum V1api20210701WorkspaceSpecPublicNetworkAccessEnum
 {
@@ -710,7 +710,7 @@ public enum V1api20210701WorkspaceSpecPublicNetworkAccessEnum
 }
 
 /// <summary>CosmosDb: The settings for the service managed cosmosdb account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecServiceManagedResourcesSettingsCosmosDb
 {
@@ -720,7 +720,7 @@ public partial class V1api20210701WorkspaceSpecServiceManagedResourcesSettingsCo
 }
 
 /// <summary>ServiceManagedResourcesSettings: The service managed resource settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecServiceManagedResourcesSettings
 {
@@ -730,7 +730,7 @@ public partial class V1api20210701WorkspaceSpecServiceManagedResourcesSettings
 }
 
 /// <summary>PrivateLinkResourceReference: The resource id that private link links to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecSharedPrivateLinkResourcesPrivateLinkResourceReference
 {
@@ -756,7 +756,7 @@ public partial class V1api20210701WorkspaceSpecSharedPrivateLinkResourcesPrivate
 }
 
 /// <summary>Status: Indicates whether the connection has been Approved/Rejected/Removed by the owner of the service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210701WorkspaceSpecSharedPrivateLinkResourcesStatusEnum>))]
 public enum V1api20210701WorkspaceSpecSharedPrivateLinkResourcesStatusEnum
 {
@@ -772,7 +772,7 @@ public enum V1api20210701WorkspaceSpecSharedPrivateLinkResourcesStatusEnum
     Timeout
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecSharedPrivateLinkResources
 {
@@ -798,7 +798,7 @@ public partial class V1api20210701WorkspaceSpecSharedPrivateLinkResources
 }
 
 /// <summary>Sku: The sku of the workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecSku
 {
@@ -815,7 +815,7 @@ public partial class V1api20210701WorkspaceSpecSku
 /// StorageAccountReference: ARM id of the storage account associated with this workspace. This cannot be changed once the
 /// workspace has been created
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecStorageAccountReference
 {
@@ -841,7 +841,7 @@ public partial class V1api20210701WorkspaceSpecStorageAccountReference
 }
 
 /// <summary>CreatedByType: The type of identity that created the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210701WorkspaceSpecSystemDataCreatedByTypeEnum>))]
 public enum V1api20210701WorkspaceSpecSystemDataCreatedByTypeEnum
 {
@@ -856,7 +856,7 @@ public enum V1api20210701WorkspaceSpecSystemDataCreatedByTypeEnum
 }
 
 /// <summary>LastModifiedByType: The type of identity that last modified the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210701WorkspaceSpecSystemDataLastModifiedByTypeEnum>))]
 public enum V1api20210701WorkspaceSpecSystemDataLastModifiedByTypeEnum
 {
@@ -871,7 +871,7 @@ public enum V1api20210701WorkspaceSpecSystemDataLastModifiedByTypeEnum
 }
 
 /// <summary>SystemData: System data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpecSystemData
 {
@@ -900,7 +900,7 @@ public partial class V1api20210701WorkspaceSpecSystemData
     public V1api20210701WorkspaceSpecSystemDataLastModifiedByTypeEnum? LastModifiedByType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceSpec
 {
@@ -1020,7 +1020,7 @@ public partial class V1api20210701WorkspaceSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusConditions
 {
@@ -1066,7 +1066,7 @@ public partial class V1api20210701WorkspaceStatusConditions
 }
 
 /// <summary>Identity: The identity that will be used to access the key vault for encryption at rest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusEncryptionIdentity
 {
@@ -1076,7 +1076,7 @@ public partial class V1api20210701WorkspaceStatusEncryptionIdentity
 }
 
 /// <summary>KeyVaultProperties: Customer Key vault properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusEncryptionKeyVaultProperties
 {
@@ -1094,7 +1094,7 @@ public partial class V1api20210701WorkspaceStatusEncryptionKeyVaultProperties
 }
 
 /// <summary>Encryption: The encryption settings of Azure ML workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusEncryption
 {
@@ -1112,7 +1112,7 @@ public partial class V1api20210701WorkspaceStatusEncryption
 }
 
 /// <summary>User Assigned Identity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusIdentityUserAssignedIdentities
 {
@@ -1130,7 +1130,7 @@ public partial class V1api20210701WorkspaceStatusIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusIdentity
 {
@@ -1152,7 +1152,7 @@ public partial class V1api20210701WorkspaceStatusIdentity
 }
 
 /// <summary>NotebookPreparationError: The error that occurs when preparing notebook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusNotebookInfoNotebookPreparationError
 {
@@ -1164,7 +1164,7 @@ public partial class V1api20210701WorkspaceStatusNotebookInfoNotebookPreparation
 }
 
 /// <summary>NotebookInfo: The notebook info of Azure ML workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusNotebookInfo
 {
@@ -1181,7 +1181,7 @@ public partial class V1api20210701WorkspaceStatusNotebookInfo
 }
 
 /// <summary>The Private Endpoint Connection resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusPrivateEndpointConnections
 {
@@ -1194,7 +1194,7 @@ public partial class V1api20210701WorkspaceStatusPrivateEndpointConnections
 }
 
 /// <summary>CosmosDb: The settings for the service managed cosmosdb account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusServiceManagedResourcesSettingsCosmosDb
 {
@@ -1204,7 +1204,7 @@ public partial class V1api20210701WorkspaceStatusServiceManagedResourcesSettings
 }
 
 /// <summary>ServiceManagedResourcesSettings: The service managed resource settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusServiceManagedResourcesSettings
 {
@@ -1213,7 +1213,7 @@ public partial class V1api20210701WorkspaceStatusServiceManagedResourcesSettings
     public V1api20210701WorkspaceStatusServiceManagedResourcesSettingsCosmosDb? CosmosDb { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusSharedPrivateLinkResources
 {
@@ -1239,7 +1239,7 @@ public partial class V1api20210701WorkspaceStatusSharedPrivateLinkResources
 }
 
 /// <summary>Sku: The sku of the workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusSku
 {
@@ -1253,7 +1253,7 @@ public partial class V1api20210701WorkspaceStatusSku
 }
 
 /// <summary>SystemData: System data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatusSystemData
 {
@@ -1283,7 +1283,7 @@ public partial class V1api20210701WorkspaceStatusSystemData
 }
 
 /// <summary>An object that represents a machine learning workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210701WorkspaceStatus
 {
@@ -1446,7 +1446,7 @@ public partial class V1api20210701WorkspaceStatus
 /// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2021-07-01/machineLearningServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210701Workspace : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20210701WorkspaceSpec?>, IStatus<V1api20210701WorkspaceStatus?>

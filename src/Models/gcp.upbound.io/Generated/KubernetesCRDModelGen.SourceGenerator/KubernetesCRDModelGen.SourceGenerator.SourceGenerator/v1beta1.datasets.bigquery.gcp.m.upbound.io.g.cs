@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.m.upbound.io;
 /// <summary>Dataset is the Schema for the Datasets API. Datasets allow you to organize and control access to your tables.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatasetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Dataset>
@@ -42,7 +42,7 @@ public partial class V1beta1DatasetList : IKubernetesObject<V1ListMeta>, IItems<
 /// access binding will be considered.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessCondition
 {
@@ -81,7 +81,7 @@ public partial class V1beta1DatasetSpecForProviderAccessCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum
 {
@@ -97,7 +97,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum
 {
@@ -108,7 +108,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicy
 {
@@ -132,7 +132,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdR
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRef
 {
@@ -155,7 +155,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum
 {
@@ -171,7 +171,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum
 {
@@ -182,7 +182,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicy
 {
@@ -206,7 +206,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdS
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelector
 {
@@ -234,7 +234,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdS
 /// The dataset this entry applies to
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDataset
 {
@@ -259,7 +259,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDataset
 /// Grants all resources of particular types in a particular dataset read access to the current dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessDataset
 {
@@ -284,7 +284,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDataset
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolic
 }
 
 /// <summary>Reference to a Routine in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRef
 {
@@ -358,7 +358,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum
 {
@@ -385,7 +385,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicy
 {
@@ -409,7 +409,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelector
 }
 
 /// <summary>Selector for a Routine in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelector
 {
@@ -439,7 +439,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolutionEnum
 {
@@ -455,7 +455,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolveEnum
 {
@@ -466,7 +466,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicy
 {
@@ -490,7 +490,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolic
 }
 
 /// <summary>Reference to a Routine in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRef
 {
@@ -513,7 +513,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum
 {
@@ -529,7 +529,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolveEnum
 {
@@ -540,7 +540,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicy
 {
@@ -564,7 +564,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelector
 }
 
 /// <summary>Selector for a Routine in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelector
 {
@@ -594,7 +594,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolutionEnum
 {
@@ -610,7 +610,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolveEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicy
 {
@@ -645,7 +645,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolic
 }
 
 /// <summary>Reference to a Routine in bigquery to populate routineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRef
 {
@@ -668,7 +668,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum
 {
@@ -684,7 +684,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum
 {
@@ -695,7 +695,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicy
 {
@@ -719,7 +719,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelector
 }
 
 /// <summary>Selector for a Routine in bigquery to populate routineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelector
 {
@@ -751,7 +751,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelector
 /// needs to be granted again via an update operation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessRoutine
 {
@@ -802,7 +802,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutine
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolutionEnum
 {
@@ -818,7 +818,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolveEnum
 {
@@ -829,7 +829,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicy
 {
@@ -853,7 +853,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicy
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate userByEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRef
 {
@@ -876,7 +876,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolutionEnum
 {
@@ -892,7 +892,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolveEnum
 {
@@ -903,7 +903,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicy
 {
@@ -927,7 +927,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolic
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate userByEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelector
 {
@@ -959,7 +959,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelector
 /// needs to be granted again via an update operation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccessView
 {
@@ -980,7 +980,7 @@ public partial class V1beta1DatasetSpecForProviderAccessView
     public string? TableId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderAccess
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1DatasetSpecForProviderAccess
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
@@ -1091,7 +1091,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
@@ -1102,7 +1102,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicy
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRef
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
@@ -1165,7 +1165,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
@@ -1176,7 +1176,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
@@ -1200,7 +1200,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelector
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 /// this value, unless table creation request (or query) overrides the key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 /// metadata of open source database, schema or namespace represented by the current dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderExternalCatalogDatasetOptions
 {
@@ -1279,7 +1279,7 @@ public partial class V1beta1DatasetSpecForProviderExternalCatalogDatasetOptions
 /// Information about the external metadata storage where the dataset is defined.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProviderExternalDatasetReference
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta1DatasetSpecForProviderExternalDatasetReference
     public string? ExternalSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecForProvider
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta1DatasetSpecForProvider
 /// access binding will be considered.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessCondition
 {
@@ -1495,7 +1495,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum
 {
@@ -1511,7 +1511,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum
 {
@@ -1522,7 +1522,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicy
 {
@@ -1546,7 +1546,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRef
 {
@@ -1569,7 +1569,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum
 {
@@ -1585,7 +1585,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum
 {
@@ -1596,7 +1596,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicy
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelector
 {
@@ -1648,7 +1648,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 /// The dataset this entry applies to
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDataset
 {
@@ -1673,7 +1673,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDataset
 /// Grants all resources of particular types in a particular dataset read access to the current dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessDataset
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDataset
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolutionEnum
 {
@@ -1714,7 +1714,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolveEnum
 {
@@ -1725,7 +1725,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicy
 {
@@ -1749,7 +1749,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPoli
 }
 
 /// <summary>Reference to a Routine in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRef
 {
@@ -1772,7 +1772,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum
 {
@@ -1788,7 +1788,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum
 {
@@ -1799,7 +1799,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicy
 {
@@ -1823,7 +1823,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelecto
 }
 
 /// <summary>Selector for a Routine in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelector
 {
@@ -1853,7 +1853,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolutionEnum
 {
@@ -1869,7 +1869,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolveEnum
 {
@@ -1880,7 +1880,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicy
 {
@@ -1904,7 +1904,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPoli
 }
 
 /// <summary>Reference to a Routine in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRef
 {
@@ -1927,7 +1927,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum
 {
@@ -1943,7 +1943,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolveEnum
 {
@@ -1954,7 +1954,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicy
 {
@@ -1978,7 +1978,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelecto
 }
 
 /// <summary>Selector for a Routine in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelector
 {
@@ -2008,7 +2008,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolutionEnum
 {
@@ -2024,7 +2024,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolveEnum
 {
@@ -2035,7 +2035,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicy
 {
@@ -2059,7 +2059,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPoli
 }
 
 /// <summary>Reference to a Routine in bigquery to populate routineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRef
 {
@@ -2082,7 +2082,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum
 {
@@ -2098,7 +2098,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum
 {
@@ -2109,7 +2109,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicy
 {
@@ -2133,7 +2133,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelecto
 }
 
 /// <summary>Selector for a Routine in bigquery to populate routineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelector
 {
@@ -2165,7 +2165,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelecto
 /// needs to be granted again via an update operation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutine
 {
@@ -2216,7 +2216,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutine
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolutionEnum
 {
@@ -2232,7 +2232,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolveEnum
 {
@@ -2243,7 +2243,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicy
 {
@@ -2267,7 +2267,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicy
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate userByEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRef
 {
@@ -2290,7 +2290,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolutionEnum
 {
@@ -2306,7 +2306,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolveEnum
 {
@@ -2317,7 +2317,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicy
 {
@@ -2341,7 +2341,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPoli
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate userByEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelector
 {
@@ -2373,7 +2373,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelector
 /// needs to be granted again via an update operation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccessView
 {
@@ -2394,7 +2394,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessView
     public string? TableId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderAccess
 {
@@ -2489,7 +2489,7 @@ public partial class V1beta1DatasetSpecInitProviderAccess
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
@@ -2505,7 +2505,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
@@ -2516,7 +2516,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicy
 {
@@ -2540,7 +2540,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRef
 {
@@ -2563,7 +2563,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
@@ -2579,7 +2579,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
@@ -2590,7 +2590,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
@@ -2614,7 +2614,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelector
 {
@@ -2644,7 +2644,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 /// this value, unless table creation request (or query) overrides the key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguration
 {
@@ -2670,7 +2670,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 /// metadata of open source database, schema or namespace represented by the current dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderExternalCatalogDatasetOptions
 {
@@ -2693,7 +2693,7 @@ public partial class V1beta1DatasetSpecInitProviderExternalCatalogDatasetOptions
 /// Information about the external metadata storage where the dataset is defined.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProviderExternalDatasetReference
 {
@@ -2721,7 +2721,7 @@ public partial class V1beta1DatasetSpecInitProviderExternalDatasetReference
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecInitProvider
 {
@@ -2874,7 +2874,7 @@ public partial class V1beta1DatasetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecManagementPoliciesEnum>))]
 public enum V1beta1DatasetSpecManagementPoliciesEnum
 {
@@ -2897,7 +2897,7 @@ public enum V1beta1DatasetSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecProviderConfigRef
 {
@@ -2916,7 +2916,7 @@ public partial class V1beta1DatasetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpecWriteConnectionSecretToRef
 {
@@ -2926,7 +2926,7 @@ public partial class V1beta1DatasetSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DatasetSpec defines the desired state of Dataset</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetSpec
 {
@@ -2982,7 +2982,7 @@ public partial class V1beta1DatasetSpec
 /// access binding will be considered.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderAccessCondition
 {
@@ -3019,7 +3019,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessCondition
 /// The dataset this entry applies to
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderAccessDatasetDataset
 {
@@ -3036,7 +3036,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessDatasetDataset
 /// Grants all resources of particular types in a particular dataset read access to the current dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderAccessDataset
 {
@@ -3063,7 +3063,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessDataset
 /// needs to be granted again via an update operation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderAccessRoutine
 {
@@ -3092,7 +3092,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessRoutine
 /// needs to be granted again via an update operation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderAccessView
 {
@@ -3113,7 +3113,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessView
     public string? TableId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderAccess
 {
@@ -3200,7 +3200,7 @@ public partial class V1beta1DatasetStatusAtProviderAccess
 /// this value, unless table creation request (or query) overrides the key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderDefaultEncryptionConfiguration
 {
@@ -3218,7 +3218,7 @@ public partial class V1beta1DatasetStatusAtProviderDefaultEncryptionConfiguratio
 /// metadata of open source database, schema or namespace represented by the current dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderExternalCatalogDatasetOptions
 {
@@ -3241,7 +3241,7 @@ public partial class V1beta1DatasetStatusAtProviderExternalCatalogDatasetOptions
 /// Information about the external metadata storage where the dataset is defined.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProviderExternalDatasetReference
 {
@@ -3257,7 +3257,7 @@ public partial class V1beta1DatasetStatusAtProviderExternalDatasetReference
     public string? ExternalSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusAtProvider
 {
@@ -3458,7 +3458,7 @@ public partial class V1beta1DatasetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatusConditions
 {
@@ -3501,7 +3501,7 @@ public partial class V1beta1DatasetStatusConditions
 }
 
 /// <summary>DatasetStatus defines the observed state of Dataset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetStatus
 {
@@ -3531,7 +3531,7 @@ public partial class V1beta1DatasetStatus
 }
 
 /// <summary>Dataset is the Schema for the Datasets API. Datasets allow you to organize and control access to your tables.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Dataset : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DatasetSpec>, IStatus<V1beta1DatasetStatus?>

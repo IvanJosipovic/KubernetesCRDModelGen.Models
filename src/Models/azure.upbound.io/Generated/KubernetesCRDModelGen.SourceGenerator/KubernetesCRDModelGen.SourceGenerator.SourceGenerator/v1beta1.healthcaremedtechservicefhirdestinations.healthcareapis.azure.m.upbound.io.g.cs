@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.healthcareapis.azure.m.upbound.io;
 /// <summary>HealthcareMedtechServiceFHIRDestination is the Schema for the HealthcareMedtechServiceFHIRDestinations API. Manages a Healthcare Med Tech (Internet of Medical Things) Service Fhir Destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HealthcareMedtechServiceFHIRDestination>
@@ -43,7 +43,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationList : IKuber
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestina
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestina
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 }
 
 /// <summary>Reference to a HealthcareFHIRService in healthcareapis to populate destinationFhirServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestina
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestina
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 }
 
 /// <summary>Selector for a HealthcareFHIRService in healthcareapis to populate destinationFhirServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderDestinationFhirServiceIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtech
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtech
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 }
 
 /// <summary>Reference to a HealthcareMedtechService in healthcareapis to populate medtechServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtech
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtech
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 }
 
 /// <summary>Selector for a HealthcareMedtechService in healthcareapis to populate medtechServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
     public V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProviderMedtechServiceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvider
 {
@@ -394,7 +394,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdRefPolicyResolutionEnum
 {
@@ -410,7 +410,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestin
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdRefPolicyResolveEnum
 {
@@ -421,7 +421,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestin
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdRefPolicy
 {
@@ -445,7 +445,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProvi
 }
 
 /// <summary>Reference to a HealthcareFHIRService in healthcareapis to populate destinationFhirServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdRef
 {
@@ -468,7 +468,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdSelectorPolicyResolutionEnum
 {
@@ -484,7 +484,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestin
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdSelectorPolicyResolveEnum
 {
@@ -495,7 +495,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestin
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdSelectorPolicy
 {
@@ -519,7 +519,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProvi
 }
 
 /// <summary>Selector for a HealthcareFHIRService in healthcareapis to populate destinationFhirServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProviderDestinationFhirServiceIdSelector
 {
@@ -555,7 +555,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProvi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProvider
 {
@@ -588,7 +588,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecInitProvi
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthcareMedtechServiceFHIRDestinationSpecManagementPoliciesEnum>))]
 public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecManagementPoliciesEnum
 {
@@ -611,7 +611,7 @@ public enum V1beta1HealthcareMedtechServiceFHIRDestinationSpecManagementPolicies
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecProviderConfigRef
 {
@@ -630,7 +630,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecProviderC
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecWriteConnectionSecretToRef
 {
@@ -640,7 +640,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpecWriteConn
 }
 
 /// <summary>HealthcareMedtechServiceFHIRDestinationSpec defines the desired state of HealthcareMedtechServiceFHIRDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpec
 {
@@ -691,7 +691,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationSpec
     public V1beta1HealthcareMedtechServiceFHIRDestinationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationStatusAtProvider
 {
@@ -721,7 +721,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationStatusAtProvi
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationStatusConditions
 {
@@ -764,7 +764,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationStatusConditi
 }
 
 /// <summary>HealthcareMedtechServiceFHIRDestinationStatus defines the observed state of HealthcareMedtechServiceFHIRDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestinationStatus
 {
@@ -794,7 +794,7 @@ public partial class V1beta1HealthcareMedtechServiceFHIRDestinationStatus
 }
 
 /// <summary>HealthcareMedtechServiceFHIRDestination is the Schema for the HealthcareMedtechServiceFHIRDestinations API. Manages a Healthcare Med Tech (Internet of Medical Things) Service Fhir Destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HealthcareMedtechServiceFHIRDestination : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HealthcareMedtechServiceFHIRDestinationSpec>, IStatus<V1beta1HealthcareMedtechServiceFHIRDestinationStatus?>

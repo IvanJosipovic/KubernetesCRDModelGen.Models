@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.synapse.azure.m.upbound.io;
 /// <summary>IntegrationRuntimeSelfHosted is the Schema for the IntegrationRuntimeSelfHosteds API. Manages a Synapse Self-hosted Integration Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationRuntimeSelfHostedList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IntegrationRuntimeSelfHosted>
@@ -43,7 +43,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedList : IKubernetesObject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWo
 }
 
 /// <summary>Reference to a Workspace in synapse to populate synapseWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWo
 }
 
 /// <summary>Selector for a Workspace in synapse to populate synapseWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWo
     public V1beta1IntegrationRuntimeSelfHostedSpecForProviderSynapseWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProvider
 {
@@ -225,7 +225,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecInitProvider
 {
@@ -238,7 +238,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeSelfHostedSpecManagementPoliciesEnum>))]
 public enum V1beta1IntegrationRuntimeSelfHostedSpecManagementPoliciesEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1IntegrationRuntimeSelfHostedSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecProviderConfigRef
 {
@@ -280,7 +280,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpecWriteConnectionSecretToRef
 {
@@ -290,7 +290,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpecWriteConnectionSecre
 }
 
 /// <summary>IntegrationRuntimeSelfHostedSpec defines the desired state of IntegrationRuntimeSelfHosted</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedSpec
 {
@@ -341,7 +341,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedSpec
     public V1beta1IntegrationRuntimeSelfHostedSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedStatusAtProvider
 {
@@ -367,7 +367,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedStatusConditions
 {
@@ -410,7 +410,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedStatusConditions
 }
 
 /// <summary>IntegrationRuntimeSelfHostedStatus defines the observed state of IntegrationRuntimeSelfHosted.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeSelfHostedStatus
 {
@@ -440,7 +440,7 @@ public partial class V1beta1IntegrationRuntimeSelfHostedStatus
 }
 
 /// <summary>IntegrationRuntimeSelfHosted is the Schema for the IntegrationRuntimeSelfHosteds API. Manages a Synapse Self-hosted Integration Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationRuntimeSelfHosted : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IntegrationRuntimeSelfHostedSpec>, IStatus<V1beta1IntegrationRuntimeSelfHostedStatus?>

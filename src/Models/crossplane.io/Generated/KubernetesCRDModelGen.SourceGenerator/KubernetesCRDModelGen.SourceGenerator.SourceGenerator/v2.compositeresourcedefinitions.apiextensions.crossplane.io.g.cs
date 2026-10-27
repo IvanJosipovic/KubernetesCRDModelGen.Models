@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.apiextensions.crossplane.io;
 /// Read the Crossplane documentation for
 /// [more information about CustomResourceDefinitions](https://docs.crossplane.io/latest/composition/composite-resource-definitions/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2CompositeResourceDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V2CompositeResourceDefinition>
@@ -55,7 +55,7 @@ public partial class V2CompositeResourceDefinitionList : IKubernetesObject<V1Lis
 /// 
 /// Deprecated: Claims aren&apos;t supported in apiextensions.crossplane.io/v2.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecClaimNames
 {
@@ -106,7 +106,7 @@ public partial class V2CompositeResourceDefinitionSpecClaimNames
 /// 
 /// If the webhook is running within the cluster, then you should use `service`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecConversionWebhookClientConfigService
 {
@@ -138,7 +138,7 @@ public partial class V2CompositeResourceDefinitionSpecConversionWebhookClientCon
 }
 
 /// <summary>clientConfig is the instructions for how to call the webhook if strategy is `Webhook`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecConversionWebhookClientConfig
 {
@@ -190,7 +190,7 @@ public partial class V2CompositeResourceDefinitionSpecConversionWebhookClientCon
 }
 
 /// <summary>webhook describes how to call the conversion webhook. Required when `strategy` is set to `&quot;Webhook&quot;`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecConversionWebhook
 {
@@ -211,7 +211,7 @@ public partial class V2CompositeResourceDefinitionSpecConversionWebhook
 }
 
 /// <summary>Conversion defines all conversion settings for the defined Composite resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecConversion
 {
@@ -235,7 +235,7 @@ public partial class V2CompositeResourceDefinitionSpecConversion
 /// 
 /// Deprecated: Claims aren&apos;t supported in apiextensions.crossplane.io/v2.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CompositeResourceDefinitionSpecDefaultCompositeDeletePolicyEnum>))]
 public enum V2CompositeResourceDefinitionSpecDefaultCompositeDeletePolicyEnum
 {
@@ -249,7 +249,7 @@ public enum V2CompositeResourceDefinitionSpecDefaultCompositeDeletePolicyEnum
 /// DefaultCompositionRef refers to the Composition resource that will be used
 /// in case no composition selector is given.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecDefaultCompositionRef
 {
@@ -262,7 +262,7 @@ public partial class V2CompositeResourceDefinitionSpecDefaultCompositionRef
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecDefaultCompositionRevisionSelectorMatchExpressions
 {
@@ -291,7 +291,7 @@ public partial class V2CompositeResourceDefinitionSpecDefaultCompositionRevision
 /// DefaultCompositionRevisionSelector refers to the CompositionRevision that will be used
 /// in case no compositionRevision selector is given.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecDefaultCompositionRevisionSelector
 {
@@ -312,7 +312,7 @@ public partial class V2CompositeResourceDefinitionSpecDefaultCompositionRevision
 /// DefaultCompositionUpdatePolicy is the policy used when updating composites after a new
 /// Composition Revision has been created if no policy has been specified on the composite.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CompositeResourceDefinitionSpecDefaultCompositionUpdatePolicyEnum>))]
 public enum V2CompositeResourceDefinitionSpecDefaultCompositionUpdatePolicyEnum
 {
@@ -326,7 +326,7 @@ public enum V2CompositeResourceDefinitionSpecDefaultCompositionUpdatePolicyEnum
 /// EnforcedCompositionRef refers to the Composition resource that will be used
 /// by all composite instances whose schema is defined by this definition.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecEnforcedCompositionRef
 {
@@ -336,7 +336,7 @@ public partial class V2CompositeResourceDefinitionSpecEnforcedCompositionRef
 }
 
 /// <summary>Metadata specifies the desired metadata for the defined composite resource and claim CRD&apos;s.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecMetadata
 {
@@ -365,7 +365,7 @@ public partial class V2CompositeResourceDefinitionSpecMetadata
 /// Names specifies the resource and kind names of the defined composite
 /// resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecNames
 {
@@ -415,7 +415,7 @@ public partial class V2CompositeResourceDefinitionSpecNames
 /// are scoped to a single namespace. Cluster scoped composite resource exist
 /// outside the scope of any namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CompositeResourceDefinitionSpecScopeEnum>))]
 public enum V2CompositeResourceDefinitionSpecScopeEnum
 {
@@ -426,7 +426,7 @@ public enum V2CompositeResourceDefinitionSpecScopeEnum
 }
 
 /// <summary>CustomResourceColumnDefinition specifies a column for server side printing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecVersionsAdditionalPrinterColumns
 {
@@ -477,7 +477,7 @@ public partial class V2CompositeResourceDefinitionSpecVersionsAdditionalPrinterC
 /// schema results in a schema that contains only the fields required by all
 /// composite resources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecVersionsSchema
 {
@@ -490,7 +490,7 @@ public partial class V2CompositeResourceDefinitionSpecVersionsSchema
 }
 
 /// <summary>Scale indicates the CRD should serve a `/scale` subresource that returns an `autoscaling/v1` Scale object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecVersionsSubresourcesScale
 {
@@ -532,7 +532,7 @@ public partial class V2CompositeResourceDefinitionSpecVersionsSubresourcesScale
 /// Subresources specifies what subresources this version of the defined Composite resource has.
 /// The composition authors have responsibility to implement the logic fulfilling the subresources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecVersionsSubresources
 {
@@ -542,7 +542,7 @@ public partial class V2CompositeResourceDefinitionSpecVersionsSubresources
 }
 
 /// <summary>CompositeResourceDefinitionVersion describes a version of an XR.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpecVersions
 {
@@ -611,7 +611,7 @@ public partial class V2CompositeResourceDefinitionSpecVersions
 }
 
 /// <summary>CompositeResourceDefinitionSpec specifies the desired state of the definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionSpec
 {
@@ -729,7 +729,7 @@ public partial class V2CompositeResourceDefinitionSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionStatusConditions
 {
@@ -778,7 +778,7 @@ public partial class V2CompositeResourceDefinitionStatusConditions
 /// version. Note that clients may interact with any served type; this is
 /// simply the type that Crossplane interacts with.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionStatusControllersCompositeResourceClaimType
 {
@@ -798,7 +798,7 @@ public partial class V2CompositeResourceDefinitionStatusControllersCompositeReso
 /// Note that clients may interact with any served type; this is simply the
 /// type that Crossplane interacts with.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionStatusControllersCompositeResourceType
 {
@@ -815,7 +815,7 @@ public partial class V2CompositeResourceDefinitionStatusControllersCompositeReso
 /// Controllers represents the status of the controllers that power this
 /// composite resource definition.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionStatusControllers
 {
@@ -841,7 +841,7 @@ public partial class V2CompositeResourceDefinitionStatusControllers
 }
 
 /// <summary>CompositeResourceDefinitionStatus shows the observed state of the definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2CompositeResourceDefinitionStatus
 {
@@ -864,7 +864,7 @@ public partial class V2CompositeResourceDefinitionStatus
 /// Read the Crossplane documentation for
 /// [more information about CustomResourceDefinitions](https://docs.crossplane.io/latest/composition/composite-resource-definitions/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2CompositeResourceDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V2CompositeResourceDefinitionSpec?>, IStatus<V2CompositeResourceDefinitionStatus?>

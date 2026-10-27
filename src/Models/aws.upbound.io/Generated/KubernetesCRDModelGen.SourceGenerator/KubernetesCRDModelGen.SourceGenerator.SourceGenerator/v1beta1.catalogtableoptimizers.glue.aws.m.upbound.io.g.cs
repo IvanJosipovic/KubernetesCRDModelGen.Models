@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.m.upbound.io;
 /// <summary>CatalogTableOptimizer is the Schema for the CatalogTableOptimizers API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogTableOptimizerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CatalogTableOptimizer>
@@ -37,7 +37,7 @@ public partial class V1beta1CatalogTableOptimizerList : IKubernetesObject<V1List
     public required IList<V1beta1CatalogTableOptimizer> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfigurationIcebergConfiguration
 {
@@ -54,7 +54,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCom
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfiguration
 {
@@ -63,7 +63,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCom
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
@@ -80,7 +80,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrp
     public double? RunRateInHours { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfiguration
 {
@@ -89,7 +89,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrp
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRetentionConfigurationIcebergConfiguration
 {
@@ -110,7 +110,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRet
     public double? SnapshotRetentionPeriodInDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRetentionConfiguration
 {
@@ -119,7 +119,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRet
     public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationRetentionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfiguration
 {
@@ -150,7 +150,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefPolicyResolutionEnum>))]
 public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefPolicyResolutionEnum
 {
@@ -166,7 +166,7 @@ public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefPolicyResolveEnum>))]
 public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefPolicyResolveEnum
 {
@@ -177,7 +177,7 @@ public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefPolicy
 {
@@ -201,7 +201,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRefP
 }
 
 /// <summary>Reference to a CatalogDatabase in glue to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRef
 {
@@ -224,7 +224,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolicyResolutionEnum
 {
@@ -240,7 +240,7 @@ public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolicyResolveEnum>))]
 public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolicyResolveEnum
 {
@@ -251,7 +251,7 @@ public enum V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolicy
 {
@@ -275,7 +275,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSele
 }
 
 /// <summary>Selector for a CatalogDatabase in glue to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelector
 {
@@ -299,7 +299,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSele
     public V1beta1CatalogTableOptimizerSpecForProviderDatabaseNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProvider
 {
@@ -339,7 +339,7 @@ public partial class V1beta1CatalogTableOptimizerSpecForProvider
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfigurationIcebergConfiguration
 {
@@ -356,7 +356,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCo
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfiguration
 {
@@ -365,7 +365,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCo
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
@@ -382,7 +382,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOr
     public double? RunRateInHours { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfiguration
 {
@@ -391,7 +391,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOr
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRetentionConfigurationIcebergConfiguration
 {
@@ -412,7 +412,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRe
     public double? SnapshotRetentionPeriodInDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRetentionConfiguration
 {
@@ -421,7 +421,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRe
     public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRetentionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfiguration
 {
@@ -458,7 +458,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProvider
 {
@@ -479,7 +479,7 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableOptimizerSpecManagementPoliciesEnum>))]
 public enum V1beta1CatalogTableOptimizerSpecManagementPoliciesEnum
 {
@@ -502,7 +502,7 @@ public enum V1beta1CatalogTableOptimizerSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecProviderConfigRef
 {
@@ -521,7 +521,7 @@ public partial class V1beta1CatalogTableOptimizerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecWriteConnectionSecretToRef
 {
@@ -531,7 +531,7 @@ public partial class V1beta1CatalogTableOptimizerSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CatalogTableOptimizerSpec defines the desired state of CatalogTableOptimizer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpec
 {
@@ -582,7 +582,7 @@ public partial class V1beta1CatalogTableOptimizerSpec
     public V1beta1CatalogTableOptimizerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfigurationIcebergConfiguration
 {
@@ -599,7 +599,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCo
     public string? Strategy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfiguration
 {
@@ -608,7 +608,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCo
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
@@ -625,7 +625,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOr
     public double? RunRateInHours { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfiguration
 {
@@ -634,7 +634,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOr
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRetentionConfigurationIcebergConfiguration
 {
@@ -655,7 +655,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRe
     public double? SnapshotRetentionPeriodInDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRetentionConfiguration
 {
@@ -664,7 +664,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRe
     public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRetentionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfiguration
 {
@@ -689,7 +689,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfiguration
     public string? RoleArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProvider
 {
@@ -725,7 +725,7 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusConditions
 {
@@ -768,7 +768,7 @@ public partial class V1beta1CatalogTableOptimizerStatusConditions
 }
 
 /// <summary>CatalogTableOptimizerStatus defines the observed state of CatalogTableOptimizer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatus
 {
@@ -798,7 +798,7 @@ public partial class V1beta1CatalogTableOptimizerStatus
 }
 
 /// <summary>CatalogTableOptimizer is the Schema for the CatalogTableOptimizers API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogTableOptimizer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CatalogTableOptimizerSpec>, IStatus<V1beta1CatalogTableOptimizerStatus?>

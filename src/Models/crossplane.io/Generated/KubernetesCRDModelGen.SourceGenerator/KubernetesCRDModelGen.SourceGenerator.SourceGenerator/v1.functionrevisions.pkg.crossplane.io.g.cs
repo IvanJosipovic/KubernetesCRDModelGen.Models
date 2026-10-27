@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.pkg.crossplane.io;
 /// Crossplane creates and manages FunctionRevisions. Don&apos;t directly edit
 /// FunctionRevisions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FunctionRevisionList : IKubernetesObject<V1ListMeta>, IItems<V1FunctionRevision>
@@ -47,7 +47,7 @@ public partial class V1FunctionRevisionList : IKubernetesObject<V1ListMeta>, IIt
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FunctionRevisionSpecPackagePullSecrets
 {
@@ -66,7 +66,7 @@ public partial class V1FunctionRevisionSpecPackagePullSecrets
 /// RuntimeConfigRef references a RuntimeConfig resource that will be used
 /// to configure the package runtime.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FunctionRevisionSpecRuntimeConfigRef
 {
@@ -84,7 +84,7 @@ public partial class V1FunctionRevisionSpecRuntimeConfigRef
 }
 
 /// <summary>FunctionRevisionSpec specifies configuration for a FunctionRevision.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FunctionRevisionSpec
 {
@@ -179,7 +179,7 @@ public partial class V1FunctionRevisionSpec
 /// ImageConfigRef is a reference to an image config that indicates how the
 /// referenced image config was used by the package manager.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FunctionRevisionStatusAppliedImageConfigRefs
 {
@@ -193,7 +193,7 @@ public partial class V1FunctionRevisionStatusAppliedImageConfigRefs
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FunctionRevisionStatusConditions
 {
@@ -240,7 +240,7 @@ public partial class V1FunctionRevisionStatusConditions
 /// commonly used to reference cluster-scoped objects or objects where the
 /// namespace is already known.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FunctionRevisionStatusObjectRefs
 {
@@ -262,7 +262,7 @@ public partial class V1FunctionRevisionStatusObjectRefs
 }
 
 /// <summary>FunctionRevisionStatus represents the observed state of a FunctionRevision.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FunctionRevisionStatus
 {
@@ -335,7 +335,7 @@ public partial class V1FunctionRevisionStatus
 /// Crossplane creates and manages FunctionRevisions. Don&apos;t directly edit
 /// FunctionRevisions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FunctionRevision : IKubernetesObject<V1ObjectMeta>, ISpec<V1FunctionRevisionSpec?>, IStatus<V1FunctionRevisionStatus?>

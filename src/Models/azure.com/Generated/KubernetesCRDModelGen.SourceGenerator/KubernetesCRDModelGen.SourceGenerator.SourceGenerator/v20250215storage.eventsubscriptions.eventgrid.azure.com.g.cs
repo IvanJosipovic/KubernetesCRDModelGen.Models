@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.eventgrid.azure.com;
 /// - Generated from: /eventgrid/resource-manager/Microsoft.EventGrid/EventGrid/stable/2025-02-15/EventGrid.json
 /// - ARM URI: /{scope}/providers/Microsoft.EventGrid/eventSubscriptions/{eventSubscriptionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250215storageEventSubscriptionList : IKubernetesObject<V1ListMeta>, IItems<V20250215storageEventSubscription>
@@ -43,7 +43,7 @@ public partial class V20250215storageEventSubscriptionList : IKubernetesObject<V
 }
 
 /// <summary>ResourceReference: The Azure Resource ID of the storage account that is the destination of the deadletter events</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterDestinationStorageBlobResourceReference
 {
@@ -69,7 +69,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterDestinationS
 }
 
 /// <summary>Storage version of v20250215.StorageBlobDeadLetterDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterDestinationStorageBlob
 {
@@ -92,7 +92,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterDestinationS
 }
 
 /// <summary>Storage version of v20250215.DeadLetterDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterDestination
 {
@@ -109,7 +109,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterDestination
 }
 
 /// <summary>ResourceReference: The Azure Resource ID of the storage account that is the destination of the deadletter events</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResourceIdentityDeadLetterDestinationStorageBlobResourceReference
 {
@@ -135,7 +135,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResource
 }
 
 /// <summary>Storage version of v20250215.StorageBlobDeadLetterDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResourceIdentityDeadLetterDestinationStorageBlob
 {
@@ -158,7 +158,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResource
 }
 
 /// <summary>Storage version of v20250215.DeadLetterDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResourceIdentityDeadLetterDestination
 {
@@ -178,7 +178,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResource
 /// Storage version of v20250215.EventSubscriptionIdentity
 /// The identity information with the event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResourceIdentityIdentity
 {
@@ -200,7 +200,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResource
 /// Storage version of v20250215.DeadLetterWithResourceIdentity
 /// Information about the deadletter destination with resource identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResourceIdentity
 {
@@ -224,7 +224,7 @@ public partial class V20250215storageEventSubscriptionSpecDeadLetterWithResource
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationAzureFunctionDeliveryAttributeMappingsDynamic
 {
@@ -246,7 +246,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationAzureFunctionDeliveryAttributeMappingsStatic
 {
@@ -271,7 +271,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationAzureFunctionDeliveryAttributeMappings
 {
@@ -295,7 +295,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// ResourceReference: The Azure Resource Id that represents the endpoint of the Azure Function destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationAzureFunctionResourceReference
 {
@@ -321,7 +321,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.AzureFunctionEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationAzureFunction
 {
@@ -353,7 +353,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationEventHubDeliveryAttributeMappingsDynamic
 {
@@ -375,7 +375,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationEventHubDeliveryAttributeMappingsStatic
 {
@@ -400,7 +400,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationEventHubDeliveryAttributeMappings
 {
@@ -424,7 +424,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// ResourceReference: The Azure Resource Id that represents the endpoint of an Event Hub destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationEventHubResourceReference
 {
@@ -450,7 +450,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.EventHubEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationEventHub
 {
@@ -476,7 +476,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationHybridConnectionDeliveryAttributeMappingsDynamic
 {
@@ -498,7 +498,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationHybridConnectionDeliveryAttributeMappingsStatic
 {
@@ -523,7 +523,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationHybridConnectionDeliveryAttributeMappings
 {
@@ -544,7 +544,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>ResourceReference: The Azure Resource ID of an hybrid connection that is the destination of an event subscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationHybridConnectionResourceReference
 {
@@ -570,7 +570,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.HybridConnectionEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationHybridConnection
 {
@@ -593,7 +593,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationMonitorAlertActionGroupsReferences
 {
@@ -619,7 +619,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.MonitorAlertEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationMonitorAlert
 {
@@ -650,7 +650,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// The resource ARM Id should follow this pattern:
 /// /subscriptions/{AzureSubscriptionId}/resourceGroups/{ResourceGroupName}/providers/Microsoft.EventGrid/namespaces/{NamespaceName}/topics/{TopicName}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationNamespaceTopicResourceReference
 {
@@ -676,7 +676,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.NamespaceTopicEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationNamespaceTopic
 {
@@ -702,7 +702,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusQueueDeliveryAttributeMappingsDynamic
 {
@@ -724,7 +724,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusQueueDeliveryAttributeMappingsStatic
 {
@@ -749,7 +749,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusQueueDeliveryAttributeMappings
 {
@@ -773,7 +773,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// ResourceReference: The Azure Resource Id that represents the endpoint of the Service Bus destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusQueueResourceReference
 {
@@ -799,7 +799,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.ServiceBusQueueEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusQueue
 {
@@ -825,7 +825,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusTopicDeliveryAttributeMappingsDynamic
 {
@@ -847,7 +847,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusTopicDeliveryAttributeMappingsStatic
 {
@@ -872,7 +872,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusTopicDeliveryAttributeMappings
 {
@@ -896,7 +896,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// ResourceReference: The Azure Resource Id that represents the endpoint of the Service Bus Topic destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusTopicResourceReference
 {
@@ -922,7 +922,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.ServiceBusTopicEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationServiceBusTopic
 {
@@ -951,7 +951,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationStorageQueueQueueNameFromConfig
 {
@@ -971,7 +971,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// ResourceReference: The Azure Resource ID of the storage account that contains the queue that is the destination of an
 /// event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationStorageQueueResourceReference
 {
@@ -997,7 +997,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.StorageQueueEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationStorageQueue
 {
@@ -1036,7 +1036,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationWebHookAzureActiveDirectoryApplicationIdOrUriFromConfig
 {
@@ -1053,7 +1053,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationWebHookDeliveryAttributeMappingsDynamic
 {
@@ -1075,7 +1075,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationWebHookDeliveryAttributeMappingsStatic
 {
@@ -1100,7 +1100,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationWebHookDeliveryAttributeMappings
 {
@@ -1124,7 +1124,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationWebHookEndpointUrl
 {
@@ -1141,7 +1141,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.WebHookEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestinationWebHook
 {
@@ -1189,7 +1189,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.EventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityDestination
 {
@@ -1241,7 +1241,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// Storage version of v20250215.EventSubscriptionIdentity
 /// The identity information with the event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentityIdentity
 {
@@ -1263,7 +1263,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 /// Storage version of v20250215.DeliveryWithResourceIdentity
 /// Information about the delivery for an event subscription with resource identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceIdentity
 {
@@ -1287,7 +1287,7 @@ public partial class V20250215storageEventSubscriptionSpecDeliveryWithResourceId
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationAzureFunctionDeliveryAttributeMappingsDynamic
 {
@@ -1309,7 +1309,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationAzureFuncti
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationAzureFunctionDeliveryAttributeMappingsStatic
 {
@@ -1334,7 +1334,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationAzureFuncti
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationAzureFunctionDeliveryAttributeMappings
 {
@@ -1358,7 +1358,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationAzureFuncti
 /// ResourceReference: The Azure Resource Id that represents the endpoint of the Azure Function destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationAzureFunctionResourceReference
 {
@@ -1384,7 +1384,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationAzureFuncti
 }
 
 /// <summary>Storage version of v20250215.AzureFunctionEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationAzureFunction
 {
@@ -1416,7 +1416,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationAzureFuncti
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationEventHubDeliveryAttributeMappingsDynamic
 {
@@ -1438,7 +1438,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationEventHubDel
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationEventHubDeliveryAttributeMappingsStatic
 {
@@ -1463,7 +1463,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationEventHubDel
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationEventHubDeliveryAttributeMappings
 {
@@ -1487,7 +1487,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationEventHubDel
 /// ResourceReference: The Azure Resource Id that represents the endpoint of an Event Hub destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationEventHubResourceReference
 {
@@ -1513,7 +1513,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationEventHubRes
 }
 
 /// <summary>Storage version of v20250215.EventHubEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationEventHub
 {
@@ -1539,7 +1539,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationEventHub
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationHybridConnectionDeliveryAttributeMappingsDynamic
 {
@@ -1561,7 +1561,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationHybridConne
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationHybridConnectionDeliveryAttributeMappingsStatic
 {
@@ -1586,7 +1586,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationHybridConne
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationHybridConnectionDeliveryAttributeMappings
 {
@@ -1607,7 +1607,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationHybridConne
 }
 
 /// <summary>ResourceReference: The Azure Resource ID of an hybrid connection that is the destination of an event subscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationHybridConnectionResourceReference
 {
@@ -1633,7 +1633,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationHybridConne
 }
 
 /// <summary>Storage version of v20250215.HybridConnectionEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationHybridConnection
 {
@@ -1656,7 +1656,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationHybridConne
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationMonitorAlertActionGroupsReferences
 {
@@ -1682,7 +1682,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationMonitorAler
 }
 
 /// <summary>Storage version of v20250215.MonitorAlertEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationMonitorAlert
 {
@@ -1713,7 +1713,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationMonitorAler
 /// The resource ARM Id should follow this pattern:
 /// /subscriptions/{AzureSubscriptionId}/resourceGroups/{ResourceGroupName}/providers/Microsoft.EventGrid/namespaces/{NamespaceName}/topics/{TopicName}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationNamespaceTopicResourceReference
 {
@@ -1739,7 +1739,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationNamespaceTo
 }
 
 /// <summary>Storage version of v20250215.NamespaceTopicEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationNamespaceTopic
 {
@@ -1765,7 +1765,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationNamespaceTo
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQueueDeliveryAttributeMappingsDynamic
 {
@@ -1787,7 +1787,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQ
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQueueDeliveryAttributeMappingsStatic
 {
@@ -1812,7 +1812,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQ
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQueueDeliveryAttributeMappings
 {
@@ -1836,7 +1836,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQ
 /// ResourceReference: The Azure Resource Id that represents the endpoint of the Service Bus destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQueueResourceReference
 {
@@ -1862,7 +1862,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQ
 }
 
 /// <summary>Storage version of v20250215.ServiceBusQueueEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQueue
 {
@@ -1888,7 +1888,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusQ
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusTopicDeliveryAttributeMappingsDynamic
 {
@@ -1910,7 +1910,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusT
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusTopicDeliveryAttributeMappingsStatic
 {
@@ -1935,7 +1935,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusT
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusTopicDeliveryAttributeMappings
 {
@@ -1959,7 +1959,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusT
 /// ResourceReference: The Azure Resource Id that represents the endpoint of the Service Bus Topic destination of an event
 /// subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusTopicResourceReference
 {
@@ -1985,7 +1985,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusT
 }
 
 /// <summary>Storage version of v20250215.ServiceBusTopicEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusTopic
 {
@@ -2014,7 +2014,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationServiceBusT
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationStorageQueueQueueNameFromConfig
 {
@@ -2034,7 +2034,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationStorageQueu
 /// ResourceReference: The Azure Resource ID of the storage account that contains the queue that is the destination of an
 /// event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationStorageQueueResourceReference
 {
@@ -2060,7 +2060,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationStorageQueu
 }
 
 /// <summary>Storage version of v20250215.StorageQueueEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationStorageQueue
 {
@@ -2099,7 +2099,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationStorageQueu
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationWebHookAzureActiveDirectoryApplicationIdOrUriFromConfig
 {
@@ -2116,7 +2116,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationWebHookAzur
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationWebHookDeliveryAttributeMappingsDynamic
 {
@@ -2138,7 +2138,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationWebHookDeli
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationWebHookDeliveryAttributeMappingsStatic
 {
@@ -2163,7 +2163,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationWebHookDeli
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationWebHookDeliveryAttributeMappings
 {
@@ -2187,7 +2187,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationWebHookDeli
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationWebHookEndpointUrl
 {
@@ -2204,7 +2204,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationWebHookEndp
 }
 
 /// <summary>Storage version of v20250215.WebHookEventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestinationWebHook
 {
@@ -2252,7 +2252,7 @@ public partial class V20250215storageEventSubscriptionSpecDestinationWebHook
 }
 
 /// <summary>Storage version of v20250215.EventSubscriptionDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecDestination
 {
@@ -2301,7 +2301,7 @@ public partial class V20250215storageEventSubscriptionSpecDestination
 }
 
 /// <summary>Storage version of v20250215.BoolEqualsAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersBoolEquals
 {
@@ -2323,7 +2323,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersB
 }
 
 /// <summary>Storage version of v20250215.IsNotNullAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersIsNotNull
 {
@@ -2342,7 +2342,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersI
 }
 
 /// <summary>Storage version of v20250215.IsNullOrUndefinedAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersIsNullOrUndefined
 {
@@ -2361,7 +2361,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersI
 }
 
 /// <summary>Storage version of v20250215.NumberGreaterThanAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberGreaterThan
 {
@@ -2383,7 +2383,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.NumberGreaterThanOrEqualsAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberGreaterThanOrEquals
 {
@@ -2405,7 +2405,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.NumberInAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberIn
 {
@@ -2427,7 +2427,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.NumberInRangeAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberInRange
 {
@@ -2449,7 +2449,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.NumberLessThanAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberLessThan
 {
@@ -2471,7 +2471,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.NumberLessThanOrEqualsAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberLessThanOrEquals
 {
@@ -2493,7 +2493,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.NumberNotInAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberNotIn
 {
@@ -2515,7 +2515,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.NumberNotInRangeAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersNumberNotInRange
 {
@@ -2537,7 +2537,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersN
 }
 
 /// <summary>Storage version of v20250215.StringBeginsWithAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringBeginsWith
 {
@@ -2559,7 +2559,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.StringContainsAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringContains
 {
@@ -2581,7 +2581,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.StringEndsWithAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringEndsWith
 {
@@ -2603,7 +2603,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.StringInAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringIn
 {
@@ -2625,7 +2625,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.StringNotBeginsWithAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringNotBeginsWith
 {
@@ -2647,7 +2647,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.StringNotContainsAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringNotContains
 {
@@ -2669,7 +2669,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.StringNotEndsWithAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringNotEndsWith
 {
@@ -2691,7 +2691,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.StringNotInAdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersStringNotIn
 {
@@ -2713,7 +2713,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFiltersS
 }
 
 /// <summary>Storage version of v20250215.AdvancedFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFilters
 {
@@ -2805,7 +2805,7 @@ public partial class V20250215storageEventSubscriptionSpecFilterAdvancedFilters
 /// Storage version of v20250215.EventSubscriptionFilter
 /// Filter for the Event Subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecFilter
 {
@@ -2840,7 +2840,7 @@ public partial class V20250215storageEventSubscriptionSpecFilter
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecOperatorSpecConfigMapExpressions
 {
@@ -2881,7 +2881,7 @@ public partial class V20250215storageEventSubscriptionSpecOperatorSpecConfigMapE
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecOperatorSpecSecretExpressions
 {
@@ -2921,7 +2921,7 @@ public partial class V20250215storageEventSubscriptionSpecOperatorSpecSecretExpr
 /// Storage version of v20250215.EventSubscriptionOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecOperatorSpec
 {
@@ -2944,7 +2944,7 @@ public partial class V20250215storageEventSubscriptionSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. This resource is an
 /// extension resource, which means that any other Azure resource can be its owner.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecOwner
 {
@@ -2969,7 +2969,7 @@ public partial class V20250215storageEventSubscriptionSpecOwner
 /// Storage version of v20250215.RetryPolicy
 /// Information about the retry policy for an event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpecRetryPolicy
 {
@@ -2988,7 +2988,7 @@ public partial class V20250215storageEventSubscriptionSpecRetryPolicy
 }
 
 /// <summary>Storage version of v20250215.EventSubscription_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionSpec
 {
@@ -3071,7 +3071,7 @@ public partial class V20250215storageEventSubscriptionSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusConditions
 {
@@ -3117,7 +3117,7 @@ public partial class V20250215storageEventSubscriptionStatusConditions
 }
 
 /// <summary>Storage version of v20250215.StorageBlobDeadLetterDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeadLetterDestinationStorageBlob
 {
@@ -3139,7 +3139,7 @@ public partial class V20250215storageEventSubscriptionStatusDeadLetterDestinatio
 }
 
 /// <summary>Storage version of v20250215.DeadLetterDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeadLetterDestination
 {
@@ -3156,7 +3156,7 @@ public partial class V20250215storageEventSubscriptionStatusDeadLetterDestinatio
 }
 
 /// <summary>Storage version of v20250215.StorageBlobDeadLetterDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResourceIdentityDeadLetterDestinationStorageBlob
 {
@@ -3178,7 +3178,7 @@ public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResour
 }
 
 /// <summary>Storage version of v20250215.DeadLetterDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResourceIdentityDeadLetterDestination
 {
@@ -3198,7 +3198,7 @@ public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResour
 /// Storage version of v20250215.EventSubscriptionIdentity_STATUS
 /// The identity information with the event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResourceIdentityIdentity
 {
@@ -3220,7 +3220,7 @@ public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResour
 /// Storage version of v20250215.DeadLetterWithResourceIdentity_STATUS
 /// Information about the deadletter destination with resource identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResourceIdentity
 {
@@ -3244,7 +3244,7 @@ public partial class V20250215storageEventSubscriptionStatusDeadLetterWithResour
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationAzureFunctionDeliveryAttributeMappingsDynamic
 {
@@ -3266,7 +3266,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationAzureFunctionDeliveryAttributeMappingsStatic
 {
@@ -3291,7 +3291,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationAzureFunctionDeliveryAttributeMappings
 {
@@ -3312,7 +3312,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.AzureFunctionEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationAzureFunction
 {
@@ -3340,7 +3340,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationEventHubDeliveryAttributeMappingsDynamic
 {
@@ -3362,7 +3362,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationEventHubDeliveryAttributeMappingsStatic
 {
@@ -3387,7 +3387,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationEventHubDeliveryAttributeMappings
 {
@@ -3408,7 +3408,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.EventHubEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationEventHub
 {
@@ -3430,7 +3430,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationHybridConnectionDeliveryAttributeMappingsDynamic
 {
@@ -3452,7 +3452,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationHybridConnectionDeliveryAttributeMappingsStatic
 {
@@ -3477,7 +3477,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationHybridConnectionDeliveryAttributeMappings
 {
@@ -3498,7 +3498,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.HybridConnectionEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationHybridConnection
 {
@@ -3520,7 +3520,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.MonitorAlertEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationMonitorAlert
 {
@@ -3545,7 +3545,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.NamespaceTopicEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationNamespaceTopic
 {
@@ -3564,7 +3564,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusQueueDeliveryAttributeMappingsDynamic
 {
@@ -3586,7 +3586,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusQueueDeliveryAttributeMappingsStatic
 {
@@ -3611,7 +3611,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusQueueDeliveryAttributeMappings
 {
@@ -3632,7 +3632,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.ServiceBusQueueEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusQueue
 {
@@ -3654,7 +3654,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusTopicDeliveryAttributeMappingsDynamic
 {
@@ -3676,7 +3676,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusTopicDeliveryAttributeMappingsStatic
 {
@@ -3701,7 +3701,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusTopicDeliveryAttributeMappings
 {
@@ -3722,7 +3722,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.ServiceBusTopicEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationServiceBusTopic
 {
@@ -3744,7 +3744,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.StorageQueueEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationStorageQueue
 {
@@ -3769,7 +3769,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationWebHookDeliveryAttributeMappingsDynamic
 {
@@ -3791,7 +3791,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationWebHookDeliveryAttributeMappingsStatic
 {
@@ -3816,7 +3816,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationWebHookDeliveryAttributeMappings
 {
@@ -3837,7 +3837,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.WebHookEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestinationWebHook
 {
@@ -3874,7 +3874,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.EventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityDestination
 {
@@ -3926,7 +3926,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 /// Storage version of v20250215.EventSubscriptionIdentity_STATUS
 /// The identity information with the event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentityIdentity
 {
@@ -3948,7 +3948,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 /// Storage version of v20250215.DeliveryWithResourceIdentity_STATUS
 /// Information about the delivery for an event subscription with resource identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDeliveryWithResourceIdentity
 {
@@ -3972,7 +3972,7 @@ public partial class V20250215storageEventSubscriptionStatusDeliveryWithResource
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunctionDeliveryAttributeMappingsDynamic
 {
@@ -3994,7 +3994,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunc
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunctionDeliveryAttributeMappingsStatic
 {
@@ -4019,7 +4019,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunc
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunctionDeliveryAttributeMappings
 {
@@ -4040,7 +4040,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunc
 }
 
 /// <summary>Storage version of v20250215.AzureFunctionEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunction
 {
@@ -4068,7 +4068,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationAzureFunc
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationEventHubDeliveryAttributeMappingsDynamic
 {
@@ -4090,7 +4090,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationEventHubD
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationEventHubDeliveryAttributeMappingsStatic
 {
@@ -4115,7 +4115,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationEventHubD
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationEventHubDeliveryAttributeMappings
 {
@@ -4136,7 +4136,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationEventHubD
 }
 
 /// <summary>Storage version of v20250215.EventHubEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationEventHub
 {
@@ -4158,7 +4158,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationEventHub
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationHybridConnectionDeliveryAttributeMappingsDynamic
 {
@@ -4180,7 +4180,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationHybridCon
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationHybridConnectionDeliveryAttributeMappingsStatic
 {
@@ -4205,7 +4205,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationHybridCon
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationHybridConnectionDeliveryAttributeMappings
 {
@@ -4226,7 +4226,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationHybridCon
 }
 
 /// <summary>Storage version of v20250215.HybridConnectionEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationHybridConnection
 {
@@ -4248,7 +4248,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationHybridCon
 }
 
 /// <summary>Storage version of v20250215.MonitorAlertEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationMonitorAlert
 {
@@ -4273,7 +4273,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationMonitorAl
 }
 
 /// <summary>Storage version of v20250215.NamespaceTopicEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationNamespaceTopic
 {
@@ -4292,7 +4292,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationNamespace
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusQueueDeliveryAttributeMappingsDynamic
 {
@@ -4314,7 +4314,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusQueueDeliveryAttributeMappingsStatic
 {
@@ -4339,7 +4339,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusQueueDeliveryAttributeMappings
 {
@@ -4360,7 +4360,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.ServiceBusQueueEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusQueue
 {
@@ -4382,7 +4382,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusTopicDeliveryAttributeMappingsDynamic
 {
@@ -4404,7 +4404,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusTopicDeliveryAttributeMappingsStatic
 {
@@ -4429,7 +4429,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusTopicDeliveryAttributeMappings
 {
@@ -4450,7 +4450,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.ServiceBusTopicEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationServiceBusTopic
 {
@@ -4472,7 +4472,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationServiceBu
 }
 
 /// <summary>Storage version of v20250215.StorageQueueEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationStorageQueue
 {
@@ -4497,7 +4497,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationStorageQu
 }
 
 /// <summary>Storage version of v20250215.DynamicDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationWebHookDeliveryAttributeMappingsDynamic
 {
@@ -4519,7 +4519,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationWebHookDe
 }
 
 /// <summary>Storage version of v20250215.StaticDeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationWebHookDeliveryAttributeMappingsStatic
 {
@@ -4544,7 +4544,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationWebHookDe
 }
 
 /// <summary>Storage version of v20250215.DeliveryAttributeMapping_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationWebHookDeliveryAttributeMappings
 {
@@ -4565,7 +4565,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationWebHookDe
 }
 
 /// <summary>Storage version of v20250215.WebHookEventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestinationWebHook
 {
@@ -4602,7 +4602,7 @@ public partial class V20250215storageEventSubscriptionStatusDestinationWebHook
 }
 
 /// <summary>Storage version of v20250215.EventSubscriptionDestination_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusDestination
 {
@@ -4651,7 +4651,7 @@ public partial class V20250215storageEventSubscriptionStatusDestination
 }
 
 /// <summary>Storage version of v20250215.BoolEqualsAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersBoolEquals
 {
@@ -4673,7 +4673,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.IsNotNullAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersIsNotNull
 {
@@ -4692,7 +4692,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.IsNullOrUndefinedAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersIsNullOrUndefined
 {
@@ -4711,7 +4711,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberGreaterThanAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberGreaterThan
 {
@@ -4733,7 +4733,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberGreaterThanOrEqualsAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberGreaterThanOrEquals
 {
@@ -4755,7 +4755,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberInAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberIn
 {
@@ -4777,7 +4777,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberInRangeAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberInRange
 {
@@ -4799,7 +4799,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberLessThanAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberLessThan
 {
@@ -4821,7 +4821,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberLessThanOrEqualsAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberLessThanOrEquals
 {
@@ -4843,7 +4843,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberNotInAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberNotIn
 {
@@ -4865,7 +4865,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.NumberNotInRangeAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersNumberNotInRange
 {
@@ -4887,7 +4887,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringBeginsWithAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringBeginsWith
 {
@@ -4909,7 +4909,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringContainsAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringContains
 {
@@ -4931,7 +4931,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringEndsWithAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringEndsWith
 {
@@ -4953,7 +4953,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringInAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringIn
 {
@@ -4975,7 +4975,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringNotBeginsWithAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringNotBeginsWith
 {
@@ -4997,7 +4997,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringNotContainsAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringNotContains
 {
@@ -5019,7 +5019,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringNotEndsWithAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringNotEndsWith
 {
@@ -5041,7 +5041,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.StringNotInAdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFiltersStringNotIn
 {
@@ -5063,7 +5063,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 }
 
 /// <summary>Storage version of v20250215.AdvancedFilter_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilters
 {
@@ -5155,7 +5155,7 @@ public partial class V20250215storageEventSubscriptionStatusFilterAdvancedFilter
 /// Storage version of v20250215.EventSubscriptionFilter_STATUS
 /// Filter for the Event Subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusFilter
 {
@@ -5189,7 +5189,7 @@ public partial class V20250215storageEventSubscriptionStatusFilter
 /// Storage version of v20250215.RetryPolicy_STATUS
 /// Information about the retry policy for an event subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusRetryPolicy
 {
@@ -5211,7 +5211,7 @@ public partial class V20250215storageEventSubscriptionStatusRetryPolicy
 /// Storage version of v20250215.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatusSystemData
 {
@@ -5245,7 +5245,7 @@ public partial class V20250215storageEventSubscriptionStatusSystemData
 /// Storage version of v20250215.EventSubscription_STATUS
 /// Event Subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageEventSubscriptionStatus
 {
@@ -5333,7 +5333,7 @@ public partial class V20250215storageEventSubscriptionStatus
 /// - Generated from: /eventgrid/resource-manager/Microsoft.EventGrid/EventGrid/stable/2025-02-15/EventGrid.json
 /// - ARM URI: /{scope}/providers/Microsoft.EventGrid/eventSubscriptions/{eventSubscriptionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250215storageEventSubscription : IKubernetesObject<V1ObjectMeta>, ISpec<V20250215storageEventSubscriptionSpec?>, IStatus<V20250215storageEventSubscriptionStatus?>

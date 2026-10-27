@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.m.upbound.io;
 /// <summary>MSSQLManagedInstance is the Schema for the MSSQLManagedInstances API. Manages a Microsoft SQL Azure Managed Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLManagedInstanceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLManagedInstance>
@@ -38,7 +38,7 @@ public partial class V1beta1MSSQLManagedInstanceList : IKubernetesObject<V1ListM
 }
 
 /// <summary>The password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderAdministratorLoginPasswordSecretRef
 {
@@ -51,7 +51,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderAdministratorLogi
 }
 
 /// <summary>An azure_active_directory_administrator block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderAzureActiveDirectoryAdministrator
 {
@@ -82,7 +82,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderAzureActiveDirect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRefPolicyResolutionEnum
 {
@@ -98,7 +98,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRefPolicyResolveEnum
 {
@@ -109,7 +109,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRefPolicy
 {
@@ -133,7 +133,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdR
 }
 
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate dnsZonePartnerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdRef
 {
@@ -156,7 +156,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelectorPolicyResolutionEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelectorPolicyResolveEnum
 {
@@ -183,7 +183,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelectorPolicy
 {
@@ -207,7 +207,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdS
 }
 
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate dnsZonePartnerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdSelector
 {
@@ -232,7 +232,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderDnsZonePartnerIdS
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderIdentity
 {
@@ -251,7 +251,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -267,7 +267,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -278,7 +278,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRefPolicy
 {
@@ -302,7 +302,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupName
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameRef
 {
@@ -325,7 +325,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -341,7 +341,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -352,7 +352,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -376,7 +376,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupName
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupNameSelector
 {
@@ -406,7 +406,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderResourceGroupName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -422,7 +422,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicyResolveEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicy
 {
@@ -457,7 +457,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRefPolicy
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicy
 {
@@ -531,7 +531,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorP
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelector
 {
@@ -555,7 +555,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelector
     public V1beta1MSSQLManagedInstanceSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecForProvider
 {
@@ -689,7 +689,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecForProvider
 }
 
 /// <summary>The password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderAdministratorLoginPasswordSecretRef
 {
@@ -702,7 +702,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderAdministratorLog
 }
 
 /// <summary>An azure_active_directory_administrator block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderAzureActiveDirectoryAdministrator
 {
@@ -733,7 +733,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderAzureActiveDirec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRefPolicyResolutionEnum
 {
@@ -749,7 +749,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRefPolicyResolveEnum
 {
@@ -760,7 +760,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRefPolicy
 {
@@ -784,7 +784,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerId
 }
 
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate dnsZonePartnerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdRef
 {
@@ -807,7 +807,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelectorPolicyResolutionEnum
 {
@@ -823,7 +823,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelectorPolicyResolveEnum
 {
@@ -834,7 +834,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelectorPolicy
 {
@@ -858,7 +858,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerId
 }
 
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate dnsZonePartnerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerIdSelector
 {
@@ -883,7 +883,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderDnsZonePartnerId
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderIdentity
 {
@@ -902,7 +902,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -918,7 +918,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolicyResolveEnum
 {
@@ -929,7 +929,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolicy
 {
@@ -953,7 +953,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRefPolic
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRef
 {
@@ -976,7 +976,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -992,7 +992,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -1003,7 +1003,7 @@ public enum V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelectorPolicy
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelector
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelector
 {
@@ -1063,7 +1063,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProviderSubnetIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceSpecManagementPoliciesEnum>))]
 public enum V1beta1MSSQLManagedInstanceSpecManagementPoliciesEnum
 {
@@ -1211,7 +1211,7 @@ public enum V1beta1MSSQLManagedInstanceSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecProviderConfigRef
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpecWriteConnectionSecretToRef
 {
@@ -1240,7 +1240,7 @@ public partial class V1beta1MSSQLManagedInstanceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MSSQLManagedInstanceSpec defines the desired state of MSSQLManagedInstance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceSpec
 {
@@ -1292,7 +1292,7 @@ public partial class V1beta1MSSQLManagedInstanceSpec
 }
 
 /// <summary>An azure_active_directory_administrator block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceStatusAtProviderAzureActiveDirectoryAdministrator
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProviderAzureActiveDirec
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceStatusAtProviderIdentity
 {
@@ -1339,7 +1339,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
 {
@@ -1457,7 +1457,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceStatusConditions
 {
@@ -1500,7 +1500,7 @@ public partial class V1beta1MSSQLManagedInstanceStatusConditions
 }
 
 /// <summary>MSSQLManagedInstanceStatus defines the observed state of MSSQLManagedInstance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceStatus
 {
@@ -1530,7 +1530,7 @@ public partial class V1beta1MSSQLManagedInstanceStatus
 }
 
 /// <summary>MSSQLManagedInstance is the Schema for the MSSQLManagedInstances API. Manages a Microsoft SQL Azure Managed Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLManagedInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLManagedInstanceSpec>, IStatus<V1beta1MSSQLManagedInstanceStatus?>

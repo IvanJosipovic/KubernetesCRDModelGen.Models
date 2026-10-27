@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1CalicoNodeStatusList : IKubernetesObject<V1ListMeta>, IItems<V1CalicoNodeStatus>
@@ -36,7 +36,7 @@ public partial class V1CalicoNodeStatusList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1CalicoNodeStatus> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusSpecClassesEnum>))]
 public enum V1CalicoNodeStatusSpecClassesEnum
 {
@@ -49,7 +49,7 @@ public enum V1CalicoNodeStatusSpecClassesEnum
 }
 
 /// <summary>CalicoNodeStatusSpec contains the specification for a CalicoNodeStatus resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusSpec
 {
@@ -73,7 +73,7 @@ public partial class V1CalicoNodeStatusSpec
 }
 
 /// <summary>The state of the BGP Daemon.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusAgentBirdV4StateEnum>))]
 public enum V1CalicoNodeStatusStatusAgentBirdV4StateEnum
 {
@@ -84,7 +84,7 @@ public enum V1CalicoNodeStatusStatusAgentBirdV4StateEnum
 }
 
 /// <summary>BIRDV4 represents the latest observed status of bird4.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusAgentBirdV4
 {
@@ -110,7 +110,7 @@ public partial class V1CalicoNodeStatusStatusAgentBirdV4
 }
 
 /// <summary>The state of the BGP Daemon.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusAgentBirdV6StateEnum>))]
 public enum V1CalicoNodeStatusStatusAgentBirdV6StateEnum
 {
@@ -121,7 +121,7 @@ public enum V1CalicoNodeStatusStatusAgentBirdV6StateEnum
 }
 
 /// <summary>BIRDV6 represents the latest observed status of bird6.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusAgentBirdV6
 {
@@ -147,7 +147,7 @@ public partial class V1CalicoNodeStatusStatusAgentBirdV6
 }
 
 /// <summary>Agent holds agent status on the node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusAgent
 {
@@ -161,7 +161,7 @@ public partial class V1CalicoNodeStatusStatusAgent
 }
 
 /// <summary>State is the BGP session state.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV4StateEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV4StateEnum
 {
@@ -185,7 +185,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV4StateEnum
 /// Type indicates whether this peer is configured via the node-to-node mesh,
 /// or via an explicit global or per-node BGPPeer object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV4TypeEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV4TypeEnum
 {
@@ -198,7 +198,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV4TypeEnum
 }
 
 /// <summary>CalicoNodePeer contains the status of BGP peers on the node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusBgpPeersV4
 {
@@ -223,7 +223,7 @@ public partial class V1CalicoNodeStatusStatusBgpPeersV4
 }
 
 /// <summary>State is the BGP session state.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV6StateEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV6StateEnum
 {
@@ -247,7 +247,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV6StateEnum
 /// Type indicates whether this peer is configured via the node-to-node mesh,
 /// or via an explicit global or per-node BGPPeer object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusBgpPeersV6TypeEnum>))]
 public enum V1CalicoNodeStatusStatusBgpPeersV6TypeEnum
 {
@@ -260,7 +260,7 @@ public enum V1CalicoNodeStatusStatusBgpPeersV6TypeEnum
 }
 
 /// <summary>CalicoNodePeer contains the status of BGP peers on the node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusBgpPeersV6
 {
@@ -285,7 +285,7 @@ public partial class V1CalicoNodeStatusStatusBgpPeersV6
 }
 
 /// <summary>BGP holds node BGP status.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusBgp
 {
@@ -315,7 +315,7 @@ public partial class V1CalicoNodeStatusStatusBgp
 }
 
 /// <summary>Type of the source where a route is learned from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFromSourceTypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFromSourceTypeEnum
 {
@@ -332,7 +332,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFromSourceTypeEnum
 }
 
 /// <summary>LearnedFrom contains information regarding where this route originated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFrom
 {
@@ -346,7 +346,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV4LearnedFrom
 }
 
 /// <summary>Type indicates if the route is being used for forwarding or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV4TypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV4TypeEnum
 {
@@ -357,7 +357,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV4TypeEnum
 }
 
 /// <summary>CalicoNodeRoute contains the status of BGP routes on the node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV4
 {
@@ -383,7 +383,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV4
 }
 
 /// <summary>Type of the source where a route is learned from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFromSourceTypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFromSourceTypeEnum
 {
@@ -400,7 +400,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFromSourceTypeEnum
 }
 
 /// <summary>LearnedFrom contains information regarding where this route originated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFrom
 {
@@ -414,7 +414,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV6LearnedFrom
 }
 
 /// <summary>Type indicates if the route is being used for forwarding or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CalicoNodeStatusStatusRoutesRoutesV6TypeEnum>))]
 public enum V1CalicoNodeStatusStatusRoutesRoutesV6TypeEnum
 {
@@ -425,7 +425,7 @@ public enum V1CalicoNodeStatusStatusRoutesRoutesV6TypeEnum
 }
 
 /// <summary>CalicoNodeRoute contains the status of BGP routes on the node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutesRoutesV6
 {
@@ -451,7 +451,7 @@ public partial class V1CalicoNodeStatusStatusRoutesRoutesV6
 }
 
 /// <summary>Routes reports routes known to the Calico BGP daemon on the node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatusRoutes
 {
@@ -468,7 +468,7 @@ public partial class V1CalicoNodeStatusStatusRoutes
 /// CalicoNodeStatusStatus defines the observed state of CalicoNodeStatus.
 /// No validation needed for status since it is updated by Calico.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CalicoNodeStatusStatus
 {
@@ -492,7 +492,7 @@ public partial class V1CalicoNodeStatusStatus
     public V1CalicoNodeStatusStatusRoutes? Routes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1CalicoNodeStatus : IKubernetesObject<V1ObjectMeta>, ISpec<V1CalicoNodeStatusSpec?>, IStatus<V1CalicoNodeStatusStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.secretmanager.cnrm.cloud.google.com;
 /// <summary>SecretManagerSecret is the Schema for the SecretManagerSecret API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecretManagerSecretList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecretManagerSecret>
@@ -52,7 +52,7 @@ public partial class V1beta1SecretManagerSecretList : IKubernetesObject<V1ListMe
 /// 
 ///  The expected format is `projects/*/locations/*/keyRings/*/cryptoKeys/*`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplicationAutoCustomerManagedEncryptionKmsKeyRef
 {
@@ -80,7 +80,7 @@ public partial class V1beta1SecretManagerSecretSpecReplicationAutoCustomerManage
 ///  afterwards. They do not apply retroactively to existing
 ///  [SecretVersions][google.cloud.secretmanager.v1.SecretVersion].
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplicationAutoCustomerManagedEncryption
 {
@@ -104,7 +104,7 @@ public partial class V1beta1SecretManagerSecretSpecReplicationAutoCustomerManage
 }
 
 /// <summary>The [Secret][google.cloud.secretmanager.v1.Secret] will automatically be replicated without any restrictions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplicationAuto
 {
@@ -138,7 +138,7 @@ public partial class V1beta1SecretManagerSecretSpecReplicationAuto
 /// 
 ///  The expected format is `projects/*/locations/*/keyRings/*/cryptoKeys/*`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplicationUserManagedReplicasCustomerManagedEncryptionKmsKeyRef
 {
@@ -166,7 +166,7 @@ public partial class V1beta1SecretManagerSecretSpecReplicationUserManagedReplica
 ///  afterwards. They do not apply retroactively to existing
 ///  [SecretVersions][google.cloud.secretmanager.v1.SecretVersion].
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplicationUserManagedReplicasCustomerManagedEncryption
 {
@@ -189,7 +189,7 @@ public partial class V1beta1SecretManagerSecretSpecReplicationUserManagedReplica
     public required V1beta1SecretManagerSecretSpecReplicationUserManagedReplicasCustomerManagedEncryptionKmsKeyRef KmsKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplicationUserManagedReplicas
 {
@@ -213,7 +213,7 @@ public partial class V1beta1SecretManagerSecretSpecReplicationUserManagedReplica
 }
 
 /// <summary>The [Secret][google.cloud.secretmanager.v1.Secret] will only be replicated into the locations specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplicationUserManaged
 {
@@ -233,7 +233,7 @@ public partial class V1beta1SecretManagerSecretSpecReplicationUserManaged
 /// 
 ///  The replication policy cannot be changed after the Secret has been created.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecReplication
 {
@@ -251,7 +251,7 @@ public partial class V1beta1SecretManagerSecretSpecReplication
 }
 
 /// <summary>Optional. Rotation policy attached to the [Secret][google.cloud.secretmanager.v1.Secret]. May be excluded if there is no rotation policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecRotation
 {
@@ -287,7 +287,7 @@ public partial class V1beta1SecretManagerSecretSpecRotation
 }
 
 /// <summary>PubSubTopicRef defines the resource reference to PubSubTopic, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecTopicsTopicRef
 {
@@ -304,7 +304,7 @@ public partial class V1beta1SecretManagerSecretSpecTopicsTopicRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpecTopics
 {
@@ -314,7 +314,7 @@ public partial class V1beta1SecretManagerSecretSpecTopics
 }
 
 /// <summary>SecretManagerSecretSpec defines the desired state of SecretManagerSecret</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretSpec
 {
@@ -397,7 +397,7 @@ public partial class V1beta1SecretManagerSecretSpec
     public IDictionary<string, string>? VersionAliases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretStatusConditions
 {
@@ -423,7 +423,7 @@ public partial class V1beta1SecretManagerSecretStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretStatusObservedState
 {
@@ -432,7 +432,7 @@ public partial class V1beta1SecretManagerSecretStatusObservedState
 }
 
 /// <summary>SecretManagerSecretStatus defines the config connector machine state of SecretManagerSecret</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretManagerSecretStatus
 {
@@ -458,7 +458,7 @@ public partial class V1beta1SecretManagerSecretStatus
 }
 
 /// <summary>SecretManagerSecret is the Schema for the SecretManagerSecret API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecretManagerSecret : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecretManagerSecretSpec?>, IStatus<V1beta1SecretManagerSecretStatus?>

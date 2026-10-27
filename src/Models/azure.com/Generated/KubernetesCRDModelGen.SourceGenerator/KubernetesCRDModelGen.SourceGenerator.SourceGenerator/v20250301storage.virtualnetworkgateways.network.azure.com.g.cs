@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/virtualNetworkGateway.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworkGateways/{virtualNetworkGatewayName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301storageVirtualNetworkGatewayList : IKubernetesObject<V1ListMeta>, IItems<V20250301storageVirtualNetworkGateway>
@@ -43,7 +43,7 @@ public partial class V20250301storageVirtualNetworkGatewayList : IKubernetesObje
 }
 
 /// <summary>Storage version of v20250301.VirtualNetworkGatewayAutoScaleBounds</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecAutoScaleConfigurationBounds
 {
@@ -65,7 +65,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecAutoScaleConfigura
 /// Storage version of v20250301.VirtualNetworkGatewayAutoScaleConfiguration
 /// Virtual Network Gateway Autoscale Configuration details
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecAutoScaleConfiguration
 {
@@ -85,7 +85,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecAutoScaleConfigura
 /// Storage version of v20250301.IPConfigurationBgpPeeringAddress
 /// Properties of IPConfigurationBgpPeeringAddress.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecBgpSettingsBgpPeeringAddresses
 {
@@ -107,7 +107,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecBgpSettingsBgpPeer
 /// Storage version of v20250301.BgpSettings
 /// BGP settings details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecBgpSettings
 {
@@ -132,7 +132,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecBgpSettings
 }
 
 /// <summary>Reference: Resource id of the associated Azure IpamPool resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecCustomRoutesIpamPoolPrefixAllocationsReference
 {
@@ -161,7 +161,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecCustomRoutesIpamPo
 /// Storage version of v20250301.IpamPoolPrefixAllocation
 /// IpamPool prefix allocation reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecCustomRoutesIpamPoolPrefixAllocations
 {
@@ -184,7 +184,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecCustomRoutesIpamPo
 /// Storage version of v20250301.AddressSpace
 /// AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecCustomRoutes
 {
@@ -206,7 +206,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecCustomRoutes
 /// Storage version of v20250301.ExtendedLocation
 /// ExtendedLocation complex type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecExtendedLocation
 {
@@ -225,7 +225,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecExtendedLocation
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecGatewayDefaultSiteReference
 {
@@ -254,7 +254,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecGatewayDefaultSite
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecGatewayDefaultSite
 {
@@ -271,7 +271,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecGatewayDefaultSite
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIdentityUserAssignedIdentitiesReference
 {
@@ -300,7 +300,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIdentityUserAssign
 /// Storage version of v20250301.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIdentityUserAssignedIdentities
 {
@@ -320,7 +320,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIdentityUserAssign
 /// Storage version of v20250301.ManagedServiceIdentity
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIdentity
 {
@@ -339,7 +339,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIdentity
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsPublicIPAddressReference
 {
@@ -368,7 +368,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsPu
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsPublicIPAddress
 {
@@ -385,7 +385,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsPu
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsSubnetReference
 {
@@ -414,7 +414,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsSu
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsSubnet
 {
@@ -434,7 +434,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurationsSu
 /// Storage version of v20250301.VirtualNetworkGatewayIPConfiguration
 /// IP configuration for virtual network gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurations
 {
@@ -470,7 +470,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecIpConfigurations
 /// Storage version of v20250301.VpnNatRuleMapping
 /// Vpn NatRule mapping.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecNatRulesExternalMappings
 {
@@ -492,7 +492,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecNatRulesExternalMa
 /// Storage version of v20250301.VpnNatRuleMapping
 /// Vpn NatRule mapping.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecNatRulesInternalMappings
 {
@@ -514,7 +514,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecNatRulesInternalMa
 /// Storage version of v20250301.VirtualNetworkGatewayNatRule
 /// VirtualNetworkGatewayNatRule Resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecNatRules
 {
@@ -549,7 +549,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecNatRules
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecOperatorSpecConfigMapExpressions
 {
@@ -590,7 +590,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecOperatorSpecConfig
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecOperatorSpecSecretExpressions
 {
@@ -630,7 +630,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecOperatorSpecSecret
 /// Storage version of v20250301.VirtualNetworkGatewayOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecOperatorSpec
 {
@@ -653,7 +653,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecOwner
 {
@@ -669,7 +669,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecOwner
 /// Storage version of v20250301.VirtualNetworkGatewaySku
 /// VirtualNetworkGatewaySku details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecSku
 {
@@ -691,7 +691,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecSku
 /// VNetExtendedLocationResourceReference: Customer vnet resource id. VirtualNetworkGateway of type local gateway is
 /// associated with the customer vnet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVNetExtendedLocationResourceReference
 {
@@ -720,7 +720,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVNetExtendedLocati
 /// Storage version of v20250301.VirtualNetworkGatewayMigrationStatus
 /// Migration status for the Virtual Network Gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVirtualNetworkGatewayMigrationStatus
 {
@@ -745,7 +745,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVirtualNetworkGate
 /// Storage version of v20250301.VirtualNetworkGatewayPolicyGroupMember
 /// Vpn Client Connection configuration PolicyGroup member
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVirtualNetworkGatewayPolicyGroupsPolicyMembers
 {
@@ -770,7 +770,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVirtualNetworkGate
 /// Storage version of v20250301.VirtualNetworkGatewayPolicyGroup
 /// Parameters for VirtualNetworkGatewayPolicyGroup.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVirtualNetworkGatewayPolicyGroups
 {
@@ -798,7 +798,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVirtualNetworkGate
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationRadiusServerSecret
 {
@@ -818,7 +818,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationRadiusServersRadiusServerSecret
 {
@@ -838,7 +838,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.RadiusServer
 /// Radius Server Settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationRadiusServers
 {
@@ -864,7 +864,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVngClientConnectionConfigurationsReference
 {
@@ -893,7 +893,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.VngClientConnectionConfiguration
 /// A vpn client connection configuration for client connection configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVngClientConnectionConfigurations
 {
@@ -910,7 +910,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 }
 
 /// <summary>Reference: Resource id of the associated Azure IpamPool resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVpnClientAddressPoolIpamPoolPrefixAllocationsReference
 {
@@ -939,7 +939,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.IpamPoolPrefixAllocation
 /// IpamPool prefix allocation reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVpnClientAddressPoolIpamPoolPrefixAllocations
 {
@@ -962,7 +962,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.AddressSpace
 /// AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVpnClientAddressPool
 {
@@ -984,7 +984,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.IpsecPolicy
 /// An IPSec Policy configuration for a virtual network gateway connection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVpnClientIpsecPolicies
 {
@@ -1024,7 +1024,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.VpnClientRevokedCertificate
 /// VPN client revoked certificate of virtual network gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVpnClientRevokedCertificates
 {
@@ -1046,7 +1046,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.VpnClientRootCertificate
 /// VPN client root certificate of virtual network gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigurationVpnClientRootCertificates
 {
@@ -1068,7 +1068,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 /// Storage version of v20250301.VpnClientConfiguration
 /// VpnClientConfiguration for P2S client.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfiguration
 {
@@ -1128,7 +1128,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpecVpnClientConfigura
 }
 
 /// <summary>Storage version of v20250301.VirtualNetworkGateway_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewaySpec
 {
@@ -1293,7 +1293,7 @@ public partial class V20250301storageVirtualNetworkGatewaySpec
 }
 
 /// <summary>Storage version of v20250301.VirtualNetworkGatewayAutoScaleBounds_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusAutoScaleConfigurationBounds
 {
@@ -1315,7 +1315,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusAutoScaleConfigu
 /// Storage version of v20250301.VirtualNetworkGatewayAutoScaleConfiguration_STATUS
 /// Virtual Network Gateway Autoscale Configuration details
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusAutoScaleConfiguration
 {
@@ -1335,7 +1335,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusAutoScaleConfigu
 /// Storage version of v20250301.IPConfigurationBgpPeeringAddress_STATUS
 /// Properties of IPConfigurationBgpPeeringAddress.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusBgpSettingsBgpPeeringAddresses
 {
@@ -1363,7 +1363,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusBgpSettingsBgpPe
 /// Storage version of v20250301.BgpSettings_STATUS
 /// BGP settings details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusBgpSettings
 {
@@ -1388,7 +1388,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusBgpSettings
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusConditions
 {
@@ -1437,7 +1437,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusConditions
 /// Storage version of v20250301.IpamPoolPrefixAllocation_STATUS
 /// IpamPool prefix allocation reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusCustomRoutesIpamPoolPrefixAllocations
 {
@@ -1462,7 +1462,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusCustomRoutesIpam
 /// Storage version of v20250301.AddressSpace_STATUS
 /// AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusCustomRoutes
 {
@@ -1484,7 +1484,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusCustomRoutes
 /// Storage version of v20250301.ExtendedLocation_STATUS
 /// ExtendedLocation complex type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusExtendedLocation
 {
@@ -1506,7 +1506,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusExtendedLocation
 /// Storage version of v20250301.SubResource_STATUS
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusGatewayDefaultSite
 {
@@ -1522,7 +1522,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusGatewayDefaultSi
 }
 
 /// <summary>Storage version of v20250301.ManagedServiceIdentity_UserAssignedIdentities_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusIdentityUserAssignedIdentities
 {
@@ -1544,7 +1544,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusIdentityUserAssi
 /// Storage version of v20250301.ManagedServiceIdentity_STATUS
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusIdentity
 {
@@ -1572,7 +1572,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusIdentity
 /// Storage version of v20250301.SubResource_STATUS
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusIpConfigurationsPublicIPAddress
 {
@@ -1591,7 +1591,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusIpConfigurations
 /// Storage version of v20250301.SubResource_STATUS
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusIpConfigurationsSubnet
 {
@@ -1610,7 +1610,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusIpConfigurations
 /// Storage version of v20250301.VirtualNetworkGatewayIPConfiguration_STATUS
 /// IP configuration for virtual network gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusIpConfigurations
 {
@@ -1658,7 +1658,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusIpConfigurations
 /// Storage version of v20250301.VpnNatRuleMapping_STATUS
 /// Vpn NatRule mapping.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusNatRulesExternalMappings
 {
@@ -1680,7 +1680,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusNatRulesExternal
 /// Storage version of v20250301.VpnNatRuleMapping_STATUS
 /// Vpn NatRule mapping.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusNatRulesInternalMappings
 {
@@ -1702,7 +1702,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusNatRulesInternal
 /// Storage version of v20250301.VirtualNetworkGatewayNatRule_STATUS
 /// VirtualNetworkGatewayNatRule Resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusNatRules
 {
@@ -1748,7 +1748,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusNatRules
 /// Storage version of v20250301.VirtualNetworkGatewaySku_STATUS
 /// VirtualNetworkGatewaySku details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusSku
 {
@@ -1773,7 +1773,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusSku
 /// Storage version of v20250301.VirtualNetworkGatewayMigrationStatus_STATUS
 /// Migration status for the Virtual Network Gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGatewayMigrationStatus
 {
@@ -1798,7 +1798,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGa
 /// Storage version of v20250301.VirtualNetworkGatewayPolicyGroupMember_STATUS
 /// Vpn Client Connection configuration PolicyGroup member
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGatewayPolicyGroupsPolicyMembers
 {
@@ -1823,7 +1823,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGa
 /// Storage version of v20250301.SubResource_STATUS
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGatewayPolicyGroupsVngClientConnectionConfigurations
 {
@@ -1842,7 +1842,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGa
 /// Storage version of v20250301.VirtualNetworkGatewayPolicyGroup_STATUS
 /// Parameters for VirtualNetworkGatewayPolicyGroup.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGatewayPolicyGroups
 {
@@ -1882,7 +1882,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVirtualNetworkGa
 /// Storage version of v20250301.RadiusServer_STATUS
 /// Radius Server Settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigurationRadiusServers
 {
@@ -1904,7 +1904,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.VngClientConnectionConfiguration_STATUS
 /// A vpn client connection configuration for client connection configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigurationVngClientConnectionConfigurations
 {
@@ -1923,7 +1923,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.IpamPoolPrefixAllocation_STATUS
 /// IpamPool prefix allocation reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigurationVpnClientAddressPoolIpamPoolPrefixAllocations
 {
@@ -1948,7 +1948,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.AddressSpace_STATUS
 /// AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigurationVpnClientAddressPool
 {
@@ -1970,7 +1970,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.IpsecPolicy_STATUS
 /// An IPSec Policy configuration for a virtual network gateway connection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigurationVpnClientIpsecPolicies
 {
@@ -2010,7 +2010,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.VpnClientRevokedCertificate_STATUS
 /// VPN client revoked certificate of virtual network gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigurationVpnClientRevokedCertificates
 {
@@ -2041,7 +2041,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.VpnClientRootCertificate_STATUS
 /// VPN client root certificate of virtual network gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigurationVpnClientRootCertificates
 {
@@ -2072,7 +2072,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.VpnClientConfiguration_STATUS
 /// VpnClientConfiguration for P2S client.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfiguration
 {
@@ -2128,7 +2128,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatusVpnClientConfigu
 /// Storage version of v20250301.VirtualNetworkGateway_STATUS
 /// A common class for general resource information.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageVirtualNetworkGatewayStatus
 {
@@ -2293,7 +2293,7 @@ public partial class V20250301storageVirtualNetworkGatewayStatus
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/virtualNetworkGateway.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworkGateways/{virtualNetworkGatewayName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301storageVirtualNetworkGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V20250301storageVirtualNetworkGatewaySpec?>, IStatus<V20250301storageVirtualNetworkGatewayStatus?>

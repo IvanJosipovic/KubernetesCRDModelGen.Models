@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kyverno.io;
 /// <summary>UpdateRequest is a request to process mutate and generate rules in background.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2UpdateRequestList : IKubernetesObject<V1ListMeta>, IItems<V2UpdateRequest>
@@ -38,7 +38,7 @@ public partial class V2UpdateRequestList : IKubernetesObject<V1ListMeta>, IItems
 }
 
 /// <summary>kind is the fully-qualified type of object being submitted (for example, v1.Pod or autoscaling.v1.Scale)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestKind
 {
@@ -64,7 +64,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 /// 
 /// See documentation for the &quot;matchPolicy&quot; field in the webhook configuration type for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestRequestKind
 {
@@ -90,7 +90,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 /// 
 /// See documentation for the &quot;matchPolicy&quot; field in the webhook configuration type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestRequestResource
 {
@@ -105,7 +105,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 }
 
 /// <summary>resource is the fully-qualified resource being requested (for example, v1.pods)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestResource
 {
@@ -120,7 +120,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 }
 
 /// <summary>userInfo is information about the requesting user</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestUserInfo
 {
@@ -146,7 +146,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 }
 
 /// <summary>AdmissionRequest describes the admission.Attributes for the admission request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequest
 {
@@ -258,7 +258,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 }
 
 /// <summary>AdmissionRequestInfoObject stores the admission request and operation details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfo
 {
@@ -272,7 +272,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfo
 }
 
 /// <summary>UserInfo is the userInfo carried in the admission request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextUserInfoUserInfo
 {
@@ -298,7 +298,7 @@ public partial class V2UpdateRequestSpecContextUserInfoUserInfo
 }
 
 /// <summary>RequestInfo contains permission info carried in an admission request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextUserInfo
 {
@@ -326,7 +326,7 @@ public partial class V2UpdateRequestSpecContextUserInfo
 /// Context represents admission request context.
 /// It is used upon admission review only and is shared across rules within the same UR.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContext
 {
@@ -340,7 +340,7 @@ public partial class V2UpdateRequestSpecContext
 }
 
 /// <summary>Type represents request type for background processing</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2UpdateRequestSpecRequestTypeEnum>))]
 public enum V2UpdateRequestSpecRequestTypeEnum
 {
@@ -355,7 +355,7 @@ public enum V2UpdateRequestSpecRequestTypeEnum
 }
 
 /// <summary>ResourceSpec is the information to identify the trigger resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecResource
 {
@@ -381,7 +381,7 @@ public partial class V2UpdateRequestSpecResource
 }
 
 /// <summary>ResourceSpec is the information to identify the trigger resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecRuleContextTrigger
 {
@@ -406,7 +406,7 @@ public partial class V2UpdateRequestSpecRuleContextTrigger
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecRuleContext
 {
@@ -435,7 +435,7 @@ public partial class V2UpdateRequestSpecRuleContext
 }
 
 /// <summary>ResourceSpec is the information to identify the trigger resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpec
 {
@@ -485,7 +485,7 @@ public partial class V2UpdateRequestSpec
     public bool? Synchronize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestStatusGeneratedResources
 {
@@ -511,7 +511,7 @@ public partial class V2UpdateRequestStatusGeneratedResources
 }
 
 /// <summary>Status contains statistics related to update request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestStatus
 {
@@ -535,7 +535,7 @@ public partial class V2UpdateRequestStatus
 }
 
 /// <summary>UpdateRequest is a request to process mutate and generate rules in background.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2UpdateRequest : IKubernetesObject<V1ObjectMeta>, ISpec<V2UpdateRequestSpec?>, IStatus<V2UpdateRequestStatus?>

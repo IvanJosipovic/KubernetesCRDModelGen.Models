@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.discoveryengine.cnrm.cloud.google.com;
 /// <summary>DiscoveryEngineDataStoreTargetSite is the Schema for the DiscoveryEngineDataStoreTargetSite API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DiscoveryEngineDataStoreTargetSite>
@@ -38,7 +38,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteList : IKubernete
 }
 
 /// <summary>The DataStore this target site should be part of.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteSpecDataStoreRef
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteSpecDataStoreRef
 }
 
 /// <summary>DiscoveryEngineDataStoreTargetSiteSpec defines the desired state of DiscoveryEngineDataStoreTargetSite</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteSpec
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteSpec
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusConditions
 {
@@ -103,7 +103,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusConditions
 }
 
 /// <summary>Failed due to insufficient quota.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedStateFailureReasonQuotaFailure
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedSta
 }
 
 /// <summary>Output only. Failure reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedStateFailureReason
 {
@@ -123,7 +123,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedSta
 }
 
 /// <summary>Output only. Site ownership and validity verification status.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedStateSiteVerificationInfo
 {
@@ -137,7 +137,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedSta
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedState
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatusObservedSta
 }
 
 /// <summary>DiscoveryEngineDataStoreTargetSiteStatus defines the config connector machine state of DiscoveryEngineDataStoreTargetSite</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatus
 {
@@ -189,7 +189,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreTargetSiteStatus
 }
 
 /// <summary>DiscoveryEngineDataStoreTargetSite is the Schema for the DiscoveryEngineDataStoreTargetSite API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DiscoveryEngineDataStoreTargetSite : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DiscoveryEngineDataStoreTargetSiteSpec>, IStatus<V1alpha1DiscoveryEngineDataStoreTargetSiteStatus?>

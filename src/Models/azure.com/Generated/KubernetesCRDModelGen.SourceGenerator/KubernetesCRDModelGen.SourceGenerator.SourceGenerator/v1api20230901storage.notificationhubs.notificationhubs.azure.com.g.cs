@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.notificationhubs.azure.com;
 /// - Generated from: /notificationhubs/resource-manager/Microsoft.NotificationHubs/NotificationHubs/stable/2023-09-01/notificationhubs.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NotificationHubs/namespaces/{namespaceName}/notificationHubs/{notificationHubName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20230901storageNotificationHubList : IKubernetesObject<V1ListMeta>, IItems<V1api20230901storageNotificationHub>
@@ -47,7 +47,7 @@ public partial class V1api20230901storageNotificationHubList : IKubernetesObject
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpecConfigMapExpressions
 {
@@ -88,7 +88,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpecConfigMa
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretExpressions
 {
@@ -129,7 +129,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretEx
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsPrimaryConnectionString
 {
@@ -158,7 +158,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsP
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsPrimaryKey
 {
@@ -187,7 +187,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsP
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsSecondaryConnectionString
 {
@@ -216,7 +216,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsS
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsSecondaryKey
 {
@@ -241,7 +241,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecretsS
 }
 
 /// <summary>Storage version of v1api20230901.NotificationHubOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecrets
 {
@@ -289,7 +289,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpecSecrets
 /// Storage version of v1api20230901.NotificationHubOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOperatorSpec
 {
@@ -316,7 +316,7 @@ public partial class V1api20230901storageNotificationHubSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a notificationhubs.azure.com/Namespace resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecOwner
 {
@@ -332,7 +332,7 @@ public partial class V1api20230901storageNotificationHubSpecOwner
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredentialPropertiesAuthTokenUrl
 {
@@ -352,7 +352,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredentialPropertiesClientId
 {
@@ -372,7 +372,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredentialPropertiesClientSecret
 {
@@ -392,7 +392,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredent
 /// Storage version of v1api20230901.AdmCredentialProperties
 /// Description of a NotificationHub AdmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredentialProperties
 {
@@ -429,7 +429,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredent
 /// Storage version of v1api20230901.AdmCredential
 /// Description of a NotificationHub AdmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredential
 {
@@ -452,7 +452,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesAdmCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesApnsCertificate
 {
@@ -472,7 +472,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesAppId
 {
@@ -492,7 +492,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesAppName
 {
@@ -512,7 +512,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesCertificateKey
 {
@@ -532,7 +532,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesEndpoint
 {
@@ -552,7 +552,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesKeyId
 {
@@ -572,7 +572,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesThumbprint
 {
@@ -592,7 +592,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialPropertiesToken
 {
@@ -612,7 +612,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// Storage version of v1api20230901.ApnsCredentialProperties
 /// Description of a NotificationHub ApnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredentialProperties
 {
@@ -684,7 +684,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// Storage version of v1api20230901.ApnsCredential
 /// Description of a NotificationHub ApnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCredential
 {
@@ -707,7 +707,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesApnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCredentialPropertiesBaiduApiKey
 {
@@ -727,7 +727,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCrede
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCredentialPropertiesBaiduEndPoint
 {
@@ -747,7 +747,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCrede
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCredentialPropertiesBaiduSecretKey
 {
@@ -767,7 +767,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCrede
 /// Storage version of v1api20230901.BaiduCredentialProperties
 /// Description of a NotificationHub BaiduCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCredentialProperties
 {
@@ -804,7 +804,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCrede
 /// Storage version of v1api20230901.BaiduCredential
 /// Description of a NotificationHub BaiduCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCredential
 {
@@ -827,7 +827,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBaiduCrede
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCredentialPropertiesSubject
 {
@@ -847,7 +847,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCre
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCredentialPropertiesVapidPrivateKey
 {
@@ -867,7 +867,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCre
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCredentialPropertiesVapidPublicKey
 {
@@ -887,7 +887,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCre
 /// Storage version of v1api20230901.BrowserCredentialProperties
 /// Description of a NotificationHub BrowserCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCredentialProperties
 {
@@ -924,7 +924,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCre
 /// Storage version of v1api20230901.BrowserCredential
 /// Description of a NotificationHub BrowserCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCredential
 {
@@ -947,7 +947,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesBrowserCre
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredentialPropertiesGcmEndpoint
 {
@@ -967,7 +967,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredentialPropertiesGoogleApiKey
 {
@@ -987,7 +987,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredent
 /// Storage version of v1api20230901.GcmCredentialProperties
 /// Description of a NotificationHub GcmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredentialProperties
 {
@@ -1017,7 +1017,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredent
 /// Storage version of v1api20230901.GcmCredential
 /// Description of a NotificationHub GcmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredential
 {
@@ -1040,7 +1040,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesGcmCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCredentialPropertiesCertificateKey
 {
@@ -1060,7 +1060,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCredentialPropertiesMpnsCertificate
 {
@@ -1080,7 +1080,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCredentialPropertiesThumbprint
 {
@@ -1100,7 +1100,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCreden
 /// Storage version of v1api20230901.MpnsCredentialProperties
 /// Description of a NotificationHub MpnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCredentialProperties
 {
@@ -1137,7 +1137,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCreden
 /// Storage version of v1api20230901.MpnsCredential
 /// Description of a NotificationHub MpnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCredential
 {
@@ -1160,7 +1160,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesMpnsCreden
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredentialPropertiesCertificateKey
 {
@@ -1180,7 +1180,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredentialPropertiesPackageSid
 {
@@ -1200,7 +1200,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredentialPropertiesSecretKey
 {
@@ -1220,7 +1220,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredentialPropertiesWindowsLiveEndpoint
 {
@@ -1240,7 +1240,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredentialPropertiesWnsCertificate
 {
@@ -1260,7 +1260,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredent
 /// Storage version of v1api20230901.WnsCredentialProperties
 /// Description of a NotificationHub WnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredentialProperties
 {
@@ -1311,7 +1311,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredent
 /// Storage version of v1api20230901.WnsCredential
 /// Description of a NotificationHub WnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredential
 {
@@ -1334,7 +1334,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesWnsCredent
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCredentialPropertiesAppSecret
 {
@@ -1354,7 +1354,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCred
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCredentialPropertiesEndpoint
 {
@@ -1374,7 +1374,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCred
 /// Storage version of v1api20230901.XiaomiCredentialProperties
 /// Description of a NotificationHub XiaomiCredentialProperties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCredentialProperties
 {
@@ -1404,7 +1404,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCred
 /// Storage version of v1api20230901.XiaomiCredential
 /// Description of a NotificationHub XiaomiCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCredential
 {
@@ -1427,7 +1427,7 @@ public partial class V1api20230901storageNotificationHubSpecPropertiesXiaomiCred
 /// Storage version of v1api20230901.NotificationHubProperties
 /// NotificationHub properties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecProperties
 {
@@ -1505,7 +1505,7 @@ public partial class V1api20230901storageNotificationHubSpecProperties
 /// Storage version of v1api20230901.Sku
 /// The Sku description for a namespace
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpecSku
 {
@@ -1533,7 +1533,7 @@ public partial class V1api20230901storageNotificationHubSpecSku
 }
 
 /// <summary>Storage version of v1api20230901.NotificationHub_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubSpec
 {
@@ -1591,7 +1591,7 @@ public partial class V1api20230901storageNotificationHubSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusConditions
 {
@@ -1640,7 +1640,7 @@ public partial class V1api20230901storageNotificationHubStatusConditions
 /// Storage version of v1api20230901.AdmCredentialProperties_STATUS
 /// Description of a NotificationHub AdmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesAdmCredentialProperties
 {
@@ -1656,7 +1656,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesAdmCrede
 /// Storage version of v1api20230901.AdmCredential_STATUS
 /// Description of a NotificationHub AdmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesAdmCredential
 {
@@ -1679,7 +1679,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesAdmCrede
 /// Storage version of v1api20230901.ApnsCredentialProperties_STATUS
 /// Description of a NotificationHub ApnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesApnsCredentialProperties
 {
@@ -1695,7 +1695,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesApnsCred
 /// Storage version of v1api20230901.ApnsCredential_STATUS
 /// Description of a NotificationHub ApnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesApnsCredential
 {
@@ -1718,7 +1718,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesApnsCred
 /// Storage version of v1api20230901.SharedAccessAuthorizationRuleProperties_STATUS
 /// SharedAccessAuthorizationRule properties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesAuthorizationRules
 {
@@ -1755,7 +1755,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesAuthoriz
 /// Storage version of v1api20230901.BaiduCredentialProperties_STATUS
 /// Description of a NotificationHub BaiduCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesBaiduCredentialProperties
 {
@@ -1771,7 +1771,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesBaiduCre
 /// Storage version of v1api20230901.BaiduCredential_STATUS
 /// Description of a NotificationHub BaiduCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesBaiduCredential
 {
@@ -1794,7 +1794,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesBaiduCre
 /// Storage version of v1api20230901.BrowserCredentialProperties_STATUS
 /// Description of a NotificationHub BrowserCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesBrowserCredentialProperties
 {
@@ -1810,7 +1810,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesBrowserC
 /// Storage version of v1api20230901.BrowserCredential_STATUS
 /// Description of a NotificationHub BrowserCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesBrowserCredential
 {
@@ -1833,7 +1833,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesBrowserC
 /// Storage version of v1api20230901.GcmCredentialProperties_STATUS
 /// Description of a NotificationHub GcmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesGcmCredentialProperties
 {
@@ -1849,7 +1849,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesGcmCrede
 /// Storage version of v1api20230901.GcmCredential_STATUS
 /// Description of a NotificationHub GcmCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesGcmCredential
 {
@@ -1872,7 +1872,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesGcmCrede
 /// Storage version of v1api20230901.MpnsCredentialProperties_STATUS
 /// Description of a NotificationHub MpnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesMpnsCredentialProperties
 {
@@ -1888,7 +1888,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesMpnsCred
 /// Storage version of v1api20230901.MpnsCredential_STATUS
 /// Description of a NotificationHub MpnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesMpnsCredential
 {
@@ -1911,7 +1911,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesMpnsCred
 /// Storage version of v1api20230901.WnsCredentialProperties_STATUS
 /// Description of a NotificationHub WnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesWnsCredentialProperties
 {
@@ -1927,7 +1927,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesWnsCrede
 /// Storage version of v1api20230901.WnsCredential_STATUS
 /// Description of a NotificationHub WnsCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesWnsCredential
 {
@@ -1950,7 +1950,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesWnsCrede
 /// Storage version of v1api20230901.XiaomiCredentialProperties_STATUS
 /// Description of a NotificationHub XiaomiCredentialProperties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesXiaomiCredentialProperties
 {
@@ -1966,7 +1966,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesXiaomiCr
 /// Storage version of v1api20230901.XiaomiCredential_STATUS
 /// Description of a NotificationHub XiaomiCredential.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusPropertiesXiaomiCredential
 {
@@ -1989,7 +1989,7 @@ public partial class V1api20230901storageNotificationHubStatusPropertiesXiaomiCr
 /// Storage version of v1api20230901.NotificationHubProperties_STATUS
 /// NotificationHub properties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusProperties
 {
@@ -2073,7 +2073,7 @@ public partial class V1api20230901storageNotificationHubStatusProperties
 /// Storage version of v1api20230901.Sku_STATUS
 /// The Sku description for a namespace
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusSku
 {
@@ -2104,7 +2104,7 @@ public partial class V1api20230901storageNotificationHubStatusSku
 /// Storage version of v1api20230901.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatusSystemData
 {
@@ -2135,7 +2135,7 @@ public partial class V1api20230901storageNotificationHubStatusSystemData
 }
 
 /// <summary>Storage version of v1api20230901.NotificationHub_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230901storageNotificationHubStatus
 {
@@ -2192,7 +2192,7 @@ public partial class V1api20230901storageNotificationHubStatus
 /// - Generated from: /notificationhubs/resource-manager/Microsoft.NotificationHubs/NotificationHubs/stable/2023-09-01/notificationhubs.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NotificationHubs/namespaces/{namespaceName}/notificationHubs/{notificationHubName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20230901storageNotificationHub : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20230901storageNotificationHubSpec?>, IStatus<V1api20230901storageNotificationHubStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networking.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha3WorkloadGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha3WorkloadGroup>
@@ -37,7 +37,7 @@ public partial class V1alpha3WorkloadGroupList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>Metadata that will be used for all corresponding `WorkloadEntries`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecMetadata
 {
@@ -49,7 +49,7 @@ public partial class V1alpha3WorkloadGroupSpecMetadata
 }
 
 /// <summary>Health is determined by how the command that is executed exited.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecProbeExec
 {
@@ -59,7 +59,7 @@ public partial class V1alpha3WorkloadGroupSpecProbeExec
 }
 
 /// <summary>GRPC call is made and response/error is used to determine health.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecProbeGrpc
 {
@@ -71,7 +71,7 @@ public partial class V1alpha3WorkloadGroupSpecProbeGrpc
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecProbeHttpGetHttpHeaders
 {
@@ -83,7 +83,7 @@ public partial class V1alpha3WorkloadGroupSpecProbeHttpGetHttpHeaders
 }
 
 /// <summary>`httpGet` is performed to a given endpoint and the status/able to connect determines health.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecProbeHttpGet
 {
@@ -108,7 +108,7 @@ public partial class V1alpha3WorkloadGroupSpecProbeHttpGet
 }
 
 /// <summary>Health is determined by if the proxy is able to connect.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecProbeTcpSocket
 {
@@ -120,7 +120,7 @@ public partial class V1alpha3WorkloadGroupSpecProbeTcpSocket
 }
 
 /// <summary>`ReadinessProbe` describes the configuration the user must provide for healthchecking on their workload.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecProbe
 {
@@ -162,7 +162,7 @@ public partial class V1alpha3WorkloadGroupSpecProbe
 }
 
 /// <summary>Template to be used for the generation of `WorkloadEntry` resources that belong to this `WorkloadGroup`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpecTemplate
 {
@@ -196,7 +196,7 @@ public partial class V1alpha3WorkloadGroupSpecTemplate
 }
 
 /// <summary>Describes a collection of workload instances. See more details at: https://istio.io/docs/reference/config/networking/workload-group.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha3WorkloadGroupSpec
 {
@@ -213,7 +213,7 @@ public partial class V1alpha3WorkloadGroupSpec
     public required V1alpha3WorkloadGroupSpecTemplate Template { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha3WorkloadGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha3WorkloadGroupSpec>, IStatus<JsonNode?>

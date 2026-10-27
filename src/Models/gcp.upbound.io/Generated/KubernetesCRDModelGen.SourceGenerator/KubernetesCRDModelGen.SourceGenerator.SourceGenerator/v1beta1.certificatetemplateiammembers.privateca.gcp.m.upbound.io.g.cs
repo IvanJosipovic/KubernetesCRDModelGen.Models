@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privateca.gcp.m.upbound.io;
 /// <summary>CertificateTemplateIAMMember is the Schema for the CertificateTemplateIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateTemplateIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CertificateTemplateIAMMember>
@@ -43,7 +43,7 @@ public partial class V1beta1CertificateTemplateIAMMemberList : IKubernetesObject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateRefPolicyResolutionEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateRefPolicyResolveEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertifica
 }
 
 /// <summary>Reference to a CertificateTemplate in privateca to populate certificateTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertifica
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateSelectorPolicyResolutionEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateSelectorPolicyResolveEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertifica
 }
 
 /// <summary>Selector for a CertificateTemplate in privateca to populate certificateTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCertifica
     public V1beta1CertificateTemplateIAMMemberSpecForProviderCertificateTemplateSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCondition
 {
@@ -206,7 +206,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecForProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecForProvider
 {
@@ -243,7 +243,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateRefPolicyResolutionEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateRefPolicyResolutionEnum
 {
@@ -259,7 +259,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTempla
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateRefPolicyResolveEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateRefPolicyResolveEnum
 {
@@ -270,7 +270,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTempla
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateRefPolicy
 {
@@ -294,7 +294,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertific
 }
 
 /// <summary>Reference to a CertificateTemplate in privateca to populate certificateTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateRef
 {
@@ -317,7 +317,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertific
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateSelectorPolicyResolutionEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateSelectorPolicyResolutionEnum
 {
@@ -333,7 +333,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTempla
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateSelectorPolicyResolveEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateSelectorPolicyResolveEnum
 {
@@ -344,7 +344,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTempla
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateSelectorPolicy
 {
@@ -368,7 +368,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertific
 }
 
 /// <summary>Selector for a CertificateTemplate in privateca to populate certificateTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateSelector
 {
@@ -392,7 +392,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCertific
     public V1beta1CertificateTemplateIAMMemberSpecInitProviderCertificateTemplateSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderCondition
 {
@@ -418,7 +418,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecInitProviderConditio
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecInitProvider
 {
@@ -453,7 +453,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateIAMMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1CertificateTemplateIAMMemberSpecManagementPoliciesEnum
 {
@@ -476,7 +476,7 @@ public enum V1beta1CertificateTemplateIAMMemberSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecProviderConfigRef
 {
@@ -495,7 +495,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpecWriteConnectionSecretToRef
 {
@@ -505,7 +505,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpecWriteConnectionSecre
 }
 
 /// <summary>CertificateTemplateIAMMemberSpec defines the desired state of CertificateTemplateIAMMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberSpec
 {
@@ -556,7 +556,7 @@ public partial class V1beta1CertificateTemplateIAMMemberSpec
     public V1beta1CertificateTemplateIAMMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberStatusAtProviderCondition
 {
@@ -570,7 +570,7 @@ public partial class V1beta1CertificateTemplateIAMMemberStatusAtProviderConditio
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberStatusAtProvider
 {
@@ -600,7 +600,7 @@ public partial class V1beta1CertificateTemplateIAMMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberStatusConditions
 {
@@ -643,7 +643,7 @@ public partial class V1beta1CertificateTemplateIAMMemberStatusConditions
 }
 
 /// <summary>CertificateTemplateIAMMemberStatus defines the observed state of CertificateTemplateIAMMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateTemplateIAMMemberStatus
 {
@@ -673,7 +673,7 @@ public partial class V1beta1CertificateTemplateIAMMemberStatus
 }
 
 /// <summary>CertificateTemplateIAMMember is the Schema for the CertificateTemplateIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateTemplateIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CertificateTemplateIAMMemberSpec>, IStatus<V1beta1CertificateTemplateIAMMemberStatus?>

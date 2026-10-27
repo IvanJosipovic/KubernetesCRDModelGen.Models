@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.upbound.io;
 /// <summary>Flow is the Schema for the Flows API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlowList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Flow>
@@ -46,7 +46,7 @@ public partial class V1beta1FlowList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecDeletionPolicyEnum>))]
 public enum V1beta1FlowSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1FlowSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelectorP
 }
 
 /// <summary>Selector for a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta1FlowSpecForProviderCustomerEncryptionKeyArnSelector
 }
 
 /// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfigurationConditional
 {
@@ -214,7 +214,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfiguration
 }
 
 /// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfigurationData
 {
@@ -228,7 +228,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfiguration
 }
 
 /// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfiguration
 {
@@ -241,7 +241,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionConnectionConfiguration
     public V1beta1FlowSpecForProviderDefinitionConnectionConfigurationData? Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionConnection
 {
@@ -267,7 +267,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionConnection
 }
 
 /// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationAgent
 {
@@ -277,13 +277,13 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationAgent
 }
 
 /// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationCollector
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationConditionCondition
 {
@@ -297,7 +297,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationCondit
 }
 
 /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationCondition
 {
@@ -307,7 +307,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationCondit
 }
 
 /// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationInlineCode
 {
@@ -321,21 +321,21 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationInline
 }
 
 /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationInput
 {
 }
 
 /// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationIterator
 {
 }
 
 /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration
 {
@@ -349,7 +349,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText
 {
@@ -371,7 +371,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 }
 
 /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration
 {
@@ -386,7 +386,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolutionEnum
 {
@@ -402,7 +402,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolveEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicy
 {
@@ -437,7 +437,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 }
 
 /// <summary>Reference to a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicy
 {
@@ -507,7 +507,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 }
 
 /// <summary>Selector for a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelector
 {
@@ -528,7 +528,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 }
 
 /// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowledgeBase
 {
@@ -566,7 +566,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationKnowle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolutionEnum
 {
@@ -582,7 +582,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionL
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolveEnum
 {
@@ -593,7 +593,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionL
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicy
 {
@@ -617,7 +617,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambda
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRef
 {
@@ -636,7 +636,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambda
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolutionEnum
 {
@@ -652,7 +652,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionL
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolveEnum
 {
@@ -663,7 +663,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionL
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicy
 {
@@ -687,7 +687,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambda
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelector
 {
@@ -708,7 +708,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambda
 }
 
 /// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambdaFunction
 {
@@ -726,7 +726,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLambda
 }
 
 /// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLex
 {
@@ -740,14 +740,14 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationLex
 }
 
 /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationOutput
 {
 }
 
 /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptGuardrailConfiguration
 {
@@ -761,7 +761,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText
 {
@@ -783,7 +783,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration
 {
@@ -792,7 +792,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable
 {
@@ -802,7 +802,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint
 {
@@ -811,7 +811,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent
 {
@@ -824,7 +824,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage
 {
@@ -838,7 +838,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint
 {
@@ -847,7 +847,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem
 {
@@ -861,7 +861,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint
 {
@@ -871,7 +871,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
@@ -881,7 +881,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec
 {
@@ -898,7 +898,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool
 {
@@ -912,21 +912,21 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
 /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
 /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
@@ -936,7 +936,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice
 {
@@ -954,7 +954,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration
 {
@@ -968,7 +968,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat
 {
@@ -990,7 +990,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint
 {
@@ -999,7 +999,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable
 {
@@ -1009,7 +1009,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration
 {
@@ -1041,7 +1041,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationInline
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolutionEnum
 {
@@ -1088,7 +1088,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolveEnum
 {
@@ -1099,7 +1099,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicy
 {
@@ -1123,7 +1123,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Reference to a Prompt in bedrockagent to populate promptArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRef
 {
@@ -1142,7 +1142,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolutionEnum
 {
@@ -1158,7 +1158,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolveEnum
 {
@@ -1169,7 +1169,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicy
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Selector for a Prompt in bedrockagent to populate promptArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelector
 {
@@ -1214,7 +1214,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfigurationResource
 {
@@ -1232,7 +1232,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPromptSourceConfiguration
 {
@@ -1246,7 +1246,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 }
 
 /// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 {
@@ -1265,7 +1265,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationPrompt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolutionEnum
 {
@@ -1281,7 +1281,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolveEnum
 {
@@ -1292,7 +1292,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicy
 {
@@ -1316,7 +1316,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRef
 {
@@ -1335,7 +1335,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -1351,7 +1351,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolveEnum
 {
@@ -1362,7 +1362,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicy
 {
@@ -1386,7 +1386,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelector
 {
@@ -1407,7 +1407,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
 }
 
 /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3
 {
@@ -1425,7 +1425,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrievalServiceConfiguration
 {
@@ -1435,7 +1435,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
 }
 
 /// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrieval
 {
@@ -1450,7 +1450,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationRetrie
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolutionEnum
 {
@@ -1466,7 +1466,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolveEnum
 {
@@ -1477,7 +1477,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicy
 {
@@ -1501,7 +1501,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRef
 {
@@ -1520,7 +1520,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -1536,7 +1536,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolveEnum
 {
@@ -1547,7 +1547,7 @@ public enum V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicy
 {
@@ -1571,7 +1571,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelector
 {
@@ -1592,7 +1592,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
 }
 
 /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfigurationS3
 {
@@ -1610,7 +1610,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorageServiceConfiguration
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorage
 {
@@ -1630,7 +1630,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorag
 }
 
 /// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeConfiguration
 {
@@ -1687,7 +1687,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeConfiguration
     public V1beta1FlowSpecForProviderDefinitionNodeConfigurationStorage? Storage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeInput
 {
@@ -1708,7 +1708,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeInput
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNodeOutput
 {
@@ -1721,7 +1721,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNodeOutput
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinitionNode
 {
@@ -1747,7 +1747,7 @@ public partial class V1beta1FlowSpecForProviderDefinitionNode
 }
 
 /// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderDefinition
 {
@@ -1766,7 +1766,7 @@ public partial class V1beta1FlowSpecForProviderDefinition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -1782,7 +1782,7 @@ public enum V1beta1FlowSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -1793,7 +1793,7 @@ public enum V1beta1FlowSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderExecutionRoleArnRefPolicy
 {
@@ -1817,7 +1817,7 @@ public partial class V1beta1FlowSpecForProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderExecutionRoleArnRef
 {
@@ -1836,7 +1836,7 @@ public partial class V1beta1FlowSpecForProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -1852,7 +1852,7 @@ public enum V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -1863,7 +1863,7 @@ public enum V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicy
 {
@@ -1887,7 +1887,7 @@ public partial class V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProviderExecutionRoleArnSelector
 {
@@ -1907,7 +1907,7 @@ public partial class V1beta1FlowSpecForProviderExecutionRoleArnSelector
     public V1beta1FlowSpecForProviderExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecForProvider
 {
@@ -1965,7 +1965,7 @@ public partial class V1beta1FlowSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolutionEnum
 {
@@ -1981,7 +1981,7 @@ public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolveEnum
 {
@@ -1992,7 +1992,7 @@ public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolicy
 {
@@ -2016,7 +2016,7 @@ public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRefPolic
 }
 
 /// <summary>Reference to a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRef
 {
@@ -2035,7 +2035,7 @@ public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolutionEnum
 {
@@ -2051,7 +2051,7 @@ public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyResolveEnum
 {
@@ -2062,7 +2062,7 @@ public enum V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelectorPolicy
 {
@@ -2086,7 +2086,7 @@ public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelector
 }
 
 /// <summary>Selector for a Key in kms to populate customerEncryptionKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelector
 {
@@ -2107,7 +2107,7 @@ public partial class V1beta1FlowSpecInitProviderCustomerEncryptionKeyArnSelector
 }
 
 /// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfigurationConditional
 {
@@ -2117,7 +2117,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfiguratio
 }
 
 /// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfigurationData
 {
@@ -2131,7 +2131,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfiguratio
 }
 
 /// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfiguration
 {
@@ -2144,7 +2144,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionConnectionConfiguratio
     public V1beta1FlowSpecInitProviderDefinitionConnectionConfigurationData? Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionConnection
 {
@@ -2170,7 +2170,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionConnection
 }
 
 /// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationAgent
 {
@@ -2180,13 +2180,13 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationAgent
 }
 
 /// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCollector
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationConditionCondition
 {
@@ -2200,7 +2200,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCondi
 }
 
 /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCondition
 {
@@ -2210,7 +2210,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationCondi
 }
 
 /// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationInlineCode
 {
@@ -2224,21 +2224,21 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationInlin
 }
 
 /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationInput
 {
 }
 
 /// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationIterator
 {
 }
 
 /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration
 {
@@ -2252,7 +2252,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText
 {
@@ -2274,7 +2274,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration
 {
@@ -2289,7 +2289,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolutionEnum
 {
@@ -2305,7 +2305,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicyResolveEnum
 {
@@ -2316,7 +2316,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseK
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRefPolicy
 {
@@ -2340,7 +2340,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>Reference to a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdRef
 {
@@ -2359,7 +2359,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolutionEnum
 {
@@ -2375,7 +2375,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicyResolveEnum
 {
@@ -2386,7 +2386,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseK
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelectorPolicy
 {
@@ -2410,7 +2410,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>Selector for a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBaseKnowledgeBaseIdSelector
 {
@@ -2431,7 +2431,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowledgeBase
 {
@@ -2469,7 +2469,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationKnowl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolutionEnum
 {
@@ -2485,7 +2485,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunction
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicyResolveEnum
 {
@@ -2496,7 +2496,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunction
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRefPolicy
 {
@@ -2520,7 +2520,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambd
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnRef
 {
@@ -2539,7 +2539,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolutionEnum
 {
@@ -2555,7 +2555,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunction
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicyResolveEnum
 {
@@ -2566,7 +2566,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunction
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelectorPolicy
 {
@@ -2590,7 +2590,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambd
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunctionLambdaArnSelector
 {
@@ -2611,7 +2611,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambd
 }
 
 /// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambdaFunction
 {
@@ -2629,7 +2629,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLambd
 }
 
 /// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLex
 {
@@ -2643,14 +2643,14 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationLex
 }
 
 /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationOutput
 {
 }
 
 /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptGuardrailConfiguration
 {
@@ -2664,7 +2664,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText
 {
@@ -2686,7 +2686,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration
 {
@@ -2695,7 +2695,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable
 {
@@ -2705,7 +2705,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint
 {
@@ -2714,7 +2714,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent
 {
@@ -2727,7 +2727,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage
 {
@@ -2741,7 +2741,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint
 {
@@ -2750,7 +2750,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem
 {
@@ -2764,7 +2764,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint
 {
@@ -2774,7 +2774,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
@@ -2784,7 +2784,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec
 {
@@ -2801,7 +2801,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool
 {
@@ -2815,21 +2815,21 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
 /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
 /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
@@ -2839,7 +2839,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice
 {
@@ -2857,7 +2857,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration
 {
@@ -2871,7 +2871,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat
 {
@@ -2893,7 +2893,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint
 {
@@ -2902,7 +2902,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable
 {
@@ -2912,7 +2912,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText
 {
@@ -2930,7 +2930,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration
 {
@@ -2944,7 +2944,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationInline
 {
@@ -2975,7 +2975,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolutionEnum
 {
@@ -2991,7 +2991,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicyResolveEnum
 {
@@ -3002,7 +3002,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRefPolicy
 {
@@ -3026,7 +3026,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Reference to a Prompt in bedrockagent to populate promptArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnRef
 {
@@ -3045,7 +3045,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolutionEnum
 {
@@ -3061,7 +3061,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicyResolveEnum
 {
@@ -3072,7 +3072,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelectorPolicy
 {
@@ -3096,7 +3096,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Selector for a Prompt in bedrockagent to populate promptArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResourcePromptArnSelector
 {
@@ -3117,7 +3117,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfigurationResource
 {
@@ -3135,7 +3135,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromptSourceConfiguration
 {
@@ -3149,7 +3149,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPrompt
 {
@@ -3168,7 +3168,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationPromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolutionEnum
 {
@@ -3184,7 +3184,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicyResolveEnum
 {
@@ -3195,7 +3195,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRefPolicy
 {
@@ -3219,7 +3219,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameRef
 {
@@ -3238,7 +3238,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -3254,7 +3254,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicyResolveEnum
 {
@@ -3265,7 +3265,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelectorPolicy
 {
@@ -3289,7 +3289,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3BucketNameSelector
 {
@@ -3310,7 +3310,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3
 {
@@ -3328,7 +3328,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrievalServiceConfiguration
 {
@@ -3338,7 +3338,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetrieval
 {
@@ -3353,7 +3353,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationRetri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolutionEnum
 {
@@ -3369,7 +3369,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageService
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicyResolveEnum
 {
@@ -3380,7 +3380,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageService
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRefPolicy
 {
@@ -3404,7 +3404,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameRef
 {
@@ -3423,7 +3423,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -3439,7 +3439,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageService
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicyResolveEnum
 {
@@ -3450,7 +3450,7 @@ public enum V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageService
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelectorPolicy
 {
@@ -3474,7 +3474,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3BucketNameSelector
 {
@@ -3495,7 +3495,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfigurationS3
 {
@@ -3513,7 +3513,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorageServiceConfiguration
 {
@@ -3523,7 +3523,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorage
 {
@@ -3533,7 +3533,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfiguration
 {
@@ -3590,7 +3590,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeConfiguration
     public V1beta1FlowSpecInitProviderDefinitionNodeConfigurationStorage? Storage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeInput
 {
@@ -3611,7 +3611,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeInput
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNodeOutput
 {
@@ -3624,7 +3624,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNodeOutput
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinitionNode
 {
@@ -3650,7 +3650,7 @@ public partial class V1beta1FlowSpecInitProviderDefinitionNode
 }
 
 /// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderDefinition
 {
@@ -3669,7 +3669,7 @@ public partial class V1beta1FlowSpecInitProviderDefinition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -3685,7 +3685,7 @@ public enum V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -3696,7 +3696,7 @@ public enum V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicy
 {
@@ -3720,7 +3720,7 @@ public partial class V1beta1FlowSpecInitProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderExecutionRoleArnRef
 {
@@ -3739,7 +3739,7 @@ public partial class V1beta1FlowSpecInitProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -3755,7 +3755,7 @@ public enum V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -3766,7 +3766,7 @@ public enum V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicy
 {
@@ -3790,7 +3790,7 @@ public partial class V1beta1FlowSpecInitProviderExecutionRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProviderExecutionRoleArnSelector
 {
@@ -3822,7 +3822,7 @@ public partial class V1beta1FlowSpecInitProviderExecutionRoleArnSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecInitProvider
 {
@@ -3871,7 +3871,7 @@ public partial class V1beta1FlowSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecManagementPoliciesEnum>))]
 public enum V1beta1FlowSpecManagementPoliciesEnum
 {
@@ -3895,7 +3895,7 @@ public enum V1beta1FlowSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3911,7 +3911,7 @@ public enum V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1FlowSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3922,7 +3922,7 @@ public enum V1beta1FlowSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecProviderConfigRefPolicy
 {
@@ -3950,7 +3950,7 @@ public partial class V1beta1FlowSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecProviderConfigRef
 {
@@ -3969,7 +3969,7 @@ public partial class V1beta1FlowSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpecWriteConnectionSecretToRef
 {
@@ -3983,7 +3983,7 @@ public partial class V1beta1FlowSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FlowSpec defines the desired state of Flow</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowSpec
 {
@@ -4051,7 +4051,7 @@ public partial class V1beta1FlowSpec
 }
 
 /// <summary>The configuration of a connection originating from a Condition node. See Conditional Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfigurationConditional
 {
@@ -4061,7 +4061,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfiguratio
 }
 
 /// <summary>The configuration of a connection originating from a node that isn’t a Condition node. See Data Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfigurationData
 {
@@ -4075,7 +4075,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfiguratio
 }
 
 /// <summary>Configuration of the connection. See Connection Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfiguration
 {
@@ -4088,7 +4088,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionConnectionConfiguratio
     public V1beta1FlowStatusAtProviderDefinitionConnectionConfigurationData? Data { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionConnection
 {
@@ -4114,7 +4114,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionConnection
 }
 
 /// <summary>Contains configurations for an agent node in your flow. Invokes an alias of an agent and returns the response. See Agent Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationAgent
 {
@@ -4124,13 +4124,13 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationAgent
 }
 
 /// <summary>Contains configurations for a collector node in your flow. Collects an iteration of inputs and consolidates them into an array of outputs. This object has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCollector
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationConditionCondition
 {
@@ -4144,7 +4144,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCondi
 }
 
 /// <summary>Contains configurations for a Condition node in your flow. Defines conditions that lead to different branches of the flow. See Condition Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCondition
 {
@@ -4154,7 +4154,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationCondi
 }
 
 /// <summary>Contains configurations for an inline code node in your flow. See Inline Code Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationInlineCode
 {
@@ -4168,21 +4168,21 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationInlin
 }
 
 /// <summary>A list of objects containing information about an input into the node. See Node Input for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationInput
 {
 }
 
 /// <summary>Contains configurations for an iterator node in your flow. Takes an input that is an array and iteratively sends each item of the array as an output to the following node. The size of the array is also returned in the output. The output flow node at the end of the flow iteration will return a response for each member of the array. To return only one response, you can include a collector node downstream from the iterator node. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationIterator
 {
 }
 
 /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration
 {
@@ -4196,7 +4196,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText
 {
@@ -4218,7 +4218,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration
 {
@@ -4228,7 +4228,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>Contains configurations for a knowledge base node in your flow. Queries a knowledge base and returns the retrieved results or generated response. See Knowledge Base Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowledgeBase
 {
@@ -4253,7 +4253,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationKnowl
 }
 
 /// <summary>Contains configurations for a Lambda function node in your flow. Invokes a Lambda function. See Lambda Function Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLambdaFunction
 {
@@ -4263,7 +4263,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLambd
 }
 
 /// <summary>Contains configurations for a Lex node in your flow. Invokes an Amazon Lex bot to identify the intent of the input and return the intent as the output. See Lex Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLex
 {
@@ -4277,14 +4277,14 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationLex
 }
 
 /// <summary>A list of objects containing information about an output from the node. See Node Output for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationOutput
 {
 }
 
 /// <summary>Configures a guardrail for prompt generation. See Guardrail Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptGuardrailConfiguration
 {
@@ -4298,7 +4298,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText
 {
@@ -4320,7 +4320,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Configures model inference for knowledge base query and response generation. See Inference Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration
 {
@@ -4329,7 +4329,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable
 {
@@ -4339,7 +4339,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint
 {
@@ -4348,7 +4348,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent
 {
@@ -4361,7 +4361,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage
 {
@@ -4375,7 +4375,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint
 {
@@ -4384,7 +4384,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem
 {
@@ -4398,7 +4398,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint
 {
@@ -4408,7 +4408,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The input schema of the tool. See Tool Input Schema for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema
 {
@@ -4418,7 +4418,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The specification for the tool. See Tool Specification for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec
 {
@@ -4435,7 +4435,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationTool
 {
@@ -4449,21 +4449,21 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Defines tools, at least one of which must be requested by the model. No text is generated but the results of tool use are sent back to the model to help generate a response. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAny
 {
 }
 
 /// <summary>Defines tools. The model automatically decides whether to call a tool or to generate text instead. This block has no fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceAuto
 {
 }
 
 /// <summary>Defines a specific tool that the model must request. No text is generated but the results of tool use are sent back to the model to help generate a response. See Named Tool for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool
 {
@@ -4473,7 +4473,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Defines which tools the model should request when invoked. See Tool Choice for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoice
 {
@@ -4491,7 +4491,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Configuration information for the tools that the model can use when generating a response. See Tool Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration
 {
@@ -4505,7 +4505,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations to use the prompt in a conversational format. See Chat Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChat
 {
@@ -4527,7 +4527,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Creates a cache checkpoint within a tool designation. See Cache Point for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint
 {
@@ -4536,7 +4536,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable
 {
@@ -4546,7 +4546,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>The message for the prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText
 {
@@ -4564,7 +4564,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains a prompt and variables in the prompt that can be replaced with values at runtime. See Prompt Template Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration
 {
@@ -4578,7 +4578,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations for a prompt that is defined inline. See Prompt Inline Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationInline
 {
@@ -4604,7 +4604,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations for a prompt from Prompt management. See Prompt Resource Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfigurationResource
 {
@@ -4614,7 +4614,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Configures the prompt source, either inline or from Prompt management. See Source Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromptSourceConfiguration
 {
@@ -4628,7 +4628,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations for a prompt node in your flow. Runs a prompt and generates the model response as the output. You can use a prompt from Prompt management or you can configure one in this node. See Prompt Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPrompt
 {
@@ -4642,7 +4642,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationPromp
 }
 
 /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrievalServiceConfigurationS3
 {
@@ -4652,7 +4652,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrievalServiceConfiguration
 {
@@ -4662,7 +4662,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Contains configurations for a Retrieval node in your flow. Retrieves data from an Amazon S3 location and returns it as the output. See Retrieval Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetrieval
 {
@@ -4672,7 +4672,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationRetri
 }
 
 /// <summary>Contains configurations for the service to use for storing the input into the node. See Storage S3 Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorageServiceConfigurationS3
 {
@@ -4682,7 +4682,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Service Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorageServiceConfiguration
 {
@@ -4692,7 +4692,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Contains configurations for a Storage node in your flow. Stores an input in an Amazon S3 location. See Storage Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorage
 {
@@ -4702,7 +4702,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStora
 }
 
 /// <summary>Contains configurations for the node. See Node Configuration for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfiguration
 {
@@ -4759,7 +4759,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeConfiguration
     public V1beta1FlowStatusAtProviderDefinitionNodeConfigurationStorage? Storage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeInput
 {
@@ -4780,7 +4780,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeInput
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNodeOutput
 {
@@ -4793,7 +4793,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNodeOutput
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinitionNode
 {
@@ -4819,7 +4819,7 @@ public partial class V1beta1FlowStatusAtProviderDefinitionNode
 }
 
 /// <summary>A definition of the nodes and connections between nodes in the flow. See Definition for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProviderDefinition
 {
@@ -4832,7 +4832,7 @@ public partial class V1beta1FlowStatusAtProviderDefinition
     public IList<V1beta1FlowStatusAtProviderDefinitionNode>? Node { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusAtProvider
 {
@@ -4897,7 +4897,7 @@ public partial class V1beta1FlowStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatusConditions
 {
@@ -4940,7 +4940,7 @@ public partial class V1beta1FlowStatusConditions
 }
 
 /// <summary>FlowStatus defines the observed state of Flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlowStatus
 {
@@ -4970,7 +4970,7 @@ public partial class V1beta1FlowStatus
 }
 
 /// <summary>Flow is the Schema for the Flows API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Flow : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FlowSpec>, IStatus<V1beta1FlowStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datastream.gcp.upbound.io;
 /// <summary>PrivateConnection is the Schema for the PrivateConnections API. The PrivateConnection resource is used to establish private connectivity between Datastream and a customer&apos;s network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2PrivateConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2PrivateConnection>
@@ -46,7 +46,7 @@ public partial class V1beta2PrivateConnectionList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecDeletionPolicyEnum>))]
 public enum V1beta2PrivateConnectionSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2PrivateConnectionSpecDeletionPolicyEnum
 /// between Datastream and the consumer&apos;s PSC.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecForProviderPscInterfaceConfig
 {
@@ -83,7 +83,7 @@ public partial class V1beta2PrivateConnectionSpecForProviderPscInterfaceConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolutionEnum>))]
 public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolutionEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolveEnum>))]
 public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolveEnum
 {
@@ -110,7 +110,7 @@ public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicy
 {
@@ -134,7 +134,7 @@ public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcR
 }
 
 /// <summary>Reference to a Network in compute to populate vpc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcRef
 {
@@ -153,7 +153,7 @@ public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum>))]
 public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum>))]
 public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicy
 {
@@ -204,7 +204,7 @@ public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcS
 }
 
 /// <summary>Selector for a Network in compute to populate vpc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelector
 {
@@ -229,7 +229,7 @@ public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcS
 /// between Datastream and the consumer&apos;s VPC.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfig
 {
@@ -253,7 +253,7 @@ public partial class V1beta2PrivateConnectionSpecForProviderVpcPeeringConfig
     public V1beta2PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelector? VpcSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecForProvider
 {
@@ -314,7 +314,7 @@ public partial class V1beta2PrivateConnectionSpecForProvider
 /// between Datastream and the consumer&apos;s PSC.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecInitProviderPscInterfaceConfig
 {
@@ -336,7 +336,7 @@ public partial class V1beta2PrivateConnectionSpecInitProviderPscInterfaceConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolutionEnum>))]
 public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolutionEnum
 {
@@ -352,7 +352,7 @@ public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolveEnum>))]
 public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolveEnum
 {
@@ -363,7 +363,7 @@ public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicy
 {
@@ -387,7 +387,7 @@ public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 }
 
 /// <summary>Reference to a Network in compute to populate vpc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRef
 {
@@ -406,7 +406,7 @@ public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum>))]
 public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum
 {
@@ -422,7 +422,7 @@ public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum>))]
 public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicy
 {
@@ -457,7 +457,7 @@ public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 }
 
 /// <summary>Selector for a Network in compute to populate vpc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelector
 {
@@ -482,7 +482,7 @@ public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 /// between Datastream and the consumer&apos;s VPC.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfig
 {
@@ -518,7 +518,7 @@ public partial class V1beta2PrivateConnectionSpecInitProviderVpcPeeringConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecInitProvider
 {
@@ -574,7 +574,7 @@ public partial class V1beta2PrivateConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecManagementPoliciesEnum>))]
 public enum V1beta2PrivateConnectionSpecManagementPoliciesEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta2PrivateConnectionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2PrivateConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -614,7 +614,7 @@ public enum V1beta2PrivateConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PrivateConnectionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2PrivateConnectionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta2PrivateConnectionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecProviderConfigRefPolicy
 {
@@ -653,7 +653,7 @@ public partial class V1beta2PrivateConnectionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecProviderConfigRef
 {
@@ -672,7 +672,7 @@ public partial class V1beta2PrivateConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpecWriteConnectionSecretToRef
 {
@@ -686,7 +686,7 @@ public partial class V1beta2PrivateConnectionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PrivateConnectionSpec defines the desired state of PrivateConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionSpec
 {
@@ -753,7 +753,7 @@ public partial class V1beta2PrivateConnectionSpec
     public V1beta2PrivateConnectionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionStatusAtProviderError
 {
@@ -771,7 +771,7 @@ public partial class V1beta2PrivateConnectionStatusAtProviderError
 /// between Datastream and the consumer&apos;s PSC.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionStatusAtProviderPscInterfaceConfig
 {
@@ -792,7 +792,7 @@ public partial class V1beta2PrivateConnectionStatusAtProviderPscInterfaceConfig
 /// between Datastream and the consumer&apos;s VPC.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionStatusAtProviderVpcPeeringConfig
 {
@@ -808,7 +808,7 @@ public partial class V1beta2PrivateConnectionStatusAtProviderVpcPeeringConfig
     public string? Vpc { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionStatusAtProvider
 {
@@ -894,7 +894,7 @@ public partial class V1beta2PrivateConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionStatusConditions
 {
@@ -937,7 +937,7 @@ public partial class V1beta2PrivateConnectionStatusConditions
 }
 
 /// <summary>PrivateConnectionStatus defines the observed state of PrivateConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PrivateConnectionStatus
 {
@@ -967,7 +967,7 @@ public partial class V1beta2PrivateConnectionStatus
 }
 
 /// <summary>PrivateConnection is the Schema for the PrivateConnections API. The PrivateConnection resource is used to establish private connectivity between Datastream and a customer&apos;s network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2PrivateConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2PrivateConnectionSpec>, IStatus<V1beta2PrivateConnectionStatus?>

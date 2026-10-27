@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.web.azure.upbound.io;
 /// <summary>WindowsWebAppSlot is the Schema for the WindowsWebAppSlots API. Manages a Windows Web App Slot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WindowsWebAppSlotList : IKubernetesObject<V1ListMeta>, IItems<V1beta2WindowsWebAppSlot>
@@ -46,7 +46,7 @@ public partial class V1beta2WindowsWebAppSlotList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecDeletionPolicyEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2WindowsWebAppSlotSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRefPolic
 }
 
 /// <summary>Reference to a WindowsWebApp in web to populate appServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelector
 }
 
 /// <summary>Selector for a WindowsWebApp in web to populate appServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelector
 {
@@ -207,7 +207,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAppServiceIdSelector
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsActiveDirectoryClientSecretSecretRef
 {
@@ -225,7 +225,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsActiveDi
 }
 
 /// <summary>An active_directory block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsActiveDirectory
 {
@@ -262,7 +262,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsActiveDi
 /// The App Secret of the Facebook app used for Facebook login. Cannot be specified with app_secret_setting_name.
 /// The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsFacebookAppSecretSecretRef
 {
@@ -280,7 +280,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsFacebook
 }
 
 /// <summary>A facebook block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsFacebook
 {
@@ -317,7 +317,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsFacebook
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGithubClientSecretSecretRef
 {
@@ -335,7 +335,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGithubCl
 }
 
 /// <summary>A github block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGithub
 {
@@ -372,7 +372,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGithub
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGoogleClientSecretSecretRef
 {
@@ -390,7 +390,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGoogleCl
 }
 
 /// <summary>A google block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGoogle
 {
@@ -427,7 +427,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsGoogle
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsMicrosoftClientSecretSecretRef
 {
@@ -445,7 +445,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsMicrosof
 }
 
 /// <summary>A microsoft block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsMicrosoft
 {
@@ -482,7 +482,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsMicrosof
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with consumer_secret_setting_name.
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsTwitterConsumerSecretSecretRef
 {
@@ -500,7 +500,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsTwitterC
 }
 
 /// <summary>A twitter block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsTwitter
 {
@@ -527,7 +527,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsTwitter
 }
 
 /// <summary>An auth_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettings
 {
@@ -620,7 +620,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettings
 }
 
 /// <summary>An active_directory_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2ActiveDirectoryV2
 {
@@ -710,7 +710,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Active
 }
 
 /// <summary>An apple_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2AppleV2
 {
@@ -730,7 +730,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2AppleV
 }
 
 /// <summary>An azure_static_web_app_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2AzureStaticWebAppV2
 {
@@ -742,7 +742,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2AzureS
     public string? ClientId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2CustomOidcV2
 {
@@ -783,7 +783,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Custom
 }
 
 /// <summary>A facebook_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2FacebookV2
 {
@@ -817,7 +817,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Facebo
 }
 
 /// <summary>A github_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2GithubV2
 {
@@ -844,7 +844,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Github
 }
 
 /// <summary>A google_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2GoogleV2
 {
@@ -878,7 +878,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Google
 }
 
 /// <summary>A login block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Login
 {
@@ -961,7 +961,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Login
 }
 
 /// <summary>A microsoft_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2MicrosoftV2
 {
@@ -995,7 +995,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Micros
 }
 
 /// <summary>A twitter_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2TwitterV2
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2Twitte
 }
 
 /// <summary>An auth_settings_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderAuthSettingsV2
 }
 
 /// <summary>A schedule block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderBackupSchedule
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderBackupSchedule
 /// The SAS URL to the container.
 /// The SAS URL to the container.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderBackupStorageAccountUrlSecretRef
 {
@@ -1207,7 +1207,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderBackupStorageAccount
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderBackup
 {
@@ -1241,7 +1241,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderBackup
 /// The connection string value.
 /// The connection string value.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderConnectionStringValueSecretRef
 {
@@ -1258,7 +1258,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderConnectionStringValu
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderConnectionString
 {
@@ -1285,7 +1285,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderConnectionString
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderIdentity
 {
@@ -1299,7 +1299,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderIdentity
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsApplicationLogsAzureBlobStorage
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsApplicationLogsA
 }
 
 /// <summary>A application_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsApplicationLogs
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsApplicationLogs
 }
 
 /// <summary>SAS url to an Azure blob container with read/write/list/delete permissions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlobStorageSasurlSecretRef
 {
@@ -1349,7 +1349,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlo
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlobStorage
 {
@@ -1363,7 +1363,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlo
 }
 
 /// <summary>A file_system block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogsFileSystem
 {
@@ -1377,7 +1377,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogsFileSyst
 }
 
 /// <summary>An http_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogs
 {
@@ -1391,7 +1391,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderLogsHttpLogs
 }
 
 /// <summary>A logs block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderLogs
 {
@@ -1413,7 +1413,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderLogs
 }
 
 /// <summary>The User Name to use for authentication against the registry to pull the image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigApplicationStackDockerRegistryPasswordSecretRef
 {
@@ -1431,7 +1431,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigApplicatio
 }
 
 /// <summary>A application_stack block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigApplicationStack
 {
@@ -1501,7 +1501,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigApplicatio
 }
 
 /// <summary>A custom_action block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingActionCustomAction
 {
@@ -1515,7 +1515,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 }
 
 /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingAction
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 }
 
 /// <summary>A requests block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerRequests
 {
@@ -1547,7 +1547,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 }
 
 /// <summary>A slow_request block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
@@ -1564,7 +1564,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
@@ -1585,7 +1585,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
@@ -1615,7 +1615,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 }
 
 /// <summary>A trigger block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTrigger
 {
@@ -1641,7 +1641,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 }
 
 /// <summary>A auto_heal_setting block as defined above. Required with auto_heal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSetting
 {
@@ -1655,7 +1655,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 }
 
 /// <summary>A cors block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigCors
 {
@@ -1674,7 +1674,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigCors
     public bool? SupportCredentials { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigHandlerMapping
 {
@@ -1692,7 +1692,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigHandlerMap
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionHeaders
 {
@@ -1719,7 +1719,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -1735,7 +1735,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -1746,7 +1746,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -1770,7 +1770,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -1789,7 +1789,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1805,7 +1805,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -1816,7 +1816,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -1840,7 +1840,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -1860,7 +1860,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
     public V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestriction
 {
@@ -1927,7 +1927,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionHeaders
 {
@@ -1954,7 +1954,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -1970,7 +1970,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -1981,7 +1981,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -2005,7 +2005,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -2024,7 +2024,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2040,7 +2040,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -2051,7 +2051,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -2075,7 +2075,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -2095,7 +2095,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
     public V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestriction
 {
@@ -2161,7 +2161,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
     public V1beta2WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector? VirtualNetworkSubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigVirtualApplicationVirtualDirectory
 {
@@ -2174,7 +2174,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigVirtualApp
     public string? VirtualPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigVirtualApplication
 {
@@ -2196,7 +2196,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfigVirtualApp
 }
 
 /// <summary>A site_config block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfig
 {
@@ -2347,7 +2347,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderSiteConfig
 }
 
 /// <summary>The Access key for the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderStorageAccountAccessKeySecretRef
 {
@@ -2364,7 +2364,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderStorageAccountAccess
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderStorageAccount
 {
@@ -2399,7 +2399,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderStorageAccount
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -2415,7 +2415,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -2426,7 +2426,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicy
 {
@@ -2450,7 +2450,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRef
 {
@@ -2469,7 +2469,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2485,7 +2485,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -2496,7 +2496,7 @@ public enum V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -2520,7 +2520,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelector
 {
@@ -2540,7 +2540,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
     public V1beta2WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecForProvider
 {
@@ -2675,7 +2675,7 @@ public partial class V1beta2WindowsWebAppSlotSpecForProvider
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsActiveDirectoryClientSecretSecretRef
 {
@@ -2693,7 +2693,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsActiveD
 }
 
 /// <summary>An active_directory block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsActiveDirectory
 {
@@ -2730,7 +2730,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsActiveD
 /// The App Secret of the Facebook app used for Facebook login. Cannot be specified with app_secret_setting_name.
 /// The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsFacebookAppSecretSecretRef
 {
@@ -2748,7 +2748,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsFaceboo
 }
 
 /// <summary>A facebook block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsFacebook
 {
@@ -2785,7 +2785,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsFaceboo
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGithubClientSecretSecretRef
 {
@@ -2803,7 +2803,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGithubC
 }
 
 /// <summary>A github block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGithub
 {
@@ -2840,7 +2840,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGithub
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGoogleClientSecretSecretRef
 {
@@ -2858,7 +2858,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGoogleC
 }
 
 /// <summary>A google block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGoogle
 {
@@ -2895,7 +2895,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsGoogle
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with client_secret_setting_name.
 /// The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsMicrosoftClientSecretSecretRef
 {
@@ -2913,7 +2913,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsMicroso
 }
 
 /// <summary>A microsoft block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsMicrosoft
 {
@@ -2950,7 +2950,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsMicroso
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with consumer_secret_setting_name.
 /// The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsTwitterConsumerSecretSecretRef
 {
@@ -2968,7 +2968,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsTwitter
 }
 
 /// <summary>A twitter block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsTwitter
 {
@@ -2995,7 +2995,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsTwitter
 }
 
 /// <summary>An auth_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettings
 {
@@ -3088,7 +3088,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettings
 }
 
 /// <summary>An active_directory_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2ActiveDirectoryV2
 {
@@ -3178,7 +3178,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Activ
 }
 
 /// <summary>An apple_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2AppleV2
 {
@@ -3198,7 +3198,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Apple
 }
 
 /// <summary>An azure_static_web_app_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2AzureStaticWebAppV2
 {
@@ -3210,7 +3210,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Azure
     public string? ClientId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2CustomOidcV2
 {
@@ -3251,7 +3251,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Custo
 }
 
 /// <summary>A facebook_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2FacebookV2
 {
@@ -3285,7 +3285,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Faceb
 }
 
 /// <summary>A github_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2GithubV2
 {
@@ -3312,7 +3312,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Githu
 }
 
 /// <summary>A google_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2GoogleV2
 {
@@ -3346,7 +3346,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Googl
 }
 
 /// <summary>A login block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Login
 {
@@ -3429,7 +3429,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Login
 }
 
 /// <summary>A microsoft_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2MicrosoftV2
 {
@@ -3463,7 +3463,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Micro
 }
 
 /// <summary>A twitter_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2TwitterV2
 {
@@ -3483,7 +3483,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2Twitt
 }
 
 /// <summary>An auth_settings_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2
 {
@@ -3613,7 +3613,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderAuthSettingsV2
 }
 
 /// <summary>A schedule block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderBackupSchedule
 {
@@ -3657,7 +3657,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderBackupSchedule
 /// The SAS URL to the container.
 /// The SAS URL to the container.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderBackupStorageAccountUrlSecretRef
 {
@@ -3675,7 +3675,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderBackupStorageAccoun
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderBackup
 {
@@ -3709,7 +3709,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderBackup
 /// The connection string value.
 /// The connection string value.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderConnectionStringValueSecretRef
 {
@@ -3726,7 +3726,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderConnectionStringVal
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderConnectionString
 {
@@ -3753,7 +3753,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderConnectionString
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderIdentity
 {
@@ -3767,7 +3767,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderIdentity
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsApplicationLogsAzureBlobStorage
 {
@@ -3785,7 +3785,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsApplicationLogs
 }
 
 /// <summary>A application_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsApplicationLogs
 {
@@ -3799,7 +3799,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsApplicationLogs
 }
 
 /// <summary>SAS url to an Azure blob container with read/write/list/delete permissions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBlobStorageSasurlSecretRef
 {
@@ -3817,7 +3817,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBl
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBlobStorage
 {
@@ -3831,7 +3831,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBl
 }
 
 /// <summary>A file_system block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogsFileSystem
 {
@@ -3845,7 +3845,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogsFileSys
 }
 
 /// <summary>An http_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogs
 {
@@ -3859,7 +3859,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogsHttpLogs
 }
 
 /// <summary>A logs block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogs
 {
@@ -3881,7 +3881,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderLogs
 }
 
 /// <summary>The User Name to use for authentication against the registry to pull the image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigApplicationStackDockerRegistryPasswordSecretRef
 {
@@ -3899,7 +3899,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigApplicati
 }
 
 /// <summary>A application_stack block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigApplicationStack
 {
@@ -3969,7 +3969,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigApplicati
 }
 
 /// <summary>A custom_action block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingActionCustomAction
 {
@@ -3983,7 +3983,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 }
 
 /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingAction
 {
@@ -4001,7 +4001,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 }
 
 /// <summary>A requests block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerRequests
 {
@@ -4015,7 +4015,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 }
 
 /// <summary>A slow_request block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
@@ -4032,7 +4032,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
@@ -4053,7 +4053,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
@@ -4083,7 +4083,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 }
 
 /// <summary>A trigger block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTrigger
 {
@@ -4109,7 +4109,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 }
 
 /// <summary>A auto_heal_setting block as defined above. Required with auto_heal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSetting
 {
@@ -4123,7 +4123,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 }
 
 /// <summary>A cors block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigCors
 {
@@ -4142,7 +4142,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigCors
     public bool? SupportCredentials { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigHandlerMapping
 {
@@ -4160,7 +4160,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigHandlerMa
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionHeaders
 {
@@ -4187,7 +4187,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -4203,7 +4203,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -4214,7 +4214,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -4238,7 +4238,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -4257,7 +4257,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -4273,7 +4273,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -4284,7 +4284,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -4308,7 +4308,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -4328,7 +4328,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
     public V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestriction
 {
@@ -4395,7 +4395,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionHeaders
 {
@@ -4422,7 +4422,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -4438,7 +4438,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -4449,7 +4449,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
@@ -4473,7 +4473,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
 {
@@ -4492,7 +4492,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -4508,7 +4508,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -4519,7 +4519,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -4543,7 +4543,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
 {
@@ -4563,7 +4563,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
     public V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestriction
 {
@@ -4629,7 +4629,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
     public V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector? VirtualNetworkSubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigVirtualApplicationVirtualDirectory
 {
@@ -4642,7 +4642,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigVirtualAp
     public string? VirtualPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigVirtualApplication
 {
@@ -4664,7 +4664,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfigVirtualAp
 }
 
 /// <summary>A site_config block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfig
 {
@@ -4815,7 +4815,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderSiteConfig
 }
 
 /// <summary>The Access key for the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderStorageAccountAccessKeySecretRef
 {
@@ -4832,7 +4832,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderStorageAccountAcces
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderStorageAccount
 {
@@ -4867,7 +4867,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderStorageAccount
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
@@ -4883,7 +4883,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
@@ -4894,7 +4894,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicy
 {
@@ -4918,7 +4918,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 }
 
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRef
 {
@@ -4937,7 +4937,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
@@ -4953,7 +4953,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
@@ -4964,7 +4964,7 @@ public enum V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicy
 {
@@ -4988,7 +4988,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 }
 
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelector
 {
@@ -5020,7 +5020,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecInitProvider
 {
@@ -5143,7 +5143,7 @@ public partial class V1beta2WindowsWebAppSlotSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecManagementPoliciesEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecManagementPoliciesEnum
 {
@@ -5167,7 +5167,7 @@ public enum V1beta2WindowsWebAppSlotSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -5183,7 +5183,7 @@ public enum V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicyResolveEnum
 {
@@ -5194,7 +5194,7 @@ public enum V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicy
 {
@@ -5222,7 +5222,7 @@ public partial class V1beta2WindowsWebAppSlotSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecProviderConfigRef
 {
@@ -5241,7 +5241,7 @@ public partial class V1beta2WindowsWebAppSlotSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpecWriteConnectionSecretToRef
 {
@@ -5255,7 +5255,7 @@ public partial class V1beta2WindowsWebAppSlotSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WindowsWebAppSlotSpec defines the desired state of WindowsWebAppSlot</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotSpec
 {
@@ -5323,7 +5323,7 @@ public partial class V1beta2WindowsWebAppSlotSpec
 }
 
 /// <summary>An active_directory block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsActiveDirectory
 {
@@ -5350,7 +5350,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsActiveD
 }
 
 /// <summary>A facebook block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsFacebook
 {
@@ -5377,7 +5377,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsFaceboo
 }
 
 /// <summary>A github block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsGithub
 {
@@ -5404,7 +5404,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsGithub
 }
 
 /// <summary>A google block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsGoogle
 {
@@ -5431,7 +5431,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsGoogle
 }
 
 /// <summary>A microsoft block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsMicrosoft
 {
@@ -5458,7 +5458,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsMicroso
 }
 
 /// <summary>A twitter block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsTwitter
 {
@@ -5478,7 +5478,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsTwitter
 }
 
 /// <summary>An auth_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettings
 {
@@ -5571,7 +5571,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettings
 }
 
 /// <summary>An active_directory_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2ActiveDirectoryV2
 {
@@ -5661,7 +5661,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Activ
 }
 
 /// <summary>An apple_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2AppleV2
 {
@@ -5685,7 +5685,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Apple
 }
 
 /// <summary>An azure_static_web_app_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2AzureStaticWebAppV2
 {
@@ -5697,7 +5697,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Azure
     public string? ClientId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2CustomOidcV2
 {
@@ -5780,7 +5780,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Custo
 }
 
 /// <summary>A facebook_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2FacebookV2
 {
@@ -5814,7 +5814,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Faceb
 }
 
 /// <summary>A github_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2GithubV2
 {
@@ -5841,7 +5841,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Githu
 }
 
 /// <summary>A google_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2GoogleV2
 {
@@ -5875,7 +5875,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Googl
 }
 
 /// <summary>A login block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Login
 {
@@ -5958,7 +5958,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Login
 }
 
 /// <summary>A microsoft_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2MicrosoftV2
 {
@@ -5992,7 +5992,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Micro
 }
 
 /// <summary>A twitter_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2TwitterV2
 {
@@ -6012,7 +6012,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2Twitt
 }
 
 /// <summary>An auth_settings_v2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2
 {
@@ -6142,7 +6142,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderAuthSettingsV2
 }
 
 /// <summary>A schedule block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderBackupSchedule
 {
@@ -6187,7 +6187,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderBackupSchedule
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderBackup
 {
@@ -6210,7 +6210,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderBackup
     public V1beta2WindowsWebAppSlotStatusAtProviderBackupSchedule? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderConnectionString
 {
@@ -6230,7 +6230,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderConnectionString
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderIdentity
 {
@@ -6252,7 +6252,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderIdentity
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsApplicationLogsAzureBlobStorage
 {
@@ -6270,7 +6270,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsApplicationLogs
 }
 
 /// <summary>A application_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsApplicationLogs
 {
@@ -6284,7 +6284,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsApplicationLogs
 }
 
 /// <summary>A azure_blob_storage_http block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsHttpLogsAzureBlobStorage
 {
@@ -6294,7 +6294,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsHttpLogsAzureBl
 }
 
 /// <summary>A file_system block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsHttpLogsFileSystem
 {
@@ -6308,7 +6308,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsHttpLogsFileSys
 }
 
 /// <summary>An http_logs block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsHttpLogs
 {
@@ -6322,7 +6322,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogsHttpLogs
 }
 
 /// <summary>A logs block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogs
 {
@@ -6344,7 +6344,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderLogs
 }
 
 /// <summary>A application_stack block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigApplicationStack
 {
@@ -6410,7 +6410,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigApplicati
 }
 
 /// <summary>A custom_action block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingActionCustomAction
 {
@@ -6424,7 +6424,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 }
 
 /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingAction
 {
@@ -6442,7 +6442,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 }
 
 /// <summary>A requests block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerRequests
 {
@@ -6456,7 +6456,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 }
 
 /// <summary>A slow_request block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
@@ -6473,7 +6473,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
@@ -6494,7 +6494,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
     public string? TimeTaken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
@@ -6524,7 +6524,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 }
 
 /// <summary>A trigger block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTrigger
 {
@@ -6550,7 +6550,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 }
 
 /// <summary>A auto_heal_setting block as defined above. Required with auto_heal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSetting
 {
@@ -6564,7 +6564,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 }
 
 /// <summary>A cors block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigCors
 {
@@ -6583,7 +6583,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigCors
     public bool? SupportCredentials { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigHandlerMapping
 {
@@ -6601,7 +6601,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigHandlerMa
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigIpRestrictionHeaders
 {
@@ -6622,7 +6622,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigIpRestric
     public IList<string>? XForwardedHost { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigIpRestriction
 {
@@ -6681,7 +6681,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigIpRestric
 }
 
 /// <summary>A headers block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRestrictionHeaders
 {
@@ -6702,7 +6702,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRest
     public IList<string>? XForwardedHost { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRestriction
 {
@@ -6760,7 +6760,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRest
     public string? VirtualNetworkSubnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigVirtualApplicationVirtualDirectory
 {
@@ -6773,7 +6773,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigVirtualAp
     public string? VirtualPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigVirtualApplication
 {
@@ -6795,7 +6795,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfigVirtualAp
 }
 
 /// <summary>A site_config block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfig
 {
@@ -6955,7 +6955,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderSiteConfig
     public double? WorkerCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProviderStorageAccount
 {
@@ -6980,7 +6980,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProviderStorageAccount
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusAtProvider
 {
@@ -7128,7 +7128,7 @@ public partial class V1beta2WindowsWebAppSlotStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatusConditions
 {
@@ -7171,7 +7171,7 @@ public partial class V1beta2WindowsWebAppSlotStatusConditions
 }
 
 /// <summary>WindowsWebAppSlotStatus defines the observed state of WindowsWebAppSlot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsWebAppSlotStatus
 {
@@ -7201,7 +7201,7 @@ public partial class V1beta2WindowsWebAppSlotStatus
 }
 
 /// <summary>WindowsWebAppSlot is the Schema for the WindowsWebAppSlots API. Manages a Windows Web App Slot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WindowsWebAppSlot : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2WindowsWebAppSlotSpec>, IStatus<V1beta2WindowsWebAppSlotStatus?>

@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.batch.azure.com;
 /// - Generated from: /batch/resource-manager/Microsoft.Batch/Batch/stable/2024-07-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240701BatchAccountList : IKubernetesObject<V1ListMeta>, IItems<V20240701BatchAccount>
@@ -42,7 +42,7 @@ public partial class V20240701BatchAccountList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>The authentication mode for the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecAllowedAuthenticationModesEnum>))]
 public enum V20240701BatchAccountSpecAllowedAuthenticationModesEnum
 {
@@ -55,7 +55,7 @@ public enum V20240701BatchAccountSpecAllowedAuthenticationModesEnum
 }
 
 /// <summary>AuthenticationMode: The authentication mode which the Batch service will use to manage the auto-storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecAutoStorageAuthenticationModeEnum>))]
 public enum V20240701BatchAccountSpecAutoStorageAuthenticationModeEnum
 {
@@ -66,7 +66,7 @@ public enum V20240701BatchAccountSpecAutoStorageAuthenticationModeEnum
 }
 
 /// <summary>ResourceReference: The ARM resource id of the user assigned identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecAutoStorageNodeIdentityReferenceResourceReference
 {
@@ -95,7 +95,7 @@ public partial class V20240701BatchAccountSpecAutoStorageNodeIdentityReferenceRe
 /// NodeIdentityReference: The identity referenced here must be assigned to pools which have compute nodes that need access
 /// to auto-storage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecAutoStorageNodeIdentityReference
 {
@@ -105,7 +105,7 @@ public partial class V20240701BatchAccountSpecAutoStorageNodeIdentityReference
 }
 
 /// <summary>StorageAccountReference: The resource ID of the storage account to be used for auto-storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecAutoStorageStorageAccountReference
 {
@@ -131,7 +131,7 @@ public partial class V20240701BatchAccountSpecAutoStorageStorageAccountReference
 }
 
 /// <summary>AutoStorage: The properties related to the auto-storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecAutoStorage
 {
@@ -152,7 +152,7 @@ public partial class V20240701BatchAccountSpecAutoStorage
 }
 
 /// <summary>KeySource: Type of the key source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecEncryptionKeySourceEnum>))]
 public enum V20240701BatchAccountSpecEncryptionKeySourceEnum
 {
@@ -163,7 +163,7 @@ public enum V20240701BatchAccountSpecEncryptionKeySourceEnum
 }
 
 /// <summary>KeyVaultProperties: Additional details when using Microsoft.KeyVault</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecEncryptionKeyVaultProperties
 {
@@ -183,7 +183,7 @@ public partial class V20240701BatchAccountSpecEncryptionKeyVaultProperties
 /// Encryption: Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using
 /// a Microsoft managed key. For additional control, a customer-managed key can be used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecEncryption
 {
@@ -197,7 +197,7 @@ public partial class V20240701BatchAccountSpecEncryption
 }
 
 /// <summary>Type: The type of identity used for the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecIdentityTypeEnum>))]
 public enum V20240701BatchAccountSpecIdentityTypeEnum
 {
@@ -210,7 +210,7 @@ public enum V20240701BatchAccountSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecIdentityUserAssignedIdentitiesReference
 {
@@ -236,7 +236,7 @@ public partial class V20240701BatchAccountSpecIdentityUserAssignedIdentitiesRefe
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecIdentityUserAssignedIdentities
 {
@@ -246,7 +246,7 @@ public partial class V20240701BatchAccountSpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The identity of the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecIdentity
 {
@@ -260,7 +260,7 @@ public partial class V20240701BatchAccountSpecIdentity
 }
 
 /// <summary>Reference: The resource ID of the Azure key vault associated with the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecKeyVaultReferenceReference
 {
@@ -286,7 +286,7 @@ public partial class V20240701BatchAccountSpecKeyVaultReferenceReference
 }
 
 /// <summary>KeyVaultReference: A reference to the Azure key vault associated with the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecKeyVaultReference
 {
@@ -300,7 +300,7 @@ public partial class V20240701BatchAccountSpecKeyVaultReference
 }
 
 /// <summary>DefaultAction: Default action for endpoint access. It is only applicable when publicNetworkAccess is enabled.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecNetworkProfileAccountAccessDefaultActionEnum>))]
 public enum V20240701BatchAccountSpecNetworkProfileAccountAccessDefaultActionEnum
 {
@@ -311,7 +311,7 @@ public enum V20240701BatchAccountSpecNetworkProfileAccountAccessDefaultActionEnu
 }
 
 /// <summary>Action: Action when client IP address is matched.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecNetworkProfileAccountAccessIpRulesActionEnum>))]
 public enum V20240701BatchAccountSpecNetworkProfileAccountAccessIpRulesActionEnum
 {
@@ -320,7 +320,7 @@ public enum V20240701BatchAccountSpecNetworkProfileAccountAccessIpRulesActionEnu
 }
 
 /// <summary>Rule to filter client IP address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecNetworkProfileAccountAccessIpRules
 {
@@ -334,7 +334,7 @@ public partial class V20240701BatchAccountSpecNetworkProfileAccountAccessIpRules
 }
 
 /// <summary>AccountAccess: Network access profile for batchAccount endpoint (Batch account data plane API).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecNetworkProfileAccountAccess
 {
@@ -348,7 +348,7 @@ public partial class V20240701BatchAccountSpecNetworkProfileAccountAccess
 }
 
 /// <summary>DefaultAction: Default action for endpoint access. It is only applicable when publicNetworkAccess is enabled.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecNetworkProfileNodeManagementAccessDefaultActionEnum>))]
 public enum V20240701BatchAccountSpecNetworkProfileNodeManagementAccessDefaultActionEnum
 {
@@ -359,7 +359,7 @@ public enum V20240701BatchAccountSpecNetworkProfileNodeManagementAccessDefaultAc
 }
 
 /// <summary>Action: Action when client IP address is matched.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecNetworkProfileNodeManagementAccessIpRulesActionEnum>))]
 public enum V20240701BatchAccountSpecNetworkProfileNodeManagementAccessIpRulesActionEnum
 {
@@ -368,7 +368,7 @@ public enum V20240701BatchAccountSpecNetworkProfileNodeManagementAccessIpRulesAc
 }
 
 /// <summary>Rule to filter client IP address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecNetworkProfileNodeManagementAccessIpRules
 {
@@ -385,7 +385,7 @@ public partial class V20240701BatchAccountSpecNetworkProfileNodeManagementAccess
 /// NodeManagementAccess: Network access profile for nodeManagement endpoint (Batch service managing compute nodes for Batch
 /// pools).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecNetworkProfileNodeManagementAccess
 {
@@ -399,7 +399,7 @@ public partial class V20240701BatchAccountSpecNetworkProfileNodeManagementAccess
 }
 
 /// <summary>NetworkProfile: The network profile only takes effect when publicNetworkAccess is enabled.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecNetworkProfile
 {
@@ -420,7 +420,7 @@ public partial class V20240701BatchAccountSpecNetworkProfile
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecOperatorSpecConfigMapExpressions
 {
@@ -461,7 +461,7 @@ public partial class V20240701BatchAccountSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecOperatorSpecSecretExpressions
 {
@@ -501,7 +501,7 @@ public partial class V20240701BatchAccountSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecOperatorSpec
 {
@@ -519,7 +519,7 @@ public partial class V20240701BatchAccountSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpecOwner
 {
@@ -536,7 +536,7 @@ public partial class V20240701BatchAccountSpecOwner
 /// mode is BatchService, clients may authenticate using access keys or Microsoft Entra ID. If the mode is UserSubscription,
 /// clients must use Microsoft Entra ID. The default is BatchService.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecPoolAllocationModeEnum>))]
 public enum V20240701BatchAccountSpecPoolAllocationModeEnum
 {
@@ -547,7 +547,7 @@ public enum V20240701BatchAccountSpecPoolAllocationModeEnum
 }
 
 /// <summary>PublicNetworkAccess: The network access type for operating on the resources in the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240701BatchAccountSpecPublicNetworkAccessEnum>))]
 public enum V20240701BatchAccountSpecPublicNetworkAccessEnum
 {
@@ -559,7 +559,7 @@ public enum V20240701BatchAccountSpecPublicNetworkAccessEnum
     SecuredByPerimeter
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountSpec
 {
@@ -640,7 +640,7 @@ public partial class V20240701BatchAccountSpec
 /// NodeIdentityReference: The identity referenced here must be assigned to pools which have compute nodes that need access
 /// to auto-storage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusAutoStorageNodeIdentityReference
 {
@@ -650,7 +650,7 @@ public partial class V20240701BatchAccountStatusAutoStorageNodeIdentityReference
 }
 
 /// <summary>AutoStorage: Contains information about the auto-storage account associated with a Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusAutoStorage
 {
@@ -675,7 +675,7 @@ public partial class V20240701BatchAccountStatusAutoStorage
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusConditions
 {
@@ -721,7 +721,7 @@ public partial class V20240701BatchAccountStatusConditions
 }
 
 /// <summary>A VM Family and its associated core quota for the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusDedicatedCoreQuotaPerVMFamily
 {
@@ -735,7 +735,7 @@ public partial class V20240701BatchAccountStatusDedicatedCoreQuotaPerVMFamily
 }
 
 /// <summary>KeyVaultProperties: Additional details when using Microsoft.KeyVault</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusEncryptionKeyVaultProperties
 {
@@ -755,7 +755,7 @@ public partial class V20240701BatchAccountStatusEncryptionKeyVaultProperties
 /// Encryption: Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using
 /// a Microsoft managed key. For additional control, a customer-managed key can be used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusEncryption
 {
@@ -769,7 +769,7 @@ public partial class V20240701BatchAccountStatusEncryption
 }
 
 /// <summary>The list of associated user identities.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusIdentityUserAssignedIdentities
 {
@@ -783,7 +783,7 @@ public partial class V20240701BatchAccountStatusIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The identity of the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusIdentity
 {
@@ -808,7 +808,7 @@ public partial class V20240701BatchAccountStatusIdentity
 }
 
 /// <summary>KeyVaultReference: Identifies the Azure key vault associated with a Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusKeyVaultReference
 {
@@ -822,7 +822,7 @@ public partial class V20240701BatchAccountStatusKeyVaultReference
 }
 
 /// <summary>Rule to filter client IP address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusNetworkProfileAccountAccessIpRules
 {
@@ -836,7 +836,7 @@ public partial class V20240701BatchAccountStatusNetworkProfileAccountAccessIpRul
 }
 
 /// <summary>AccountAccess: Network access profile for batchAccount endpoint (Batch account data plane API).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusNetworkProfileAccountAccess
 {
@@ -850,7 +850,7 @@ public partial class V20240701BatchAccountStatusNetworkProfileAccountAccess
 }
 
 /// <summary>Rule to filter client IP address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusNetworkProfileNodeManagementAccessIpRules
 {
@@ -867,7 +867,7 @@ public partial class V20240701BatchAccountStatusNetworkProfileNodeManagementAcce
 /// NodeManagementAccess: Network access profile for nodeManagement endpoint (Batch service managing compute nodes for Batch
 /// pools).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusNetworkProfileNodeManagementAccess
 {
@@ -881,7 +881,7 @@ public partial class V20240701BatchAccountStatusNetworkProfileNodeManagementAcce
 }
 
 /// <summary>NetworkProfile: The network profile only takes effect when publicNetworkAccess is enabled.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusNetworkProfile
 {
@@ -898,7 +898,7 @@ public partial class V20240701BatchAccountStatusNetworkProfile
 }
 
 /// <summary>Contains information about a private link resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusPrivateEndpointConnections
 {
@@ -911,7 +911,7 @@ public partial class V20240701BatchAccountStatusPrivateEndpointConnections
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatusSystemData
 {
@@ -941,7 +941,7 @@ public partial class V20240701BatchAccountStatusSystemData
 }
 
 /// <summary>Contains information about an Azure Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240701BatchAccountStatus
 {
@@ -1074,7 +1074,7 @@ public partial class V20240701BatchAccountStatus
 /// - Generated from: /batch/resource-manager/Microsoft.Batch/Batch/stable/2024-07-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240701BatchAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V20240701BatchAccountSpec?>, IStatus<V20240701BatchAccountStatus?>

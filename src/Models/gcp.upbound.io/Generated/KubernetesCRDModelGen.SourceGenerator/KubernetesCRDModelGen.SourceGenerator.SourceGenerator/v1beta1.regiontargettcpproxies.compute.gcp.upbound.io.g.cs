@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>RegionTargetTCPProxy is the Schema for the RegionTargetTCPProxys API. Represents a RegionTargetTcpProxy resource, which is used by one or more forwarding rules to route incoming TCP requests to a regional TCP proxy load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionTargetTCPProxyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegionTargetTCPProxy>
@@ -46,7 +46,7 @@ public partial class V1beta1RegionTargetTCPProxyList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecDeletionPolicyEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1RegionTargetTCPProxySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRef
 }
 
 /// <summary>Reference to a RegionBackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSel
 }
 
 /// <summary>Selector for a RegionBackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSel
     public V1beta1RegionTargetTCPProxySpecForProviderBackendServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecForProvider
 {
@@ -263,7 +263,7 @@ public partial class V1beta1RegionTargetTCPProxySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRefPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRefPolicyResolutionEnum
 {
@@ -279,7 +279,7 @@ public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRefPolicyResolveEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRefPolicyResolveEnum
 {
@@ -290,7 +290,7 @@ public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRefPolicy
 {
@@ -314,7 +314,7 @@ public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRe
 }
 
 /// <summary>Reference to a RegionBackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRef
 {
@@ -333,7 +333,7 @@ public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelectorPolicyResolutionEnum
 {
@@ -349,7 +349,7 @@ public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelectorPolicyResolveEnum
 {
@@ -360,7 +360,7 @@ public enum V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelectorPolicy
 {
@@ -384,7 +384,7 @@ public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSe
 }
 
 /// <summary>Selector for a RegionBackendService in compute to populate backendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSelector
 {
@@ -416,7 +416,7 @@ public partial class V1beta1RegionTargetTCPProxySpecInitProviderBackendServiceSe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecInitProvider
 {
@@ -467,7 +467,7 @@ public partial class V1beta1RegionTargetTCPProxySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecManagementPoliciesEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecManagementPoliciesEnum
 {
@@ -491,7 +491,7 @@ public enum V1beta1RegionTargetTCPProxySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicyResolveEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicy
 {
@@ -546,7 +546,7 @@ public partial class V1beta1RegionTargetTCPProxySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecProviderConfigRef
 {
@@ -565,7 +565,7 @@ public partial class V1beta1RegionTargetTCPProxySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpecWriteConnectionSecretToRef
 {
@@ -579,7 +579,7 @@ public partial class V1beta1RegionTargetTCPProxySpecWriteConnectionSecretToRef
 }
 
 /// <summary>RegionTargetTCPProxySpec defines the desired state of RegionTargetTCPProxy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxySpec
 {
@@ -646,7 +646,7 @@ public partial class V1beta1RegionTargetTCPProxySpec
     public V1beta1RegionTargetTCPProxySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxyStatusAtProvider
 {
@@ -716,7 +716,7 @@ public partial class V1beta1RegionTargetTCPProxyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxyStatusConditions
 {
@@ -759,7 +759,7 @@ public partial class V1beta1RegionTargetTCPProxyStatusConditions
 }
 
 /// <summary>RegionTargetTCPProxyStatus defines the observed state of RegionTargetTCPProxy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionTargetTCPProxyStatus
 {
@@ -789,7 +789,7 @@ public partial class V1beta1RegionTargetTCPProxyStatus
 }
 
 /// <summary>RegionTargetTCPProxy is the Schema for the RegionTargetTCPProxys API. Represents a RegionTargetTcpProxy resource, which is used by one or more forwarding rules to route incoming TCP requests to a regional TCP proxy load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionTargetTCPProxy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegionTargetTCPProxySpec>, IStatus<V1beta1RegionTargetTCPProxyStatus?>

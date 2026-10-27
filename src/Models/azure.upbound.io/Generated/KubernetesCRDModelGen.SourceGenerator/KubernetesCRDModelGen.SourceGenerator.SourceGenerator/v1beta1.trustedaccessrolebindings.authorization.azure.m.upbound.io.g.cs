@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.authorization.azure.m.upbound.io;
 /// <summary>TrustedAccessRoleBinding is the Schema for the TrustedAccessRoleBindings API. Manages a Kubernetes Cluster Trusted Access Role Binding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrustedAccessRoleBindingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TrustedAccessRoleBinding>
@@ -43,7 +43,7 @@ public partial class V1beta1TrustedAccessRoleBindingList : IKubernetesObject<V1L
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRefPolicyResolutionEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRefPolicyResolveEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClu
 }
 
 /// <summary>Reference to a KubernetesCluster in containerservice to populate kubernetesClusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClu
 }
 
 /// <summary>Selector for a KubernetesCluster in containerservice to populate kubernetesClusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClusterIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderKubernetesClu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourc
 }
 
 /// <summary>Reference to a Workspace in machinelearningservices to populate sourceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourc
 }
 
 /// <summary>Selector for a Workspace in machinelearningservices to populate sourceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourc
     public V1beta1TrustedAccessRoleBindingSpecForProviderSourceResourceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecForProvider
 {
@@ -386,7 +386,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRefPolicyResolutionEnum
 {
@@ -402,7 +402,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRefPolicyResolveEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRefPolicy
 {
@@ -437,7 +437,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResour
 }
 
 /// <summary>Reference to a Workspace in machinelearningservices to populate sourceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdRef
 {
@@ -460,7 +460,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResour
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelectorPolicyResolutionEnum
 {
@@ -476,7 +476,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelectorPolicyResolveEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelectorPolicy
 {
@@ -511,7 +511,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResour
 }
 
 /// <summary>Selector for a Workspace in machinelearningservices to populate sourceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResourceIdSelector
 {
@@ -547,7 +547,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecInitProviderSourceResour
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecInitProvider
 {
@@ -572,7 +572,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustedAccessRoleBindingSpecManagementPoliciesEnum>))]
 public enum V1beta1TrustedAccessRoleBindingSpecManagementPoliciesEnum
 {
@@ -595,7 +595,7 @@ public enum V1beta1TrustedAccessRoleBindingSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecProviderConfigRef
 {
@@ -614,7 +614,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpecWriteConnectionSecretToRef
 {
@@ -624,7 +624,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpecWriteConnectionSecretToR
 }
 
 /// <summary>TrustedAccessRoleBindingSpec defines the desired state of TrustedAccessRoleBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingSpec
 {
@@ -675,7 +675,7 @@ public partial class V1beta1TrustedAccessRoleBindingSpec
     public V1beta1TrustedAccessRoleBindingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingStatusAtProvider
 {
@@ -697,7 +697,7 @@ public partial class V1beta1TrustedAccessRoleBindingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingStatusConditions
 {
@@ -740,7 +740,7 @@ public partial class V1beta1TrustedAccessRoleBindingStatusConditions
 }
 
 /// <summary>TrustedAccessRoleBindingStatus defines the observed state of TrustedAccessRoleBinding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustedAccessRoleBindingStatus
 {
@@ -770,7 +770,7 @@ public partial class V1beta1TrustedAccessRoleBindingStatus
 }
 
 /// <summary>TrustedAccessRoleBinding is the Schema for the TrustedAccessRoleBindings API. Manages a Kubernetes Cluster Trusted Access Role Binding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrustedAccessRoleBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TrustedAccessRoleBindingSpec>, IStatus<V1beta1TrustedAccessRoleBindingStatus?>

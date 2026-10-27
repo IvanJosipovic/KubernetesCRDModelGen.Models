@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/networkSecurityGroup.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkSecurityGroups/{networkSecurityGroupName}/securityRules/{securityRuleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleList : IKubernetesObject<V1ListMeta>, IItems<V20250301NetworkSecurityGroupsSecurityRule>
@@ -42,7 +42,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleList : IKubernete
 }
 
 /// <summary>Access: The network traffic is allowed or denied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301NetworkSecurityGroupsSecurityRuleSpecAccessEnum>))]
 public enum V20250301NetworkSecurityGroupsSecurityRuleSpecAccessEnum
 {
@@ -53,7 +53,7 @@ public enum V20250301NetworkSecurityGroupsSecurityRuleSpecAccessEnum
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecDestinationApplicationSecurityGroupsReference
 {
@@ -79,7 +79,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecDestinationAp
 }
 
 /// <summary>An application security group in a resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecDestinationApplicationSecurityGroups
 {
@@ -89,7 +89,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecDestinationAp
 }
 
 /// <summary>Direction: The direction of the rule. The direction specifies if rule will be evaluated on incoming or outgoing traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301NetworkSecurityGroupsSecurityRuleSpecDirectionEnum>))]
 public enum V20250301NetworkSecurityGroupsSecurityRuleSpecDirectionEnum
 {
@@ -104,7 +104,7 @@ public enum V20250301NetworkSecurityGroupsSecurityRuleSpecDirectionEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOperatorSpecConfigMapExpressions
 {
@@ -145,7 +145,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOperatorSpecC
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOperatorSpecSecretExpressions
 {
@@ -185,7 +185,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOperatorSpecS
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOperatorSpec
 {
@@ -203,7 +203,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a network.azure.com/NetworkSecurityGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOwner
 {
@@ -216,7 +216,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecOwner
 }
 
 /// <summary>Protocol: Network protocol this rule applies to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301NetworkSecurityGroupsSecurityRuleSpecProtocolEnum>))]
 public enum V20250301NetworkSecurityGroupsSecurityRuleSpecProtocolEnum
 {
@@ -235,7 +235,7 @@ public enum V20250301NetworkSecurityGroupsSecurityRuleSpecProtocolEnum
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecSourceApplicationSecurityGroupsReference
 {
@@ -261,7 +261,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecSourceApplica
 }
 
 /// <summary>An application security group in a resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecSourceApplicationSecurityGroups
 {
@@ -270,7 +270,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpecSourceApplica
     public V20250301NetworkSecurityGroupsSecurityRuleSpecSourceApplicationSecurityGroupsReference? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleSpec
 {
@@ -374,7 +374,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleStatusConditions
 {
@@ -420,7 +420,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleStatusConditions
 }
 
 /// <summary>An application security group in a resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleStatusDestinationApplicationSecurityGroups
 {
@@ -430,7 +430,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleStatusDestination
 }
 
 /// <summary>An application security group in a resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleStatusSourceApplicationSecurityGroups
 {
@@ -439,7 +439,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleStatusSourceAppli
     public string? Id { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301NetworkSecurityGroupsSecurityRuleStatus
 {
@@ -549,7 +549,7 @@ public partial class V20250301NetworkSecurityGroupsSecurityRuleStatus
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/networkSecurityGroup.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkSecurityGroups/{networkSecurityGroupName}/securityRules/{securityRuleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301NetworkSecurityGroupsSecurityRule : IKubernetesObject<V1ObjectMeta>, ISpec<V20250301NetworkSecurityGroupsSecurityRuleSpec?>, IStatus<V20250301NetworkSecurityGroupsSecurityRuleStatus?>

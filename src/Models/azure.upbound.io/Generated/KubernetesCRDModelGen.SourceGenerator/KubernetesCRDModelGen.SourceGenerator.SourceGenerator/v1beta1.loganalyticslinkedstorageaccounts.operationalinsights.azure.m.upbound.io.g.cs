@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.operationalinsights.azure.m.upbound.io;
 /// <summary>LogAnalyticsLinkedStorageAccount is the Schema for the LogAnalyticsLinkedStorageAccounts API. Manages a Log Analytics Linked Storage Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LogAnalyticsLinkedStorageAccount>
@@ -43,7 +43,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountList : IKubernetesOb
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResou
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResou
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResourceGroupNameSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderResou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsRefsPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccount
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsRefsPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsRefsPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccount
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsRefsPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStora
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsRefs
 {
@@ -272,7 +272,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStora
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccount
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccount
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStora
 }
 
 /// <summary>Selector for a list of Account in storage to populate storageAccountIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStorageAccountIdsSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderStora
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorks
 }
 
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorks
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorks
 }
 
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorks
     public V1beta1LogAnalyticsLinkedStorageAccountSpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProvider
 {
@@ -557,7 +557,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -573,7 +573,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroup
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -608,7 +608,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderReso
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameRef
 {
@@ -631,7 +631,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderReso
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -647,7 +647,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroup
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -682,7 +682,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderReso
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderResourceGroupNameSelector
 {
@@ -712,7 +712,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderReso
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsRefsPolicyResolutionEnum
 {
@@ -728,7 +728,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccoun
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsRefsPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsRefsPolicyResolveEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccoun
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsRefsPolicy
 {
@@ -763,7 +763,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStor
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsRefs
 {
@@ -786,7 +786,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsSelectorPolicyResolutionEnum
 {
@@ -802,7 +802,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccoun
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsSelectorPolicyResolveEnum
 {
@@ -813,7 +813,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccoun
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsSelectorPolicy
 {
@@ -837,7 +837,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStor
 }
 
 /// <summary>Selector for a list of Account in storage to populate storageAccountIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStorageAccountIdsSelector
 {
@@ -867,7 +867,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderStor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -883,7 +883,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -894,7 +894,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRefPolicy
 {
@@ -918,7 +918,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWork
 }
 
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdRef
 {
@@ -941,7 +941,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -957,7 +957,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -968,7 +968,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSelectorPolicy
 {
@@ -992,7 +992,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWork
 }
 
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWorkspaceIdSelector
 {
@@ -1028,7 +1028,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProviderWork
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProvider
 {
@@ -1081,7 +1081,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsLinkedStorageAccountSpecManagementPoliciesEnum>))]
 public enum V1beta1LogAnalyticsLinkedStorageAccountSpecManagementPoliciesEnum
 {
@@ -1104,7 +1104,7 @@ public enum V1beta1LogAnalyticsLinkedStorageAccountSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecProviderConfigRef
 {
@@ -1123,7 +1123,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecProviderConfigRe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecWriteConnectionSecretToRef
 {
@@ -1133,7 +1133,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpecWriteConnectionS
 }
 
 /// <summary>LogAnalyticsLinkedStorageAccountSpec defines the desired state of LogAnalyticsLinkedStorageAccount</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountSpec
 {
@@ -1184,7 +1184,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountSpec
     public V1beta1LogAnalyticsLinkedStorageAccountSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountStatusAtProvider
 {
@@ -1214,7 +1214,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountStatusConditions
 {
@@ -1257,7 +1257,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountStatusConditions
 }
 
 /// <summary>LogAnalyticsLinkedStorageAccountStatus defines the observed state of LogAnalyticsLinkedStorageAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LogAnalyticsLinkedStorageAccountStatus
 {
@@ -1287,7 +1287,7 @@ public partial class V1beta1LogAnalyticsLinkedStorageAccountStatus
 }
 
 /// <summary>LogAnalyticsLinkedStorageAccount is the Schema for the LogAnalyticsLinkedStorageAccounts API. Manages a Log Analytics Linked Storage Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LogAnalyticsLinkedStorageAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LogAnalyticsLinkedStorageAccountSpec>, IStatus<V1beta1LogAnalyticsLinkedStorageAccountStatus?>

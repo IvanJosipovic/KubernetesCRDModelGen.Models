@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.security.azure.m.upbound.io;
 /// <summary>IOTSecurityDeviceGroup is the Schema for the IOTSecurityDeviceGroups API. Manages a Iot Security Device Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTSecurityDeviceGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IOTSecurityDeviceGroup>
@@ -38,7 +38,7 @@ public partial class V1beta1IOTSecurityDeviceGroupList : IKubernetesObject<V1Lis
 }
 
 /// <summary>an allow_rule blocks as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderAllowRule
 {
@@ -65,7 +65,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderAllowRule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPolicyResolutionEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPolicyResolutionEnum
 {
@@ -81,7 +81,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPolicyResolveEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPolicyResolveEnum
 {
@@ -92,7 +92,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPolicy
 {
@@ -116,7 +116,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRefPoli
 }
 
 /// <summary>Reference to a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRef
 {
@@ -139,7 +139,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicyResolutionEnum
 {
@@ -155,7 +155,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicyResolveEnum
 {
@@ -166,7 +166,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicy
 {
@@ -190,7 +190,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelecto
 }
 
 /// <summary>Selector for a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelector
 {
@@ -214,7 +214,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelecto
     public V1beta1IOTSecurityDeviceGroupSpecForProviderIothubIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderRangeRule
 {
@@ -235,7 +235,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecForProviderRangeRule
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecForProvider
 {
@@ -265,7 +265,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecForProvider
 }
 
 /// <summary>an allow_rule blocks as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderAllowRule
 {
@@ -292,7 +292,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderAllowRule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPolicyResolutionEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPolicyResolutionEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPolicyResolveEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPolicyResolveEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPolicy
 {
@@ -343,7 +343,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRefPol
 }
 
 /// <summary>Reference to a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRef
 {
@@ -366,7 +366,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicyResolutionEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicyResolveEnum
 {
@@ -393,7 +393,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicy
 {
@@ -417,7 +417,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelect
 }
 
 /// <summary>Selector for a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelector
 {
@@ -441,7 +441,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelect
     public V1beta1IOTSecurityDeviceGroupSpecInitProviderIothubIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderRangeRule
 {
@@ -474,7 +474,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecInitProviderRangeRule
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecInitProvider
 {
@@ -507,7 +507,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTSecurityDeviceGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1IOTSecurityDeviceGroupSpecManagementPoliciesEnum
 {
@@ -530,7 +530,7 @@ public enum V1beta1IOTSecurityDeviceGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecProviderConfigRef
 {
@@ -549,7 +549,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpecWriteConnectionSecretToRef
 {
@@ -559,7 +559,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpecWriteConnectionSecretToRef
 }
 
 /// <summary>IOTSecurityDeviceGroupSpec defines the desired state of IOTSecurityDeviceGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupSpec
 {
@@ -611,7 +611,7 @@ public partial class V1beta1IOTSecurityDeviceGroupSpec
 }
 
 /// <summary>an allow_rule blocks as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupStatusAtProviderAllowRule
 {
@@ -632,7 +632,7 @@ public partial class V1beta1IOTSecurityDeviceGroupStatusAtProviderAllowRule
     public IList<string>? ProcessesNotAllowed { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupStatusAtProviderRangeRule
 {
@@ -653,7 +653,7 @@ public partial class V1beta1IOTSecurityDeviceGroupStatusAtProviderRangeRule
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupStatusAtProvider
 {
@@ -679,7 +679,7 @@ public partial class V1beta1IOTSecurityDeviceGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupStatusConditions
 {
@@ -722,7 +722,7 @@ public partial class V1beta1IOTSecurityDeviceGroupStatusConditions
 }
 
 /// <summary>IOTSecurityDeviceGroupStatus defines the observed state of IOTSecurityDeviceGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTSecurityDeviceGroupStatus
 {
@@ -752,7 +752,7 @@ public partial class V1beta1IOTSecurityDeviceGroupStatus
 }
 
 /// <summary>IOTSecurityDeviceGroup is the Schema for the IOTSecurityDeviceGroups API. Manages a Iot Security Device Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTSecurityDeviceGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IOTSecurityDeviceGroupSpec>, IStatus<V1beta1IOTSecurityDeviceGroupStatus?>

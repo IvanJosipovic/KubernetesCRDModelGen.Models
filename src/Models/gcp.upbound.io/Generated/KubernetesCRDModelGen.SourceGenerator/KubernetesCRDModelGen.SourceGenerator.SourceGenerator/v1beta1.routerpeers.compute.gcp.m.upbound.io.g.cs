@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>RouterPeer is the Schema for the RouterPeers API. BGP information that must be configured into the routing stack to establish BGP peering.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RouterPeerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RouterPeer>
@@ -37,7 +37,7 @@ public partial class V1beta1RouterPeerList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1RouterPeer> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderAdvertisedIpRanges
 {
@@ -57,7 +57,7 @@ public partial class V1beta1RouterPeerSpecForProviderAdvertisedIpRanges
 /// BFD configuration for the BGP peering.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderBfd
 {
@@ -101,7 +101,7 @@ public partial class V1beta1RouterPeerSpecForProviderBfd
     public string? SessionInitializationMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderCustomLearnedIpRanges
 {
@@ -119,7 +119,7 @@ public partial class V1beta1RouterPeerSpecForProviderCustomLearnedIpRanges
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderInterfaceRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderInterfaceRefPolicyResolutionEnum
 {
@@ -135,7 +135,7 @@ public enum V1beta1RouterPeerSpecForProviderInterfaceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderInterfaceRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderInterfaceRefPolicyResolveEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1RouterPeerSpecForProviderInterfaceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderInterfaceRefPolicy
 {
@@ -170,7 +170,7 @@ public partial class V1beta1RouterPeerSpecForProviderInterfaceRefPolicy
 }
 
 /// <summary>Reference to a RouterInterface in compute to populate interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderInterfaceRef
 {
@@ -193,7 +193,7 @@ public partial class V1beta1RouterPeerSpecForProviderInterfaceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicyResolutionEnum
 {
@@ -209,7 +209,7 @@ public enum V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicyResolveEnum
 {
@@ -220,7 +220,7 @@ public enum V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicy
 {
@@ -244,7 +244,7 @@ public partial class V1beta1RouterPeerSpecForProviderInterfaceSelectorPolicy
 }
 
 /// <summary>Selector for a RouterInterface in compute to populate interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderInterfaceSelector
 {
@@ -269,7 +269,7 @@ public partial class V1beta1RouterPeerSpecForProviderInterfaceSelector
 }
 
 /// <summary>The MD5 authentication key for this BGP peer. Maximum length is 80 characters. Can only contain printable ASCII characters</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderMd5AuthenticationKeyKeySecretRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1RouterPeerSpecForProviderMd5AuthenticationKeyKeySecr
 /// Configuration for MD5 authentication on the BGP session.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderMd5AuthenticationKey
 {
@@ -304,7 +304,7 @@ public partial class V1beta1RouterPeerSpecForProviderMd5AuthenticationKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicyResolutionEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicyResolveEnum
 {
@@ -331,7 +331,7 @@ public enum V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicy
 {
@@ -355,7 +355,7 @@ public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressRefPolicy
 }
 
 /// <summary>Reference to a Address in compute to populate peerIpAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressRef
 {
@@ -378,7 +378,7 @@ public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicyResolutionEnum
 {
@@ -394,7 +394,7 @@ public enum V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicyResolveEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicy
 {
@@ -429,7 +429,7 @@ public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressSelectorPolicy
 }
 
 /// <summary>Selector for a Address in compute to populate peerIpAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressSelector
 {
@@ -459,7 +459,7 @@ public partial class V1beta1RouterPeerSpecForProviderPeerIpAddressSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRegionRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRegionRefPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1RouterPeerSpecForProviderRegionRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRegionRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRegionRefPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1RouterPeerSpecForProviderRegionRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRegionRefPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1RouterPeerSpecForProviderRegionRefPolicy
 }
 
 /// <summary>Reference to a Router in compute to populate region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRegionRef
 {
@@ -533,7 +533,7 @@ public partial class V1beta1RouterPeerSpecForProviderRegionRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRegionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRegionSelectorPolicyResolutionEnum
 {
@@ -549,7 +549,7 @@ public enum V1beta1RouterPeerSpecForProviderRegionSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRegionSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRegionSelectorPolicyResolveEnum
 {
@@ -560,7 +560,7 @@ public enum V1beta1RouterPeerSpecForProviderRegionSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRegionSelectorPolicy
 {
@@ -584,7 +584,7 @@ public partial class V1beta1RouterPeerSpecForProviderRegionSelectorPolicy
 }
 
 /// <summary>Selector for a Router in compute to populate region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRegionSelector
 {
@@ -614,7 +614,7 @@ public partial class V1beta1RouterPeerSpecForProviderRegionSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefPolicyResolutionEnum
 {
@@ -630,7 +630,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefPolicyResolveEnum
 {
@@ -641,7 +641,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefPolicy
 {
@@ -665,7 +665,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRefP
 }
 
 /// <summary>Reference to a Instance in compute to populate routerApplianceInstance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRef
 {
@@ -688,7 +688,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelectorPolicyResolutionEnum
 {
@@ -704,7 +704,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelectorPolicyResolveEnum
 {
@@ -715,7 +715,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelectorPolicy
 {
@@ -739,7 +739,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSele
 }
 
 /// <summary>Selector for a Instance in compute to populate routerApplianceInstance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSelector
 {
@@ -769,7 +769,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterApplianceInstanceSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterRefPolicyResolutionEnum
 {
@@ -785,7 +785,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterRefPolicyResolveEnum
 {
@@ -796,7 +796,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterRefPolicy
 {
@@ -820,7 +820,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterRefPolicy
 }
 
 /// <summary>Reference to a Router in compute to populate router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterRef
 {
@@ -843,7 +843,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterSelectorPolicyResolutionEnum
 {
@@ -859,7 +859,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecForProviderRouterSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecForProviderRouterSelectorPolicyResolveEnum
 {
@@ -870,7 +870,7 @@ public enum V1beta1RouterPeerSpecForProviderRouterSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterSelectorPolicy
 {
@@ -894,7 +894,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterSelectorPolicy
 }
 
 /// <summary>Selector for a Router in compute to populate router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProviderRouterSelector
 {
@@ -918,7 +918,7 @@ public partial class V1beta1RouterPeerSpecForProviderRouterSelector
     public V1beta1RouterPeerSpecForProviderRouterSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecForProvider
 {
@@ -1153,7 +1153,7 @@ public partial class V1beta1RouterPeerSpecForProvider
     public bool? ZeroCustomLearnedRoutePriority { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderAdvertisedIpRanges
 {
@@ -1173,7 +1173,7 @@ public partial class V1beta1RouterPeerSpecInitProviderAdvertisedIpRanges
 /// BFD configuration for the BGP peering.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderBfd
 {
@@ -1217,7 +1217,7 @@ public partial class V1beta1RouterPeerSpecInitProviderBfd
     public string? SessionInitializationMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderCustomLearnedIpRanges
 {
@@ -1235,7 +1235,7 @@ public partial class V1beta1RouterPeerSpecInitProviderCustomLearnedIpRanges
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderInterfaceRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderInterfaceRefPolicyResolutionEnum
 {
@@ -1251,7 +1251,7 @@ public enum V1beta1RouterPeerSpecInitProviderInterfaceRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderInterfaceRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderInterfaceRefPolicyResolveEnum
 {
@@ -1262,7 +1262,7 @@ public enum V1beta1RouterPeerSpecInitProviderInterfaceRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderInterfaceRefPolicy
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta1RouterPeerSpecInitProviderInterfaceRefPolicy
 }
 
 /// <summary>Reference to a RouterInterface in compute to populate interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderInterfaceRef
 {
@@ -1309,7 +1309,7 @@ public partial class V1beta1RouterPeerSpecInitProviderInterfaceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicyResolutionEnum
 {
@@ -1325,7 +1325,7 @@ public enum V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicyResolveEnum
 {
@@ -1336,7 +1336,7 @@ public enum V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicy
 {
@@ -1360,7 +1360,7 @@ public partial class V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicy
 }
 
 /// <summary>Selector for a RouterInterface in compute to populate interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderInterfaceSelector
 {
@@ -1385,7 +1385,7 @@ public partial class V1beta1RouterPeerSpecInitProviderInterfaceSelector
 }
 
 /// <summary>The MD5 authentication key for this BGP peer. Maximum length is 80 characters. Can only contain printable ASCII characters</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderMd5AuthenticationKeyKeySecretRef
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta1RouterPeerSpecInitProviderMd5AuthenticationKeyKeySec
 /// Configuration for MD5 authentication on the BGP session.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderMd5AuthenticationKey
 {
@@ -1420,7 +1420,7 @@ public partial class V1beta1RouterPeerSpecInitProviderMd5AuthenticationKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicyResolutionEnum
 {
@@ -1436,7 +1436,7 @@ public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicyResolveEnum
 {
@@ -1447,7 +1447,7 @@ public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicy
 {
@@ -1471,7 +1471,7 @@ public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressRefPolicy
 }
 
 /// <summary>Reference to a Address in compute to populate peerIpAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressRef
 {
@@ -1494,7 +1494,7 @@ public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolicyResolutionEnum
 {
@@ -1510,7 +1510,7 @@ public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolicyResolveEnum
 {
@@ -1521,7 +1521,7 @@ public enum V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolicy
 {
@@ -1545,7 +1545,7 @@ public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressSelectorPolic
 }
 
 /// <summary>Selector for a Address in compute to populate peerIpAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressSelector
 {
@@ -1575,7 +1575,7 @@ public partial class V1beta1RouterPeerSpecInitProviderPeerIpAddressSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRegionRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRegionRefPolicyResolutionEnum
 {
@@ -1591,7 +1591,7 @@ public enum V1beta1RouterPeerSpecInitProviderRegionRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRegionRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRegionRefPolicyResolveEnum
 {
@@ -1602,7 +1602,7 @@ public enum V1beta1RouterPeerSpecInitProviderRegionRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRegionRefPolicy
 {
@@ -1626,7 +1626,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRegionRefPolicy
 }
 
 /// <summary>Reference to a Router in compute to populate region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRegionRef
 {
@@ -1649,7 +1649,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRegionRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRegionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRegionSelectorPolicyResolutionEnum
 {
@@ -1665,7 +1665,7 @@ public enum V1beta1RouterPeerSpecInitProviderRegionSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRegionSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRegionSelectorPolicyResolveEnum
 {
@@ -1676,7 +1676,7 @@ public enum V1beta1RouterPeerSpecInitProviderRegionSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRegionSelectorPolicy
 {
@@ -1700,7 +1700,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRegionSelectorPolicy
 }
 
 /// <summary>Selector for a Router in compute to populate region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRegionSelector
 {
@@ -1730,7 +1730,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRegionSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRefPolicyResolutionEnum
 {
@@ -1746,7 +1746,7 @@ public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRefPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRefPolicyResolveEnum
 {
@@ -1757,7 +1757,7 @@ public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRefPolicy
 {
@@ -1781,7 +1781,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRef
 }
 
 /// <summary>Reference to a Instance in compute to populate routerApplianceInstance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRef
 {
@@ -1804,7 +1804,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelectorPolicyResolutionEnum
 {
@@ -1820,7 +1820,7 @@ public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelectorPolicyResolveEnum
 {
@@ -1831,7 +1831,7 @@ public enum V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelectorPolicy
 {
@@ -1855,7 +1855,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSel
 }
 
 /// <summary>Selector for a Instance in compute to populate routerApplianceInstance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSelector
 {
@@ -1891,7 +1891,7 @@ public partial class V1beta1RouterPeerSpecInitProviderRouterApplianceInstanceSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProvider
 {
@@ -2118,7 +2118,7 @@ public partial class V1beta1RouterPeerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouterPeerSpecManagementPoliciesEnum>))]
 public enum V1beta1RouterPeerSpecManagementPoliciesEnum
 {
@@ -2141,7 +2141,7 @@ public enum V1beta1RouterPeerSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecProviderConfigRef
 {
@@ -2160,7 +2160,7 @@ public partial class V1beta1RouterPeerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecWriteConnectionSecretToRef
 {
@@ -2170,7 +2170,7 @@ public partial class V1beta1RouterPeerSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RouterPeerSpec defines the desired state of RouterPeer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpec
 {
@@ -2221,7 +2221,7 @@ public partial class V1beta1RouterPeerSpec
     public V1beta1RouterPeerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerStatusAtProviderAdvertisedIpRanges
 {
@@ -2241,7 +2241,7 @@ public partial class V1beta1RouterPeerStatusAtProviderAdvertisedIpRanges
 /// BFD configuration for the BGP peering.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerStatusAtProviderBfd
 {
@@ -2285,7 +2285,7 @@ public partial class V1beta1RouterPeerStatusAtProviderBfd
     public string? SessionInitializationMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerStatusAtProviderCustomLearnedIpRanges
 {
@@ -2301,7 +2301,7 @@ public partial class V1beta1RouterPeerStatusAtProviderCustomLearnedIpRanges
 /// Configuration for MD5 authentication on the BGP session.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerStatusAtProviderMd5AuthenticationKey
 {
@@ -2310,7 +2310,7 @@ public partial class V1beta1RouterPeerStatusAtProviderMd5AuthenticationKey
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerStatusAtProvider
 {
@@ -2527,7 +2527,7 @@ public partial class V1beta1RouterPeerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerStatusConditions
 {
@@ -2570,7 +2570,7 @@ public partial class V1beta1RouterPeerStatusConditions
 }
 
 /// <summary>RouterPeerStatus defines the observed state of RouterPeer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerStatus
 {
@@ -2600,7 +2600,7 @@ public partial class V1beta1RouterPeerStatus
 }
 
 /// <summary>RouterPeer is the Schema for the RouterPeers API. BGP information that must be configured into the routing stack to establish BGP peering.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RouterPeer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RouterPeerSpec>, IStatus<V1beta1RouterPeerStatus?>

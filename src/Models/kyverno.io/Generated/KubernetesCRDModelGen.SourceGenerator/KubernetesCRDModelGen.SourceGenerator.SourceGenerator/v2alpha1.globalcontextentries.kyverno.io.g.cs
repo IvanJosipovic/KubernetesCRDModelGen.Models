@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kyverno.io;
 /// <summary>GlobalContextEntry declares resources to be cached.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -39,7 +39,7 @@ public partial class V2alpha1GlobalContextEntryList : IKubernetesObject<V1ListMe
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpecApiCallData
@@ -54,7 +54,7 @@ public partial class V2alpha1GlobalContextEntrySpecApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2alpha1GlobalContextEntrySpecApiCallMethodEnum>))]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public enum V2alpha1GlobalContextEntrySpecApiCallMethodEnum
@@ -65,7 +65,7 @@ public enum V2alpha1GlobalContextEntrySpecApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpecApiCallServiceHeaders
@@ -84,7 +84,7 @@ public partial class V2alpha1GlobalContextEntrySpecApiCallServiceHeaders
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpecApiCallService
@@ -116,7 +116,7 @@ public partial class V2alpha1GlobalContextEntrySpecApiCallService
 /// 1. A POST is needed to create a resource.
 /// 2. Finer-grained control is needed. Example: To restrict the number of resources cached.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpecApiCall
@@ -168,7 +168,7 @@ public partial class V2alpha1GlobalContextEntrySpecApiCall
 /// Stores a list of Kubernetes resources which will be cached.
 /// Mutually exclusive with APICall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpecKubernetesResource
@@ -196,7 +196,7 @@ public partial class V2alpha1GlobalContextEntrySpecKubernetesResource
     public required string Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpecProjections
@@ -211,7 +211,7 @@ public partial class V2alpha1GlobalContextEntrySpecProjections
 }
 
 /// <summary>Spec declares policy exception behaviors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpec
@@ -240,7 +240,7 @@ public partial class V2alpha1GlobalContextEntrySpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2alpha1GlobalContextEntryStatusConditionsStatusEnum>))]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public enum V2alpha1GlobalContextEntryStatusConditionsStatusEnum
@@ -254,7 +254,7 @@ public enum V2alpha1GlobalContextEntryStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntryStatusConditions
@@ -301,7 +301,7 @@ public partial class V2alpha1GlobalContextEntryStatusConditions
 }
 
 /// <summary>Status contains globalcontextentry runtime data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntryStatus
@@ -319,7 +319,7 @@ public partial class V2alpha1GlobalContextEntryStatus
 }
 
 /// <summary>GlobalContextEntry declares resources to be cached.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

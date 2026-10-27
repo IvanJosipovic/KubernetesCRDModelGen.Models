@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>TransitGatewayVPCAttachmentAccepter is the Schema for the TransitGatewayVPCAttachmentAccepters API. Manages the accepter&apos;s side of an EC2 Transit Gateway VPC Attachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TransitGatewayVPCAttachmentAccepter>
@@ -43,7 +43,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterList : IKubernete
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdRefPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGate
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTr
 }
 
 /// <summary>Reference to a TransitGatewayVPCAttachment in ec2 to populate transitGatewayAttachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGate
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTr
 }
 
 /// <summary>Selector for a TransitGatewayVPCAttachment in ec2 to populate transitGatewayAttachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTr
     public V1beta1TransitGatewayVPCAttachmentAccepterSpecForProviderTransitGatewayAttachmentIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProvider
 {
@@ -234,7 +234,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdRefPolicyResolutionEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdRefPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdRefPolicyResolveEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdRefPolicy
 {
@@ -285,7 +285,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderT
 }
 
 /// <summary>Reference to a TransitGatewayVPCAttachment in ec2 to populate transitGatewayAttachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdRef
 {
@@ -308,7 +308,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderT
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdSelectorPolicyResolutionEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdSelectorPolicyResolveEnum
 {
@@ -335,7 +335,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdSelectorPolicy
 {
@@ -359,7 +359,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderT
 }
 
 /// <summary>Selector for a TransitGatewayVPCAttachment in ec2 to populate transitGatewayAttachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderTransitGatewayAttachmentIdSelector
 {
@@ -395,7 +395,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProviderT
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProvider
 {
@@ -428,7 +428,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayVPCAttachmentAccepterSpecManagementPoliciesEnum>))]
 public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecManagementPoliciesEnum
 {
@@ -451,7 +451,7 @@ public enum V1beta1TransitGatewayVPCAttachmentAccepterSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecProviderConfigRef
 {
@@ -470,7 +470,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecWriteConnectionSecretToRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpecWriteConnecti
 }
 
 /// <summary>TransitGatewayVPCAttachmentAccepterSpec defines the desired state of TransitGatewayVPCAttachmentAccepter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpec
 {
@@ -531,7 +531,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterSpec
     public V1beta1TransitGatewayVPCAttachmentAccepterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterStatusAtProvider
 {
@@ -600,7 +600,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterStatusConditions
 {
@@ -643,7 +643,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterStatusConditions
 }
 
 /// <summary>TransitGatewayVPCAttachmentAccepterStatus defines the observed state of TransitGatewayVPCAttachmentAccepter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepterStatus
 {
@@ -673,7 +673,7 @@ public partial class V1beta1TransitGatewayVPCAttachmentAccepterStatus
 }
 
 /// <summary>TransitGatewayVPCAttachmentAccepter is the Schema for the TransitGatewayVPCAttachmentAccepters API. Manages the accepter&apos;s side of an EC2 Transit Gateway VPC Attachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TransitGatewayVPCAttachmentAccepter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TransitGatewayVPCAttachmentAccepterSpec>, IStatus<V1beta1TransitGatewayVPCAttachmentAccepterStatus?>

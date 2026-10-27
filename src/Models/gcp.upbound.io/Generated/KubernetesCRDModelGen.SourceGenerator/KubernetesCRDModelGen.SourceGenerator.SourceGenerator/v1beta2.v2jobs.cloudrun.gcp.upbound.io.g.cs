@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudrun.gcp.upbound.io;
 /// <summary>V2Job is the Schema for the V2Jobs API. A Cloud Run Job resource that references a container image which is run to completion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2V2JobList : IKubernetesObject<V1ListMeta>, IItems<V1beta2V2Job>
@@ -46,7 +46,7 @@ public partial class V1beta2V2JobList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecDeletionPolicyEnum>))]
 public enum V1beta2V2JobSpecDeletionPolicyEnum
 {
@@ -60,7 +60,7 @@ public enum V1beta2V2JobSpecDeletionPolicyEnum
 /// Settings for the Binary Authorization feature.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderBinaryAuthorization
 {
@@ -83,7 +83,7 @@ public partial class V1beta2V2JobSpecForProviderBinaryAuthorization
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum
 {
@@ -110,7 +110,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicy
 {
@@ -134,7 +134,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvVal
 }
 
 /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRef
 {
@@ -153,7 +153,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvVal
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicy
 {
@@ -204,7 +204,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvVal
 }
 
 /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelector
 {
@@ -228,7 +228,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvVal
 /// Selects a secret and a specific version from Cloud Secret Manager.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRef
 {
@@ -256,7 +256,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvVal
 /// Source for the environment variable&apos;s value.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSource
 {
@@ -268,7 +268,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvVal
     public V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSourceSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnv
 {
@@ -288,7 +288,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersEnv
     public V1beta2V2JobSpecForProviderTemplateTemplateContainersEnvValueSource? ValueSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersPorts
 {
@@ -305,7 +305,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersPorts
 /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersResources
 {
@@ -318,7 +318,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersResour
 /// GRPC specifies an action involving a GRPC port.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartupProbeGrpc
 {
@@ -338,7 +338,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartu
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartupProbeHttpGetHttpHeaders
 {
@@ -355,7 +355,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartu
 /// HttpGet specifies the http request to perform.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartupProbeHttpGet
 {
@@ -382,7 +382,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartu
 /// TcpSocket specifies an action involving a TCP port.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartupProbeTcpSocket
 {
@@ -400,7 +400,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartu
 /// succeeds. Container will not be added to service endpoints if the probe fails.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartupProbe
 {
@@ -456,7 +456,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersStartu
     public double? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersVolumeMounts
 {
@@ -473,7 +473,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainersVolume
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainers
 {
@@ -544,7 +544,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateContainers
 /// Node Selector describes the hardware requirements of the resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateNodeSelector
 {
@@ -559,7 +559,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateNodeSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceIn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum
 {
@@ -586,7 +586,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceIn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicy
 {
@@ -610,7 +610,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlI
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefs
 {
@@ -629,7 +629,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum
 {
@@ -645,7 +645,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceIn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum
 {
@@ -656,7 +656,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceIn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicy
 {
@@ -680,7 +680,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlI
 }
 
 /// <summary>Selector for a list of DatabaseInstance in sql to populate instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelector
 {
@@ -704,7 +704,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlI
 /// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlInstance
 {
@@ -725,7 +725,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesCloudSqlI
 /// Ephemeral storage used as a shared volume.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesEmptyDir
 {
@@ -746,7 +746,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesEmptyDir
 /// Cloud Storage bucket mounted as a volume using GCSFuse.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesGcs
 {
@@ -770,7 +770,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesGcs
 /// NFS share mounted as a volume.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesNfs
 {
@@ -787,7 +787,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesNfs
     public string? Server { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretItems
 {
@@ -810,7 +810,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretIte
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRefPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRefPolicyResolutionEnum
 {
@@ -826,7 +826,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRefPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRefPolicyResolveEnum
 {
@@ -837,7 +837,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRefPolicy
 {
@@ -861,7 +861,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSec
 }
 
 /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretRef
 {
@@ -880,7 +880,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolutionEnum
 {
@@ -896,7 +896,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolveEnum
 {
@@ -907,7 +907,7 @@ public enum V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelectorPolicy
 {
@@ -931,7 +931,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSec
 }
 
 /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelector
 {
@@ -955,7 +955,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSec
 /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecret
 {
@@ -986,7 +986,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecret
     public V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecretSecretSelector? SecretSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumes
 {
@@ -1030,7 +1030,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVolumes
     public V1beta2V2JobSpecForProviderTemplateTemplateVolumesSecret? Secret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVpcAccessNetworkInterfaces
 {
@@ -1063,7 +1063,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVpcAccessNetwork
 /// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplateVpcAccess
 {
@@ -1090,7 +1090,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVpcAccess
 /// Describes the task(s) that will be created when executing an execution
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplateTemplate
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplate
 /// The template used to create executions for this Job.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProviderTemplate
 {
@@ -1196,7 +1196,7 @@ public partial class V1beta2V2JobSpecForProviderTemplate
     public V1beta2V2JobSpecForProviderTemplateTemplate? Template { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecForProvider
 {
@@ -1298,7 +1298,7 @@ public partial class V1beta2V2JobSpecForProvider
 /// Settings for the Binary Authorization feature.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderBinaryAuthorization
 {
@@ -1321,7 +1321,7 @@ public partial class V1beta2V2JobSpecInitProviderBinaryAuthorization
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolutionEnum
 {
@@ -1337,7 +1337,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicyResolveEnum
 {
@@ -1348,7 +1348,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSource
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRefPolicy
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvVa
 }
 
 /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretRef
 {
@@ -1391,7 +1391,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvVa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolutionEnum
 {
@@ -1407,7 +1407,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicyResolveEnum
 {
@@ -1418,7 +1418,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSource
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelectorPolicy
 {
@@ -1442,7 +1442,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvVa
 }
 
 /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRefSecretSelector
 {
@@ -1466,7 +1466,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvVa
 /// Selects a secret and a specific version from Cloud Secret Manager.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRef
 {
@@ -1494,7 +1494,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvVa
 /// Source for the environment variable&apos;s value.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSource
 {
@@ -1506,7 +1506,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvVa
     public V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSourceSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnv
 {
@@ -1526,7 +1526,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnv
     public V1beta2V2JobSpecInitProviderTemplateTemplateContainersEnvValueSource? ValueSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersPorts
 {
@@ -1543,7 +1543,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersPorts
 /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersResources
 {
@@ -1556,7 +1556,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersResou
 /// GRPC specifies an action involving a GRPC port.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStartupProbeGrpc
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStart
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStartupProbeHttpGetHttpHeaders
 {
@@ -1593,7 +1593,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStart
 /// HttpGet specifies the http request to perform.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStartupProbeHttpGet
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStart
 /// TcpSocket specifies an action involving a TCP port.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStartupProbeTcpSocket
 {
@@ -1638,7 +1638,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStart
 /// succeeds. Container will not be added to service endpoints if the probe fails.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStartupProbe
 {
@@ -1694,7 +1694,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersStart
     public double? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersVolumeMounts
 {
@@ -1711,7 +1711,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainersVolum
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainers
 {
@@ -1782,7 +1782,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateContainers
 /// Node Selector describes the hardware requirements of the resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateNodeSelector
 {
@@ -1797,7 +1797,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateNodeSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolutionEnum
 {
@@ -1813,7 +1813,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicyResolveEnum
 {
@@ -1824,7 +1824,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefsPolicy
 {
@@ -1848,7 +1848,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSql
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesRefs
 {
@@ -1867,7 +1867,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSql
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolutionEnum
 {
@@ -1883,7 +1883,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicyResolveEnum
 {
@@ -1894,7 +1894,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelectorPolicy
 {
@@ -1918,7 +1918,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSql
 }
 
 /// <summary>Selector for a list of DatabaseInstance in sql to populate instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstanceInstancesSelector
 {
@@ -1942,7 +1942,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSql
 /// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSqlInstance
 {
@@ -1963,7 +1963,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesCloudSql
 /// Ephemeral storage used as a shared volume.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesEmptyDir
 {
@@ -1984,7 +1984,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesEmptyDir
 /// Cloud Storage bucket mounted as a volume using GCSFuse.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesGcs
 {
@@ -2008,7 +2008,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesGcs
 /// NFS share mounted as a volume.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesNfs
 {
@@ -2025,7 +2025,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesNfs
     public string? Server { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretItems
 {
@@ -2048,7 +2048,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretIt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRefPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRefPolicyResolutionEnum
 {
@@ -2064,7 +2064,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRefPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRefPolicyResolveEnum
 {
@@ -2075,7 +2075,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRefPolicy
 {
@@ -2099,7 +2099,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSe
 }
 
 /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretRef
 {
@@ -2118,7 +2118,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolutionEnum
 {
@@ -2134,7 +2134,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelectorPolicyResolveEnum
 {
@@ -2145,7 +2145,7 @@ public enum V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelectorPolicy
 {
@@ -2169,7 +2169,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSe
 }
 
 /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelector
 {
@@ -2193,7 +2193,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSe
 /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecret
 {
@@ -2224,7 +2224,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecret
     public V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecretSecretSelector? SecretSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumes
 {
@@ -2268,7 +2268,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVolumes
     public V1beta2V2JobSpecInitProviderTemplateTemplateVolumesSecret? Secret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVpcAccessNetworkInterfaces
 {
@@ -2301,7 +2301,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVpcAccessNetwor
 /// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVpcAccess
 {
@@ -2328,7 +2328,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVpcAccess
 /// Describes the task(s) that will be created when executing an execution
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplateTemplate
 {
@@ -2395,7 +2395,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplate
 /// The template used to create executions for this Job.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProviderTemplate
 {
@@ -2446,7 +2446,7 @@ public partial class V1beta2V2JobSpecInitProviderTemplate
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecInitProvider
 {
@@ -2544,7 +2544,7 @@ public partial class V1beta2V2JobSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecManagementPoliciesEnum>))]
 public enum V1beta2V2JobSpecManagementPoliciesEnum
 {
@@ -2568,7 +2568,7 @@ public enum V1beta2V2JobSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2V2JobSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2584,7 +2584,7 @@ public enum V1beta2V2JobSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2V2JobSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2V2JobSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2595,7 +2595,7 @@ public enum V1beta2V2JobSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecProviderConfigRefPolicy
 {
@@ -2623,7 +2623,7 @@ public partial class V1beta2V2JobSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecProviderConfigRef
 {
@@ -2642,7 +2642,7 @@ public partial class V1beta2V2JobSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpecWriteConnectionSecretToRef
 {
@@ -2656,7 +2656,7 @@ public partial class V1beta2V2JobSpecWriteConnectionSecretToRef
 }
 
 /// <summary>V2JobSpec defines the desired state of V2Job</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobSpec
 {
@@ -2727,7 +2727,7 @@ public partial class V1beta2V2JobSpec
 /// Settings for the Binary Authorization feature.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderBinaryAuthorization
 {
@@ -2744,7 +2744,7 @@ public partial class V1beta2V2JobStatusAtProviderBinaryAuthorization
     public bool? UseDefault { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderConditions
 {
@@ -2806,7 +2806,7 @@ public partial class V1beta2V2JobStatusAtProviderConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderLatestCreatedExecution
 {
@@ -2838,7 +2838,7 @@ public partial class V1beta2V2JobStatusAtProviderLatestCreatedExecution
 /// Selects a secret and a specific version from Cloud Secret Manager.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnvValueSourceSecretKeyRef
 {
@@ -2858,7 +2858,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnvVa
 /// Source for the environment variable&apos;s value.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnvValueSource
 {
@@ -2870,7 +2870,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnvVa
     public V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnvValueSourceSecretKeyRef? SecretKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnv
 {
@@ -2890,7 +2890,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnv
     public V1beta2V2JobStatusAtProviderTemplateTemplateContainersEnvValueSource? ValueSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersPorts
 {
@@ -2907,7 +2907,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersPorts
 /// Compute Resource requirements by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersResources
 {
@@ -2920,7 +2920,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersResou
 /// GRPC specifies an action involving a GRPC port.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStartupProbeGrpc
 {
@@ -2940,7 +2940,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStart
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStartupProbeHttpGetHttpHeaders
 {
@@ -2957,7 +2957,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStart
 /// HttpGet specifies the http request to perform.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStartupProbeHttpGet
 {
@@ -2984,7 +2984,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStart
 /// TcpSocket specifies an action involving a TCP port.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStartupProbeTcpSocket
 {
@@ -3002,7 +3002,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStart
 /// succeeds. Container will not be added to service endpoints if the probe fails.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStartupProbe
 {
@@ -3058,7 +3058,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersStart
     public double? TimeoutSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersVolumeMounts
 {
@@ -3075,7 +3075,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainersVolum
     public string? SubPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainers
 {
@@ -3146,7 +3146,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateContainers
 /// Node Selector describes the hardware requirements of the resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateNodeSelector
 {
@@ -3159,7 +3159,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateNodeSelector
 /// For Cloud SQL volumes, contains the specific instances that should be mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesCloudSqlInstance
 {
@@ -3172,7 +3172,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesCloudSql
 /// Ephemeral storage used as a shared volume.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesEmptyDir
 {
@@ -3193,7 +3193,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesEmptyDir
 /// Cloud Storage bucket mounted as a volume using GCSFuse.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesGcs
 {
@@ -3217,7 +3217,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesGcs
 /// NFS share mounted as a volume.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesNfs
 {
@@ -3234,7 +3234,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesNfs
     public string? Server { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesSecretItems
 {
@@ -3255,7 +3255,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesSecretIt
 /// Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesSecret
 {
@@ -3278,7 +3278,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumesSecret
     public string? Secret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumes
 {
@@ -3322,7 +3322,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVolumes
     public V1beta2V2JobStatusAtProviderTemplateTemplateVolumesSecret? Secret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVpcAccessNetworkInterfaces
 {
@@ -3355,7 +3355,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVpcAccessNetwor
 /// VPC Access configuration to use for this Task. For more information, visit https://cloud.google.com/run/docs/configuring/connecting-vpc.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVpcAccess
 {
@@ -3382,7 +3382,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVpcAccess
 /// Describes the task(s) that will be created when executing an execution
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplateTemplate
 {
@@ -3449,7 +3449,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplate
 /// The template used to create executions for this Job.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTemplate
 {
@@ -3488,7 +3488,7 @@ public partial class V1beta2V2JobStatusAtProviderTemplate
     public V1beta2V2JobStatusAtProviderTemplateTemplate? Template { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProviderTerminalCondition
 {
@@ -3550,7 +3550,7 @@ public partial class V1beta2V2JobStatusAtProviderTerminalCondition
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusAtProvider
 {
@@ -3747,7 +3747,7 @@ public partial class V1beta2V2JobStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatusConditions
 {
@@ -3790,7 +3790,7 @@ public partial class V1beta2V2JobStatusConditions
 }
 
 /// <summary>V2JobStatus defines the observed state of V2Job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2JobStatus
 {
@@ -3820,7 +3820,7 @@ public partial class V1beta2V2JobStatus
 }
 
 /// <summary>V2Job is the Schema for the V2Jobs API. A Cloud Run Job resource that references a container image which is run to completion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2V2Job : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2V2JobSpec>, IStatus<V1beta2V2JobStatus?>

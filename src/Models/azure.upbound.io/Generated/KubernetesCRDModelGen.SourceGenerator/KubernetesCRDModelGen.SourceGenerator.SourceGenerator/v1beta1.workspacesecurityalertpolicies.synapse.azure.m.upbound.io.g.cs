@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.synapse.azure.m.upbound.io;
 /// <summary>WorkspaceSecurityAlertPolicy is the Schema for the WorkspaceSecurityAlertPolicys API. Manages a Security Alert Policy for a Synapse Workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceSecurityAlertPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkspaceSecurityAlertPolicy>
@@ -38,7 +38,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicyList : IKubernetesObject
 }
 
 /// <summary>Specifies the identifier key of the Threat Detection audit storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageAccountAccessKeySecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEn
 }
 
 /// <summary>Reference to a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEn
 }
 
 /// <summary>Selector for a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEndpointSelector
 {
@@ -211,7 +211,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderStorageEn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum
 {
@@ -227,7 +227,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdRefPolicy
 {
@@ -262,7 +262,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWo
 }
 
 /// <summary>Reference to a Workspace in synapse to populate synapseWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -301,7 +301,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdSelectorPolicy
 {
@@ -336,7 +336,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWo
 }
 
 /// <summary>Selector for a Workspace in synapse to populate synapseWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdSelector
 {
@@ -360,7 +360,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWo
     public V1beta1WorkspaceSecurityAlertPolicySpecForProviderSynapseWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProvider
 {
@@ -414,7 +414,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecForProvider
 }
 
 /// <summary>Specifies the identifier key of the Threat Detection audit storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageAccountAccessKeySecretRef
 {
@@ -432,7 +432,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRefPolicyResolutionEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRefPolicyResolveEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRefPolicy
 {
@@ -483,7 +483,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageE
 }
 
 /// <summary>Reference to a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointRef
 {
@@ -506,7 +506,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSelectorPolicyResolutionEnum
 {
@@ -522,7 +522,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSelectorPolicyResolveEnum
 {
@@ -533,7 +533,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSelectorPolicy
 {
@@ -557,7 +557,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageE
 }
 
 /// <summary>Selector for a Account in storage to populate storageEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageEndpointSelector
 {
@@ -593,7 +593,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProviderStorageE
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProvider
 {
@@ -638,7 +638,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSecurityAlertPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1WorkspaceSecurityAlertPolicySpecManagementPoliciesEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta1WorkspaceSecurityAlertPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecProviderConfigRef
 {
@@ -680,7 +680,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpecWriteConnectionSecretToRef
 {
@@ -690,7 +690,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpecWriteConnectionSecre
 }
 
 /// <summary>WorkspaceSecurityAlertPolicySpec defines the desired state of WorkspaceSecurityAlertPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicySpec
 {
@@ -741,7 +741,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicySpec
     public V1beta1WorkspaceSecurityAlertPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicyStatusAtProvider
 {
@@ -779,7 +779,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicyStatusConditions
 {
@@ -822,7 +822,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicyStatusConditions
 }
 
 /// <summary>WorkspaceSecurityAlertPolicyStatus defines the observed state of WorkspaceSecurityAlertPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSecurityAlertPolicyStatus
 {
@@ -852,7 +852,7 @@ public partial class V1beta1WorkspaceSecurityAlertPolicyStatus
 }
 
 /// <summary>WorkspaceSecurityAlertPolicy is the Schema for the WorkspaceSecurityAlertPolicys API. Manages a Security Alert Policy for a Synapse Workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceSecurityAlertPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkspaceSecurityAlertPolicySpec>, IStatus<V1beta1WorkspaceSecurityAlertPolicyStatus?>

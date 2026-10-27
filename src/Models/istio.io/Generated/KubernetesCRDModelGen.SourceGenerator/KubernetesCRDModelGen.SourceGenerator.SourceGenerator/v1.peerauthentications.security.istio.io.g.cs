@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.security.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1PeerAuthenticationList : IKubernetesObject<V1ListMeta>, IItems<V1PeerAuthentication>
@@ -41,7 +41,7 @@ public partial class V1PeerAuthenticationList : IKubernetesObject<V1ListMeta>, I
 /// 
 /// Valid Options: DISABLE, PERMISSIVE, STRICT
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PeerAuthenticationSpecMtlsModeEnum>))]
 public enum V1PeerAuthenticationSpecMtlsModeEnum
 {
@@ -56,7 +56,7 @@ public enum V1PeerAuthenticationSpecMtlsModeEnum
 }
 
 /// <summary>Mutual TLS settings for workload.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PeerAuthenticationSpecMtls
 {
@@ -74,7 +74,7 @@ public partial class V1PeerAuthenticationSpecMtls
 /// 
 /// Valid Options: DISABLE, PERMISSIVE, STRICT
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PeerAuthenticationSpecPortLevelMtlsModeEnum>))]
 public enum V1PeerAuthenticationSpecPortLevelMtlsModeEnum
 {
@@ -88,7 +88,7 @@ public enum V1PeerAuthenticationSpecPortLevelMtlsModeEnum
     STRICT
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PeerAuthenticationSpecPortLevelMtls
 {
@@ -102,7 +102,7 @@ public partial class V1PeerAuthenticationSpecPortLevelMtls
 }
 
 /// <summary>The selector determines the workloads to apply the PeerAuthentication on.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PeerAuthenticationSpecSelector
 {
@@ -112,7 +112,7 @@ public partial class V1PeerAuthenticationSpecSelector
 }
 
 /// <summary>Peer authentication configuration for workloads. See more details at: https://istio.io/docs/reference/config/security/peer_authentication.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PeerAuthenticationSpec
 {
@@ -129,7 +129,7 @@ public partial class V1PeerAuthenticationSpec
     public V1PeerAuthenticationSpecSelector? Selector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1PeerAuthentication : IKubernetesObject<V1ObjectMeta>, ISpec<V1PeerAuthenticationSpec?>, IStatus<JsonNode?>

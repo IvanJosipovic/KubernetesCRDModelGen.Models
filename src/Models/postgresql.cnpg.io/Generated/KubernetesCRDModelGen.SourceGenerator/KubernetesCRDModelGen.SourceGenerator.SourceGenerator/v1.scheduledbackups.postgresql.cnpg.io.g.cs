@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.postgresql.cnpg.io;
 /// <summary>ScheduledBackup is the Schema for the scheduledbackups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ScheduledBackupList : IKubernetesObject<V1ListMeta>, IItems<V1ScheduledBackup>
@@ -43,7 +43,7 @@ public partial class V1ScheduledBackupList : IKubernetesObject<V1ListMeta>, IIte
 /// - self: sets the Scheduled backup object as owner of the backup&lt;br /&gt;
 /// - cluster: set the cluster as owner of the backup&lt;br /&gt;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ScheduledBackupSpecBackupOwnerReferenceEnum>))]
 public enum V1ScheduledBackupSpecBackupOwnerReferenceEnum
 {
@@ -56,7 +56,7 @@ public enum V1ScheduledBackupSpecBackupOwnerReferenceEnum
 }
 
 /// <summary>The cluster to backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ScheduledBackupSpecCluster
 {
@@ -69,7 +69,7 @@ public partial class V1ScheduledBackupSpecCluster
 /// The backup method to be used, possible options are `barmanObjectStore`,
 /// `volumeSnapshot` or `plugin`. Defaults to: `barmanObjectStore`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ScheduledBackupSpecMethodEnum>))]
 public enum V1ScheduledBackupSpecMethodEnum
 {
@@ -85,7 +85,7 @@ public enum V1ScheduledBackupSpecMethodEnum
 /// Configuration parameters to control the online/hot backup with volume snapshots
 /// Overrides the default settings specified in the cluster &apos;.backup.volumeSnapshot.onlineConfiguration&apos; stanza
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ScheduledBackupSpecOnlineConfiguration
 {
@@ -115,7 +115,7 @@ public partial class V1ScheduledBackupSpecOnlineConfiguration
 }
 
 /// <summary>Configuration parameters passed to the plugin managing this backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ScheduledBackupSpecPluginConfiguration
 {
@@ -139,7 +139,7 @@ public partial class V1ScheduledBackupSpecPluginConfiguration
 /// `prefer-standby` to have backups run preferably on the most updated
 /// standby, if available.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ScheduledBackupSpecTargetEnum>))]
 public enum V1ScheduledBackupSpecTargetEnum
 {
@@ -153,7 +153,7 @@ public enum V1ScheduledBackupSpecTargetEnum
 /// Specification of the desired behavior of the ScheduledBackup.
 /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ScheduledBackupSpec
 {
@@ -229,7 +229,7 @@ public partial class V1ScheduledBackupSpec
 /// to date. Populated by the system. Read-only.
 /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ScheduledBackupStatus
 {
@@ -251,7 +251,7 @@ public partial class V1ScheduledBackupStatus
 }
 
 /// <summary>ScheduledBackup is the Schema for the scheduledbackups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ScheduledBackup : IKubernetesObject<V1ObjectMeta>, ISpec<V1ScheduledBackupSpec>, IStatus<V1ScheduledBackupStatus?>

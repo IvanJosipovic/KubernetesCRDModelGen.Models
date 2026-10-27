@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.automation.azure.upbound.io;
 /// <summary>HybridRunBookWorkerGroup is the Schema for the HybridRunBookWorkerGroups API. Manages a Automation Account Runbook Worker Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HybridRunBookWorkerGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HybridRunBookWorkerGroup>
@@ -46,7 +46,7 @@ public partial class V1beta1HybridRunBookWorkerGroupList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecDeletionPolicyEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAcc
 }
 
 /// <summary>Reference to a Account in automation to populate automationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAcc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAcc
 }
 
 /// <summary>Selector for a Account in automation to populate automationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAccountNameSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderAutomationAcc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroup
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroup
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroup
     public V1beta1HybridRunBookWorkerGroupSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecForProvider
 {
@@ -393,7 +393,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameRefPolicyResolutionEnum
 {
@@ -409,7 +409,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameRefPolicyResolveEnum
 {
@@ -420,7 +420,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountName
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameRefPolicy
 {
@@ -444,7 +444,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAc
 }
 
 /// <summary>Reference to a Account in automation to populate automationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameSelectorPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameSelectorPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountName
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameSelectorPolicy
 {
@@ -514,7 +514,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAc
 }
 
 /// <summary>Selector for a Account in automation to populate automationAccountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAccountNameSelector
 {
@@ -540,7 +540,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderAutomationAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -556,7 +556,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -591,7 +591,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGrou
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameRef
 {
@@ -610,7 +610,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGrou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -626,7 +626,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -661,7 +661,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGrou
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGroupNameSelector
 {
@@ -693,7 +693,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProviderResourceGrou
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecInitProvider
 {
@@ -734,7 +734,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecManagementPoliciesEnum
 {
@@ -758,7 +758,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -774,7 +774,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicyResolveEnum
 {
@@ -785,7 +785,7 @@ public enum V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicy
 {
@@ -813,7 +813,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecProviderConfigRef
 {
@@ -832,7 +832,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpecWriteConnectionSecretToRef
 {
@@ -846,7 +846,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpecWriteConnectionSecretToR
 }
 
 /// <summary>HybridRunBookWorkerGroupSpec defines the desired state of HybridRunBookWorkerGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupSpec
 {
@@ -913,7 +913,7 @@ public partial class V1beta1HybridRunBookWorkerGroupSpec
     public V1beta1HybridRunBookWorkerGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupStatusAtProvider
 {
@@ -939,7 +939,7 @@ public partial class V1beta1HybridRunBookWorkerGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupStatusConditions
 {
@@ -982,7 +982,7 @@ public partial class V1beta1HybridRunBookWorkerGroupStatusConditions
 }
 
 /// <summary>HybridRunBookWorkerGroupStatus defines the observed state of HybridRunBookWorkerGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridRunBookWorkerGroupStatus
 {
@@ -1012,7 +1012,7 @@ public partial class V1beta1HybridRunBookWorkerGroupStatus
 }
 
 /// <summary>HybridRunBookWorkerGroup is the Schema for the HybridRunBookWorkerGroups API. Manages a Automation Account Runbook Worker Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HybridRunBookWorkerGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HybridRunBookWorkerGroupSpec>, IStatus<V1beta1HybridRunBookWorkerGroupStatus?>

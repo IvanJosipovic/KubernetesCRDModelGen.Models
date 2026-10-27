@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lambda.aws.upbound.io;
 /// <summary>FunctionEventInvokeConfig is the Schema for the FunctionEventInvokeConfigs API. Manages an AWS Lambda Function Event Invoke Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FunctionEventInvokeConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta2FunctionEventInvokeConfig>
@@ -46,7 +46,7 @@ public partial class V1beta2FunctionEventInvokeConfigList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecDeletionPolicyEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationRefPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationRefPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 }
 
 /// <summary>Reference to a Queue in sqs to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 }
 
 /// <summary>Selector for a Queue in sqs to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailureDestinationSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 }
 
 /// <summary>Configuration block with destination configuration for failed asynchronous invocations. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnFailure
 {
@@ -227,7 +227,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationRefPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationRefPolicyResolutionEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationRefPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationRefPolicyResolveEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationRefPolicy
 {
@@ -278,7 +278,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 }
 
 /// <summary>Reference to a Topic in sns to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationRef
 {
@@ -297,7 +297,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolutionEnum
 {
@@ -313,7 +313,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolveEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationSelectorPolicy
 {
@@ -348,7 +348,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 }
 
 /// <summary>Selector for a Topic in sns to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccessDestinationSelector
 {
@@ -369,7 +369,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 }
 
 /// <summary>Configuration block with destination configuration for successful asynchronous invocations. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccess
 {
@@ -387,7 +387,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
 }
 
 /// <summary>Configuration block with destination configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfig
 {
@@ -400,7 +400,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProviderDestinationC
     public V1beta2FunctionEventInvokeConfigSpecForProviderDestinationConfigOnSuccess? OnSuccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecForProvider
 {
@@ -438,7 +438,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationRefPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationRefPolicyResolutionEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnF
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationRefPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationRefPolicyResolveEnum
 {
@@ -465,7 +465,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnF
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationRefPolicy
 {
@@ -489,7 +489,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 }
 
 /// <summary>Reference to a Queue in sqs to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationRef
 {
@@ -508,7 +508,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationSelectorPolicyResolutionEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnF
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationSelectorPolicyResolveEnum
 {
@@ -535,7 +535,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnF
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationSelectorPolicy
 {
@@ -559,7 +559,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 }
 
 /// <summary>Selector for a Queue in sqs to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailureDestinationSelector
 {
@@ -580,7 +580,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 }
 
 /// <summary>Configuration block with destination configuration for failed asynchronous invocations. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnFailure
 {
@@ -603,7 +603,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationRefPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationRefPolicyResolutionEnum
 {
@@ -619,7 +619,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationRefPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationRefPolicyResolveEnum
 {
@@ -630,7 +630,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationRefPolicy
 {
@@ -654,7 +654,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 }
 
 /// <summary>Reference to a Topic in sns to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationRef
 {
@@ -673,7 +673,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolutionEnum
 {
@@ -689,7 +689,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationSelectorPolicyResolveEnum
 {
@@ -700,7 +700,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationSelectorPolicy
 {
@@ -724,7 +724,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 }
 
 /// <summary>Selector for a Topic in sns to populate destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccessDestinationSelector
 {
@@ -745,7 +745,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 }
 
 /// <summary>Configuration block with destination configuration for successful asynchronous invocations. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfigOnSuccess
 {
@@ -763,7 +763,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 }
 
 /// <summary>Configuration block with destination configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestinationConfig
 {
@@ -788,7 +788,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProviderDestination
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecInitProvider
 {
@@ -817,7 +817,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecManagementPoliciesEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecManagementPoliciesEnum
 {
@@ -841,7 +841,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -857,7 +857,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -868,7 +868,7 @@ public enum V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicy
 {
@@ -896,7 +896,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecProviderConfigRef
 {
@@ -915,7 +915,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpecWriteConnectionSecretToRef
 {
@@ -929,7 +929,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpecWriteConnectionSecretTo
 }
 
 /// <summary>FunctionEventInvokeConfigSpec defines the desired state of FunctionEventInvokeConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigSpec
 {
@@ -997,7 +997,7 @@ public partial class V1beta2FunctionEventInvokeConfigSpec
 }
 
 /// <summary>Configuration block with destination configuration for failed asynchronous invocations. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigStatusAtProviderDestinationConfigOnFailure
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta2FunctionEventInvokeConfigStatusAtProviderDestination
 }
 
 /// <summary>Configuration block with destination configuration for successful asynchronous invocations. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigStatusAtProviderDestinationConfigOnSuccess
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta2FunctionEventInvokeConfigStatusAtProviderDestination
 }
 
 /// <summary>Configuration block with destination configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigStatusAtProviderDestinationConfig
 {
@@ -1030,7 +1030,7 @@ public partial class V1beta2FunctionEventInvokeConfigStatusAtProviderDestination
     public V1beta2FunctionEventInvokeConfigStatusAtProviderDestinationConfigOnSuccess? OnSuccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigStatusAtProvider
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta2FunctionEventInvokeConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigStatusConditions
 {
@@ -1110,7 +1110,7 @@ public partial class V1beta2FunctionEventInvokeConfigStatusConditions
 }
 
 /// <summary>FunctionEventInvokeConfigStatus defines the observed state of FunctionEventInvokeConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionEventInvokeConfigStatus
 {
@@ -1140,7 +1140,7 @@ public partial class V1beta2FunctionEventInvokeConfigStatus
 }
 
 /// <summary>FunctionEventInvokeConfig is the Schema for the FunctionEventInvokeConfigs API. Manages an AWS Lambda Function Event Invoke Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FunctionEventInvokeConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2FunctionEventInvokeConfigSpec>, IStatus<V1beta2FunctionEventInvokeConfigStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataprotection.azure.upbound.io;
 /// <summary>BackupPolicyPostgreSQLFlexibleServer is the Schema for the BackupPolicyPostgreSQLFlexibleServers API. Manages a Backup Policy to back up PostgreSQL Flexible Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BackupPolicyPostgreSQLFlexibleServer>
@@ -46,7 +46,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerList : IKubernet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecDeletionPolicyEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderDefaultRetentionRuleLifeCycle
 {
@@ -70,7 +70,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderD
 }
 
 /// <summary>A default_retention_rule block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderDefaultRetentionRule
 {
@@ -80,7 +80,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderD
 }
 
 /// <summary>A criteria block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderRetentionRuleCriteria
 {
@@ -105,7 +105,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderR
     public IList<string>? WeeksOfMonth { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderRetentionRuleLifeCycle
 {
@@ -118,7 +118,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderR
     public string? Duration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderRetentionRule
 {
@@ -145,7 +145,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRefPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRefPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRefPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderV
 }
 
 /// <summary>Reference to a BackupVault in dataprotection to populate vaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdRef
 {
@@ -215,7 +215,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderV
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelectorPolicyResolutionEnum
 {
@@ -231,7 +231,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelectorPolicyResolveEnum
 {
@@ -242,7 +242,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelectorPolicy
 {
@@ -266,7 +266,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderV
 }
 
 /// <summary>Selector for a BackupVault in dataprotection to populate vaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelector
 {
@@ -286,7 +286,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderV
     public V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProvider
 {
@@ -319,7 +319,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProvider
     public V1beta1BackupPolicyPostgreSQLFlexibleServerSpecForProviderVaultIdSelector? VaultIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProviderDefaultRetentionRuleLifeCycle
 {
@@ -333,7 +333,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProvider
 }
 
 /// <summary>A default_retention_rule block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProviderDefaultRetentionRule
 {
@@ -343,7 +343,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProvider
 }
 
 /// <summary>A criteria block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProviderRetentionRuleCriteria
 {
@@ -368,7 +368,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProvider
     public IList<string>? WeeksOfMonth { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProviderRetentionRuleLifeCycle
 {
@@ -381,7 +381,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProvider
     public string? Duration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProviderRetentionRule
 {
@@ -414,7 +414,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProvider
 {
@@ -439,7 +439,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecManagementPoliciesEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecManagementPoliciesEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecManagementPoliciesEnu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRefPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRefPolicy
 {
@@ -518,7 +518,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConf
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConfigRef
 {
@@ -537,7 +537,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecProviderConf
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecWriteConnectionSecretToRef
 {
@@ -551,7 +551,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpecWriteConnect
 }
 
 /// <summary>BackupPolicyPostgreSQLFlexibleServerSpec defines the desired state of BackupPolicyPostgreSQLFlexibleServer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpec
 {
@@ -618,7 +618,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerSpec
     public V1beta1BackupPolicyPostgreSQLFlexibleServerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProviderDefaultRetentionRuleLifeCycle
 {
@@ -632,7 +632,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProvider
 }
 
 /// <summary>A default_retention_rule block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProviderDefaultRetentionRule
 {
@@ -642,7 +642,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProvider
 }
 
 /// <summary>A criteria block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProviderRetentionRuleCriteria
 {
@@ -667,7 +667,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProvider
     public IList<string>? WeeksOfMonth { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProviderRetentionRuleLifeCycle
 {
@@ -680,7 +680,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProvider
     public string? Duration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProviderRetentionRule
 {
@@ -701,7 +701,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProvider
     public double? Priority { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProvider
 {
@@ -731,7 +731,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusConditions
 {
@@ -774,7 +774,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatusConditions
 }
 
 /// <summary>BackupPolicyPostgreSQLFlexibleServerStatus defines the observed state of BackupPolicyPostgreSQLFlexibleServer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatus
 {
@@ -804,7 +804,7 @@ public partial class V1beta1BackupPolicyPostgreSQLFlexibleServerStatus
 }
 
 /// <summary>BackupPolicyPostgreSQLFlexibleServer is the Schema for the BackupPolicyPostgreSQLFlexibleServers API. Manages a Backup Policy to back up PostgreSQL Flexible Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupPolicyPostgreSQLFlexibleServer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BackupPolicyPostgreSQLFlexibleServerSpec>, IStatus<V1beta1BackupPolicyPostgreSQLFlexibleServerStatus?>

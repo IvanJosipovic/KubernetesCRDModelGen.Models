@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2023-01-01/actionGroups_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/actionGroups/{actionGroupName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20230101storageActionGroupList : IKubernetesObject<V1ListMeta>, IItems<V1api20230101storageActionGroup>
@@ -46,7 +46,7 @@ public partial class V1api20230101storageActionGroupList : IKubernetesObject<V1L
 /// Storage version of v1api20230101.ArmRoleReceiver
 /// An arm role receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecArmRoleReceivers
 {
@@ -71,7 +71,7 @@ public partial class V1api20230101storageActionGroupSpecArmRoleReceivers
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecAutomationRunbookReceiversServiceUriFromSecret
 {
@@ -88,7 +88,7 @@ public partial class V1api20230101storageActionGroupSpecAutomationRunbookReceive
 }
 
 /// <summary>WebhookResourceReference: The resource id for webhook linked to this runbook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecAutomationRunbookReceiversWebhookResourceReference
 {
@@ -117,7 +117,7 @@ public partial class V1api20230101storageActionGroupSpecAutomationRunbookReceive
 /// Storage version of v1api20230101.AutomationRunbookReceiver
 /// The Azure Automation Runbook notification receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecAutomationRunbookReceivers
 {
@@ -162,7 +162,7 @@ public partial class V1api20230101storageActionGroupSpecAutomationRunbookReceive
 /// Storage version of v1api20230101.AzureAppPushReceiver
 /// The Azure mobile App push notification receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecAzureAppPushReceivers
 {
@@ -181,7 +181,7 @@ public partial class V1api20230101storageActionGroupSpecAzureAppPushReceivers
 }
 
 /// <summary>FunctionAppResourceReference: The azure resource id of the function app.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecAzureFunctionReceiversFunctionAppResourceReference
 {
@@ -210,7 +210,7 @@ public partial class V1api20230101storageActionGroupSpecAzureFunctionReceiversFu
 /// Storage version of v1api20230101.AzureFunctionReceiver
 /// An azure function receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecAzureFunctionReceivers
 {
@@ -242,7 +242,7 @@ public partial class V1api20230101storageActionGroupSpecAzureFunctionReceivers
 /// Storage version of v1api20230101.EmailReceiver
 /// An email receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecEmailReceivers
 {
@@ -267,7 +267,7 @@ public partial class V1api20230101storageActionGroupSpecEmailReceivers
 /// Storage version of v1api20230101.EventHubReceiver
 /// An Event hub receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecEventHubReceivers
 {
@@ -301,7 +301,7 @@ public partial class V1api20230101storageActionGroupSpecEventHubReceivers
 /// Storage version of v1api20230101.ItsmReceiver
 /// An Itsm receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecItsmReceivers
 {
@@ -329,7 +329,7 @@ public partial class V1api20230101storageActionGroupSpecItsmReceivers
 }
 
 /// <summary>ResourceReference: The azure resource id of the logic app receiver.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecLogicAppReceiversResourceReference
 {
@@ -358,7 +358,7 @@ public partial class V1api20230101storageActionGroupSpecLogicAppReceiversResourc
 /// Storage version of v1api20230101.LogicAppReceiver
 /// A logic app receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecLogicAppReceivers
 {
@@ -388,7 +388,7 @@ public partial class V1api20230101storageActionGroupSpecLogicAppReceivers
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecOperatorSpecConfigMapExpressions
 {
@@ -429,7 +429,7 @@ public partial class V1api20230101storageActionGroupSpecOperatorSpecConfigMapExp
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecOperatorSpecSecretExpressions
 {
@@ -469,7 +469,7 @@ public partial class V1api20230101storageActionGroupSpecOperatorSpecSecretExpres
 /// Storage version of v1api20230101.ActionGroupOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecOperatorSpec
 {
@@ -492,7 +492,7 @@ public partial class V1api20230101storageActionGroupSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecOwner
 {
@@ -508,7 +508,7 @@ public partial class V1api20230101storageActionGroupSpecOwner
 /// Storage version of v1api20230101.SmsReceiver
 /// An SMS receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecSmsReceivers
 {
@@ -533,7 +533,7 @@ public partial class V1api20230101storageActionGroupSpecSmsReceivers
 /// Storage version of v1api20230101.VoiceReceiver
 /// A voice receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecVoiceReceivers
 {
@@ -558,7 +558,7 @@ public partial class V1api20230101storageActionGroupSpecVoiceReceivers
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecWebhookReceiversServiceUriFromSecret
 {
@@ -578,7 +578,7 @@ public partial class V1api20230101storageActionGroupSpecWebhookReceiversServiceU
 /// Storage version of v1api20230101.WebhookReceiver
 /// A webhook receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpecWebhookReceivers
 {
@@ -619,7 +619,7 @@ public partial class V1api20230101storageActionGroupSpecWebhookReceivers
 }
 
 /// <summary>Storage version of v1api20230101.ActionGroup_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupSpec
 {
@@ -705,7 +705,7 @@ public partial class V1api20230101storageActionGroupSpec
 /// Storage version of v1api20230101.ArmRoleReceiver_STATUS
 /// An arm role receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusArmRoleReceivers
 {
@@ -730,7 +730,7 @@ public partial class V1api20230101storageActionGroupStatusArmRoleReceivers
 /// Storage version of v1api20230101.AutomationRunbookReceiver_STATUS
 /// The Azure Automation Runbook notification receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusAutomationRunbookReceivers
 {
@@ -764,7 +764,7 @@ public partial class V1api20230101storageActionGroupStatusAutomationRunbookRecei
 /// Storage version of v1api20230101.AzureAppPushReceiver_STATUS
 /// The Azure mobile App push notification receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusAzureAppPushReceivers
 {
@@ -786,7 +786,7 @@ public partial class V1api20230101storageActionGroupStatusAzureAppPushReceivers
 /// Storage version of v1api20230101.AzureFunctionReceiver_STATUS
 /// An azure function receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusAzureFunctionReceivers
 {
@@ -814,7 +814,7 @@ public partial class V1api20230101storageActionGroupStatusAzureFunctionReceivers
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusConditions
 {
@@ -863,7 +863,7 @@ public partial class V1api20230101storageActionGroupStatusConditions
 /// Storage version of v1api20230101.EmailReceiver_STATUS
 /// An email receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusEmailReceivers
 {
@@ -891,7 +891,7 @@ public partial class V1api20230101storageActionGroupStatusEmailReceivers
 /// Storage version of v1api20230101.EventHubReceiver_STATUS
 /// An Event hub receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusEventHubReceivers
 {
@@ -925,7 +925,7 @@ public partial class V1api20230101storageActionGroupStatusEventHubReceivers
 /// Storage version of v1api20230101.ItsmReceiver_STATUS
 /// An Itsm receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusItsmReceivers
 {
@@ -956,7 +956,7 @@ public partial class V1api20230101storageActionGroupStatusItsmReceivers
 /// Storage version of v1api20230101.LogicAppReceiver_STATUS
 /// A logic app receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusLogicAppReceivers
 {
@@ -984,7 +984,7 @@ public partial class V1api20230101storageActionGroupStatusLogicAppReceivers
 /// Storage version of v1api20230101.SmsReceiver_STATUS
 /// An SMS receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusSmsReceivers
 {
@@ -1012,7 +1012,7 @@ public partial class V1api20230101storageActionGroupStatusSmsReceivers
 /// Storage version of v1api20230101.VoiceReceiver_STATUS
 /// A voice receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusVoiceReceivers
 {
@@ -1037,7 +1037,7 @@ public partial class V1api20230101storageActionGroupStatusVoiceReceivers
 /// Storage version of v1api20230101.WebhookReceiver_STATUS
 /// A webhook receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatusWebhookReceivers
 {
@@ -1071,7 +1071,7 @@ public partial class V1api20230101storageActionGroupStatusWebhookReceivers
 /// Storage version of v1api20230101.ActionGroupResource_STATUS
 /// An action group resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230101storageActionGroupStatus
 {
@@ -1146,7 +1146,7 @@ public partial class V1api20230101storageActionGroupStatus
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2023-01-01/actionGroups_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/actionGroups/{actionGroupName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20230101storageActionGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20230101storageActionGroupSpec?>, IStatus<V1api20230101storageActionGroupStatus?>

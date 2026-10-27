@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privateca.gcp.m.upbound.io;
 /// <summary>CertificateAuthority is the Schema for the CertificateAuthoritys API. A CertificateAuthority represents an individual Certificate Authority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateAuthorityList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CertificateAuthority>
@@ -41,7 +41,7 @@ public partial class V1beta1CertificateAuthorityList : IKubernetesObject<V1ListM
 /// Contains distinguished name fields such as the location and organization.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectConfigSubject
 {
@@ -82,7 +82,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectConf
 /// The subject alternative name fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectConfigSubjectAltName
 {
@@ -107,7 +107,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectConf
 /// Specifies some of the values in a certificate that are related to the subject.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectConfig
 {
@@ -130,7 +130,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectConf
 /// When specified this provides a custom SKI to be used in the certificate. This should only be used to maintain a SKI of an existing CA originally created outside CA service, which was not generated using method (1) described in RFC 5280 section 4.2.1.2..
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectKeyId
 {
@@ -143,7 +143,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigSubjectKeyI
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigAdditionalExtensionsObjectId
 {
@@ -152,7 +152,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigA
     public IList<double>? ObjectIdPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigAdditionalExtensions
 {
@@ -176,7 +176,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigA
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigCaOptions
 {
@@ -212,7 +212,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigC
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigKeyUsageBaseKeyUsage
 {
@@ -257,7 +257,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigK
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigKeyUsageExtendedKeyUsage
 {
@@ -286,7 +286,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigK
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigKeyUsageUnknownExtendedKeyUsages
 {
@@ -299,7 +299,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigK
 /// Indicates the intended use for keys that correspond to a certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigKeyUsage
 {
@@ -329,7 +329,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigK
 /// Describes the X.509 name constraints extension.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigNameConstraints
 {
@@ -410,7 +410,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigN
     public IList<string>? PermittedUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigPolicyIds
 {
@@ -423,7 +423,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509ConfigP
 /// Describes how some of the technical X.509 fields in a certificate should be populated.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509Config
 {
@@ -474,7 +474,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfigX509Config
 /// The config used to create a self-signed X.509 certificate or CSR.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderConfig
 {
@@ -506,7 +506,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderConfig
 /// certificate. Otherwise, it is used to sign a CSR.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderKeySpec
 {
@@ -532,7 +532,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderKeySpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderPoolRefPolicyResolutionEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderPoolRefPolicyResolutionEnum
 {
@@ -548,7 +548,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderPoolRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderPoolRefPolicyResolveEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderPoolRefPolicyResolveEnum
 {
@@ -559,7 +559,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderPoolRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderPoolRefPolicy
 {
@@ -583,7 +583,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderPoolRefPolicy
 }
 
 /// <summary>Reference to a CAPool in privateca to populate pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderPoolRef
 {
@@ -606,7 +606,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderPoolRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolicyResolutionEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolicyResolutionEnum
 {
@@ -622,7 +622,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolicyResolveEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolicyResolveEnum
 {
@@ -633,7 +633,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolicy
 {
@@ -657,7 +657,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderPoolSelectorPolic
 }
 
 /// <summary>Selector for a CAPool in privateca to populate pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderPoolSelector
 {
@@ -687,7 +687,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderPoolSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthorityRefPolicyResolutionEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthorityRefPolicyResolutionEnum
 {
@@ -703,7 +703,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertifica
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthorityRefPolicyResolveEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthorityRefPolicyResolveEnum
 {
@@ -714,7 +714,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertifica
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthorityRefPolicy
 {
@@ -738,7 +738,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfig
 }
 
 /// <summary>Reference to a CertificateAuthority in privateca to populate certificateAuthority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthorityRef
 {
@@ -761,7 +761,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolutionEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolutionEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertifica
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolveEnum>))]
 public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolveEnum
 {
@@ -788,7 +788,7 @@ public enum V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertifica
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthoritySelectorPolicy
 {
@@ -812,7 +812,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfig
 }
 
 /// <summary>Selector for a CertificateAuthority in privateca to populate certificateAuthority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfigCertificateAuthoritySelector
 {
@@ -841,7 +841,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfig
 /// but not pem certificate for this CA itself.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfigPemIssuerChain
 {
@@ -855,7 +855,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfig
 /// with the subordinate configuration, which describes its issuers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfig
 {
@@ -890,7 +890,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderSubordinateConfig
 /// that can be specified by users.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProviderUserDefinedAccessUrls
 {
@@ -903,7 +903,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderUserDefinedAccess
     public IList<string>? CrlAccessUrls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecForProvider
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta1CertificateAuthoritySpecForProvider
 /// Contains distinguished name fields such as the location and organization.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectConfigSubject
 {
@@ -1078,7 +1078,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectCon
 /// The subject alternative name fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectConfigSubjectAltName
 {
@@ -1103,7 +1103,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectCon
 /// Specifies some of the values in a certificate that are related to the subject.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectConfig
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectCon
 /// When specified this provides a custom SKI to be used in the certificate. This should only be used to maintain a SKI of an existing CA originally created outside CA service, which was not generated using method (1) described in RFC 5280 section 4.2.1.2..
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectKeyId
 {
@@ -1139,7 +1139,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigSubjectKey
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigAdditionalExtensionsObjectId
 {
@@ -1148,7 +1148,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
     public IList<double>? ObjectIdPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigAdditionalExtensions
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigCaOptions
 {
@@ -1208,7 +1208,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigKeyUsageBaseKeyUsage
 {
@@ -1253,7 +1253,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigKeyUsageExtendedKeyUsage
 {
@@ -1282,7 +1282,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigKeyUsageUnknownExtendedKeyUsages
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 /// Indicates the intended use for keys that correspond to a certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigKeyUsage
 {
@@ -1325,7 +1325,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 /// Describes the X.509 name constraints extension.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigNameConstraints
 {
@@ -1406,7 +1406,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
     public IList<string>? PermittedUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509ConfigPolicyIds
 {
@@ -1419,7 +1419,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 /// Describes how some of the technical X.509 fields in a certificate should be populated.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 {
@@ -1470,7 +1470,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfigX509Config
 /// The config used to create a self-signed X.509 certificate or CSR.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderConfig
 {
@@ -1502,7 +1502,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderConfig
 /// certificate. Otherwise, it is used to sign a CSR.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderKeySpec
 {
@@ -1528,7 +1528,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderKeySpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthorityRefPolicyResolutionEnum>))]
 public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthorityRefPolicyResolutionEnum
 {
@@ -1544,7 +1544,7 @@ public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertific
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthorityRefPolicyResolveEnum>))]
 public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthorityRefPolicyResolveEnum
 {
@@ -1555,7 +1555,7 @@ public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertific
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthorityRefPolicy
 {
@@ -1579,7 +1579,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfi
 }
 
 /// <summary>Reference to a CertificateAuthority in privateca to populate certificateAuthority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthorityRef
 {
@@ -1602,7 +1602,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolutionEnum>))]
 public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolutionEnum
 {
@@ -1618,7 +1618,7 @@ public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertific
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolveEnum>))]
 public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthoritySelectorPolicyResolveEnum
 {
@@ -1629,7 +1629,7 @@ public enum V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertific
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthoritySelectorPolicy
 {
@@ -1653,7 +1653,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfi
 }
 
 /// <summary>Selector for a CertificateAuthority in privateca to populate certificateAuthority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigCertificateAuthoritySelector
 {
@@ -1682,7 +1682,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfi
 /// but not pem certificate for this CA itself.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfigPemIssuerChain
 {
@@ -1696,7 +1696,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfi
 /// with the subordinate configuration, which describes its issuers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfig
 {
@@ -1731,7 +1731,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderSubordinateConfi
 /// that can be specified by users.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProviderUserDefinedAccessUrls
 {
@@ -1756,7 +1756,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderUserDefinedAcces
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecInitProvider
 {
@@ -1871,7 +1871,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecManagementPoliciesEnum>))]
 public enum V1beta1CertificateAuthoritySpecManagementPoliciesEnum
 {
@@ -1894,7 +1894,7 @@ public enum V1beta1CertificateAuthoritySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecProviderConfigRef
 {
@@ -1913,7 +1913,7 @@ public partial class V1beta1CertificateAuthoritySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpecWriteConnectionSecretToRef
 {
@@ -1923,7 +1923,7 @@ public partial class V1beta1CertificateAuthoritySpecWriteConnectionSecretToRef
 }
 
 /// <summary>CertificateAuthoritySpec defines the desired state of CertificateAuthority</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthoritySpec
 {
@@ -1974,7 +1974,7 @@ public partial class V1beta1CertificateAuthoritySpec
     public V1beta1CertificateAuthoritySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderAccessUrls
 {
@@ -1999,7 +1999,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderAccessUrls
 /// Contains distinguished name fields such as the location and organization.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectConfigSubject
 {
@@ -2040,7 +2040,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectCon
 /// The subject alternative name fields.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectConfigSubjectAltName
 {
@@ -2065,7 +2065,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectCon
 /// Specifies some of the values in a certificate that are related to the subject.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectConfig
 {
@@ -2088,7 +2088,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectCon
 /// When specified this provides a custom SKI to be used in the certificate. This should only be used to maintain a SKI of an existing CA originally created outside CA service, which was not generated using method (1) described in RFC 5280 section 4.2.1.2..
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectKeyId
 {
@@ -2101,7 +2101,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigSubjectKey
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigAdditionalExtensionsObjectId
 {
@@ -2110,7 +2110,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
     public IList<double>? ObjectIdPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigAdditionalExtensions
 {
@@ -2134,7 +2134,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigCaOptions
 {
@@ -2170,7 +2170,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigKeyUsageBaseKeyUsage
 {
@@ -2215,7 +2215,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigKeyUsageExtendedKeyUsage
 {
@@ -2244,7 +2244,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigKeyUsageUnknownExtendedKeyUsages
 {
@@ -2257,7 +2257,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 /// Indicates the intended use for keys that correspond to a certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigKeyUsage
 {
@@ -2287,7 +2287,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 /// Describes the X.509 name constraints extension.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigNameConstraints
 {
@@ -2368,7 +2368,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
     public IList<string>? PermittedUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509ConfigPolicyIds
 {
@@ -2381,7 +2381,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 /// Describes how some of the technical X.509 fields in a certificate should be populated.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 {
@@ -2432,7 +2432,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfigX509Config
 /// The config used to create a self-signed X.509 certificate or CSR.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderConfig
 {
@@ -2464,7 +2464,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderConfig
 /// certificate. Otherwise, it is used to sign a CSR.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderKeySpec
 {
@@ -2489,7 +2489,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderKeySpec
 /// but not pem certificate for this CA itself.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderSubordinateConfigPemIssuerChain
 {
@@ -2503,7 +2503,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderSubordinateConfi
 /// with the subordinate configuration, which describes its issuers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderSubordinateConfig
 {
@@ -2530,7 +2530,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderSubordinateConfi
 /// that can be specified by users.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProviderUserDefinedAccessUrls
 {
@@ -2543,7 +2543,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderUserDefinedAcces
     public IList<string>? CrlAccessUrls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusAtProvider
 {
@@ -2731,7 +2731,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatusConditions
 {
@@ -2774,7 +2774,7 @@ public partial class V1beta1CertificateAuthorityStatusConditions
 }
 
 /// <summary>CertificateAuthorityStatus defines the observed state of CertificateAuthority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateAuthorityStatus
 {
@@ -2804,7 +2804,7 @@ public partial class V1beta1CertificateAuthorityStatus
 }
 
 /// <summary>CertificateAuthority is the Schema for the CertificateAuthoritys API. A CertificateAuthority represents an individual Certificate Authority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateAuthority : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CertificateAuthoritySpec>, IStatus<V1beta1CertificateAuthorityStatus?>

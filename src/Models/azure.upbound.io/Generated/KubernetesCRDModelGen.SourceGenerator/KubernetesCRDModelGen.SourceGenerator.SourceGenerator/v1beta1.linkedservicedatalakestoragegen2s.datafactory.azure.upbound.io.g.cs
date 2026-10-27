@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
 /// <summary>LinkedServiceDataLakeStorageGen2 is the Schema for the LinkedServiceDataLakeStorageGen2s API. Manages a Linked Service (connection) between Data Lake Storage Gen2 and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2List : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceDataLakeStorageGen2>
@@ -46,7 +46,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2List : IKubernetesOb
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecDeletionPolicyEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataF
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataF
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataF
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataFactoryIdSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderDataF
 }
 
 /// <summary>The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderServicePrincipalKeySecretRef
 {
@@ -222,7 +222,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderServi
 }
 
 /// <summary>The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderStorageAccountKeySecretRef
 {
@@ -239,7 +239,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProviderStora
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProvider
 {
@@ -301,7 +301,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecForProvider
 }
 
 /// <summary>The service principal key with which to authenticate against the Azure Data Lake Storage Gen2 account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderServicePrincipalKeySecretRef
 {
@@ -319,7 +319,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderServ
 }
 
 /// <summary>The Storage Account Key with which to authenticate against the Azure Data Lake Storage Gen2 account. Incompatible with service_principal_id, service_principal_key, tenant and use_managed_identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderStorageAccountKeySecretRef
 {
@@ -348,7 +348,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProviderStor
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProvider
 {
@@ -401,7 +401,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecManagementPoliciesEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecManagementPoliciesEnum
 {
@@ -425,7 +425,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRefPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRefPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRefPolicy
 {
@@ -480,7 +480,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRe
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRef
 {
@@ -499,7 +499,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecProviderConfigRe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecWriteConnectionSecretToRef
 {
@@ -513,7 +513,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2SpecWriteConnectionS
 }
 
 /// <summary>LinkedServiceDataLakeStorageGen2Spec defines the desired state of LinkedServiceDataLakeStorageGen2</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2Spec
 {
@@ -580,7 +580,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2Spec
     public V1beta1LinkedServiceDataLakeStorageGen2SpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2StatusAtProvider
 {
@@ -630,7 +630,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2StatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2StatusConditions
 {
@@ -673,7 +673,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2StatusConditions
 }
 
 /// <summary>LinkedServiceDataLakeStorageGen2Status defines the observed state of LinkedServiceDataLakeStorageGen2.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2Status
 {
@@ -703,7 +703,7 @@ public partial class V1beta1LinkedServiceDataLakeStorageGen2Status
 }
 
 /// <summary>LinkedServiceDataLakeStorageGen2 is the Schema for the LinkedServiceDataLakeStorageGen2s API. Manages a Linked Service (connection) between Data Lake Storage Gen2 and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceDataLakeStorageGen2 : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceDataLakeStorageGen2Spec>, IStatus<V1beta1LinkedServiceDataLakeStorageGen2Status?>

@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-07-02/diskEncryptionSet.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220702DiskEncryptionSetList : IKubernetesObject<V1ListMeta>, IItems<V20220702DiskEncryptionSet>
@@ -45,7 +45,7 @@ public partial class V20220702DiskEncryptionSetList : IKubernetesObject<V1ListMe
 /// KeyUrlFromConfig: Fully versioned Key Url pointing to a key in KeyVault. Version segment of the Url is required
 /// regardless of rotationToLatestKeyVersionEnabled value.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecActiveKeyKeyUrlFromConfig
 {
@@ -62,7 +62,7 @@ public partial class V20220702DiskEncryptionSetSpecActiveKeyKeyUrlFromConfig
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecActiveKeySourceVaultReference
 {
@@ -91,7 +91,7 @@ public partial class V20220702DiskEncryptionSetSpecActiveKeySourceVaultReference
 /// SourceVault: Resource id of the KeyVault containing the key or secret. This property is optional and cannot be used if
 /// the KeyVault subscription is not the same as the Disk Encryption Set subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecActiveKeySourceVault
 {
@@ -101,7 +101,7 @@ public partial class V20220702DiskEncryptionSetSpecActiveKeySourceVault
 }
 
 /// <summary>ActiveKey: The key vault key which is currently used by this disk encryption set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecActiveKey
 {
@@ -128,7 +128,7 @@ public partial class V20220702DiskEncryptionSetSpecActiveKey
 }
 
 /// <summary>EncryptionType: The type of key used to encrypt the data of the disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220702DiskEncryptionSetSpecEncryptionTypeEnum>))]
 public enum V20220702DiskEncryptionSetSpecEncryptionTypeEnum
 {
@@ -144,7 +144,7 @@ public enum V20220702DiskEncryptionSetSpecEncryptionTypeEnum
 /// FederatedClientIdFromConfig: Multi-tenant application client id to access key vault in a different tenant. Setting the
 /// value to &apos;None&apos; will clear the property.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecFederatedClientIdFromConfig
 {
@@ -165,7 +165,7 @@ public partial class V20220702DiskEncryptionSetSpecFederatedClientIdFromConfig
 /// Disk Encryption Sets can be updated with Identity type None during migration of subscription to a new Azure Active
 /// Directory tenant; it will cause the encrypted resources to lose access to the keys.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220702DiskEncryptionSetSpecIdentityTypeEnum>))]
 public enum V20220702DiskEncryptionSetSpecIdentityTypeEnum
 {
@@ -180,7 +180,7 @@ public enum V20220702DiskEncryptionSetSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecIdentityUserAssignedIdentitiesReference
 {
@@ -206,7 +206,7 @@ public partial class V20220702DiskEncryptionSetSpecIdentityUserAssignedIdentitie
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecIdentityUserAssignedIdentities
 {
@@ -219,7 +219,7 @@ public partial class V20220702DiskEncryptionSetSpecIdentityUserAssignedIdentitie
 /// Identity: The managed identity for the disk encryption set. It should be given permission on the key vault before it can
 /// be used  to encrypt disks.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecIdentity
 {
@@ -245,7 +245,7 @@ public partial class V20220702DiskEncryptionSetSpecIdentity
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecOperatorSpecConfigMapExpressions
 {
@@ -286,7 +286,7 @@ public partial class V20220702DiskEncryptionSetSpecOperatorSpecConfigMapExpressi
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecOperatorSpecSecretExpressions
 {
@@ -326,7 +326,7 @@ public partial class V20220702DiskEncryptionSetSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecOperatorSpec
 {
@@ -344,7 +344,7 @@ public partial class V20220702DiskEncryptionSetSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpecOwner
 {
@@ -356,7 +356,7 @@ public partial class V20220702DiskEncryptionSetSpecOwner
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetSpec
 {
@@ -431,7 +431,7 @@ public partial class V20220702DiskEncryptionSetSpec
 /// SourceVault: Resource id of the KeyVault containing the key or secret. This property is optional and cannot be used if
 /// the KeyVault subscription is not the same as the Disk Encryption Set subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusActiveKeySourceVault
 {
@@ -441,7 +441,7 @@ public partial class V20220702DiskEncryptionSetStatusActiveKeySourceVault
 }
 
 /// <summary>ActiveKey: The key vault key which is currently used by this disk encryption set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusActiveKey
 {
@@ -461,7 +461,7 @@ public partial class V20220702DiskEncryptionSetStatusActiveKey
 }
 
 /// <summary>Api error base.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusAutoKeyRotationErrorDetails
 {
@@ -479,7 +479,7 @@ public partial class V20220702DiskEncryptionSetStatusAutoKeyRotationErrorDetails
 }
 
 /// <summary>Innererror: The Api inner error</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusAutoKeyRotationErrorInnererror
 {
@@ -496,7 +496,7 @@ public partial class V20220702DiskEncryptionSetStatusAutoKeyRotationErrorInnerer
 /// AutoKeyRotationError: The error that was encountered during auto-key rotation. If an error is present, then auto-key
 /// rotation will not be attempted until the error on this disk encryption set is fixed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusAutoKeyRotationError
 {
@@ -522,7 +522,7 @@ public partial class V20220702DiskEncryptionSetStatusAutoKeyRotationError
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusConditions
 {
@@ -567,7 +567,7 @@ public partial class V20220702DiskEncryptionSetStatusConditions
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusIdentityUserAssignedIdentities
 {
@@ -584,7 +584,7 @@ public partial class V20220702DiskEncryptionSetStatusIdentityUserAssignedIdentit
 /// Identity: The managed identity for the disk encryption set. It should be given permission on the key vault before it can
 /// be used  to encrypt disks.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusIdentity
 {
@@ -623,7 +623,7 @@ public partial class V20220702DiskEncryptionSetStatusIdentity
 /// SourceVault: Resource id of the KeyVault containing the key or secret. This property is optional and cannot be used if
 /// the KeyVault subscription is not the same as the Disk Encryption Set subscription.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusPreviousKeysSourceVault
 {
@@ -633,7 +633,7 @@ public partial class V20220702DiskEncryptionSetStatusPreviousKeysSourceVault
 }
 
 /// <summary>Key Vault Key Url to be used for server side encryption of Managed Disks and Snapshots</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatusPreviousKeys
 {
@@ -653,7 +653,7 @@ public partial class V20220702DiskEncryptionSetStatusPreviousKeys
 }
 
 /// <summary>disk encryption set resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220702DiskEncryptionSetStatus
 {
@@ -738,7 +738,7 @@ public partial class V20220702DiskEncryptionSetStatus
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-07-02/diskEncryptionSet.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220702DiskEncryptionSet : IKubernetesObject<V1ObjectMeta>, ISpec<V20220702DiskEncryptionSetSpec?>, IStatus<V20220702DiskEncryptionSetStatus?>

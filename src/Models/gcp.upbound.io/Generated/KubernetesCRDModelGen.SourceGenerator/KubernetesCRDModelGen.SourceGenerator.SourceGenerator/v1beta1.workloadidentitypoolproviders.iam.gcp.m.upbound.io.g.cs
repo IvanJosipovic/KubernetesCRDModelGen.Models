@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iam.gcp.m.upbound.io;
 /// <summary>WorkloadIdentityPoolProvider is the Schema for the WorkloadIdentityPoolProviders API. A configuration for an external identity provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkloadIdentityPoolProviderList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkloadIdentityPoolProvider>
@@ -41,7 +41,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderList : IKubernetesObject
 /// An Amazon Web Services identity provider. Not compatible with the property oidc or saml.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderAws
 {
@@ -54,7 +54,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderAws
 /// An OpenId Connect 1.0 identity provider. Not compatible with the property aws or saml.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderOidc
 {
@@ -90,7 +90,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderOidc
 /// An SAML 2.0 identity provider. Not compatible with the property oidc or aws.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderSaml
 {
@@ -105,7 +105,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderSaml
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolutionEnum
 {
@@ -121,7 +121,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolveEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicy
 {
@@ -156,7 +156,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
 }
 
 /// <summary>Reference to a WorkloadIdentityPool in iam to populate workloadIdentityPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRef
 {
@@ -179,7 +179,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolutionEnum
 {
@@ -195,7 +195,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolveEnum
 {
@@ -206,7 +206,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicy
 {
@@ -230,7 +230,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
 }
 
 /// <summary>Selector for a WorkloadIdentityPool in iam to populate workloadIdentityPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelector
 {
@@ -254,7 +254,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
     public V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509TrustStoreIntermediateCas
 {
@@ -266,7 +266,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509Trust
     public string? PemCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509TrustStoreTrustAnchors
 {
@@ -286,7 +286,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509Trust
 /// supported.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509TrustStore
 {
@@ -314,7 +314,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509Trust
 /// client identity if the client has a certificate that chains up to this CA.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509
 {
@@ -330,7 +330,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509
     public V1beta1WorkloadIdentityPoolProviderSpecForProviderX509TrustStore? TrustStore { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProvider
 {
@@ -425,7 +425,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProvider
 /// An Amazon Web Services identity provider. Not compatible with the property oidc or saml.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderAws
 {
@@ -438,7 +438,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderAws
 /// An OpenId Connect 1.0 identity provider. Not compatible with the property aws or saml.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderOidc
 {
@@ -474,7 +474,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderOidc
 /// An SAML 2.0 identity provider. Not compatible with the property oidc or aws.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderSaml
 {
@@ -483,7 +483,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderSaml
     public string? IdpMetadataXml { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509TrustStoreIntermediateCas
 {
@@ -495,7 +495,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509Trus
     public string? PemCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509TrustStoreTrustAnchors
 {
@@ -515,7 +515,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509Trus
 /// supported.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509TrustStore
 {
@@ -543,7 +543,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509Trus
 /// client identity if the client has a certificate that chains up to this CA.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509
 {
@@ -571,7 +571,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProvider
 {
@@ -650,7 +650,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecManagementPoliciesEnum>))]
 public enum V1beta1WorkloadIdentityPoolProviderSpecManagementPoliciesEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRef
 {
@@ -692,7 +692,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecWriteConnectionSecretToRef
 {
@@ -702,7 +702,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecWriteConnectionSecre
 }
 
 /// <summary>WorkloadIdentityPoolProviderSpec defines the desired state of WorkloadIdentityPoolProvider</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderSpec
 {
@@ -757,7 +757,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpec
 /// An Amazon Web Services identity provider. Not compatible with the property oidc or saml.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderAws
 {
@@ -770,7 +770,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderAws
 /// An OpenId Connect 1.0 identity provider. Not compatible with the property aws or saml.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderOidc
 {
@@ -806,7 +806,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderOidc
 /// An SAML 2.0 identity provider. Not compatible with the property oidc or aws.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderSaml
 {
@@ -815,7 +815,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderSaml
     public string? IdpMetadataXml { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509TrustStoreIntermediateCas
 {
@@ -827,7 +827,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509Trus
     public string? PemCertificate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509TrustStoreTrustAnchors
 {
@@ -847,7 +847,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509Trus
 /// supported.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509TrustStore
 {
@@ -875,7 +875,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509Trus
 /// client identity if the client has a certificate that chains up to this CA.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509
 {
@@ -891,7 +891,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509
     public V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509TrustStore? TrustStore { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProvider
 {
@@ -997,7 +997,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusConditions
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusConditions
 }
 
 /// <summary>WorkloadIdentityPoolProviderStatus defines the observed state of WorkloadIdentityPoolProvider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkloadIdentityPoolProviderStatus
 {
@@ -1070,7 +1070,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatus
 }
 
 /// <summary>WorkloadIdentityPoolProvider is the Schema for the WorkloadIdentityPoolProviders API. A configuration for an external identity provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkloadIdentityPoolProvider : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkloadIdentityPoolProviderSpec>, IStatus<V1beta1WorkloadIdentityPoolProviderStatus?>

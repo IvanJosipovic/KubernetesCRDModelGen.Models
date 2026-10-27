@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.budgets.aws.upbound.io;
 /// <summary>BudgetAction is the Schema for the BudgetActions API. Provides a budget action resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BudgetActionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2BudgetAction>
@@ -46,7 +46,7 @@ public partial class V1beta2BudgetActionList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecDeletionPolicyEnum>))]
 public enum V1beta2BudgetActionSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2BudgetActionSpecDeletionPolicyEnum
 }
 
 /// <summary>The trigger threshold of the action. See Action Threshold.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderActionThreshold
 {
@@ -76,7 +76,7 @@ public partial class V1beta2BudgetActionSpecForProviderActionThreshold
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderBudgetNameRefPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderBudgetNameRefPolicyResolutionEnum
 {
@@ -92,7 +92,7 @@ public enum V1beta2BudgetActionSpecForProviderBudgetNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderBudgetNameRefPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderBudgetNameRefPolicyResolveEnum
 {
@@ -103,7 +103,7 @@ public enum V1beta2BudgetActionSpecForProviderBudgetNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderBudgetNameRefPolicy
 {
@@ -127,7 +127,7 @@ public partial class V1beta2BudgetActionSpecForProviderBudgetNameRefPolicy
 }
 
 /// <summary>Reference to a Budget in budgets to populate budgetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderBudgetNameRef
 {
@@ -146,7 +146,7 @@ public partial class V1beta2BudgetActionSpecForProviderBudgetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicyResolutionEnum
 {
@@ -162,7 +162,7 @@ public enum V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicyResolveEnum
 {
@@ -173,7 +173,7 @@ public enum V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicy
 {
@@ -197,7 +197,7 @@ public partial class V1beta2BudgetActionSpecForProviderBudgetNameSelectorPolicy
 }
 
 /// <summary>Selector for a Budget in budgets to populate budgetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderBudgetNameSelector
 {
@@ -223,7 +223,7 @@ public partial class V1beta2BudgetActionSpecForProviderBudgetNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolutionEnum
 {
@@ -239,7 +239,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolveEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnRefPolicy
 {
@@ -274,7 +274,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 }
 
 /// <summary>Reference to a Policy in iam to populate policyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnRef
 {
@@ -293,7 +293,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolutionEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolveEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicy
 {
@@ -344,7 +344,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 }
 
 /// <summary>Selector for a Policy in iam to populate policyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionPolicyArnSelector
 {
@@ -370,7 +370,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesRefsPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesRefsPolicyResolutionEnum
 {
@@ -386,7 +386,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRoles
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesRefsPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesRefsPolicyResolveEnum
 {
@@ -397,7 +397,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRoles
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesRefsPolicy
 {
@@ -421,7 +421,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesRefs
 {
@@ -440,7 +440,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolutionEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRoles
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolveEnum
 {
@@ -467,7 +467,7 @@ public enum V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRoles
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelectorPolicy
 {
@@ -491,7 +491,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 }
 
 /// <summary>Selector for a list of Role in iam to populate roles.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinitionRolesSelector
 {
@@ -512,7 +512,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 }
 
 /// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefinition
 {
@@ -550,7 +550,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
 }
 
 /// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionScpActionDefinition
 {
@@ -564,7 +564,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionScpActionDefini
 }
 
 /// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinitionSsmActionDefinition
 {
@@ -582,7 +582,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionSsmActionDefini
 }
 
 /// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderDefinition
 {
@@ -605,7 +605,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -632,7 +632,7 @@ public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicy
 {
@@ -656,7 +656,7 @@ public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnRef
 {
@@ -675,7 +675,7 @@ public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -691,7 +691,7 @@ public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -702,7 +702,7 @@ public enum V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicy
 {
@@ -726,7 +726,7 @@ public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorP
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnSelector
 {
@@ -746,7 +746,7 @@ public partial class V1beta2BudgetActionSpecForProviderExecutionRoleArnSelector
     public V1beta2BudgetActionSpecForProviderExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProviderSubscriber
 {
@@ -759,7 +759,7 @@ public partial class V1beta2BudgetActionSpecForProviderSubscriber
     public string? SubscriptionType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecForProvider
 {
@@ -821,7 +821,7 @@ public partial class V1beta2BudgetActionSpecForProvider
 }
 
 /// <summary>The trigger threshold of the action. See Action Threshold.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderActionThreshold
 {
@@ -840,7 +840,7 @@ public partial class V1beta2BudgetActionSpecInitProviderActionThreshold
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicyResolutionEnum
 {
@@ -856,7 +856,7 @@ public enum V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicyResolveEnum
 {
@@ -867,7 +867,7 @@ public enum V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicy
 {
@@ -891,7 +891,7 @@ public partial class V1beta2BudgetActionSpecInitProviderBudgetNameRefPolicy
 }
 
 /// <summary>Reference to a Budget in budgets to populate budgetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderBudgetNameRef
 {
@@ -910,7 +910,7 @@ public partial class V1beta2BudgetActionSpecInitProviderBudgetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicyResolutionEnum
 {
@@ -926,7 +926,7 @@ public enum V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicyResolveEnum
 {
@@ -937,7 +937,7 @@ public enum V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicy
 {
@@ -961,7 +961,7 @@ public partial class V1beta2BudgetActionSpecInitProviderBudgetNameSelectorPolicy
 }
 
 /// <summary>Selector for a Budget in budgets to populate budgetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderBudgetNameSelector
 {
@@ -987,7 +987,7 @@ public partial class V1beta2BudgetActionSpecInitProviderBudgetNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolutionEnum
 {
@@ -1003,7 +1003,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnRefPolicyResolveEnum
 {
@@ -1014,7 +1014,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnRefPolicy
 {
@@ -1038,7 +1038,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 }
 
 /// <summary>Reference to a Policy in iam to populate policyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnRef
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolutionEnum
 {
@@ -1073,7 +1073,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicyResolveEnum
 {
@@ -1084,7 +1084,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnSelectorPolicy
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 }
 
 /// <summary>Selector for a Policy in iam to populate policyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionPolicyArnSelector
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesRefsPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesRefsPolicyResolutionEnum
 {
@@ -1150,7 +1150,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRole
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesRefsPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesRefsPolicyResolveEnum
 {
@@ -1161,7 +1161,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRole
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesRefsPolicy
 {
@@ -1185,7 +1185,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesRefs
 {
@@ -1204,7 +1204,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolutionEnum
 {
@@ -1220,7 +1220,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRole
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelectorPolicyResolveEnum
 {
@@ -1231,7 +1231,7 @@ public enum V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRole
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelectorPolicy
 {
@@ -1255,7 +1255,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 }
 
 /// <summary>Selector for a list of Role in iam to populate roles.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinitionRolesSelector
 {
@@ -1276,7 +1276,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 }
 
 /// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefinition
 {
@@ -1314,7 +1314,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
 }
 
 /// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionScpActionDefinition
 {
@@ -1328,7 +1328,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionScpActionDefin
 }
 
 /// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinitionSsmActionDefinition
 {
@@ -1342,7 +1342,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionSsmActionDefin
 }
 
 /// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderDefinition
 {
@@ -1365,7 +1365,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -1381,7 +1381,7 @@ public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -1392,7 +1392,7 @@ public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolicy
 {
@@ -1416,7 +1416,7 @@ public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnRefPolic
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnRef
 {
@@ -1435,7 +1435,7 @@ public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -1451,7 +1451,7 @@ public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -1462,7 +1462,7 @@ public enum V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicy
 {
@@ -1486,7 +1486,7 @@ public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelector
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelector
 {
@@ -1506,7 +1506,7 @@ public partial class V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelector
     public V1beta2BudgetActionSpecInitProviderExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProviderSubscriber
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta2BudgetActionSpecInitProviderSubscriber
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecInitProvider
 {
@@ -1596,7 +1596,7 @@ public partial class V1beta2BudgetActionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecManagementPoliciesEnum>))]
 public enum V1beta2BudgetActionSpecManagementPoliciesEnum
 {
@@ -1620,7 +1620,7 @@ public enum V1beta2BudgetActionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2BudgetActionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1636,7 +1636,7 @@ public enum V1beta2BudgetActionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BudgetActionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2BudgetActionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1647,7 +1647,7 @@ public enum V1beta2BudgetActionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecProviderConfigRefPolicy
 {
@@ -1675,7 +1675,7 @@ public partial class V1beta2BudgetActionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecProviderConfigRef
 {
@@ -1694,7 +1694,7 @@ public partial class V1beta2BudgetActionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpecWriteConnectionSecretToRef
 {
@@ -1708,7 +1708,7 @@ public partial class V1beta2BudgetActionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>BudgetActionSpec defines the desired state of BudgetAction</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionSpec
 {
@@ -1776,7 +1776,7 @@ public partial class V1beta2BudgetActionSpec
 }
 
 /// <summary>The trigger threshold of the action. See Action Threshold.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderActionThreshold
 {
@@ -1790,7 +1790,7 @@ public partial class V1beta2BudgetActionStatusAtProviderActionThreshold
 }
 
 /// <summary>The AWS Identity and Access Management (IAM) action definition details. See IAM Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinitionIamActionDefinition
 {
@@ -1812,7 +1812,7 @@ public partial class V1beta2BudgetActionStatusAtProviderDefinitionIamActionDefin
 }
 
 /// <summary>The service control policies (SCPs) action definition details. See SCP Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinitionScpActionDefinition
 {
@@ -1826,7 +1826,7 @@ public partial class V1beta2BudgetActionStatusAtProviderDefinitionScpActionDefin
 }
 
 /// <summary>The AWS Systems Manager (SSM) action definition details. See SSM Action Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinitionSsmActionDefinition
 {
@@ -1844,7 +1844,7 @@ public partial class V1beta2BudgetActionStatusAtProviderDefinitionSsmActionDefin
 }
 
 /// <summary>Specifies all of the type-specific parameters. See Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderDefinition
 {
@@ -1861,7 +1861,7 @@ public partial class V1beta2BudgetActionStatusAtProviderDefinition
     public V1beta2BudgetActionStatusAtProviderDefinitionSsmActionDefinition? SsmActionDefinition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProviderSubscriber
 {
@@ -1874,7 +1874,7 @@ public partial class V1beta2BudgetActionStatusAtProviderSubscriber
     public string? SubscriptionType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusAtProvider
 {
@@ -1940,7 +1940,7 @@ public partial class V1beta2BudgetActionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatusConditions
 {
@@ -1983,7 +1983,7 @@ public partial class V1beta2BudgetActionStatusConditions
 }
 
 /// <summary>BudgetActionStatus defines the observed state of BudgetAction.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetActionStatus
 {
@@ -2013,7 +2013,7 @@ public partial class V1beta2BudgetActionStatus
 }
 
 /// <summary>BudgetAction is the Schema for the BudgetActions API. Provides a budget action resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BudgetAction : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BudgetActionSpec>, IStatus<V1beta2BudgetActionStatus?>

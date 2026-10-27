@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.upbound.io;
 /// <summary>CatalogTable is the Schema for the CatalogTables API. Provides a Glue Catalog Table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CatalogTableList : IKubernetesObject<V1ListMeta>, IItems<V1beta2CatalogTable>
@@ -46,7 +46,7 @@ public partial class V1beta2CatalogTableList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecDeletionPolicyEnum>))]
 public enum V1beta2CatalogTableSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2CatalogTableSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicyResolutionEnum>))]
 public enum V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicyResolveEnum>))]
 public enum V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2CatalogTableSpecForProviderDatabaseNameRefPolicy
 }
 
 /// <summary>Reference to a CatalogDatabase in glue to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderDatabaseNameRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2CatalogTableSpecForProviderDatabaseNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolveEnum>))]
 public enum V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolic
 }
 
 /// <summary>Selector for a CatalogDatabase in glue to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderDatabaseNameSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2CatalogTableSpecForProviderDatabaseNameSelector
     public V1beta2CatalogTableSpecForProviderDatabaseNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields
 {
@@ -225,7 +225,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
 }
 
 /// <summary>Partitioning specification that defines how the Iceberg table data will be organized and partitioned for optimal query performance. See partition_spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
 {
@@ -238,7 +238,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
     public double? SpecId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields
 {
@@ -272,7 +272,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
 }
 
 /// <summary>Schema definition that specifies the structure, field types, and metadata for the Iceberg table. See schema below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema
 {
@@ -293,7 +293,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields
 {
@@ -315,7 +315,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
 }
 
 /// <summary>Whether the column is sorted in ascending (1) or descending order (0).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder
 {
@@ -329,7 +329,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
 }
 
 /// <summary>Configuration parameters, including table properties and metadata specifications. See iceberg_table_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInput
 {
@@ -355,7 +355,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
 }
 
 /// <summary>Configuration block for iceberg table config. See iceberg_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInput
 {
@@ -373,7 +373,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebe
 }
 
 /// <summary>Configuration block for open table formats. See open_table_format_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInput
 {
@@ -382,7 +382,7 @@ public partial class V1beta2CatalogTableSpecForProviderOpenTableFormatInput
     public V1beta2CatalogTableSpecForProviderOpenTableFormatInputIcebergInput? IcebergInput { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderPartitionIndex
 {
@@ -395,7 +395,7 @@ public partial class V1beta2CatalogTableSpecForProviderPartitionIndex
     public IList<string>? Keys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderPartitionKeys
 {
@@ -416,7 +416,7 @@ public partial class V1beta2CatalogTableSpecForProviderPartitionKeys
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorColumns
 {
@@ -438,7 +438,7 @@ public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorColumns
 }
 
 /// <summary>Unique identifier for this schema version within the Iceberg table&apos;s schema evolution history.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSchemaReferenceSchemaId
 {
@@ -456,7 +456,7 @@ public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSchemaRe
 }
 
 /// <summary>Object that references a schema stored in the AWS Glue Schema Registry. When creating a table, you can pass an empty list of columns for the schema, and instead use a schema reference. See Schema Reference below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSchemaReference
 {
@@ -474,7 +474,7 @@ public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSchemaRe
 }
 
 /// <summary>Configuration block for serialization and deserialization (&quot;SerDe&quot;) information. See ser_de_info below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSerDeInfo
 {
@@ -492,7 +492,7 @@ public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSerDeInf
 }
 
 /// <summary>Configuration block with information about values that appear very frequently in a column (skewed values). See skewed_info below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSkewedInfo
 {
@@ -509,7 +509,7 @@ public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSkewedIn
     public IList<string>? SkewedColumnValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSortColumns
 {
@@ -523,7 +523,7 @@ public partial class V1beta2CatalogTableSpecForProviderStorageDescriptorSortColu
 }
 
 /// <summary>Configuration block for information about the physical storage of this table. For more information, refer to the Glue Developer Guide. See storage_descriptor below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderStorageDescriptor
 {
@@ -585,7 +585,7 @@ public partial class V1beta2CatalogTableSpecForProviderStorageDescriptor
 }
 
 /// <summary>Configuration block of a target table for resource linking. See target_table below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderTargetTable
 {
@@ -612,7 +612,7 @@ public partial class V1beta2CatalogTableSpecForProviderTargetTable
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum>))]
 public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValid
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum>))]
 public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum
 {
@@ -639,7 +639,7 @@ public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValid
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicy
 {
@@ -663,7 +663,7 @@ public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentat
 }
 
 /// <summary>Reference to a Connection in glue to populate validationConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRef
 {
@@ -682,7 +682,7 @@ public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum
 {
@@ -698,7 +698,7 @@ public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValid
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum
 {
@@ -709,7 +709,7 @@ public enum V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValid
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy
 {
@@ -733,7 +733,7 @@ public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentat
 }
 
 /// <summary>Selector for a Connection in glue to populate validationConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelector
 {
@@ -753,7 +753,7 @@ public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentat
     public V1beta2CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentations
 {
@@ -787,7 +787,7 @@ public partial class V1beta2CatalogTableSpecForProviderViewDefinitionRepresentat
 }
 
 /// <summary>Structure that contains all the information that defines the view, including the dialect or dialects for the view, and the query. See view_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProviderViewDefinition
 {
@@ -828,7 +828,7 @@ public partial class V1beta2CatalogTableSpecForProviderViewDefinition
     public string? ViewVersionToken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecForProvider
 {
@@ -908,7 +908,7 @@ public partial class V1beta2CatalogTableSpecForProvider
     public string? ViewOriginalText { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields
 {
@@ -930,7 +930,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Partitioning specification that defines how the Iceberg table data will be organized and partitioned for optimal query performance. See partition_spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
 {
@@ -943,7 +943,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
     public double? SpecId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields
 {
@@ -977,7 +977,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Schema definition that specifies the structure, field types, and metadata for the Iceberg table. See schema below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema
 {
@@ -998,7 +998,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields
 {
@@ -1020,7 +1020,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Whether the column is sorted in ascending (1) or descending order (0).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Configuration parameters, including table properties and metadata specifications. See iceberg_table_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInput
 {
@@ -1060,7 +1060,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Configuration block for iceberg table config. See iceberg_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInput
 {
@@ -1078,7 +1078,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Configuration block for open table formats. See open_table_format_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInput
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta2CatalogTableSpecInitProviderOpenTableFormatInput
     public V1beta2CatalogTableSpecInitProviderOpenTableFormatInputIcebergInput? IcebergInput { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderPartitionIndex
 {
@@ -1100,7 +1100,7 @@ public partial class V1beta2CatalogTableSpecInitProviderPartitionIndex
     public IList<string>? Keys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderPartitionKeys
 {
@@ -1121,7 +1121,7 @@ public partial class V1beta2CatalogTableSpecInitProviderPartitionKeys
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorColumns
 {
@@ -1143,7 +1143,7 @@ public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorColumns
 }
 
 /// <summary>Unique identifier for this schema version within the Iceberg table&apos;s schema evolution history.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSchemaReferenceSchemaId
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSchemaR
 }
 
 /// <summary>Object that references a schema stored in the AWS Glue Schema Registry. When creating a table, you can pass an empty list of columns for the schema, and instead use a schema reference. See Schema Reference below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSchemaReference
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSchemaR
 }
 
 /// <summary>Configuration block for serialization and deserialization (&quot;SerDe&quot;) information. See ser_de_info below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSerDeInfo
 {
@@ -1197,7 +1197,7 @@ public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSerDeIn
 }
 
 /// <summary>Configuration block with information about values that appear very frequently in a column (skewed values). See skewed_info below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSkewedInfo
 {
@@ -1214,7 +1214,7 @@ public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSkewedI
     public IList<string>? SkewedColumnValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSortColumns
 {
@@ -1228,7 +1228,7 @@ public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptorSortCol
 }
 
 /// <summary>Configuration block for information about the physical storage of this table. For more information, refer to the Glue Developer Guide. See storage_descriptor below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptor
 {
@@ -1290,7 +1290,7 @@ public partial class V1beta2CatalogTableSpecInitProviderStorageDescriptor
 }
 
 /// <summary>Configuration block of a target table for resource linking. See target_table below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderTargetTable
 {
@@ -1305,7 +1305,7 @@ public partial class V1beta2CatalogTableSpecInitProviderTargetTable
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum>))]
 public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum
 {
@@ -1321,7 +1321,7 @@ public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsVali
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum>))]
 public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum
 {
@@ -1332,7 +1332,7 @@ public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsVali
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicy
 {
@@ -1356,7 +1356,7 @@ public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresenta
 }
 
 /// <summary>Reference to a Connection in glue to populate validationConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRef
 {
@@ -1375,7 +1375,7 @@ public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresenta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum
 {
@@ -1391,7 +1391,7 @@ public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsVali
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum
 {
@@ -1402,7 +1402,7 @@ public enum V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsVali
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy
 {
@@ -1426,7 +1426,7 @@ public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresenta
 }
 
 /// <summary>Selector for a Connection in glue to populate validationConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelector
 {
@@ -1446,7 +1446,7 @@ public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresenta
     public V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresentations
 {
@@ -1480,7 +1480,7 @@ public partial class V1beta2CatalogTableSpecInitProviderViewDefinitionRepresenta
 }
 
 /// <summary>Structure that contains all the information that defines the view, including the dialect or dialects for the view, and the query. See view_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProviderViewDefinition
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta2CatalogTableSpecInitProviderViewDefinition
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecInitProvider
 {
@@ -1594,7 +1594,7 @@ public partial class V1beta2CatalogTableSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecManagementPoliciesEnum>))]
 public enum V1beta2CatalogTableSpecManagementPoliciesEnum
 {
@@ -1618,7 +1618,7 @@ public enum V1beta2CatalogTableSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2CatalogTableSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1634,7 +1634,7 @@ public enum V1beta2CatalogTableSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CatalogTableSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2CatalogTableSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1645,7 +1645,7 @@ public enum V1beta2CatalogTableSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecProviderConfigRefPolicy
 {
@@ -1673,7 +1673,7 @@ public partial class V1beta2CatalogTableSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecProviderConfigRef
 {
@@ -1692,7 +1692,7 @@ public partial class V1beta2CatalogTableSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpecWriteConnectionSecretToRef
 {
@@ -1706,7 +1706,7 @@ public partial class V1beta2CatalogTableSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CatalogTableSpec defines the desired state of CatalogTable</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableSpec
 {
@@ -1773,7 +1773,7 @@ public partial class V1beta2CatalogTableSpec
     public V1beta2CatalogTableSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields
 {
@@ -1795,7 +1795,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Partitioning specification that defines how the Iceberg table data will be organized and partitioned for optimal query performance. See partition_spec below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
 {
@@ -1808,7 +1808,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
     public double? SpecId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields
 {
@@ -1842,7 +1842,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Schema definition that specifies the structure, field types, and metadata for the Iceberg table. See schema below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema
 {
@@ -1863,7 +1863,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields
 {
@@ -1885,7 +1885,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Whether the column is sorted in ascending (1) or descending order (0).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder
 {
@@ -1899,7 +1899,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Configuration parameters, including table properties and metadata specifications. See iceberg_table_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInput
 {
@@ -1925,7 +1925,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Configuration block for iceberg table config. See iceberg_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInput
 {
@@ -1943,7 +1943,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIceb
 }
 
 /// <summary>Configuration block for open table formats. See open_table_format_input below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInput
 {
@@ -1952,7 +1952,7 @@ public partial class V1beta2CatalogTableStatusAtProviderOpenTableFormatInput
     public V1beta2CatalogTableStatusAtProviderOpenTableFormatInputIcebergInput? IcebergInput { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderPartitionIndex
 {
@@ -1969,7 +1969,7 @@ public partial class V1beta2CatalogTableStatusAtProviderPartitionIndex
     public IList<string>? Keys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderPartitionKeys
 {
@@ -1990,7 +1990,7 @@ public partial class V1beta2CatalogTableStatusAtProviderPartitionKeys
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorColumns
 {
@@ -2012,7 +2012,7 @@ public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorColumns
 }
 
 /// <summary>Unique identifier for this schema version within the Iceberg table&apos;s schema evolution history.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSchemaReferenceSchemaId
 {
@@ -2030,7 +2030,7 @@ public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSchemaR
 }
 
 /// <summary>Object that references a schema stored in the AWS Glue Schema Registry. When creating a table, you can pass an empty list of columns for the schema, and instead use a schema reference. See Schema Reference below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSchemaReference
 {
@@ -2048,7 +2048,7 @@ public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSchemaR
 }
 
 /// <summary>Configuration block for serialization and deserialization (&quot;SerDe&quot;) information. See ser_de_info below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSerDeInfo
 {
@@ -2066,7 +2066,7 @@ public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSerDeIn
 }
 
 /// <summary>Configuration block with information about values that appear very frequently in a column (skewed values). See skewed_info below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSkewedInfo
 {
@@ -2083,7 +2083,7 @@ public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSkewedI
     public IList<string>? SkewedColumnValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSortColumns
 {
@@ -2097,7 +2097,7 @@ public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptorSortCol
 }
 
 /// <summary>Configuration block for information about the physical storage of this table. For more information, refer to the Glue Developer Guide. See storage_descriptor below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptor
 {
@@ -2159,7 +2159,7 @@ public partial class V1beta2CatalogTableStatusAtProviderStorageDescriptor
 }
 
 /// <summary>Configuration block of a target table for resource linking. See target_table below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderTargetTable
 {
@@ -2180,7 +2180,7 @@ public partial class V1beta2CatalogTableStatusAtProviderTargetTable
     public string? Region { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderViewDefinitionRepresentations
 {
@@ -2206,7 +2206,7 @@ public partial class V1beta2CatalogTableStatusAtProviderViewDefinitionRepresenta
 }
 
 /// <summary>Structure that contains all the information that defines the view, including the dialect or dialects for the view, and the query. See view_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProviderViewDefinition
 {
@@ -2247,7 +2247,7 @@ public partial class V1beta2CatalogTableStatusAtProviderViewDefinition
     public string? ViewVersionToken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusAtProvider
 {
@@ -2328,7 +2328,7 @@ public partial class V1beta2CatalogTableStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatusConditions
 {
@@ -2371,7 +2371,7 @@ public partial class V1beta2CatalogTableStatusConditions
 }
 
 /// <summary>CatalogTableStatus defines the observed state of CatalogTable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CatalogTableStatus
 {
@@ -2401,7 +2401,7 @@ public partial class V1beta2CatalogTableStatus
 }
 
 /// <summary>CatalogTable is the Schema for the CatalogTables API. Provides a Glue Catalog Table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CatalogTable : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2CatalogTableSpec>, IStatus<V1beta2CatalogTableStatus?>

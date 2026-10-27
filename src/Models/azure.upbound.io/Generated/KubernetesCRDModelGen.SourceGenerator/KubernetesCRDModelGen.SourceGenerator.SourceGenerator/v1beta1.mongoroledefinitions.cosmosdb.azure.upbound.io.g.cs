@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cosmosdb.azure.upbound.io;
 /// <summary>MongoRoleDefinition is the Schema for the MongoRoleDefinitions API. Manages a Cosmos DB Mongo Role Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MongoRoleDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MongoRoleDefinition>
@@ -46,7 +46,7 @@ public partial class V1beta1MongoRoleDefinitionList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecDeletionPolicyEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1MongoRoleDefinitionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRefPolicyResolveEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabas
 }
 
 /// <summary>Reference to a MongoDatabase in cosmosdb to populate cosmosMongoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabas
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabas
 }
 
 /// <summary>Selector for a MongoDatabase in cosmosdb to populate cosmosMongoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabaseIdSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta1MongoRoleDefinitionSpecForProviderCosmosMongoDatabas
 }
 
 /// <summary>A resource block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecForProviderPrivilegeResource
 {
@@ -217,7 +217,7 @@ public partial class V1beta1MongoRoleDefinitionSpecForProviderPrivilegeResource
     public string? DbName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecForProviderPrivilege
 {
@@ -230,7 +230,7 @@ public partial class V1beta1MongoRoleDefinitionSpecForProviderPrivilege
     public V1beta1MongoRoleDefinitionSpecForProviderPrivilegeResource? Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecForProvider
 {
@@ -261,7 +261,7 @@ public partial class V1beta1MongoRoleDefinitionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRefPolicyResolutionEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRefPolicyResolveEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRefPolicyResolveEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRefPolicy
 {
@@ -312,7 +312,7 @@ public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDataba
 }
 
 /// <summary>Reference to a MongoDatabase in cosmosdb to populate cosmosMongoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdRef
 {
@@ -331,7 +331,7 @@ public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDataba
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelectorPolicyResolutionEnum
 {
@@ -347,7 +347,7 @@ public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelectorPolicyResolveEnum
 {
@@ -358,7 +358,7 @@ public enum V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelectorPolicy
 {
@@ -382,7 +382,7 @@ public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDataba
 }
 
 /// <summary>Selector for a MongoDatabase in cosmosdb to populate cosmosMongoDatabaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDatabaseIdSelector
 {
@@ -403,7 +403,7 @@ public partial class V1beta1MongoRoleDefinitionSpecInitProviderCosmosMongoDataba
 }
 
 /// <summary>A resource block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecInitProviderPrivilegeResource
 {
@@ -416,7 +416,7 @@ public partial class V1beta1MongoRoleDefinitionSpecInitProviderPrivilegeResource
     public string? DbName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecInitProviderPrivilege
 {
@@ -441,7 +441,7 @@ public partial class V1beta1MongoRoleDefinitionSpecInitProviderPrivilege
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecInitProvider
 {
@@ -470,7 +470,7 @@ public partial class V1beta1MongoRoleDefinitionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecManagementPoliciesEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecManagementPoliciesEnum
 {
@@ -494,7 +494,7 @@ public enum V1beta1MongoRoleDefinitionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -521,7 +521,7 @@ public enum V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicy
 {
@@ -549,7 +549,7 @@ public partial class V1beta1MongoRoleDefinitionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecProviderConfigRef
 {
@@ -568,7 +568,7 @@ public partial class V1beta1MongoRoleDefinitionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpecWriteConnectionSecretToRef
 {
@@ -582,7 +582,7 @@ public partial class V1beta1MongoRoleDefinitionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MongoRoleDefinitionSpec defines the desired state of MongoRoleDefinition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionSpec
 {
@@ -650,7 +650,7 @@ public partial class V1beta1MongoRoleDefinitionSpec
 }
 
 /// <summary>A resource block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionStatusAtProviderPrivilegeResource
 {
@@ -663,7 +663,7 @@ public partial class V1beta1MongoRoleDefinitionStatusAtProviderPrivilegeResource
     public string? DbName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionStatusAtProviderPrivilege
 {
@@ -676,7 +676,7 @@ public partial class V1beta1MongoRoleDefinitionStatusAtProviderPrivilege
     public V1beta1MongoRoleDefinitionStatusAtProviderPrivilegeResource? Resource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionStatusAtProvider
 {
@@ -698,7 +698,7 @@ public partial class V1beta1MongoRoleDefinitionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionStatusConditions
 {
@@ -741,7 +741,7 @@ public partial class V1beta1MongoRoleDefinitionStatusConditions
 }
 
 /// <summary>MongoRoleDefinitionStatus defines the observed state of MongoRoleDefinition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoRoleDefinitionStatus
 {
@@ -771,7 +771,7 @@ public partial class V1beta1MongoRoleDefinitionStatus
 }
 
 /// <summary>MongoRoleDefinition is the Schema for the MongoRoleDefinitions API. Manages a Cosmos DB Mongo Role Definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MongoRoleDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MongoRoleDefinitionSpec>, IStatus<V1beta1MongoRoleDefinitionStatus?>

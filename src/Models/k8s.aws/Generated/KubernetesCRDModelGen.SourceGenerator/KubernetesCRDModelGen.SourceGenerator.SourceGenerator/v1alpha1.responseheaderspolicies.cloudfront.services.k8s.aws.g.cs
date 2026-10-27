@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.services.k8s.aws;
 /// <summary>ResponseHeadersPolicy is the Schema for the ResponseHeadersPolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ResponseHeadersPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ResponseHeadersPolicy>
@@ -45,7 +45,7 @@ public partial class V1alpha1ResponseHeadersPolicyList : IKubernetesObject<V1Lis
 /// header, see Access-Control-Allow-Headers (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigCorsConfigAccessControlAllowHeaders
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// header, see Access-Control-Allow-Methods (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigCorsConfigAccessControlAllowMethods
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// header, see Access-Control-Allow-Origin (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigCorsConfigAccessControlAllowOrigins
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// header, see Access-Control-Expose-Headers (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Expose-Headers)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigCorsConfigAccessControlExposeHeaders
 {
@@ -110,7 +110,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// For more information about CORS, see Cross-Origin Resource Sharing (CORS)
 /// (https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigCorsConfig
 {
@@ -173,7 +173,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// in HTTP responses that it sends for requests that match a cache behavior
 /// that&apos;s associated with this response headers policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigCustomHeadersConfigItems
 {
@@ -192,7 +192,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// these headers in HTTP responses that it sends for requests that match a cache
 /// behavior that&apos;s associated with this response headers policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigCustomHeadersConfig
 {
@@ -205,7 +205,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// requests that match the cache behavior that this response headers policy
 /// is attached to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigRemoveHeadersConfigItems
 {
@@ -218,7 +218,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// requests that match the cache behavior that this response headers policy
 /// is attached to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigRemoveHeadersConfig
 {
@@ -234,7 +234,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// see Content-Security-Policy (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigSecurityHeadersConfigContentSecurityPolicy
 {
@@ -253,7 +253,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// see X-Content-Type-Options (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigSecurityHeadersConfigContentTypeOptions
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// X-Frame-Options (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigSecurityHeadersConfigFrameOptions
 {
@@ -288,7 +288,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// Referrer-Policy (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigSecurityHeadersConfigReferrerPolicy
 {
@@ -307,7 +307,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// see Strict-Transport-Security (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigSecurityHeadersConfigStrictTransportSecurity
 {
@@ -332,7 +332,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// X-XSS-Protection (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection)
 /// in the MDN Web Docs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigSecurityHeadersConfigXssProtection
 {
@@ -354,7 +354,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// adds these headers to HTTP responses that it sends for requests that match
 /// a cache behavior associated with this response headers policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigSecurityHeadersConfig
 {
@@ -439,7 +439,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// For more information, see Server-Timing header (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/understanding-response-headers-policies.html#server-timing-header)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfigServerTimingHeadersConfig
 {
@@ -454,7 +454,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// Contains metadata about the response headers policy, and a set of configurations
 /// that specify the HTTP headers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfig
 {
@@ -537,7 +537,7 @@ public partial class V1alpha1ResponseHeadersPolicySpecResponseHeadersPolicyConfi
 /// (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/modifying-response-headers.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicySpec
 {
@@ -554,7 +554,7 @@ public partial class V1alpha1ResponseHeadersPolicySpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicyStatusAckResourceMetadata
 {
@@ -591,7 +591,7 @@ public partial class V1alpha1ResponseHeadersPolicyStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicyStatusConditions
 {
@@ -617,7 +617,7 @@ public partial class V1alpha1ResponseHeadersPolicyStatusConditions
 }
 
 /// <summary>ResponseHeadersPolicyStatus defines the observed state of ResponseHeadersPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResponseHeadersPolicyStatus
 {
@@ -651,7 +651,7 @@ public partial class V1alpha1ResponseHeadersPolicyStatus
 }
 
 /// <summary>ResponseHeadersPolicy is the Schema for the ResponseHeadersPolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ResponseHeadersPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ResponseHeadersPolicySpec?>, IStatus<V1alpha1ResponseHeadersPolicyStatus?>

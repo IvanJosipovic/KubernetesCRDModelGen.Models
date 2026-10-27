@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /trafficmanager/resource-manager/Microsoft.Network/TrafficManager/stable/2022-04-01/trafficmanager.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficmanagerprofiles/{profileName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220401TrafficManagerProfileList : IKubernetesObject<V1ListMeta>, IItems<V1api20220401TrafficManagerProfile>
@@ -42,7 +42,7 @@ public partial class V1api20220401TrafficManagerProfileList : IKubernetesObject<
 }
 
 /// <summary>The allowed type DNS record types for this profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220401TrafficManagerProfileSpecAllowedEndpointRecordTypesEnum>))]
 public enum V1api20220401TrafficManagerProfileSpecAllowedEndpointRecordTypesEnum
 {
@@ -57,7 +57,7 @@ public enum V1api20220401TrafficManagerProfileSpecAllowedEndpointRecordTypesEnum
 }
 
 /// <summary>DnsConfig: The DNS settings of the Traffic Manager profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecDnsConfig
 {
@@ -77,7 +77,7 @@ public partial class V1api20220401TrafficManagerProfileSpecDnsConfig
 }
 
 /// <summary>Custom header name and value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecMonitorConfigCustomHeaders
 {
@@ -91,7 +91,7 @@ public partial class V1api20220401TrafficManagerProfileSpecMonitorConfigCustomHe
 }
 
 /// <summary>Min and max value of a status code range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecMonitorConfigExpectedStatusCodeRanges
 {
@@ -105,7 +105,7 @@ public partial class V1api20220401TrafficManagerProfileSpecMonitorConfigExpected
 }
 
 /// <summary>ProfileMonitorStatus: The profile-level monitoring status of the Traffic Manager profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220401TrafficManagerProfileSpecMonitorConfigProfileMonitorStatusEnum>))]
 public enum V1api20220401TrafficManagerProfileSpecMonitorConfigProfileMonitorStatusEnum
 {
@@ -122,7 +122,7 @@ public enum V1api20220401TrafficManagerProfileSpecMonitorConfigProfileMonitorSta
 }
 
 /// <summary>Protocol: The protocol (HTTP, HTTPS or TCP) used to probe for endpoint health.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220401TrafficManagerProfileSpecMonitorConfigProtocolEnum>))]
 public enum V1api20220401TrafficManagerProfileSpecMonitorConfigProtocolEnum
 {
@@ -135,7 +135,7 @@ public enum V1api20220401TrafficManagerProfileSpecMonitorConfigProtocolEnum
 }
 
 /// <summary>MonitorConfig: The endpoint monitoring settings of the Traffic Manager profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecMonitorConfig
 {
@@ -190,7 +190,7 @@ public partial class V1api20220401TrafficManagerProfileSpecMonitorConfig
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecConfigMapExpressions
 {
@@ -227,7 +227,7 @@ public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecConfigMap
 }
 
 /// <summary>DnsConfigFqdn: indicates where the DnsConfigFqdn config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecConfigMapsDnsConfigFqdn
 {
@@ -252,7 +252,7 @@ public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecConfigMap
 }
 
 /// <summary>ConfigMaps: configures where to place operator written ConfigMaps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecConfigMaps
 {
@@ -266,7 +266,7 @@ public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecConfigMap
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecSecretExpressions
 {
@@ -306,7 +306,7 @@ public partial class V1api20220401TrafficManagerProfileSpecOperatorSpecSecretExp
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecOperatorSpec
 {
@@ -328,7 +328,7 @@ public partial class V1api20220401TrafficManagerProfileSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpecOwner
 {
@@ -341,7 +341,7 @@ public partial class V1api20220401TrafficManagerProfileSpecOwner
 }
 
 /// <summary>ProfileStatus: The status of the Traffic Manager profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220401TrafficManagerProfileSpecProfileStatusEnum>))]
 public enum V1api20220401TrafficManagerProfileSpecProfileStatusEnum
 {
@@ -352,7 +352,7 @@ public enum V1api20220401TrafficManagerProfileSpecProfileStatusEnum
 }
 
 /// <summary>TrafficRoutingMethod: The traffic routing method of the Traffic Manager profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220401TrafficManagerProfileSpecTrafficRoutingMethodEnum>))]
 public enum V1api20220401TrafficManagerProfileSpecTrafficRoutingMethodEnum
 {
@@ -374,7 +374,7 @@ public enum V1api20220401TrafficManagerProfileSpecTrafficRoutingMethodEnum
 /// TrafficViewEnrollmentStatus: Indicates whether Traffic View is &apos;Enabled&apos; or &apos;Disabled&apos; for the Traffic Manager profile.
 /// Null, indicates &apos;Disabled&apos;. Enabling this feature will increase the cost of the Traffic Manage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220401TrafficManagerProfileSpecTrafficViewEnrollmentStatusEnum>))]
 public enum V1api20220401TrafficManagerProfileSpecTrafficViewEnrollmentStatusEnum
 {
@@ -384,7 +384,7 @@ public enum V1api20220401TrafficManagerProfileSpecTrafficViewEnrollmentStatusEnu
     Enabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileSpec
 {
@@ -455,7 +455,7 @@ public partial class V1api20220401TrafficManagerProfileSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusConditions
 {
@@ -501,7 +501,7 @@ public partial class V1api20220401TrafficManagerProfileStatusConditions
 }
 
 /// <summary>DnsConfig: The DNS settings of the Traffic Manager profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusDnsConfig
 {
@@ -528,7 +528,7 @@ public partial class V1api20220401TrafficManagerProfileStatusDnsConfig
 }
 
 /// <summary>Custom header name and value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusEndpointsCustomHeaders
 {
@@ -542,7 +542,7 @@ public partial class V1api20220401TrafficManagerProfileStatusEndpointsCustomHead
 }
 
 /// <summary>Subnet first address, scope, and/or last address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusEndpointsSubnets
 {
@@ -560,7 +560,7 @@ public partial class V1api20220401TrafficManagerProfileStatusEndpointsSubnets
 }
 
 /// <summary>Class representing a Traffic Manager endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusEndpoints
 {
@@ -670,7 +670,7 @@ public partial class V1api20220401TrafficManagerProfileStatusEndpoints
 }
 
 /// <summary>Custom header name and value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusMonitorConfigCustomHeaders
 {
@@ -684,7 +684,7 @@ public partial class V1api20220401TrafficManagerProfileStatusMonitorConfigCustom
 }
 
 /// <summary>Min and max value of a status code range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusMonitorConfigExpectedStatusCodeRanges
 {
@@ -698,7 +698,7 @@ public partial class V1api20220401TrafficManagerProfileStatusMonitorConfigExpect
 }
 
 /// <summary>MonitorConfig: The endpoint monitoring settings of the Traffic Manager profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatusMonitorConfig
 {
@@ -748,7 +748,7 @@ public partial class V1api20220401TrafficManagerProfileStatusMonitorConfig
     public int? ToleratedNumberOfFailures { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220401TrafficManagerProfileStatus
 {
@@ -820,7 +820,7 @@ public partial class V1api20220401TrafficManagerProfileStatus
 /// - Generated from: /trafficmanager/resource-manager/Microsoft.Network/TrafficManager/stable/2022-04-01/trafficmanager.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficmanagerprofiles/{profileName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220401TrafficManagerProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20220401TrafficManagerProfileSpec?>, IStatus<V1api20220401TrafficManagerProfileStatus?>

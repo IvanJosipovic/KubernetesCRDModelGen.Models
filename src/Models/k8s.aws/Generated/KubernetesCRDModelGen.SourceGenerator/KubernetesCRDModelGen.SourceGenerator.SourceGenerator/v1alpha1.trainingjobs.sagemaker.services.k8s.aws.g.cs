@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>TrainingJob is the Schema for the TrainingJobs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TrainingJobList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TrainingJob>
@@ -46,7 +46,7 @@ public partial class V1alpha1TrainingJobList : IKubernetesObject<V1ListMeta>, II
 /// parameter in the HyperParameterTrainingJobDefinition API to evaluate job
 /// performance during hyperparameter tuning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecAlgorithmSpecificationMetricDefinitions
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1TrainingJobSpecAlgorithmSpecificationMetricDefiniti
 /// For information about providing your own algorithms, see Using Your Own Algorithms
 /// with Amazon SageMaker (https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecAlgorithmSpecification
 {
@@ -126,7 +126,7 @@ public partial class V1alpha1TrainingJobSpecAlgorithmSpecification
 /// Contains information about the output location for managed spot training
 /// checkpoint data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecCheckpointConfig
 {
@@ -141,7 +141,7 @@ public partial class V1alpha1TrainingJobSpecCheckpointConfig
 /// Configuration information for the Amazon SageMaker Debugger output tensor
 /// collections.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecDebugHookConfigCollectionConfigurations
 {
@@ -159,7 +159,7 @@ public partial class V1alpha1TrainingJobSpecDebugHookConfigCollectionConfigurati
 /// Configuration API Operations to Create, Update, and Debug Your Training Job
 /// (https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-createtrainingjob-api.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecDebugHookConfig
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1TrainingJobSpecDebugHookConfig
 /// Use the SageMaker and Debugger Configuration API Operations to Create, Update,
 /// and Debug Your Training Job (https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-createtrainingjob-api.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecDebugRuleConfigurations
 {
@@ -218,7 +218,7 @@ public partial class V1alpha1TrainingJobSpecDebugRuleConfigurations
 /// 
 ///   - CreateTransformJob (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTransformJob.html)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecExperimentConfig
 {
@@ -236,7 +236,7 @@ public partial class V1alpha1TrainingJobSpecExperimentConfig
 /// Contains information about the infrastructure health check configuration
 /// for the training job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInfraCheckConfig
 {
@@ -245,7 +245,7 @@ public partial class V1alpha1TrainingJobSpecInfraCheckConfig
 }
 
 /// <summary>Specifies a file system data source for a channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceFileSystemDataSource
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceFileSystemD
 /// For more information about private hubs, see Private curated hubs for foundation
 /// model access control in JumpStart (https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceS3DataSourceHubAccessConfig
 {
@@ -290,7 +290,7 @@ public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceS3DataSourc
 ///    on How to set the EULA acceptance when fine-tuning a model using the AutoML
 ///    API (https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-create-experiment-finetune-llms.html#autopilot-llms-finetuning-api-optional-params).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceS3DataSourceModelAccessConfig
 {
@@ -304,7 +304,7 @@ public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceS3DataSourc
 /// Your input bucket must be in the same Amazon Web Services region as your
 /// training job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceS3DataSource
 {
@@ -351,7 +351,7 @@ public partial class V1alpha1TrainingJobSpecInputDataConfigDataSourceS3DataSourc
 }
 
 /// <summary>Describes the location of the channel data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInputDataConfigDataSource
 {
@@ -385,7 +385,7 @@ public partial class V1alpha1TrainingJobSpecInputDataConfigDataSource
 /// across nodes so that the content sent to a particular node on the first epoch
 /// might be sent to a different node on the second epoch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInputDataConfigShuffleConfig
 {
@@ -394,7 +394,7 @@ public partial class V1alpha1TrainingJobSpecInputDataConfigShuffleConfig
 }
 
 /// <summary>A channel is a named input source that training algorithms can consume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecInputDataConfig
 {
@@ -479,7 +479,7 @@ public partial class V1alpha1TrainingJobSpecInputDataConfig
 /// Specifies the path to the S3 location where you want to store model artifacts.
 /// SageMaker creates subfolders for the artifacts.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecOutputDataConfig
 {
@@ -497,7 +497,7 @@ public partial class V1alpha1TrainingJobSpecOutputDataConfig
 /// Configuration information for Amazon SageMaker Debugger system monitoring,
 /// framework profiling, and storage paths.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecProfilerConfig
 {
@@ -512,7 +512,7 @@ public partial class V1alpha1TrainingJobSpecProfilerConfig
 }
 
 /// <summary>Configuration information for profiling rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecProfilerRuleConfigurations
 {
@@ -543,7 +543,7 @@ public partial class V1alpha1TrainingJobSpecProfilerRuleConfigurations
 /// functionality of SageMaker, see Access a training container through Amazon
 /// Web Services Systems Manager (SSM) for remote debugging (https://docs.aws.amazon.com/sagemaker/latest/dg/train-remote-debugging.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecRemoteDebugConfig
 {
@@ -556,7 +556,7 @@ public partial class V1alpha1TrainingJobSpecRemoteDebugConfig
 /// a training job using the CreateTrainingJob (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html)
 /// API, you can configure multiple instance groups .
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecResourceConfigInstanceGroups
 {
@@ -571,7 +571,7 @@ public partial class V1alpha1TrainingJobSpecResourceConfigInstanceGroups
 }
 
 /// <summary>Specifies how instances should be placed on a specific UltraServer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecResourceConfigInstancePlacementConfigPlacementSpecifications
 {
@@ -586,7 +586,7 @@ public partial class V1alpha1TrainingJobSpecResourceConfigInstancePlacementConfi
 /// Configuration for how instances are placed and allocated within UltraServers.
 /// This is only applicable for UltraServer capacity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecResourceConfigInstancePlacementConfig
 {
@@ -607,7 +607,7 @@ public partial class V1alpha1TrainingJobSpecResourceConfigInstancePlacementConfi
 /// File as the TrainingInputMode in the algorithm specification. For distributed
 /// training algorithms, specify an instance count greater than 1.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecResourceConfig
 {
@@ -642,7 +642,7 @@ public partial class V1alpha1TrainingJobSpecResourceConfig
 }
 
 /// <summary>The number of times to retry the job when the job fails due to an InternalServerError.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecRetryStrategy
 {
@@ -660,7 +660,7 @@ public partial class V1alpha1TrainingJobSpecRetryStrategy
 /// job termination for 120 seconds. Algorithms can use this 120-second window
 /// to save the model artifacts, so the results of training are not lost.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecStoppingCondition
 {
@@ -690,7 +690,7 @@ public partial class V1alpha1TrainingJobSpecStoppingCondition
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecTags
 {
@@ -705,7 +705,7 @@ public partial class V1alpha1TrainingJobSpecTags
 /// Configuration of storage locations for the Amazon SageMaker Debugger TensorBoard
 /// output data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecTensorBoardOutputConfig
 {
@@ -723,7 +723,7 @@ public partial class V1alpha1TrainingJobSpecTensorBoardOutputConfig
 /// VPC. For more information, see Protect Training Jobs by Using an Amazon Virtual
 /// Private Cloud (https://docs.aws.amazon.com/sagemaker/latest/dg/train-vpc.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpecVpcConfig
 {
@@ -739,7 +739,7 @@ public partial class V1alpha1TrainingJobSpecVpcConfig
 /// 
 /// Contains information about a training job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobSpec
 {
@@ -1014,7 +1014,7 @@ public partial class V1alpha1TrainingJobSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobStatusAckResourceMetadata
 {
@@ -1051,7 +1051,7 @@ public partial class V1alpha1TrainingJobStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobStatusConditions
 {
@@ -1077,7 +1077,7 @@ public partial class V1alpha1TrainingJobStatusConditions
 }
 
 /// <summary>Information about the status of the rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobStatusDebugRuleEvaluationStatuses
 {
@@ -1101,7 +1101,7 @@ public partial class V1alpha1TrainingJobStatusDebugRuleEvaluationStatuses
 /// Information about the Amazon S3 location that is configured for storing model
 /// artifacts.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobStatusModelArtifacts
 {
@@ -1110,7 +1110,7 @@ public partial class V1alpha1TrainingJobStatusModelArtifacts
 }
 
 /// <summary>Information about the status of the rule evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobStatusProfilerRuleEvaluationStatuses
 {
@@ -1131,7 +1131,7 @@ public partial class V1alpha1TrainingJobStatusProfilerRuleEvaluationStatuses
 }
 
 /// <summary>The status of the warm pool associated with the training job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobStatusWarmPoolStatus
 {
@@ -1151,7 +1151,7 @@ public partial class V1alpha1TrainingJobStatusWarmPoolStatus
 }
 
 /// <summary>TrainingJobStatus defines the observed state of TrainingJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TrainingJobStatus
 {
@@ -1297,7 +1297,7 @@ public partial class V1alpha1TrainingJobStatus
 }
 
 /// <summary>TrainingJob is the Schema for the TrainingJobs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TrainingJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TrainingJobSpec?>, IStatus<V1alpha1TrainingJobStatus?>

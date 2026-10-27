@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
 /// <summary>LoadBalancerOutboundRule is the Schema for the LoadBalancerOutboundRules API. Manages a Load Balancer Outbound Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LoadBalancerOutboundRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LoadBalancerOutboundRule>
@@ -43,7 +43,7 @@ public partial class V1beta1LoadBalancerOutboundRuleList : IKubernetesObject<V1L
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddres
 }
 
 /// <summary>Reference to a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddres
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddres
 }
 
 /// <summary>Selector for a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddres
     public V1beta1LoadBalancerOutboundRuleSpecForProviderBackendAddressPoolIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderFrontendIpConfiguration
 {
@@ -207,7 +207,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderFrontendIpCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRefPolicyResolutionEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRefPolicyResolutionEnum
 {
@@ -223,7 +223,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRefPolicyResolveEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRefPolicyResolveEnum
 {
@@ -234,7 +234,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRefPolicy
 {
@@ -258,7 +258,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerI
 }
 
 /// <summary>Reference to a LoadBalancer in network to populate loadbalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdRef
 {
@@ -281,7 +281,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelectorPolicyResolutionEnum
 {
@@ -297,7 +297,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelectorPolicyResolveEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelectorPolicy
 {
@@ -332,7 +332,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerI
 }
 
 /// <summary>Selector for a LoadBalancer in network to populate loadbalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelector
 {
@@ -356,7 +356,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerI
     public V1beta1LoadBalancerOutboundRuleSpecForProviderLoadbalancerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecForProvider
 {
@@ -414,7 +414,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdRefPolicyResolutionEnum
 {
@@ -430,7 +430,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdRefPolicyResolveEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdRefPolicy
 {
@@ -465,7 +465,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddre
 }
 
 /// <summary>Reference to a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdRef
 {
@@ -488,7 +488,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddre
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdSelectorPolicyResolutionEnum
 {
@@ -504,7 +504,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdSelectorPolicyResolveEnum
 {
@@ -515,7 +515,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdSelectorPolicy
 {
@@ -539,7 +539,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddre
 }
 
 /// <summary>Selector for a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdSelector
 {
@@ -563,7 +563,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddre
     public V1beta1LoadBalancerOutboundRuleSpecInitProviderBackendAddressPoolIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderFrontendIpConfiguration
 {
@@ -584,7 +584,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecInitProviderFrontendIpCo
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecInitProvider
 {
@@ -628,7 +628,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LoadBalancerOutboundRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1LoadBalancerOutboundRuleSpecManagementPoliciesEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1LoadBalancerOutboundRuleSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecProviderConfigRef
 {
@@ -670,7 +670,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpecWriteConnectionSecretToRef
 {
@@ -680,7 +680,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpecWriteConnectionSecretToR
 }
 
 /// <summary>LoadBalancerOutboundRuleSpec defines the desired state of LoadBalancerOutboundRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleSpec
 {
@@ -731,7 +731,7 @@ public partial class V1beta1LoadBalancerOutboundRuleSpec
     public V1beta1LoadBalancerOutboundRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleStatusAtProviderFrontendIpConfiguration
 {
@@ -744,7 +744,7 @@ public partial class V1beta1LoadBalancerOutboundRuleStatusAtProviderFrontendIpCo
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleStatusAtProvider
 {
@@ -785,7 +785,7 @@ public partial class V1beta1LoadBalancerOutboundRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleStatusConditions
 {
@@ -828,7 +828,7 @@ public partial class V1beta1LoadBalancerOutboundRuleStatusConditions
 }
 
 /// <summary>LoadBalancerOutboundRuleStatus defines the observed state of LoadBalancerOutboundRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadBalancerOutboundRuleStatus
 {
@@ -858,7 +858,7 @@ public partial class V1beta1LoadBalancerOutboundRuleStatus
 }
 
 /// <summary>LoadBalancerOutboundRule is the Schema for the LoadBalancerOutboundRules API. Manages a Load Balancer Outbound Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LoadBalancerOutboundRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LoadBalancerOutboundRuleSpec>, IStatus<V1beta1LoadBalancerOutboundRuleStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.aws.m.upbound.io;
 /// <summary>A ProviderConfig configures the AWS provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProviderConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ProviderConfig>
@@ -38,7 +38,7 @@ public partial class V1beta1ProviderConfigList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>Tag is session tag that can be used to assume an IAM Role</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecAssumeRoleChainTags
 {
@@ -61,7 +61,7 @@ public partial class V1beta1ProviderConfigSpecAssumeRoleChainTags
 /// AssumeRoleOptions define the options for assuming an IAM Role
 /// Fields are similar to the STS AssumeRoleOptions in the AWS SDK
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecAssumeRoleChain
 {
@@ -96,7 +96,7 @@ public partial class V1beta1ProviderConfigSpecAssumeRoleChain
 /// Env is a reference to an environment variable that contains credentials
 /// that must be used to connect to the provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsEnv
 {
@@ -109,7 +109,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsEnv
 /// Fs is a reference to a filesystem location that contains credentials that
 /// must be used to connect to the provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsFs
 {
@@ -122,7 +122,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsFs
 /// A SecretRef is a reference to a secret key that contains the credentials
 /// that must be used to connect to the provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsSecretRef
 {
@@ -140,7 +140,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsSecretRef
 }
 
 /// <summary>Source of the provider credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProviderConfigSpecCredentialsSourceEnum>))]
 public enum V1beta1ProviderConfigSpecCredentialsSourceEnum
 {
@@ -162,7 +162,7 @@ public enum V1beta1ProviderConfigSpecCredentialsSourceEnum
 /// Fs is a reference to a filesystem location that contains credentials that
 /// must be used to obtain the web identity token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityTokenConfigFs
 {
@@ -175,7 +175,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityToken
 /// A SecretRef is a reference to a secret key that contains the credentials
 /// that must be used to obtain the web identity token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityTokenConfigSecretRef
 {
@@ -193,7 +193,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityToken
 }
 
 /// <summary>Source is the source of the web identity token.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityTokenConfigSourceEnum>))]
 public enum V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityTokenConfigSourceEnum
 {
@@ -204,7 +204,7 @@ public enum V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityTokenConfigSou
 }
 
 /// <summary>TokenConfig is the Web Identity Token config to assume the role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityTokenConfig
 {
@@ -231,7 +231,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentityToken
 /// WebIdentity defines the options for assuming an IAM role with a Web
 /// Identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentity
 {
@@ -249,7 +249,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsUpboundWebIdentity
 }
 
 /// <summary>Upbound defines the options for authenticating using Upbound as an identity provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsUpbound
 {
@@ -265,7 +265,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsUpbound
 /// Fs is a reference to a filesystem location that contains credentials that
 /// must be used to obtain the web identity token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfigFs
 {
@@ -278,7 +278,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfigF
 /// A SecretRef is a reference to a secret key that contains the credentials
 /// that must be used to obtain the web identity token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfigSecretRef
 {
@@ -296,7 +296,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfigS
 }
 
 /// <summary>Source is the source of the web identity token.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfigSourceEnum>))]
 public enum V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfigSourceEnum
 {
@@ -307,7 +307,7 @@ public enum V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfigSourceEnum
 }
 
 /// <summary>TokenConfig is the Web Identity Token config to assume the role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfig
 {
@@ -331,7 +331,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsWebIdentityTokenConfig
 }
 
 /// <summary>WebIdentity defines the options for assuming an IAM role with a Web Identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentialsWebIdentity
 {
@@ -349,7 +349,7 @@ public partial class V1beta1ProviderConfigSpecCredentialsWebIdentity
 }
 
 /// <summary>Credentials required to authenticate to this provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecCredentials
 {
@@ -395,7 +395,7 @@ public partial class V1beta1ProviderConfigSpecCredentials
 /// HostnameImmutable property as per the usage requirement.
 /// Note that this is effective only for resources that use AWS SDK v2.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProviderConfigSpecEndpointSourceEnum>))]
 public enum V1beta1ProviderConfigSpecEndpointSourceEnum
 {
@@ -409,7 +409,7 @@ public enum V1beta1ProviderConfigSpecEndpointSourceEnum
 /// Protocol is the HTTP protocol that will be used in the URL. Currently,
 /// only http and https are supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProviderConfigSpecEndpointUrlDynamicProtocolEnum>))]
 public enum V1beta1ProviderConfigSpecEndpointUrlDynamicProtocolEnum
 {
@@ -420,7 +420,7 @@ public enum V1beta1ProviderConfigSpecEndpointUrlDynamicProtocolEnum
 }
 
 /// <summary>Dynamic lets you configure the behavior of endpoint URL resolver.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecEndpointUrlDynamic
 {
@@ -448,7 +448,7 @@ public partial class V1beta1ProviderConfigSpecEndpointUrlDynamic
 /// configuration for dynamically resolving the URL with the config you provide
 /// once you set the type as Dynamic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProviderConfigSpecEndpointUrlTypeEnum>))]
 public enum V1beta1ProviderConfigSpecEndpointUrlTypeEnum
 {
@@ -461,7 +461,7 @@ public enum V1beta1ProviderConfigSpecEndpointUrlTypeEnum
 }
 
 /// <summary>URL lets you configure the endpoint URL to be used in SDK calls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecEndpointUrl
 {
@@ -491,7 +491,7 @@ public partial class V1beta1ProviderConfigSpecEndpointUrl
 /// Endpoint is where you can override the default endpoint configuration
 /// of AWS calls made by the provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecEndpoint
 {
@@ -576,7 +576,7 @@ public partial class V1beta1ProviderConfigSpecEndpoint
 /// exponential failure rate limiter used to schedule retries for the
 /// managed resource that this policy applies to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecReconciliationPolicyExponentialFailureRateLimiter
 {
@@ -594,7 +594,7 @@ public partial class V1beta1ProviderConfigSpecReconciliationPolicyExponentialFai
 /// It currently allows overriding the controller&apos;s failure rate limiter
 /// parameters on a per-resource basis via ExponentialFailureRateLimiter.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpecReconciliationPolicy
 {
@@ -608,7 +608,7 @@ public partial class V1beta1ProviderConfigSpecReconciliationPolicy
 }
 
 /// <summary>A ProviderConfigSpec defines the desired state of a ProviderConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpec
 {
@@ -670,7 +670,7 @@ public partial class V1beta1ProviderConfigSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigStatusConditions
 {
@@ -713,7 +713,7 @@ public partial class V1beta1ProviderConfigStatusConditions
 }
 
 /// <summary>A ProviderConfigStatus reflects the observed state of a ProviderConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigStatus
 {
@@ -727,7 +727,7 @@ public partial class V1beta1ProviderConfigStatus
 }
 
 /// <summary>A ProviderConfig configures the AWS provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProviderConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ProviderConfigSpec>, IStatus<V1beta1ProviderConfigStatus?>

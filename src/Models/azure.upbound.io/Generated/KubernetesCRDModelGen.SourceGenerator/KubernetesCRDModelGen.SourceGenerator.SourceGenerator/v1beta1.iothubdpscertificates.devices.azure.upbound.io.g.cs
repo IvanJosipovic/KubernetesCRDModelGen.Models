@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.devices.azure.upbound.io;
 /// <summary>IOTHubDPSCertificate is the Schema for the IOTHubDPSCertificates API. Manages an IoT Device Provisioning Service Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubDPSCertificateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IOTHubDPSCertificate>
@@ -46,7 +46,7 @@ public partial class V1beta1IOTHubDPSCertificateList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecDeletionPolicyEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1IOTHubDPSCertificateSpecDeletionPolicyEnum
 }
 
 /// <summary>The Base-64 representation of the X509 leaf certificate .cer file or just a .pem file content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderCertificateContentSecretRef
 {
@@ -80,7 +80,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderCertificateConten
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPolicyResolutionEnum
 {
@@ -96,7 +96,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPolicyResolveEnum
 {
@@ -107,7 +107,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPolicy
 {
@@ -131,7 +131,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRefPoli
 }
 
 /// <summary>Reference to a IOTHubDPS in devices to populate iotDpsName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRef
 {
@@ -150,7 +150,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelectorPolicyResolutionEnum
 {
@@ -166,7 +166,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelectorPolicyResolveEnum
 {
@@ -177,7 +177,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelectorPolicy
 {
@@ -201,7 +201,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelecto
 }
 
 /// <summary>Selector for a IOTHubDPS in devices to populate iotDpsName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelector
 {
@@ -227,7 +227,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderIotDpsNameSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRefPolicy
 {
@@ -278,7 +278,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupName
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameRef
 {
@@ -297,7 +297,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -313,7 +313,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -348,7 +348,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupName
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelector
 {
@@ -368,7 +368,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupName
     public V1beta1IOTHubDPSCertificateSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecForProvider
 {
@@ -406,7 +406,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecForProvider
 }
 
 /// <summary>The Base-64 representation of the X509 leaf certificate .cer file or just a .pem file content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecInitProviderCertificateContentSecretRef
 {
@@ -429,7 +429,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecInitProviderCertificateConte
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPolicyResolutionEnum
 {
@@ -445,7 +445,7 @@ public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPolicyResolveEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPolicy
 {
@@ -480,7 +480,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRefPol
 }
 
 /// <summary>Reference to a IOTHubDPS in devices to populate iotDpsName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRef
 {
@@ -499,7 +499,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelectorPolicyResolutionEnum
 {
@@ -515,7 +515,7 @@ public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelectorPolicyResolveEnum
 {
@@ -526,7 +526,7 @@ public enum V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelectorPolicy
 {
@@ -550,7 +550,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelect
 }
 
 /// <summary>Selector for a IOTHubDPS in devices to populate iotDpsName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelector
 {
@@ -582,7 +582,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecInitProviderIotDpsNameSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecInitProvider
 {
@@ -611,7 +611,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecManagementPoliciesEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecManagementPoliciesEnum
 {
@@ -635,7 +635,7 @@ public enum V1beta1IOTHubDPSCertificateSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicyResolveEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicy
 {
@@ -690,7 +690,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecProviderConfigRef
 {
@@ -709,7 +709,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpecWriteConnectionSecretToRef
 {
@@ -723,7 +723,7 @@ public partial class V1beta1IOTHubDPSCertificateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>IOTHubDPSCertificateSpec defines the desired state of IOTHubDPSCertificate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateSpec
 {
@@ -790,7 +790,7 @@ public partial class V1beta1IOTHubDPSCertificateSpec
     public V1beta1IOTHubDPSCertificateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateStatusAtProvider
 {
@@ -812,7 +812,7 @@ public partial class V1beta1IOTHubDPSCertificateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateStatusConditions
 {
@@ -855,7 +855,7 @@ public partial class V1beta1IOTHubDPSCertificateStatusConditions
 }
 
 /// <summary>IOTHubDPSCertificateStatus defines the observed state of IOTHubDPSCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSCertificateStatus
 {
@@ -885,7 +885,7 @@ public partial class V1beta1IOTHubDPSCertificateStatus
 }
 
 /// <summary>IOTHubDPSCertificate is the Schema for the IOTHubDPSCertificates API. Manages an IoT Device Provisioning Service Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubDPSCertificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IOTHubDPSCertificateSpec>, IStatus<V1beta1IOTHubDPSCertificateStatus?>

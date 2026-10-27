@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.azure.upbound.io;
 /// <summary>AccountNetworkRules is the Schema for the AccountNetworkRuless API. Manages network rules inside of a Azure Storage Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountNetworkRulesList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccountNetworkRules>
@@ -46,7 +46,7 @@ public partial class V1beta1AccountNetworkRulesList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecDeletionPolicyEnum>))]
 public enum V1beta1AccountNetworkRulesSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1AccountNetworkRulesSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderPrivateLinkAccess
 {
@@ -75,7 +75,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderPrivateLinkAccess
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -91,7 +91,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -102,7 +102,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRefPolicy
 {
@@ -126,7 +126,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRe
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSe
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSelector
 {
@@ -222,7 +222,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderStorageAccountIdSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefsPolicyResolutionEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefs
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefsPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefsPolicyResolveEnum
 {
@@ -249,7 +249,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefs
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefsPolicy
 {
@@ -273,7 +273,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubn
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsRefs
 {
@@ -292,7 +292,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelectorPolicyResolveEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelectorPolicy
 {
@@ -343,7 +343,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubn
 }
 
 /// <summary>Selector for a list of Subnet in network to populate virtualNetworkSubnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelector
 {
@@ -363,7 +363,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubn
     public V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecForProvider
 {
@@ -408,7 +408,7 @@ public partial class V1beta1AccountNetworkRulesSpecForProvider
     public V1beta1AccountNetworkRulesSpecForProviderVirtualNetworkSubnetIdsSelector? VirtualNetworkSubnetIdsSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderPrivateLinkAccess
 {
@@ -427,7 +427,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderPrivateLinkAccess
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRefPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdR
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdRef
 {
@@ -497,7 +497,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -513,7 +513,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelectorPolicy
 {
@@ -548,7 +548,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdS
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdSelector
 {
@@ -574,7 +574,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderStorageAccountIdS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRefsPolicyResolutionEnum
 {
@@ -590,7 +590,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRefsPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRefsPolicyResolveEnum
 {
@@ -601,7 +601,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRefsPolicy
 {
@@ -625,7 +625,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSub
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsRefs
 {
@@ -644,7 +644,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSub
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSelectorPolicyResolutionEnum
 {
@@ -660,7 +660,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSelectorPolicyResolveEnum
 {
@@ -671,7 +671,7 @@ public enum V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSelectorPolicy
 {
@@ -695,7 +695,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSub
 }
 
 /// <summary>Selector for a list of Subnet in network to populate virtualNetworkSubnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSubnetIdsSelector
 {
@@ -727,7 +727,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProviderVirtualNetworkSub
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecInitProvider
 {
@@ -776,7 +776,7 @@ public partial class V1beta1AccountNetworkRulesSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecManagementPoliciesEnum>))]
 public enum V1beta1AccountNetworkRulesSpecManagementPoliciesEnum
 {
@@ -800,7 +800,7 @@ public enum V1beta1AccountNetworkRulesSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkRulesSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -816,7 +816,7 @@ public enum V1beta1AccountNetworkRulesSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkRulesSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkRulesSpecProviderConfigRefPolicyResolveEnum
 {
@@ -827,7 +827,7 @@ public enum V1beta1AccountNetworkRulesSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecProviderConfigRefPolicy
 {
@@ -855,7 +855,7 @@ public partial class V1beta1AccountNetworkRulesSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecProviderConfigRef
 {
@@ -874,7 +874,7 @@ public partial class V1beta1AccountNetworkRulesSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpecWriteConnectionSecretToRef
 {
@@ -888,7 +888,7 @@ public partial class V1beta1AccountNetworkRulesSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AccountNetworkRulesSpec defines the desired state of AccountNetworkRules</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesSpec
 {
@@ -955,7 +955,7 @@ public partial class V1beta1AccountNetworkRulesSpec
     public V1beta1AccountNetworkRulesSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesStatusAtProviderPrivateLinkAccess
 {
@@ -968,7 +968,7 @@ public partial class V1beta1AccountNetworkRulesStatusAtProviderPrivateLinkAccess
     public string? EndpointTenantId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesStatusAtProvider
 {
@@ -1002,7 +1002,7 @@ public partial class V1beta1AccountNetworkRulesStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesStatusConditions
 {
@@ -1045,7 +1045,7 @@ public partial class V1beta1AccountNetworkRulesStatusConditions
 }
 
 /// <summary>AccountNetworkRulesStatus defines the observed state of AccountNetworkRules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkRulesStatus
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1AccountNetworkRulesStatus
 }
 
 /// <summary>AccountNetworkRules is the Schema for the AccountNetworkRuless API. Manages network rules inside of a Azure Storage Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountNetworkRules : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccountNetworkRulesSpec>, IStatus<V1beta1AccountNetworkRulesStatus?>

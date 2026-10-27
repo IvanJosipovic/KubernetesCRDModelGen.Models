@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.notification.toolkit.fluxcd.io;
 /// <summary>Provider is the Schema for the providers API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ProviderList : IKubernetesObject<V1ListMeta>, IItems<V1Provider>
@@ -48,7 +48,7 @@ public partial class V1ProviderList : IKubernetesObject<V1ListMeta>, IItems<V1Pr
 /// 
 /// Legacy keys &quot;caFile&quot;, &quot;certFile&quot;, &quot;keyFile&quot; are supported but deprecated. Use &quot;ca.crt&quot;, &quot;tls.crt&quot;, &quot;tls.key&quot; instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderSpecCertSecretRef
 {
@@ -63,7 +63,7 @@ public partial class V1ProviderSpecCertSecretRef
 /// HTTP/S address of the proxy server. Optional &apos;username&apos; and &apos;password&apos;
 /// keys can be provided for proxy authentication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderSpecProxySecretRef
 {
@@ -76,7 +76,7 @@ public partial class V1ProviderSpecProxySecretRef
 /// SecretRef specifies the Secret containing the authentication
 /// credentials for this Provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderSpecSecretRef
 {
@@ -86,7 +86,7 @@ public partial class V1ProviderSpecSecretRef
 }
 
 /// <summary>Type specifies which Provider implementation to use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ProviderSpecTypeEnum>))]
 public enum V1ProviderSpecTypeEnum
 {
@@ -163,7 +163,7 @@ public enum V1ProviderSpecTypeEnum
 }
 
 /// <summary>ProviderSpec defines the desired state of the Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ProviderSpec
 {
@@ -260,7 +260,7 @@ public partial class V1ProviderSpec
 }
 
 /// <summary>Provider is the Schema for the providers API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Provider : IKubernetesObject<V1ObjectMeta>, ISpec<V1ProviderSpec?>

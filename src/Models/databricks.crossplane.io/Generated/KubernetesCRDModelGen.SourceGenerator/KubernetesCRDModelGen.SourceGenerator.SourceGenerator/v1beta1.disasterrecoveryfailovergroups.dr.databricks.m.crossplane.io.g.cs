@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dr.databricks.m.crossplane.io;
 /// <summary>DisasterRecoveryFailoverGroup is the Schema for the DisasterRecoveryFailoverGroups API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DisasterRecoveryFailoverGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DisasterRecoveryFailoverGroup>
@@ -37,7 +37,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupList : IKubernetesObjec
     public required IList<V1beta1DisasterRecoveryFailoverGroup> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCatalogAssetsCatalogs
 {
@@ -46,7 +46,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCat
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCatalogAssetsLocationMappingsUriByRegion
 {
@@ -59,7 +59,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCat
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCatalogAssetsLocationMappings
 {
@@ -73,7 +73,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCat
 }
 
 /// <summary>Unity Catalog replication configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCatalogAssets
 {
@@ -93,7 +93,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCat
     public IList<V1beta1DisasterRecoveryFailoverGroupSpecForProviderUnityCatalogAssetsLocationMappings>? LocationMappings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderWorkspaceSets
 {
@@ -124,7 +124,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProviderWorkspac
     public IList<string>? WorkspaceIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProvider
 {
@@ -159,7 +159,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecForProvider
     public IList<V1beta1DisasterRecoveryFailoverGroupSpecForProviderWorkspaceSets>? WorkspaceSets { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCatalogAssetsCatalogs
 {
@@ -168,7 +168,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCa
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCatalogAssetsLocationMappingsUriByRegion
 {
@@ -181,7 +181,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCa
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCatalogAssetsLocationMappings
 {
@@ -195,7 +195,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCa
 }
 
 /// <summary>Unity Catalog replication configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCatalogAssets
 {
@@ -215,7 +215,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCa
     public IList<V1beta1DisasterRecoveryFailoverGroupSpecInitProviderUnityCatalogAssetsLocationMappings>? LocationMappings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderWorkspaceSets
 {
@@ -258,7 +258,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProviderWorkspa
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProvider
 {
@@ -297,7 +297,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DisasterRecoveryFailoverGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1DisasterRecoveryFailoverGroupSpecManagementPoliciesEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1DisasterRecoveryFailoverGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecProviderConfigRef
 {
@@ -339,7 +339,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpecWriteConnectionSecretToRef
 {
@@ -349,7 +349,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpecWriteConnectionSecr
 }
 
 /// <summary>DisasterRecoveryFailoverGroupSpec defines the desired state of DisasterRecoveryFailoverGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupSpec
 {
@@ -400,7 +400,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpec
     public V1beta1DisasterRecoveryFailoverGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCatalogAssetsCatalogs
 {
@@ -409,7 +409,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCa
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCatalogAssetsLocationMappingsUriByRegion
 {
@@ -422,7 +422,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCa
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCatalogAssetsLocationMappings
 {
@@ -436,7 +436,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCa
 }
 
 /// <summary>Unity Catalog replication configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCatalogAssets
 {
@@ -456,7 +456,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCa
     public IList<V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCatalogAssetsLocationMappings>? LocationMappings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderWorkspaceSets
 {
@@ -487,7 +487,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderWorkspa
     public IList<string>? WorkspaceIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProvider
 {
@@ -557,7 +557,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusConditions
 {
@@ -600,7 +600,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusConditions
 }
 
 /// <summary>DisasterRecoveryFailoverGroupStatus defines the observed state of DisasterRecoveryFailoverGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatus
 {
@@ -630,7 +630,7 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatus
 }
 
 /// <summary>DisasterRecoveryFailoverGroup is the Schema for the DisasterRecoveryFailoverGroups API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DisasterRecoveryFailoverGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DisasterRecoveryFailoverGroupSpec>, IStatus<V1beta1DisasterRecoveryFailoverGroupStatus?>

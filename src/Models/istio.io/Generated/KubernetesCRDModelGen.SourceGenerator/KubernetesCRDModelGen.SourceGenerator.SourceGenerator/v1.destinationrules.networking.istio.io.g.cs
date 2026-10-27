@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networking.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1DestinationRuleList : IKubernetesObject<V1ListMeta>, IItems<V1DestinationRule>
@@ -41,7 +41,7 @@ public partial class V1DestinationRuleList : IKubernetesObject<V1ListMeta>, IIte
 /// 
 /// Valid Options: DEFAULT, DO_NOT_UPGRADE, UPGRADE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolHttpH2UpgradePolicyEnum>))]
 public enum V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolHttpH2UpgradePolicyEnum
 {
@@ -54,7 +54,7 @@ public enum V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolHttpH2Upgrade
 }
 
 /// <summary>HTTP connection pool settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolHttp
 {
@@ -96,7 +96,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolHttp
 }
 
 /// <summary>If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolTcpTcpKeepalive
 {
@@ -114,7 +114,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolTcpT
 }
 
 /// <summary>Settings common to both HTTP and TCP upstream connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolTcp
 {
@@ -139,7 +139,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolTcp
     public V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolTcpTcpKeepalive? TcpKeepalive { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPool
 {
@@ -152,7 +152,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPool
     public V1DestinationRuleSpecSubsetsTrafficPolicyConnectionPoolTcp? Tcp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsistentHashHttpCookieAttributes
 {
@@ -166,7 +166,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsis
 }
 
 /// <summary>Hash based on HTTP cookie.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsistentHashHttpCookie
 {
@@ -188,7 +188,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsis
 }
 
 /// <summary>The Maglev load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsistentHashMaglev
 {
@@ -198,7 +198,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsis
 }
 
 /// <summary>The ring/modulo hash load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsistentHashRingHash
 {
@@ -207,7 +207,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsis
     public int? MinimumRingSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsistentHash
 {
@@ -240,7 +240,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerConsis
     public bool? UseSourceIp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerLocalityLbSettingDistribute
 {
@@ -253,7 +253,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerLocali
     public IDictionary<string, int>? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerLocalityLbSettingFailover
 {
@@ -266,7 +266,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerLocali
     public string? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerLocalityLbSetting
 {
@@ -292,7 +292,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerLocali
 /// 
 /// Valid Options: LEAST_CONN, RANDOM, PASSTHROUGH, ROUND_ROBIN, LEAST_REQUEST
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerSimpleEnum>))]
 public enum V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerSimpleEnum
 {
@@ -311,7 +311,7 @@ public enum V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerSimpleEnum
 }
 
 /// <summary>Represents the warmup configuration of Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerWarmup
 {
@@ -327,7 +327,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancerWarmup
 }
 
 /// <summary>Settings controlling the load balancer algorithms.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancer
 {
@@ -354,7 +354,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyLoadBalancer
     public string? WarmupDurationSecs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyOutlierDetection
 {
@@ -399,7 +399,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyOutlierDetection
 /// 
 /// Valid Options: DEFAULT, DO_NOT_UPGRADE, UPGRADE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPoolHttpH2UpgradePolicyEnum>))]
 public enum V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPoolHttpH2UpgradePolicyEnum
 {
@@ -412,7 +412,7 @@ public enum V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnection
 }
 
 /// <summary>HTTP connection pool settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPoolHttp
 {
@@ -454,7 +454,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsC
 }
 
 /// <summary>If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPoolTcpTcpKeepalive
 {
@@ -472,7 +472,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsC
 }
 
 /// <summary>Settings common to both HTTP and TCP upstream connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPoolTcp
 {
@@ -497,7 +497,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsC
     public V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPoolTcpTcpKeepalive? TcpKeepalive { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPool
 {
@@ -510,7 +510,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsC
     public V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsConnectionPoolTcp? Tcp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashHttpCookieAttributes
 {
@@ -524,7 +524,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
 }
 
 /// <summary>Hash based on HTTP cookie.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashHttpCookie
 {
@@ -546,7 +546,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
 }
 
 /// <summary>The Maglev load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashMaglev
 {
@@ -556,7 +556,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
 }
 
 /// <summary>The ring/modulo hash load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashRingHash
 {
@@ -565,7 +565,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
     public int? MinimumRingSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerConsistentHash
 {
@@ -598,7 +598,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
     public bool? UseSourceIp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerLocalityLbSettingDistribute
 {
@@ -611,7 +611,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
     public IDictionary<string, int>? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerLocalityLbSettingFailover
 {
@@ -624,7 +624,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
     public string? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerLocalityLbSetting
 {
@@ -650,7 +650,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
 /// 
 /// Valid Options: LEAST_CONN, RANDOM, PASSTHROUGH, ROUND_ROBIN, LEAST_REQUEST
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerSimpleEnum>))]
 public enum V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerSimpleEnum
 {
@@ -669,7 +669,7 @@ public enum V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalanc
 }
 
 /// <summary>Represents the warmup configuration of Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancerWarmup
 {
@@ -685,7 +685,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
 }
 
 /// <summary>Settings controlling the load balancer algorithms.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsLoadBalancer
 {
@@ -712,7 +712,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsL
     public string? WarmupDurationSecs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsOutlierDetection
 {
@@ -753,7 +753,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsO
 }
 
 /// <summary>Specifies the number of a port on the destination service on which this policy is being applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsPort
 {
@@ -766,7 +766,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsP
 /// 
 /// Valid Options: DISABLE, SIMPLE, MUTUAL, ISTIO_MUTUAL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsTlsModeEnum>))]
 public enum V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsTlsModeEnum
 {
@@ -781,7 +781,7 @@ public enum V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsTlsModeEnu
 }
 
 /// <summary>TLS related settings for connections to the upstream service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsTls
 {
@@ -826,7 +826,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettingsT
     public IList<string>? SubjectAltNames { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettings
 {
@@ -854,7 +854,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyPortLevelSettings
 /// 
 /// Valid Options: V1, V2
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecSubsetsTrafficPolicyProxyProtocolVersionEnum>))]
 public enum V1DestinationRuleSpecSubsetsTrafficPolicyProxyProtocolVersionEnum
 {
@@ -865,7 +865,7 @@ public enum V1DestinationRuleSpecSubsetsTrafficPolicyProxyProtocolVersionEnum
 }
 
 /// <summary>The upstream PROXY protocol settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyProxyProtocol
 {
@@ -879,7 +879,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyProxyProtocol
 }
 
 /// <summary>Specifies a limit on concurrent retries in relation to the number of active requests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyRetryBudget
 {
@@ -897,7 +897,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyRetryBudget
 /// 
 /// Valid Options: DISABLE, SIMPLE, MUTUAL, ISTIO_MUTUAL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecSubsetsTrafficPolicyTlsModeEnum>))]
 public enum V1DestinationRuleSpecSubsetsTrafficPolicyTlsModeEnum
 {
@@ -912,7 +912,7 @@ public enum V1DestinationRuleSpecSubsetsTrafficPolicyTlsModeEnum
 }
 
 /// <summary>TLS related settings for connections to the upstream service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyTls
 {
@@ -958,7 +958,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyTls
 }
 
 /// <summary>Configuration of tunneling TCP over other transport or application layers for the host configured in the DestinationRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicyTunnel
 {
@@ -976,7 +976,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicyTunnel
 }
 
 /// <summary>Traffic policies that apply to this subset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsetsTrafficPolicy
 {
@@ -1011,7 +1011,7 @@ public partial class V1DestinationRuleSpecSubsetsTrafficPolicy
     public V1DestinationRuleSpecSubsetsTrafficPolicyTunnel? Tunnel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecSubsets
 {
@@ -1033,7 +1033,7 @@ public partial class V1DestinationRuleSpecSubsets
 /// 
 /// Valid Options: DEFAULT, DO_NOT_UPGRADE, UPGRADE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecTrafficPolicyConnectionPoolHttpH2UpgradePolicyEnum>))]
 public enum V1DestinationRuleSpecTrafficPolicyConnectionPoolHttpH2UpgradePolicyEnum
 {
@@ -1046,7 +1046,7 @@ public enum V1DestinationRuleSpecTrafficPolicyConnectionPoolHttpH2UpgradePolicyE
 }
 
 /// <summary>HTTP connection pool settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyConnectionPoolHttp
 {
@@ -1088,7 +1088,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyConnectionPoolHttp
 }
 
 /// <summary>If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyConnectionPoolTcpTcpKeepalive
 {
@@ -1106,7 +1106,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyConnectionPoolTcpTcpKeepa
 }
 
 /// <summary>Settings common to both HTTP and TCP upstream connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyConnectionPoolTcp
 {
@@ -1131,7 +1131,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyConnectionPoolTcp
     public V1DestinationRuleSpecTrafficPolicyConnectionPoolTcpTcpKeepalive? TcpKeepalive { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyConnectionPool
 {
@@ -1144,7 +1144,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyConnectionPool
     public V1DestinationRuleSpecTrafficPolicyConnectionPoolTcp? Tcp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHashHttpCookieAttributes
 {
@@ -1158,7 +1158,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHas
 }
 
 /// <summary>Hash based on HTTP cookie.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHashHttpCookie
 {
@@ -1180,7 +1180,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHas
 }
 
 /// <summary>The Maglev load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHashMaglev
 {
@@ -1190,7 +1190,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHas
 }
 
 /// <summary>The ring/modulo hash load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHashRingHash
 {
@@ -1199,7 +1199,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHas
     public int? MinimumRingSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHash
 {
@@ -1232,7 +1232,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerConsistentHas
     public bool? UseSourceIp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerLocalityLbSettingDistribute
 {
@@ -1245,7 +1245,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerLocalityLbSet
     public IDictionary<string, int>? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerLocalityLbSettingFailover
 {
@@ -1258,7 +1258,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerLocalityLbSet
     public string? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerLocalityLbSetting
 {
@@ -1284,7 +1284,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerLocalityLbSet
 /// 
 /// Valid Options: LEAST_CONN, RANDOM, PASSTHROUGH, ROUND_ROBIN, LEAST_REQUEST
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecTrafficPolicyLoadBalancerSimpleEnum>))]
 public enum V1DestinationRuleSpecTrafficPolicyLoadBalancerSimpleEnum
 {
@@ -1303,7 +1303,7 @@ public enum V1DestinationRuleSpecTrafficPolicyLoadBalancerSimpleEnum
 }
 
 /// <summary>Represents the warmup configuration of Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerWarmup
 {
@@ -1319,7 +1319,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancerWarmup
 }
 
 /// <summary>Settings controlling the load balancer algorithms.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancer
 {
@@ -1346,7 +1346,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyLoadBalancer
     public string? WarmupDurationSecs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyOutlierDetection
 {
@@ -1391,7 +1391,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyOutlierDetection
 /// 
 /// Valid Options: DEFAULT, DO_NOT_UPGRADE, UPGRADE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolHttpH2UpgradePolicyEnum>))]
 public enum V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolHttpH2UpgradePolicyEnum
 {
@@ -1404,7 +1404,7 @@ public enum V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolHtt
 }
 
 /// <summary>HTTP connection pool settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolHttp
 {
@@ -1446,7 +1446,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnecti
 }
 
 /// <summary>If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolTcpTcpKeepalive
 {
@@ -1464,7 +1464,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnecti
 }
 
 /// <summary>Settings common to both HTTP and TCP upstream connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolTcp
 {
@@ -1489,7 +1489,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnecti
     public V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolTcpTcpKeepalive? TcpKeepalive { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPool
 {
@@ -1502,7 +1502,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnecti
     public V1DestinationRuleSpecTrafficPolicyPortLevelSettingsConnectionPoolTcp? Tcp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashHttpCookieAttributes
 {
@@ -1516,7 +1516,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
 }
 
 /// <summary>Hash based on HTTP cookie.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashHttpCookie
 {
@@ -1538,7 +1538,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
 }
 
 /// <summary>The Maglev load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashMaglev
 {
@@ -1548,7 +1548,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
 }
 
 /// <summary>The ring/modulo hash load balancer implements consistent hashing to backend hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerConsistentHashRingHash
 {
@@ -1557,7 +1557,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
     public int? MinimumRingSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerConsistentHash
 {
@@ -1590,7 +1590,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
     public bool? UseSourceIp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerLocalityLbSettingDistribute
 {
@@ -1603,7 +1603,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
     public IDictionary<string, int>? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerLocalityLbSettingFailover
 {
@@ -1616,7 +1616,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
     public string? To { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerLocalityLbSetting
 {
@@ -1642,7 +1642,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
 /// 
 /// Valid Options: LEAST_CONN, RANDOM, PASSTHROUGH, ROUND_ROBIN, LEAST_REQUEST
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerSimpleEnum>))]
 public enum V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerSimpleEnum
 {
@@ -1661,7 +1661,7 @@ public enum V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerSimpl
 }
 
 /// <summary>Represents the warmup configuration of Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancerWarmup
 {
@@ -1677,7 +1677,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
 }
 
 /// <summary>Settings controlling the load balancer algorithms.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBalancer
 {
@@ -1704,7 +1704,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsLoadBala
     public string? WarmupDurationSecs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsOutlierDetection
 {
@@ -1745,7 +1745,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsOutlierD
 }
 
 /// <summary>Specifies the number of a port on the destination service on which this policy is being applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsPort
 {
@@ -1758,7 +1758,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsPort
 /// 
 /// Valid Options: DISABLE, SIMPLE, MUTUAL, ISTIO_MUTUAL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecTrafficPolicyPortLevelSettingsTlsModeEnum>))]
 public enum V1DestinationRuleSpecTrafficPolicyPortLevelSettingsTlsModeEnum
 {
@@ -1773,7 +1773,7 @@ public enum V1DestinationRuleSpecTrafficPolicyPortLevelSettingsTlsModeEnum
 }
 
 /// <summary>TLS related settings for connections to the upstream service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsTls
 {
@@ -1818,7 +1818,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettingsTls
     public IList<string>? SubjectAltNames { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettings
 {
@@ -1846,7 +1846,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyPortLevelSettings
 /// 
 /// Valid Options: V1, V2
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecTrafficPolicyProxyProtocolVersionEnum>))]
 public enum V1DestinationRuleSpecTrafficPolicyProxyProtocolVersionEnum
 {
@@ -1857,7 +1857,7 @@ public enum V1DestinationRuleSpecTrafficPolicyProxyProtocolVersionEnum
 }
 
 /// <summary>The upstream PROXY protocol settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyProxyProtocol
 {
@@ -1871,7 +1871,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyProxyProtocol
 }
 
 /// <summary>Specifies a limit on concurrent retries in relation to the number of active requests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyRetryBudget
 {
@@ -1889,7 +1889,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyRetryBudget
 /// 
 /// Valid Options: DISABLE, SIMPLE, MUTUAL, ISTIO_MUTUAL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DestinationRuleSpecTrafficPolicyTlsModeEnum>))]
 public enum V1DestinationRuleSpecTrafficPolicyTlsModeEnum
 {
@@ -1904,7 +1904,7 @@ public enum V1DestinationRuleSpecTrafficPolicyTlsModeEnum
 }
 
 /// <summary>TLS related settings for connections to the upstream service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyTls
 {
@@ -1950,7 +1950,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyTls
 }
 
 /// <summary>Configuration of tunneling TCP over other transport or application layers for the host configured in the DestinationRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicyTunnel
 {
@@ -1968,7 +1968,7 @@ public partial class V1DestinationRuleSpecTrafficPolicyTunnel
 }
 
 /// <summary>Traffic policies to apply (load balancing policy, connection pool sizes, outlier detection).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecTrafficPolicy
 {
@@ -2004,7 +2004,7 @@ public partial class V1DestinationRuleSpecTrafficPolicy
 }
 
 /// <summary>Criteria used to select the specific set of pods/VMs on which this `DestinationRule` configuration should be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpecWorkloadSelector
 {
@@ -2014,7 +2014,7 @@ public partial class V1DestinationRuleSpecWorkloadSelector
 }
 
 /// <summary>Configuration affecting load balancing, outlier detection, etc. See more details at: https://istio.io/docs/reference/config/networking/destination-rule.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DestinationRuleSpec
 {
@@ -2039,7 +2039,7 @@ public partial class V1DestinationRuleSpec
     public V1DestinationRuleSpecWorkloadSelector? WorkloadSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1DestinationRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1DestinationRuleSpec?>, IStatus<JsonNode?>

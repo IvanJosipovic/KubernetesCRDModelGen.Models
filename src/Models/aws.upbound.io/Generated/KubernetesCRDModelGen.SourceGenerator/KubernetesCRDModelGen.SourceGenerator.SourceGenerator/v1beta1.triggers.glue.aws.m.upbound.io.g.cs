@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.m.upbound.io;
 /// <summary>Trigger is the Schema for the Triggers API. Manages a Glue Trigger resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TriggerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Trigger>
@@ -43,7 +43,7 @@ public partial class V1beta1TriggerList : IKubernetesObject<V1ListMeta>, IItems<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameRefPolicy
 }
 
 /// <summary>Reference to a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameSelectorPoli
 }
 
 /// <summary>Selector for a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1TriggerSpecForProviderActionsCrawlerNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsJobNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsJobNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1TriggerSpecForProviderActionsJobNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsJobNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsJobNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1TriggerSpecForProviderActionsJobNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsJobNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1TriggerSpecForProviderActionsJobNameRefPolicy
 }
 
 /// <summary>Reference to a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsJobNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1TriggerSpecForProviderActionsJobNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1TriggerSpecForProviderActionsJobNameSelectorPolicy
 }
 
 /// <summary>Selector for a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsJobNameSelector
 {
@@ -348,7 +348,7 @@ public partial class V1beta1TriggerSpecForProviderActionsJobNameSelector
 }
 
 /// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActionsNotificationProperty
 {
@@ -357,7 +357,7 @@ public partial class V1beta1TriggerSpecForProviderActionsNotificationProperty
     public double? NotifyDelayAfter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderActions
 {
@@ -402,7 +402,7 @@ public partial class V1beta1TriggerSpecForProviderActions
     public double? Timeout { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderEventBatchingCondition
 {
@@ -421,7 +421,7 @@ public partial class V1beta1TriggerSpecForProviderEventBatchingCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRefPolicyResolutionEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRefPolicyResolveEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRefPolicy
 {
@@ -472,7 +472,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerName
 }
 
 /// <summary>Reference to a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameRef
 {
@@ -495,7 +495,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelectorPolicyResolutionEnum
 {
@@ -511,7 +511,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelectorPolicyResolveEnum
 {
@@ -522,7 +522,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelectorPolicy
 {
@@ -546,7 +546,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerName
 }
 
 /// <summary>Selector for a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerNameSelector
 {
@@ -576,7 +576,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsCrawlerName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefPolicyResolutionEnum
 {
@@ -592,7 +592,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefPolicyResolveEnum
 {
@@ -603,7 +603,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefPolicy
 {
@@ -627,7 +627,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameRefP
 }
 
 /// <summary>Reference to a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameRef
 {
@@ -650,7 +650,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolicyResolutionEnum
 {
@@ -666,7 +666,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolicyResolveEnum
 {
@@ -677,7 +677,7 @@ public enum V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolicy
 {
@@ -701,7 +701,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameSele
 }
 
 /// <summary>Selector for a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelector
 {
@@ -725,7 +725,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditionsJobNameSele
     public V1beta1TriggerSpecForProviderPredicateConditionsJobNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicateConditions
 {
@@ -767,7 +767,7 @@ public partial class V1beta1TriggerSpecForProviderPredicateConditions
 }
 
 /// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProviderPredicate
 {
@@ -780,7 +780,7 @@ public partial class V1beta1TriggerSpecForProviderPredicate
     public string? Logical { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecForProvider
 {
@@ -838,7 +838,7 @@ public partial class V1beta1TriggerSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicyResolutionEnum
 {
@@ -854,7 +854,7 @@ public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicyResolveEnum
 {
@@ -865,7 +865,7 @@ public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicy
 {
@@ -889,7 +889,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameRefPolicy
 }
 
 /// <summary>Reference to a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameRef
 {
@@ -912,7 +912,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPolicyResolutionEnum
 {
@@ -928,7 +928,7 @@ public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPolicyResolveEnum
 {
@@ -939,7 +939,7 @@ public enum V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPolicy
 {
@@ -963,7 +963,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameSelectorPol
 }
 
 /// <summary>Selector for a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameSelector
 {
@@ -993,7 +993,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsCrawlerNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsJobNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsJobNameRefPolicyResolutionEnum
 {
@@ -1009,7 +1009,7 @@ public enum V1beta1TriggerSpecInitProviderActionsJobNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsJobNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsJobNameRefPolicyResolveEnum
 {
@@ -1020,7 +1020,7 @@ public enum V1beta1TriggerSpecInitProviderActionsJobNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsJobNameRefPolicy
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsJobNameRefPolicy
 }
 
 /// <summary>Reference to a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsJobNameRef
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsJobNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicyResolutionEnum
 {
@@ -1083,7 +1083,7 @@ public enum V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicyResolveEnum
 {
@@ -1094,7 +1094,7 @@ public enum V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicy
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsJobNameSelectorPolicy
 }
 
 /// <summary>Selector for a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsJobNameSelector
 {
@@ -1143,7 +1143,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsJobNameSelector
 }
 
 /// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActionsNotificationProperty
 {
@@ -1152,7 +1152,7 @@ public partial class V1beta1TriggerSpecInitProviderActionsNotificationProperty
     public double? NotifyDelayAfter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderActions
 {
@@ -1197,7 +1197,7 @@ public partial class V1beta1TriggerSpecInitProviderActions
     public double? Timeout { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderEventBatchingCondition
 {
@@ -1216,7 +1216,7 @@ public partial class V1beta1TriggerSpecInitProviderEventBatchingCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRefPolicyResolutionEnum
 {
@@ -1232,7 +1232,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRefPolicyResolveEnum
 {
@@ -1243,7 +1243,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRefPolicy
 {
@@ -1267,7 +1267,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNam
 }
 
 /// <summary>Reference to a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameRef
 {
@@ -1290,7 +1290,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelectorPolicyResolutionEnum
 {
@@ -1306,7 +1306,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelectorPolicyResolveEnum
 {
@@ -1317,7 +1317,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelectorPolicy
 {
@@ -1341,7 +1341,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNam
 }
 
 /// <summary>Selector for a Crawler in glue to populate crawlerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNameSelector
 {
@@ -1371,7 +1371,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsCrawlerNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRefPolicyResolutionEnum
 {
@@ -1387,7 +1387,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRefPolicyResolveEnum
 {
@@ -1398,7 +1398,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRefPolicy
 {
@@ -1422,7 +1422,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRef
 }
 
 /// <summary>Reference to a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRef
 {
@@ -1445,7 +1445,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPolicyResolutionEnum
 {
@@ -1461,7 +1461,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPolicyResolveEnum
 {
@@ -1472,7 +1472,7 @@ public enum V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPolicy
 {
@@ -1496,7 +1496,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSel
 }
 
 /// <summary>Selector for a Job in glue to populate jobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelector
 {
@@ -1520,7 +1520,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSel
     public V1beta1TriggerSpecInitProviderPredicateConditionsJobNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicateConditions
 {
@@ -1562,7 +1562,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicateConditions
 }
 
 /// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProviderPredicate
 {
@@ -1587,7 +1587,7 @@ public partial class V1beta1TriggerSpecInitProviderPredicate
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecInitProvider
 {
@@ -1636,7 +1636,7 @@ public partial class V1beta1TriggerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecManagementPoliciesEnum>))]
 public enum V1beta1TriggerSpecManagementPoliciesEnum
 {
@@ -1659,7 +1659,7 @@ public enum V1beta1TriggerSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecProviderConfigRef
 {
@@ -1678,7 +1678,7 @@ public partial class V1beta1TriggerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpecWriteConnectionSecretToRef
 {
@@ -1688,7 +1688,7 @@ public partial class V1beta1TriggerSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TriggerSpec defines the desired state of Trigger</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerSpec
 {
@@ -1740,7 +1740,7 @@ public partial class V1beta1TriggerSpec
 }
 
 /// <summary>Specifies configuration properties of a job run notification. See Notification Property details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatusAtProviderActionsNotificationProperty
 {
@@ -1749,7 +1749,7 @@ public partial class V1beta1TriggerStatusAtProviderActionsNotificationProperty
     public double? NotifyDelayAfter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatusAtProviderActions
 {
@@ -1778,7 +1778,7 @@ public partial class V1beta1TriggerStatusAtProviderActions
     public double? Timeout { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatusAtProviderEventBatchingCondition
 {
@@ -1791,7 +1791,7 @@ public partial class V1beta1TriggerStatusAtProviderEventBatchingCondition
     public double? BatchWindow { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatusAtProviderPredicateConditions
 {
@@ -1817,7 +1817,7 @@ public partial class V1beta1TriggerStatusAtProviderPredicateConditions
 }
 
 /// <summary>A predicate to specify when the new trigger should fire. Required when trigger type is CONDITIONAL. See Predicate Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatusAtProviderPredicate
 {
@@ -1830,7 +1830,7 @@ public partial class V1beta1TriggerStatusAtProviderPredicate
     public string? Logical { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatusAtProvider
 {
@@ -1899,7 +1899,7 @@ public partial class V1beta1TriggerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatusConditions
 {
@@ -1942,7 +1942,7 @@ public partial class V1beta1TriggerStatusConditions
 }
 
 /// <summary>TriggerStatus defines the observed state of Trigger.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerStatus
 {
@@ -1972,7 +1972,7 @@ public partial class V1beta1TriggerStatus
 }
 
 /// <summary>Trigger is the Schema for the Triggers API. Manages a Glue Trigger resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Trigger : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TriggerSpec>, IStatus<V1beta1TriggerStatus?>

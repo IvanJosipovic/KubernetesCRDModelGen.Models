@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
 /// <summary>PrivateEndpointApplicationSecurityGroupAssociation is the Schema for the PrivateEndpointApplicationSecurityGroupAssociations API. Manages an association between Private Endpoint and Application Security Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateEndpointApplicationSecurityGroupAssociation>
@@ -43,7 +43,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationLi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Reference to a ApplicationSecurityGroup in network to populate applicationSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Selector for a ApplicationSecurityGroup in network to populate applicationSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderApplicationSecurityGroupIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Reference to a PrivateEndpoint in network to populate privateEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Selector for a PrivateEndpoint in network to populate privateEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
     public V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProviderPrivateEndpointIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecForProvider
 {
@@ -382,7 +382,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -398,7 +398,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdRefPolicyResolveEnum
 {
@@ -409,7 +409,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdRefPolicy
 {
@@ -433,7 +433,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Reference to a ApplicationSecurityGroup in network to populate applicationSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdSelectorPolicy
 {
@@ -507,7 +507,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Selector for a ApplicationSecurityGroup in network to populate applicationSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderApplicationSecurityGroupIdSelector
 {
@@ -537,7 +537,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdRefPolicyResolutionEnum
 {
@@ -553,7 +553,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdRefPolicyResolveEnum
 {
@@ -564,7 +564,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdRefPolicy
 {
@@ -588,7 +588,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Reference to a PrivateEndpoint in network to populate privateEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdRef
 {
@@ -611,7 +611,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdSelectorPolicyResolutionEnum
 {
@@ -627,7 +627,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdSelectorPolicyResolveEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitPro
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdSelectorPolicy
 {
@@ -662,7 +662,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>Selector for a PrivateEndpoint in network to populate privateEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProviderPrivateEndpointIdSelector
 {
@@ -698,7 +698,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecInitProvider
 {
@@ -731,7 +731,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecManagementPoliciesEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecManagem
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecProviderConfigRef
 {
@@ -773,7 +773,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecWriteConnectionSecretToRef
 {
@@ -783,7 +783,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
 }
 
 /// <summary>PrivateEndpointApplicationSecurityGroupAssociationSpec defines the desired state of PrivateEndpointApplicationSecurityGroupAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpec
 {
@@ -834,7 +834,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSp
     public V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationStatusAtProvider
 {
@@ -851,7 +851,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSt
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationStatusConditions
 {
@@ -894,7 +894,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSt
 }
 
 /// <summary>PrivateEndpointApplicationSecurityGroupAssociationStatus defines the observed state of PrivateEndpointApplicationSecurityGroupAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationStatus
 {
@@ -924,7 +924,7 @@ public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociationSt
 }
 
 /// <summary>PrivateEndpointApplicationSecurityGroupAssociation is the Schema for the PrivateEndpointApplicationSecurityGroupAssociations API. Manages an association between Private Endpoint and Application Security Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateEndpointApplicationSecurityGroupAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateEndpointApplicationSecurityGroupAssociationSpec>, IStatus<V1beta1PrivateEndpointApplicationSecurityGroupAssociationStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
 /// <summary>VirtualMachineScaleSetStandbyPool is the Schema for the VirtualMachineScaleSetStandbyPools API. Manages a Standby Pool for Virtual Machine Scale Sets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualMachineScaleSetStandbyPool>
@@ -46,7 +46,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolList : IKubernetesO
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecDeletionPolicyEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAtta
 }
 
 /// <summary>Reference to a OrchestratedVirtualMachineScaleSet in compute to populate attachedVirtualMachineScaleSetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAtta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAtta
 }
 
 /// <summary>Selector for a OrchestratedVirtualMachineScaleSet in compute to populate attachedVirtualMachineScaleSetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAttachedVirtualMachineScaleSetIdSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderAtta
 }
 
 /// <summary>An elasticity_profile block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderElasticityProfile
 {
@@ -223,7 +223,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderElas
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -239,7 +239,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroup
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameRefPolicy
 {
@@ -274,7 +274,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderReso
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameRef
 {
@@ -293,7 +293,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderReso
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroup
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -344,7 +344,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderReso
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameSelector
 {
@@ -364,7 +364,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderReso
     public V1beta1VirtualMachineScaleSetStandbyPoolSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProvider
 {
@@ -415,7 +415,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdRefPolicyResolutionEnum
 {
@@ -431,7 +431,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirt
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdRefPolicyResolveEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirt
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdRefPolicy
 {
@@ -466,7 +466,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAtt
 }
 
 /// <summary>Reference to a OrchestratedVirtualMachineScaleSet in compute to populate attachedVirtualMachineScaleSetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdRef
 {
@@ -485,7 +485,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAtt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirt
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdSelectorPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirt
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdSelectorPolicy
 {
@@ -536,7 +536,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAtt
 }
 
 /// <summary>Selector for a OrchestratedVirtualMachineScaleSet in compute to populate attachedVirtualMachineScaleSetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAttachedVirtualMachineScaleSetIdSelector
 {
@@ -557,7 +557,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderAtt
 }
 
 /// <summary>An elasticity_profile block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderElasticityProfile
 {
@@ -582,7 +582,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProviderEla
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProvider
 {
@@ -619,7 +619,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecManagementPoliciesEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecManagementPoliciesEnum
 {
@@ -643,7 +643,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -659,7 +659,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRefPolicyResolveEnum
 {
@@ -670,7 +670,7 @@ public enum V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRefPolicy
 {
@@ -698,7 +698,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigR
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigRef
 {
@@ -717,7 +717,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecWriteConnectionSecretToRef
 {
@@ -731,7 +731,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpecWriteConnection
 }
 
 /// <summary>VirtualMachineScaleSetStandbyPoolSpec defines the desired state of VirtualMachineScaleSetStandbyPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpec
 {
@@ -799,7 +799,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolSpec
 }
 
 /// <summary>An elasticity_profile block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatusAtProviderElasticityProfile
 {
@@ -812,7 +812,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatusAtProviderEla
     public double? MinReadyCapacity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatusAtProvider
 {
@@ -846,7 +846,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatusConditions
 {
@@ -889,7 +889,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatusConditions
 }
 
 /// <summary>VirtualMachineScaleSetStandbyPoolStatus defines the observed state of VirtualMachineScaleSetStandbyPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatus
 {
@@ -919,7 +919,7 @@ public partial class V1beta1VirtualMachineScaleSetStandbyPoolStatus
 }
 
 /// <summary>VirtualMachineScaleSetStandbyPool is the Schema for the VirtualMachineScaleSetStandbyPools API. Manages a Standby Pool for Virtual Machine Scale Sets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualMachineScaleSetStandbyPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualMachineScaleSetStandbyPoolSpec>, IStatus<V1beta1VirtualMachineScaleSetStandbyPoolStatus?>

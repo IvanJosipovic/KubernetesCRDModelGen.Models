@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.m.upbound.io;
 /// <summary>LinkedServiceAzureDatabricks is the Schema for the LinkedServiceAzureDatabrickss API. Manages a Linked Service (connection) between Azure Databricks and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureDatabricksList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceAzureDatabricks>
@@ -38,7 +38,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksList : IKubernetesObject
 }
 
 /// <summary>Authenticate to ADB via an access token.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderAccessTokenSecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderAccessTok
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFacto
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFacto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFacto
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFactoryIdSelector
 {
@@ -206,7 +206,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderDataFacto
 }
 
 /// <summary>Leverages an instance pool within the linked ADB instance as one instance_pool block defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderInstancePool
 {
@@ -228,7 +228,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderInstanceP
 }
 
 /// <summary>Authenticate to ADB via Azure Key Vault Linked Service as defined in the key_vault_password block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderKeyVaultPassword
 {
@@ -247,7 +247,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderKeyVaultP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdRefPolicyResolutionEnum
 {
@@ -263,7 +263,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdRefPolicyResolveEnum
 {
@@ -274,7 +274,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResour
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdRefPolicy
 {
@@ -298,7 +298,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSp
 }
 
 /// <summary>Reference to a Workspace in databricks to populate msiWorkSpaceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdRef
 {
@@ -321,7 +321,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelectorPolicyResolutionEnum
 {
@@ -337,7 +337,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResour
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelectorPolicyResolveEnum
 {
@@ -348,7 +348,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResour
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelectorPolicy
 {
@@ -372,7 +372,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSp
 }
 
 /// <summary>Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSpaceResourceIdSelector
 {
@@ -402,7 +402,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolutionEnum
 {
@@ -418,7 +418,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicyResolveEnum
 {
@@ -429,7 +429,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRefPolicy
 {
@@ -453,7 +453,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorksp
 }
 
 /// <summary>Reference to a Workspace in databricks to populate msiWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdRef
 {
@@ -476,7 +476,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorksp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -492,7 +492,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -503,7 +503,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelectorPolicy
 {
@@ -527,7 +527,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorksp
 }
 
 /// <summary>Selector for a Workspace in databricks to populate msiWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorkspaceIdSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderMsiWorksp
 }
 
 /// <summary>Creates new clusters within the linked ADB instance as defined in the new_cluster_config block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderNewClusterConfig
 {
@@ -597,7 +597,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProviderNewCluste
     public IDictionary<string, string>? SparkEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecForProvider
 {
@@ -683,7 +683,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProvider
 }
 
 /// <summary>Authenticate to ADB via an access token.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderAccessTokenSecretRef
 {
@@ -696,7 +696,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderAccessTo
 }
 
 /// <summary>Leverages an instance pool within the linked ADB instance as one instance_pool block defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderInstancePool
 {
@@ -718,7 +718,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderInstance
 }
 
 /// <summary>Authenticate to ADB via Azure Key Vault Linked Service as defined in the key_vault_password block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderKeyVaultPassword
 {
@@ -737,7 +737,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderKeyVault
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdRefPolicyResolutionEnum
 {
@@ -753,7 +753,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdRefPolicyResolveEnum
 {
@@ -764,7 +764,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdRefPolicy
 {
@@ -788,7 +788,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkS
 }
 
 /// <summary>Reference to a Workspace in databricks to populate msiWorkSpaceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdRef
 {
@@ -811,7 +811,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelectorPolicyResolutionEnum
 {
@@ -827,7 +827,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelectorPolicyResolveEnum
 {
@@ -838,7 +838,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelectorPolicy
 {
@@ -862,7 +862,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkS
 }
 
 /// <summary>Selector for a Workspace in databricks to populate msiWorkSpaceResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkSpaceResourceIdSelector
 {
@@ -892,7 +892,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolutionEnum
 {
@@ -908,7 +908,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicyResolveEnum
 {
@@ -919,7 +919,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRefPolicy
 {
@@ -943,7 +943,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorks
 }
 
 /// <summary>Reference to a Workspace in databricks to populate msiWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdRef
 {
@@ -966,7 +966,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorks
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -982,7 +982,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -993,7 +993,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelectorPolicy
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorks
 }
 
 /// <summary>Selector for a Workspace in databricks to populate msiWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorkspaceIdSelector
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderMsiWorks
 }
 
 /// <summary>Creates new clusters within the linked ADB instance as defined in the new_cluster_config block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderNewClusterConfig
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderNewClust
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProvider
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureDatabricksSpecManagementPoliciesEnum>))]
 public enum V1beta1LinkedServiceAzureDatabricksSpecManagementPoliciesEnum
 {
@@ -1199,7 +1199,7 @@ public enum V1beta1LinkedServiceAzureDatabricksSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecProviderConfigRef
 {
@@ -1218,7 +1218,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecWriteConnectionSecretToRef
 {
@@ -1228,7 +1228,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecWriteConnectionSecre
 }
 
 /// <summary>LinkedServiceAzureDatabricksSpec defines the desired state of LinkedServiceAzureDatabricks</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpec
 {
@@ -1280,7 +1280,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpec
 }
 
 /// <summary>Leverages an instance pool within the linked ADB instance as one instance_pool block defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProviderInstancePool
 {
@@ -1302,7 +1302,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProviderInstance
 }
 
 /// <summary>Authenticate to ADB via Azure Key Vault Linked Service as defined in the key_vault_password block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProviderKeyVaultPassword
 {
@@ -1316,7 +1316,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProviderKeyVault
 }
 
 /// <summary>Creates new clusters within the linked ADB instance as defined in the new_cluster_config block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProviderNewClusterConfig
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProviderNewClust
     public IDictionary<string, string>? SparkEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProvider
 {
@@ -1423,7 +1423,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksStatusConditions
 {
@@ -1466,7 +1466,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatusConditions
 }
 
 /// <summary>LinkedServiceAzureDatabricksStatus defines the observed state of LinkedServiceAzureDatabricks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksStatus
 {
@@ -1496,7 +1496,7 @@ public partial class V1beta1LinkedServiceAzureDatabricksStatus
 }
 
 /// <summary>LinkedServiceAzureDatabricks is the Schema for the LinkedServiceAzureDatabrickss API. Manages a Linked Service (connection) between Azure Databricks and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureDatabricks : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceAzureDatabricksSpec>, IStatus<V1beta1LinkedServiceAzureDatabricksStatus?>

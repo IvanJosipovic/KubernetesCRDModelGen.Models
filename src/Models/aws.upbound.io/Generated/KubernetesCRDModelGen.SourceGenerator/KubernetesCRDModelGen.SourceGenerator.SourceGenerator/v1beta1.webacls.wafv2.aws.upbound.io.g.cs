@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.wafv2.aws.upbound.io;
 /// <summary>WebACL is the Schema for the WebACLs API. Creates a WAFv2 Web ACL resource. The &apos;rule&apos; field is not supported due to Kubernetes CRD size limitations with deeply nested fields. Please use the &apos;ruleJson&apos; field to define rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebACLList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WebACL>
@@ -46,7 +46,7 @@ public partial class V1beta1WebACLList : IKubernetesObject<V1ListMeta>, IItems<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLSpecDeletionPolicyEnum>))]
 public enum V1beta1WebACLSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1WebACLSpecDeletionPolicyEnum
 }
 
 /// <summary>Customizes the request body that your protected Amazon API Gateway REST APIs forward to AWS WAF for inspection. Applicable only when scope is set to CLOUDFRONT. See api_gateway below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyApiGateway
 {
@@ -67,7 +67,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyApi
 }
 
 /// <summary>Customizes the request body that your protected Amazon App Runner services forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See app_runner_service below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyAppRunnerService
 {
@@ -77,7 +77,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyApp
 }
 
 /// <summary>Customizes the request body that your protected Amazon CloudFront distributions forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See cloudfront below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyCloudfront
 {
@@ -87,7 +87,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyClo
 }
 
 /// <summary>Customizes the request body that your protected Amazon Cognito user pools forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See cognito_user_pool below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyCognitoUserPool
 {
@@ -97,7 +97,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyCog
 }
 
 /// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyVerifiedAccessInstance
 {
@@ -106,7 +106,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBodyVer
     public string? DefaultSizeInspectionLimit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBody
 {
@@ -132,7 +132,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfigRequestBody
 }
 
 /// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderAssociationConfig
 {
@@ -142,7 +142,7 @@ public partial class V1beta1WebACLSpecForProviderAssociationConfig
 }
 
 /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderCaptchaConfigImmunityTimeProperty
 {
@@ -152,7 +152,7 @@ public partial class V1beta1WebACLSpecForProviderCaptchaConfigImmunityTimeProper
 }
 
 /// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderCaptchaConfig
 {
@@ -162,7 +162,7 @@ public partial class V1beta1WebACLSpecForProviderCaptchaConfig
 }
 
 /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderChallengeConfigImmunityTimeProperty
 {
@@ -172,7 +172,7 @@ public partial class V1beta1WebACLSpecForProviderChallengeConfigImmunityTimeProp
 }
 
 /// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderChallengeConfig
 {
@@ -181,7 +181,7 @@ public partial class V1beta1WebACLSpecForProviderChallengeConfig
     public V1beta1WebACLSpecForProviderChallengeConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderCustomResponseBody
 {
@@ -199,7 +199,7 @@ public partial class V1beta1WebACLSpecForProviderCustomResponseBody
 }
 
 /// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtectionField
 {
@@ -212,7 +212,7 @@ public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtect
     public string? FieldType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtection
 {
@@ -234,7 +234,7 @@ public partial class V1beta1WebACLSpecForProviderDataProtectionConfigDataProtect
 }
 
 /// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDataProtectionConfig
 {
@@ -243,7 +243,7 @@ public partial class V1beta1WebACLSpecForProviderDataProtectionConfig
     public IList<V1beta1WebACLSpecForProviderDataProtectionConfigDataProtection>? DataProtection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequestHandlingInsertHeader
 {
@@ -257,7 +257,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequest
 }
 
 /// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequestHandling
 {
@@ -267,7 +267,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequest
 }
 
 /// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionAllow
 {
@@ -276,7 +276,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionAllow
     public V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomResponseResponseHeader
 {
@@ -290,7 +290,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomRespons
 }
 
 /// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomResponse
 {
@@ -308,7 +308,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomRespons
 }
 
 /// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionBlock
 {
@@ -318,7 +318,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionBlock
 }
 
 /// <summary>Action to perform if none of the rules contained in the WebACL match. See default_action below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultAction
 {
@@ -332,7 +332,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultAction
 }
 
 /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderVisibilityConfig
 {
@@ -349,7 +349,7 @@ public partial class V1beta1WebACLSpecForProviderVisibilityConfig
     public bool? SampledRequestsEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProvider
 {
@@ -414,7 +414,7 @@ public partial class V1beta1WebACLSpecForProvider
 }
 
 /// <summary>Customizes the request body that your protected Amazon API Gateway REST APIs forward to AWS WAF for inspection. Applicable only when scope is set to CLOUDFRONT. See api_gateway below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyApiGateway
 {
@@ -424,7 +424,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyAp
 }
 
 /// <summary>Customizes the request body that your protected Amazon App Runner services forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See app_runner_service below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyAppRunnerService
 {
@@ -434,7 +434,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyAp
 }
 
 /// <summary>Customizes the request body that your protected Amazon CloudFront distributions forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See cloudfront below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCloudfront
 {
@@ -444,7 +444,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCl
 }
 
 /// <summary>Customizes the request body that your protected Amazon Cognito user pools forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See cognito_user_pool below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCognitoUserPool
 {
@@ -454,7 +454,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyCo
 }
 
 /// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyVerifiedAccessInstance
 {
@@ -463,7 +463,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBodyVe
     public string? DefaultSizeInspectionLimit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBody
 {
@@ -489,7 +489,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfigRequestBody
 }
 
 /// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderAssociationConfig
 {
@@ -499,7 +499,7 @@ public partial class V1beta1WebACLSpecInitProviderAssociationConfig
 }
 
 /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderCaptchaConfigImmunityTimeProperty
 {
@@ -509,7 +509,7 @@ public partial class V1beta1WebACLSpecInitProviderCaptchaConfigImmunityTimePrope
 }
 
 /// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderCaptchaConfig
 {
@@ -519,7 +519,7 @@ public partial class V1beta1WebACLSpecInitProviderCaptchaConfig
 }
 
 /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderChallengeConfigImmunityTimeProperty
 {
@@ -529,7 +529,7 @@ public partial class V1beta1WebACLSpecInitProviderChallengeConfigImmunityTimePro
 }
 
 /// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderChallengeConfig
 {
@@ -538,7 +538,7 @@ public partial class V1beta1WebACLSpecInitProviderChallengeConfig
     public V1beta1WebACLSpecInitProviderChallengeConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderCustomResponseBody
 {
@@ -556,7 +556,7 @@ public partial class V1beta1WebACLSpecInitProviderCustomResponseBody
 }
 
 /// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtectionField
 {
@@ -569,7 +569,7 @@ public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtec
     public string? FieldType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtection
 {
@@ -591,7 +591,7 @@ public partial class V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtec
 }
 
 /// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDataProtectionConfig
 {
@@ -600,7 +600,7 @@ public partial class V1beta1WebACLSpecInitProviderDataProtectionConfig
     public IList<V1beta1WebACLSpecInitProviderDataProtectionConfigDataProtection>? DataProtection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionAllowCustomRequestHandlingInsertHeader
 {
@@ -614,7 +614,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionAllowCustomReques
 }
 
 /// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionAllowCustomRequestHandling
 {
@@ -624,7 +624,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionAllowCustomReques
 }
 
 /// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionAllow
 {
@@ -633,7 +633,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionAllow
     public V1beta1WebACLSpecInitProviderDefaultActionAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomResponseResponseHeader
 {
@@ -647,7 +647,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomRespon
 }
 
 /// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomResponse
 {
@@ -665,7 +665,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomRespon
 }
 
 /// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionBlock
 {
@@ -675,7 +675,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionBlock
 }
 
 /// <summary>Action to perform if none of the rules contained in the WebACL match. See default_action below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultAction
 {
@@ -689,7 +689,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultAction
 }
 
 /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderVisibilityConfig
 {
@@ -718,7 +718,7 @@ public partial class V1beta1WebACLSpecInitProviderVisibilityConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProvider
 {
@@ -779,7 +779,7 @@ public partial class V1beta1WebACLSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLSpecManagementPoliciesEnum>))]
 public enum V1beta1WebACLSpecManagementPoliciesEnum
 {
@@ -803,7 +803,7 @@ public enum V1beta1WebACLSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1WebACLSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -819,7 +819,7 @@ public enum V1beta1WebACLSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebACLSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1WebACLSpecProviderConfigRefPolicyResolveEnum
 {
@@ -830,7 +830,7 @@ public enum V1beta1WebACLSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecProviderConfigRefPolicy
 {
@@ -858,7 +858,7 @@ public partial class V1beta1WebACLSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecProviderConfigRef
 {
@@ -877,7 +877,7 @@ public partial class V1beta1WebACLSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecWriteConnectionSecretToRef
 {
@@ -891,7 +891,7 @@ public partial class V1beta1WebACLSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WebACLSpec defines the desired state of WebACL</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpec
 {
@@ -959,7 +959,7 @@ public partial class V1beta1WebACLSpec
 }
 
 /// <summary>Customizes the request body that your protected Amazon API Gateway REST APIs forward to AWS WAF for inspection. Applicable only when scope is set to CLOUDFRONT. See api_gateway below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyApiGateway
 {
@@ -969,7 +969,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyAp
 }
 
 /// <summary>Customizes the request body that your protected Amazon App Runner services forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See app_runner_service below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyAppRunnerService
 {
@@ -979,7 +979,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyAp
 }
 
 /// <summary>Customizes the request body that your protected Amazon CloudFront distributions forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See cloudfront below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCloudfront
 {
@@ -989,7 +989,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCl
 }
 
 /// <summary>Customizes the request body that your protected Amazon Cognito user pools forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See cognito_user_pool below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCognitoUserPool
 {
@@ -999,7 +999,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyCo
 }
 
 /// <summary>Customizes the request body that your protected AWS Verfied Access instances forward to AWS WAF for inspection. Applicable only when scope is set to REGIONAL. See verified_access_instance below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyVerifiedAccessInstance
 {
@@ -1008,7 +1008,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBodyVe
     public string? DefaultSizeInspectionLimit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBody
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfigRequestBody
 }
 
 /// <summary>Specifies custom configurations for the associations between the web ACL and protected resources. See association_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderAssociationConfig
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta1WebACLStatusAtProviderAssociationConfig
 }
 
 /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderCaptchaConfigImmunityTimeProperty
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta1WebACLStatusAtProviderCaptchaConfigImmunityTimePrope
 }
 
 /// <summary>Specifies how AWS WAF should handle CAPTCHA evaluations on the ACL level (used by AWS Bot Control). See captcha_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderCaptchaConfig
 {
@@ -1064,7 +1064,7 @@ public partial class V1beta1WebACLStatusAtProviderCaptchaConfig
 }
 
 /// <summary>Defines custom immunity time. See immunity_time_property below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderChallengeConfigImmunityTimeProperty
 {
@@ -1074,7 +1074,7 @@ public partial class V1beta1WebACLStatusAtProviderChallengeConfigImmunityTimePro
 }
 
 /// <summary>Specifies how AWS WAF should handle Challenge evaluations on the ACL level (used by AWS Bot Control). See challenge_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderChallengeConfig
 {
@@ -1083,7 +1083,7 @@ public partial class V1beta1WebACLStatusAtProviderChallengeConfig
     public V1beta1WebACLStatusAtProviderChallengeConfigImmunityTimeProperty? ImmunityTimeProperty { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderCustomResponseBody
 {
@@ -1101,7 +1101,7 @@ public partial class V1beta1WebACLStatusAtProviderCustomResponseBody
 }
 
 /// <summary>Specifies the field type and optional keys to apply the protection behavior to. See field block below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtectionField
 {
@@ -1114,7 +1114,7 @@ public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtec
     public string? FieldType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtection
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtec
 }
 
 /// <summary>Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option. See data_protection_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDataProtectionConfig
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta1WebACLStatusAtProviderDataProtectionConfig
     public IList<V1beta1WebACLStatusAtProviderDataProtectionConfigDataProtection>? DataProtection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionAllowCustomRequestHandlingInsertHeader
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionAllowCustomReques
 }
 
 /// <summary>Defines custom handling for the web request. See custom_request_handling below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionAllowCustomRequestHandling
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionAllowCustomReques
 }
 
 /// <summary>Specifies that AWS WAF should allow requests by default. See allow below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionAllow
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionAllow
     public V1beta1WebACLStatusAtProviderDefaultActionAllowCustomRequestHandling? CustomRequestHandling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomResponseResponseHeader
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomRespon
 }
 
 /// <summary>Defines a custom response for the web request. See custom_response below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomResponse
 {
@@ -1210,7 +1210,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomRespon
 }
 
 /// <summary>Specifies that AWS WAF should block requests by default. See block below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionBlock
 {
@@ -1220,7 +1220,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionBlock
 }
 
 /// <summary>Action to perform if none of the rules contained in the WebACL match. See default_action below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultAction
 {
@@ -1234,7 +1234,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultAction
 }
 
 /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection. See visibility_config below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderVisibilityConfig
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta1WebACLStatusAtProviderVisibilityConfig
     public bool? SampledRequestsEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProvider
 {
@@ -1339,7 +1339,7 @@ public partial class V1beta1WebACLStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusConditions
 {
@@ -1382,7 +1382,7 @@ public partial class V1beta1WebACLStatusConditions
 }
 
 /// <summary>WebACLStatus defines the observed state of WebACL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatus
 {
@@ -1412,7 +1412,7 @@ public partial class V1beta1WebACLStatus
 }
 
 /// <summary>WebACL is the Schema for the WebACLs API. Creates a WAFv2 Web ACL resource. The &apos;rule&apos; field is not supported due to Kubernetes CRD size limitations with deeply nested fields. Please use the &apos;ruleJson&apos; field to define rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebACL : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WebACLSpec>, IStatus<V1beta1WebACLStatus?>
