@@ -26,7 +26,7 @@
   "src/Models/istio.io": "1.25.0",
   "src/Models/jetstack.io": "1.22.0",
   "src/Models/keda.sh": "1.17.0",
-  "src/Models/knative.dev": "1.30.0",
+  "src/Models/knative.dev": "1.31.0",
   "src/Models/kubevirt.io": "1.12.0",
   "src/Models/kyverno.io": "1.6.0",
   "src/Models/longhorn.io": "1.8.0",
