@@ -4816,6 +4816,14 @@ public partial class V1alpha1WorkerDeploymentSpecDeployment
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDrainingDeployment
+{
+    [JsonPropertyName("replicas")]
+    public int? Replicas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WorkerDeploymentSpecRolloutGateEncodingEnum>))]
 public enum V1alpha1WorkerDeploymentSpecRolloutGateEncodingEnum
 {
@@ -9687,6 +9695,12 @@ public partial class V1alpha1WorkerDeploymentSpec
 {
     [JsonPropertyName("deployment")]
     public V1alpha1WorkerDeploymentSpecDeployment? Deployment { get; set; }
+
+    [JsonPropertyName("deploymentLabels")]
+    public IDictionary<string, string>? DeploymentLabels { get; set; }
+
+    [JsonPropertyName("drainingDeployment")]
+    public V1alpha1WorkerDeploymentSpecDrainingDeployment? DrainingDeployment { get; set; }
 
     [JsonPropertyName("minReadySeconds")]
     public int? MinReadySeconds { get; set; }
