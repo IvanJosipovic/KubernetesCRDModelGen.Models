@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/temporal.io-v1.6.1...temporal.io-v1.7.0) (2026-10-28)
+
+
+### Features
+
+* Sync ([#215](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/215)) ([675b5f0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/675b5f0203ee3b2c840d2caaec011564b4514cb3))
+
 ## [1.6.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/temporal.io-v1.6.0...temporal.io-v1.6.1) (2026-10-27)
 
 
