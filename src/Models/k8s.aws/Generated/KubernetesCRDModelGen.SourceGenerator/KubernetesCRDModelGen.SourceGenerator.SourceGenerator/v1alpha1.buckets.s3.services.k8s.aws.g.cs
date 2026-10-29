@@ -1354,6 +1354,10 @@ public partial class V1alpha1BucketSpecNotificationTopicConfigurations
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpecNotification
 {
+    /// <summary>A container for specifying the configuration for Amazon EventBridge.</summary>
+    [JsonPropertyName("eventBridgeConfiguration")]
+    public IDictionary<string, string>? EventBridgeConfiguration { get; set; }
+
     [JsonPropertyName("lambdaFunctionConfigurations")]
     public IList<V1alpha1BucketSpecNotificationLambdaFunctionConfigurations>? LambdaFunctionConfigurations { get; set; }
 
