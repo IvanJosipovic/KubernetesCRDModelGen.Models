@@ -22,7 +22,7 @@
   "src/Models/upbound.io": "1.9.1",
   "src/Models/vault.upbound.io": "1.11.1",
   "src/Models/fluxcd.io": "1.17.1",
-  "src/Models/gateway.networking.k8s.io": "1.57.1",
+  "src/Models/gateway.networking.k8s.io": "1.58.0",
   "src/Models/istio.io": "1.25.1",
   "src/Models/jetstack.io": "1.22.1",
   "src/Models/keda.sh": "1.17.1",
