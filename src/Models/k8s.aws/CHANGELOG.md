@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.75.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/k8s.aws-v1.74.0...k8s.aws-v1.75.0) (2026-10-30)
+
+
+### Features
+
+* Sync ([#221](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/221)) ([eb24fdd](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/eb24fdda463b86686c8fae0f777b6cce625e0eaa))
+
 ## [1.74.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/k8s.aws-v1.73.0...k8s.aws-v1.74.0) (2026-10-29)
 
 
