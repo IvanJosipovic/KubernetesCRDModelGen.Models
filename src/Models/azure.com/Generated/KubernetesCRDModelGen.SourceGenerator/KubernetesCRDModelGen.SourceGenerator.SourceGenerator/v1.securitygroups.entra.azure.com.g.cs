@@ -37,6 +37,40 @@ public partial class V1SecurityGroupList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1SecurityGroup> Items { get; set; }
 }
 
+/// <summary>ObjectIDFromConfig: Reference to a configmap value containing the Entra Object ID.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1SecurityGroupSpecMembersObjectIDFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// SecurityGroupMemberReference is a reference to a directory object (user, service principal, or group) by its
+/// Entra Object ID.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1SecurityGroupSpecMembers
+{
+    /// <summary>ObjectID: The Entra Object ID (GUID) of the directory object.</summary>
+    [JsonPropertyName("objectID")]
+    public string? ObjectID { get; set; }
+
+    /// <summary>ObjectIDFromConfig: Reference to a configmap value containing the Entra Object ID.</summary>
+    [JsonPropertyName("objectIDFromConfig")]
+    public V1SecurityGroupSpecMembersObjectIDFromConfig? ObjectIDFromConfig { get; set; }
+}
+
 /// <summary>MembershipType: The membership type of the group.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SecurityGroupSpecMembershipTypeEnum>))]
@@ -44,12 +78,12 @@ public enum V1SecurityGroupSpecMembershipTypeEnum
 {
     [EnumMember(Value = "assigned"), JsonStringEnumMemberName("assigned")]
     Assigned,
-    [EnumMember(Value = "enabled"), JsonStringEnumMemberName("enabled")]
-    Enabled,
+    [EnumMember(Value = "dynamic"), JsonStringEnumMemberName("dynamic")]
+    Dynamic,
     [EnumMember(Value = "assignedm365"), JsonStringEnumMemberName("assignedm365")]
     Assignedm365,
-    [EnumMember(Value = "enabledm365"), JsonStringEnumMemberName("enabledm365")]
-    Enabledm365
+    [EnumMember(Value = "dynamicm365"), JsonStringEnumMemberName("dynamicm365")]
+    Dynamicm365
 }
 
 /// <summary>EntraID: The Entra ID of the group.</summary>
@@ -89,8 +123,9 @@ public partial class V1SecurityGroupSpecOperatorSpecConfigmaps
 
 /// <summary>
 /// CreationMode: Specifies how ASO will try to create the resource.
-/// Specify &quot;AlwaysCreate&quot; to always create a new security group when first reconciled.
-/// Or specify &quot;AdoptOrCreate&quot; to first try to adopt an existing security group with the same display name.
+/// &quot;AlwaysCreate&quot; to always create a new security group when first reconciled.
+/// &quot;AdoptOrCreate&quot; to first try to adopt an existing security group with the same display name.
+/// &quot;AdoptOnly&quot; to require an existing security group without creating one.
 /// If multiple security groups with the same display name are found, the resource condition will show an error.
 /// If not specified, defaults to &quot;AdoptOrCreate&quot;.
 /// </summary>
@@ -101,7 +136,9 @@ public enum V1SecurityGroupSpecOperatorSpecCreationModeEnum
     [EnumMember(Value = "AdoptOrCreate"), JsonStringEnumMemberName("AdoptOrCreate")]
     AdoptOrCreate,
     [EnumMember(Value = "AlwaysCreate"), JsonStringEnumMemberName("AlwaysCreate")]
-    AlwaysCreate
+    AlwaysCreate,
+    [EnumMember(Value = "AdoptOnly"), JsonStringEnumMemberName("AdoptOnly")]
+    AdoptOnly
 }
 
 /// <summary>OperatorSpec: The operator specific configuration for the resource.</summary>
@@ -115,13 +152,48 @@ public partial class V1SecurityGroupSpecOperatorSpec
 
     /// <summary>
     /// CreationMode: Specifies how ASO will try to create the resource.
-    /// Specify &quot;AlwaysCreate&quot; to always create a new security group when first reconciled.
-    /// Or specify &quot;AdoptOrCreate&quot; to first try to adopt an existing security group with the same display name.
+    /// &quot;AlwaysCreate&quot; to always create a new security group when first reconciled.
+    /// &quot;AdoptOrCreate&quot; to first try to adopt an existing security group with the same display name.
+    /// &quot;AdoptOnly&quot; to require an existing security group without creating one.
     /// If multiple security groups with the same display name are found, the resource condition will show an error.
     /// If not specified, defaults to &quot;AdoptOrCreate&quot;.
     /// </summary>
     [JsonPropertyName("creationMode")]
     public V1SecurityGroupSpecOperatorSpecCreationModeEnum? CreationMode { get; set; }
+}
+
+/// <summary>ObjectIDFromConfig: Reference to a configmap value containing the Entra Object ID.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1SecurityGroupSpecOwnersObjectIDFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// SecurityGroupMemberReference is a reference to a directory object (user, service principal, or group) by its
+/// Entra Object ID.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1SecurityGroupSpecOwners
+{
+    /// <summary>ObjectID: The Entra Object ID (GUID) of the directory object.</summary>
+    [JsonPropertyName("objectID")]
+    public string? ObjectID { get; set; }
+
+    /// <summary>ObjectIDFromConfig: Reference to a configmap value containing the Entra Object ID.</summary>
+    [JsonPropertyName("objectIDFromConfig")]
+    public V1SecurityGroupSpecOwnersObjectIDFromConfig? ObjectIDFromConfig { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -147,6 +219,14 @@ public partial class V1SecurityGroupSpec
     [JsonPropertyName("mailNickname")]
     public required string MailNickname { get; set; }
 
+    /// <summary>
+    /// Members: Directory objects (users, service principals, groups) to assign as members of the security group.
+    /// Applied during the initial POST to Microsoft Graph via `members@odata.bind` and then used as desired member state
+    /// for later reconciliation.
+    /// </summary>
+    [JsonPropertyName("members")]
+    public IList<V1SecurityGroupSpecMembers>? Members { get; set; }
+
     /// <summary>MembershipType: The membership type of the group.</summary>
     [JsonPropertyName("membershipType")]
     public V1SecurityGroupSpecMembershipTypeEnum? MembershipType { get; set; }
@@ -154,6 +234,16 @@ public partial class V1SecurityGroupSpec
     /// <summary>OperatorSpec: The operator specific configuration for the resource.</summary>
     [JsonPropertyName("operatorSpec")]
     public V1SecurityGroupSpecOperatorSpec? OperatorSpec { get; set; }
+
+    /// <summary>
+    /// Owners: Directory objects (users, service principals) to assign as owners of the security
+    /// group. Applied during the initial POST to Microsoft Graph via `owners@odata.bind` and then used as desired owner
+    /// state for later reconciliation.
+    /// Required when ASO authenticates with an app-only token and the calling principal lacks Group.ReadWrite.All —
+    /// otherwise the created group has no owners and is unmanageable.
+    /// </summary>
+    [JsonPropertyName("owners")]
+    public IList<V1SecurityGroupSpecOwners>? Owners { get; set; }
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
@@ -225,6 +315,14 @@ public partial class V1SecurityGroupStatus
     /// <summary>MailNickname: The email address of the group.</summary>
     [JsonPropertyName("groupEmailAddress")]
     public required string GroupEmailAddress { get; set; }
+
+    /// <summary>Members: Directory objects (users, service principals, groups) assigned as members of the security group.</summary>
+    [JsonPropertyName("members")]
+    public IList<string>? Members { get; set; }
+
+    /// <summary>Owners: Directory objects (users, service principals, groups) assigned as owners of the security group</summary>
+    [JsonPropertyName("owners")]
+    public IList<string>? Owners { get; set; }
 }
 
 /// <summary>SecurityGroup is an Entra Security Group.</summary>

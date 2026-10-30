@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.21.1
+    app.kubernetes.io/version: v2.22.0
   name: watchers.databasewatcher.azure.com
 spec:
   conversion:
@@ -242,6 +242,12 @@ spec:
                   OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
                   passed directly to Azure
                 properties:
+                  autoStart:
+                    description: |-
+                      AutoStart: Whether the operator starts this watcher once it has a target. ARM creates every watcher stopped and the
+                      operator starts it by default; set this to false to leave starting and stopping it to you, so that a watcher stopped
+                      deliberately is not started again.
+                    type: boolean
                   configMapExpressions:
                     description: 'ConfigMapExpressions: configures where to place operator written dynamic ConfigMaps (created with CEL expressions).'
                     items:
@@ -740,6 +746,8 @@ spec:
                       PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
                       resources, allowing for full fidelity round trip conversions
                     type: object
+                  autoStart:
+                    type: boolean
                   configMapExpressions:
                     items:
                       description: |-

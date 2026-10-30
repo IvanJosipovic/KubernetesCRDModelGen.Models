@@ -381,6 +381,9 @@ public partial class V20241001previewstorageWatcherSpecOperatorSpec
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
+    [JsonPropertyName("autoStart")]
+    public bool? AutoStart { get; set; }
+
     [JsonPropertyName("configMapExpressions")]
     public IList<V20241001previewstorageWatcherSpecOperatorSpecConfigMapExpressions>? ConfigMapExpressions { get; set; }
 

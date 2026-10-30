@@ -103,8 +103,9 @@ public partial class V1ApplicationSpecOperatorSpecConfigmaps
 
 /// <summary>
 /// CreationMode: Specifies how ASO will try to create the resource.
-/// Specify &quot;AlwaysCreate&quot; to always create a new application when first reconciled.
-/// Or specify &quot;AdoptOrCreate&quot; to first try to adopt an existing application with the same display name.
+/// &quot;AlwaysCreate&quot; to always create a new application when first reconciled.
+/// &quot;AdoptOrCreate&quot; to first try to adopt an existing application with the same display name.
+/// &quot;AdoptOnly&quot; to require an existing application without creating one.
 /// If multiple applications with the same display name are found, the resource ready condition will show an error.
 /// If not specified, defaults to &quot;AdoptOrCreate&quot;.
 /// </summary>
@@ -115,7 +116,9 @@ public enum V1ApplicationSpecOperatorSpecCreationModeEnum
     [EnumMember(Value = "AdoptOrCreate"), JsonStringEnumMemberName("AdoptOrCreate")]
     AdoptOrCreate,
     [EnumMember(Value = "AlwaysCreate"), JsonStringEnumMemberName("AlwaysCreate")]
-    AlwaysCreate
+    AlwaysCreate,
+    [EnumMember(Value = "AdoptOnly"), JsonStringEnumMemberName("AdoptOnly")]
+    AdoptOnly
 }
 
 /// <summary>OperatorSpec: The operator specific configuration for the resource.</summary>
@@ -129,8 +132,9 @@ public partial class V1ApplicationSpecOperatorSpec
 
     /// <summary>
     /// CreationMode: Specifies how ASO will try to create the resource.
-    /// Specify &quot;AlwaysCreate&quot; to always create a new application when first reconciled.
-    /// Or specify &quot;AdoptOrCreate&quot; to first try to adopt an existing application with the same display name.
+    /// &quot;AlwaysCreate&quot; to always create a new application when first reconciled.
+    /// &quot;AdoptOrCreate&quot; to first try to adopt an existing application with the same display name.
+    /// &quot;AdoptOnly&quot; to require an existing application without creating one.
     /// If multiple applications with the same display name are found, the resource ready condition will show an error.
     /// If not specified, defaults to &quot;AdoptOrCreate&quot;.
     /// </summary>

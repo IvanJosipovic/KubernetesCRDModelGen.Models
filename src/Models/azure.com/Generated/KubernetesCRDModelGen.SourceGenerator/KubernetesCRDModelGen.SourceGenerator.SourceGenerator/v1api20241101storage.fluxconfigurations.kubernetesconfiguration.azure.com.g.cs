@@ -1839,6 +1839,9 @@ public partial class V1api20241101storageFluxConfigurationStatus
     [JsonPropertyName("ociRepository")]
     public V1api20241101storageFluxConfigurationStatusOciRepository? OciRepository { get; set; }
 
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
     [JsonPropertyName("reconciliationWaitDuration")]
     public string? ReconciliationWaitDuration { get; set; }
 
