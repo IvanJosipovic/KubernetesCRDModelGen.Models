@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.21.1
+    app.kubernetes.io/version: v2.22.0
   name: workspaces.machinelearningservices.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2021-07-01/machineLearningServices.json
+          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/stable/2021-07-01/machineLearningServices.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
         properties:
           apiVersion:
@@ -1029,7 +1029,7 @@ spec:
         description: |-
           Storage version of v1api20210701.Workspace
           Generator information:
-          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2021-07-01/machineLearningServices.json
+          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/stable/2021-07-01/machineLearningServices.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
         properties:
           apiVersion:
@@ -2102,7 +2102,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/workspaceRP.json
+          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/stable/2024-04-01/workspaceRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
         properties:
           apiVersion:
@@ -3495,7 +3495,7 @@ spec:
         description: |-
           Storage version of v1api20240401.Workspace
           Generator information:
-          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/workspaceRP.json
+          - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/stable/2024-04-01/workspaceRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
         properties:
           apiVersion:

@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.communication.azure.com;
 /// <summary>
 /// Storage version of v20230401.CommunicationService
 /// Generator information:
-/// - Generated from: /communication/resource-manager/Microsoft.Communication/stable/2023-04-01/CommunicationServices.json
+/// - Generated from: /communication/resource-manager/Microsoft.Communication/Communication/stable/2023-04-01/CommunicationServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Communication/communicationServices/{communicationServiceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -732,7 +732,7 @@ public partial class V20230401storageCommunicationServiceStatus
 /// <summary>
 /// Storage version of v20230401.CommunicationService
 /// Generator information:
-/// - Generated from: /communication/resource-manager/Microsoft.Communication/stable/2023-04-01/CommunicationServices.json
+/// - Generated from: /communication/resource-manager/Microsoft.Communication/Communication/stable/2023-04-01/CommunicationServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Communication/communicationServices/{communicationServiceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]

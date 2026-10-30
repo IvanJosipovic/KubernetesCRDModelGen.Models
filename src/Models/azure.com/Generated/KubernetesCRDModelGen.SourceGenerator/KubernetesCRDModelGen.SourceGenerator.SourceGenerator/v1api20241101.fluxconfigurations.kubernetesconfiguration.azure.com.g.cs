@@ -1587,6 +1587,10 @@ public partial class V1api20241101FluxConfigurationStatus
     [JsonPropertyName("ociRepository")]
     public V1api20241101FluxConfigurationStatusOciRepository? OciRepository { get; set; }
 
+    /// <summary>ProvisioningState: Status of the creation of the fluxConfiguration.</summary>
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
     /// <summary>ReconciliationWaitDuration: Maximum duration to wait for flux configuration reconciliation. E.g PT1H, PT5M, P1D</summary>
     [JsonPropertyName("reconciliationWaitDuration")]
     public string? ReconciliationWaitDuration { get; set; }

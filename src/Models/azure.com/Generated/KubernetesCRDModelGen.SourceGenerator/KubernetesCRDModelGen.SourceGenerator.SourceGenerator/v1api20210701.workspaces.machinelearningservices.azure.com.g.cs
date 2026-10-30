@@ -12,7 +12,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.machinelearningservices.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2021-07-01/machineLearningServices.json
+/// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/stable/2021-07-01/machineLearningServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1443,7 +1443,7 @@ public partial class V1api20210701WorkspaceStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2021-07-01/machineLearningServices.json
+/// - Generated from: /machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/stable/2021-07-01/machineLearningServices.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]

@@ -360,6 +360,14 @@ public partial class V20241001previewWatcherSpecOperatorSpecSecretExpressions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewWatcherSpecOperatorSpec
 {
+    /// <summary>
+    /// AutoStart: Whether the operator starts this watcher once it has a target. ARM creates every watcher stopped and the
+    /// operator starts it by default; set this to false to leave starting and stopping it to you, so that a watcher stopped
+    /// deliberately is not started again.
+    /// </summary>
+    [JsonPropertyName("autoStart")]
+    public bool? AutoStart { get; set; }
+
     /// <summary>ConfigMapExpressions: configures where to place operator written dynamic ConfigMaps (created with CEL expressions).</summary>
     [JsonPropertyName("configMapExpressions")]
     public IList<V20241001previewWatcherSpecOperatorSpecConfigMapExpressions>? ConfigMapExpressions { get; set; }
