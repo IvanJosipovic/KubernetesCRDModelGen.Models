@@ -73,6 +73,7 @@ public partial class V1BackendTLSPolicySpecTargetRefs
     /// resources, SectionName is interpreted as the following:
     /// 
     /// * Gateway: Listener name
+    /// * ListenerSet: Listener name
     /// * HTTPRoute: HTTPRouteRule name
     /// * Service: Port name
     /// 

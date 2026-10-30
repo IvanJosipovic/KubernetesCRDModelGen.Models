@@ -2887,6 +2887,89 @@ public partial class V1beta1HTTPRouteSpecRulesMatches
 }
 
 /// <summary>
+/// Retry defines the configuration for when to retry an HTTP request.
+/// 
+/// A request is retried when attempts is greater than 0 and the backend did
+/// not process it. This is the case when the connection could not be
+/// established, or when the backend explicitly rejected the request, either
+/// before processing it or with one of the configured status codes.
+/// 
+/// Support: Extended
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HTTPRouteSpecRulesRetry
+{
+    /// <summary>
+    /// Attempts specifies the maximum number of times an individual request
+    /// from the Gateway to a backend should be retried in addition to the
+    /// initial request.
+    /// 
+    /// If the maximum number of retries has been attempted without a successful
+    /// response from the backend, the Gateway MUST return an error.
+    /// 
+    /// An explicit zero value MUST disable retries.
+    /// 
+    /// Support: Extended
+    /// </summary>
+    [JsonPropertyName("attempts")]
+    public int? Attempts { get; set; }
+
+    /// <summary>
+    /// Backoff specifies the base interval for a backoff strategy between
+    /// retry attempts and is represented in Gateway API Duration formatting.
+    /// The duration a Gateway waits before a retry attempt is determined
+    /// by the base interval and the implementation&apos;s retry strategy.
+    /// 
+    /// Implementations MAY add random jitter and MAY cap the delay at an
+    /// implementation-defined maximum, which SHOULD NOT be less than the base
+    /// interval. The precise backoff curve and jitter calculation are
+    /// implementation-specific and not exposed in the Gateway API specification.
+    /// Implementations typically apply exponential backoff with jitter to
+    /// mitigate thundering-herd issues.
+    /// 
+    /// If a Request timeout (`rules[].timeouts.request`) is configured on the
+    /// route, the entire duration of the initial request and any retry attempts
+    /// MUST not exceed the Request timeout duration. If any retry attempts are
+    /// still in progress when the Request timeout duration has been reached,
+    /// these SHOULD be canceled if possible and the Gateway MUST immediately
+    /// return a timeout error.
+    /// 
+    /// If a BackendRequest timeout (`rules[].timeouts.backendRequest`) is
+    /// configured on the route, any retry attempts which reach the configured
+    /// BackendRequest timeout duration without a response SHOULD be canceled if
+    /// possible and the Gateway SHOULD schedule the next retry attempt according
+    /// to the configured backoff.
+    /// 
+    /// If a BackendRequest timeout is _not_ configured on the route, retry
+    /// attempts MAY time out after an implementation default duration, or MAY
+    /// remain pending until a configured Request timeout or implementation
+    /// default duration for total request time is reached.
+    /// 
+    /// When this field is unspecified, the backoff strategy and base interval
+    /// are implementation-specific.
+    /// 
+    /// Implementations which retry immediately with no backoff MUST NOT advertise
+    /// support for this field and MUST set the Accepted Condition for the Route
+    /// to `status: False` with a Reason of `UnsupportedValue` when this field is
+    /// set.
+    /// 
+    /// Support: Implementation-specific
+    /// </summary>
+    [JsonPropertyName("backoff")]
+    public string? Backoff { get; set; }
+
+    /// <summary>
+    /// Codes defines the HTTP response status codes for which a backend request
+    /// should be retried.
+    /// 
+    /// Support: Extended
+    /// </summary>
+    [JsonPropertyName("codes")]
+    public IList<int>? Codes { get; set; }
+}
+
+/// <summary>
 /// Timeouts defines the timeouts that can be configured for an HTTP request.
 /// 
 /// Support: Extended
@@ -3107,6 +3190,19 @@ public partial class V1beta1HTTPRouteSpecRules
     public string? Name { get; set; }
 
     /// <summary>
+    /// Retry defines the configuration for when to retry an HTTP request.
+    /// 
+    /// A request is retried when attempts is greater than 0 and the backend did
+    /// not process it. This is the case when the connection could not be
+    /// established, or when the backend explicitly rejected the request, either
+    /// before processing it or with one of the configured status codes.
+    /// 
+    /// Support: Extended
+    /// </summary>
+    [JsonPropertyName("retry")]
+    public V1beta1HTTPRouteSpecRulesRetry? Retry { get; set; }
+
+    /// <summary>
     /// Timeouts defines the timeouts that can be configured for an HTTP request.
     /// 
     /// Support: Extended
@@ -3170,8 +3266,16 @@ public partial class V1beta1HTTPRouteSpec
     /// * Characters in a matching non-wildcard hostname.
     /// * Characters in a matching hostname.
     /// 
-    /// If ties exist across multiple Routes, the matching precedence rules for
-    /// HTTPRouteMatches takes over.
+    /// When multiple HTTPRoutes attach to the same Listener and yield identical
+    /// Listener/Route intersected hostnames, implementations SHOULD evaluate
+    /// precedence using the original hostnames configured on the Route, not the
+    /// calculated Listener/Route hostname intersection.
+    /// 
+    /// Resolving Route precedence using original Route hostname specificity is an
+    /// Extended feature. Implementations that support this behavior SHOULD claim
+    /// support for the `GatewayRouteHostnameIntersectionPrecedence` feature.
+    /// Implementations that do not support this feature MAY evaluate precedence
+    /// using the calculated Listener/Route hostname intersection.
     /// 
     /// Support: Core
     /// </summary>

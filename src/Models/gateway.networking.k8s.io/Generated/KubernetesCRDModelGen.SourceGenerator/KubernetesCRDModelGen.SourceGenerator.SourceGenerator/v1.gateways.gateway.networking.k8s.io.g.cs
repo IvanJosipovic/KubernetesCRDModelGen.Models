@@ -1775,6 +1775,7 @@ public partial class V1GatewayStatus
     /// * &quot;Accepted&quot;
     /// * &quot;Programmed&quot;
     /// * &quot;Ready&quot;
+    /// * &quot;AddressesAssigned&quot;
     /// </summary>
     [JsonPropertyName("conditions")]
     public IList<V1GatewayStatusConditions>? Conditions { get; set; }
