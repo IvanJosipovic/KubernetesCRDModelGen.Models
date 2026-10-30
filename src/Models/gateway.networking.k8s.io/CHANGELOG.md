@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.58.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/gateway.networking.k8s.io-v1.57.1...gateway.networking.k8s.io-v1.58.0) (2026-10-30)
+
+
+### Features
+
+* Sync ([#219](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/219)) ([90942c4](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/90942c4d4e32f41932ce1bf8f84878cb534b197a))
+
 ## [1.57.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/gateway.networking.k8s.io-v1.57.0...gateway.networking.k8s.io-v1.57.1) (2026-10-27)
 
 
