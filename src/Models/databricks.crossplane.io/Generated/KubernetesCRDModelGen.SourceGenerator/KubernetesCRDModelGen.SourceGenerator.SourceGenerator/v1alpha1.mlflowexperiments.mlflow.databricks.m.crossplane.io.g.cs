@@ -68,12 +68,19 @@ public partial class V1alpha1MlflowExperimentSpecForProviderTags
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation
 {
+    /// <summary>Name of the Unity Catalog catalog.</summary>
     [JsonPropertyName("catalog")]
     public string? Catalog { get; set; }
 
+    /// <summary>(Computed) The trace-table prefix actually in effect: table_prefix if it was set on creation, otherwise the server-generated default.</summary>
+    [JsonPropertyName("effectiveTablePrefix")]
+    public string? EffectiveTablePrefix { get; set; }
+
+    /// <summary>Name of the Unity Catalog schema within catalog.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
+    /// <summary>Prefix for the generated trace tables (named {catalog}.{schema}.{table_prefix}_otel_*). If omitted, the server generates a default prefix derived from the experiment ID; the field then stays empty and the resolved value is available in effective_table_prefix.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
@@ -83,6 +90,7 @@ public partial class V1alpha1MlflowExperimentSpecForProviderTraceLocationUcTrace
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentSpecForProviderTraceLocation
 {
+    /// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
     [JsonPropertyName("ucTraceLocation")]
     public IList<V1alpha1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation>? UcTraceLocation { get; set; }
 }
@@ -124,6 +132,7 @@ public partial class V1alpha1MlflowExperimentSpecForProvider
     [JsonPropertyName("tags")]
     public IList<V1alpha1MlflowExperimentSpecForProviderTags>? Tags { get; set; }
 
+    /// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
     [JsonPropertyName("traceLocation")]
     public IList<V1alpha1MlflowExperimentSpecForProviderTraceLocation>? TraceLocation { get; set; }
 }
@@ -155,12 +164,19 @@ public partial class V1alpha1MlflowExperimentSpecInitProviderTags
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation
 {
+    /// <summary>Name of the Unity Catalog catalog.</summary>
     [JsonPropertyName("catalog")]
     public string? Catalog { get; set; }
 
+    /// <summary>(Computed) The trace-table prefix actually in effect: table_prefix if it was set on creation, otherwise the server-generated default.</summary>
+    [JsonPropertyName("effectiveTablePrefix")]
+    public string? EffectiveTablePrefix { get; set; }
+
+    /// <summary>Name of the Unity Catalog schema within catalog.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
+    /// <summary>Prefix for the generated trace tables (named {catalog}.{schema}.{table_prefix}_otel_*). If omitted, the server generates a default prefix derived from the experiment ID; the field then stays empty and the resolved value is available in effective_table_prefix.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
@@ -170,6 +186,7 @@ public partial class V1alpha1MlflowExperimentSpecInitProviderTraceLocationUcTrac
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentSpecInitProviderTraceLocation
 {
+    /// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
     [JsonPropertyName("ucTraceLocation")]
     public IList<V1alpha1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation>? UcTraceLocation { get; set; }
 }
@@ -223,6 +240,7 @@ public partial class V1alpha1MlflowExperimentSpecInitProvider
     [JsonPropertyName("tags")]
     public IList<V1alpha1MlflowExperimentSpecInitProviderTags>? Tags { get; set; }
 
+    /// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
     [JsonPropertyName("traceLocation")]
     public IList<V1alpha1MlflowExperimentSpecInitProviderTraceLocation>? TraceLocation { get; set; }
 }
@@ -365,12 +383,19 @@ public partial class V1alpha1MlflowExperimentStatusAtProviderTags
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation
 {
+    /// <summary>Name of the Unity Catalog catalog.</summary>
     [JsonPropertyName("catalog")]
     public string? Catalog { get; set; }
 
+    /// <summary>(Computed) The trace-table prefix actually in effect: table_prefix if it was set on creation, otherwise the server-generated default.</summary>
+    [JsonPropertyName("effectiveTablePrefix")]
+    public string? EffectiveTablePrefix { get; set; }
+
+    /// <summary>Name of the Unity Catalog schema within catalog.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
+    /// <summary>Prefix for the generated trace tables (named {catalog}.{schema}.{table_prefix}_otel_*). If omitted, the server generates a default prefix derived from the experiment ID; the field then stays empty and the resolved value is available in effective_table_prefix.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
@@ -380,6 +405,7 @@ public partial class V1alpha1MlflowExperimentStatusAtProviderTraceLocationUcTrac
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentStatusAtProviderTraceLocation
 {
+    /// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
     [JsonPropertyName("ucTraceLocation")]
     public IList<V1alpha1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation>? UcTraceLocation { get; set; }
 }
@@ -425,6 +451,7 @@ public partial class V1alpha1MlflowExperimentStatusAtProvider
     [JsonPropertyName("tags")]
     public IList<V1alpha1MlflowExperimentStatusAtProviderTags>? Tags { get; set; }
 
+    /// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
     [JsonPropertyName("traceLocation")]
     public IList<V1alpha1MlflowExperimentStatusAtProviderTraceLocation>? TraceLocation { get; set; }
 }

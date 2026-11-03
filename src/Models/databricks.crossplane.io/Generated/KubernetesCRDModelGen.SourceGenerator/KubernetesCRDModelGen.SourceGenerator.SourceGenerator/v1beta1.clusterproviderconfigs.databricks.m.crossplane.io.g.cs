@@ -84,6 +84,33 @@ public partial class V1beta1ClusterProviderConfigSpecCredentialsSecretRef
     public required string Namespace { get; set; }
 }
 
+/// <summary>
+/// ServiceAccountRef selects the service account the provider requests
+/// tokens for when Source is OIDCTokenRequest.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterProviderConfigSpecCredentialsServiceAccountRef
+{
+    /// <summary>
+    /// Audiences requested on the token besides the one the exchange requires
+    /// (api://AzureADTokenExchange for AzureAD).
+    /// </summary>
+    [JsonPropertyName("audiences")]
+    public IList<string>? Audiences { get; set; }
+
+    /// <summary>Name of the service account.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// Namespace of the service account. Required on a ClusterProviderConfig;
+    /// on a ProviderConfig it defaults to, and must be, its own namespace.
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
 /// <summary>Source of the provider credentials.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterProviderConfigSpecCredentialsSourceEnum>))]
@@ -102,7 +129,83 @@ public enum V1beta1ClusterProviderConfigSpecCredentialsSourceEnum
     [EnumMember(Value = "Upbound"), JsonStringEnumMemberName("Upbound")]
     Upbound,
     [EnumMember(Value = "Filesystem"), JsonStringEnumMemberName("Filesystem")]
-    Filesystem
+    Filesystem,
+    [EnumMember(Value = "OIDCTokenRequest"), JsonStringEnumMemberName("OIDCTokenRequest")]
+    OIDCTokenRequest
+}
+
+/// <summary>
+/// AuthorityHost of the Entra ID token endpoint, with a trailing slash, for
+/// the Azure public, Government or China cloud. Defaults to
+/// https://login.microsoftonline.com/.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeAzureADAuthorityHostEnum>))]
+public enum V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeAzureADAuthorityHostEnum
+{
+    [EnumMember(Value = "https://login.microsoftonline.com/"), JsonStringEnumMemberName("https://login.microsoftonline.com/")]
+    HttpsLoginMicrosoftonlineCom,
+    [EnumMember(Value = "https://login.microsoftonline.us/"), JsonStringEnumMemberName("https://login.microsoftonline.us/")]
+    HttpsLoginMicrosoftonlineUs,
+    [EnumMember(Value = "https://login.chinacloudapi.cn/"), JsonStringEnumMemberName("https://login.chinacloudapi.cn/")]
+    HttpsLoginChinacloudapiCn,
+    [EnumMember(Value = "https://login.partner.microsoftonline.cn/"), JsonStringEnumMemberName("https://login.partner.microsoftonline.cn/")]
+    HttpsLoginPartnerMicrosoftonlineCn
+}
+
+/// <summary>AzureAD holds settings for the AzureAD exchange.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeAzureAD
+{
+    /// <summary>
+    /// AuthorityHost of the Entra ID token endpoint, with a trailing slash, for
+    /// the Azure public, Government or China cloud. Defaults to
+    /// https://login.microsoftonline.com/.
+    /// </summary>
+    [JsonPropertyName("authorityHost")]
+    public V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeAzureADAuthorityHostEnum? AuthorityHost { get; set; }
+
+    /// <summary>
+    /// ClientID of the managed identity (or app registration) whose federated
+    /// credential trusts the service account, as a GUID. Defaults to the
+    /// service account&apos;s azure.workload.identity/client-id annotation.
+    /// </summary>
+    [JsonPropertyName("clientID")]
+    public string? ClientID { get; set; }
+
+    /// <summary>
+    /// TenantID of the identity, as a GUID. Defaults to the service account&apos;s
+    /// azure.workload.identity/tenant-id annotation.
+    /// </summary>
+    [JsonPropertyName("tenantID")]
+    public string? TenantID { get; set; }
+}
+
+/// <summary>Type of the exchange. Defaults to AzureAD.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeTypeEnum>))]
+public enum V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeTypeEnum
+{
+    [EnumMember(Value = "AzureAD"), JsonStringEnumMemberName("AzureAD")]
+    AzureAD
+}
+
+/// <summary>
+/// TokenExchange configures how the service account&apos;s token is exchanged
+/// for an access token when Source is OIDCTokenRequest. Defaults to AzureAD.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterProviderConfigSpecCredentialsTokenExchange
+{
+    /// <summary>AzureAD holds settings for the AzureAD exchange.</summary>
+    [JsonPropertyName("azureAD")]
+    public V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeAzureAD? AzureAD { get; set; }
+
+    /// <summary>Type of the exchange. Defaults to AzureAD.</summary>
+    [JsonPropertyName("type")]
+    public V1beta1ClusterProviderConfigSpecCredentialsTokenExchangeTypeEnum? Type { get; set; }
 }
 
 /// <summary>Credentials required to authenticate to this provider.</summary>
@@ -131,9 +234,23 @@ public partial class V1beta1ClusterProviderConfigSpecCredentials
     [JsonPropertyName("secretRef")]
     public V1beta1ClusterProviderConfigSpecCredentialsSecretRef? SecretRef { get; set; }
 
+    /// <summary>
+    /// ServiceAccountRef selects the service account the provider requests
+    /// tokens for when Source is OIDCTokenRequest.
+    /// </summary>
+    [JsonPropertyName("serviceAccountRef")]
+    public V1beta1ClusterProviderConfigSpecCredentialsServiceAccountRef? ServiceAccountRef { get; set; }
+
     /// <summary>Source of the provider credentials.</summary>
     [JsonPropertyName("source")]
     public required V1beta1ClusterProviderConfigSpecCredentialsSourceEnum Source { get; set; }
+
+    /// <summary>
+    /// TokenExchange configures how the service account&apos;s token is exchanged
+    /// for an access token when Source is OIDCTokenRequest. Defaults to AzureAD.
+    /// </summary>
+    [JsonPropertyName("tokenExchange")]
+    public V1beta1ClusterProviderConfigSpecCredentialsTokenExchange? TokenExchange { get; set; }
 }
 
 /// <summary>
@@ -172,11 +289,19 @@ public partial class V1beta1ClusterProviderConfigSpecReconciliationPolicy
     public V1beta1ClusterProviderConfigSpecReconciliationPolicyExponentialFailureRateLimiter? ExponentialFailureRateLimiter { get; set; }
 }
 
-/// <summary>A ProviderConfigSpec defines the desired state of a ProviderConfig.</summary>
+/// <summary>A ProviderConfigSpec defines the desired state of a ClusterProviderConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterProviderConfigSpec
 {
+    /// <summary>
+    /// AccountID is the Databricks account ID (a GUID) for an accounts console
+    /// host, e.g. https://accounts.azuredatabricks.net. Used when
+    /// Credentials.Source is OIDCTokenRequest; leave unset for a workspace host.
+    /// </summary>
+    [JsonPropertyName("accountID")]
+    public string? AccountID { get; set; }
+
     /// <summary>
     /// ClientID is the user-assigned managed identity&apos;s ID
     /// when Credentials.Source is `InjectedIdentity`. If unset and
@@ -196,6 +321,16 @@ public partial class V1beta1ClusterProviderConfigSpec
     /// </summary>
     [JsonPropertyName("environment")]
     public string? Environment { get; set; }
+
+    /// <summary>
+    /// Host is the Databricks workspace or accounts console URL the provider
+    /// calls with its access token. Required when Credentials.Source is
+    /// OIDCTokenRequest. With tokenExchange.type AzureAD (the default), it must
+    /// be an https URL on an Azure Databricks domain (azuredatabricks.net,
+    /// databricks.azure.us or databricks.azure.cn), with no port or path.
+    /// </summary>
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
 
     /// <summary>
     /// MSIEndpoint is the optional path to a custom endpoint for
@@ -315,7 +450,7 @@ public partial class V1beta1ClusterProviderConfig : IKubernetesObject<V1ObjectMe
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>A ProviderConfigSpec defines the desired state of a ProviderConfig.</summary>
+    /// <summary>A ProviderConfigSpec defines the desired state of a ClusterProviderConfig.</summary>
     [JsonPropertyName("spec")]
     public required V1beta1ClusterProviderConfigSpec Spec { get; set; }
 

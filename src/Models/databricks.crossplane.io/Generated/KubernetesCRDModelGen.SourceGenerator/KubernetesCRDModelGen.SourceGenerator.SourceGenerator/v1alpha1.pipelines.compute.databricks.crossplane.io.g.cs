@@ -680,6 +680,15 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsRe
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
 {
     [JsonPropertyName("includeConfluenceSpaces")]
@@ -806,6 +815,51 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -828,13 +882,118 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -862,13 +1021,73 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions>? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -896,6 +1115,48 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("valueTransformer")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer>? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -989,6 +1250,42 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1137,6 +1434,9 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions>? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions>? ConfluenceOptions { get; set; }
 
@@ -1152,11 +1452,23 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("kafkaOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions>? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions>? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions>? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions>? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions>? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions>? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions>? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions>? SharepointOptions { get; set; }
@@ -1169,6 +1481,157 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("zendeskSupportOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions>? ZendeskSupportOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms
+{
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions>? AvroOptions { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptions
+{
+    [JsonPropertyName("fanoutBy")]
+    public string? FanoutBy { get; set; }
+
+    [JsonPropertyName("transforms")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms>? Transforms { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1289,6 +1752,9 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("destinationSchema")]
     public string? DestinationSchema { get; set; }
 
+    [JsonPropertyName("fanoutOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptions>? FanoutOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("sourceCatalog")]
     public string? SourceCatalog { get; set; }
@@ -1300,6 +1766,15 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSc
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsSchemaTableConfiguration>? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1431,6 +1906,51 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTa
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -1453,13 +1973,118 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTa
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1487,13 +2112,73 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTa
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions>? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1521,6 +2206,48 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTa
 
     [JsonPropertyName("valueTransformer")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer>? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1614,6 +2341,42 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTa
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1762,6 +2525,9 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTa
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions>? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions>? ConfluenceOptions { get; set; }
 
@@ -1777,11 +2543,23 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTa
     [JsonPropertyName("kafkaOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions>? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions>? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions>? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions>? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions>? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions>? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions>? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions>? SharepointOptions { get; set; }
@@ -1952,6 +2730,15 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionObjects
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
+{
+    [JsonPropertyName("configs")]
+    public IDictionary<string, string>? Configs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig
 {
     /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
@@ -2000,6 +2787,9 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionSourceCon
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderIngestionDefinitionSourceConfigurations
 {
+    [JsonPropertyName("apiSourceConnectorConfig")]
+    public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig>? ApiSourceConnectorConfig { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsCatalog>? Catalog { get; set; }
@@ -2433,6 +3223,10 @@ public partial class V1alpha1PipelineSpecForProviderRestartWindow
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderRunAs
 {
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("groupName")]
+    public string? GroupName { get; set; }
+
     /// <summary>The application ID of an active service principal. Setting this field requires the servicePrincipal/user role.</summary>
     [JsonPropertyName("servicePrincipalName")]
     public string? ServicePrincipalName { get; set; }
@@ -2564,6 +3358,9 @@ public partial class V1alpha1PipelineSpecForProvider
 
     [JsonPropertyName("notification")]
     public IList<V1alpha1PipelineSpecForProviderNotification>? Notification { get; set; }
+
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>A flag indicating whether to use Photon engine. The default value is false.</summary>
     [JsonPropertyName("photon")]
@@ -3243,6 +4040,15 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsR
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
 {
     [JsonPropertyName("includeConfluenceSpaces")]
@@ -3369,6 +4175,51 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -3391,13 +4242,118 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3425,13 +4381,73 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions>? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3459,6 +4475,48 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
 
     [JsonPropertyName("valueTransformer")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer>? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3552,6 +4610,42 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3700,6 +4794,9 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions>? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions>? ConfluenceOptions { get; set; }
 
@@ -3715,11 +4812,23 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
     [JsonPropertyName("kafkaOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions>? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions>? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions>? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions>? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions>? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions>? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions>? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions>? SharepointOptions { get; set; }
@@ -3732,6 +4841,157 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
 
     [JsonPropertyName("zendeskSupportOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions>? ZendeskSupportOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms
+{
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions>? AvroOptions { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptions
+{
+    [JsonPropertyName("fanoutBy")]
+    public string? FanoutBy { get; set; }
+
+    [JsonPropertyName("transforms")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms>? Transforms { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3852,6 +5112,9 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
     [JsonPropertyName("destinationSchema")]
     public string? DestinationSchema { get; set; }
 
+    [JsonPropertyName("fanoutOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptions>? FanoutOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("sourceCatalog")]
     public string? SourceCatalog { get; set; }
@@ -3863,6 +5126,15 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsS
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaTableConfiguration>? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3994,6 +5266,51 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsT
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -4016,13 +5333,118 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsT
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -4050,13 +5472,73 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsT
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions>? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -4084,6 +5566,48 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsT
 
     [JsonPropertyName("valueTransformer")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer>? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -4177,6 +5701,42 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsT
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -4325,6 +5885,9 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsT
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions>? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions>? ConfluenceOptions { get; set; }
 
@@ -4340,11 +5903,23 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsT
     [JsonPropertyName("kafkaOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions>? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions>? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions>? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions>? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions>? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions>? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions>? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions>? SharepointOptions { get; set; }
@@ -4515,6 +6090,15 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionObjects
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
+{
+    [JsonPropertyName("configs")]
+    public IDictionary<string, string>? Configs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig
 {
     /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
@@ -4563,6 +6147,9 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionSourceCo
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderIngestionDefinitionSourceConfigurations
 {
+    [JsonPropertyName("apiSourceConnectorConfig")]
+    public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig>? ApiSourceConnectorConfig { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsCatalog>? Catalog { get; set; }
@@ -4996,6 +6583,10 @@ public partial class V1alpha1PipelineSpecInitProviderRestartWindow
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderRunAs
 {
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("groupName")]
+    public string? GroupName { get; set; }
+
     /// <summary>The application ID of an active service principal. Setting this field requires the servicePrincipal/user role.</summary>
     [JsonPropertyName("servicePrincipalName")]
     public string? ServicePrincipalName { get; set; }
@@ -5139,6 +6730,9 @@ public partial class V1alpha1PipelineSpecInitProvider
 
     [JsonPropertyName("notification")]
     public IList<V1alpha1PipelineSpecInitProviderNotification>? Notification { get; set; }
+
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>A flag indicating whether to use Photon engine. The default value is false.</summary>
     [JsonPropertyName("photon")]
@@ -6008,6 +7602,15 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsR
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
 {
     [JsonPropertyName("includeConfluenceSpaces")]
@@ -6134,6 +7737,51 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -6156,13 +7804,118 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6190,13 +7943,73 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions>? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6224,6 +8037,48 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
 
     [JsonPropertyName("valueTransformer")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer>? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6317,6 +8172,42 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6465,6 +8356,9 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions>? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions>? ConfluenceOptions { get; set; }
 
@@ -6480,11 +8374,23 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
     [JsonPropertyName("kafkaOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions>? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions>? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions>? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions>? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions>? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions>? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions>? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions>? SharepointOptions { get; set; }
@@ -6497,6 +8403,157 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
 
     [JsonPropertyName("zendeskSupportOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions>? ZendeskSupportOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms
+{
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions>? AvroOptions { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptions
+{
+    [JsonPropertyName("fanoutBy")]
+    public string? FanoutBy { get; set; }
+
+    [JsonPropertyName("transforms")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms>? Transforms { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6617,6 +8674,9 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
     [JsonPropertyName("destinationSchema")]
     public string? DestinationSchema { get; set; }
 
+    [JsonPropertyName("fanoutOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptions>? FanoutOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("sourceCatalog")]
     public string? SourceCatalog { get; set; }
@@ -6628,6 +8688,15 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsS
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaTableConfiguration>? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6759,6 +8828,51 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsT
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -6781,13 +8895,118 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsT
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions>? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry>? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6815,13 +9034,73 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsT
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions>? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry>? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions>? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions>? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions>? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6849,6 +9128,48 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsT
 
     [JsonPropertyName("valueTransformer")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer>? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6942,6 +9263,42 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsT
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions>? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -7090,6 +9447,9 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsT
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions>? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions>? ConfluenceOptions { get; set; }
 
@@ -7105,11 +9465,23 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsT
     [JsonPropertyName("kafkaOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions>? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions>? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions>? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions>? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions>? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions>? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions>? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions>? SharepointOptions { get; set; }
@@ -7280,6 +9652,15 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionObjects
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
+{
+    [JsonPropertyName("configs")]
+    public IDictionary<string, string>? Configs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig
 {
     /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
@@ -7328,6 +9709,9 @@ public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionSourceCo
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderIngestionDefinitionSourceConfigurations
 {
+    [JsonPropertyName("apiSourceConnectorConfig")]
+    public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig>? ApiSourceConnectorConfig { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public IList<V1alpha1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsCatalog>? Catalog { get; set; }
@@ -7614,6 +9998,10 @@ public partial class V1alpha1PipelineStatusAtProviderRestartWindow
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineStatusAtProviderRunAs
 {
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("groupName")]
+    public string? GroupName { get; set; }
+
     /// <summary>The application ID of an active service principal. Setting this field requires the servicePrincipal/user role.</summary>
     [JsonPropertyName("servicePrincipalName")]
     public string? ServicePrincipalName { get; set; }
@@ -7752,6 +10140,9 @@ public partial class V1alpha1PipelineStatusAtProvider
 
     [JsonPropertyName("notification")]
     public IList<V1alpha1PipelineStatusAtProviderNotification>? Notification { get; set; }
+
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>A flag indicating whether to use Photon engine. The default value is false.</summary>
     [JsonPropertyName("photon")]

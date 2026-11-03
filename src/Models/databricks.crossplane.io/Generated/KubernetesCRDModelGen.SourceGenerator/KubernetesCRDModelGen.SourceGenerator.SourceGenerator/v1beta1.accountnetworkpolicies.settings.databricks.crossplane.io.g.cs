@@ -69,7 +69,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessAllowedInternetDestinations
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
@@ -107,7 +110,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessBlockedInternetDestinations
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
@@ -169,7 +175,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
     [JsonPropertyName("policyEnforcement")]
     public V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessPolicyEnforcement? PolicyEnforcement { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -197,7 +203,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesAuthentication
@@ -276,6 +285,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -295,7 +312,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestination
@@ -349,7 +369,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesOrigin
@@ -367,11 +391,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestination? Destination { get; set; }
 
@@ -379,7 +409,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -397,7 +431,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesAuthentication
@@ -476,6 +513,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -495,7 +540,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestination
@@ -549,7 +597,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesOrigin
@@ -567,11 +619,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestination? Destination { get; set; }
 
@@ -579,7 +637,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -589,15 +651,22 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -615,7 +684,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesAuthentication
@@ -694,6 +766,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -713,7 +793,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestination
@@ -767,7 +850,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesOrigin
@@ -805,11 +892,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestination? Destination { get; set; }
 
@@ -817,7 +910,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -835,7 +932,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesAuthentication
@@ -914,6 +1014,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -933,7 +1041,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestination
@@ -987,7 +1098,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesOrigin
@@ -1025,11 +1140,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestination? Destination { get; set; }
 
@@ -1037,7 +1158,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -1050,15 +1175,22 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -1076,7 +1208,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesAuthentication
@@ -1155,6 +1290,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -1174,7 +1317,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestination
@@ -1238,7 +1384,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesOrigin
@@ -1260,11 +1410,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestination? Destination { get; set; }
 
@@ -1272,7 +1428,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -1290,7 +1450,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesAuthentication
@@ -1369,6 +1532,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -1388,7 +1559,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestination
@@ -1452,7 +1626,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesOrigin
@@ -1474,11 +1652,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestination? Destination { get; set; }
 
@@ -1486,7 +1670,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -1499,15 +1687,22 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -1549,7 +1744,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication
@@ -1628,6 +1826,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -1647,7 +1853,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination
@@ -1701,7 +1910,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin
@@ -1719,11 +1932,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination? Destination { get; set; }
 
@@ -1731,7 +1950,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -1749,7 +1972,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication
@@ -1828,6 +2054,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -1847,7 +2081,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination
@@ -1901,7 +2138,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin
@@ -1919,11 +2160,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination? Destination { get; set; }
 
@@ -1931,7 +2178,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -1941,15 +2192,22 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -1967,7 +2225,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesAuthentication
@@ -2046,6 +2307,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -2065,7 +2334,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestination
@@ -2119,7 +2391,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesOrigin
@@ -2157,11 +2433,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestination? Destination { get; set; }
 
@@ -2169,7 +2451,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -2187,7 +2473,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesAuthentication
@@ -2266,6 +2555,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -2285,7 +2582,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestination
@@ -2339,7 +2639,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesOrigin
@@ -2377,11 +2681,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestination? Destination { get; set; }
 
@@ -2389,7 +2699,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -2402,15 +2716,22 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -2428,7 +2749,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesAuthentication
@@ -2507,6 +2831,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -2526,7 +2858,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestination
@@ -2590,7 +2925,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesOrigin
@@ -2612,11 +2951,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestination? Destination { get; set; }
 
@@ -2624,7 +2969,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -2642,7 +2991,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesAuthentication
@@ -2721,6 +3073,14 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -2740,7 +3100,10 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestination
@@ -2804,7 +3167,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesOrigin
@@ -2826,11 +3193,17 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestination? Destination { get; set; }
 
@@ -2838,7 +3211,11 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -2851,15 +3228,22 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -2934,7 +3318,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessAllowedInternetDestinations
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
@@ -2972,7 +3359,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessBlockedInternetDestinations
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
@@ -3034,7 +3424,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
     [JsonPropertyName("policyEnforcement")]
     public V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessPolicyEnforcement? PolicyEnforcement { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -3062,7 +3452,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesAuthentication
@@ -3141,6 +3534,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -3160,7 +3561,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestination
@@ -3214,7 +3618,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesOrigin
@@ -3232,11 +3640,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestination? Destination { get; set; }
 
@@ -3244,7 +3658,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -3262,7 +3680,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesAuthentication
@@ -3341,6 +3762,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -3360,7 +3789,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestination
@@ -3414,7 +3846,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesOrigin
@@ -3432,11 +3868,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestination? Destination { get; set; }
 
@@ -3444,7 +3886,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -3454,15 +3900,22 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -3480,7 +3933,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesAuthentication
@@ -3559,6 +4015,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -3578,7 +4042,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestination
@@ -3632,7 +4099,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesOrigin
@@ -3670,11 +4141,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestination? Destination { get; set; }
 
@@ -3682,7 +4159,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -3700,7 +4181,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesAuthentication
@@ -3779,6 +4263,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -3798,7 +4290,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestination
@@ -3852,7 +4347,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesOrigin
@@ -3890,11 +4389,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestination? Destination { get; set; }
 
@@ -3902,7 +4407,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -3915,15 +4424,22 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -3941,7 +4457,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesAuthentication
@@ -4020,6 +4539,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -4039,7 +4566,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestination
@@ -4103,7 +4633,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesOrigin
@@ -4125,11 +4659,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestination? Destination { get; set; }
 
@@ -4137,7 +4677,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -4155,7 +4699,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesAuthentication
@@ -4234,6 +4781,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -4253,7 +4808,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestination
@@ -4317,7 +4875,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesOrigin
@@ -4339,11 +4901,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestination? Destination { get; set; }
 
@@ -4351,7 +4919,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -4364,15 +4936,22 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -4414,7 +4993,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication
@@ -4493,6 +5075,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -4512,7 +5102,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination
@@ -4566,7 +5159,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin
@@ -4584,11 +5181,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination? Destination { get; set; }
 
@@ -4596,7 +5199,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -4614,7 +5221,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication
@@ -4693,6 +5303,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -4712,7 +5330,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination
@@ -4766,7 +5387,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin
@@ -4784,11 +5409,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination? Destination { get; set; }
 
@@ -4796,7 +5427,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -4806,15 +5441,22 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -4832,7 +5474,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesAuthentication
@@ -4911,6 +5556,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -4930,7 +5583,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestination
@@ -4984,7 +5640,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesOrigin
@@ -5022,11 +5682,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestination? Destination { get; set; }
 
@@ -5034,7 +5700,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -5052,7 +5722,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesAuthentication
@@ -5131,6 +5804,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -5150,7 +5831,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestination
@@ -5204,7 +5888,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesOrigin
@@ -5242,11 +5930,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestination? Destination { get; set; }
 
@@ -5254,7 +5948,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -5267,15 +5965,22 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -5293,7 +5998,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesAuthentication
@@ -5372,6 +6080,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -5391,7 +6107,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestination
@@ -5455,7 +6174,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesOrigin
@@ -5477,11 +6200,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestination? Destination { get; set; }
 
@@ -5489,7 +6218,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -5507,7 +6240,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesAuthentication
@@ -5586,6 +6322,14 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -5605,7 +6349,10 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestination
@@ -5669,7 +6416,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesOrigin
@@ -5691,11 +6442,17 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestination? Destination { get; set; }
 
@@ -5703,7 +6460,11 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -5716,15 +6477,22 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -5994,7 +6762,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessAllowedInternetDestinations
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
@@ -6032,7 +6803,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessBlockedInternetDestinations
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public string? Destination { get; set; }
 
@@ -6094,7 +6868,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
     [JsonPropertyName("policyEnforcement")]
     public V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessPolicyEnforcement? PolicyEnforcement { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -6122,7 +6896,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesAuthentication
@@ -6201,6 +6978,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -6220,7 +7005,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestination
@@ -6274,7 +7062,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesOrigin
@@ -6292,11 +7084,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestination? Destination { get; set; }
 
@@ -6304,7 +7102,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -6322,7 +7124,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesAuthentication
@@ -6401,6 +7206,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -6420,7 +7233,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestination
@@ -6474,7 +7290,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesOrigin
@@ -6492,11 +7312,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestination? Destination { get; set; }
 
@@ -6504,7 +7330,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -6514,15 +7344,22 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -6540,7 +7377,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesAuthentication
@@ -6619,6 +7459,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -6638,7 +7486,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestination
@@ -6692,7 +7543,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesOrigin
@@ -6730,11 +7585,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestination? Destination { get; set; }
 
@@ -6742,7 +7603,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -6760,7 +7625,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesAuthentication
@@ -6839,6 +7707,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -6858,7 +7734,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestination
@@ -6912,7 +7791,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesOrigin
@@ -6950,11 +7833,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestination? Destination { get; set; }
 
@@ -6962,7 +7851,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -6975,15 +7868,22 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -7001,7 +7901,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesAuthentication
@@ -7080,6 +7983,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -7099,7 +8010,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestination
@@ -7163,7 +8077,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesOrigin
@@ -7185,11 +8103,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestination? Destination { get; set; }
 
@@ -7197,7 +8121,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -7215,7 +8143,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesAuthentication
@@ -7294,6 +8225,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -7313,7 +8252,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestination
@@ -7377,7 +8319,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesOrigin
@@ -7399,11 +8345,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestination? Destination { get; set; }
 
@@ -7411,7 +8363,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -7424,15 +8380,22 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -7474,7 +8437,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication
@@ -7553,6 +8519,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -7572,7 +8546,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination
@@ -7626,7 +8603,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin
@@ -7644,11 +8625,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination? Destination { get; set; }
 
@@ -7656,7 +8643,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -7674,7 +8665,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication
@@ -7753,6 +8747,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -7772,7 +8774,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination
@@ -7826,7 +8831,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin
@@ -7844,11 +8853,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination? Destination { get; set; }
 
@@ -7856,7 +8871,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -7866,15 +8885,22 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -7892,7 +8918,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesAuthentication
@@ -7971,6 +9000,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -7990,7 +9027,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestination
@@ -8044,7 +9084,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesOrigin
@@ -8082,11 +9126,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestination? Destination { get; set; }
 
@@ -8094,7 +9144,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -8112,7 +9166,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesAuthentication
@@ -8191,6 +9248,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -8210,7 +9275,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestination
@@ -8264,7 +9332,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public IList<string>? EndpointIds { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesOrigin
@@ -8302,11 +9374,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestination? Destination { get; set; }
 
@@ -8314,7 +9392,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -8327,15 +9409,22 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }
@@ -8353,7 +9442,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesAuthentication
@@ -8432,6 +9524,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -8451,7 +9551,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestination
@@ -8515,7 +9618,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesOrigin
@@ -8537,11 +9644,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestination? Destination { get; set; }
 
@@ -8549,7 +9662,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
@@ -8567,7 +9684,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public string? PrincipalType { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+/// <summary>
+/// The authenticated identity the request must match. When unset, the rule matches
+/// all users and service principals
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesAuthentication
@@ -8646,6 +9766,14 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi
 {
+    /// <summary>
+    /// Inverse of scopes: matches every API scope EXCEPT those listed here
+    /// (&quot;allow all except&quot;). Mutually exclusive with scopes — a single
+    /// destination may set at most one of the two
+    /// </summary>
+    [JsonPropertyName("excludedScopes")]
+    public IList<string>? ExcludedScopes { get; set; }
+
     /// <summary>Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ</summary>
     [JsonPropertyName("scopeQualifier")]
     public string? ScopeQualifier { get; set; }
@@ -8665,7 +9793,10 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public bool? AllDestinations { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+/// <summary>
+/// The destination the request must match — the resource being accessed, for example
+/// the workspace UI or workspace APIs. See RequestDestination
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestination
@@ -8729,7 +9860,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public IList<string>? IpRanges { get; set; }
 }
 
-/// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+/// <summary>
+/// The origin the request must match — the source workspace the request comes from,
+/// either specific source workspaces or any source workspace in any account. See
+/// CrossWorkspaceRequestOrigin
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesOrigin
@@ -8751,11 +9886,17 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRules
 {
-    /// <summary>(CustomerFacingIngressNetworkPolicyAuthentication, optional)</summary>
+    /// <summary>
+    /// The authenticated identity the request must match. When unset, the rule matches
+    /// all users and service principals
+    /// </summary>
     [JsonPropertyName("authentication")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesAuthentication? Authentication { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyRequestDestination, optional)</summary>
+    /// <summary>
+    /// The destination the request must match — the resource being accessed, for example
+    /// the workspace UI or workspace APIs. See RequestDestination
+    /// </summary>
     [JsonPropertyName("destination")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestination? Destination { get; set; }
 
@@ -8763,7 +9904,11 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)</summary>
+    /// <summary>
+    /// The origin the request must match — the source workspace the request comes from,
+    /// either specific source workspaces or any source workspace in any account. See
+    /// CrossWorkspaceRequestOrigin
+    /// </summary>
     [JsonPropertyName("origin")]
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesOrigin? Origin { get; set; }
 }
@@ -8776,15 +9921,22 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccess
 {
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Allow rules are evaluated after deny rules. A request matching any allow rule is
+    /// allowed; a request matching no rule is denied by default. Only applies when
+    /// restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("allowRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRules>? AllowRules { get; set; }
 
-    /// <summary>(list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)</summary>
+    /// <summary>
+    /// Deny rules are evaluated first. A request matching any deny rule is denied,
+    /// regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
+    /// </summary>
     [JsonPropertyName("denyRules")]
     public IList<V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRules>? DenyRules { get; set; }
 
-    /// <summary>Possible values are: FULL_ACCESS, RESTRICTED_ACCESS</summary>
+    /// <summary>The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS</summary>
     [JsonPropertyName("restrictionMode")]
     public string? RestrictionMode { get; set; }
 }

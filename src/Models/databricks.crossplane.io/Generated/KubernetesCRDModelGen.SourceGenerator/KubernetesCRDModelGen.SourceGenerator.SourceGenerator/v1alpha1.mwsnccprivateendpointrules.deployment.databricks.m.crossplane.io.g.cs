@@ -44,8 +44,23 @@ public partial class V1alpha1MwsNccPrivateEndpointRuleList : IKubernetesObject<V
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpointGoogleApiEndpoints
+{
+    [JsonPropertyName("endpoints")]
+    public IList<string>? Endpoints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpoint
 {
+    [JsonPropertyName("allVpcScServices")]
+    public bool? AllVpcScServices { get; set; }
+
+    [JsonPropertyName("googleApiEndpoints")]
+    public IList<V1alpha1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpointGoogleApiEndpoints>? GoogleApiEndpoints { get; set; }
+
     [JsonPropertyName("serviceAttachment")]
     public string? ServiceAttachment { get; set; }
 }
@@ -260,8 +275,23 @@ public partial class V1alpha1MwsNccPrivateEndpointRuleSpecForProvider
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpointGoogleApiEndpoints
+{
+    [JsonPropertyName("endpoints")]
+    public IList<string>? Endpoints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpoint
 {
+    [JsonPropertyName("allVpcScServices")]
+    public bool? AllVpcScServices { get; set; }
+
+    [JsonPropertyName("googleApiEndpoints")]
+    public IList<V1alpha1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpointGoogleApiEndpoints>? GoogleApiEndpoints { get; set; }
+
     [JsonPropertyName("serviceAttachment")]
     public string? ServiceAttachment { get; set; }
 }
@@ -599,8 +629,23 @@ public partial class V1alpha1MwsNccPrivateEndpointRuleSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpointGoogleApiEndpoints
+{
+    [JsonPropertyName("endpoints")]
+    public IList<string>? Endpoints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpoint
 {
+    [JsonPropertyName("allVpcScServices")]
+    public bool? AllVpcScServices { get; set; }
+
+    [JsonPropertyName("googleApiEndpoints")]
+    public IList<V1alpha1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpointGoogleApiEndpoints>? GoogleApiEndpoints { get; set; }
+
     [JsonPropertyName("pscEndpointUri")]
     public string? PscEndpointUri { get; set; }
 

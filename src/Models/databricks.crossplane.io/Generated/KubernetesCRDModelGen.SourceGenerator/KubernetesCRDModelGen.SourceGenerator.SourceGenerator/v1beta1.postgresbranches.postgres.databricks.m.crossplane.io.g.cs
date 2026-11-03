@@ -209,7 +209,7 @@ public partial class V1beta1PostgresBranchSpecForProviderSpec
 {
     /// <summary>
     /// Absolute expiration timestamp. When set, the branch will expire at this time.
-    /// Mutually exclusive with ttl and no_expiry. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with ttl and no_expiry
     /// </summary>
     [JsonPropertyName("expireTime")]
     public string? ExpireTime { get; set; }
@@ -221,7 +221,7 @@ public partial class V1beta1PostgresBranchSpecForProviderSpec
     /// <summary>
     /// Explicitly disable expiration. When set to true, the branch will not expire.
     /// If set to false, the request is invalid; provide either ttl or expire_time instead.
-    /// Mutually exclusive with expire_time and ttl. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with expire_time and ttl
     /// </summary>
     [JsonPropertyName("noExpiry")]
     public bool? NoExpiry { get; set; }
@@ -243,8 +243,18 @@ public partial class V1beta1PostgresBranchSpecForProviderSpec
     public string? SourceBranchTime { get; set; }
 
     /// <summary>
+    /// The snapshot this branch was created from. When set, the branch&apos;s data
+    /// comes from the snapshot rather than a source branch, so source_branch,
+    /// source_branch_lsn, and source_branch_time must be empty. The snapshot must
+    /// be AVAILABLE and belong to this branch&apos;s project.
+    /// Format: projects/{project_id}/snapshots/{snapshot_id}
+    /// </summary>
+    [JsonPropertyName("sourceSnapshot")]
+    public string? SourceSnapshot { get; set; }
+
+    /// <summary>
     /// Relative time-to-live duration. When set, the branch will expire at creation_time + ttl.
-    /// Mutually exclusive with expire_time and no_expiry. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with expire_time and no_expiry
     /// </summary>
     [JsonPropertyName("ttl")]
     public string? Ttl { get; set; }
@@ -462,7 +472,7 @@ public partial class V1beta1PostgresBranchSpecInitProviderSpec
 {
     /// <summary>
     /// Absolute expiration timestamp. When set, the branch will expire at this time.
-    /// Mutually exclusive with ttl and no_expiry. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with ttl and no_expiry
     /// </summary>
     [JsonPropertyName("expireTime")]
     public string? ExpireTime { get; set; }
@@ -474,7 +484,7 @@ public partial class V1beta1PostgresBranchSpecInitProviderSpec
     /// <summary>
     /// Explicitly disable expiration. When set to true, the branch will not expire.
     /// If set to false, the request is invalid; provide either ttl or expire_time instead.
-    /// Mutually exclusive with expire_time and ttl. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with expire_time and ttl
     /// </summary>
     [JsonPropertyName("noExpiry")]
     public bool? NoExpiry { get; set; }
@@ -496,8 +506,18 @@ public partial class V1beta1PostgresBranchSpecInitProviderSpec
     public string? SourceBranchTime { get; set; }
 
     /// <summary>
+    /// The snapshot this branch was created from. When set, the branch&apos;s data
+    /// comes from the snapshot rather than a source branch, so source_branch,
+    /// source_branch_lsn, and source_branch_time must be empty. The snapshot must
+    /// be AVAILABLE and belong to this branch&apos;s project.
+    /// Format: projects/{project_id}/snapshots/{snapshot_id}
+    /// </summary>
+    [JsonPropertyName("sourceSnapshot")]
+    public string? SourceSnapshot { get; set; }
+
+    /// <summary>
     /// Relative time-to-live duration. When set, the branch will expire at creation_time + ttl.
-    /// Mutually exclusive with expire_time and no_expiry. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with expire_time and no_expiry
     /// </summary>
     [JsonPropertyName("ttl")]
     public string? Ttl { get; set; }
@@ -679,7 +699,7 @@ public partial class V1beta1PostgresBranchStatusAtProviderSpec
 {
     /// <summary>
     /// Absolute expiration timestamp. When set, the branch will expire at this time.
-    /// Mutually exclusive with ttl and no_expiry. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with ttl and no_expiry
     /// </summary>
     [JsonPropertyName("expireTime")]
     public string? ExpireTime { get; set; }
@@ -691,7 +711,7 @@ public partial class V1beta1PostgresBranchStatusAtProviderSpec
     /// <summary>
     /// Explicitly disable expiration. When set to true, the branch will not expire.
     /// If set to false, the request is invalid; provide either ttl or expire_time instead.
-    /// Mutually exclusive with expire_time and ttl. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with expire_time and ttl
     /// </summary>
     [JsonPropertyName("noExpiry")]
     public bool? NoExpiry { get; set; }
@@ -713,8 +733,18 @@ public partial class V1beta1PostgresBranchStatusAtProviderSpec
     public string? SourceBranchTime { get; set; }
 
     /// <summary>
+    /// The snapshot this branch was created from. When set, the branch&apos;s data
+    /// comes from the snapshot rather than a source branch, so source_branch,
+    /// source_branch_lsn, and source_branch_time must be empty. The snapshot must
+    /// be AVAILABLE and belong to this branch&apos;s project.
+    /// Format: projects/{project_id}/snapshots/{snapshot_id}
+    /// </summary>
+    [JsonPropertyName("sourceSnapshot")]
+    public string? SourceSnapshot { get; set; }
+
+    /// <summary>
     /// Relative time-to-live duration. When set, the branch will expire at creation_time + ttl.
-    /// Mutually exclusive with expire_time and no_expiry. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with expire_time and no_expiry
     /// </summary>
     [JsonPropertyName("ttl")]
     public string? Ttl { get; set; }
@@ -746,7 +776,7 @@ public partial class V1beta1PostgresBranchStatusAtProviderStatus
 
     /// <summary>
     /// Absolute expiration timestamp. When set, the branch will expire at this time.
-    /// Mutually exclusive with ttl and no_expiry. When updating, use spec.expiration in the update_mask
+    /// Mutually exclusive with ttl and no_expiry
     /// </summary>
     [JsonPropertyName("expireTime")]
     public string? ExpireTime { get; set; }
@@ -785,6 +815,16 @@ public partial class V1beta1PostgresBranchStatusAtProviderStatus
     /// <summary>The point in time on the source branch from which this branch was created</summary>
     [JsonPropertyName("sourceBranchTime")]
     public string? SourceBranchTime { get; set; }
+
+    /// <summary>
+    /// The snapshot this branch was created from. When set, the branch&apos;s data
+    /// comes from the snapshot rather than a source branch, so source_branch,
+    /// source_branch_lsn, and source_branch_time must be empty. The snapshot must
+    /// be AVAILABLE and belong to this branch&apos;s project.
+    /// Format: projects/{project_id}/snapshots/{snapshot_id}
+    /// </summary>
+    [JsonPropertyName("sourceSnapshot")]
+    public string? SourceSnapshot { get; set; }
 
     /// <summary>A timestamp indicating when the current_state began</summary>
     [JsonPropertyName("stateChangeTime")]

@@ -94,6 +94,10 @@ public partial class V1alpha1RepoSpecForProvider
     [JsonPropertyName("commitHash")]
     public string? CommitHash { get; set; }
 
+    /// <summary>The ID of the Git credential (databricks_git_credential) to use for authentication with the Git provider remote.</summary>
+    [JsonPropertyName("gitCredentialId")]
+    public double? GitCredentialId { get; set; }
+
     /// <summary>case insensitive name of the Git provider.  Following values are supported right now (could be a subject for a change, consult Repos API documentation): gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("gitProvider")]
     public string? GitProvider { get; set; }
@@ -162,6 +166,10 @@ public partial class V1alpha1RepoSpecInitProvider
     /// <summary>Hash of the HEAD commit at time of the last executed operation. It won&apos;t change if you manually perform pull operation via UI or API</summary>
     [JsonPropertyName("commitHash")]
     public string? CommitHash { get; set; }
+
+    /// <summary>The ID of the Git credential (databricks_git_credential) to use for authentication with the Git provider remote.</summary>
+    [JsonPropertyName("gitCredentialId")]
+    public double? GitCredentialId { get; set; }
 
     /// <summary>case insensitive name of the Git provider.  Following values are supported right now (could be a subject for a change, consult Repos API documentation): gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("gitProvider")]
@@ -409,6 +417,10 @@ public partial class V1alpha1RepoStatusAtProvider
     /// <summary>Hash of the HEAD commit at time of the last executed operation. It won&apos;t change if you manually perform pull operation via UI or API</summary>
     [JsonPropertyName("commitHash")]
     public string? CommitHash { get; set; }
+
+    /// <summary>The ID of the Git credential (databricks_git_credential) to use for authentication with the Git provider remote.</summary>
+    [JsonPropertyName("gitCredentialId")]
+    public double? GitCredentialId { get; set; }
 
     /// <summary>case insensitive name of the Git provider.  Following values are supported right now (could be a subject for a change, consult Repos API documentation): gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("gitProvider")]

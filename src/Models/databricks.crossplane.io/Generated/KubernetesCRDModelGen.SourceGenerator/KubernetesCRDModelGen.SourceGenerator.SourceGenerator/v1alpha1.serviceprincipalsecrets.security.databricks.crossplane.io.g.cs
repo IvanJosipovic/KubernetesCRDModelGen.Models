@@ -273,6 +273,9 @@ public partial class V1alpha1ServicePrincipalSecretSpecForProvider
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1ServicePrincipalSecretSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 
+    [JsonPropertyName("scopes")]
+    public IList<string>? Scopes { get; set; }
+
     /// <summary>Secret Hash.</summary>
     [JsonPropertyName("secretHash")]
     public string? SecretHash { get; set; }
@@ -529,6 +532,9 @@ public partial class V1alpha1ServicePrincipalSecretSpecInitProvider
     /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1ServicePrincipalSecretSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
+
+    [JsonPropertyName("scopes")]
+    public IList<string>? Scopes { get; set; }
 
     /// <summary>Secret Hash.</summary>
     [JsonPropertyName("secretHash")]
@@ -794,6 +800,9 @@ public partial class V1alpha1ServicePrincipalSecretStatusAtProvider
     /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1ServicePrincipalSecretStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
+
+    [JsonPropertyName("scopes")]
+    public IList<string>? Scopes { get; set; }
 
     /// <summary>Secret Hash.</summary>
     [JsonPropertyName("secretHash")]

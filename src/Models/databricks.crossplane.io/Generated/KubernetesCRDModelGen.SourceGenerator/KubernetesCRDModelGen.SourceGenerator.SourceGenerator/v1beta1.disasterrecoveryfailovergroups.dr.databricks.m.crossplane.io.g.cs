@@ -400,6 +400,16 @@ public partial class V1beta1DisasterRecoveryFailoverGroupSpec
     public V1beta1DisasterRecoveryFailoverGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>Initial replication progress of all in-scope assets. Set only when the FailoverGroup is in INITIAL_REPLICATION state</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderInitialReplicationProgress
+{
+    /// <summary>Percent complete, 0-100</summary>
+    [JsonPropertyName("completed")]
+    public double? Completed { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProviderUnityCatalogAssetsCatalogs
@@ -513,6 +523,10 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProvider
     [JsonPropertyName("failoverGroupId")]
     public string? FailoverGroupId { get; set; }
 
+    /// <summary>True if errors currently block the replication point</summary>
+    [JsonPropertyName("hasReplicationPointBlockingErrors")]
+    public bool? HasReplicationPointBlockingErrors { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -522,6 +536,10 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProvider
     /// </summary>
     [JsonPropertyName("initialPrimaryRegion")]
     public string? InitialPrimaryRegion { get; set; }
+
+    /// <summary>Initial replication progress of all in-scope assets. Set only when the FailoverGroup is in INITIAL_REPLICATION state</summary>
+    [JsonPropertyName("initialReplicationProgress")]
+    public V1beta1DisasterRecoveryFailoverGroupStatusAtProviderInitialReplicationProgress? InitialReplicationProgress { get; set; }
 
     /// <summary>Resource name for this location</summary>
     [JsonPropertyName("name")]

@@ -37,6 +37,51 @@ public partial class V1beta1NotificationDestinationList : IKubernetesObject<V1Li
     public required IList<V1beta1NotificationDestination> Items { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NotificationDestinationSpecForProviderConfigDatabricksAppSlack
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NotificationDestinationSpecForProviderConfigDatabricksAppTeams
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+
+    /// <summary>Tenant ID for Microsoft Teams App.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    [JsonPropertyName("tenantIdSet")]
+    public bool? TenantIdSet { get; set; }
+}
+
 /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -316,6 +361,12 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigSlack
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfig
 {
+    [JsonPropertyName("databricksAppSlack")]
+    public V1beta1NotificationDestinationSpecForProviderConfigDatabricksAppSlack? DatabricksAppSlack { get; set; }
+
+    [JsonPropertyName("databricksAppTeams")]
+    public V1beta1NotificationDestinationSpecForProviderConfigDatabricksAppTeams? DatabricksAppTeams { get; set; }
+
     /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
     [JsonPropertyName("email")]
     public V1beta1NotificationDestinationSpecForProviderConfigEmail? Email { get; set; }
@@ -366,6 +417,51 @@ public partial class V1beta1NotificationDestinationSpecForProvider
     /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
     public V1beta1NotificationDestinationSpecForProviderProviderConfig? ProviderConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NotificationDestinationSpecInitProviderConfigDatabricksAppSlack
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NotificationDestinationSpecInitProviderConfigDatabricksAppTeams
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+
+    /// <summary>Tenant ID for Microsoft Teams App.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    [JsonPropertyName("tenantIdSet")]
+    public bool? TenantIdSet { get; set; }
 }
 
 /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
@@ -647,6 +743,12 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlack
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfig
 {
+    [JsonPropertyName("databricksAppSlack")]
+    public V1beta1NotificationDestinationSpecInitProviderConfigDatabricksAppSlack? DatabricksAppSlack { get; set; }
+
+    [JsonPropertyName("databricksAppTeams")]
+    public V1beta1NotificationDestinationSpecInitProviderConfigDatabricksAppTeams? DatabricksAppTeams { get; set; }
+
     /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
     [JsonPropertyName("email")]
     public V1beta1NotificationDestinationSpecInitProviderConfigEmail? Email { get; set; }
@@ -818,6 +920,51 @@ public partial class V1beta1NotificationDestinationSpec
     public V1beta1NotificationDestinationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NotificationDestinationStatusAtProviderConfigDatabricksAppSlack
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NotificationDestinationStatusAtProviderConfigDatabricksAppTeams
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+
+    /// <summary>Tenant ID for Microsoft Teams App.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    [JsonPropertyName("tenantIdSet")]
+    public bool? TenantIdSet { get; set; }
+}
+
 /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -893,6 +1040,12 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigSlack
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfig
 {
+    [JsonPropertyName("databricksAppSlack")]
+    public V1beta1NotificationDestinationStatusAtProviderConfigDatabricksAppSlack? DatabricksAppSlack { get; set; }
+
+    [JsonPropertyName("databricksAppTeams")]
+    public V1beta1NotificationDestinationStatusAtProviderConfigDatabricksAppTeams? DatabricksAppTeams { get; set; }
+
     /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
     [JsonPropertyName("email")]
     public V1beta1NotificationDestinationStatusAtProviderConfigEmail? Email { get; set; }

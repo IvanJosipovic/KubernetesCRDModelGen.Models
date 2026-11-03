@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.21.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: clusters.compute.databricks.m.crossplane.io
 spec:
   group: compute.databricks.m.crossplane.io
@@ -224,6 +224,8 @@ spec:
                   dataSecurityMode:
                     description: 'Select the security features of the cluster (see API docs for full list of values). Unity Catalog requires SINGLE_USER or USER_ISOLATION mode. LEGACY_PASSTHROUGH for passthrough cluster and LEGACY_TABLE_ACL for Table ACL cluster. If omitted, default security features are enabled. To disable security features use NONE or legacy mode NO_ISOLATION.  If kind is specified, then the following options are available:'
                     type: string
+                  dependencyMode:
+                    type: string
                   dockerImage:
                     items:
                       properties:
@@ -266,6 +268,9 @@ spec:
                           items:
                             type: string
                           type: array
+                        awsContextId:
+                          description: Canonical unique identifier for the cluster.
+                          type: string
                       type: object
                     type: array
                   driverNodeTypeId:
@@ -506,6 +511,9 @@ spec:
                           items:
                             type: string
                           type: array
+                        awsContextId:
+                          description: Canonical unique identifier for the cluster.
+                          type: string
                       type: object
                     type: array
                   workloadType:
@@ -701,6 +709,8 @@ spec:
                   dataSecurityMode:
                     description: 'Select the security features of the cluster (see API docs for full list of values). Unity Catalog requires SINGLE_USER or USER_ISOLATION mode. LEGACY_PASSTHROUGH for passthrough cluster and LEGACY_TABLE_ACL for Table ACL cluster. If omitted, default security features are enabled. To disable security features use NONE or legacy mode NO_ISOLATION.  If kind is specified, then the following options are available:'
                     type: string
+                  dependencyMode:
+                    type: string
                   dockerImage:
                     items:
                       properties:
@@ -745,6 +755,9 @@ spec:
                           items:
                             type: string
                           type: array
+                        awsContextId:
+                          description: Canonical unique identifier for the cluster.
+                          type: string
                       type: object
                     type: array
                   driverNodeTypeId:
@@ -985,6 +998,9 @@ spec:
                           items:
                             type: string
                           type: array
+                        awsContextId:
+                          description: Canonical unique identifier for the cluster.
+                          type: string
                       type: object
                     type: array
                   workloadType:
@@ -1242,6 +1258,8 @@ spec:
                     description: '(map) Tags that are added by Databricks by default, regardless of any custom_tags that may have been added. These include: Vendor: Databricks, Creator: <username_of_creator>, ClusterName: <name_of_cluster>, ClusterId: <id_of_cluster>, Name: , and any workspace and pool tags.'
                     type: object
                     x-kubernetes-map-type: granular
+                  dependencyMode:
+                    type: string
                   dockerImage:
                     items:
                       properties:
@@ -1270,6 +1288,9 @@ spec:
                           items:
                             type: string
                           type: array
+                        awsContextId:
+                          description: Canonical unique identifier for the cluster.
+                          type: string
                       type: object
                     type: array
                   driverNodeTypeId:
@@ -1519,6 +1540,9 @@ spec:
                           items:
                             type: string
                           type: array
+                        awsContextId:
+                          description: Canonical unique identifier for the cluster.
+                          type: string
                       type: object
                     type: array
                   workloadType:
@@ -1789,6 +1813,8 @@ spec:
                   dataSecurityMode:
                     description: 'Select the security features of the cluster (see API docs for full list of values). Unity Catalog requires SINGLE_USER or USER_ISOLATION mode. LEGACY_PASSTHROUGH for passthrough cluster and LEGACY_TABLE_ACL for Table ACL cluster. If omitted, default security features are enabled. To disable security features use NONE or legacy mode NO_ISOLATION.  If kind is specified, then the following options are available:'
                     type: string
+                  dependencyMode:
+                    type: string
                   dockerImage:
                     properties:
                       basicAuth:
@@ -1826,6 +1852,9 @@ spec:
                         items:
                           type: string
                         type: array
+                      awsContextId:
+                        description: Canonical unique identifier for the cluster.
+                        type: string
                     type: object
                   driverNodeTypeId:
                     description: The node type of the Spark driver. This field is optional; if unset, API will set the driver node type to the same value as node_type_id defined above.
@@ -2040,6 +2069,9 @@ spec:
                         items:
                           type: string
                         type: array
+                      awsContextId:
+                        description: Canonical unique identifier for the cluster.
+                        type: string
                     type: object
                   workloadType:
                     properties:
@@ -2212,6 +2244,8 @@ spec:
                   dataSecurityMode:
                     description: 'Select the security features of the cluster (see API docs for full list of values). Unity Catalog requires SINGLE_USER or USER_ISOLATION mode. LEGACY_PASSTHROUGH for passthrough cluster and LEGACY_TABLE_ACL for Table ACL cluster. If omitted, default security features are enabled. To disable security features use NONE or legacy mode NO_ISOLATION.  If kind is specified, then the following options are available:'
                     type: string
+                  dependencyMode:
+                    type: string
                   dockerImage:
                     properties:
                       basicAuth:
@@ -2251,6 +2285,9 @@ spec:
                         items:
                           type: string
                         type: array
+                      awsContextId:
+                        description: Canonical unique identifier for the cluster.
+                        type: string
                     type: object
                   driverNodeTypeId:
                     description: The node type of the Spark driver. This field is optional; if unset, API will set the driver node type to the same value as node_type_id defined above.
@@ -2465,6 +2502,9 @@ spec:
                         items:
                           type: string
                         type: array
+                      awsContextId:
+                        description: Canonical unique identifier for the cluster.
+                        type: string
                     type: object
                   workloadType:
                     properties:
@@ -2699,6 +2739,8 @@ spec:
                     description: '(map) Tags that are added by Databricks by default, regardless of any custom_tags that may have been added. These include: Vendor: Databricks, Creator: <username_of_creator>, ClusterName: <name_of_cluster>, ClusterId: <id_of_cluster>, Name: , and any workspace and pool tags.'
                     type: object
                     x-kubernetes-map-type: granular
+                  dependencyMode:
+                    type: string
                   dockerImage:
                     properties:
                       basicAuth:
@@ -2722,6 +2764,9 @@ spec:
                         items:
                           type: string
                         type: array
+                      awsContextId:
+                        description: Canonical unique identifier for the cluster.
+                        type: string
                     type: object
                   driverNodeTypeId:
                     description: The node type of the Spark driver. This field is optional; if unset, API will set the driver node type to the same value as node_type_id defined above.
@@ -2945,6 +2990,9 @@ spec:
                         items:
                           type: string
                         type: array
+                      awsContextId:
+                        description: Canonical unique identifier for the cluster.
+                        type: string
                     type: object
                   workloadType:
                     properties:

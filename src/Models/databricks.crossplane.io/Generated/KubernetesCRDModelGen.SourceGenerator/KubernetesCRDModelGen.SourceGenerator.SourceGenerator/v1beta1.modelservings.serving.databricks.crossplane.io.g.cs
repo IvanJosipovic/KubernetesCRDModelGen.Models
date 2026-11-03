@@ -349,6 +349,10 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
     /// <summary>ARN of the instance profile that the served model will use to access AWS resources.</summary>
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    /// <summary>The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.</summary>
+    [JsonPropertyName("ucServiceCredentialName")]
+    public string? UcServiceCredentialName { get; set; }
 }
 
 /// <summary>The Anthropic API key provided as a plaintext string.</summary>
@@ -992,14 +996,41 @@ public partial class V1beta1ModelServingSpecForProviderTelemetryConfigInferenceT
     public double? SamplingFraction { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingSpecForProviderTelemetryConfigTableNames
+{
+    [JsonPropertyName("annotationsTable")]
+    public string? AnnotationsTable { get; set; }
+
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderTelemetryConfig
 {
+    [JsonPropertyName("enabledTelemetryFeatures")]
+    public IList<string>? EnabledTelemetryFeatures { get; set; }
+
     /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
     [JsonPropertyName("inferenceTableConfig")]
     public V1beta1ModelServingSpecForProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
+
+    [JsonPropertyName("tableNames")]
+    public V1beta1ModelServingSpecForProviderTelemetryConfigTableNames? TableNames { get; set; }
+
+    /// <summary>Equal to the name argument and used to identify the serving endpoint.</summary>
+    [JsonPropertyName("telemetryProfileId")]
+    public string? TelemetryProfileId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1344,6 +1375,10 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
     /// <summary>ARN of the instance profile that the served model will use to access AWS resources.</summary>
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    /// <summary>The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.</summary>
+    [JsonPropertyName("ucServiceCredentialName")]
+    public string? UcServiceCredentialName { get; set; }
 }
 
 /// <summary>The Anthropic API key provided as a plaintext string.</summary>
@@ -1987,14 +2022,41 @@ public partial class V1beta1ModelServingSpecInitProviderTelemetryConfigInference
     public double? SamplingFraction { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingSpecInitProviderTelemetryConfigTableNames
+{
+    [JsonPropertyName("annotationsTable")]
+    public string? AnnotationsTable { get; set; }
+
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderTelemetryConfig
 {
+    [JsonPropertyName("enabledTelemetryFeatures")]
+    public IList<string>? EnabledTelemetryFeatures { get; set; }
+
     /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
     [JsonPropertyName("inferenceTableConfig")]
     public V1beta1ModelServingSpecInitProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
+
+    [JsonPropertyName("tableNames")]
+    public V1beta1ModelServingSpecInitProviderTelemetryConfigTableNames? TableNames { get; set; }
+
+    /// <summary>Equal to the name argument and used to identify the serving endpoint.</summary>
+    [JsonPropertyName("telemetryProfileId")]
+    public string? TelemetryProfileId { get; set; }
 }
 
 /// <summary>
@@ -2468,6 +2530,10 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
     /// <summary>ARN of the instance profile that the served model will use to access AWS resources.</summary>
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    /// <summary>The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.</summary>
+    [JsonPropertyName("ucServiceCredentialName")]
+    public string? UcServiceCredentialName { get; set; }
 }
 
 /// <summary>Anthropic Config</summary>
@@ -2913,14 +2979,41 @@ public partial class V1beta1ModelServingStatusAtProviderTelemetryConfigInference
     public double? SamplingFraction { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingStatusAtProviderTelemetryConfigTableNames
+{
+    [JsonPropertyName("annotationsTable")]
+    public string? AnnotationsTable { get; set; }
+
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderTelemetryConfig
 {
+    [JsonPropertyName("enabledTelemetryFeatures")]
+    public IList<string>? EnabledTelemetryFeatures { get; set; }
+
     /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
     [JsonPropertyName("inferenceTableConfig")]
     public V1beta1ModelServingStatusAtProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
+
+    [JsonPropertyName("tableNames")]
+    public V1beta1ModelServingStatusAtProviderTelemetryConfigTableNames? TableNames { get; set; }
+
+    /// <summary>Equal to the name argument and used to identify the serving endpoint.</summary>
+    [JsonPropertyName("telemetryProfileId")]
+    public string? TelemetryProfileId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]

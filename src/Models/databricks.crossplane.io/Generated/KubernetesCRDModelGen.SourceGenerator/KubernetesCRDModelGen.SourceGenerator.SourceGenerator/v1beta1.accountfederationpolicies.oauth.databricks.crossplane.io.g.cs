@@ -56,7 +56,10 @@ public enum V1beta1AccountFederationPolicySpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>(OidcFederationPolicy, optional)</summary>
+/// <summary>
+/// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+/// policy configuration is captured in create/update audit logs (see go/auditlogs)
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountFederationPolicySpecForProviderOidcPolicy
@@ -120,7 +123,10 @@ public partial class V1beta1AccountFederationPolicySpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>(OidcFederationPolicy, optional)</summary>
+    /// <summary>
+    /// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+    /// policy configuration is captured in create/update audit logs (see go/auditlogs)
+    /// </summary>
     [JsonPropertyName("oidcPolicy")]
     public V1beta1AccountFederationPolicySpecForProviderOidcPolicy? OidcPolicy { get; set; }
 
@@ -133,7 +139,10 @@ public partial class V1beta1AccountFederationPolicySpecForProvider
     public double? ServicePrincipalId { get; set; }
 }
 
-/// <summary>(OidcFederationPolicy, optional)</summary>
+/// <summary>
+/// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+/// policy configuration is captured in create/update audit logs (see go/auditlogs)
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountFederationPolicySpecInitProviderOidcPolicy
@@ -209,7 +218,10 @@ public partial class V1beta1AccountFederationPolicySpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>(OidcFederationPolicy, optional)</summary>
+    /// <summary>
+    /// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+    /// policy configuration is captured in create/update audit logs (see go/auditlogs)
+    /// </summary>
     [JsonPropertyName("oidcPolicy")]
     public V1beta1AccountFederationPolicySpecInitProviderOidcPolicy? OidcPolicy { get; set; }
 
@@ -405,7 +417,10 @@ public partial class V1beta1AccountFederationPolicySpec
     public V1beta1AccountFederationPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>(OidcFederationPolicy, optional)</summary>
+/// <summary>
+/// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+/// policy configuration is captured in create/update audit logs (see go/auditlogs)
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountFederationPolicyStatusAtProviderOidcPolicy
@@ -487,7 +502,10 @@ public partial class V1beta1AccountFederationPolicyStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>(OidcFederationPolicy, optional)</summary>
+    /// <summary>
+    /// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+    /// policy configuration is captured in create/update audit logs (see go/auditlogs)
+    /// </summary>
     [JsonPropertyName("oidcPolicy")]
     public V1beta1AccountFederationPolicyStatusAtProviderOidcPolicy? OidcPolicy { get; set; }
 

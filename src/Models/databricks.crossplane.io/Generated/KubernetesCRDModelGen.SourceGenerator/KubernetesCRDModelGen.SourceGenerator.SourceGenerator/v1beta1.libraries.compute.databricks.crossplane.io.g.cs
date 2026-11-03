@@ -203,7 +203,6 @@ public partial class V1beta1LibrarySpecForProviderClusterIdSelector
     public V1beta1LibrarySpecForProviderClusterIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for a CRAN library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecForProviderCran
@@ -511,7 +510,6 @@ public partial class V1beta1LibrarySpecForProviderJarSelector
     public V1beta1LibrarySpecForProviderJarSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for a Maven library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecForProviderMaven
@@ -529,7 +527,6 @@ public partial class V1beta1LibrarySpecForProviderMaven
     public string? Repo { get; set; }
 }
 
-/// <summary>Configuration block for management through the account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecForProviderProviderConfig
@@ -539,7 +536,6 @@ public partial class V1beta1LibrarySpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-/// <summary>Configuration block for a PyPI library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecForProviderPypi
@@ -718,7 +714,7 @@ public partial class V1beta1LibrarySpecForProvider
 
     /// <summary>Configuration block for a CRAN library. The block consists of the following fields:</summary>
     [JsonPropertyName("cran")]
-    public V1beta1LibrarySpecForProviderCran? Cran { get; set; }
+    public IList<V1beta1LibrarySpecForProviderCran>? Cran { get; set; }
 
     /// <summary>Path to the EGG library. Installing Python egg files is deprecated and is not supported in Databricks Runtime 14.0 and above. Use whl or pypi instead.</summary>
     [JsonPropertyName("egg")]
@@ -746,15 +742,15 @@ public partial class V1beta1LibrarySpecForProvider
 
     /// <summary>Configuration block for a Maven library. The block consists of the following fields:</summary>
     [JsonPropertyName("maven")]
-    public V1beta1LibrarySpecForProviderMaven? Maven { get; set; }
+    public IList<V1beta1LibrarySpecForProviderMaven>? Maven { get; set; }
 
     /// <summary>Configuration block for management through the account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
-    public V1beta1LibrarySpecForProviderProviderConfig? ProviderConfig { get; set; }
+    public IList<V1beta1LibrarySpecForProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Configuration block for a PyPI library. The block consists of the following fields:</summary>
     [JsonPropertyName("pypi")]
-    public V1beta1LibrarySpecForProviderPypi? Pypi { get; set; }
+    public IList<V1beta1LibrarySpecForProviderPypi>? Pypi { get; set; }
 
     /// <summary>Path to the requirements.txt file. Only Workspace paths and Unity Catalog Volumes paths are supported. For example: /Workspace/path/to/requirements.txt or /Volumes/path/to/requirements.txt. Requires a cluster with DBR 15.0+.</summary>
     [JsonPropertyName("requirements")]
@@ -920,7 +916,6 @@ public partial class V1beta1LibrarySpecInitProviderClusterIdSelector
     public V1beta1LibrarySpecInitProviderClusterIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for a CRAN library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecInitProviderCran
@@ -1228,7 +1223,6 @@ public partial class V1beta1LibrarySpecInitProviderJarSelector
     public V1beta1LibrarySpecInitProviderJarSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for a Maven library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecInitProviderMaven
@@ -1246,7 +1240,6 @@ public partial class V1beta1LibrarySpecInitProviderMaven
     public string? Repo { get; set; }
 }
 
-/// <summary>Configuration block for management through the account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecInitProviderProviderConfig
@@ -1256,7 +1249,6 @@ public partial class V1beta1LibrarySpecInitProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-/// <summary>Configuration block for a PyPI library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibrarySpecInitProviderPypi
@@ -1447,7 +1439,7 @@ public partial class V1beta1LibrarySpecInitProvider
 
     /// <summary>Configuration block for a CRAN library. The block consists of the following fields:</summary>
     [JsonPropertyName("cran")]
-    public V1beta1LibrarySpecInitProviderCran? Cran { get; set; }
+    public IList<V1beta1LibrarySpecInitProviderCran>? Cran { get; set; }
 
     /// <summary>Path to the EGG library. Installing Python egg files is deprecated and is not supported in Databricks Runtime 14.0 and above. Use whl or pypi instead.</summary>
     [JsonPropertyName("egg")]
@@ -1475,15 +1467,15 @@ public partial class V1beta1LibrarySpecInitProvider
 
     /// <summary>Configuration block for a Maven library. The block consists of the following fields:</summary>
     [JsonPropertyName("maven")]
-    public V1beta1LibrarySpecInitProviderMaven? Maven { get; set; }
+    public IList<V1beta1LibrarySpecInitProviderMaven>? Maven { get; set; }
 
     /// <summary>Configuration block for management through the account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
-    public V1beta1LibrarySpecInitProviderProviderConfig? ProviderConfig { get; set; }
+    public IList<V1beta1LibrarySpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Configuration block for a PyPI library. The block consists of the following fields:</summary>
     [JsonPropertyName("pypi")]
-    public V1beta1LibrarySpecInitProviderPypi? Pypi { get; set; }
+    public IList<V1beta1LibrarySpecInitProviderPypi>? Pypi { get; set; }
 
     /// <summary>Path to the requirements.txt file. Only Workspace paths and Unity Catalog Volumes paths are supported. For example: /Workspace/path/to/requirements.txt or /Volumes/path/to/requirements.txt. Requires a cluster with DBR 15.0+.</summary>
     [JsonPropertyName("requirements")]
@@ -1685,7 +1677,6 @@ public partial class V1beta1LibrarySpec
     public V1beta1LibrarySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration block for a CRAN library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibraryStatusAtProviderCran
@@ -1699,7 +1690,6 @@ public partial class V1beta1LibraryStatusAtProviderCran
     public string? Repo { get; set; }
 }
 
-/// <summary>Configuration block for a Maven library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibraryStatusAtProviderMaven
@@ -1717,7 +1707,6 @@ public partial class V1beta1LibraryStatusAtProviderMaven
     public string? Repo { get; set; }
 }
 
-/// <summary>Configuration block for management through the account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibraryStatusAtProviderProviderConfig
@@ -1727,7 +1716,6 @@ public partial class V1beta1LibraryStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-/// <summary>Configuration block for a PyPI library. The block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LibraryStatusAtProviderPypi
@@ -1751,7 +1739,7 @@ public partial class V1beta1LibraryStatusAtProvider
 
     /// <summary>Configuration block for a CRAN library. The block consists of the following fields:</summary>
     [JsonPropertyName("cran")]
-    public V1beta1LibraryStatusAtProviderCran? Cran { get; set; }
+    public IList<V1beta1LibraryStatusAtProviderCran>? Cran { get; set; }
 
     /// <summary>Path to the EGG library. Installing Python egg files is deprecated and is not supported in Databricks Runtime 14.0 and above. Use whl or pypi instead.</summary>
     [JsonPropertyName("egg")]
@@ -1766,15 +1754,15 @@ public partial class V1beta1LibraryStatusAtProvider
 
     /// <summary>Configuration block for a Maven library. The block consists of the following fields:</summary>
     [JsonPropertyName("maven")]
-    public V1beta1LibraryStatusAtProviderMaven? Maven { get; set; }
+    public IList<V1beta1LibraryStatusAtProviderMaven>? Maven { get; set; }
 
     /// <summary>Configuration block for management through the account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
-    public V1beta1LibraryStatusAtProviderProviderConfig? ProviderConfig { get; set; }
+    public IList<V1beta1LibraryStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Configuration block for a PyPI library. The block consists of the following fields:</summary>
     [JsonPropertyName("pypi")]
-    public V1beta1LibraryStatusAtProviderPypi? Pypi { get; set; }
+    public IList<V1beta1LibraryStatusAtProviderPypi>? Pypi { get; set; }
 
     /// <summary>Path to the requirements.txt file. Only Workspace paths and Unity Catalog Volumes paths are supported. For example: /Workspace/path/to/requirements.txt or /Volumes/path/to/requirements.txt. Requires a cluster with DBR 15.0+.</summary>
     [JsonPropertyName("requirements")]

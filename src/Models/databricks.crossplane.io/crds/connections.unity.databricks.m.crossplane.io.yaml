@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.21.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: connections.unity.databricks.m.crossplane.io
 spec:
   group: unity.databricks.m.crossplane.io
@@ -96,6 +96,9 @@ spec:
                   owner:
                     description: Username of current owner of the connection.
                     type: string
+                  parent:
+                    description: Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.
+                    type: string
                   properties:
                     additionalProperties:
                       type: string
@@ -114,6 +117,11 @@ spec:
                   readOnly:
                     description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
+                  secrets:
+                    additionalProperties:
+                      type: string
+                    type: object
+                    x-kubernetes-map-type: granular
                 type: object
               initProvider:
                 description: |-
@@ -158,6 +166,9 @@ spec:
                   owner:
                     description: Username of current owner of the connection.
                     type: string
+                  parent:
+                    description: Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.
+                    type: string
                   properties:
                     additionalProperties:
                       type: string
@@ -176,6 +187,11 @@ spec:
                   readOnly:
                     description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
+                  secrets:
+                    additionalProperties:
+                      type: string
+                    type: object
+                    x-kubernetes-map-type: granular
                 type: object
               managementPolicies:
                 default:
@@ -276,7 +292,7 @@ spec:
                     description: Full name of connection.
                     type: string
                   id:
-                    description: ID of this connection in form of <metastore_id>|<name>.
+                    description: ID of this connection, in the form <metastore_id>|<full_name>. For a metastore-level connection full_name is the connection name; for a schema-level connection (parent set) it is <catalog>.<schema>.<name>.
                     type: string
                   metastoreId:
                     description: Unique identifier of parent metastore.
@@ -286,6 +302,9 @@ spec:
                     type: string
                   owner:
                     description: Username of current owner of the connection.
+                    type: string
+                  parent:
+                    description: Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.
                     type: string
                   properties:
                     additionalProperties:
@@ -314,6 +333,11 @@ spec:
                   readOnly:
                     description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
+                  secrets:
+                    additionalProperties:
+                      type: string
+                    type: object
+                    x-kubernetes-map-type: granular
                   securableType:
                     description: Securable type.
                     type: string
@@ -466,6 +490,9 @@ spec:
                   owner:
                     description: Username of current owner of the connection.
                     type: string
+                  parent:
+                    description: Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.
+                    type: string
                   properties:
                     additionalProperties:
                       type: string
@@ -482,6 +509,11 @@ spec:
                   readOnly:
                     description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
+                  secrets:
+                    additionalProperties:
+                      type: string
+                    type: object
+                    x-kubernetes-map-type: granular
                 type: object
               initProvider:
                 description: |-
@@ -524,6 +556,9 @@ spec:
                   owner:
                     description: Username of current owner of the connection.
                     type: string
+                  parent:
+                    description: Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.
+                    type: string
                   properties:
                     additionalProperties:
                       type: string
@@ -540,6 +575,11 @@ spec:
                   readOnly:
                     description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
+                  secrets:
+                    additionalProperties:
+                      type: string
+                    type: object
+                    x-kubernetes-map-type: granular
                 type: object
               managementPolicies:
                 default:
@@ -638,7 +678,7 @@ spec:
                     description: Full name of connection.
                     type: string
                   id:
-                    description: ID of this connection in form of <metastore_id>|<name>.
+                    description: ID of this connection, in the form <metastore_id>|<full_name>. For a metastore-level connection full_name is the connection name; for a schema-level connection (parent set) it is <catalog>.<schema>.<name>.
                     type: string
                   metastoreId:
                     description: Unique identifier of parent metastore.
@@ -648,6 +688,9 @@ spec:
                     type: string
                   owner:
                     description: Username of current owner of the connection.
+                    type: string
+                  parent:
+                    description: Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.
                     type: string
                   properties:
                     additionalProperties:
@@ -674,6 +717,11 @@ spec:
                   readOnly:
                     description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
+                  secrets:
+                    additionalProperties:
+                      type: string
+                    type: object
+                    x-kubernetes-map-type: granular
                   securableType:
                     description: Securable type.
                     type: string
