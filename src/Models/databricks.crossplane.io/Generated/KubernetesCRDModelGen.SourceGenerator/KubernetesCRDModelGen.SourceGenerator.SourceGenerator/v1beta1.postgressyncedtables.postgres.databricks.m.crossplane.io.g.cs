@@ -47,6 +47,30 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PostgresSyncedTableSpecForProviderSpecExtraColumns
+{
+    /// <summary>Name of the column</summary>
+    [JsonPropertyName("columnName")]
+    public string? ColumnName { get; set; }
+
+    /// <summary>PostgreSQL type of the column, for example &quot;tsvector&quot; or &quot;vector(1024)&quot;</summary>
+    [JsonPropertyName("columnType")]
+    public string? ColumnType { get; set; }
+
+    /// <summary>
+    /// SQL expression used to compute the column&apos;s value, for example
+    /// &quot;to_tsvector(&apos;english&apos;, content)&quot;
+    /// </summary>
+    [JsonPropertyName("compute")]
+    public string? Compute { get; set; }
+
+    /// <summary>Possible values are: STORED_GENERATED</summary>
+    [JsonPropertyName("maintenance")]
+    public string? Maintenance { get; set; }
+}
+
 /// <summary>
 /// Specification for creating a new pipeline.
 /// At most one of existing_pipeline_id and new_pipeline_spec should be defined.
@@ -58,6 +82,14 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderSpecNewPipelineSpe
     /// <summary>Budget policy to set on the newly created pipeline</summary>
     [JsonPropertyName("budgetPolicyId")]
     public string? BudgetPolicyId { get; set; }
+
+    /// <summary>
+    /// Release channel of the underlying pipeline&apos;s runtime.
+    /// Some source table configurations (e.g., read-time CDF) require PREVIEW.
+    /// Defaults to CURRENT if not specified. Possible values are: CURRENT, PREVIEW
+    /// </summary>
+    [JsonPropertyName("pipelineChannel")]
+    public string? PipelineChannel { get; set; }
 
     /// <summary>
     /// UC catalog for the pipeline to store intermediate files (checkpoints, event logs etc).
@@ -78,17 +110,17 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderSpecNewPipelineSpe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecForProviderSpecTypeOverrides
 {
-    /// <summary>Name of the source column whose target PostgreSQL type should be overridden</summary>
+    /// <summary>Name of the column</summary>
     [JsonPropertyName("columnName")]
     public string? ColumnName { get; set; }
 
-    /// <summary>PostgreSQL-specific target type to use for the column. Possible values are: PG_SPECIFIC_TYPE_VECTOR</summary>
+    /// <summary>PostgreSQL-specific target type to use for the column. Possible values are: PG_SPECIFIC_TYPE_HALFVEC, PG_SPECIFIC_TYPE_VARCHAR, PG_SPECIFIC_TYPE_VECTOR</summary>
     [JsonPropertyName("pgType")]
     public string? PgType { get; set; }
 
     /// <summary>
-    /// Size parameter for the target type. Required when pg_type is PG_SPECIFIC_TYPE_VECTOR
-    /// or PG_SPECIFIC_TYPE_HALFVEC (specifies the vector dimension, e.g., 1024)
+    /// Size parameter for the target type, for types that take one (e.g. vector
+    /// dimension, varchar length). Required when the chosen pg_type needs a size
     /// </summary>
     [JsonPropertyName("size")]
     public double? Size { get; set; }
@@ -128,6 +160,10 @@ public partial class V1beta1PostgresSyncedTableSpecForProviderSpec
     /// </summary>
     [JsonPropertyName("existingPipelineId")]
     public string? ExistingPipelineId { get; set; }
+
+    /// <summary>Extra PostgreSQL-only columns to add to the synced table</summary>
+    [JsonPropertyName("extraColumns")]
+    public IList<V1beta1PostgresSyncedTableSpecForProviderSpecExtraColumns>? ExtraColumns { get; set; }
 
     /// <summary>
     /// Specification for creating a new pipeline.
@@ -194,6 +230,30 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecExtraColumns
+{
+    /// <summary>Name of the column</summary>
+    [JsonPropertyName("columnName")]
+    public string? ColumnName { get; set; }
+
+    /// <summary>PostgreSQL type of the column, for example &quot;tsvector&quot; or &quot;vector(1024)&quot;</summary>
+    [JsonPropertyName("columnType")]
+    public string? ColumnType { get; set; }
+
+    /// <summary>
+    /// SQL expression used to compute the column&apos;s value, for example
+    /// &quot;to_tsvector(&apos;english&apos;, content)&quot;
+    /// </summary>
+    [JsonPropertyName("compute")]
+    public string? Compute { get; set; }
+
+    /// <summary>Possible values are: STORED_GENERATED</summary>
+    [JsonPropertyName("maintenance")]
+    public string? Maintenance { get; set; }
+}
+
 /// <summary>
 /// Specification for creating a new pipeline.
 /// At most one of existing_pipeline_id and new_pipeline_spec should be defined.
@@ -205,6 +265,14 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecNewPipelineSp
     /// <summary>Budget policy to set on the newly created pipeline</summary>
     [JsonPropertyName("budgetPolicyId")]
     public string? BudgetPolicyId { get; set; }
+
+    /// <summary>
+    /// Release channel of the underlying pipeline&apos;s runtime.
+    /// Some source table configurations (e.g., read-time CDF) require PREVIEW.
+    /// Defaults to CURRENT if not specified. Possible values are: CURRENT, PREVIEW
+    /// </summary>
+    [JsonPropertyName("pipelineChannel")]
+    public string? PipelineChannel { get; set; }
 
     /// <summary>
     /// UC catalog for the pipeline to store intermediate files (checkpoints, event logs etc).
@@ -225,17 +293,17 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecNewPipelineSp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableSpecInitProviderSpecTypeOverrides
 {
-    /// <summary>Name of the source column whose target PostgreSQL type should be overridden</summary>
+    /// <summary>Name of the column</summary>
     [JsonPropertyName("columnName")]
     public string? ColumnName { get; set; }
 
-    /// <summary>PostgreSQL-specific target type to use for the column. Possible values are: PG_SPECIFIC_TYPE_VECTOR</summary>
+    /// <summary>PostgreSQL-specific target type to use for the column. Possible values are: PG_SPECIFIC_TYPE_HALFVEC, PG_SPECIFIC_TYPE_VARCHAR, PG_SPECIFIC_TYPE_VECTOR</summary>
     [JsonPropertyName("pgType")]
     public string? PgType { get; set; }
 
     /// <summary>
-    /// Size parameter for the target type. Required when pg_type is PG_SPECIFIC_TYPE_VECTOR
-    /// or PG_SPECIFIC_TYPE_HALFVEC (specifies the vector dimension, e.g., 1024)
+    /// Size parameter for the target type, for types that take one (e.g. vector
+    /// dimension, varchar length). Required when the chosen pg_type needs a size
     /// </summary>
     [JsonPropertyName("size")]
     public double? Size { get; set; }
@@ -275,6 +343,10 @@ public partial class V1beta1PostgresSyncedTableSpecInitProviderSpec
     /// </summary>
     [JsonPropertyName("existingPipelineId")]
     public string? ExistingPipelineId { get; set; }
+
+    /// <summary>Extra PostgreSQL-only columns to add to the synced table</summary>
+    [JsonPropertyName("extraColumns")]
+    public IList<V1beta1PostgresSyncedTableSpecInitProviderSpecExtraColumns>? ExtraColumns { get; set; }
 
     /// <summary>
     /// Specification for creating a new pipeline.
@@ -460,6 +532,30 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecExtraColumns
+{
+    /// <summary>Name of the column</summary>
+    [JsonPropertyName("columnName")]
+    public string? ColumnName { get; set; }
+
+    /// <summary>PostgreSQL type of the column, for example &quot;tsvector&quot; or &quot;vector(1024)&quot;</summary>
+    [JsonPropertyName("columnType")]
+    public string? ColumnType { get; set; }
+
+    /// <summary>
+    /// SQL expression used to compute the column&apos;s value, for example
+    /// &quot;to_tsvector(&apos;english&apos;, content)&quot;
+    /// </summary>
+    [JsonPropertyName("compute")]
+    public string? Compute { get; set; }
+
+    /// <summary>Possible values are: STORED_GENERATED</summary>
+    [JsonPropertyName("maintenance")]
+    public string? Maintenance { get; set; }
+}
+
 /// <summary>
 /// Specification for creating a new pipeline.
 /// At most one of existing_pipeline_id and new_pipeline_spec should be defined.
@@ -471,6 +567,14 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecNewPipelineSp
     /// <summary>Budget policy to set on the newly created pipeline</summary>
     [JsonPropertyName("budgetPolicyId")]
     public string? BudgetPolicyId { get; set; }
+
+    /// <summary>
+    /// Release channel of the underlying pipeline&apos;s runtime.
+    /// Some source table configurations (e.g., read-time CDF) require PREVIEW.
+    /// Defaults to CURRENT if not specified. Possible values are: CURRENT, PREVIEW
+    /// </summary>
+    [JsonPropertyName("pipelineChannel")]
+    public string? PipelineChannel { get; set; }
 
     /// <summary>
     /// UC catalog for the pipeline to store intermediate files (checkpoints, event logs etc).
@@ -491,17 +595,17 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecNewPipelineSp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PostgresSyncedTableStatusAtProviderSpecTypeOverrides
 {
-    /// <summary>Name of the source column whose target PostgreSQL type should be overridden</summary>
+    /// <summary>Name of the column</summary>
     [JsonPropertyName("columnName")]
     public string? ColumnName { get; set; }
 
-    /// <summary>PostgreSQL-specific target type to use for the column. Possible values are: PG_SPECIFIC_TYPE_VECTOR</summary>
+    /// <summary>PostgreSQL-specific target type to use for the column. Possible values are: PG_SPECIFIC_TYPE_HALFVEC, PG_SPECIFIC_TYPE_VARCHAR, PG_SPECIFIC_TYPE_VECTOR</summary>
     [JsonPropertyName("pgType")]
     public string? PgType { get; set; }
 
     /// <summary>
-    /// Size parameter for the target type. Required when pg_type is PG_SPECIFIC_TYPE_VECTOR
-    /// or PG_SPECIFIC_TYPE_HALFVEC (specifies the vector dimension, e.g., 1024)
+    /// Size parameter for the target type, for types that take one (e.g. vector
+    /// dimension, varchar length). Required when the chosen pg_type needs a size
     /// </summary>
     [JsonPropertyName("size")]
     public double? Size { get; set; }
@@ -541,6 +645,10 @@ public partial class V1beta1PostgresSyncedTableStatusAtProviderSpec
     /// </summary>
     [JsonPropertyName("existingPipelineId")]
     public string? ExistingPipelineId { get; set; }
+
+    /// <summary>Extra PostgreSQL-only columns to add to the synced table</summary>
+    [JsonPropertyName("extraColumns")]
+    public IList<V1beta1PostgresSyncedTableStatusAtProviderSpecExtraColumns>? ExtraColumns { get; set; }
 
     /// <summary>
     /// Specification for creating a new pipeline.

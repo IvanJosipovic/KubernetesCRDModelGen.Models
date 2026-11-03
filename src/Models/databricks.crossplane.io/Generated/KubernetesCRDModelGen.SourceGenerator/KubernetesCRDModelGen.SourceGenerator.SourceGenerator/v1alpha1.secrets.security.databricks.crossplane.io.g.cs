@@ -226,11 +226,30 @@ public partial class V1alpha1SecretSpecForProviderScopeSelector
     public V1alpha1SecretSpecForProviderScopeSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>(String) super secret sensitive value.</summary>
+/// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value_wo is not set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SecretSpecForProviderStringValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value is not set.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SecretSpecForProviderStringValueWoSecretRef
 {
     /// <summary>The key to select.</summary>
     [JsonPropertyName("key")]
@@ -270,9 +289,17 @@ public partial class V1alpha1SecretSpecForProvider
     [JsonPropertyName("scopeSelector")]
     public V1alpha1SecretSpecForProviderScopeSelector? ScopeSelector { get; set; }
 
-    /// <summary>(String) super secret sensitive value.</summary>
+    /// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value_wo is not set.</summary>
     [JsonPropertyName("stringValueSecretRef")]
     public V1alpha1SecretSpecForProviderStringValueSecretRef? StringValueSecretRef { get; set; }
+
+    /// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value is not set.</summary>
+    [JsonPropertyName("stringValueWoSecretRef")]
+    public V1alpha1SecretSpecForProviderStringValueWoSecretRef? StringValueWoSecretRef { get; set; }
+
+    /// <summary>(Integer) Use together with string_value_wo to trigger an update. Increment this value when an update to string_value_wo is required.</summary>
+    [JsonPropertyName("stringValueWoVersion")]
+    public double? StringValueWoVersion { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -440,11 +467,30 @@ public partial class V1alpha1SecretSpecInitProviderScopeSelector
     public V1alpha1SecretSpecInitProviderScopeSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>(String) super secret sensitive value.</summary>
+/// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value_wo is not set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SecretSpecInitProviderStringValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value is not set.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1SecretSpecInitProviderStringValueWoSecretRef
 {
     /// <summary>The key to select.</summary>
     [JsonPropertyName("key")]
@@ -496,9 +542,17 @@ public partial class V1alpha1SecretSpecInitProvider
     [JsonPropertyName("scopeSelector")]
     public V1alpha1SecretSpecInitProviderScopeSelector? ScopeSelector { get; set; }
 
-    /// <summary>(String) super secret sensitive value.</summary>
+    /// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value_wo is not set.</summary>
     [JsonPropertyName("stringValueSecretRef")]
-    public required V1alpha1SecretSpecInitProviderStringValueSecretRef StringValueSecretRef { get; set; }
+    public V1alpha1SecretSpecInitProviderStringValueSecretRef? StringValueSecretRef { get; set; }
+
+    /// <summary>(String) Specifies text data that you want to encrypt and store in the secret. This is required if string_value is not set.</summary>
+    [JsonPropertyName("stringValueWoSecretRef")]
+    public V1alpha1SecretSpecInitProviderStringValueWoSecretRef? StringValueWoSecretRef { get; set; }
+
+    /// <summary>(Integer) Use together with string_value_wo to trigger an update. Increment this value when an update to string_value_wo is required.</summary>
+    [JsonPropertyName("stringValueWoVersion")]
+    public double? StringValueWoVersion { get; set; }
 }
 
 /// <summary>
@@ -729,6 +783,10 @@ public partial class V1alpha1SecretStatusAtProvider
     /// <summary>(String) name of databricks secret scope. Must consist of alphanumeric characters, dashes, underscores, and periods, and may not exceed 128 characters.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
+
+    /// <summary>(Integer) Use together with string_value_wo to trigger an update. Increment this value when an update to string_value_wo is required.</summary>
+    [JsonPropertyName("stringValueWoVersion")]
+    public double? StringValueWoVersion { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

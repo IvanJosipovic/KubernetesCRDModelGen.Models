@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.21.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: modelservings.serving.databricks.crossplane.io
 spec:
   group: serving.databricks.crossplane.io
@@ -327,6 +327,9 @@ spec:
                                           instanceProfileArn:
                                             description: ARN of the instance profile that the served model will use to access AWS resources.
                                             type: string
+                                          ucServiceCredentialName:
+                                            description: 'The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.'
+                                            type: string
                                         type: object
                                       type: array
                                     anthropicConfig:
@@ -781,6 +784,10 @@ spec:
                     description: The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.
                     items:
                       properties:
+                        enabledTelemetryFeatures:
+                          items:
+                            type: string
+                          type: array
                         inferenceTableConfig:
                           description: 'Block describing the configuration of usage tracking. Consists of the following attributes:'
                           items:
@@ -792,6 +799,22 @@ spec:
                                 type: number
                             type: object
                           type: array
+                        tableNames:
+                          items:
+                            properties:
+                              annotationsTable:
+                                type: string
+                              logsTable:
+                                type: string
+                              metricsTable:
+                                type: string
+                              tracesTable:
+                                type: string
+                            type: object
+                          type: array
+                        telemetryProfileId:
+                          description: Equal to the name argument and used to identify the serving endpoint.
+                          type: string
                       type: object
                     type: array
                 type: object
@@ -1060,6 +1083,9 @@ spec:
                                           instanceProfileArn:
                                             description: ARN of the instance profile that the served model will use to access AWS resources.
                                             type: string
+                                          ucServiceCredentialName:
+                                            description: 'The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.'
+                                            type: string
                                         type: object
                                       type: array
                                     anthropicConfig:
@@ -1514,6 +1540,10 @@ spec:
                     description: The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.
                     items:
                       properties:
+                        enabledTelemetryFeatures:
+                          items:
+                            type: string
+                          type: array
                         inferenceTableConfig:
                           description: 'Block describing the configuration of usage tracking. Consists of the following attributes:'
                           items:
@@ -1525,6 +1555,22 @@ spec:
                                 type: number
                             type: object
                           type: array
+                        tableNames:
+                          items:
+                            properties:
+                              annotationsTable:
+                                type: string
+                              logsTable:
+                                type: string
+                              metricsTable:
+                                type: string
+                              tracesTable:
+                                type: string
+                            type: object
+                          type: array
+                        telemetryProfileId:
+                          description: Equal to the name argument and used to identify the serving endpoint.
+                          type: string
                       type: object
                     type: array
                 type: object
@@ -1822,6 +1868,9 @@ spec:
                                             type: string
                                           instanceProfileArn:
                                             description: ARN of the instance profile that the served model will use to access AWS resources.
+                                            type: string
+                                          ucServiceCredentialName:
+                                            description: 'The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.'
                                             type: string
                                         type: object
                                       type: array
@@ -2133,6 +2182,10 @@ spec:
                     description: The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.
                     items:
                       properties:
+                        enabledTelemetryFeatures:
+                          items:
+                            type: string
+                          type: array
                         inferenceTableConfig:
                           description: 'Block describing the configuration of usage tracking. Consists of the following attributes:'
                           items:
@@ -2144,6 +2197,22 @@ spec:
                                 type: number
                             type: object
                           type: array
+                        tableNames:
+                          items:
+                            properties:
+                              annotationsTable:
+                                type: string
+                              logsTable:
+                                type: string
+                              metricsTable:
+                                type: string
+                              tracesTable:
+                                type: string
+                            type: object
+                          type: array
+                        telemetryProfileId:
+                          description: Equal to the name argument and used to identify the serving endpoint.
+                          type: string
                       type: object
                     type: array
                 type: object
@@ -2494,6 +2563,9 @@ spec:
                                     instanceProfileArn:
                                       description: ARN of the instance profile that the served model will use to access AWS resources.
                                       type: string
+                                    ucServiceCredentialName:
+                                      description: 'The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.'
+                                      type: string
                                   type: object
                                 anthropicConfig:
                                   description: Anthropic Config
@@ -2920,6 +2992,10 @@ spec:
                   telemetryConfig:
                     description: The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.
                     properties:
+                      enabledTelemetryFeatures:
+                        items:
+                          type: string
+                        type: array
                       inferenceTableConfig:
                         description: 'Block describing the configuration of usage tracking. Consists of the following attributes:'
                         properties:
@@ -2929,6 +3005,20 @@ spec:
                           samplingFraction:
                             type: number
                         type: object
+                      tableNames:
+                        properties:
+                          annotationsTable:
+                            type: string
+                          logsTable:
+                            type: string
+                          metricsTable:
+                            type: string
+                          tracesTable:
+                            type: string
+                        type: object
+                      telemetryProfileId:
+                        description: Equal to the name argument and used to identify the serving endpoint.
+                        type: string
                     type: object
                 type: object
               initProvider:
@@ -3171,6 +3261,9 @@ spec:
                                     instanceProfileArn:
                                       description: ARN of the instance profile that the served model will use to access AWS resources.
                                       type: string
+                                    ucServiceCredentialName:
+                                      description: 'The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.'
+                                      type: string
                                   type: object
                                 anthropicConfig:
                                   description: Anthropic Config
@@ -3597,6 +3690,10 @@ spec:
                   telemetryConfig:
                     description: The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.
                     properties:
+                      enabledTelemetryFeatures:
+                        items:
+                          type: string
+                        type: array
                       inferenceTableConfig:
                         description: 'Block describing the configuration of usage tracking. Consists of the following attributes:'
                         properties:
@@ -3606,6 +3703,20 @@ spec:
                           samplingFraction:
                             type: number
                         type: object
+                      tableNames:
+                        properties:
+                          annotationsTable:
+                            type: string
+                          logsTable:
+                            type: string
+                          metricsTable:
+                            type: string
+                          tracesTable:
+                            type: string
+                        type: object
+                      telemetryProfileId:
+                        description: Equal to the name argument and used to identify the serving endpoint.
+                        type: string
                     type: object
                 type: object
               managementPolicies:
@@ -3877,6 +3988,9 @@ spec:
                                       type: string
                                     instanceProfileArn:
                                       description: ARN of the instance profile that the served model will use to access AWS resources.
+                                      type: string
+                                    ucServiceCredentialName:
+                                      description: 'The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.'
                                       type: string
                                   type: object
                                 anthropicConfig:
@@ -4160,6 +4274,10 @@ spec:
                   telemetryConfig:
                     description: The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.
                     properties:
+                      enabledTelemetryFeatures:
+                        items:
+                          type: string
+                        type: array
                       inferenceTableConfig:
                         description: 'Block describing the configuration of usage tracking. Consists of the following attributes:'
                         properties:
@@ -4169,6 +4287,20 @@ spec:
                           samplingFraction:
                             type: number
                         type: object
+                      tableNames:
+                        properties:
+                          annotationsTable:
+                            type: string
+                          logsTable:
+                            type: string
+                          metricsTable:
+                            type: string
+                          tracesTable:
+                            type: string
+                        type: object
+                      telemetryProfileId:
+                        description: Equal to the name argument and used to identify the serving endpoint.
+                        type: string
                     type: object
                 type: object
               conditions:

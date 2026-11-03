@@ -39,8 +39,22 @@ public partial class V1beta1MwsNccPrivateEndpointRuleList : IKubernetesObject<V1
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpointGoogleApiEndpoints
+{
+    [JsonPropertyName("endpoints")]
+    public IList<string>? Endpoints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpoint
 {
+    [JsonPropertyName("allVpcScServices")]
+    public bool? AllVpcScServices { get; set; }
+
+    [JsonPropertyName("googleApiEndpoints")]
+    public V1beta1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpointGoogleApiEndpoints? GoogleApiEndpoints { get; set; }
+
     [JsonPropertyName("serviceAttachment")]
     public string? ServiceAttachment { get; set; }
 }
@@ -245,8 +259,22 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpointGoogleApiEndpoints
+{
+    [JsonPropertyName("endpoints")]
+    public IList<string>? Endpoints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpoint
 {
+    [JsonPropertyName("allVpcScServices")]
+    public bool? AllVpcScServices { get; set; }
+
+    [JsonPropertyName("googleApiEndpoints")]
+    public V1beta1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpointGoogleApiEndpoints? GoogleApiEndpoints { get; set; }
+
     [JsonPropertyName("serviceAttachment")]
     public string? ServiceAttachment { get; set; }
 }
@@ -570,8 +598,22 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpointGoogleApiEndpoints
+{
+    [JsonPropertyName("endpoints")]
+    public IList<string>? Endpoints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpoint
 {
+    [JsonPropertyName("allVpcScServices")]
+    public bool? AllVpcScServices { get; set; }
+
+    [JsonPropertyName("googleApiEndpoints")]
+    public V1beta1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpointGoogleApiEndpoints? GoogleApiEndpoints { get; set; }
+
     [JsonPropertyName("pscEndpointUri")]
     public string? PscEndpointUri { get; set; }
 

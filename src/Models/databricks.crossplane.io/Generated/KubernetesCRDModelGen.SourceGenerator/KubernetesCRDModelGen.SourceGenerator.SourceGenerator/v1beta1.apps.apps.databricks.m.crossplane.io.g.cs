@@ -42,6 +42,14 @@ public partial class V1beta1AppList : IKubernetesObject<V1ListMeta>, IItems<V1be
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecForProviderGitRepository
 {
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
     /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
@@ -49,6 +57,57 @@ public partial class V1beta1AppSpecForProviderGitRepository
     /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
+}
+
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppSpecForProviderGitSourceGitRepository
+{
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
+    [JsonPropertyName("provider")]
+    public string? Provider { get; set; }
+
+    /// <summary>URL of the Git repository.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppSpecForProviderGitSource
+{
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Git commit SHA to check out and deploy from.</summary>
+    [JsonPropertyName("commit")]
+    public string? Commit { get; set; }
+
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+    [JsonPropertyName("gitRepository")]
+    public V1beta1AppSpecForProviderGitSourceGitRepository? GitRepository { get; set; }
+
+    [JsonPropertyName("resolvedCommit")]
+    public string? ResolvedCommit { get; set; }
+
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
+    [JsonPropertyName("sourceCodePath")]
+    public string? SourceCodePath { get; set; }
+
+    /// <summary>Git tag to check out and deploy from.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -143,7 +202,7 @@ public partial class V1beta1AppSpecForProviderResourcesJob
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecForProviderResourcesPostgres
 {
-    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
@@ -322,9 +381,16 @@ public partial class V1beta1AppSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    [JsonPropertyName("forwardUserAccessToken")]
+    public bool? ForwardUserAccessToken { get; set; }
+
     /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1beta1AppSpecForProviderGitRepository? GitRepository { get; set; }
+
+    /// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+    [JsonPropertyName("gitSource")]
+    public V1beta1AppSpecForProviderGitSource? GitSource { get; set; }
 
     /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
     [JsonPropertyName("name")]
@@ -339,6 +405,10 @@ public partial class V1beta1AppSpecForProvider
     /// <summary>A list of resources that the app have access to.</summary>
     [JsonPropertyName("resources")]
     public IList<V1beta1AppSpecForProviderResources>? Resources { get; set; }
+
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
+    [JsonPropertyName("sourceCodePath")]
+    public string? SourceCodePath { get; set; }
 
     [JsonPropertyName("space")]
     public string? Space { get; set; }
@@ -361,6 +431,14 @@ public partial class V1beta1AppSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecInitProviderGitRepository
 {
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
     /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
@@ -368,6 +446,57 @@ public partial class V1beta1AppSpecInitProviderGitRepository
     /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
+}
+
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppSpecInitProviderGitSourceGitRepository
+{
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
+    [JsonPropertyName("provider")]
+    public string? Provider { get; set; }
+
+    /// <summary>URL of the Git repository.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppSpecInitProviderGitSource
+{
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Git commit SHA to check out and deploy from.</summary>
+    [JsonPropertyName("commit")]
+    public string? Commit { get; set; }
+
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+    [JsonPropertyName("gitRepository")]
+    public V1beta1AppSpecInitProviderGitSourceGitRepository? GitRepository { get; set; }
+
+    [JsonPropertyName("resolvedCommit")]
+    public string? ResolvedCommit { get; set; }
+
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
+    [JsonPropertyName("sourceCodePath")]
+    public string? SourceCodePath { get; set; }
+
+    /// <summary>Git tag to check out and deploy from.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -462,7 +591,7 @@ public partial class V1beta1AppSpecInitProviderResourcesJob
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecInitProviderResourcesPostgres
 {
-    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
@@ -653,9 +782,16 @@ public partial class V1beta1AppSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    [JsonPropertyName("forwardUserAccessToken")]
+    public bool? ForwardUserAccessToken { get; set; }
+
     /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1beta1AppSpecInitProviderGitRepository? GitRepository { get; set; }
+
+    /// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+    [JsonPropertyName("gitSource")]
+    public V1beta1AppSpecInitProviderGitSource? GitSource { get; set; }
 
     /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
     [JsonPropertyName("name")]
@@ -670,6 +806,10 @@ public partial class V1beta1AppSpecInitProvider
     /// <summary>A list of resources that the app have access to.</summary>
     [JsonPropertyName("resources")]
     public IList<V1beta1AppSpecInitProviderResources>? Resources { get; set; }
+
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
+    [JsonPropertyName("sourceCodePath")]
+    public string? SourceCodePath { get; set; }
 
     [JsonPropertyName("space")]
     public string? Space { get; set; }
@@ -799,7 +939,7 @@ public partial class V1beta1AppSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderActiveDeploymentDeploymentArtifacts
 {
-    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 }
@@ -824,6 +964,14 @@ public partial class V1beta1AppStatusAtProviderActiveDeploymentEnvVars
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderActiveDeploymentGitSourceGitRepository
 {
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
     /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
@@ -833,14 +981,16 @@ public partial class V1beta1AppStatusAtProviderActiveDeploymentGitSourceGitRepos
     public string? Url { get; set; }
 }
 
+/// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderActiveDeploymentGitSource
 {
-    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
+    /// <summary>Git commit SHA to check out and deploy from.</summary>
     [JsonPropertyName("commit")]
     public string? Commit { get; set; }
 
@@ -851,12 +1001,24 @@ public partial class V1beta1AppStatusAtProviderActiveDeploymentGitSource
     [JsonPropertyName("resolvedCommit")]
     public string? ResolvedCommit { get; set; }
 
-    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
+    /// <summary>Git tag to check out and deploy from.</summary>
     [JsonPropertyName("tag")]
     public string? Tag { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppStatusAtProviderActiveDeploymentHealthCheck
+{
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("timeout")]
+    public string? Timeout { get; set; }
 }
 
 /// <summary>attribute</summary>
@@ -900,14 +1062,18 @@ public partial class V1beta1AppStatusAtProviderActiveDeployment
     [JsonPropertyName("envVars")]
     public IList<V1beta1AppStatusAtProviderActiveDeploymentEnvVars>? EnvVars { get; set; }
 
+    /// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
     [JsonPropertyName("gitSource")]
     public V1beta1AppStatusAtProviderActiveDeploymentGitSource? GitSource { get; set; }
+
+    [JsonPropertyName("healthCheck")]
+    public V1beta1AppStatusAtProviderActiveDeploymentHealthCheck? HealthCheck { get; set; }
 
     /// <summary>The deployment mode (AUTO_SYNC or SNAPSHOT).</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
@@ -957,8 +1123,16 @@ public partial class V1beta1AppStatusAtProviderComputeStatus
 /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1AppStatusAtProviderGitRepository
+public partial class V1beta1AppStatusAtProviderDefaultGitSourceGitRepository
 {
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
     /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
@@ -968,12 +1142,114 @@ public partial class V1beta1AppStatusAtProviderGitRepository
     public string? Url { get; set; }
 }
 
+/// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppStatusAtProviderDefaultGitSource
+{
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Git commit SHA to check out and deploy from.</summary>
+    [JsonPropertyName("commit")]
+    public string? Commit { get; set; }
+
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+    [JsonPropertyName("gitRepository")]
+    public V1beta1AppStatusAtProviderDefaultGitSourceGitRepository? GitRepository { get; set; }
+
+    [JsonPropertyName("resolvedCommit")]
+    public string? ResolvedCommit { get; set; }
+
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
+    [JsonPropertyName("sourceCodePath")]
+    public string? SourceCodePath { get; set; }
+
+    /// <summary>Git tag to check out and deploy from.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+}
+
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppStatusAtProviderGitRepository
+{
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
+    [JsonPropertyName("provider")]
+    public string? Provider { get; set; }
+
+    /// <summary>URL of the Git repository.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppStatusAtProviderGitSourceGitRepository
+{
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
+    [JsonPropertyName("provider")]
+    public string? Provider { get; set; }
+
+    /// <summary>URL of the Git repository.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppStatusAtProviderGitSource
+{
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>Git commit SHA to check out and deploy from.</summary>
+    [JsonPropertyName("commit")]
+    public string? Commit { get; set; }
+
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
+    [JsonPropertyName("gitRepository")]
+    public V1beta1AppStatusAtProviderGitSourceGitRepository? GitRepository { get; set; }
+
+    [JsonPropertyName("resolvedCommit")]
+    public string? ResolvedCommit { get; set; }
+
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
+    [JsonPropertyName("sourceCodePath")]
+    public string? SourceCodePath { get; set; }
+
+    /// <summary>Git tag to check out and deploy from.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+}
+
 /// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderPendingDeploymentDeploymentArtifacts
 {
-    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 }
@@ -998,6 +1274,14 @@ public partial class V1beta1AppStatusAtProviderPendingDeploymentEnvVars
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderPendingDeploymentGitSourceGitRepository
 {
+    /// <summary>When true, the app is automatically redeployed on push events to the branch configured in git_source. This requires git_source to specify a branch; a tag or commit cannot be used, because automatic deployment is triggered by pushes to a branch. Automatic deployment is currently supported only for the gitHub and azureDevOpsServices providers.</summary>
+    [JsonPropertyName("autoDeploy")]
+    public bool? AutoDeploy { get; set; }
+
+    /// <summary>ID of a personal access token Git credential owned by the caller, used to grant the app&apos;s service principal access to this repository. This is only applied when the app is created and is not returned by the service; changing it on an existing app is not supported.</summary>
+    [JsonPropertyName("callerCredentialId")]
+    public double? CallerCredentialId { get; set; }
+
     /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
@@ -1007,14 +1291,16 @@ public partial class V1beta1AppStatusAtProviderPendingDeploymentGitSourceGitRepo
     public string? Url { get; set; }
 }
 
+/// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderPendingDeploymentGitSource
 {
-    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
+    /// <summary>Git commit SHA to check out and deploy from.</summary>
     [JsonPropertyName("commit")]
     public string? Commit { get; set; }
 
@@ -1025,12 +1311,24 @@ public partial class V1beta1AppStatusAtProviderPendingDeploymentGitSource
     [JsonPropertyName("resolvedCommit")]
     public string? ResolvedCommit { get; set; }
 
-    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
+    /// <summary>Git tag to check out and deploy from.</summary>
     [JsonPropertyName("tag")]
     public string? Tag { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AppStatusAtProviderPendingDeploymentHealthCheck
+{
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("timeout")]
+    public string? Timeout { get; set; }
 }
 
 /// <summary>attribute</summary>
@@ -1074,14 +1372,18 @@ public partial class V1beta1AppStatusAtProviderPendingDeployment
     [JsonPropertyName("envVars")]
     public IList<V1beta1AppStatusAtProviderPendingDeploymentEnvVars>? EnvVars { get; set; }
 
+    /// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
     [JsonPropertyName("gitSource")]
     public V1beta1AppStatusAtProviderPendingDeploymentGitSource? GitSource { get; set; }
+
+    [JsonPropertyName("healthCheck")]
+    public V1beta1AppStatusAtProviderPendingDeploymentHealthCheck? HealthCheck { get; set; }
 
     /// <summary>The deployment mode (AUTO_SYNC or SNAPSHOT).</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
@@ -1186,7 +1488,7 @@ public partial class V1beta1AppStatusAtProviderResourcesJob
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderResourcesPostgres
 {
-    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    /// <summary>Git branch to check out and deploy from. Required when git_repository.auto_deploy is true, since automatic deployment tracks pushes to a branch.</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
@@ -1384,6 +1686,10 @@ public partial class V1beta1AppStatusAtProvider
     [JsonPropertyName("creator")]
     public string? Creator { get; set; }
 
+    /// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+    [JsonPropertyName("defaultGitSource")]
+    public V1beta1AppStatusAtProviderDefaultGitSource? DefaultGitSource { get; set; }
+
     /// <summary>The default workspace file system path of the source code from which app deployment are created. This field tracks the workspace source code path of the last active deployment.</summary>
     [JsonPropertyName("defaultSourceCodePath")]
     public string? DefaultSourceCodePath { get; set; }
@@ -1404,9 +1710,16 @@ public partial class V1beta1AppStatusAtProvider
     [JsonPropertyName("effectiveUserApiScopes")]
     public IList<string>? EffectiveUserApiScopes { get; set; }
 
+    [JsonPropertyName("forwardUserAccessToken")]
+    public bool? ForwardUserAccessToken { get; set; }
+
     /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1beta1AppStatusAtProviderGitRepository? GitRepository { get; set; }
+
+    /// <summary>The Git source to deploy from, specifying the reference to check out and an optional path to the app source code within the repository configured in git_repository (see below).</summary>
+    [JsonPropertyName("gitSource")]
+    public V1beta1AppStatusAtProviderGitSource? GitSource { get; set; }
 
     /// <summary>Id of the SQL warehouse to grant permission on.</summary>
     [JsonPropertyName("id")]
@@ -1449,6 +1762,10 @@ public partial class V1beta1AppStatusAtProvider
     /// <summary>name of the app service principal</summary>
     [JsonPropertyName("servicePrincipalName")]
     public string? ServicePrincipalName { get; set; }
+
+    /// <summary>Workspace filesystem path of the source code to deploy from, as an alternative to Git-based deployment (git_repository/git_source). This value is not returned by the service; the workspace path of the last active deployment is exported as default_source_code_path.</summary>
+    [JsonPropertyName("sourceCodePath")]
+    public string? SourceCodePath { get; set; }
 
     [JsonPropertyName("space")]
     public string? Space { get; set; }

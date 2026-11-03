@@ -103,6 +103,9 @@ public partial class V1alpha1SQLEndpointSpecForProvider
     [JsonPropertyName("clusterSize")]
     public string? ClusterSize { get; set; }
 
+    [JsonPropertyName("customerVersionLabel")]
+    public string? CustomerVersionLabel { get; set; }
+
     /// <summary>(Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.</summary>
     [JsonPropertyName("dataSourceId")]
     public string? DataSourceId { get; set; }
@@ -117,6 +120,9 @@ public partial class V1alpha1SQLEndpointSpecForProvider
 
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    [JsonPropertyName("maxDbu")]
+    public double? MaxDbu { get; set; }
 
     /// <summary>Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.</summary>
     [JsonPropertyName("maxNumClusters")]
@@ -141,9 +147,15 @@ public partial class V1alpha1SQLEndpointSpecForProvider
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1SQLEndpointSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 
+    [JsonPropertyName("reydenClusterSizeMultiplier")]
+    public double? ReydenClusterSizeMultiplier { get; set; }
+
     /// <summary>The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.</summary>
     [JsonPropertyName("spotInstancePolicy")]
     public string? SpotInstancePolicy { get; set; }
+
+    [JsonPropertyName("statementTimeout")]
+    public double? StatementTimeout { get; set; }
 
     /// <summary>Databricks tags all endpoint resources with these tags.</summary>
     [JsonPropertyName("tags")]
@@ -228,6 +240,9 @@ public partial class V1alpha1SQLEndpointSpecInitProvider
     [JsonPropertyName("clusterSize")]
     public string? ClusterSize { get; set; }
 
+    [JsonPropertyName("customerVersionLabel")]
+    public string? CustomerVersionLabel { get; set; }
+
     /// <summary>(Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.</summary>
     [JsonPropertyName("dataSourceId")]
     public string? DataSourceId { get; set; }
@@ -242,6 +257,9 @@ public partial class V1alpha1SQLEndpointSpecInitProvider
 
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    [JsonPropertyName("maxDbu")]
+    public double? MaxDbu { get; set; }
 
     /// <summary>Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.</summary>
     [JsonPropertyName("maxNumClusters")]
@@ -266,9 +284,15 @@ public partial class V1alpha1SQLEndpointSpecInitProvider
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1SQLEndpointSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
+    [JsonPropertyName("reydenClusterSizeMultiplier")]
+    public double? ReydenClusterSizeMultiplier { get; set; }
+
     /// <summary>The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.</summary>
     [JsonPropertyName("spotInstancePolicy")]
     public string? SpotInstancePolicy { get; set; }
+
+    [JsonPropertyName("statementTimeout")]
+    public double? StatementTimeout { get; set; }
 
     /// <summary>Databricks tags all endpoint resources with these tags.</summary>
     [JsonPropertyName("tags")]
@@ -511,6 +535,9 @@ public partial class V1alpha1SQLEndpointStatusAtProvider
     [JsonPropertyName("creatorName")]
     public string? CreatorName { get; set; }
 
+    [JsonPropertyName("customerVersionLabel")]
+    public string? CustomerVersionLabel { get; set; }
+
     /// <summary>(Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.</summary>
     [JsonPropertyName("dataSourceId")]
     public string? DataSourceId { get; set; }
@@ -537,6 +564,9 @@ public partial class V1alpha1SQLEndpointStatusAtProvider
     /// <summary>JDBC connection string.</summary>
     [JsonPropertyName("jdbcUrl")]
     public string? JdbcUrl { get; set; }
+
+    [JsonPropertyName("maxDbu")]
+    public double? MaxDbu { get; set; }
 
     /// <summary>Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.</summary>
     [JsonPropertyName("maxNumClusters")]
@@ -573,6 +603,9 @@ public partial class V1alpha1SQLEndpointStatusAtProvider
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1SQLEndpointStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
+    [JsonPropertyName("reydenClusterSizeMultiplier")]
+    public double? ReydenClusterSizeMultiplier { get; set; }
+
     /// <summary>The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.</summary>
     [JsonPropertyName("spotInstancePolicy")]
     public string? SpotInstancePolicy { get; set; }
@@ -580,6 +613,9 @@ public partial class V1alpha1SQLEndpointStatusAtProvider
     /// <summary>The current state of the endpoint.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
+
+    [JsonPropertyName("statementTimeout")]
+    public double? StatementTimeout { get; set; }
 
     /// <summary>Databricks tags all endpoint resources with these tags.</summary>
     [JsonPropertyName("tags")]

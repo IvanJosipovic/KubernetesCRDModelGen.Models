@@ -129,6 +129,10 @@ public partial class V1alpha1ConnectionSpecForProvider
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
+    /// <summary>Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("parent")]
+    public string? Parent { get; set; }
+
     /// <summary>A map of key-value properties attached to the securable. Change forces creation of a new resource.</summary>
     [JsonPropertyName("properties")]
     public IDictionary<string, string>? Properties { get; set; }
@@ -140,6 +144,9 @@ public partial class V1alpha1ConnectionSpecForProvider
     /// <summary>If the connection is read only. Change forces creation of a new resource.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secrets")]
+    public IDictionary<string, string>? Secrets { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -206,6 +213,10 @@ public partial class V1alpha1ConnectionSpecInitProvider
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
+    /// <summary>Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("parent")]
+    public string? Parent { get; set; }
+
     /// <summary>A map of key-value properties attached to the securable. Change forces creation of a new resource.</summary>
     [JsonPropertyName("properties")]
     public IDictionary<string, string>? Properties { get; set; }
@@ -217,6 +228,9 @@ public partial class V1alpha1ConnectionSpecInitProvider
     /// <summary>If the connection is read only. Change forces creation of a new resource.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secrets")]
+    public IDictionary<string, string>? Secrets { get; set; }
 }
 
 /// <summary>
@@ -480,7 +494,7 @@ public partial class V1alpha1ConnectionStatusAtProvider
     [JsonPropertyName("fullName")]
     public string? FullName { get; set; }
 
-    /// <summary>ID of this connection in form of &lt;metastore_id&gt;|&lt;name&gt;.</summary>
+    /// <summary>ID of this connection, in the form &lt;metastore_id&gt;|&lt;full_name&gt;. For a metastore-level connection full_name is the connection name; for a schema-level connection (parent set) it is &lt;catalog&gt;.&lt;schema&gt;.&lt;name&gt;.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -495,6 +509,10 @@ public partial class V1alpha1ConnectionStatusAtProvider
     /// <summary>Username of current owner of the connection.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Parent schema of a schema-level connection, in the format schemas/{catalog}.{schema}. When set, the connection is created inside that schema and its full_name becomes {catalog}.{schema}.{name}; when omitted, the connection is metastore-level. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("parent")]
+    public string? Parent { get; set; }
 
     /// <summary>A map of key-value properties attached to the securable. Change forces creation of a new resource.</summary>
     [JsonPropertyName("properties")]
@@ -511,6 +529,9 @@ public partial class V1alpha1ConnectionStatusAtProvider
     /// <summary>If the connection is read only. Change forces creation of a new resource.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secrets")]
+    public IDictionary<string, string>? Secrets { get; set; }
 
     /// <summary>Securable type.</summary>
     [JsonPropertyName("securableType")]

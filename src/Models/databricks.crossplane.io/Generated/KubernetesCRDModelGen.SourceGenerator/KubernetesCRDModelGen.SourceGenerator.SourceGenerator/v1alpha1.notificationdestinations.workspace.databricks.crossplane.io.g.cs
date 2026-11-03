@@ -64,6 +64,53 @@ public enum V1alpha1NotificationDestinationSpecDeletionPolicyEnum
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1NotificationDestinationSpecForProviderConfigDatabricksAppSlack
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1NotificationDestinationSpecForProviderConfigDatabricksAppTeams
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+
+    /// <summary>Tenant ID for Microsoft Teams App.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    [JsonPropertyName("tenantIdSet")]
+    public bool? TenantIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1NotificationDestinationSpecForProviderConfigEmail
 {
     /// <summary>The list of email addresses to send notifications to.</summary>
@@ -412,6 +459,12 @@ public partial class V1alpha1NotificationDestinationSpecForProviderConfigSlack
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1NotificationDestinationSpecForProviderConfig
 {
+    [JsonPropertyName("databricksAppSlack")]
+    public IList<V1alpha1NotificationDestinationSpecForProviderConfigDatabricksAppSlack>? DatabricksAppSlack { get; set; }
+
+    [JsonPropertyName("databricksAppTeams")]
+    public IList<V1alpha1NotificationDestinationSpecForProviderConfigDatabricksAppTeams>? DatabricksAppTeams { get; set; }
+
     /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
     [JsonPropertyName("email")]
     public IList<V1alpha1NotificationDestinationSpecForProviderConfigEmail>? Email { get; set; }
@@ -463,6 +516,53 @@ public partial class V1alpha1NotificationDestinationSpecForProvider
     /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1NotificationDestinationSpecForProviderProviderConfig>? ProviderConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1NotificationDestinationSpecInitProviderConfigDatabricksAppSlack
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1NotificationDestinationSpecInitProviderConfigDatabricksAppTeams
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+
+    /// <summary>Tenant ID for Microsoft Teams App.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    [JsonPropertyName("tenantIdSet")]
+    public bool? TenantIdSet { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -816,6 +916,12 @@ public partial class V1alpha1NotificationDestinationSpecInitProviderConfigSlack
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1NotificationDestinationSpecInitProviderConfig
 {
+    [JsonPropertyName("databricksAppSlack")]
+    public IList<V1alpha1NotificationDestinationSpecInitProviderConfigDatabricksAppSlack>? DatabricksAppSlack { get; set; }
+
+    [JsonPropertyName("databricksAppTeams")]
+    public IList<V1alpha1NotificationDestinationSpecInitProviderConfigDatabricksAppTeams>? DatabricksAppTeams { get; set; }
+
     /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
     [JsonPropertyName("email")]
     public IList<V1alpha1NotificationDestinationSpecInitProviderConfigEmail>? Email { get; set; }
@@ -1074,6 +1180,53 @@ public partial class V1alpha1NotificationDestinationSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1NotificationDestinationStatusAtProviderConfigDatabricksAppSlack
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1NotificationDestinationStatusAtProviderConfigDatabricksAppTeams
+{
+    /// <summary>Slack channel ID for notifications.</summary>
+    [JsonPropertyName("channelId")]
+    public string? ChannelId { get; set; }
+
+    [JsonPropertyName("channelIdSet")]
+    public bool? ChannelIdSet { get; set; }
+
+    /// <summary>The unique ID of the Notification Destination.</summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    [JsonPropertyName("teamIdSet")]
+    public bool? TeamIdSet { get; set; }
+
+    /// <summary>Tenant ID for Microsoft Teams App.</summary>
+    [JsonPropertyName("tenantId")]
+    public string? TenantId { get; set; }
+
+    [JsonPropertyName("tenantIdSet")]
+    public bool? TenantIdSet { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1NotificationDestinationStatusAtProviderConfigEmail
 {
     /// <summary>The list of email addresses to send notifications to.</summary>
@@ -1146,6 +1299,12 @@ public partial class V1alpha1NotificationDestinationStatusAtProviderConfigSlack
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1NotificationDestinationStatusAtProviderConfig
 {
+    [JsonPropertyName("databricksAppSlack")]
+    public IList<V1alpha1NotificationDestinationStatusAtProviderConfigDatabricksAppSlack>? DatabricksAppSlack { get; set; }
+
+    [JsonPropertyName("databricksAppTeams")]
+    public IList<V1alpha1NotificationDestinationStatusAtProviderConfigDatabricksAppTeams>? DatabricksAppTeams { get; set; }
+
     /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
     [JsonPropertyName("email")]
     public IList<V1alpha1NotificationDestinationStatusAtProviderConfigEmail>? Email { get; set; }

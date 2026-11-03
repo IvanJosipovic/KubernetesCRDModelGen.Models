@@ -44,13 +44,189 @@ public partial class V1beta1BudgetSpecForProviderAlertConfigurationsActionConfig
     [JsonPropertyName("actionConfigurationId")]
     public string? ActionConfigurationId { get; set; }
 
-    /// <summary>The type of action to take when the budget alert is triggered. (Enum: EMAIL_NOTIFICATION)</summary>
+    /// <summary>The type of action to take when the budget alert is triggered. (Enum: EMAIL_NOTIFICATION, BLOCK_USAGE). Note: BLOCK_USAGE action type is only supported on AI Gateway-scoped budgets.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 
-    /// <summary>The target of the action. For EMAIL_NOTIFICATION, this is the email address to send the notification to.</summary>
+    /// <summary>For EMAIL_NOTIFICATION action type, this is the email address to send the notification to. Required if the action_type is EMAIL_NOTIFICATION. Does not apply to the BLOCK_USAGE action type, and this field must be omitted in that case.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolutionEnum>))]
+public enum V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolveEnum>))]
+public enum V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Group in security to populate principalId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolveEnum>))]
+public enum V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Group in security to populate principalId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverrides
+{
+    /// <summary>Dollar amount that overrides the parent alert&apos;s quantity_threshold for this principal.</summary>
+    [JsonPropertyName("overrideThreshold")]
+    public string? OverrideThreshold { get; set; }
+
+    /// <summary>Account-level principal id (user, group, or service principal).</summary>
+    [JsonPropertyName("principalId")]
+    public double? PrincipalId { get; set; }
+
+    /// <summary>Reference to a Group in security to populate principalId.</summary>
+    [JsonPropertyName("principalIdRef")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdRef? PrincipalIdRef { get; set; }
+
+    /// <summary>Selector for a Group in security to populate principalId.</summary>
+    [JsonPropertyName("principalIdSelector")]
+    public V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelector? PrincipalIdSelector { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -64,6 +240,10 @@ public partial class V1beta1BudgetSpecForProviderAlertConfigurations
     [JsonPropertyName("alertConfigurationId")]
     public string? AlertConfigurationId { get; set; }
 
+    /// <summary>Per-principal threshold overrides for this alert. Only applies to per-user alerts (scope_type = ALERT_CONFIGURATION_SCOPE_TYPE_PER_USER); ignored for shared alerts. Consists of the following fields:</summary>
+    [JsonPropertyName("principalOverrides")]
+    public IList<V1beta1BudgetSpecForProviderAlertConfigurationsPrincipalOverrides>? PrincipalOverrides { get; set; }
+
     /// <summary>The threshold for the budget alert to determine if it is in a triggered state. The number is evaluated based on quantity_type.</summary>
     [JsonPropertyName("quantityThreshold")]
     public string? QuantityThreshold { get; set; }
@@ -71,6 +251,10 @@ public partial class V1beta1BudgetSpecForProviderAlertConfigurations
     /// <summary>The way to calculate cost for this budget alert. This is what quantity_threshold is measured in. (Enum: LIST_PRICE_DOLLARS_USD)</summary>
     [JsonPropertyName("quantityType")]
     public string? QuantityType { get; set; }
+
+    /// <summary>How the alert threshold is evaluated. Determines whether spend is tracked in aggregate or per individual user. (Enum: ALERT_CONFIGURATION_SCOPE_TYPE_SHARED, ALERT_CONFIGURATION_SCOPE_TYPE_PER_USER)</summary>
+    [JsonPropertyName("scopeType")]
+    public string? ScopeType { get; set; }
 
     /// <summary>The time window of usage data for the budget. (Enum: MONTH)</summary>
     [JsonPropertyName("timePeriod")]
@@ -160,6 +344,10 @@ public partial class V1beta1BudgetSpecForProvider
     [JsonPropertyName("filter")]
     public V1beta1BudgetSpecForProviderFilter? Filter { get; set; }
 
+    /// <summary>The resource scope for this budget. Determines whether the budget tracks all resources or a specific resource. (Enum: BUDGET_RESOURCE_TYPE_ALL_RESOURCES, BUDGET_RESOURCE_TYPE_UNITY_AI_GATEWAY)</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
+
     [JsonPropertyName("updateTime")]
     public double? UpdateTime { get; set; }
 }
@@ -171,13 +359,189 @@ public partial class V1beta1BudgetSpecInitProviderAlertConfigurationsActionConfi
     [JsonPropertyName("actionConfigurationId")]
     public string? ActionConfigurationId { get; set; }
 
-    /// <summary>The type of action to take when the budget alert is triggered. (Enum: EMAIL_NOTIFICATION)</summary>
+    /// <summary>The type of action to take when the budget alert is triggered. (Enum: EMAIL_NOTIFICATION, BLOCK_USAGE). Note: BLOCK_USAGE action type is only supported on AI Gateway-scoped budgets.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 
-    /// <summary>The target of the action. For EMAIL_NOTIFICATION, this is the email address to send the notification to.</summary>
+    /// <summary>For EMAIL_NOTIFICATION action type, this is the email address to send the notification to. Required if the action_type is EMAIL_NOTIFICATION. Does not apply to the BLOCK_USAGE action type, and this field must be omitted in that case.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolutionEnum>))]
+public enum V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolveEnum>))]
+public enum V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Group in security to populate principalId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolveEnum>))]
+public enum V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Group in security to populate principalId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverrides
+{
+    /// <summary>Dollar amount that overrides the parent alert&apos;s quantity_threshold for this principal.</summary>
+    [JsonPropertyName("overrideThreshold")]
+    public string? OverrideThreshold { get; set; }
+
+    /// <summary>Account-level principal id (user, group, or service principal).</summary>
+    [JsonPropertyName("principalId")]
+    public double? PrincipalId { get; set; }
+
+    /// <summary>Reference to a Group in security to populate principalId.</summary>
+    [JsonPropertyName("principalIdRef")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdRef? PrincipalIdRef { get; set; }
+
+    /// <summary>Selector for a Group in security to populate principalId.</summary>
+    [JsonPropertyName("principalIdSelector")]
+    public V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverridesPrincipalIdSelector? PrincipalIdSelector { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -191,6 +555,10 @@ public partial class V1beta1BudgetSpecInitProviderAlertConfigurations
     [JsonPropertyName("alertConfigurationId")]
     public string? AlertConfigurationId { get; set; }
 
+    /// <summary>Per-principal threshold overrides for this alert. Only applies to per-user alerts (scope_type = ALERT_CONFIGURATION_SCOPE_TYPE_PER_USER); ignored for shared alerts. Consists of the following fields:</summary>
+    [JsonPropertyName("principalOverrides")]
+    public IList<V1beta1BudgetSpecInitProviderAlertConfigurationsPrincipalOverrides>? PrincipalOverrides { get; set; }
+
     /// <summary>The threshold for the budget alert to determine if it is in a triggered state. The number is evaluated based on quantity_type.</summary>
     [JsonPropertyName("quantityThreshold")]
     public string? QuantityThreshold { get; set; }
@@ -198,6 +566,10 @@ public partial class V1beta1BudgetSpecInitProviderAlertConfigurations
     /// <summary>The way to calculate cost for this budget alert. This is what quantity_threshold is measured in. (Enum: LIST_PRICE_DOLLARS_USD)</summary>
     [JsonPropertyName("quantityType")]
     public string? QuantityType { get; set; }
+
+    /// <summary>How the alert threshold is evaluated. Determines whether spend is tracked in aggregate or per individual user. (Enum: ALERT_CONFIGURATION_SCOPE_TYPE_SHARED, ALERT_CONFIGURATION_SCOPE_TYPE_PER_USER)</summary>
+    [JsonPropertyName("scopeType")]
+    public string? ScopeType { get; set; }
 
     /// <summary>The time window of usage data for the budget. (Enum: MONTH)</summary>
     [JsonPropertyName("timePeriod")]
@@ -298,6 +670,10 @@ public partial class V1beta1BudgetSpecInitProvider
 
     [JsonPropertyName("filter")]
     public V1beta1BudgetSpecInitProviderFilter? Filter { get; set; }
+
+    /// <summary>The resource scope for this budget. Determines whether the budget tracks all resources or a specific resource. (Enum: BUDGET_RESOURCE_TYPE_ALL_RESOURCES, BUDGET_RESOURCE_TYPE_UNITY_AI_GATEWAY)</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
 
     [JsonPropertyName("updateTime")]
     public double? UpdateTime { get; set; }
@@ -417,13 +793,26 @@ public partial class V1beta1BudgetStatusAtProviderAlertConfigurationsActionConfi
     [JsonPropertyName("actionConfigurationId")]
     public string? ActionConfigurationId { get; set; }
 
-    /// <summary>The type of action to take when the budget alert is triggered. (Enum: EMAIL_NOTIFICATION)</summary>
+    /// <summary>The type of action to take when the budget alert is triggered. (Enum: EMAIL_NOTIFICATION, BLOCK_USAGE). Note: BLOCK_USAGE action type is only supported on AI Gateway-scoped budgets.</summary>
     [JsonPropertyName("actionType")]
     public string? ActionType { get; set; }
 
-    /// <summary>The target of the action. For EMAIL_NOTIFICATION, this is the email address to send the notification to.</summary>
+    /// <summary>For EMAIL_NOTIFICATION action type, this is the email address to send the notification to. Required if the action_type is EMAIL_NOTIFICATION. Does not apply to the BLOCK_USAGE action type, and this field must be omitted in that case.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BudgetStatusAtProviderAlertConfigurationsPrincipalOverrides
+{
+    /// <summary>Dollar amount that overrides the parent alert&apos;s quantity_threshold for this principal.</summary>
+    [JsonPropertyName("overrideThreshold")]
+    public string? OverrideThreshold { get; set; }
+
+    /// <summary>Account-level principal id (user, group, or service principal).</summary>
+    [JsonPropertyName("principalId")]
+    public double? PrincipalId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -437,6 +826,10 @@ public partial class V1beta1BudgetStatusAtProviderAlertConfigurations
     [JsonPropertyName("alertConfigurationId")]
     public string? AlertConfigurationId { get; set; }
 
+    /// <summary>Per-principal threshold overrides for this alert. Only applies to per-user alerts (scope_type = ALERT_CONFIGURATION_SCOPE_TYPE_PER_USER); ignored for shared alerts. Consists of the following fields:</summary>
+    [JsonPropertyName("principalOverrides")]
+    public IList<V1beta1BudgetStatusAtProviderAlertConfigurationsPrincipalOverrides>? PrincipalOverrides { get; set; }
+
     /// <summary>The threshold for the budget alert to determine if it is in a triggered state. The number is evaluated based on quantity_type.</summary>
     [JsonPropertyName("quantityThreshold")]
     public string? QuantityThreshold { get; set; }
@@ -444,6 +837,10 @@ public partial class V1beta1BudgetStatusAtProviderAlertConfigurations
     /// <summary>The way to calculate cost for this budget alert. This is what quantity_threshold is measured in. (Enum: LIST_PRICE_DOLLARS_USD)</summary>
     [JsonPropertyName("quantityType")]
     public string? QuantityType { get; set; }
+
+    /// <summary>How the alert threshold is evaluated. Determines whether spend is tracked in aggregate or per individual user. (Enum: ALERT_CONFIGURATION_SCOPE_TYPE_SHARED, ALERT_CONFIGURATION_SCOPE_TYPE_PER_USER)</summary>
+    [JsonPropertyName("scopeType")]
+    public string? ScopeType { get; set; }
 
     /// <summary>The time window of usage data for the budget. (Enum: MONTH)</summary>
     [JsonPropertyName("timePeriod")]
@@ -535,6 +932,10 @@ public partial class V1beta1BudgetStatusAtProvider
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>The resource scope for this budget. Determines whether the budget tracks all resources or a specific resource. (Enum: BUDGET_RESOURCE_TYPE_ALL_RESOURCES, BUDGET_RESOURCE_TYPE_UNITY_AI_GATEWAY)</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
 
     [JsonPropertyName("updateTime")]
     public double? UpdateTime { get; set; }

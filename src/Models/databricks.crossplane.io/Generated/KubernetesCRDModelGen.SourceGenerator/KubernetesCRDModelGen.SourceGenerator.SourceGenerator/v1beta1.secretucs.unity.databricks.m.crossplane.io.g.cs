@@ -47,6 +47,24 @@ public partial class V1beta1SecretUcSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+/// <summary>
+/// The secret value to store. This field is input-only and is not returned in responses — use
+/// the effective_value field (via GetSecret with include_value set to true) to read the
+/// secret value. The maximum size is 60 KiB (pre-encryption). Accepted content includes
+/// passwords, tokens, keys, and other sensitive credential data
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecretUcSpecForProviderValueSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretUcSpecForProvider
@@ -92,8 +110,8 @@ public partial class V1beta1SecretUcSpecForProvider
     /// secret value. The maximum size is 60 KiB (pre-encryption). Accepted content includes
     /// passwords, tokens, keys, and other sensitive credential data
     /// </summary>
-    [JsonPropertyName("value")]
-    public string? Value { get; set; }
+    [JsonPropertyName("valueSecretRef")]
+    public V1beta1SecretUcSpecForProviderValueSecretRef? ValueSecretRef { get; set; }
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
@@ -104,6 +122,24 @@ public partial class V1beta1SecretUcSpecInitProviderProviderConfig
     /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
+}
+
+/// <summary>
+/// The secret value to store. This field is input-only and is not returned in responses — use
+/// the effective_value field (via GetSecret with include_value set to true) to read the
+/// secret value. The maximum size is 60 KiB (pre-encryption). Accepted content includes
+/// passwords, tokens, keys, and other sensitive credential data
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecretUcSpecInitProviderValueSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>
@@ -163,8 +199,8 @@ public partial class V1beta1SecretUcSpecInitProvider
     /// secret value. The maximum size is 60 KiB (pre-encryption). Accepted content includes
     /// passwords, tokens, keys, and other sensitive credential data
     /// </summary>
-    [JsonPropertyName("value")]
-    public string? Value { get; set; }
+    [JsonPropertyName("valueSecretRef")]
+    public required V1beta1SecretUcSpecInitProviderValueSecretRef ValueSecretRef { get; set; }
 }
 
 /// <summary>
@@ -312,13 +348,6 @@ public partial class V1beta1SecretUcStatusAtProvider
     public string? EffectiveOwner { get; set; }
 
     /// <summary>
-    /// The secret value. Only populated in responses when you have the READ_SECRET
-    /// privilege and include_value is set to true in the request. The maximum size is 60 KiB
-    /// </summary>
-    [JsonPropertyName("effectiveValue")]
-    public string? EffectiveValue { get; set; }
-
-    /// <summary>
     /// User-provided expiration time of the secret. This field indicates when the secret should no
     /// longer be used and may be displayed as a warning in the UI. It is purely informational and
     /// does not trigger any automatic actions or affect the secret&apos;s lifecycle
@@ -363,15 +392,6 @@ public partial class V1beta1SecretUcStatusAtProvider
     /// <summary>The principal that last updated the secret</summary>
     [JsonPropertyName("updatedBy")]
     public string? UpdatedBy { get; set; }
-
-    /// <summary>
-    /// The secret value to store. This field is input-only and is not returned in responses — use
-    /// the effective_value field (via GetSecret with include_value set to true) to read the
-    /// secret value. The maximum size is 60 KiB (pre-encryption). Accepted content includes
-    /// passwords, tokens, keys, and other sensitive credential data
-    /// </summary>
-    [JsonPropertyName("value")]
-    public string? Value { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

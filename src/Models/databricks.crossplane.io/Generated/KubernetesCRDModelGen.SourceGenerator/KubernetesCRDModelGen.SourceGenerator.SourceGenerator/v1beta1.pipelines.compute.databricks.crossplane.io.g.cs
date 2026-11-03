@@ -648,6 +648,14 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsRep
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
 {
     [JsonPropertyName("includeConfluenceSpaces")]
@@ -767,6 +775,48 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -788,13 +838,112 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -820,13 +969,70 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -853,6 +1059,45 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 
     [JsonPropertyName("valueTransformer")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -943,6 +1188,39 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1083,6 +1361,9 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
 
@@ -1098,11 +1379,23 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
     [JsonPropertyName("kafkaOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
@@ -1115,6 +1408,148 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 
     [JsonPropertyName("zendeskSupportOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms
+{
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions? AvroOptions { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptions
+{
+    [JsonPropertyName("fanoutBy")]
+    public string? FanoutBy { get; set; }
+
+    [JsonPropertyName("transforms")]
+    public IList<V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms>? Transforms { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1231,6 +1666,9 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
     [JsonPropertyName("destinationSchema")]
     public string? DestinationSchema { get; set; }
 
+    [JsonPropertyName("fanoutOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaFanoutOptions? FanoutOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("sourceCatalog")]
     public string? SourceCatalog { get; set; }
@@ -1242,6 +1680,14 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1365,6 +1811,48 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -1386,13 +1874,112 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1418,13 +2005,70 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1451,6 +2095,45 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
 
     [JsonPropertyName("valueTransformer")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1541,6 +2224,39 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1681,6 +2397,9 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
 
@@ -1696,11 +2415,23 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
     [JsonPropertyName("kafkaOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
@@ -1864,6 +2595,14 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjects
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
+{
+    [JsonPropertyName("configs")]
+    public IDictionary<string, string>? Configs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig
 {
     /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
@@ -1909,6 +2648,9 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionSourceConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurations
 {
+    [JsonPropertyName("apiSourceConnectorConfig")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig? ApiSourceConnectorConfig { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsCatalog? Catalog { get; set; }
@@ -2325,6 +3067,10 @@ public partial class V1beta1PipelineSpecForProviderRestartWindow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderRunAs
 {
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("groupName")]
+    public string? GroupName { get; set; }
+
     /// <summary>The application ID of an active service principal. Setting this field requires the servicePrincipal/user role.</summary>
     [JsonPropertyName("servicePrincipalName")]
     public string? ServicePrincipalName { get; set; }
@@ -2452,6 +3198,9 @@ public partial class V1beta1PipelineSpecForProvider
 
     [JsonPropertyName("notification")]
     public IList<V1beta1PipelineSpecForProviderNotification>? Notification { get; set; }
+
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>A flag indicating whether to use Photon engine. The default value is false.</summary>
     [JsonPropertyName("photon")]
@@ -3104,6 +3853,14 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
 {
     [JsonPropertyName("includeConfluenceSpaces")]
@@ -3223,6 +3980,48 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -3244,13 +4043,112 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3276,13 +4174,70 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3309,6 +4264,45 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("valueTransformer")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3399,6 +4393,39 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3539,6 +4566,9 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
 
@@ -3554,11 +4584,23 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("kafkaOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
@@ -3571,6 +4613,148 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("zendeskSupportOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms
+{
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions? AvroOptions { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptions
+{
+    [JsonPropertyName("fanoutBy")]
+    public string? FanoutBy { get; set; }
+
+    [JsonPropertyName("transforms")]
+    public IList<V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms>? Transforms { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3687,6 +4871,9 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("destinationSchema")]
     public string? DestinationSchema { get; set; }
 
+    [JsonPropertyName("fanoutOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaFanoutOptions? FanoutOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("sourceCatalog")]
     public string? SourceCatalog { get; set; }
@@ -3698,6 +4885,14 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3821,6 +5016,48 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -3842,13 +5079,112 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3874,13 +5210,70 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3907,6 +5300,45 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
 
     [JsonPropertyName("valueTransformer")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3997,6 +5429,39 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -4137,6 +5602,9 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
 
@@ -4152,11 +5620,23 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
     [JsonPropertyName("kafkaOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
@@ -4320,6 +5800,14 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjects
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
+{
+    [JsonPropertyName("configs")]
+    public IDictionary<string, string>? Configs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig
 {
     /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
@@ -4365,6 +5853,9 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurations
 {
+    [JsonPropertyName("apiSourceConnectorConfig")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig? ApiSourceConnectorConfig { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsCatalog? Catalog { get; set; }
@@ -4781,6 +6272,10 @@ public partial class V1beta1PipelineSpecInitProviderRestartWindow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderRunAs
 {
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("groupName")]
+    public string? GroupName { get; set; }
+
     /// <summary>The application ID of an active service principal. Setting this field requires the servicePrincipal/user role.</summary>
     [JsonPropertyName("servicePrincipalName")]
     public string? ServicePrincipalName { get; set; }
@@ -4920,6 +6415,9 @@ public partial class V1beta1PipelineSpecInitProvider
 
     [JsonPropertyName("notification")]
     public IList<V1beta1PipelineSpecInitProviderNotification>? Notification { get; set; }
+
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>A flag indicating whether to use Photon engine. The default value is false.</summary>
     [JsonPropertyName("photon")]
@@ -5755,6 +7253,14 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
 {
     [JsonPropertyName("includeConfluenceSpaces")]
@@ -5874,6 +7380,48 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -5895,13 +7443,112 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -5927,13 +7574,70 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerProtobufOptions? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -5960,6 +7664,45 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("valueTransformer")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6050,6 +7793,39 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6190,6 +7966,9 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsApiSourceConnectorOptions? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
 
@@ -6205,11 +7984,23 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("kafkaOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsLinkedinAdsOptions? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMarketoOptions? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRabbitmqOptions? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
@@ -6222,6 +8013,148 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 
     [JsonPropertyName("zendeskSupportOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms
+{
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsAvroOptions? AvroOptions { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransformsProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptions
+{
+    [JsonPropertyName("fanoutBy")]
+    public string? FanoutBy { get; set; }
+
+    [JsonPropertyName("transforms")]
+    public IList<V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptionsTransforms>? Transforms { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6338,6 +8271,9 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("destinationSchema")]
     public string? DestinationSchema { get; set; }
 
+    [JsonPropertyName("fanoutOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaFanoutOptions? FanoutOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("sourceCatalog")]
     public string? SourceCatalog { get; set; }
@@ -6349,6 +8285,14 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6472,6 +8416,48 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
 {
     [JsonPropertyName("asVariant")]
@@ -6493,13 +8479,112 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerProtobufOptions? ProtobufOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions
+{
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptionsSchemaRegistry? SchemaRegistry { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6525,13 +8610,70 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions
+{
+    [JsonPropertyName("subject")]
+    public string? Subject { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry
+{
+    [JsonPropertyName("confluentOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistryConfluentOptions? ConfluentOptions { get; set; }
+
+    /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
+    [JsonPropertyName("connectionName")]
+    public string? ConnectionName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("protobufMessageName")]
+    public string? ProtobufMessageName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions
+{
+    [JsonPropertyName("descFilePath")]
+    public string? DescFilePath { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("messageName")]
+    public string? MessageName { get; set; }
+
+    [JsonPropertyName("parseMode")]
+    public string? ParseMode { get; set; }
+
+    [JsonPropertyName("recursiveFieldsMaxDepth")]
+    public double? RecursiveFieldsMaxDepth { get; set; }
+
+    [JsonPropertyName("schemaRegistry")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptionsSchemaRegistry? SchemaRegistry { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
 {
+    [JsonPropertyName("avroOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerAvroOptions? AvroOptions { get; set; }
+
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
+    [JsonPropertyName("inputColumn")]
+    public string? InputColumn { get; set; }
+
     [JsonPropertyName("jsonOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+
+    [JsonPropertyName("outputColumn")]
+    public string? OutputColumn { get; set; }
+
+    [JsonPropertyName("protobufOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerProtobufOptions? ProtobufOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6558,6 +8700,45 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
 
     [JsonPropertyName("valueTransformer")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("entityGranularity")]
+    public IList<string>? EntityGranularity { get; set; }
+
+    [JsonPropertyName("finder")]
+    public string? Finder { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("timeGranularity")]
+    public string? TimeGranularity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions
+{
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6648,6 +8829,39 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
 
     [JsonPropertyName("subjectFilter")]
     public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions
+{
+    [JsonPropertyName("queue")]
+    public string? Queue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("fields")]
+    public IList<string>? Fields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -6788,6 +9002,9 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptions
 {
+    [JsonPropertyName("apiSourceConnectorOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsApiSourceConnectorOptions? ApiSourceConnectorOptions { get; set; }
+
     [JsonPropertyName("confluenceOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
 
@@ -6803,11 +9020,23 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
     [JsonPropertyName("kafkaOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
 
+    [JsonPropertyName("linkedinAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsLinkedinAdsOptions? LinkedinAdsOptions { get; set; }
+
+    [JsonPropertyName("marketoOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMarketoOptions? MarketoOptions { get; set; }
+
     [JsonPropertyName("metaAdsOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
 
     [JsonPropertyName("outlookOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("rabbitmqOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRabbitmqOptions? RabbitmqOptions { get; set; }
+
+    [JsonPropertyName("redditAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions? RedditAdsOptions { get; set; }
 
     [JsonPropertyName("sharepointOptions")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
@@ -6971,6 +9200,14 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjects
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig
+{
+    [JsonPropertyName("configs")]
+    public IDictionary<string, string>? Configs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig
 {
     /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
@@ -7016,6 +9253,9 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionSourceCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurations
 {
+    [JsonPropertyName("apiSourceConnectorConfig")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsApiSourceConnectorConfig? ApiSourceConnectorConfig { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsCatalog? Catalog { get; set; }
@@ -7292,6 +9532,10 @@ public partial class V1beta1PipelineStatusAtProviderRestartWindow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderRunAs
 {
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("groupName")]
+    public string? GroupName { get; set; }
+
     /// <summary>The application ID of an active service principal. Setting this field requires the servicePrincipal/user role.</summary>
     [JsonPropertyName("servicePrincipalName")]
     public string? ServicePrincipalName { get; set; }
@@ -7426,6 +9670,9 @@ public partial class V1beta1PipelineStatusAtProvider
 
     [JsonPropertyName("notification")]
     public IList<V1beta1PipelineStatusAtProviderNotification>? Notification { get; set; }
+
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>A flag indicating whether to use Photon engine. The default value is false.</summary>
     [JsonPropertyName("photon")]

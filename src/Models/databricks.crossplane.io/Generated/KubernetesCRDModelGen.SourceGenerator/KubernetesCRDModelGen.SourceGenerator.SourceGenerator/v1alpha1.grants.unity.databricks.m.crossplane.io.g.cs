@@ -1570,11 +1570,20 @@ public partial class V1alpha1GrantSpecForProvider
     [JsonPropertyName("function")]
     public string? Function { get; set; }
 
+    [JsonPropertyName("mcpService")]
+    public string? McpService { get; set; }
+
     [JsonPropertyName("metastore")]
     public string? Metastore { get; set; }
 
     [JsonPropertyName("model")]
     public string? Model { get; set; }
+
+    [JsonPropertyName("modelProviderService")]
+    public string? ModelProviderService { get; set; }
+
+    [JsonPropertyName("modelService")]
+    public string? ModelService { get; set; }
 
     [JsonPropertyName("pipeline")]
     public string? Pipeline { get; set; }
@@ -1612,6 +1621,9 @@ public partial class V1alpha1GrantSpecForProvider
     /// <summary>Selector for a Schema in unity to populate schema.</summary>
     [JsonPropertyName("schemaSelector")]
     public V1alpha1GrantSpecForProviderSchemaSelector? SchemaSelector { get; set; }
+
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
 
     [JsonPropertyName("share")]
     public string? Share { get; set; }
@@ -3191,11 +3203,20 @@ public partial class V1alpha1GrantSpecInitProvider
     [JsonPropertyName("function")]
     public string? Function { get; set; }
 
+    [JsonPropertyName("mcpService")]
+    public string? McpService { get; set; }
+
     [JsonPropertyName("metastore")]
     public string? Metastore { get; set; }
 
     [JsonPropertyName("model")]
     public string? Model { get; set; }
+
+    [JsonPropertyName("modelProviderService")]
+    public string? ModelProviderService { get; set; }
+
+    [JsonPropertyName("modelService")]
+    public string? ModelService { get; set; }
 
     [JsonPropertyName("pipeline")]
     public string? Pipeline { get; set; }
@@ -3233,6 +3254,9 @@ public partial class V1alpha1GrantSpecInitProvider
     /// <summary>Selector for a Schema in unity to populate schema.</summary>
     [JsonPropertyName("schemaSelector")]
     public V1alpha1GrantSpecInitProviderSchemaSelector? SchemaSelector { get; set; }
+
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
 
     [JsonPropertyName("share")]
     public string? Share { get; set; }
@@ -3415,11 +3439,20 @@ public partial class V1alpha1GrantStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    [JsonPropertyName("mcpService")]
+    public string? McpService { get; set; }
+
     [JsonPropertyName("metastore")]
     public string? Metastore { get; set; }
 
     [JsonPropertyName("model")]
     public string? Model { get; set; }
+
+    [JsonPropertyName("modelProviderService")]
+    public string? ModelProviderService { get; set; }
+
+    [JsonPropertyName("modelService")]
+    public string? ModelService { get; set; }
 
     [JsonPropertyName("pipeline")]
     public string? Pipeline { get; set; }
@@ -3441,6 +3474,9 @@ public partial class V1alpha1GrantStatusAtProvider
 
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
+
+    [JsonPropertyName("secret")]
+    public string? Secret { get; set; }
 
     [JsonPropertyName("share")]
     public string? Share { get; set; }

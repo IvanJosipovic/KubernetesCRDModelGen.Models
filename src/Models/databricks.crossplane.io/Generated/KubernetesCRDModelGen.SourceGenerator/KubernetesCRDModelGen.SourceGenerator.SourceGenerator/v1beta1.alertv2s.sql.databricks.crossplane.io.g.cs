@@ -104,7 +104,10 @@ public partial class V1beta1AlertV2SpecForProviderEvaluationSource
     [JsonPropertyName("display")]
     public string? Display { get; set; }
 
-    /// <summary>(string, required)</summary>
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -122,12 +125,15 @@ public partial class V1beta1AlertV2SpecForProviderEvaluationThresholdColumn
     [JsonPropertyName("display")]
     public string? Display { get; set; }
 
-    /// <summary>(string, required)</summary>
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>(AlertV2OperandValue, optional)</summary>
+/// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AlertV2SpecForProviderEvaluationThresholdValue
@@ -154,7 +160,7 @@ public partial class V1beta1AlertV2SpecForProviderEvaluationThreshold
     [JsonPropertyName("column")]
     public V1beta1AlertV2SpecForProviderEvaluationThresholdColumn? Column { get; set; }
 
-    /// <summary>(AlertV2OperandValue, optional)</summary>
+    /// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
     [JsonPropertyName("value")]
     public V1beta1AlertV2SpecForProviderEvaluationThresholdValue? Value { get; set; }
 }
@@ -183,6 +189,29 @@ public partial class V1beta1AlertV2SpecForProviderEvaluation
     /// <summary>Threshold to user for alert evaluation, can be a column or a value</summary>
     [JsonPropertyName("threshold")]
     public V1beta1AlertV2SpecForProviderEvaluationThreshold? Threshold { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AlertV2SpecForProviderParameters
+{
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// The SQL data type of the parameter, for example STRING, INT, or DECIMAL(10, 2). If no type is given
+    /// the type is assumed to be STRING. Complex types such as ARRAY, MAP, and STRUCT are not supported
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
@@ -252,6 +281,10 @@ public partial class V1beta1AlertV2SpecForProvider
     [JsonPropertyName("customSummary")]
     public string? CustomSummary { get; set; }
 
+    /// <summary>The format used to interpret the custom_summary and custom_description templates.</summary>
+    [JsonPropertyName("customTemplateFormat")]
+    public string? CustomTemplateFormat { get; set; }
+
     /// <summary>The display name of the alert</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -259,6 +292,10 @@ public partial class V1beta1AlertV2SpecForProvider
     /// <summary>(AlertV2Evaluation, required)</summary>
     [JsonPropertyName("evaluation")]
     public V1beta1AlertV2SpecForProviderEvaluation? Evaluation { get; set; }
+
+    /// <summary>A list of parameters to pass into the alert SQL query statement containing parameter markers. Static values only.</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1AlertV2SpecForProviderParameters>? Parameters { get; set; }
 
     /// <summary>The workspace path of the folder containing the alert. Can only be set on create, and cannot be updated</summary>
     [JsonPropertyName("parentPath")]
@@ -348,7 +385,10 @@ public partial class V1beta1AlertV2SpecInitProviderEvaluationSource
     [JsonPropertyName("display")]
     public string? Display { get; set; }
 
-    /// <summary>(string, required)</summary>
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -366,12 +406,15 @@ public partial class V1beta1AlertV2SpecInitProviderEvaluationThresholdColumn
     [JsonPropertyName("display")]
     public string? Display { get; set; }
 
-    /// <summary>(string, required)</summary>
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>(AlertV2OperandValue, optional)</summary>
+/// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AlertV2SpecInitProviderEvaluationThresholdValue
@@ -398,7 +441,7 @@ public partial class V1beta1AlertV2SpecInitProviderEvaluationThreshold
     [JsonPropertyName("column")]
     public V1beta1AlertV2SpecInitProviderEvaluationThresholdColumn? Column { get; set; }
 
-    /// <summary>(AlertV2OperandValue, optional)</summary>
+    /// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
     [JsonPropertyName("value")]
     public V1beta1AlertV2SpecInitProviderEvaluationThresholdValue? Value { get; set; }
 }
@@ -427,6 +470,29 @@ public partial class V1beta1AlertV2SpecInitProviderEvaluation
     /// <summary>Threshold to user for alert evaluation, can be a column or a value</summary>
     [JsonPropertyName("threshold")]
     public V1beta1AlertV2SpecInitProviderEvaluationThreshold? Threshold { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AlertV2SpecInitProviderParameters
+{
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// The SQL data type of the parameter, for example STRING, INT, or DECIMAL(10, 2). If no type is given
+    /// the type is assumed to be STRING. Complex types such as ARRAY, MAP, and STRUCT are not supported
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
@@ -508,6 +574,10 @@ public partial class V1beta1AlertV2SpecInitProvider
     [JsonPropertyName("customSummary")]
     public string? CustomSummary { get; set; }
 
+    /// <summary>The format used to interpret the custom_summary and custom_description templates.</summary>
+    [JsonPropertyName("customTemplateFormat")]
+    public string? CustomTemplateFormat { get; set; }
+
     /// <summary>The display name of the alert</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -515,6 +585,10 @@ public partial class V1beta1AlertV2SpecInitProvider
     /// <summary>(AlertV2Evaluation, required)</summary>
     [JsonPropertyName("evaluation")]
     public V1beta1AlertV2SpecInitProviderEvaluation? Evaluation { get; set; }
+
+    /// <summary>A list of parameters to pass into the alert SQL query statement containing parameter markers. Static values only.</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1AlertV2SpecInitProviderParameters>? Parameters { get; set; }
 
     /// <summary>The workspace path of the folder containing the alert. Can only be set on create, and cannot be updated</summary>
     [JsonPropertyName("parentPath")]
@@ -820,7 +894,10 @@ public partial class V1beta1AlertV2StatusAtProviderEvaluationSource
     [JsonPropertyName("display")]
     public string? Display { get; set; }
 
-    /// <summary>(string, required)</summary>
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -838,12 +915,15 @@ public partial class V1beta1AlertV2StatusAtProviderEvaluationThresholdColumn
     [JsonPropertyName("display")]
     public string? Display { get; set; }
 
-    /// <summary>(string, required)</summary>
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>(AlertV2OperandValue, optional)</summary>
+/// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AlertV2StatusAtProviderEvaluationThresholdValue
@@ -870,7 +950,7 @@ public partial class V1beta1AlertV2StatusAtProviderEvaluationThreshold
     [JsonPropertyName("column")]
     public V1beta1AlertV2StatusAtProviderEvaluationThresholdColumn? Column { get; set; }
 
-    /// <summary>(AlertV2OperandValue, optional)</summary>
+    /// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
     [JsonPropertyName("value")]
     public V1beta1AlertV2StatusAtProviderEvaluationThresholdValue? Value { get; set; }
 }
@@ -907,6 +987,29 @@ public partial class V1beta1AlertV2StatusAtProviderEvaluation
     /// <summary>Threshold to user for alert evaluation, can be a column or a value</summary>
     [JsonPropertyName("threshold")]
     public V1beta1AlertV2StatusAtProviderEvaluationThreshold? Threshold { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AlertV2StatusAtProviderParameters
+{
+    /// <summary>
+    /// The name of the parameter. Reference it in the query text as :name. Required, must be
+    /// non-empty, and must be unique across the alert&apos;s parameters
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// The SQL data type of the parameter, for example STRING, INT, or DECIMAL(10, 2). If no type is given
+    /// the type is assumed to be STRING. Complex types such as ARRAY, MAP, and STRUCT are not supported
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>The value bound to the parameter, represented as a string. If omitted, the value is interpreted as NULL</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
@@ -980,6 +1083,10 @@ public partial class V1beta1AlertV2StatusAtProvider
     [JsonPropertyName("customSummary")]
     public string? CustomSummary { get; set; }
 
+    /// <summary>The format used to interpret the custom_summary and custom_description templates.</summary>
+    [JsonPropertyName("customTemplateFormat")]
+    public string? CustomTemplateFormat { get; set; }
+
     /// <summary>The display name of the alert</summary>
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
@@ -996,7 +1103,7 @@ public partial class V1beta1AlertV2StatusAtProvider
     [JsonPropertyName("evaluation")]
     public V1beta1AlertV2StatusAtProviderEvaluation? Evaluation { get; set; }
 
-    /// <summary>UUID identifying the alert</summary>
+    /// <summary>The canonical identifier of the alert to retrieve information about</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1007,6 +1114,10 @@ public partial class V1beta1AlertV2StatusAtProvider
     /// <summary>The owner&apos;s username. This field is set to &quot;Unavailable&quot; if the user has been deleted</summary>
     [JsonPropertyName("ownerUserName")]
     public string? OwnerUserName { get; set; }
+
+    /// <summary>A list of parameters to pass into the alert SQL query statement containing parameter markers. Static values only.</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1AlertV2StatusAtProviderParameters>? Parameters { get; set; }
 
     /// <summary>The workspace path of the folder containing the alert. Can only be set on create, and cannot be updated</summary>
     [JsonPropertyName("parentPath")]

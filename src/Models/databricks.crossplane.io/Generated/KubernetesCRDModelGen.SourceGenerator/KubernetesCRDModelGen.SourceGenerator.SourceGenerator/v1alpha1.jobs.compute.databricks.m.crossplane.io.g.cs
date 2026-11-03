@@ -44,8 +44,27 @@ public partial class V1alpha1JobList : IKubernetesObject<V1ListMeta>, IItems<V1a
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderContinuousMaintenanceWindow
+{
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+
+    [JsonPropertyName("startHour")]
+    public double? StartHour { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderContinuous
 {
+    [JsonPropertyName("maintenanceWindow")]
+    public IList<V1alpha1JobSpecForProviderContinuousMaintenanceWindow>? MaintenanceWindow { get; set; }
+
     /// <summary>Indicate whether this continuous job is paused or not. Either PAUSED or UNPAUSED. When the pause_status field is omitted in the block, the server will default to using UNPAUSED as a value for pause_status.</summary>
     [JsonPropertyName("pauseStatus")]
     public string? PauseStatus { get; set; }
@@ -298,6 +317,12 @@ public partial class V1alpha1JobSpecForProviderEmailNotifications
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<string>? OnStart { get; set; }
@@ -333,6 +358,9 @@ public partial class V1alpha1JobSpecForProviderEnvironmentSpec
     /// <summary>(list of strings) List of pip dependencies, as supported by the version of pip in this environment. Each dependency is a pip requirement file line.  See API docs for more information.</summary>
     [JsonPropertyName("javaDependencies")]
     public IList<string>? JavaDependencies { get; set; }
+
+    [JsonPropertyName("projectEnvironment")]
+    public string? ProjectEnvironment { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -347,6 +375,31 @@ public partial class V1alpha1JobSpecForProviderEnvironment
     /// <summary>block describing the Environment. Consists of following attributes:</summary>
     [JsonPropertyName("spec")]
     public IList<V1alpha1JobSpecForProviderEnvironmentSpec>? Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderEnvironmentVariablesSpec
+{
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    [JsonPropertyName("variables")]
+    public IDictionary<string, string>? Variables { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderEnvironmentVariables
+{
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
+
+    /// <summary>block describing the Environment. Consists of following attributes:</summary>
+    [JsonPropertyName("spec")]
+    public IList<V1alpha1JobSpecForProviderEnvironmentVariablesSpec>? Spec { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -675,6 +728,10 @@ public partial class V1alpha1JobSpecForProviderJobClusterNewClusterDriverNodeTyp
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -914,6 +971,10 @@ public partial class V1alpha1JobSpecForProviderJobClusterNewClusterWorkerNodeTyp
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -977,6 +1038,9 @@ public partial class V1alpha1JobSpecForProviderJobClusterNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecForProviderJobClusterNewClusterDockerImage>? DockerImage { get; set; }
@@ -1085,6 +1149,10 @@ public partial class V1alpha1JobSpecForProviderJobCluster
     /// <summary>Block with almost the same set of parameters as for databricks_cluster resource, except following (check the REST API documentation for full list of supported parameters):</summary>
     [JsonPropertyName("newCluster")]
     public IList<V1alpha1JobSpecForProviderJobClusterNewCluster>? NewCluster { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("serverlessComputeId")]
+    public string? ServerlessComputeId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1393,6 +1461,10 @@ public partial class V1alpha1JobSpecForProviderNewClusterDriverNodeTypeFlexibili
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1632,6 +1704,10 @@ public partial class V1alpha1JobSpecForProviderNewClusterWorkerNodeTypeFlexibili
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1692,6 +1768,9 @@ public partial class V1alpha1JobSpecForProviderNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecForProviderNewClusterDockerImage>? DockerImage { get; set; }
@@ -2362,6 +2441,10 @@ public partial class V1alpha1JobSpecForProviderTaskAiRuntimeTaskDeploymentsCompu
 
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("provisionedCapacityId")]
+    public string? ProvisionedCapacityId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -2387,17 +2470,35 @@ public partial class V1alpha1JobSpecForProviderTaskAiRuntimeTaskDeployments
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskAiRuntimeTask
 {
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("codeSourcePath")]
+    public string? CodeSourcePath { get; set; }
+
     [JsonPropertyName("deployments")]
     public IList<V1alpha1JobSpecForProviderTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
 
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("dockerImageUrl")]
+    public string? DockerImageUrl { get; set; }
+
     [JsonPropertyName("experiment")]
     public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowArtifactLocation")]
+    public string? MlflowArtifactLocation { get; set; }
 
     [JsonPropertyName("mlflowExperimentDirectory")]
     public string? MlflowExperimentDirectory { get; set; }
 
     [JsonPropertyName("mlflowRun")]
     public string? MlflowRun { get; set; }
+
+    [JsonPropertyName("priorityClass")]
+    public string? PriorityClass { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("unityCatalogImagePath")]
+    public string? UnityCatalogImagePath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -2422,6 +2523,10 @@ public partial class V1alpha1JobSpecForProviderTaskAlertTask
     /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
     [JsonPropertyName("alertId")]
     public string? AlertId { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
 
     /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
     [JsonPropertyName("subscribers")]
@@ -2489,6 +2594,59 @@ public partial class V1alpha1JobSpecForProviderTaskConditionTask
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("pageId")]
+    public string? PageId { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("widgetId")]
+    public string? WidgetId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachmentDataAttachment
+{
+    [JsonPropertyName("fileFormat")]
+    public string? FileFormat { get; set; }
+
+    [JsonPropertyName("includeAppliedFilters")]
+    public bool? IncludeAppliedFilters { get; set; }
+
+    [JsonPropertyName("widgets")]
+    public IList<V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets>? Widgets { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachmentPageAttachment
+{
+    [JsonPropertyName("pageIds")]
+    public IList<string>? PageIds { get; set; }
+
+    [JsonPropertyName("pageSelection")]
+    public string? PageSelection { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachment
+{
+    [JsonPropertyName("dataAttachment")]
+    public IList<V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachmentDataAttachment>? DataAttachment { get; set; }
+
+    [JsonPropertyName("pageAttachment")]
+    public IList<V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachmentPageAttachment>? PageAttachment { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionSubscribers
 {
     /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
@@ -2505,6 +2663,9 @@ public partial class V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionSubs
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskDashboardTaskSubscription
 {
+    [JsonPropertyName("attachment")]
+    public IList<V1alpha1JobSpecForProviderTaskDashboardTaskSubscriptionAttachment>? Attachment { get; set; }
+
     /// <summary>Allows users to specify a custom subject line on the email sent to subscribers.</summary>
     [JsonPropertyName("customSubject")]
     public string? CustomSubject { get; set; }
@@ -2974,6 +3135,12 @@ public partial class V1alpha1JobSpecForProviderTaskEmailNotifications
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<string>? OnStart { get; set; }
@@ -3160,6 +3327,10 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTaskD
 
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("provisionedCapacityId")]
+    public string? ProvisionedCapacityId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3185,17 +3356,35 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTaskD
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTask
 {
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("codeSourcePath")]
+    public string? CodeSourcePath { get; set; }
+
     [JsonPropertyName("deployments")]
     public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
 
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("dockerImageUrl")]
+    public string? DockerImageUrl { get; set; }
+
     [JsonPropertyName("experiment")]
     public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowArtifactLocation")]
+    public string? MlflowArtifactLocation { get; set; }
 
     [JsonPropertyName("mlflowExperimentDirectory")]
     public string? MlflowExperimentDirectory { get; set; }
 
     [JsonPropertyName("mlflowRun")]
     public string? MlflowRun { get; set; }
+
+    [JsonPropertyName("priorityClass")]
+    public string? PriorityClass { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("unityCatalogImagePath")]
+    public string? UnityCatalogImagePath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -3220,6 +3409,10 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskAlertTask
     /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
     [JsonPropertyName("alertId")]
     public string? AlertId { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
 
     /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
     [JsonPropertyName("subscribers")]
@@ -3287,6 +3480,59 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskConditionTask
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("pageId")]
+    public string? PageId { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("widgetId")]
+    public string? WidgetId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment
+{
+    [JsonPropertyName("fileFormat")]
+    public string? FileFormat { get; set; }
+
+    [JsonPropertyName("includeAppliedFilters")]
+    public bool? IncludeAppliedFilters { get; set; }
+
+    [JsonPropertyName("widgets")]
+    public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets>? Widgets { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment
+{
+    [JsonPropertyName("pageIds")]
+    public IList<string>? PageIds { get; set; }
+
+    [JsonPropertyName("pageSelection")]
+    public string? PageSelection { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachment
+{
+    [JsonPropertyName("dataAttachment")]
+    public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment>? DataAttachment { get; set; }
+
+    [JsonPropertyName("pageAttachment")]
+    public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment>? PageAttachment { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers
 {
     /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
@@ -3303,6 +3549,9 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskS
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscription
 {
+    [JsonPropertyName("attachment")]
+    public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachment>? Attachment { get; set; }
+
     /// <summary>Allows users to specify a custom subject line on the email sent to subscribers.</summary>
     [JsonPropertyName("customSubject")]
     public string? CustomSubject { get; set; }
@@ -3429,6 +3678,12 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskEmailNotificat
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -3829,6 +4084,10 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskNewClusterDriv
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -4068,6 +4327,10 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskNewClusterWork
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -4128,6 +4391,9 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskNewClusterDockerImage>? DockerImage { get; set; }
@@ -4671,6 +4937,26 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotific
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotificationsOnStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -4710,6 +4996,12 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotific
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotificationsOnFailure>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobSpecForProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -4788,6 +5080,9 @@ public partial class V1alpha1JobSpecForProviderTaskForEachTaskTask
     /// <summary>identifier of an environment block that is used to specify libraries.  Required for some tasks (spark_python_task, python_wheel_task, ...) running on serverless compute.</summary>
     [JsonPropertyName("environmentKey")]
     public string? EnvironmentKey { get; set; }
+
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
 
     /// <summary>If existing_cluster_id, the ID of an existing cluster that will be used for all runs of this job. When running jobs on an existing cluster, you may need to manually restart the cluster if it stops responding. We strongly suggest to use new_cluster for greater reliability.</summary>
     [JsonPropertyName("existingClusterId")]
@@ -5290,6 +5585,10 @@ public partial class V1alpha1JobSpecForProviderTaskNewClusterDriverNodeTypeFlexi
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -5529,6 +5828,10 @@ public partial class V1alpha1JobSpecForProviderTaskNewClusterWorkerNodeTypeFlexi
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -5592,6 +5895,9 @@ public partial class V1alpha1JobSpecForProviderTaskNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecForProviderTaskNewClusterDockerImage>? DockerImage { get; set; }
@@ -7503,6 +7809,26 @@ public partial class V1alpha1JobSpecForProviderTaskWebhookNotificationsOnFailure
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTaskWebhookNotificationsOnMaintenanceStart
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderTaskWebhookNotificationsOnStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -7542,6 +7868,12 @@ public partial class V1alpha1JobSpecForProviderTaskWebhookNotifications
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobSpecForProviderTaskWebhookNotificationsOnFailure>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobSpecForProviderTaskWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobSpecForProviderTaskWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -7620,6 +7952,9 @@ public partial class V1alpha1JobSpecForProviderTask
     /// <summary>identifier of an environment block that is used to specify libraries.  Required for some tasks (spark_python_task, python_wheel_task, ...) running on serverless compute.</summary>
     [JsonPropertyName("environmentKey")]
     public string? EnvironmentKey { get; set; }
+
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
 
     /// <summary>If existing_cluster_id, the ID of an existing cluster that will be used for all runs of this job. When running jobs on an existing cluster, you may need to manually restart the cluster if it stops responding. We strongly suggest to use new_cluster for greater reliability.</summary>
     [JsonPropertyName("existingClusterId")]
@@ -7858,6 +8193,182 @@ public partial class V1alpha1JobSpecForProviderTrigger
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersContinuousMaintenanceWindow
+{
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+
+    [JsonPropertyName("startHour")]
+    public double? StartHour { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersContinuous
+{
+    [JsonPropertyName("maintenanceWindow")]
+    public IList<V1alpha1JobSpecForProviderTriggersContinuousMaintenanceWindow>? MaintenanceWindow { get; set; }
+
+    /// <summary>Controls task level retry behaviour. Allowed values are:</summary>
+    [JsonPropertyName("taskRetryMode")]
+    public string? TaskRetryMode { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersFileArrival
+{
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersModel
+{
+    [JsonPropertyName("aliases")]
+    public IList<string>? Aliases { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("condition")]
+    public string? Condition { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("securableName")]
+    public string? SecurableName { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersPeriodic
+{
+    /// <summary>Specifies the interval at which the job should run.</summary>
+    [JsonPropertyName("interval")]
+    public double? Interval { get; set; }
+
+    /// <summary>The unit of time for the interval.  Possible values are: DAYS, HOURS, WEEKS.</summary>
+    [JsonPropertyName("unit")]
+    public string? Unit { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersSchedule
+{
+    /// <summary>A Cron expression using Quartz syntax that describes the schedule for a job. This field is required.</summary>
+    [JsonPropertyName("quartzCronExpression")]
+    public string? QuartzCronExpression { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggersTableUpdate
+{
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("condition")]
+    public string? Condition { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>A non-empty list of tables to monitor for changes. The table name must be in the format catalog_name.schema_name.table_name.</summary>
+    [JsonPropertyName("tableNames")]
+    public IList<string>? TableNames { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderTriggers
+{
+    /// <summary>Configuration block to configure pause status. See continuous Configuration Block.</summary>
+    [JsonPropertyName("continuous")]
+    public IList<V1alpha1JobSpecForProviderTriggersContinuous>? Continuous { get; set; }
+
+    /// <summary>configuration block to define a trigger for File Arrival events consisting of following attributes:</summary>
+    [JsonPropertyName("fileArrival")]
+    public IList<V1alpha1JobSpecForProviderTriggersFileArrival>? FileArrival { get; set; }
+
+    [JsonPropertyName("model")]
+    public IList<V1alpha1JobSpecForProviderTriggersModel>? Model { get; set; }
+
+    /// <summary>Indicate whether this trigger is paused or not. Either PAUSED or UNPAUSED. When the pause_status field is omitted in the block, the server will default to using UNPAUSED as a value for pause_status.</summary>
+    [JsonPropertyName("pauseStatus")]
+    public string? PauseStatus { get; set; }
+
+    /// <summary>configuration block to define a trigger for Periodic Triggers consisting of the following attributes:</summary>
+    [JsonPropertyName("periodic")]
+    public IList<V1alpha1JobSpecForProviderTriggersPeriodic>? Periodic { get; set; }
+
+    /// <summary>An optional periodic schedule for this job. The default behavior is that the job runs when triggered by clicking Run Now in the Jobs UI or sending an API request to runNow. See schedule Configuration Block below.</summary>
+    [JsonPropertyName("schedule")]
+    public IList<V1alpha1JobSpecForProviderTriggersSchedule>? Schedule { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public IList<V1alpha1JobSpecForProviderTriggersSqlCondition>? SqlCondition { get; set; }
+
+    /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
+    [JsonPropertyName("tableUpdate")]
+    public IList<V1alpha1JobSpecForProviderTriggersTableUpdate>? TableUpdate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderWebhookNotificationsOnDurationWarningThresholdExceeded
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -7869,6 +8380,26 @@ public partial class V1alpha1JobSpecForProviderWebhookNotificationsOnDurationWar
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecForProviderWebhookNotificationsOnFailure
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecForProviderWebhookNotificationsOnMaintenanceStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
     [JsonPropertyName("id")]
@@ -7918,6 +8449,12 @@ public partial class V1alpha1JobSpecForProviderWebhookNotifications
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobSpecForProviderWebhookNotificationsOnFailure>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobSpecForProviderWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobSpecForProviderWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<V1alpha1JobSpecForProviderWebhookNotificationsOnStart>? OnStart { get; set; }
@@ -7963,6 +8500,9 @@ public partial class V1alpha1JobSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    [JsonPropertyName("durationTarget")]
+    public string? DurationTarget { get; set; }
+
     /// <summary>If &quot;UI_LOCKED&quot;, the user interface for the job will be locked. If &quot;EDITABLE&quot; (the default), the user interface will be editable.</summary>
     [JsonPropertyName("editMode")]
     public string? EditMode { get; set; }
@@ -7973,6 +8513,9 @@ public partial class V1alpha1JobSpecForProvider
 
     [JsonPropertyName("environment")]
     public IList<V1alpha1JobSpecForProviderEnvironment>? Environment { get; set; }
+
+    [JsonPropertyName("environmentVariables")]
+    public IList<V1alpha1JobSpecForProviderEnvironmentVariables>? EnvironmentVariables { get; set; }
 
     /// <summary>Identifier of the interactive cluster to run job on.  Note: running tasks on interactive clusters may lead to increased costs!</summary>
     [JsonPropertyName("existingClusterId")]
@@ -8097,6 +8640,9 @@ public partial class V1alpha1JobSpecForProvider
     [JsonPropertyName("trigger")]
     public IList<V1alpha1JobSpecForProviderTrigger>? Trigger { get; set; }
 
+    [JsonPropertyName("triggers")]
+    public IList<V1alpha1JobSpecForProviderTriggers>? Triggers { get; set; }
+
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
     [JsonPropertyName("usagePolicyId")]
     public string? UsagePolicyId { get; set; }
@@ -8109,8 +8655,27 @@ public partial class V1alpha1JobSpecForProvider
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderContinuousMaintenanceWindow
+{
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+
+    [JsonPropertyName("startHour")]
+    public double? StartHour { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderContinuous
 {
+    [JsonPropertyName("maintenanceWindow")]
+    public IList<V1alpha1JobSpecInitProviderContinuousMaintenanceWindow>? MaintenanceWindow { get; set; }
+
     /// <summary>Indicate whether this continuous job is paused or not. Either PAUSED or UNPAUSED. When the pause_status field is omitted in the block, the server will default to using UNPAUSED as a value for pause_status.</summary>
     [JsonPropertyName("pauseStatus")]
     public string? PauseStatus { get; set; }
@@ -8363,6 +8928,12 @@ public partial class V1alpha1JobSpecInitProviderEmailNotifications
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<string>? OnStart { get; set; }
@@ -8398,6 +8969,9 @@ public partial class V1alpha1JobSpecInitProviderEnvironmentSpec
     /// <summary>(list of strings) List of pip dependencies, as supported by the version of pip in this environment. Each dependency is a pip requirement file line.  See API docs for more information.</summary>
     [JsonPropertyName("javaDependencies")]
     public IList<string>? JavaDependencies { get; set; }
+
+    [JsonPropertyName("projectEnvironment")]
+    public string? ProjectEnvironment { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -8412,6 +8986,31 @@ public partial class V1alpha1JobSpecInitProviderEnvironment
     /// <summary>block describing the Environment. Consists of following attributes:</summary>
     [JsonPropertyName("spec")]
     public IList<V1alpha1JobSpecInitProviderEnvironmentSpec>? Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderEnvironmentVariablesSpec
+{
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    [JsonPropertyName("variables")]
+    public IDictionary<string, string>? Variables { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderEnvironmentVariables
+{
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
+
+    /// <summary>block describing the Environment. Consists of following attributes:</summary>
+    [JsonPropertyName("spec")]
+    public IList<V1alpha1JobSpecInitProviderEnvironmentVariablesSpec>? Spec { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -8740,6 +9339,10 @@ public partial class V1alpha1JobSpecInitProviderJobClusterNewClusterDriverNodeTy
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -8979,6 +9582,10 @@ public partial class V1alpha1JobSpecInitProviderJobClusterNewClusterWorkerNodeTy
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -9042,6 +9649,9 @@ public partial class V1alpha1JobSpecInitProviderJobClusterNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecInitProviderJobClusterNewClusterDockerImage>? DockerImage { get; set; }
@@ -9150,6 +9760,10 @@ public partial class V1alpha1JobSpecInitProviderJobCluster
     /// <summary>Block with almost the same set of parameters as for databricks_cluster resource, except following (check the REST API documentation for full list of supported parameters):</summary>
     [JsonPropertyName("newCluster")]
     public IList<V1alpha1JobSpecInitProviderJobClusterNewCluster>? NewCluster { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("serverlessComputeId")]
+    public string? ServerlessComputeId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -9458,6 +10072,10 @@ public partial class V1alpha1JobSpecInitProviderNewClusterDriverNodeTypeFlexibil
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -9697,6 +10315,10 @@ public partial class V1alpha1JobSpecInitProviderNewClusterWorkerNodeTypeFlexibil
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -9757,6 +10379,9 @@ public partial class V1alpha1JobSpecInitProviderNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecInitProviderNewClusterDockerImage>? DockerImage { get; set; }
@@ -10427,6 +11052,10 @@ public partial class V1alpha1JobSpecInitProviderTaskAiRuntimeTaskDeploymentsComp
 
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("provisionedCapacityId")]
+    public string? ProvisionedCapacityId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -10452,17 +11081,35 @@ public partial class V1alpha1JobSpecInitProviderTaskAiRuntimeTaskDeployments
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskAiRuntimeTask
 {
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("codeSourcePath")]
+    public string? CodeSourcePath { get; set; }
+
     [JsonPropertyName("deployments")]
     public IList<V1alpha1JobSpecInitProviderTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
 
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("dockerImageUrl")]
+    public string? DockerImageUrl { get; set; }
+
     [JsonPropertyName("experiment")]
     public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowArtifactLocation")]
+    public string? MlflowArtifactLocation { get; set; }
 
     [JsonPropertyName("mlflowExperimentDirectory")]
     public string? MlflowExperimentDirectory { get; set; }
 
     [JsonPropertyName("mlflowRun")]
     public string? MlflowRun { get; set; }
+
+    [JsonPropertyName("priorityClass")]
+    public string? PriorityClass { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("unityCatalogImagePath")]
+    public string? UnityCatalogImagePath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -10487,6 +11134,10 @@ public partial class V1alpha1JobSpecInitProviderTaskAlertTask
     /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
     [JsonPropertyName("alertId")]
     public string? AlertId { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
 
     /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
     [JsonPropertyName("subscribers")]
@@ -10554,6 +11205,59 @@ public partial class V1alpha1JobSpecInitProviderTaskConditionTask
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("pageId")]
+    public string? PageId { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("widgetId")]
+    public string? WidgetId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachmentDataAttachment
+{
+    [JsonPropertyName("fileFormat")]
+    public string? FileFormat { get; set; }
+
+    [JsonPropertyName("includeAppliedFilters")]
+    public bool? IncludeAppliedFilters { get; set; }
+
+    [JsonPropertyName("widgets")]
+    public IList<V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets>? Widgets { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachmentPageAttachment
+{
+    [JsonPropertyName("pageIds")]
+    public IList<string>? PageIds { get; set; }
+
+    [JsonPropertyName("pageSelection")]
+    public string? PageSelection { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachment
+{
+    [JsonPropertyName("dataAttachment")]
+    public IList<V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachmentDataAttachment>? DataAttachment { get; set; }
+
+    [JsonPropertyName("pageAttachment")]
+    public IList<V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachmentPageAttachment>? PageAttachment { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionSubscribers
 {
     /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
@@ -10570,6 +11274,9 @@ public partial class V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionSub
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskDashboardTaskSubscription
 {
+    [JsonPropertyName("attachment")]
+    public IList<V1alpha1JobSpecInitProviderTaskDashboardTaskSubscriptionAttachment>? Attachment { get; set; }
+
     /// <summary>Allows users to specify a custom subject line on the email sent to subscribers.</summary>
     [JsonPropertyName("customSubject")]
     public string? CustomSubject { get; set; }
@@ -11039,6 +11746,12 @@ public partial class V1alpha1JobSpecInitProviderTaskEmailNotifications
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<string>? OnStart { get; set; }
@@ -11225,6 +11938,10 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTask
 
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("provisionedCapacityId")]
+    public string? ProvisionedCapacityId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -11250,17 +11967,35 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTask
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTask
 {
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("codeSourcePath")]
+    public string? CodeSourcePath { get; set; }
+
     [JsonPropertyName("deployments")]
     public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
 
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("dockerImageUrl")]
+    public string? DockerImageUrl { get; set; }
+
     [JsonPropertyName("experiment")]
     public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowArtifactLocation")]
+    public string? MlflowArtifactLocation { get; set; }
 
     [JsonPropertyName("mlflowExperimentDirectory")]
     public string? MlflowExperimentDirectory { get; set; }
 
     [JsonPropertyName("mlflowRun")]
     public string? MlflowRun { get; set; }
+
+    [JsonPropertyName("priorityClass")]
+    public string? PriorityClass { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("unityCatalogImagePath")]
+    public string? UnityCatalogImagePath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -11285,6 +12020,10 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskAlertTask
     /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
     [JsonPropertyName("alertId")]
     public string? AlertId { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
 
     /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
     [JsonPropertyName("subscribers")]
@@ -11352,6 +12091,59 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskConditionTask
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("pageId")]
+    public string? PageId { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("widgetId")]
+    public string? WidgetId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment
+{
+    [JsonPropertyName("fileFormat")]
+    public string? FileFormat { get; set; }
+
+    [JsonPropertyName("includeAppliedFilters")]
+    public bool? IncludeAppliedFilters { get; set; }
+
+    [JsonPropertyName("widgets")]
+    public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets>? Widgets { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment
+{
+    [JsonPropertyName("pageIds")]
+    public IList<string>? PageIds { get; set; }
+
+    [JsonPropertyName("pageSelection")]
+    public string? PageSelection { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachment
+{
+    [JsonPropertyName("dataAttachment")]
+    public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment>? DataAttachment { get; set; }
+
+    [JsonPropertyName("pageAttachment")]
+    public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment>? PageAttachment { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers
 {
     /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
@@ -11368,6 +12160,9 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTask
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscription
 {
+    [JsonPropertyName("attachment")]
+    public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachment>? Attachment { get; set; }
+
     /// <summary>Allows users to specify a custom subject line on the email sent to subscribers.</summary>
     [JsonPropertyName("customSubject")]
     public string? CustomSubject { get; set; }
@@ -11494,6 +12289,12 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskEmailNotifica
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -11894,6 +12695,10 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskNewClusterDri
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -12133,6 +12938,10 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskNewClusterWor
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -12193,6 +13002,9 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskNewClusterDockerImage>? DockerImage { get; set; }
@@ -12736,6 +13548,26 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotifi
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotificationsOnStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -12775,6 +13607,12 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotifi
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotificationsOnFailure>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobSpecInitProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -12853,6 +13691,9 @@ public partial class V1alpha1JobSpecInitProviderTaskForEachTaskTask
     /// <summary>identifier of an environment block that is used to specify libraries.  Required for some tasks (spark_python_task, python_wheel_task, ...) running on serverless compute.</summary>
     [JsonPropertyName("environmentKey")]
     public string? EnvironmentKey { get; set; }
+
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
 
     /// <summary>If existing_cluster_id, the ID of an existing cluster that will be used for all runs of this job. When running jobs on an existing cluster, you may need to manually restart the cluster if it stops responding. We strongly suggest to use new_cluster for greater reliability.</summary>
     [JsonPropertyName("existingClusterId")]
@@ -13355,6 +14196,10 @@ public partial class V1alpha1JobSpecInitProviderTaskNewClusterDriverNodeTypeFlex
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -13594,6 +14439,10 @@ public partial class V1alpha1JobSpecInitProviderTaskNewClusterWorkerNodeTypeFlex
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -13657,6 +14506,9 @@ public partial class V1alpha1JobSpecInitProviderTaskNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobSpecInitProviderTaskNewClusterDockerImage>? DockerImage { get; set; }
@@ -15568,6 +16420,26 @@ public partial class V1alpha1JobSpecInitProviderTaskWebhookNotificationsOnFailur
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTaskWebhookNotificationsOnMaintenanceStart
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderTaskWebhookNotificationsOnStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -15607,6 +16479,12 @@ public partial class V1alpha1JobSpecInitProviderTaskWebhookNotifications
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobSpecInitProviderTaskWebhookNotificationsOnFailure>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobSpecInitProviderTaskWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobSpecInitProviderTaskWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -15685,6 +16563,9 @@ public partial class V1alpha1JobSpecInitProviderTask
     /// <summary>identifier of an environment block that is used to specify libraries.  Required for some tasks (spark_python_task, python_wheel_task, ...) running on serverless compute.</summary>
     [JsonPropertyName("environmentKey")]
     public string? EnvironmentKey { get; set; }
+
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
 
     /// <summary>If existing_cluster_id, the ID of an existing cluster that will be used for all runs of this job. When running jobs on an existing cluster, you may need to manually restart the cluster if it stops responding. We strongly suggest to use new_cluster for greater reliability.</summary>
     [JsonPropertyName("existingClusterId")]
@@ -15923,6 +16804,182 @@ public partial class V1alpha1JobSpecInitProviderTrigger
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersContinuousMaintenanceWindow
+{
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+
+    [JsonPropertyName("startHour")]
+    public double? StartHour { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersContinuous
+{
+    [JsonPropertyName("maintenanceWindow")]
+    public IList<V1alpha1JobSpecInitProviderTriggersContinuousMaintenanceWindow>? MaintenanceWindow { get; set; }
+
+    /// <summary>Controls task level retry behaviour. Allowed values are:</summary>
+    [JsonPropertyName("taskRetryMode")]
+    public string? TaskRetryMode { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersFileArrival
+{
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersModel
+{
+    [JsonPropertyName("aliases")]
+    public IList<string>? Aliases { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("condition")]
+    public string? Condition { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("securableName")]
+    public string? SecurableName { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersPeriodic
+{
+    /// <summary>Specifies the interval at which the job should run.</summary>
+    [JsonPropertyName("interval")]
+    public double? Interval { get; set; }
+
+    /// <summary>The unit of time for the interval.  Possible values are: DAYS, HOURS, WEEKS.</summary>
+    [JsonPropertyName("unit")]
+    public string? Unit { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersSchedule
+{
+    /// <summary>A Cron expression using Quartz syntax that describes the schedule for a job. This field is required.</summary>
+    [JsonPropertyName("quartzCronExpression")]
+    public string? QuartzCronExpression { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggersTableUpdate
+{
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("condition")]
+    public string? Condition { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>A non-empty list of tables to monitor for changes. The table name must be in the format catalog_name.schema_name.table_name.</summary>
+    [JsonPropertyName("tableNames")]
+    public IList<string>? TableNames { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderTriggers
+{
+    /// <summary>Configuration block to configure pause status. See continuous Configuration Block.</summary>
+    [JsonPropertyName("continuous")]
+    public IList<V1alpha1JobSpecInitProviderTriggersContinuous>? Continuous { get; set; }
+
+    /// <summary>configuration block to define a trigger for File Arrival events consisting of following attributes:</summary>
+    [JsonPropertyName("fileArrival")]
+    public IList<V1alpha1JobSpecInitProviderTriggersFileArrival>? FileArrival { get; set; }
+
+    [JsonPropertyName("model")]
+    public IList<V1alpha1JobSpecInitProviderTriggersModel>? Model { get; set; }
+
+    /// <summary>Indicate whether this trigger is paused or not. Either PAUSED or UNPAUSED. When the pause_status field is omitted in the block, the server will default to using UNPAUSED as a value for pause_status.</summary>
+    [JsonPropertyName("pauseStatus")]
+    public string? PauseStatus { get; set; }
+
+    /// <summary>configuration block to define a trigger for Periodic Triggers consisting of the following attributes:</summary>
+    [JsonPropertyName("periodic")]
+    public IList<V1alpha1JobSpecInitProviderTriggersPeriodic>? Periodic { get; set; }
+
+    /// <summary>An optional periodic schedule for this job. The default behavior is that the job runs when triggered by clicking Run Now in the Jobs UI or sending an API request to runNow. See schedule Configuration Block below.</summary>
+    [JsonPropertyName("schedule")]
+    public IList<V1alpha1JobSpecInitProviderTriggersSchedule>? Schedule { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public IList<V1alpha1JobSpecInitProviderTriggersSqlCondition>? SqlCondition { get; set; }
+
+    /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
+    [JsonPropertyName("tableUpdate")]
+    public IList<V1alpha1JobSpecInitProviderTriggersTableUpdate>? TableUpdate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderWebhookNotificationsOnDurationWarningThresholdExceeded
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -15934,6 +16991,26 @@ public partial class V1alpha1JobSpecInitProviderWebhookNotificationsOnDurationWa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobSpecInitProviderWebhookNotificationsOnFailure
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobSpecInitProviderWebhookNotificationsOnMaintenanceStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
     [JsonPropertyName("id")]
@@ -15982,6 +17059,12 @@ public partial class V1alpha1JobSpecInitProviderWebhookNotifications
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobSpecInitProviderWebhookNotificationsOnFailure>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobSpecInitProviderWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobSpecInitProviderWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -16040,6 +17123,9 @@ public partial class V1alpha1JobSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    [JsonPropertyName("durationTarget")]
+    public string? DurationTarget { get; set; }
+
     /// <summary>If &quot;UI_LOCKED&quot;, the user interface for the job will be locked. If &quot;EDITABLE&quot; (the default), the user interface will be editable.</summary>
     [JsonPropertyName("editMode")]
     public string? EditMode { get; set; }
@@ -16050,6 +17136,9 @@ public partial class V1alpha1JobSpecInitProvider
 
     [JsonPropertyName("environment")]
     public IList<V1alpha1JobSpecInitProviderEnvironment>? Environment { get; set; }
+
+    [JsonPropertyName("environmentVariables")]
+    public IList<V1alpha1JobSpecInitProviderEnvironmentVariables>? EnvironmentVariables { get; set; }
 
     /// <summary>Identifier of the interactive cluster to run job on.  Note: running tasks on interactive clusters may lead to increased costs!</summary>
     [JsonPropertyName("existingClusterId")]
@@ -16174,6 +17263,9 @@ public partial class V1alpha1JobSpecInitProvider
     [JsonPropertyName("trigger")]
     public IList<V1alpha1JobSpecInitProviderTrigger>? Trigger { get; set; }
 
+    [JsonPropertyName("triggers")]
+    public IList<V1alpha1JobSpecInitProviderTriggers>? Triggers { get; set; }
+
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
     [JsonPropertyName("usagePolicyId")]
     public string? UsagePolicyId { get; set; }
@@ -16297,8 +17389,27 @@ public partial class V1alpha1JobSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderContinuousMaintenanceWindow
+{
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+
+    [JsonPropertyName("startHour")]
+    public double? StartHour { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderContinuous
 {
+    [JsonPropertyName("maintenanceWindow")]
+    public IList<V1alpha1JobStatusAtProviderContinuousMaintenanceWindow>? MaintenanceWindow { get; set; }
+
     /// <summary>Indicate whether this continuous job is paused or not. Either PAUSED or UNPAUSED. When the pause_status field is omitted in the block, the server will default to using UNPAUSED as a value for pause_status.</summary>
     [JsonPropertyName("pauseStatus")]
     public string? PauseStatus { get; set; }
@@ -16380,6 +17491,12 @@ public partial class V1alpha1JobStatusAtProviderEmailNotifications
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<string>? OnStart { get; set; }
@@ -16415,6 +17532,9 @@ public partial class V1alpha1JobStatusAtProviderEnvironmentSpec
     /// <summary>(list of strings) List of pip dependencies, as supported by the version of pip in this environment. Each dependency is a pip requirement file line.  See API docs for more information.</summary>
     [JsonPropertyName("javaDependencies")]
     public IList<string>? JavaDependencies { get; set; }
+
+    [JsonPropertyName("projectEnvironment")]
+    public string? ProjectEnvironment { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -16429,6 +17549,31 @@ public partial class V1alpha1JobStatusAtProviderEnvironment
     /// <summary>block describing the Environment. Consists of following attributes:</summary>
     [JsonPropertyName("spec")]
     public IList<V1alpha1JobStatusAtProviderEnvironmentSpec>? Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderEnvironmentVariablesSpec
+{
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    [JsonPropertyName("variables")]
+    public IDictionary<string, string>? Variables { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderEnvironmentVariables
+{
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
+
+    /// <summary>block describing the Environment. Consists of following attributes:</summary>
+    [JsonPropertyName("spec")]
+    public IList<V1alpha1JobStatusAtProviderEnvironmentVariablesSpec>? Spec { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -16733,6 +17878,10 @@ public partial class V1alpha1JobStatusAtProviderJobClusterNewClusterDriverNodeTy
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -16972,6 +18121,10 @@ public partial class V1alpha1JobStatusAtProviderJobClusterNewClusterWorkerNodeTy
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -17035,6 +18188,9 @@ public partial class V1alpha1JobStatusAtProviderJobClusterNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobStatusAtProviderJobClusterNewClusterDockerImage>? DockerImage { get; set; }
@@ -17143,6 +18299,10 @@ public partial class V1alpha1JobStatusAtProviderJobCluster
     /// <summary>Block with almost the same set of parameters as for databricks_cluster resource, except following (check the REST API documentation for full list of supported parameters):</summary>
     [JsonPropertyName("newCluster")]
     public IList<V1alpha1JobStatusAtProviderJobClusterNewCluster>? NewCluster { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("serverlessComputeId")]
+    public string? ServerlessComputeId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -17427,6 +18587,10 @@ public partial class V1alpha1JobStatusAtProviderNewClusterDriverNodeTypeFlexibil
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -17666,6 +18830,10 @@ public partial class V1alpha1JobStatusAtProviderNewClusterWorkerNodeTypeFlexibil
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -17726,6 +18894,9 @@ public partial class V1alpha1JobStatusAtProviderNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobStatusAtProviderNewClusterDockerImage>? DockerImage { get; set; }
@@ -18054,6 +19225,10 @@ public partial class V1alpha1JobStatusAtProviderTaskAiRuntimeTaskDeploymentsComp
 
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("provisionedCapacityId")]
+    public string? ProvisionedCapacityId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -18079,17 +19254,35 @@ public partial class V1alpha1JobStatusAtProviderTaskAiRuntimeTaskDeployments
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskAiRuntimeTask
 {
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("codeSourcePath")]
+    public string? CodeSourcePath { get; set; }
+
     [JsonPropertyName("deployments")]
     public IList<V1alpha1JobStatusAtProviderTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
 
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("dockerImageUrl")]
+    public string? DockerImageUrl { get; set; }
+
     [JsonPropertyName("experiment")]
     public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowArtifactLocation")]
+    public string? MlflowArtifactLocation { get; set; }
 
     [JsonPropertyName("mlflowExperimentDirectory")]
     public string? MlflowExperimentDirectory { get; set; }
 
     [JsonPropertyName("mlflowRun")]
     public string? MlflowRun { get; set; }
+
+    [JsonPropertyName("priorityClass")]
+    public string? PriorityClass { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("unityCatalogImagePath")]
+    public string? UnityCatalogImagePath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -18114,6 +19307,10 @@ public partial class V1alpha1JobStatusAtProviderTaskAlertTask
     /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
     [JsonPropertyName("alertId")]
     public string? AlertId { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
 
     /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
     [JsonPropertyName("subscribers")]
@@ -18181,6 +19378,59 @@ public partial class V1alpha1JobStatusAtProviderTaskConditionTask
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("pageId")]
+    public string? PageId { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("widgetId")]
+    public string? WidgetId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachmentDataAttachment
+{
+    [JsonPropertyName("fileFormat")]
+    public string? FileFormat { get; set; }
+
+    [JsonPropertyName("includeAppliedFilters")]
+    public bool? IncludeAppliedFilters { get; set; }
+
+    [JsonPropertyName("widgets")]
+    public IList<V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets>? Widgets { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachmentPageAttachment
+{
+    [JsonPropertyName("pageIds")]
+    public IList<string>? PageIds { get; set; }
+
+    [JsonPropertyName("pageSelection")]
+    public string? PageSelection { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachment
+{
+    [JsonPropertyName("dataAttachment")]
+    public IList<V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachmentDataAttachment>? DataAttachment { get; set; }
+
+    [JsonPropertyName("pageAttachment")]
+    public IList<V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachmentPageAttachment>? PageAttachment { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionSubscribers
 {
     /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
@@ -18197,6 +19447,9 @@ public partial class V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionSub
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskDashboardTaskSubscription
 {
+    [JsonPropertyName("attachment")]
+    public IList<V1alpha1JobStatusAtProviderTaskDashboardTaskSubscriptionAttachment>? Attachment { get; set; }
+
     /// <summary>Allows users to specify a custom subject line on the email sent to subscribers.</summary>
     [JsonPropertyName("customSubject")]
     public string? CustomSubject { get; set; }
@@ -18324,6 +19577,12 @@ public partial class V1alpha1JobStatusAtProviderTaskEmailNotifications
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<string>? OnStart { get; set; }
@@ -18347,6 +19606,10 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTask
 
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("provisionedCapacityId")]
+    public string? ProvisionedCapacityId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -18372,17 +19635,35 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTask
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTask
 {
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("codeSourcePath")]
+    public string? CodeSourcePath { get; set; }
+
     [JsonPropertyName("deployments")]
     public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
 
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("dockerImageUrl")]
+    public string? DockerImageUrl { get; set; }
+
     [JsonPropertyName("experiment")]
     public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowArtifactLocation")]
+    public string? MlflowArtifactLocation { get; set; }
 
     [JsonPropertyName("mlflowExperimentDirectory")]
     public string? MlflowExperimentDirectory { get; set; }
 
     [JsonPropertyName("mlflowRun")]
     public string? MlflowRun { get; set; }
+
+    [JsonPropertyName("priorityClass")]
+    public string? PriorityClass { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("unityCatalogImagePath")]
+    public string? UnityCatalogImagePath { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -18407,6 +19688,10 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskAlertTask
     /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
     [JsonPropertyName("alertId")]
     public string? AlertId { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
 
     /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
     [JsonPropertyName("subscribers")]
@@ -18474,6 +19759,59 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskConditionTask
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("pageId")]
+    public string? PageId { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("widgetId")]
+    public string? WidgetId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment
+{
+    [JsonPropertyName("fileFormat")]
+    public string? FileFormat { get; set; }
+
+    [JsonPropertyName("includeAppliedFilters")]
+    public bool? IncludeAppliedFilters { get; set; }
+
+    [JsonPropertyName("widgets")]
+    public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachmentWidgets>? Widgets { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment
+{
+    [JsonPropertyName("pageIds")]
+    public IList<string>? PageIds { get; set; }
+
+    [JsonPropertyName("pageSelection")]
+    public string? PageSelection { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachment
+{
+    [JsonPropertyName("dataAttachment")]
+    public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentDataAttachment>? DataAttachment { get; set; }
+
+    [JsonPropertyName("pageAttachment")]
+    public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachmentPageAttachment>? PageAttachment { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers
 {
     /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
@@ -18490,6 +19828,9 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTask
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscription
 {
+    [JsonPropertyName("attachment")]
+    public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskDashboardTaskSubscriptionAttachment>? Attachment { get; set; }
+
     /// <summary>Allows users to specify a custom subject line on the email sent to subscribers.</summary>
     [JsonPropertyName("customSubject")]
     public string? CustomSubject { get; set; }
@@ -18616,6 +19957,12 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskEmailNotifica
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<string>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<string>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<string>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -18992,6 +20339,10 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskNewClusterDri
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -19231,6 +20582,10 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskNewClusterWor
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -19291,6 +20646,9 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskNewClusterDockerImage>? DockerImage { get; set; }
@@ -19834,6 +21192,26 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotifi
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotificationsOnStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -19873,6 +21251,12 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotifi
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotificationsOnFailure>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobStatusAtProviderTaskForEachTaskTaskWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -19951,6 +21335,9 @@ public partial class V1alpha1JobStatusAtProviderTaskForEachTaskTask
     /// <summary>identifier of an environment block that is used to specify libraries.  Required for some tasks (spark_python_task, python_wheel_task, ...) running on serverless compute.</summary>
     [JsonPropertyName("environmentKey")]
     public string? EnvironmentKey { get; set; }
+
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
 
     /// <summary>If existing_cluster_id, the ID of an existing cluster that will be used for all runs of this job. When running jobs on an existing cluster, you may need to manually restart the cluster if it stops responding. We strongly suggest to use new_cluster for greater reliability.</summary>
     [JsonPropertyName("existingClusterId")]
@@ -20429,6 +21816,10 @@ public partial class V1alpha1JobStatusAtProviderTaskNewClusterDriverNodeTypeFlex
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -20668,6 +22059,10 @@ public partial class V1alpha1JobStatusAtProviderTaskNewClusterWorkerNodeTypeFlex
 {
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -20731,6 +22126,9 @@ public partial class V1alpha1JobStatusAtProviderTaskNewCluster
 
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1JobStatusAtProviderTaskNewClusterDockerImage>? DockerImage { get; set; }
@@ -21274,6 +22672,26 @@ public partial class V1alpha1JobStatusAtProviderTaskWebhookNotificationsOnFailur
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTaskWebhookNotificationsOnMaintenanceStart
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderTaskWebhookNotificationsOnStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -21313,6 +22731,12 @@ public partial class V1alpha1JobStatusAtProviderTaskWebhookNotifications
     /// <summary>(List) list of notification IDs to call when the run fails. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobStatusAtProviderTaskWebhookNotificationsOnFailure>? OnFailure { get; set; }
+
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobStatusAtProviderTaskWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobStatusAtProviderTaskWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
 
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
@@ -21391,6 +22815,9 @@ public partial class V1alpha1JobStatusAtProviderTask
     /// <summary>identifier of an environment block that is used to specify libraries.  Required for some tasks (spark_python_task, python_wheel_task, ...) running on serverless compute.</summary>
     [JsonPropertyName("environmentKey")]
     public string? EnvironmentKey { get; set; }
+
+    [JsonPropertyName("environmentVariablesKey")]
+    public string? EnvironmentVariablesKey { get; set; }
 
     /// <summary>If existing_cluster_id, the ID of an existing cluster that will be used for all runs of this job. When running jobs on an existing cluster, you may need to manually restart the cluster if it stops responding. We strongly suggest to use new_cluster for greater reliability.</summary>
     [JsonPropertyName("existingClusterId")]
@@ -21621,6 +23048,182 @@ public partial class V1alpha1JobStatusAtProviderTrigger
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersContinuousMaintenanceWindow
+{
+    [JsonPropertyName("dayOfWeek")]
+    public string? DayOfWeek { get; set; }
+
+    [JsonPropertyName("startHour")]
+    public double? StartHour { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersContinuous
+{
+    [JsonPropertyName("maintenanceWindow")]
+    public IList<V1alpha1JobStatusAtProviderTriggersContinuousMaintenanceWindow>? MaintenanceWindow { get; set; }
+
+    /// <summary>Controls task level retry behaviour. Allowed values are:</summary>
+    [JsonPropertyName("taskRetryMode")]
+    public string? TaskRetryMode { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersFileArrival
+{
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersModel
+{
+    [JsonPropertyName("aliases")]
+    public IList<string>? Aliases { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("condition")]
+    public string? Condition { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("securableName")]
+    public string? SecurableName { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersPeriodic
+{
+    /// <summary>Specifies the interval at which the job should run.</summary>
+    [JsonPropertyName("interval")]
+    public double? Interval { get; set; }
+
+    /// <summary>The unit of time for the interval.  Possible values are: DAYS, HOURS, WEEKS.</summary>
+    [JsonPropertyName("unit")]
+    public string? Unit { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersSchedule
+{
+    /// <summary>A Cron expression using Quartz syntax that describes the schedule for a job. This field is required.</summary>
+    [JsonPropertyName("quartzCronExpression")]
+    public string? QuartzCronExpression { get; set; }
+
+    /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
+    [JsonPropertyName("timezoneId")]
+    public string? TimezoneId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggersTableUpdate
+{
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("condition")]
+    public string? Condition { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after the specified amount of time passed since the last time the trigger fired. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("minTimeBetweenTriggersSeconds")]
+    public double? MinTimeBetweenTriggersSeconds { get; set; }
+
+    /// <summary>A non-empty list of tables to monitor for changes. The table name must be in the format catalog_name.schema_name.table_name.</summary>
+    [JsonPropertyName("tableNames")]
+    public IList<string>? TableNames { get; set; }
+
+    /// <summary>If set, the trigger starts a run only after no file activity has occurred for the specified amount of time. This makes it possible to wait for a batch of incoming files to arrive before triggering a run. The minimum allowed value is 60 seconds.</summary>
+    [JsonPropertyName("waitAfterLastChangeSeconds")]
+    public double? WaitAfterLastChangeSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderTriggers
+{
+    /// <summary>Configuration block to configure pause status. See continuous Configuration Block.</summary>
+    [JsonPropertyName("continuous")]
+    public IList<V1alpha1JobStatusAtProviderTriggersContinuous>? Continuous { get; set; }
+
+    /// <summary>configuration block to define a trigger for File Arrival events consisting of following attributes:</summary>
+    [JsonPropertyName("fileArrival")]
+    public IList<V1alpha1JobStatusAtProviderTriggersFileArrival>? FileArrival { get; set; }
+
+    [JsonPropertyName("model")]
+    public IList<V1alpha1JobStatusAtProviderTriggersModel>? Model { get; set; }
+
+    /// <summary>Indicate whether this trigger is paused or not. Either PAUSED or UNPAUSED. When the pause_status field is omitted in the block, the server will default to using UNPAUSED as a value for pause_status.</summary>
+    [JsonPropertyName("pauseStatus")]
+    public string? PauseStatus { get; set; }
+
+    /// <summary>configuration block to define a trigger for Periodic Triggers consisting of the following attributes:</summary>
+    [JsonPropertyName("periodic")]
+    public IList<V1alpha1JobStatusAtProviderTriggersPeriodic>? Periodic { get; set; }
+
+    /// <summary>An optional periodic schedule for this job. The default behavior is that the job runs when triggered by clicking Run Now in the Jobs UI or sending an API request to runNow. See schedule Configuration Block below.</summary>
+    [JsonPropertyName("schedule")]
+    public IList<V1alpha1JobStatusAtProviderTriggersSchedule>? Schedule { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public IList<V1alpha1JobStatusAtProviderTriggersSqlCondition>? SqlCondition { get; set; }
+
+    /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
+    [JsonPropertyName("tableUpdate")]
+    public IList<V1alpha1JobStatusAtProviderTriggersTableUpdate>? TableUpdate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderWebhookNotificationsOnDurationWarningThresholdExceeded
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
@@ -21632,6 +23235,26 @@ public partial class V1alpha1JobStatusAtProviderWebhookNotificationsOnDurationWa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1JobStatusAtProviderWebhookNotificationsOnFailure
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderWebhookNotificationsOnMaintenanceComplete
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1JobStatusAtProviderWebhookNotificationsOnMaintenanceStart
 {
     /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
     [JsonPropertyName("id")]
@@ -21681,6 +23304,12 @@ public partial class V1alpha1JobStatusAtProviderWebhookNotifications
     [JsonPropertyName("onFailure")]
     public IList<V1alpha1JobStatusAtProviderWebhookNotificationsOnFailure>? OnFailure { get; set; }
 
+    [JsonPropertyName("onMaintenanceComplete")]
+    public IList<V1alpha1JobStatusAtProviderWebhookNotificationsOnMaintenanceComplete>? OnMaintenanceComplete { get; set; }
+
+    [JsonPropertyName("onMaintenanceStart")]
+    public IList<V1alpha1JobStatusAtProviderWebhookNotificationsOnMaintenanceStart>? OnMaintenanceStart { get; set; }
+
     /// <summary>(List) list of notification IDs to call when the run starts. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onStart")]
     public IList<V1alpha1JobStatusAtProviderWebhookNotificationsOnStart>? OnStart { get; set; }
@@ -21726,6 +23355,9 @@ public partial class V1alpha1JobStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    [JsonPropertyName("durationTarget")]
+    public string? DurationTarget { get; set; }
+
     /// <summary>If &quot;UI_LOCKED&quot;, the user interface for the job will be locked. If &quot;EDITABLE&quot; (the default), the user interface will be editable.</summary>
     [JsonPropertyName("editMode")]
     public string? EditMode { get; set; }
@@ -21736,6 +23368,9 @@ public partial class V1alpha1JobStatusAtProvider
 
     [JsonPropertyName("environment")]
     public IList<V1alpha1JobStatusAtProviderEnvironment>? Environment { get; set; }
+
+    [JsonPropertyName("environmentVariables")]
+    public IList<V1alpha1JobStatusAtProviderEnvironmentVariables>? EnvironmentVariables { get; set; }
 
     /// <summary>Identifier of the interactive cluster to run job on.  Note: running tasks on interactive clusters may lead to increased costs!</summary>
     [JsonPropertyName("existingClusterId")]
@@ -21863,6 +23498,9 @@ public partial class V1alpha1JobStatusAtProvider
     /// <summary>The conditions that triggers the job to start. See trigger Configuration Block below.</summary>
     [JsonPropertyName("trigger")]
     public IList<V1alpha1JobStatusAtProviderTrigger>? Trigger { get; set; }
+
+    [JsonPropertyName("triggers")]
+    public IList<V1alpha1JobStatusAtProviderTriggers>? Triggers { get; set; }
 
     /// <summary>URL to be monitored for file arrivals. The path must point to the root or a subpath of the external location. Please note that the URL must have a trailing slash character (/).</summary>
     [JsonPropertyName("url")]

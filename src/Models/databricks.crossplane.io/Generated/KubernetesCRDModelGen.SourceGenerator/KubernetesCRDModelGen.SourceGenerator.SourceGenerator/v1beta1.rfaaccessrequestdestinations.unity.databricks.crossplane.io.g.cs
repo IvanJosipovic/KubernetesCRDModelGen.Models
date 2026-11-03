@@ -75,7 +75,7 @@ public partial class V1beta1RfaAccessRequestDestinationsSpecForProviderDestinati
     /// This field is used to denote whether the destination is the email of the owner of the securable object.
     /// The special destination cannot be assigned to a securable and only represents the default destination of the securable.
     /// The securable types that support default special destinations are: &quot;catalog&quot;, &quot;external_location&quot;, &quot;connection&quot;, &quot;credential&quot;, and &quot;metastore&quot;.
-    /// The destination_type of a special_destination is always EMAIL. Possible values are: SPECIAL_DESTINATION_CATALOG_OWNER, SPECIAL_DESTINATION_CONNECTION_OWNER, SPECIAL_DESTINATION_CREDENTIAL_OWNER, SPECIAL_DESTINATION_EXTERNAL_LOCATION_OWNER, SPECIAL_DESTINATION_METASTORE_OWNER
+    /// The destination_type of a special_destination is always EMAIL. Possible values are: SPECIAL_DESTINATION_CATALOG_OWNER, SPECIAL_DESTINATION_CONNECTION_OWNER, SPECIAL_DESTINATION_CREDENTIAL_OWNER, SPECIAL_DESTINATION_EXTERNAL_LOCATION_OWNER, SPECIAL_DESTINATION_FUNCTION_OWNER, SPECIAL_DESTINATION_METASTORE_OWNER, SPECIAL_DESTINATION_REGISTERED_MODEL_OWNER, SPECIAL_DESTINATION_SCHEMA_OWNER, SPECIAL_DESTINATION_TABLE_OWNER, SPECIAL_DESTINATION_VOLUME_OWNER
     /// </summary>
     [JsonPropertyName("specialDestination")]
     public string? SpecialDestination { get; set; }
@@ -112,7 +112,7 @@ public partial class V1beta1RfaAccessRequestDestinationsSpecForProviderSecurable
 
     /// <summary>
     /// Required. The type of securable (catalog/schema/table).
-    /// Optional if resource_name is present. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Optional if resource_name is present. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -154,7 +154,7 @@ public partial class V1beta1RfaAccessRequestDestinationsSpecInitProviderDestinat
     /// This field is used to denote whether the destination is the email of the owner of the securable object.
     /// The special destination cannot be assigned to a securable and only represents the default destination of the securable.
     /// The securable types that support default special destinations are: &quot;catalog&quot;, &quot;external_location&quot;, &quot;connection&quot;, &quot;credential&quot;, and &quot;metastore&quot;.
-    /// The destination_type of a special_destination is always EMAIL. Possible values are: SPECIAL_DESTINATION_CATALOG_OWNER, SPECIAL_DESTINATION_CONNECTION_OWNER, SPECIAL_DESTINATION_CREDENTIAL_OWNER, SPECIAL_DESTINATION_EXTERNAL_LOCATION_OWNER, SPECIAL_DESTINATION_METASTORE_OWNER
+    /// The destination_type of a special_destination is always EMAIL. Possible values are: SPECIAL_DESTINATION_CATALOG_OWNER, SPECIAL_DESTINATION_CONNECTION_OWNER, SPECIAL_DESTINATION_CREDENTIAL_OWNER, SPECIAL_DESTINATION_EXTERNAL_LOCATION_OWNER, SPECIAL_DESTINATION_FUNCTION_OWNER, SPECIAL_DESTINATION_METASTORE_OWNER, SPECIAL_DESTINATION_REGISTERED_MODEL_OWNER, SPECIAL_DESTINATION_SCHEMA_OWNER, SPECIAL_DESTINATION_TABLE_OWNER, SPECIAL_DESTINATION_VOLUME_OWNER
     /// </summary>
     [JsonPropertyName("specialDestination")]
     public string? SpecialDestination { get; set; }
@@ -191,7 +191,7 @@ public partial class V1beta1RfaAccessRequestDestinationsSpecInitProviderSecurabl
 
     /// <summary>
     /// Required. The type of securable (catalog/schema/table).
-    /// Optional if resource_name is present. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Optional if resource_name is present. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -433,7 +433,7 @@ public partial class V1beta1RfaAccessRequestDestinationsStatusAtProviderDestinat
 
     /// <summary>
     /// Required. The type of securable (catalog/schema/table).
-    /// Optional if resource_name is present. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Optional if resource_name is present. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
@@ -458,7 +458,7 @@ public partial class V1beta1RfaAccessRequestDestinationsStatusAtProviderDestinat
     /// This field is used to denote whether the destination is the email of the owner of the securable object.
     /// The special destination cannot be assigned to a securable and only represents the default destination of the securable.
     /// The securable types that support default special destinations are: &quot;catalog&quot;, &quot;external_location&quot;, &quot;connection&quot;, &quot;credential&quot;, and &quot;metastore&quot;.
-    /// The destination_type of a special_destination is always EMAIL. Possible values are: SPECIAL_DESTINATION_CATALOG_OWNER, SPECIAL_DESTINATION_CONNECTION_OWNER, SPECIAL_DESTINATION_CREDENTIAL_OWNER, SPECIAL_DESTINATION_EXTERNAL_LOCATION_OWNER, SPECIAL_DESTINATION_METASTORE_OWNER
+    /// The destination_type of a special_destination is always EMAIL. Possible values are: SPECIAL_DESTINATION_CATALOG_OWNER, SPECIAL_DESTINATION_CONNECTION_OWNER, SPECIAL_DESTINATION_CREDENTIAL_OWNER, SPECIAL_DESTINATION_EXTERNAL_LOCATION_OWNER, SPECIAL_DESTINATION_FUNCTION_OWNER, SPECIAL_DESTINATION_METASTORE_OWNER, SPECIAL_DESTINATION_REGISTERED_MODEL_OWNER, SPECIAL_DESTINATION_SCHEMA_OWNER, SPECIAL_DESTINATION_TABLE_OWNER, SPECIAL_DESTINATION_VOLUME_OWNER
     /// </summary>
     [JsonPropertyName("specialDestination")]
     public string? SpecialDestination { get; set; }
@@ -495,7 +495,7 @@ public partial class V1beta1RfaAccessRequestDestinationsStatusAtProviderSecurabl
 
     /// <summary>
     /// Required. The type of securable (catalog/schema/table).
-    /// Optional if resource_name is present. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Optional if resource_name is present. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }

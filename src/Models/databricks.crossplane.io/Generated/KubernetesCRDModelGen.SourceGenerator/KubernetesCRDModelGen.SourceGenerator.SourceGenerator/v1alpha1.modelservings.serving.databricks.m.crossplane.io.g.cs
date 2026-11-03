@@ -323,6 +323,10 @@ public partial class V1alpha1ModelServingSpecForProviderConfigServedEntitiesExte
     /// <summary>ARN of the instance profile that the served model will use to access AWS resources.</summary>
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    /// <summary>The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.</summary>
+    [JsonPropertyName("ucServiceCredentialName")]
+    public string? UcServiceCredentialName { get; set; }
 }
 
 /// <summary>The Anthropic API key provided as a plaintext string.</summary>
@@ -938,11 +942,39 @@ public partial class V1alpha1ModelServingSpecForProviderTelemetryConfigInference
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ModelServingSpecForProviderTelemetryConfigTableNames
+{
+    [JsonPropertyName("annotationsTable")]
+    public string? AnnotationsTable { get; set; }
+
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ModelServingSpecForProviderTelemetryConfig
 {
+    [JsonPropertyName("enabledTelemetryFeatures")]
+    public IList<string>? EnabledTelemetryFeatures { get; set; }
+
     /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
     [JsonPropertyName("inferenceTableConfig")]
     public IList<V1alpha1ModelServingSpecForProviderTelemetryConfigInferenceTableConfig>? InferenceTableConfig { get; set; }
+
+    [JsonPropertyName("tableNames")]
+    public IList<V1alpha1ModelServingSpecForProviderTelemetryConfigTableNames>? TableNames { get; set; }
+
+    /// <summary>Equal to the name argument and used to identify the serving endpoint.</summary>
+    [JsonPropertyName("telemetryProfileId")]
+    public string? TelemetryProfileId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1277,6 +1309,10 @@ public partial class V1alpha1ModelServingSpecInitProviderConfigServedEntitiesExt
     /// <summary>ARN of the instance profile that the served model will use to access AWS resources.</summary>
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    /// <summary>The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.</summary>
+    [JsonPropertyName("ucServiceCredentialName")]
+    public string? UcServiceCredentialName { get; set; }
 }
 
 /// <summary>The Anthropic API key provided as a plaintext string.</summary>
@@ -1892,11 +1928,39 @@ public partial class V1alpha1ModelServingSpecInitProviderTelemetryConfigInferenc
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ModelServingSpecInitProviderTelemetryConfigTableNames
+{
+    [JsonPropertyName("annotationsTable")]
+    public string? AnnotationsTable { get; set; }
+
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ModelServingSpecInitProviderTelemetryConfig
 {
+    [JsonPropertyName("enabledTelemetryFeatures")]
+    public IList<string>? EnabledTelemetryFeatures { get; set; }
+
     /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
     [JsonPropertyName("inferenceTableConfig")]
     public IList<V1alpha1ModelServingSpecInitProviderTelemetryConfigInferenceTableConfig>? InferenceTableConfig { get; set; }
+
+    [JsonPropertyName("tableNames")]
+    public IList<V1alpha1ModelServingSpecInitProviderTelemetryConfigTableNames>? TableNames { get; set; }
+
+    /// <summary>Equal to the name argument and used to identify the serving endpoint.</summary>
+    [JsonPropertyName("telemetryProfileId")]
+    public string? TelemetryProfileId { get; set; }
 }
 
 /// <summary>
@@ -2300,6 +2364,10 @@ public partial class V1alpha1ModelServingStatusAtProviderConfigServedEntitiesExt
     /// <summary>ARN of the instance profile that the served model will use to access AWS resources.</summary>
     [JsonPropertyName("instanceProfileArn")]
     public string? InstanceProfileArn { get; set; }
+
+    /// <summary>The name of the model serving endpoint. This field is required and must be unique across a workspace. An endpoint name can consist of alphanumeric characters, dashes, and underscores. NOTE: Changing this name will delete the existing endpoint and create a new endpoint with the updated name.</summary>
+    [JsonPropertyName("ucServiceCredentialName")]
+    public string? UcServiceCredentialName { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -2753,11 +2821,39 @@ public partial class V1alpha1ModelServingStatusAtProviderTelemetryConfigInferenc
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ModelServingStatusAtProviderTelemetryConfigTableNames
+{
+    [JsonPropertyName("annotationsTable")]
+    public string? AnnotationsTable { get; set; }
+
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ModelServingStatusAtProviderTelemetryConfig
 {
+    [JsonPropertyName("enabledTelemetryFeatures")]
+    public IList<string>? EnabledTelemetryFeatures { get; set; }
+
     /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
     [JsonPropertyName("inferenceTableConfig")]
     public IList<V1alpha1ModelServingStatusAtProviderTelemetryConfigInferenceTableConfig>? InferenceTableConfig { get; set; }
+
+    [JsonPropertyName("tableNames")]
+    public IList<V1alpha1ModelServingStatusAtProviderTelemetryConfigTableNames>? TableNames { get; set; }
+
+    /// <summary>Equal to the name argument and used to identify the serving endpoint.</summary>
+    [JsonPropertyName("telemetryProfileId")]
+    public string? TelemetryProfileId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]

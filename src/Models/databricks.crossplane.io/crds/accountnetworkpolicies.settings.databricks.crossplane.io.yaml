@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.21.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: accountnetworkpolicies.settings.databricks.crossplane.io
 spec:
   group: settings.databricks.crossplane.io
@@ -98,7 +98,9 @@ spec:
                             items:
                               properties:
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   type: string
                                 internetDestinationType:
                                   description: 'The type of internet destination. Currently only DNS_NAME is supported. Possible values are: DNS_NAME'
@@ -134,7 +136,9 @@ spec:
                             items:
                               properties:
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   type: string
                                 internetDestinationType:
                                   description: 'The type of internet destination. Currently only DNS_NAME is supported. Possible values are: DNS_NAME'
@@ -159,7 +163,7 @@ spec:
                                 type: string
                             type: object
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -170,11 +174,16 @@ spec:
                         description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -193,7 +202,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -245,6 +256,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -266,7 +285,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -284,11 +306,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -307,7 +333,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -359,6 +387,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -380,7 +416,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -398,7 +437,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       privateAccess:
@@ -407,11 +446,16 @@ spec:
                           Configures how requests arriving over private connectivity are governed
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -430,7 +474,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -482,6 +528,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -503,7 +557,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -536,11 +593,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -559,7 +620,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -611,6 +674,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -632,7 +703,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -665,7 +739,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       publicAccess:
@@ -674,11 +748,16 @@ spec:
                           Configures how public internet traffic is allowed or denied access
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -697,7 +776,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -749,6 +830,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -770,7 +859,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -797,11 +889,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -820,7 +916,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -872,6 +970,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -893,7 +999,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -920,7 +1029,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -934,11 +1043,16 @@ spec:
                         description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -957,7 +1071,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1009,6 +1125,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -1030,7 +1154,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -1048,11 +1175,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -1071,7 +1202,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1123,6 +1256,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -1144,7 +1285,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -1162,7 +1306,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       privateAccess:
@@ -1171,11 +1315,16 @@ spec:
                           Configures how requests arriving over private connectivity are governed
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -1194,7 +1343,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1246,6 +1397,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -1267,7 +1426,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -1300,11 +1462,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -1323,7 +1489,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1375,6 +1543,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -1396,7 +1572,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -1429,7 +1608,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       publicAccess:
@@ -1438,11 +1617,16 @@ spec:
                           Configures how public internet traffic is allowed or denied access
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -1461,7 +1645,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1513,6 +1699,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -1534,7 +1728,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -1561,11 +1758,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -1584,7 +1785,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1636,6 +1839,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -1657,7 +1868,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -1684,7 +1898,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -1732,7 +1946,9 @@ spec:
                             items:
                               properties:
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   type: string
                                 internetDestinationType:
                                   description: 'The type of internet destination. Currently only DNS_NAME is supported. Possible values are: DNS_NAME'
@@ -1768,7 +1984,9 @@ spec:
                             items:
                               properties:
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   type: string
                                 internetDestinationType:
                                   description: 'The type of internet destination. Currently only DNS_NAME is supported. Possible values are: DNS_NAME'
@@ -1793,7 +2011,7 @@ spec:
                                 type: string
                             type: object
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -1804,11 +2022,16 @@ spec:
                         description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -1827,7 +2050,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1879,6 +2104,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -1900,7 +2133,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -1918,11 +2154,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -1941,7 +2181,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -1993,6 +2235,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2014,7 +2264,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -2032,7 +2285,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       privateAccess:
@@ -2041,11 +2294,16 @@ spec:
                           Configures how requests arriving over private connectivity are governed
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2064,7 +2322,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -2116,6 +2376,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2137,7 +2405,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -2170,11 +2441,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2193,7 +2468,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -2245,6 +2522,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2266,7 +2551,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -2299,7 +2587,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       publicAccess:
@@ -2308,11 +2596,16 @@ spec:
                           Configures how public internet traffic is allowed or denied access
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2331,7 +2624,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -2383,6 +2678,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2404,7 +2707,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -2431,11 +2737,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2454,7 +2764,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -2506,6 +2818,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2527,7 +2847,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -2554,7 +2877,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -2568,11 +2891,16 @@ spec:
                         description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2591,7 +2919,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -2643,6 +2973,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2664,7 +3002,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -2682,11 +3023,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2705,7 +3050,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -2757,6 +3104,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2778,7 +3133,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -2796,7 +3154,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       privateAccess:
@@ -2805,11 +3163,16 @@ spec:
                           Configures how requests arriving over private connectivity are governed
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2828,7 +3191,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -2880,6 +3245,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -2901,7 +3274,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -2934,11 +3310,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -2957,7 +3337,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -3009,6 +3391,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -3030,7 +3420,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -3063,7 +3456,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       publicAccess:
@@ -3072,11 +3465,16 @@ spec:
                           Configures how public internet traffic is allowed or denied access
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -3095,7 +3493,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -3147,6 +3547,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -3168,7 +3576,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -3195,11 +3606,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -3218,7 +3633,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -3270,6 +3687,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -3291,7 +3716,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -3318,7 +3746,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -3444,7 +3872,9 @@ spec:
                             items:
                               properties:
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   type: string
                                 internetDestinationType:
                                   description: 'The type of internet destination. Currently only DNS_NAME is supported. Possible values are: DNS_NAME'
@@ -3480,7 +3910,9 @@ spec:
                             items:
                               properties:
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   type: string
                                 internetDestinationType:
                                   description: 'The type of internet destination. Currently only DNS_NAME is supported. Possible values are: DNS_NAME'
@@ -3505,7 +3937,7 @@ spec:
                                 type: string
                             type: object
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -3518,11 +3950,16 @@ spec:
                         description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -3541,7 +3978,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -3593,6 +4032,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -3614,7 +4061,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -3632,11 +4082,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -3655,7 +4109,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -3707,6 +4163,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -3728,7 +4192,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -3746,7 +4213,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       privateAccess:
@@ -3755,11 +4222,16 @@ spec:
                           Configures how requests arriving over private connectivity are governed
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -3778,7 +4250,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -3830,6 +4304,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -3851,7 +4333,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -3884,11 +4369,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -3907,7 +4396,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -3959,6 +4450,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -3980,7 +4479,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -4013,7 +4515,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       publicAccess:
@@ -4022,11 +4524,16 @@ spec:
                           Configures how public internet traffic is allowed or denied access
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4045,7 +4552,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4097,6 +4606,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -4118,7 +4635,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -4145,11 +4665,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4168,7 +4692,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4220,6 +4746,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -4241,7 +4775,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -4268,7 +4805,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object
@@ -4282,11 +4819,16 @@ spec:
                         description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4305,7 +4847,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4357,6 +4901,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -4378,7 +4930,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -4396,11 +4951,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4419,7 +4978,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4471,6 +5032,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -4492,7 +5061,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allSourceWorkspaces:
                                       description: Matches all source workspaces
@@ -4510,7 +5082,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       privateAccess:
@@ -4519,11 +5091,16 @@ spec:
                           Configures how requests arriving over private connectivity are governed
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4542,7 +5119,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4594,6 +5173,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -4615,7 +5202,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -4648,11 +5238,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4671,7 +5265,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4723,6 +5319,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -4744,7 +5348,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allPrivateAccess:
                                       description: |-
@@ -4777,7 +5384,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                       publicAccess:
@@ -4786,11 +5393,16 @@ spec:
                           Configures how public internet traffic is allowed or denied access
                         properties:
                           allowRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Allow rules are evaluated after deny rules. A request matching any allow rule is
+                              allowed; a request matching no rule is denied by default. Only applies when
+                              restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4809,7 +5421,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4861,6 +5475,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -4882,7 +5504,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -4909,11 +5534,15 @@ spec:
                               type: object
                             type: array
                           denyRules:
-                            description: (list of CustomerFacingIngressNetworkPolicyCrossWorkspaceIngressRule, optional)
+                            description: |-
+                              Deny rules are evaluated first. A request matching any deny rule is denied,
+                              regardless of allow rules. Only applies when restriction_mode is RESTRICTED_ACCESS
                             items:
                               properties:
                                 authentication:
-                                  description: (CustomerFacingIngressNetworkPolicyAuthentication, optional)
+                                  description: |-
+                                    The authenticated identity the request must match. When unset, the rule matches
+                                    all users and service principals
                                   properties:
                                     identities:
                                       description: Valid only when IdentityType is IDENTITY_TYPE_SELECTED_IDENTITIES
@@ -4932,7 +5561,9 @@ spec:
                                       type: string
                                   type: object
                                 destination:
-                                  description: (CustomerFacingIngressNetworkPolicyRequestDestination, optional)
+                                  description: |-
+                                    The destination the request must match — the resource being accessed, for example
+                                    the workspace UI or workspace APIs. See RequestDestination
                                   properties:
                                     accountApi:
                                       description: |-
@@ -4984,6 +5615,14 @@ spec:
                                     workspaceApi:
                                       description: (CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)
                                       properties:
+                                        excludedScopes:
+                                          description: |-
+                                            Inverse of scopes: matches every API scope EXCEPT those listed here
+                                            ("allow all except"). Mutually exclusive with scopes — a single
+                                            destination may set at most one of the two
+                                          items:
+                                            type: string
+                                          type: array
                                         scopeQualifier:
                                           description: 'Qualifies the breadth of API access for the listed scopes. See ApiScopeQualifier. Possible values are: API_SCOPE_QUALIFIER_ALL, API_SCOPE_QUALIFIER_READ'
                                           type: string
@@ -5005,7 +5644,10 @@ spec:
                                   description: The label for this ingress rule
                                   type: string
                                 origin:
-                                  description: (CustomerFacingIngressNetworkPolicyCrossWorkspaceRequestOrigin, optional)
+                                  description: |-
+                                    The origin the request must match — the source workspace the request comes from,
+                                    either specific source workspaces or any source workspace in any account. See
+                                    CrossWorkspaceRequestOrigin
                                   properties:
                                     allIpRanges:
                                       description: Matches all IPv4 and IPv6 ranges (both public and private)
@@ -5032,7 +5674,7 @@ spec:
                               type: object
                             type: array
                           restrictionMode:
-                            description: 'Possible values are: FULL_ACCESS, RESTRICTED_ACCESS'
+                            description: 'The restriction mode for cross-workspace access. Possible values are: FULL_ACCESS, LEGACY_MODE, RESTRICTED_ACCESS'
                             type: string
                         type: object
                     type: object

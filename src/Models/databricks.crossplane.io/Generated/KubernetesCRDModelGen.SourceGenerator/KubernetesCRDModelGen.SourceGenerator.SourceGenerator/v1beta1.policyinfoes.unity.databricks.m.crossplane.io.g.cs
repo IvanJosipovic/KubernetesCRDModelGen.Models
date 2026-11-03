@@ -37,6 +37,58 @@ public partial class V1beta1PolicyInfoList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1PolicyInfo> Items { get; set; }
 }
 
+/// <summary>Extracts the value of a column-level tag</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue
+{
+    /// <summary>The alias from MATCH COLUMNS that identifies the column</summary>
+    [JsonPropertyName("columnAlias")]
+    public string? ColumnAlias { get; set; }
+
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>The governed tag value, when the policy references a specific value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue
+{
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>An expression that introspects tags at query time</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospection
+{
+    /// <summary>Extracts the value of a column-level tag</summary>
+    [JsonPropertyName("columnTagValue")]
+    public V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue? ColumnTagValue { get; set; }
+
+    /// <summary>The governed tag value, when the policy references a specific value</summary>
+    [JsonPropertyName("tagValue")]
+    public V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue? TagValue { get; set; }
+}
+
+/// <summary>
+/// An expression evaluated at query time. Wraps per-request expression variants
+/// (e.g., tag introspection) so new variants can be added without extending the
+/// FunctionArgument oneof
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpression
+{
+    /// <summary>An expression that introspects tags at query time</summary>
+    [JsonPropertyName("tagIntrospection")]
+    public V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsing
@@ -48,6 +100,14 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsing
     /// <summary>A constant literal</summary>
     [JsonPropertyName("constant")]
     public string? Constant { get; set; }
+
+    /// <summary>
+    /// An expression evaluated at query time. Wraps per-request expression variants
+    /// (e.g., tag introspection) so new variants can be added without extending the
+    /// FunctionArgument oneof
+    /// </summary>
+    [JsonPropertyName("functionArgExpression")]
+    public V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpression? FunctionArgExpression { get; set; }
 }
 
 /// <summary>
@@ -84,6 +144,44 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMask
     public IList<V1beta1PolicyInfoSpecForProviderColumnMaskUsing>? Using { get; set; }
 }
 
+/// <summary>
+/// Options for deny policies. Valid only if policy_type is POLICY_TYPE_DENY.
+/// Required on create and optional on update. When specified on update,
+/// the new options will replace the existing options as a whole
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderDeny
+{
+    /// <summary>
+    /// List of privileges to deny.
+    /// When any of these privileges are requested, the policy will deny access
+    /// if the principal and condition match.
+    /// Required on create and update
+    /// </summary>
+    [JsonPropertyName("privileges")]
+    public IList<string>? Privileges { get; set; }
+}
+
+/// <summary>
+/// Options for grant policies. Valid only if policy_type is POLICY_TYPE_GRANT.
+/// Required on create and optional on update. When specified on update,
+/// the new options will replace the existing options as a whole
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderGrant
+{
+    /// <summary>
+    /// List of privileges to deny.
+    /// When any of these privileges are requested, the policy will deny access
+    /// if the principal and condition match.
+    /// Required on create and update
+    /// </summary>
+    [JsonPropertyName("privileges")]
+    public IList<string>? Privileges { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderMatchColumns
@@ -107,6 +205,58 @@ public partial class V1beta1PolicyInfoSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+/// <summary>Extracts the value of a column-level tag</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue
+{
+    /// <summary>The alias from MATCH COLUMNS that identifies the column</summary>
+    [JsonPropertyName("columnAlias")]
+    public string? ColumnAlias { get; set; }
+
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>The governed tag value, when the policy references a specific value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue
+{
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>An expression that introspects tags at query time</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospection
+{
+    /// <summary>Extracts the value of a column-level tag</summary>
+    [JsonPropertyName("columnTagValue")]
+    public V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue? ColumnTagValue { get; set; }
+
+    /// <summary>The governed tag value, when the policy references a specific value</summary>
+    [JsonPropertyName("tagValue")]
+    public V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue? TagValue { get; set; }
+}
+
+/// <summary>
+/// An expression evaluated at query time. Wraps per-request expression variants
+/// (e.g., tag introspection) so new variants can be added without extending the
+/// FunctionArgument oneof
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpression
+{
+    /// <summary>An expression that introspects tags at query time</summary>
+    [JsonPropertyName("tagIntrospection")]
+    public V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsing
@@ -118,6 +268,14 @@ public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsing
     /// <summary>A constant literal</summary>
     [JsonPropertyName("constant")]
     public string? Constant { get; set; }
+
+    /// <summary>
+    /// An expression evaluated at query time. Wraps per-request expression variants
+    /// (e.g., tag introspection) so new variants can be added without extending the
+    /// FunctionArgument oneof
+    /// </summary>
+    [JsonPropertyName("functionArgExpression")]
+    public V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpression? FunctionArgExpression { get; set; }
 }
 
 /// <summary>
@@ -162,17 +320,32 @@ public partial class V1beta1PolicyInfoSpecForProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
+    /// <summary>
+    /// Options for deny policies. Valid only if policy_type is POLICY_TYPE_DENY.
+    /// Required on create and optional on update. When specified on update,
+    /// the new options will replace the existing options as a whole
+    /// </summary>
+    [JsonPropertyName("deny")]
+    public V1beta1PolicyInfoSpecForProviderDeny? Deny { get; set; }
+
     /// <summary>Optional list of user or group names that should be excluded from the policy</summary>
     [JsonPropertyName("exceptPrincipals")]
     public IList<string>? ExceptPrincipals { get; set; }
 
     /// <summary>
     /// Type of securables that the policy should take effect on.
-    /// Only TABLE is supported at this moment.
-    /// Required on create and optional on update. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Required on create and optional on update. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("forSecurableType")]
     public string? ForSecurableType { get; set; }
+
+    /// <summary>
+    /// Options for grant policies. Valid only if policy_type is POLICY_TYPE_GRANT.
+    /// Required on create and optional on update. When specified on update,
+    /// the new options will replace the existing options as a whole
+    /// </summary>
+    [JsonPropertyName("grant")]
+    public V1beta1PolicyInfoSpecForProviderGrant? Grant { get; set; }
 
     /// <summary>
     /// Optional list of condition expressions used to match table columns.
@@ -199,12 +372,12 @@ public partial class V1beta1PolicyInfoSpecForProvider
     /// <summary>
     /// Type of the securable on which the policy is defined.
     /// Only CATALOG, SCHEMA and TABLE are supported at this moment.
-    /// Required on create. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Required on create. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("onSecurableType")]
     public string? OnSecurableType { get; set; }
 
-    /// <summary>Type of the policy. Required on create. Possible values are: POLICY_TYPE_COLUMN_MASK, POLICY_TYPE_ROW_FILTER</summary>
+    /// <summary>Type of the policy. Required on create. Possible values are: POLICY_TYPE_COLUMN_MASK, POLICY_TYPE_DENY, POLICY_TYPE_GRANT, POLICY_TYPE_ROW_FILTER</summary>
     [JsonPropertyName("policyType")]
     public string? PolicyType { get; set; }
 
@@ -232,6 +405,58 @@ public partial class V1beta1PolicyInfoSpecForProvider
     public string? WhenCondition { get; set; }
 }
 
+/// <summary>Extracts the value of a column-level tag</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue
+{
+    /// <summary>The alias from MATCH COLUMNS that identifies the column</summary>
+    [JsonPropertyName("columnAlias")]
+    public string? ColumnAlias { get; set; }
+
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>The governed tag value, when the policy references a specific value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue
+{
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>An expression that introspects tags at query time</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospection
+{
+    /// <summary>Extracts the value of a column-level tag</summary>
+    [JsonPropertyName("columnTagValue")]
+    public V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue? ColumnTagValue { get; set; }
+
+    /// <summary>The governed tag value, when the policy references a specific value</summary>
+    [JsonPropertyName("tagValue")]
+    public V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue? TagValue { get; set; }
+}
+
+/// <summary>
+/// An expression evaluated at query time. Wraps per-request expression variants
+/// (e.g., tag introspection) so new variants can be added without extending the
+/// FunctionArgument oneof
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpression
+{
+    /// <summary>An expression that introspects tags at query time</summary>
+    [JsonPropertyName("tagIntrospection")]
+    public V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsing
@@ -243,6 +468,14 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsing
     /// <summary>A constant literal</summary>
     [JsonPropertyName("constant")]
     public string? Constant { get; set; }
+
+    /// <summary>
+    /// An expression evaluated at query time. Wraps per-request expression variants
+    /// (e.g., tag introspection) so new variants can be added without extending the
+    /// FunctionArgument oneof
+    /// </summary>
+    [JsonPropertyName("functionArgExpression")]
+    public V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpression? FunctionArgExpression { get; set; }
 }
 
 /// <summary>
@@ -279,6 +512,44 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMask
     public IList<V1beta1PolicyInfoSpecInitProviderColumnMaskUsing>? Using { get; set; }
 }
 
+/// <summary>
+/// Options for deny policies. Valid only if policy_type is POLICY_TYPE_DENY.
+/// Required on create and optional on update. When specified on update,
+/// the new options will replace the existing options as a whole
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderDeny
+{
+    /// <summary>
+    /// List of privileges to deny.
+    /// When any of these privileges are requested, the policy will deny access
+    /// if the principal and condition match.
+    /// Required on create and update
+    /// </summary>
+    [JsonPropertyName("privileges")]
+    public IList<string>? Privileges { get; set; }
+}
+
+/// <summary>
+/// Options for grant policies. Valid only if policy_type is POLICY_TYPE_GRANT.
+/// Required on create and optional on update. When specified on update,
+/// the new options will replace the existing options as a whole
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderGrant
+{
+    /// <summary>
+    /// List of privileges to deny.
+    /// When any of these privileges are requested, the policy will deny access
+    /// if the principal and condition match.
+    /// Required on create and update
+    /// </summary>
+    [JsonPropertyName("privileges")]
+    public IList<string>? Privileges { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderMatchColumns
@@ -302,6 +573,58 @@ public partial class V1beta1PolicyInfoSpecInitProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+/// <summary>Extracts the value of a column-level tag</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue
+{
+    /// <summary>The alias from MATCH COLUMNS that identifies the column</summary>
+    [JsonPropertyName("columnAlias")]
+    public string? ColumnAlias { get; set; }
+
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>The governed tag value, when the policy references a specific value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue
+{
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>An expression that introspects tags at query time</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospection
+{
+    /// <summary>Extracts the value of a column-level tag</summary>
+    [JsonPropertyName("columnTagValue")]
+    public V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue? ColumnTagValue { get; set; }
+
+    /// <summary>The governed tag value, when the policy references a specific value</summary>
+    [JsonPropertyName("tagValue")]
+    public V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue? TagValue { get; set; }
+}
+
+/// <summary>
+/// An expression evaluated at query time. Wraps per-request expression variants
+/// (e.g., tag introspection) so new variants can be added without extending the
+/// FunctionArgument oneof
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpression
+{
+    /// <summary>An expression that introspects tags at query time</summary>
+    [JsonPropertyName("tagIntrospection")]
+    public V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsing
@@ -313,6 +636,14 @@ public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsing
     /// <summary>A constant literal</summary>
     [JsonPropertyName("constant")]
     public string? Constant { get; set; }
+
+    /// <summary>
+    /// An expression evaluated at query time. Wraps per-request expression variants
+    /// (e.g., tag introspection) so new variants can be added without extending the
+    /// FunctionArgument oneof
+    /// </summary>
+    [JsonPropertyName("functionArgExpression")]
+    public V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpression? FunctionArgExpression { get; set; }
 }
 
 /// <summary>
@@ -369,17 +700,32 @@ public partial class V1beta1PolicyInfoSpecInitProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
+    /// <summary>
+    /// Options for deny policies. Valid only if policy_type is POLICY_TYPE_DENY.
+    /// Required on create and optional on update. When specified on update,
+    /// the new options will replace the existing options as a whole
+    /// </summary>
+    [JsonPropertyName("deny")]
+    public V1beta1PolicyInfoSpecInitProviderDeny? Deny { get; set; }
+
     /// <summary>Optional list of user or group names that should be excluded from the policy</summary>
     [JsonPropertyName("exceptPrincipals")]
     public IList<string>? ExceptPrincipals { get; set; }
 
     /// <summary>
     /// Type of securables that the policy should take effect on.
-    /// Only TABLE is supported at this moment.
-    /// Required on create and optional on update. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Required on create and optional on update. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("forSecurableType")]
     public string? ForSecurableType { get; set; }
+
+    /// <summary>
+    /// Options for grant policies. Valid only if policy_type is POLICY_TYPE_GRANT.
+    /// Required on create and optional on update. When specified on update,
+    /// the new options will replace the existing options as a whole
+    /// </summary>
+    [JsonPropertyName("grant")]
+    public V1beta1PolicyInfoSpecInitProviderGrant? Grant { get; set; }
 
     /// <summary>
     /// Optional list of condition expressions used to match table columns.
@@ -406,12 +752,12 @@ public partial class V1beta1PolicyInfoSpecInitProvider
     /// <summary>
     /// Type of the securable on which the policy is defined.
     /// Only CATALOG, SCHEMA and TABLE are supported at this moment.
-    /// Required on create. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Required on create. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("onSecurableType")]
     public string? OnSecurableType { get; set; }
 
-    /// <summary>Type of the policy. Required on create. Possible values are: POLICY_TYPE_COLUMN_MASK, POLICY_TYPE_ROW_FILTER</summary>
+    /// <summary>Type of the policy. Required on create. Possible values are: POLICY_TYPE_COLUMN_MASK, POLICY_TYPE_DENY, POLICY_TYPE_GRANT, POLICY_TYPE_ROW_FILTER</summary>
     [JsonPropertyName("policyType")]
     public string? PolicyType { get; set; }
 
@@ -546,6 +892,58 @@ public partial class V1beta1PolicyInfoSpec
     public V1beta1PolicyInfoSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>Extracts the value of a column-level tag</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue
+{
+    /// <summary>The alias from MATCH COLUMNS that identifies the column</summary>
+    [JsonPropertyName("columnAlias")]
+    public string? ColumnAlias { get; set; }
+
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>The governed tag value, when the policy references a specific value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue
+{
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>An expression that introspects tags at query time</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospection
+{
+    /// <summary>Extracts the value of a column-level tag</summary>
+    [JsonPropertyName("columnTagValue")]
+    public V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue? ColumnTagValue { get; set; }
+
+    /// <summary>The governed tag value, when the policy references a specific value</summary>
+    [JsonPropertyName("tagValue")]
+    public V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue? TagValue { get; set; }
+}
+
+/// <summary>
+/// An expression evaluated at query time. Wraps per-request expression variants
+/// (e.g., tag introspection) so new variants can be added without extending the
+/// FunctionArgument oneof
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpression
+{
+    /// <summary>An expression that introspects tags at query time</summary>
+    [JsonPropertyName("tagIntrospection")]
+    public V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsing
@@ -557,6 +955,14 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsing
     /// <summary>A constant literal</summary>
     [JsonPropertyName("constant")]
     public string? Constant { get; set; }
+
+    /// <summary>
+    /// An expression evaluated at query time. Wraps per-request expression variants
+    /// (e.g., tag introspection) so new variants can be added without extending the
+    /// FunctionArgument oneof
+    /// </summary>
+    [JsonPropertyName("functionArgExpression")]
+    public V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpression? FunctionArgExpression { get; set; }
 }
 
 /// <summary>
@@ -593,6 +999,57 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMask
     public IList<V1beta1PolicyInfoStatusAtProviderColumnMaskUsing>? Using { get; set; }
 }
 
+/// <summary>
+/// Options for deny policies. Valid only if policy_type is POLICY_TYPE_DENY.
+/// Required on create and optional on update. When specified on update,
+/// the new options will replace the existing options as a whole
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderDeny
+{
+    /// <summary>
+    /// List of privileges to deny.
+    /// When any of these privileges are requested, the policy will deny access
+    /// if the principal and condition match.
+    /// Required on create and update
+    /// </summary>
+    [JsonPropertyName("privileges")]
+    public IList<string>? Privileges { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderGovernedTags
+{
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+
+    /// <summary>The governed tag value, when the policy references a specific value</summary>
+    [JsonPropertyName("tagValue")]
+    public string? TagValue { get; set; }
+}
+
+/// <summary>
+/// Options for grant policies. Valid only if policy_type is POLICY_TYPE_GRANT.
+/// Required on create and optional on update. When specified on update,
+/// the new options will replace the existing options as a whole
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderGrant
+{
+    /// <summary>
+    /// List of privileges to deny.
+    /// When any of these privileges are requested, the policy will deny access
+    /// if the principal and condition match.
+    /// Required on create and update
+    /// </summary>
+    [JsonPropertyName("privileges")]
+    public IList<string>? Privileges { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderMatchColumns
@@ -616,6 +1073,58 @@ public partial class V1beta1PolicyInfoStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+/// <summary>Extracts the value of a column-level tag</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue
+{
+    /// <summary>The alias from MATCH COLUMNS that identifies the column</summary>
+    [JsonPropertyName("columnAlias")]
+    public string? ColumnAlias { get; set; }
+
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>The governed tag value, when the policy references a specific value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue
+{
+    /// <summary>1024 matches the max_length on FunctionArgument.constant above</summary>
+    [JsonPropertyName("tagKey")]
+    public string? TagKey { get; set; }
+}
+
+/// <summary>An expression that introspects tags at query time</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospection
+{
+    /// <summary>Extracts the value of a column-level tag</summary>
+    [JsonPropertyName("columnTagValue")]
+    public V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue? ColumnTagValue { get; set; }
+
+    /// <summary>The governed tag value, when the policy references a specific value</summary>
+    [JsonPropertyName("tagValue")]
+    public V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue? TagValue { get; set; }
+}
+
+/// <summary>
+/// An expression evaluated at query time. Wraps per-request expression variants
+/// (e.g., tag introspection) so new variants can be added without extending the
+/// FunctionArgument oneof
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpression
+{
+    /// <summary>An expression that introspects tags at query time</summary>
+    [JsonPropertyName("tagIntrospection")]
+    public V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsing
@@ -627,6 +1136,14 @@ public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsing
     /// <summary>A constant literal</summary>
     [JsonPropertyName("constant")]
     public string? Constant { get; set; }
+
+    /// <summary>
+    /// An expression evaluated at query time. Wraps per-request expression variants
+    /// (e.g., tag introspection) so new variants can be added without extending the
+    /// FunctionArgument oneof
+    /// </summary>
+    [JsonPropertyName("functionArgExpression")]
+    public V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpression? FunctionArgExpression { get; set; }
 }
 
 /// <summary>
@@ -679,17 +1196,36 @@ public partial class V1beta1PolicyInfoStatusAtProvider
     [JsonPropertyName("createdBy")]
     public string? CreatedBy { get; set; }
 
+    /// <summary>
+    /// Options for deny policies. Valid only if policy_type is POLICY_TYPE_DENY.
+    /// Required on create and optional on update. When specified on update,
+    /// the new options will replace the existing options as a whole
+    /// </summary>
+    [JsonPropertyName("deny")]
+    public V1beta1PolicyInfoStatusAtProviderDeny? Deny { get; set; }
+
     /// <summary>Optional list of user or group names that should be excluded from the policy</summary>
     [JsonPropertyName("exceptPrincipals")]
     public IList<string>? ExceptPrincipals { get; set; }
 
     /// <summary>
     /// Type of securables that the policy should take effect on.
-    /// Only TABLE is supported at this moment.
-    /// Required on create and optional on update. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Required on create and optional on update. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("forSecurableType")]
     public string? ForSecurableType { get; set; }
+
+    /// <summary>Governed tag keys and values referenced by this policy&apos;s conditions and function arguments. Output only</summary>
+    [JsonPropertyName("governedTags")]
+    public IList<V1beta1PolicyInfoStatusAtProviderGovernedTags>? GovernedTags { get; set; }
+
+    /// <summary>
+    /// Options for grant policies. Valid only if policy_type is POLICY_TYPE_GRANT.
+    /// Required on create and optional on update. When specified on update,
+    /// the new options will replace the existing options as a whole
+    /// </summary>
+    [JsonPropertyName("grant")]
+    public V1beta1PolicyInfoStatusAtProviderGrant? Grant { get; set; }
 
     /// <summary>Unique identifier of the policy. This field is output only and is generated by the system</summary>
     [JsonPropertyName("id")]
@@ -720,12 +1256,12 @@ public partial class V1beta1PolicyInfoStatusAtProvider
     /// <summary>
     /// Type of the securable on which the policy is defined.
     /// Only CATALOG, SCHEMA and TABLE are supported at this moment.
-    /// Required on create. Possible values are: CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, METASTORE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
+    /// Required on create. Possible values are: AGENT_SERVICE, CATALOG, CLEAN_ROOM, CONNECTION, CREDENTIAL, EXTERNAL_LOCATION, EXTERNAL_METADATA, FUNCTION, MCP_SERVICE, METASTORE, MODEL, MODEL_PROVIDER_SERVICE, MODEL_SERVICE, PIPELINE, PROVIDER, RECIPIENT, SCHEMA, SHARE, SKILL, STAGING_TABLE, STORAGE_CREDENTIAL, TABLE, VOLUME
     /// </summary>
     [JsonPropertyName("onSecurableType")]
     public string? OnSecurableType { get; set; }
 
-    /// <summary>Type of the policy. Required on create. Possible values are: POLICY_TYPE_COLUMN_MASK, POLICY_TYPE_ROW_FILTER</summary>
+    /// <summary>Type of the policy. Required on create. Possible values are: POLICY_TYPE_COLUMN_MASK, POLICY_TYPE_DENY, POLICY_TYPE_GRANT, POLICY_TYPE_ROW_FILTER</summary>
     [JsonPropertyName("policyType")]
     public string? PolicyType { get; set; }
 

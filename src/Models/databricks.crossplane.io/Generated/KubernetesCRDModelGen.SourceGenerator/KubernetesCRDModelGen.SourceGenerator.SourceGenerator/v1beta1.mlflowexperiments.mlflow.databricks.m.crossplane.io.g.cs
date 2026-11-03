@@ -58,24 +58,34 @@ public partial class V1beta1MlflowExperimentSpecForProviderTags
     public string? Value { get; set; }
 }
 
+/// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation
 {
+    /// <summary>Name of the Unity Catalog catalog.</summary>
     [JsonPropertyName("catalog")]
     public string? Catalog { get; set; }
 
+    /// <summary>(Computed) The trace-table prefix actually in effect: table_prefix if it was set on creation, otherwise the server-generated default.</summary>
+    [JsonPropertyName("effectiveTablePrefix")]
+    public string? EffectiveTablePrefix { get; set; }
+
+    /// <summary>Name of the Unity Catalog schema within catalog.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
+    /// <summary>Prefix for the generated trace tables (named {catalog}.{schema}.{table_prefix}_otel_*). If omitted, the server generates a default prefix derived from the experiment ID; the field then stays empty and the resolved value is available in effective_table_prefix.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
 
+/// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentSpecForProviderTraceLocation
 {
+    /// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
     [JsonPropertyName("ucTraceLocation")]
     public V1beta1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation? UcTraceLocation { get; set; }
 }
@@ -116,6 +126,7 @@ public partial class V1beta1MlflowExperimentSpecForProvider
     [JsonPropertyName("tags")]
     public IList<V1beta1MlflowExperimentSpecForProviderTags>? Tags { get; set; }
 
+    /// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
     [JsonPropertyName("traceLocation")]
     public V1beta1MlflowExperimentSpecForProviderTraceLocation? TraceLocation { get; set; }
 }
@@ -141,24 +152,34 @@ public partial class V1beta1MlflowExperimentSpecInitProviderTags
     public string? Value { get; set; }
 }
 
+/// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation
 {
+    /// <summary>Name of the Unity Catalog catalog.</summary>
     [JsonPropertyName("catalog")]
     public string? Catalog { get; set; }
 
+    /// <summary>(Computed) The trace-table prefix actually in effect: table_prefix if it was set on creation, otherwise the server-generated default.</summary>
+    [JsonPropertyName("effectiveTablePrefix")]
+    public string? EffectiveTablePrefix { get; set; }
+
+    /// <summary>Name of the Unity Catalog schema within catalog.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
+    /// <summary>Prefix for the generated trace tables (named {catalog}.{schema}.{table_prefix}_otel_*). If omitted, the server generates a default prefix derived from the experiment ID; the field then stays empty and the resolved value is available in effective_table_prefix.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
 
+/// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentSpecInitProviderTraceLocation
 {
+    /// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
     [JsonPropertyName("ucTraceLocation")]
     public V1beta1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation? UcTraceLocation { get; set; }
 }
@@ -211,6 +232,7 @@ public partial class V1beta1MlflowExperimentSpecInitProvider
     [JsonPropertyName("tags")]
     public IList<V1beta1MlflowExperimentSpecInitProviderTags>? Tags { get; set; }
 
+    /// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
     [JsonPropertyName("traceLocation")]
     public V1beta1MlflowExperimentSpecInitProviderTraceLocation? TraceLocation { get; set; }
 }
@@ -343,24 +365,34 @@ public partial class V1beta1MlflowExperimentStatusAtProviderTags
     public string? Value { get; set; }
 }
 
+/// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation
 {
+    /// <summary>Name of the Unity Catalog catalog.</summary>
     [JsonPropertyName("catalog")]
     public string? Catalog { get; set; }
 
+    /// <summary>(Computed) The trace-table prefix actually in effect: table_prefix if it was set on creation, otherwise the server-generated default.</summary>
+    [JsonPropertyName("effectiveTablePrefix")]
+    public string? EffectiveTablePrefix { get; set; }
+
+    /// <summary>Name of the Unity Catalog schema within catalog.</summary>
     [JsonPropertyName("schema")]
     public string? Schema { get; set; }
 
+    /// <summary>Prefix for the generated trace tables (named {catalog}.{schema}.{table_prefix}_otel_*). If omitted, the server generates a default prefix derived from the experiment ID; the field then stays empty and the resolved value is available in effective_table_prefix.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
 
+/// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentStatusAtProviderTraceLocation
 {
+    /// <summary>The Unity Catalog storage location. This block consists of the following fields:</summary>
     [JsonPropertyName("ucTraceLocation")]
     public V1beta1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation? UcTraceLocation { get; set; }
 }
@@ -405,6 +437,7 @@ public partial class V1beta1MlflowExperimentStatusAtProvider
     [JsonPropertyName("tags")]
     public IList<V1beta1MlflowExperimentStatusAtProviderTags>? Tags { get; set; }
 
+    /// <summary>Unity Catalog location where the experiment&apos;s traces are stored. Cannot be changed after the experiment is created; changing it forces replacement of the experiment. This block consists of the following fields:</summary>
     [JsonPropertyName("traceLocation")]
     public V1beta1MlflowExperimentStatusAtProviderTraceLocation? TraceLocation { get; set; }
 }

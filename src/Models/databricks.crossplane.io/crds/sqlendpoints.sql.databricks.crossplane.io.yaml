@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.21.0
+    controller-gen.kubebuilder.io/version: v0.23.0
   name: sqlendpoints.sql.databricks.crossplane.io
 spec:
   group: sql.databricks.crossplane.io
@@ -92,6 +92,8 @@ spec:
                   clusterSize:
                     description: 'The size of the clusters allocated to the endpoint: "2X-Small", "X-Small", "Small", "Medium", "Large", "X-Large", "2X-Large", "3X-Large", "4X-Large", "5X-Large".'
                     type: string
+                  customerVersionLabel:
+                    type: string
                   dataSourceId:
                     description: (Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.
                     type: string
@@ -103,6 +105,8 @@ spec:
                     type: boolean
                   instanceProfileArn:
                     type: string
+                  maxDbu:
+                    type: number
                   maxNumClusters:
                     description: Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.
                     type: number
@@ -126,9 +130,13 @@ spec:
                           type: string
                       type: object
                     type: array
+                  reydenClusterSizeMultiplier:
+                    type: number
                   spotInstancePolicy:
                     description: 'The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.'
                     type: string
+                  statementTimeout:
+                    type: number
                   tags:
                     description: Databricks tags all endpoint resources with these tags.
                     items:
@@ -179,6 +187,8 @@ spec:
                   clusterSize:
                     description: 'The size of the clusters allocated to the endpoint: "2X-Small", "X-Small", "Small", "Medium", "Large", "X-Large", "2X-Large", "3X-Large", "4X-Large", "5X-Large".'
                     type: string
+                  customerVersionLabel:
+                    type: string
                   dataSourceId:
                     description: (Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.
                     type: string
@@ -190,6 +200,8 @@ spec:
                     type: boolean
                   instanceProfileArn:
                     type: string
+                  maxDbu:
+                    type: number
                   maxNumClusters:
                     description: Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.
                     type: number
@@ -213,9 +225,13 @@ spec:
                           type: string
                       type: object
                     type: array
+                  reydenClusterSizeMultiplier:
+                    type: number
                   spotInstancePolicy:
                     description: 'The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.'
                     type: string
+                  statementTimeout:
+                    type: number
                   tags:
                     description: Databricks tags all endpoint resources with these tags.
                     items:
@@ -352,6 +368,8 @@ spec:
                   creatorName:
                     description: The username of the user who created the endpoint.
                     type: string
+                  customerVersionLabel:
+                    type: string
                   dataSourceId:
                     description: (Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.
                     type: string
@@ -397,6 +415,8 @@ spec:
                   jdbcUrl:
                     description: JDBC connection string.
                     type: string
+                  maxDbu:
+                    type: number
                   maxNumClusters:
                     description: Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.
                     type: number
@@ -441,12 +461,16 @@ spec:
                           type: string
                       type: object
                     type: array
+                  reydenClusterSizeMultiplier:
+                    type: number
                   spotInstancePolicy:
                     description: 'The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.'
                     type: string
                   state:
                     description: The current state of the endpoint.
                     type: string
+                  statementTimeout:
+                    type: number
                   tags:
                     description: Databricks tags all endpoint resources with these tags.
                     items:
@@ -602,6 +626,8 @@ spec:
                   clusterSize:
                     description: 'The size of the clusters allocated to the endpoint: "2X-Small", "X-Small", "Small", "Medium", "Large", "X-Large", "2X-Large", "3X-Large", "4X-Large", "5X-Large".'
                     type: string
+                  customerVersionLabel:
+                    type: string
                   dataSourceId:
                     description: (Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.
                     type: string
@@ -613,6 +639,8 @@ spec:
                     type: boolean
                   instanceProfileArn:
                     type: string
+                  maxDbu:
+                    type: number
                   maxNumClusters:
                     description: Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.
                     type: number
@@ -634,9 +662,13 @@ spec:
                         description: Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.
                         type: string
                     type: object
+                  reydenClusterSizeMultiplier:
+                    type: number
                   spotInstancePolicy:
                     description: 'The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.'
                     type: string
+                  statementTimeout:
+                    type: number
                   tags:
                     description: Databricks tags all endpoint resources with these tags.
                     properties:
@@ -683,6 +715,8 @@ spec:
                   clusterSize:
                     description: 'The size of the clusters allocated to the endpoint: "2X-Small", "X-Small", "Small", "Medium", "Large", "X-Large", "2X-Large", "3X-Large", "4X-Large", "5X-Large".'
                     type: string
+                  customerVersionLabel:
+                    type: string
                   dataSourceId:
                     description: (Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.
                     type: string
@@ -694,6 +728,8 @@ spec:
                     type: boolean
                   instanceProfileArn:
                     type: string
+                  maxDbu:
+                    type: number
                   maxNumClusters:
                     description: Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.
                     type: number
@@ -715,9 +751,13 @@ spec:
                         description: Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.
                         type: string
                     type: object
+                  reydenClusterSizeMultiplier:
+                    type: number
                   spotInstancePolicy:
                     description: 'The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.'
                     type: string
+                  statementTimeout:
+                    type: number
                   tags:
                     description: Databricks tags all endpoint resources with these tags.
                     properties:
@@ -850,6 +890,8 @@ spec:
                   creatorName:
                     description: The username of the user who created the endpoint.
                     type: string
+                  customerVersionLabel:
+                    type: string
                   dataSourceId:
                     description: (Deprecated, will be removed) ID of the data source for this endpoint. This is used to bind an Databricks SQL query to an endpoint.
                     type: string
@@ -893,6 +935,8 @@ spec:
                   jdbcUrl:
                     description: JDBC connection string.
                     type: string
+                  maxDbu:
+                    type: number
                   maxNumClusters:
                     description: Maximum number of clusters available when a SQL warehouse is running. This field is required. If multi-cluster load balancing is not enabled, this is default to 1.
                     type: number
@@ -935,12 +979,16 @@ spec:
                         description: Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.
                         type: string
                     type: object
+                  reydenClusterSizeMultiplier:
+                    type: number
                   spotInstancePolicy:
                     description: 'The spot policy to use for allocating instances to clusters: COST_OPTIMIZED or RELIABILITY_OPTIMIZED. This field is optional. Default is COST_OPTIMIZED.'
                     type: string
                   state:
                     description: The current state of the endpoint.
                     type: string
+                  statementTimeout:
+                    type: number
                   tags:
                     description: Databricks tags all endpoint resources with these tags.
                     properties:

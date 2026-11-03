@@ -41,7 +41,10 @@ public partial class V1alpha1AccountFederationPolicyList : IKubernetesObject<V1L
     public required IList<V1alpha1AccountFederationPolicy> Items { get; set; }
 }
 
-/// <summary>(OidcFederationPolicy, optional)</summary>
+/// <summary>
+/// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+/// policy configuration is captured in create/update audit logs (see go/auditlogs)
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -107,7 +110,10 @@ public partial class V1alpha1AccountFederationPolicySpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>(OidcFederationPolicy, optional)</summary>
+    /// <summary>
+    /// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+    /// policy configuration is captured in create/update audit logs (see go/auditlogs)
+    /// </summary>
     [JsonPropertyName("oidcPolicy")]
     public V1alpha1AccountFederationPolicySpecForProviderOidcPolicy? OidcPolicy { get; set; }
 
@@ -120,7 +126,10 @@ public partial class V1alpha1AccountFederationPolicySpecForProvider
     public double? ServicePrincipalId { get; set; }
 }
 
-/// <summary>(OidcFederationPolicy, optional)</summary>
+/// <summary>
+/// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+/// policy configuration is captured in create/update audit logs (see go/auditlogs)
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -198,7 +207,10 @@ public partial class V1alpha1AccountFederationPolicySpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>(OidcFederationPolicy, optional)</summary>
+    /// <summary>
+    /// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+    /// policy configuration is captured in create/update audit logs (see go/auditlogs)
+    /// </summary>
     [JsonPropertyName("oidcPolicy")]
     public V1alpha1AccountFederationPolicySpecInitProviderOidcPolicy? OidcPolicy { get; set; }
 
@@ -322,7 +334,10 @@ public partial class V1alpha1AccountFederationPolicySpec
     public V1alpha1AccountFederationPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>(OidcFederationPolicy, optional)</summary>
+/// <summary>
+/// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+/// policy configuration is captured in create/update audit logs (see go/auditlogs)
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -406,7 +421,10 @@ public partial class V1alpha1AccountFederationPolicyStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>(OidcFederationPolicy, optional)</summary>
+    /// <summary>
+    /// audit_mode INCLUDE is required on both this message field and its leaf fields so the OIDC
+    /// policy configuration is captured in create/update audit logs (see go/auditlogs)
+    /// </summary>
     [JsonPropertyName("oidcPolicy")]
     public V1alpha1AccountFederationPolicyStatusAtProviderOidcPolicy? OidcPolicy { get; set; }
 

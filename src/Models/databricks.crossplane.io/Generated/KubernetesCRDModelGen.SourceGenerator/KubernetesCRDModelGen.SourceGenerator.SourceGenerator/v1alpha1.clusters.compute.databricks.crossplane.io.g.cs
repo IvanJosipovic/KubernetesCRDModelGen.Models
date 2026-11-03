@@ -313,6 +313,10 @@ public partial class V1alpha1ClusterSpecForProviderDriverNodeTypeFlexibility
     /// <summary>list of alternative node types that will be used if main node type isn&apos;t available.  Follow the documentation for requirements on selection of alternative node types.</summary>
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>Canonical unique identifier for the cluster.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -557,6 +561,10 @@ public partial class V1alpha1ClusterSpecForProviderWorkerNodeTypeFlexibility
     /// <summary>list of alternative node types that will be used if main node type isn&apos;t available.  Follow the documentation for requirements on selection of alternative node types.</summary>
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>Canonical unique identifier for the cluster.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -625,6 +633,9 @@ public partial class V1alpha1ClusterSpecForProvider
     /// <summary>Select the security features of the cluster (see API docs for full list of values). Unity Catalog requires SINGLE_USER or USER_ISOLATION mode. LEGACY_PASSTHROUGH for passthrough cluster and LEGACY_TABLE_ACL for Table ACL cluster. If omitted, default security features are enabled. To disable security features use NONE or legacy mode NO_ISOLATION.  If kind is specified, then the following options are available:</summary>
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1ClusterSpecForProviderDockerImage>? DockerImage { get; set; }
@@ -992,6 +1003,10 @@ public partial class V1alpha1ClusterSpecInitProviderDriverNodeTypeFlexibility
     /// <summary>list of alternative node types that will be used if main node type isn&apos;t available.  Follow the documentation for requirements on selection of alternative node types.</summary>
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>Canonical unique identifier for the cluster.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1236,6 +1251,10 @@ public partial class V1alpha1ClusterSpecInitProviderWorkerNodeTypeFlexibility
     /// <summary>list of alternative node types that will be used if main node type isn&apos;t available.  Follow the documentation for requirements on selection of alternative node types.</summary>
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>Canonical unique identifier for the cluster.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1316,6 +1335,9 @@ public partial class V1alpha1ClusterSpecInitProvider
     /// <summary>Select the security features of the cluster (see API docs for full list of values). Unity Catalog requires SINGLE_USER or USER_ISOLATION mode. LEGACY_PASSTHROUGH for passthrough cluster and LEGACY_TABLE_ACL for Table ACL cluster. If omitted, default security features are enabled. To disable security features use NONE or legacy mode NO_ISOLATION.  If kind is specified, then the following options are available:</summary>
     [JsonPropertyName("dataSecurityMode")]
     public string? DataSecurityMode { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1ClusterSpecInitProviderDockerImage>? DockerImage { get; set; }
@@ -1850,6 +1872,10 @@ public partial class V1alpha1ClusterStatusAtProviderDriverNodeTypeFlexibility
     /// <summary>list of alternative node types that will be used if main node type isn&apos;t available.  Follow the documentation for requirements on selection of alternative node types.</summary>
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>Canonical unique identifier for the cluster.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -2094,6 +2120,10 @@ public partial class V1alpha1ClusterStatusAtProviderWorkerNodeTypeFlexibility
     /// <summary>list of alternative node types that will be used if main node type isn&apos;t available.  Follow the documentation for requirements on selection of alternative node types.</summary>
     [JsonPropertyName("alternateNodeTypeIds")]
     public IList<string>? AlternateNodeTypeIds { get; set; }
+
+    /// <summary>Canonical unique identifier for the cluster.</summary>
+    [JsonPropertyName("awsContextId")]
+    public string? AwsContextId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -2170,6 +2200,9 @@ public partial class V1alpha1ClusterStatusAtProvider
     /// <summary>(map) Tags that are added by Databricks by default, regardless of any custom_tags that may have been added. These include: Vendor: Databricks, Creator: &lt;username_of_creator&gt;, ClusterName: &lt;name_of_cluster&gt;, ClusterId: &lt;id_of_cluster&gt;, Name: , and any workspace and pool tags.</summary>
     [JsonPropertyName("defaultTags")]
     public IDictionary<string, string>? DefaultTags { get; set; }
+
+    [JsonPropertyName("dependencyMode")]
+    public string? DependencyMode { get; set; }
 
     [JsonPropertyName("dockerImage")]
     public IList<V1alpha1ClusterStatusAtProviderDockerImage>? DockerImage { get; set; }

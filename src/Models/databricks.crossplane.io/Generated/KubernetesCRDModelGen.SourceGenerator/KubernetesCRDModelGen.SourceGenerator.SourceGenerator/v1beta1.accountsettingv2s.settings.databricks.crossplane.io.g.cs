@@ -325,6 +325,20 @@ public partial class V1beta1AccountSettingV2SpecForProviderEffectiveRestrictWork
     public string? Status { get; set; }
 }
 
+/// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccountSettingV2SpecForProviderEffectiveWorkspaceLabel
+{
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("color")]
+    public string? Color { get; set; }
+
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
+}
+
 /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -382,6 +396,20 @@ public partial class V1beta1AccountSettingV2SpecForProviderStringVal
     public string? Value { get; set; }
 }
 
+/// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccountSettingV2SpecForProviderWorkspaceLabel
+{
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("color")]
+    public string? Color { get; set; }
+
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountSettingV2SpecForProvider
@@ -430,6 +458,10 @@ public partial class V1beta1AccountSettingV2SpecForProvider
     [JsonPropertyName("effectiveRestrictWorkspaceAdmins")]
     public V1beta1AccountSettingV2SpecForProviderEffectiveRestrictWorkspaceAdmins? EffectiveRestrictWorkspaceAdmins { get; set; }
 
+    /// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
+    [JsonPropertyName("effectiveWorkspaceLabel")]
+    public V1beta1AccountSettingV2SpecForProviderEffectiveWorkspaceLabel? EffectiveWorkspaceLabel { get; set; }
+
     /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
     [JsonPropertyName("integerVal")]
     public V1beta1AccountSettingV2SpecForProviderIntegerVal? IntegerVal { get; set; }
@@ -453,6 +485,10 @@ public partial class V1beta1AccountSettingV2SpecForProvider
     /// <summary>Setting value for string type setting. This is the setting value set by consumers, check effective_string_val for final setting value</summary>
     [JsonPropertyName("stringVal")]
     public V1beta1AccountSettingV2SpecForProviderStringVal? StringVal { get; set; }
+
+    /// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
+    [JsonPropertyName("workspaceLabel")]
+    public V1beta1AccountSettingV2SpecForProviderWorkspaceLabel? WorkspaceLabel { get; set; }
 }
 
 /// <summary>Setting value for aibi_dashboard_embedding_access_policy setting. This is the setting value set by consumers, check effective_aibi_dashboard_embedding_access_policy for final setting value</summary>
@@ -724,6 +760,20 @@ public partial class V1beta1AccountSettingV2SpecInitProviderEffectiveRestrictWor
     public string? Status { get; set; }
 }
 
+/// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccountSettingV2SpecInitProviderEffectiveWorkspaceLabel
+{
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("color")]
+    public string? Color { get; set; }
+
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
+}
+
 /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -779,6 +829,20 @@ public partial class V1beta1AccountSettingV2SpecInitProviderStringVal
     /// <summary>(boolean, optional)</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
+}
+
+/// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccountSettingV2SpecInitProviderWorkspaceLabel
+{
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("color")]
+    public string? Color { get; set; }
+
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
 }
 
 /// <summary>
@@ -841,6 +905,10 @@ public partial class V1beta1AccountSettingV2SpecInitProvider
     [JsonPropertyName("effectiveRestrictWorkspaceAdmins")]
     public V1beta1AccountSettingV2SpecInitProviderEffectiveRestrictWorkspaceAdmins? EffectiveRestrictWorkspaceAdmins { get; set; }
 
+    /// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
+    [JsonPropertyName("effectiveWorkspaceLabel")]
+    public V1beta1AccountSettingV2SpecInitProviderEffectiveWorkspaceLabel? EffectiveWorkspaceLabel { get; set; }
+
     /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
     [JsonPropertyName("integerVal")]
     public V1beta1AccountSettingV2SpecInitProviderIntegerVal? IntegerVal { get; set; }
@@ -864,6 +932,10 @@ public partial class V1beta1AccountSettingV2SpecInitProvider
     /// <summary>Setting value for string type setting. This is the setting value set by consumers, check effective_string_val for final setting value</summary>
     [JsonPropertyName("stringVal")]
     public V1beta1AccountSettingV2SpecInitProviderStringVal? StringVal { get; set; }
+
+    /// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
+    [JsonPropertyName("workspaceLabel")]
+    public V1beta1AccountSettingV2SpecInitProviderWorkspaceLabel? WorkspaceLabel { get; set; }
 }
 
 /// <summary>
@@ -1378,6 +1450,20 @@ public partial class V1beta1AccountSettingV2StatusAtProviderEffectiveStringVal
     public string? Value { get; set; }
 }
 
+/// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccountSettingV2StatusAtProviderEffectiveWorkspaceLabel
+{
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("color")]
+    public string? Color { get; set; }
+
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
+}
+
 /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1433,6 +1519,20 @@ public partial class V1beta1AccountSettingV2StatusAtProviderStringVal
     /// <summary>(boolean, optional)</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
+}
+
+/// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccountSettingV2StatusAtProviderWorkspaceLabel
+{
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("color")]
+    public string? Color { get; set; }
+
+    /// <summary>(string, optional)</summary>
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
@@ -1507,6 +1607,10 @@ public partial class V1beta1AccountSettingV2StatusAtProvider
     [JsonPropertyName("effectiveStringVal")]
     public V1beta1AccountSettingV2StatusAtProviderEffectiveStringVal? EffectiveStringVal { get; set; }
 
+    /// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
+    [JsonPropertyName("effectiveWorkspaceLabel")]
+    public V1beta1AccountSettingV2StatusAtProviderEffectiveWorkspaceLabel? EffectiveWorkspaceLabel { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1533,6 +1637,10 @@ public partial class V1beta1AccountSettingV2StatusAtProvider
     /// <summary>Setting value for string type setting. This is the setting value set by consumers, check effective_string_val for final setting value</summary>
     [JsonPropertyName("stringVal")]
     public V1beta1AccountSettingV2StatusAtProviderStringVal? StringVal { get; set; }
+
+    /// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
+    [JsonPropertyName("workspaceLabel")]
+    public V1beta1AccountSettingV2StatusAtProviderWorkspaceLabel? WorkspaceLabel { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
