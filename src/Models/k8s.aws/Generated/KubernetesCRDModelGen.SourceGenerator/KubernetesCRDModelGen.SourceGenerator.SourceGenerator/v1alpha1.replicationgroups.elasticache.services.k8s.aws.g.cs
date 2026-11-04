@@ -473,6 +473,14 @@ public partial class V1alpha1ReplicationGroupSpec
     public V1alpha1ReplicationGroupSpecAuthToken? AuthToken { get; set; }
 
     /// <summary>
+    /// If you are running Valkey 7.2 and above or Redis OSS engine version 6.0 and
+    /// above, set this parameter to yes to opt-in to the next auto minor version
+    /// upgrade campaign. This parameter is disabled for previous versions.
+    /// </summary>
+    [JsonPropertyName("autoMinorVersionUpgrade")]
+    public bool? AutoMinorVersionUpgrade { get; set; }
+
+    /// <summary>
     /// Specifies whether a read-only replica is automatically promoted to read/write
     /// primary if the existing primary fails.
     /// 
