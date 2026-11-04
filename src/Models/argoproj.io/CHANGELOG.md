@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.27.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/argoproj.io-v1.26.0...argoproj.io-v1.27.0) (2026-11-04)
+
+
+### Features
+
+* Sync ([#229](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/229)) ([e540d35](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/e540d35c2e4dcdff528738403c8a18f39bf2515a))
+
 ## [1.26.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/argoproj.io-v1.25.1...argoproj.io-v1.26.0) (2026-10-27)
 
 
