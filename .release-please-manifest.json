@@ -32,7 +32,7 @@
   "src/Models/longhorn.io": "1.8.1",
   "src/Models/postgresql.cnpg.io": "1.14.1",
   "src/Models/projectcalico.org": "1.67.1",
-  "src/Models/secrets-store.csi.x-k8s.io": "1.9.1",
+  "src/Models/secrets-store.csi.x-k8s.io": "1.10.0",
   "src/Models/storage.k8s.io": "1.10.1",
   "src/Models/strimzi.io": "1.5.1",
   "src/Models/temporal.io": "1.7.0",
