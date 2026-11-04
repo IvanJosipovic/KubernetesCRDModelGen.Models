@@ -178,6 +178,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResourceTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -505,6 +508,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResourceTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -856,6 +862,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsClusterDecisionResourceTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -1418,6 +1427,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -1745,6 +1757,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -2096,6 +2111,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsClustersTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -2649,6 +2667,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSourceDi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -2976,6 +2997,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSourceHy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -3327,6 +3351,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSourcesD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsGitTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -3870,6 +3897,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSourceD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -4197,6 +4227,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSourceH
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -4548,6 +4581,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsListTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -5101,6 +5137,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsClusterDecisionResourceTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -5428,6 +5467,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsClusterDecisionResourceTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -5779,6 +5821,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsClusterDecisionResourceTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -6341,6 +6386,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsClustersTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -6668,6 +6716,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsClustersTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -7019,6 +7070,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsClustersTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -7572,6 +7626,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -7899,6 +7956,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -8250,6 +8310,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsGitTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -8793,6 +8856,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTem
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -9120,6 +9186,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTem
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -9471,6 +9540,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTem
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsListTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -9884,6 +9956,1258 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciDirectories
+{
+    [JsonPropertyName("exclude")]
+    public bool? Exclude { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciFiles
+{
+    [JsonPropertyName("exclude")]
+    public bool? Exclude { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("finalizers")]
+    public IList<string>? Finalizers { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecDestination
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecIgnoreDifferences
+{
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("jqPathExpressions")]
+    public IList<string>? JqPathExpressions { get; set; }
+
+    [JsonPropertyName("jsonPointers")]
+    public IList<string>? JsonPointers { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    [JsonPropertyName("managedFieldsManagers")]
+    public IList<string>? ManagedFieldsManagers { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecInfo
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcePluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcePluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcePlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcePluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcePluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSource
+{
+    [JsonPropertyName("chart")]
+    public string? Chart { get; set; }
+
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcePlugin? Plugin { get; set; }
+
+    [JsonPropertyName("ref")]
+    public string? Ref { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public string? TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourcePlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySource
+{
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySourcePlugin? Plugin { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public required string TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorHydrateTo
+{
+    [JsonPropertyName("targetBranch")]
+    public required string TargetBranch { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorSyncSource
+{
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
+
+    [JsonPropertyName("targetBranch")]
+    public required string TargetBranch { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydrator
+{
+    [JsonPropertyName("drySource")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorDrySource DrySource { get; set; }
+
+    [JsonPropertyName("hydrateTo")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorHydrateTo? HydrateTo { get; set; }
+
+    [JsonPropertyName("syncSource")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydratorSyncSource SyncSource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesPluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesPluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesPlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesPluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesPluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSources
+{
+    [JsonPropertyName("chart")]
+    public string? Chart { get; set; }
+
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourcesPlugin? Plugin { get; set; }
+
+    [JsonPropertyName("ref")]
+    public string? Ref { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public string? TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyAutomated
+{
+    [JsonPropertyName("allowEmpty")]
+    public bool? AllowEmpty { get; set; }
+
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("prune")]
+    public bool? Prune { get; set; }
+
+    [JsonPropertyName("selfHeal")]
+    public bool? SelfHeal { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyManagedNamespaceMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyRetryBackoff
+{
+    [JsonPropertyName("duration")]
+    public string? Duration { get; set; }
+
+    [JsonPropertyName("factor")]
+    public long? Factor { get; set; }
+
+    [JsonPropertyName("maxDuration")]
+    public string? MaxDuration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyRetry
+{
+    [JsonPropertyName("backoff")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyRetryBackoff? Backoff { get; set; }
+
+    [JsonPropertyName("limit")]
+    public long? Limit { get; set; }
+
+    [JsonPropertyName("refresh")]
+    public bool? Refresh { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicy
+{
+    [JsonPropertyName("automated")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyAutomated? Automated { get; set; }
+
+    [JsonPropertyName("managedNamespaceMetadata")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyManagedNamespaceMetadata? ManagedNamespaceMetadata { get; set; }
+
+    [JsonPropertyName("retry")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicyRetry? Retry { get; set; }
+
+    [JsonPropertyName("syncOptions")]
+    public IList<string>? SyncOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpec
+{
+    [JsonPropertyName("destination")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecDestination Destination { get; set; }
+
+    [JsonPropertyName("ignoreDifferences")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecIgnoreDifferences>? IgnoreDifferences { get; set; }
+
+    [JsonPropertyName("info")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecInfo>? Info { get; set; }
+
+    [JsonPropertyName("project")]
+    public required string Project { get; set; }
+
+    [JsonPropertyName("revisionHistoryLimit")]
+    public long? RevisionHistoryLimit { get; set; }
+
+    [JsonPropertyName("source")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSource? Source { get; set; }
+
+    [JsonPropertyName("sourceHydrator")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSourceHydrator? SourceHydrator { get; set; }
+
+    [JsonPropertyName("sources")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSources>? Sources { get; set; }
+
+    [JsonPropertyName("syncPolicy")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpecSyncPolicy? SyncPolicy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplate
+{
+    [JsonPropertyName("metadata")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateMetadata Metadata { get; set; }
+
+    [JsonPropertyName("spec")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplateSpec Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOci
+{
+    [JsonPropertyName("directories")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciDirectories>? Directories { get; set; }
+
+    [JsonPropertyName("files")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciFiles>? Files { get; set; }
+
+    [JsonPropertyName("pathParamPrefix")]
+    public string? PathParamPrefix { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("requeueAfterSeconds")]
+    public long? RequeueAfterSeconds { get; set; }
+
+    [JsonPropertyName("revision")]
+    public required string Revision { get; set; }
+
+    [JsonPropertyName("template")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOciTemplate? Template { get; set; }
+
+    [JsonPropertyName("values")]
+    public IDictionary<string, string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginConfigMapRef
 {
     [JsonPropertyName("name")]
@@ -10015,6 +11339,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginT
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -10342,6 +11669,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginT
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -10693,6 +12023,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginT
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPluginTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -11530,6 +12863,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullReq
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullRequestTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -11857,6 +13193,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullReq
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullRequestTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -12208,6 +13547,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullReq
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPullRequestTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -13070,6 +14412,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProviderTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -13397,6 +14742,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProviderTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -13748,6 +15096,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsScmProviderTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -14233,6 +15584,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixGenerators
     [JsonPropertyName("merge")]
     public JsonNode? Merge { get; set; }
 
+    [JsonPropertyName("oci")]
+    public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsOci? Oci { get; set; }
+
     [JsonPropertyName("plugin")]
     public V1alpha1ApplicationSetSpecGeneratorsMatrixGeneratorsPlugin? Plugin { get; set; }
 
@@ -14363,6 +15717,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -14690,6 +16047,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -15041,6 +16401,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMatrixTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -15591,6 +16954,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterDecisionResourceTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -15918,6 +17284,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterDecisionResourceTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -16269,6 +17638,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusterDecisionResourceTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -16831,6 +18203,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusters
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClustersTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -17158,6 +18533,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusters
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClustersTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -17509,6 +18887,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClusters
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsClustersTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -18062,6 +19443,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTempl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -18389,6 +19773,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTempl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -18740,6 +20127,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTempl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsGitTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -19283,6 +20673,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -19610,6 +21003,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -19961,6 +21357,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsListTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -20374,6 +21773,1258 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciDirectories
+{
+    [JsonPropertyName("exclude")]
+    public bool? Exclude { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciFiles
+{
+    [JsonPropertyName("exclude")]
+    public bool? Exclude { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("finalizers")]
+    public IList<string>? Finalizers { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecDestination
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecIgnoreDifferences
+{
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("jqPathExpressions")]
+    public IList<string>? JqPathExpressions { get; set; }
+
+    [JsonPropertyName("jsonPointers")]
+    public IList<string>? JsonPointers { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    [JsonPropertyName("managedFieldsManagers")]
+    public IList<string>? ManagedFieldsManagers { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecInfo
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcePluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcePluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcePlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcePluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcePluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSource
+{
+    [JsonPropertyName("chart")]
+    public string? Chart { get; set; }
+
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcePlugin? Plugin { get; set; }
+
+    [JsonPropertyName("ref")]
+    public string? Ref { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public string? TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourcePlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySource
+{
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySourcePlugin? Plugin { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public required string TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorHydrateTo
+{
+    [JsonPropertyName("targetBranch")]
+    public required string TargetBranch { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorSyncSource
+{
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
+
+    [JsonPropertyName("targetBranch")]
+    public required string TargetBranch { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydrator
+{
+    [JsonPropertyName("drySource")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorDrySource DrySource { get; set; }
+
+    [JsonPropertyName("hydrateTo")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorHydrateTo? HydrateTo { get; set; }
+
+    [JsonPropertyName("syncSource")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydratorSyncSource SyncSource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesPluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesPluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesPlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesPluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesPluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSources
+{
+    [JsonPropertyName("chart")]
+    public string? Chart { get; set; }
+
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourcesPlugin? Plugin { get; set; }
+
+    [JsonPropertyName("ref")]
+    public string? Ref { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public string? TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyAutomated
+{
+    [JsonPropertyName("allowEmpty")]
+    public bool? AllowEmpty { get; set; }
+
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("prune")]
+    public bool? Prune { get; set; }
+
+    [JsonPropertyName("selfHeal")]
+    public bool? SelfHeal { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyManagedNamespaceMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyRetryBackoff
+{
+    [JsonPropertyName("duration")]
+    public string? Duration { get; set; }
+
+    [JsonPropertyName("factor")]
+    public long? Factor { get; set; }
+
+    [JsonPropertyName("maxDuration")]
+    public string? MaxDuration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyRetry
+{
+    [JsonPropertyName("backoff")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyRetryBackoff? Backoff { get; set; }
+
+    [JsonPropertyName("limit")]
+    public long? Limit { get; set; }
+
+    [JsonPropertyName("refresh")]
+    public bool? Refresh { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicy
+{
+    [JsonPropertyName("automated")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyAutomated? Automated { get; set; }
+
+    [JsonPropertyName("managedNamespaceMetadata")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyManagedNamespaceMetadata? ManagedNamespaceMetadata { get; set; }
+
+    [JsonPropertyName("retry")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicyRetry? Retry { get; set; }
+
+    [JsonPropertyName("syncOptions")]
+    public IList<string>? SyncOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpec
+{
+    [JsonPropertyName("destination")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecDestination Destination { get; set; }
+
+    [JsonPropertyName("ignoreDifferences")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecIgnoreDifferences>? IgnoreDifferences { get; set; }
+
+    [JsonPropertyName("info")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecInfo>? Info { get; set; }
+
+    [JsonPropertyName("project")]
+    public required string Project { get; set; }
+
+    [JsonPropertyName("revisionHistoryLimit")]
+    public long? RevisionHistoryLimit { get; set; }
+
+    [JsonPropertyName("source")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSource? Source { get; set; }
+
+    [JsonPropertyName("sourceHydrator")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSourceHydrator? SourceHydrator { get; set; }
+
+    [JsonPropertyName("sources")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSources>? Sources { get; set; }
+
+    [JsonPropertyName("syncPolicy")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpecSyncPolicy? SyncPolicy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplate
+{
+    [JsonPropertyName("metadata")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateMetadata Metadata { get; set; }
+
+    [JsonPropertyName("spec")]
+    public required V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplateSpec Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOci
+{
+    [JsonPropertyName("directories")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciDirectories>? Directories { get; set; }
+
+    [JsonPropertyName("files")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciFiles>? Files { get; set; }
+
+    [JsonPropertyName("pathParamPrefix")]
+    public string? PathParamPrefix { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("requeueAfterSeconds")]
+    public long? RequeueAfterSeconds { get; set; }
+
+    [JsonPropertyName("revision")]
+    public required string Revision { get; set; }
+
+    [JsonPropertyName("template")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOciTemplate? Template { get; set; }
+
+    [JsonPropertyName("values")]
+    public IDictionary<string, string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginConfigMapRef
 {
     [JsonPropertyName("name")]
@@ -20505,6 +23156,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -20832,6 +23486,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -21183,6 +23840,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPluginTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -22020,6 +24680,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequ
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequestTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -22347,6 +25010,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequ
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequestTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -22698,6 +25364,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequ
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPullRequestTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -23560,6 +26229,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProviderTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -23887,6 +26559,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProviderTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -24238,6 +26913,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProvi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsScmProviderTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -24723,6 +27401,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeGenerators
     [JsonPropertyName("merge")]
     public JsonNode? Merge { get; set; }
 
+    [JsonPropertyName("oci")]
+    public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsOci? Oci { get; set; }
+
     [JsonPropertyName("plugin")]
     public V1alpha1ApplicationSetSpecGeneratorsMergeGeneratorsPlugin? Plugin { get; set; }
 
@@ -24853,6 +27534,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -25180,6 +27864,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -25531,6 +28218,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsMergeTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -25944,6 +28634,1258 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsMerge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciDirectories
+{
+    [JsonPropertyName("exclude")]
+    public bool? Exclude { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciFiles
+{
+    [JsonPropertyName("exclude")]
+    public bool? Exclude { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("finalizers")]
+    public IList<string>? Finalizers { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecDestination
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("server")]
+    public string? Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecIgnoreDifferences
+{
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("jqPathExpressions")]
+    public IList<string>? JqPathExpressions { get; set; }
+
+    [JsonPropertyName("jsonPointers")]
+    public IList<string>? JsonPointers { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    [JsonPropertyName("managedFieldsManagers")]
+    public IList<string>? ManagedFieldsManagers { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecInfo
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcePluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcePluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcePlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcePluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcePluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSource
+{
+    [JsonPropertyName("chart")]
+    public string? Chart { get; set; }
+
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcePlugin? Plugin { get; set; }
+
+    [JsonPropertyName("ref")]
+    public string? Ref { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public string? TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourcePlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourcePluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySource
+{
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourceKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySourcePlugin? Plugin { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public required string TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorHydrateTo
+{
+    [JsonPropertyName("targetBranch")]
+    public required string TargetBranch { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorSyncSource
+{
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public string? RepoURL { get; set; }
+
+    [JsonPropertyName("targetBranch")]
+    public required string TargetBranch { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydrator
+{
+    [JsonPropertyName("drySource")]
+    public required V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorDrySource DrySource { get; set; }
+
+    [JsonPropertyName("hydrateTo")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorHydrateTo? HydrateTo { get; set; }
+
+    [JsonPropertyName("syncSource")]
+    public required V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydratorSyncSource SyncSource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectoryJsonnetExtVars
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectoryJsonnetTlas
+{
+    [JsonPropertyName("code")]
+    public bool? Code { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectoryJsonnet
+{
+    [JsonPropertyName("extVars")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectoryJsonnetExtVars>? ExtVars { get; set; }
+
+    [JsonPropertyName("libs")]
+    public IList<string>? Libs { get; set; }
+
+    [JsonPropertyName("tlas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectoryJsonnetTlas>? Tlas { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectory
+{
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
+    [JsonPropertyName("exclude")]
+    public string? Exclude { get; set; }
+
+    [JsonPropertyName("include")]
+    public string? Include { get; set; }
+
+    [JsonPropertyName("jsonnet")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectoryJsonnet? Jsonnet { get; set; }
+
+    [JsonPropertyName("recurse")]
+    public bool? Recurse { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesHelmFileParameters
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesHelmParameters
+{
+    [JsonPropertyName("forceString")]
+    public bool? ForceString { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesHelm
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("fileParameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesHelmFileParameters>? FileParameters { get; set; }
+
+    [JsonPropertyName("ignoreMissingValueFiles")]
+    public bool? IgnoreMissingValueFiles { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesHelmParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("passCredentials")]
+    public bool? PassCredentials { get; set; }
+
+    [JsonPropertyName("releaseName")]
+    public string? ReleaseName { get; set; }
+
+    [JsonPropertyName("skipCrds")]
+    public bool? SkipCrds { get; set; }
+
+    [JsonPropertyName("skipSchemaValidation")]
+    public bool? SkipSchemaValidation { get; set; }
+
+    [JsonPropertyName("skipTests")]
+    public bool? SkipTests { get; set; }
+
+    [JsonPropertyName("valueFiles")]
+    public IList<string>? ValueFiles { get; set; }
+
+    [JsonPropertyName("values")]
+    public string? Values { get; set; }
+
+    [JsonPropertyName("valuesObject")]
+    public JsonNode? ValuesObject { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomizePatchesTarget
+{
+    [JsonPropertyName("annotationSelector")]
+    public string? AnnotationSelector { get; set; }
+
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("labelSelector")]
+    public string? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomizePatches
+{
+    [JsonPropertyName("options")]
+    public IDictionary<string, bool>? Options { get; set; }
+
+    [JsonPropertyName("patch")]
+    public string? Patch { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("target")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomizePatchesTarget? Target { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomizeReplicas
+{
+    [JsonPropertyName("count")]
+    public required IntOrString Count { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomize
+{
+    [JsonPropertyName("apiVersions")]
+    public IList<string>? ApiVersions { get; set; }
+
+    [JsonPropertyName("commonAnnotations")]
+    public IDictionary<string, string>? CommonAnnotations { get; set; }
+
+    [JsonPropertyName("commonAnnotationsEnvsubst")]
+    public bool? CommonAnnotationsEnvsubst { get; set; }
+
+    [JsonPropertyName("commonLabels")]
+    public IDictionary<string, string>? CommonLabels { get; set; }
+
+    [JsonPropertyName("components")]
+    public IList<string>? Components { get; set; }
+
+    [JsonPropertyName("forceCommonAnnotations")]
+    public bool? ForceCommonAnnotations { get; set; }
+
+    [JsonPropertyName("forceCommonLabels")]
+    public bool? ForceCommonLabels { get; set; }
+
+    [JsonPropertyName("ignoreMissingComponents")]
+    public bool? IgnoreMissingComponents { get; set; }
+
+    [JsonPropertyName("images")]
+    public IList<string>? Images { get; set; }
+
+    [JsonPropertyName("kubeVersion")]
+    public string? KubeVersion { get; set; }
+
+    [JsonPropertyName("labelIncludeTemplates")]
+    public bool? LabelIncludeTemplates { get; set; }
+
+    [JsonPropertyName("labelWithoutSelector")]
+    public bool? LabelWithoutSelector { get; set; }
+
+    [JsonPropertyName("namePrefix")]
+    public string? NamePrefix { get; set; }
+
+    [JsonPropertyName("nameSuffix")]
+    public string? NameSuffix { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    [JsonPropertyName("patches")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomizePatches>? Patches { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomizeReplicas>? Replicas { get; set; }
+
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesPluginEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesPluginParameters
+{
+    [JsonPropertyName("array")]
+    public IList<string>? Array { get; set; }
+
+    [JsonPropertyName("map")]
+    public IDictionary<string, string>? Map { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("string")]
+    public string? String { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesPlugin
+{
+    [JsonPropertyName("env")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesPluginEnv>? Env { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesPluginParameters>? Parameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSources
+{
+    [JsonPropertyName("chart")]
+    public string? Chart { get; set; }
+
+    [JsonPropertyName("directory")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesDirectory? Directory { get; set; }
+
+    [JsonPropertyName("helm")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesHelm? Helm { get; set; }
+
+    [JsonPropertyName("kustomize")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesKustomize? Kustomize { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("plugin")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourcesPlugin? Plugin { get; set; }
+
+    [JsonPropertyName("ref")]
+    public string? Ref { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("tagPrefix")]
+    public string? TagPrefix { get; set; }
+
+    [JsonPropertyName("targetRevision")]
+    public string? TargetRevision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyAutomated
+{
+    [JsonPropertyName("allowEmpty")]
+    public bool? AllowEmpty { get; set; }
+
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("prune")]
+    public bool? Prune { get; set; }
+
+    [JsonPropertyName("selfHeal")]
+    public bool? SelfHeal { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyManagedNamespaceMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyRetryBackoff
+{
+    [JsonPropertyName("duration")]
+    public string? Duration { get; set; }
+
+    [JsonPropertyName("factor")]
+    public long? Factor { get; set; }
+
+    [JsonPropertyName("maxDuration")]
+    public string? MaxDuration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyRetry
+{
+    [JsonPropertyName("backoff")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyRetryBackoff? Backoff { get; set; }
+
+    [JsonPropertyName("limit")]
+    public long? Limit { get; set; }
+
+    [JsonPropertyName("refresh")]
+    public bool? Refresh { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicy
+{
+    [JsonPropertyName("automated")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyAutomated? Automated { get; set; }
+
+    [JsonPropertyName("managedNamespaceMetadata")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyManagedNamespaceMetadata? ManagedNamespaceMetadata { get; set; }
+
+    [JsonPropertyName("retry")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicyRetry? Retry { get; set; }
+
+    [JsonPropertyName("syncOptions")]
+    public IList<string>? SyncOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpec
+{
+    [JsonPropertyName("destination")]
+    public required V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecDestination Destination { get; set; }
+
+    [JsonPropertyName("ignoreDifferences")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecIgnoreDifferences>? IgnoreDifferences { get; set; }
+
+    [JsonPropertyName("info")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecInfo>? Info { get; set; }
+
+    [JsonPropertyName("project")]
+    public required string Project { get; set; }
+
+    [JsonPropertyName("revisionHistoryLimit")]
+    public long? RevisionHistoryLimit { get; set; }
+
+    [JsonPropertyName("source")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSource? Source { get; set; }
+
+    [JsonPropertyName("sourceHydrator")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSourceHydrator? SourceHydrator { get; set; }
+
+    [JsonPropertyName("sources")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSources>? Sources { get; set; }
+
+    [JsonPropertyName("syncPolicy")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpecSyncPolicy? SyncPolicy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOciTemplate
+{
+    [JsonPropertyName("metadata")]
+    public required V1alpha1ApplicationSetSpecGeneratorsOciTemplateMetadata Metadata { get; set; }
+
+    [JsonPropertyName("spec")]
+    public required V1alpha1ApplicationSetSpecGeneratorsOciTemplateSpec Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ApplicationSetSpecGeneratorsOci
+{
+    [JsonPropertyName("directories")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciDirectories>? Directories { get; set; }
+
+    [JsonPropertyName("files")]
+    public IList<V1alpha1ApplicationSetSpecGeneratorsOciFiles>? Files { get; set; }
+
+    [JsonPropertyName("pathParamPrefix")]
+    public string? PathParamPrefix { get; set; }
+
+    [JsonPropertyName("repoURL")]
+    public required string RepoURL { get; set; }
+
+    [JsonPropertyName("requeueAfterSeconds")]
+    public long? RequeueAfterSeconds { get; set; }
+
+    [JsonPropertyName("revision")]
+    public required string Revision { get; set; }
+
+    [JsonPropertyName("template")]
+    public V1alpha1ApplicationSetSpecGeneratorsOciTemplate? Template { get; set; }
+
+    [JsonPropertyName("values")]
+    public IDictionary<string, string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsPluginConfigMapRef
 {
     [JsonPropertyName("name")]
@@ -26075,6 +30017,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -26402,6 +30347,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -26753,6 +30701,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsPluginTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -27590,6 +31541,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -27917,6 +31871,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -28268,6 +32225,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsPullRequestTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -29130,6 +33090,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -29457,6 +33420,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -29808,6 +33774,9 @@ public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecGeneratorsScmProviderTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -30293,6 +34262,9 @@ public partial class V1alpha1ApplicationSetSpecGenerators
     [JsonPropertyName("merge")]
     public V1alpha1ApplicationSetSpecGeneratorsMerge? Merge { get; set; }
 
+    [JsonPropertyName("oci")]
+    public V1alpha1ApplicationSetSpecGeneratorsOci? Oci { get; set; }
+
     [JsonPropertyName("plugin")]
     public V1alpha1ApplicationSetSpecGeneratorsPlugin? Plugin { get; set; }
 
@@ -30520,6 +34492,9 @@ public partial class V1alpha1ApplicationSetSpecTemplateSpecSourceDirectoryJsonne
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecTemplateSpecSourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -30847,6 +34822,9 @@ public partial class V1alpha1ApplicationSetSpecTemplateSpecSourceHydratorDrySour
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecTemplateSpecSourceHydratorDrySourceDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
@@ -31198,6 +35176,9 @@ public partial class V1alpha1ApplicationSetSpecTemplateSpecSourcesDirectoryJsonn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSetSpecTemplateSpecSourcesDirectory
 {
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
 
