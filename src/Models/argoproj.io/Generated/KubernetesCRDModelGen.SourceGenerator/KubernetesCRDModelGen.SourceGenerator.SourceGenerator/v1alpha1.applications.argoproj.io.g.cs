@@ -169,6 +169,16 @@ public partial class V1alpha1ApplicationOperationSyncSourceDirectoryJsonnet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationOperationSyncSourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -596,6 +606,16 @@ public partial class V1alpha1ApplicationOperationSyncSourcesDirectoryJsonnet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationOperationSyncSourcesDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -1209,6 +1229,16 @@ public partial class V1alpha1ApplicationSpecSourceDirectoryJsonnet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSpecSourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -1633,6 +1663,16 @@ public partial class V1alpha1ApplicationSpecSourceHydratorDrySourceDirectoryJson
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSpecSourceHydratorDrySourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -2094,6 +2134,16 @@ public partial class V1alpha1ApplicationSpecSourcesDirectoryJsonnet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationSpecSourcesDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -2635,11 +2685,7 @@ public partial class V1alpha1ApplicationStatusHealth
     [JsonPropertyName("lastTransitionTime")]
     public DateTime? LastTransitionTime { get; set; }
 
-    /// <summary>
-    /// Message is a human-readable informational message describing the health status
-    /// 
-    /// Deprecated: this field is not used and will be removed in a future release.
-    /// </summary>
+    /// <summary>Message is a human-readable informational message describing the health status</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
@@ -2715,6 +2761,16 @@ public partial class V1alpha1ApplicationStatusHistorySourceDirectoryJsonnet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusHistorySourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -3139,6 +3195,16 @@ public partial class V1alpha1ApplicationStatusHistorySourcesDirectoryJsonnet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusHistorySourcesDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -3680,6 +3746,16 @@ public partial class V1alpha1ApplicationStatusOperationStateOperationSyncSourceD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusOperationStateOperationSyncSourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -4107,6 +4183,16 @@ public partial class V1alpha1ApplicationStatusOperationStateOperationSyncSources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusOperationStateOperationSyncSourcesDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -4722,6 +4808,16 @@ public partial class V1alpha1ApplicationStatusOperationStateSyncResultSourceDire
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusOperationStateSyncResultSourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -5146,6 +5242,16 @@ public partial class V1alpha1ApplicationStatusOperationStateSyncResultSourcesDir
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusOperationStateSyncResultSourcesDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -5722,6 +5828,16 @@ public partial class V1alpha1ApplicationStatusSourceHydratorCurrentOperationSour
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusSourceHydratorCurrentOperationSourceHydratorDrySourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -6217,6 +6333,16 @@ public partial class V1alpha1ApplicationStatusSourceHydratorLastSuccessfulOperat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusSourceHydratorLastSuccessfulOperationSourceHydratorDrySourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -6787,6 +6913,16 @@ public partial class V1alpha1ApplicationStatusSyncComparedToSourceDirectoryJsonn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusSyncComparedToSourceDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }
@@ -7211,6 +7347,16 @@ public partial class V1alpha1ApplicationStatusSyncComparedToSourcesDirectoryJson
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ApplicationStatusSyncComparedToSourcesDirectory
 {
+    /// <summary>
+    /// DisableExtensionFilter controls whether the built-in file-extension filter is skipped during
+    /// manifest generation. When false (the default), only files with a .yaml, .yml, .json, or
+    /// .jsonnet extension are considered as potential manifests. Set it to true to disable the filter
+    /// so that files with custom extensions (e.g. *.yaml.sealed) can be matched by the include/exclude
+    /// glob patterns instead.
+    /// </summary>
+    [JsonPropertyName("disableExtensionFilter")]
+    public bool? DisableExtensionFilter { get; set; }
+
     /// <summary>Exclude contains a glob pattern to match paths against that should be explicitly excluded from being used during manifest generation</summary>
     [JsonPropertyName("exclude")]
     public string? Exclude { get; set; }

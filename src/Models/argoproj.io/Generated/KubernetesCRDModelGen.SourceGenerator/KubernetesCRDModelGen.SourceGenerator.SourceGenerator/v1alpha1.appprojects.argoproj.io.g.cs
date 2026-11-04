@@ -292,7 +292,7 @@ public partial class V1alpha1AppProjectSpecSourceIntegrity
     public required V1alpha1AppProjectSpecSourceIntegrityGit Git { get; set; }
 }
 
-/// <summary>SyncWindow contains the kind, time, duration and attributes that are used to assign the syncWindows to apps</summary>
+/// <summary>InlineSyncWindow contains the kind, time, duration and attributes that are used to assign the syncWindows to apps</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSyncWindows
