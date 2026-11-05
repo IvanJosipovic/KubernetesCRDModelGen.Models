@@ -665,6 +665,9 @@ public partial class V1alpha1TopicSpec
     [JsonPropertyName("lambdaSuccessFeedbackSampleRate")]
     public string? LambdaSuccessFeedbackSampleRate { get; set; }
 
+    [JsonPropertyName("maximumMessageSize")]
+    public string? MaximumMessageSize { get; set; }
+
     /// <summary>
     /// The name of the topic you want to create.
     /// 
