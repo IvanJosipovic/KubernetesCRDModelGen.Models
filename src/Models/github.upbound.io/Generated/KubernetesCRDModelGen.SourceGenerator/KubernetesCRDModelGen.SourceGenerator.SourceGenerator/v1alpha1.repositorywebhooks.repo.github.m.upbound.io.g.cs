@@ -158,7 +158,7 @@ public partial class V1alpha1RepositoryWebhookSpecForProviderRepositoryRefPolicy
     public V1alpha1RepositoryWebhookSpecForProviderRepositoryRefPolicyResolveEnum? Resolve { get; set; }
 }
 
-/// <summary>Reference to a Repository to populate repository.</summary>
+/// <summary>Reference to a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryWebhookSpecForProviderRepositoryRef
@@ -232,7 +232,7 @@ public partial class V1alpha1RepositoryWebhookSpecForProviderRepositorySelectorP
     public V1alpha1RepositoryWebhookSpecForProviderRepositorySelectorPolicyResolveEnum? Resolve { get; set; }
 }
 
-/// <summary>Selector for a Repository to populate repository.</summary>
+/// <summary>Selector for a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryWebhookSpecForProviderRepositorySelector
@@ -292,11 +292,11 @@ public partial class V1alpha1RepositoryWebhookSpecForProvider
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 
-    /// <summary>Reference to a Repository to populate repository.</summary>
+    /// <summary>Reference to a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositoryRef")]
     public V1alpha1RepositoryWebhookSpecForProviderRepositoryRef? RepositoryRef { get; set; }
 
-    /// <summary>Selector for a Repository to populate repository.</summary>
+    /// <summary>Selector for a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositorySelector")]
     public V1alpha1RepositoryWebhookSpecForProviderRepositorySelector? RepositorySelector { get; set; }
 }
@@ -422,7 +422,7 @@ public partial class V1alpha1RepositoryWebhookSpecInitProviderRepositoryRefPolic
     public V1alpha1RepositoryWebhookSpecInitProviderRepositoryRefPolicyResolveEnum? Resolve { get; set; }
 }
 
-/// <summary>Reference to a Repository to populate repository.</summary>
+/// <summary>Reference to a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryWebhookSpecInitProviderRepositoryRef
@@ -496,7 +496,7 @@ public partial class V1alpha1RepositoryWebhookSpecInitProviderRepositorySelector
     public V1alpha1RepositoryWebhookSpecInitProviderRepositorySelectorPolicyResolveEnum? Resolve { get; set; }
 }
 
-/// <summary>Selector for a Repository to populate repository.</summary>
+/// <summary>Selector for a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryWebhookSpecInitProviderRepositorySelector
@@ -568,11 +568,11 @@ public partial class V1alpha1RepositoryWebhookSpecInitProvider
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 
-    /// <summary>Reference to a Repository to populate repository.</summary>
+    /// <summary>Reference to a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositoryRef")]
     public V1alpha1RepositoryWebhookSpecInitProviderRepositoryRef? RepositoryRef { get; set; }
 
-    /// <summary>Selector for a Repository to populate repository.</summary>
+    /// <summary>Selector for a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositorySelector")]
     public V1alpha1RepositoryWebhookSpecInitProviderRepositorySelector? RepositorySelector { get; set; }
 }
@@ -803,6 +803,15 @@ public partial class V1alpha1RepositoryWebhookStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1RepositoryWebhookStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
