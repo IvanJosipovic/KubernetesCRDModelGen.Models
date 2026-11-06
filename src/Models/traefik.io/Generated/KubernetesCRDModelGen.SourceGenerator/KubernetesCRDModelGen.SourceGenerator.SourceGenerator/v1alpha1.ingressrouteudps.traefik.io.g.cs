@@ -98,7 +98,7 @@ public partial class V1alpha1IngressRouteUDPSpec
     /// <summary>
     /// EntryPoints defines the list of entry point names to bind to.
     /// Entry points have to be configured in the static configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/install-configuration/entrypoints/
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/install-configuration/entrypoints/
     /// Default: all.
     /// </summary>
     [JsonPropertyName("entryPoints")]

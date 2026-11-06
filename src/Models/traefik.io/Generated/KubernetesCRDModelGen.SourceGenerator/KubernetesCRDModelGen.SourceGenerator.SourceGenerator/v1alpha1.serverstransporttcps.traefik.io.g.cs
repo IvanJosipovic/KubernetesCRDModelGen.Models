@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// ServersTransportTCP is the CRD implementation of a TCPServersTransport.
 /// If no tcpServersTransport is specified, a default one named default@internal will be used.
 /// The default@internal tcpServersTransport can be configured in the static configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/serverstransport/
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/serverstransport/
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -50,6 +50,19 @@ public partial class V1alpha1ServersTransportTCPSpecProxyProtocol
     /// <summary>Version defines the PROXY Protocol version to use.</summary>
     [JsonPropertyName("version")]
     public int? Version { get; set; }
+}
+
+/// <summary>SAN represents a Subject Alternative Name.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServersTransportTCPSpecTlsPeerCertSANs
+{
+    /// <summary>SANType is the type of the Subject Alternative Name.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
 }
 
 /// <summary>
@@ -102,9 +115,14 @@ public partial class V1alpha1ServersTransportTCPSpecTls
     [JsonPropertyName("insecureSkipVerify")]
     public bool? InsecureSkipVerify { get; set; }
 
+    /// <summary>PeerCertSANs defines the peer cert Subject Alternative Names used to match against SAN during the peer certificate verification.</summary>
+    [JsonPropertyName("peerCertSANs")]
+    public IList<V1alpha1ServersTransportTCPSpecTlsPeerCertSANs>? PeerCertSANs { get; set; }
+
     /// <summary>
-    /// MaxIdleConnsPerHost controls the maximum idle (keep-alive) to keep per-host.
     /// PeerCertURI defines the peer cert URI used to match against SAN URI during the peer certificate verification.
+    /// 
+    /// Deprecated: PeerCertURI is deprecated, please use the PeerCertSANs option instead.
     /// </summary>
     [JsonPropertyName("peerCertURI")]
     public string? PeerCertURI { get; set; }
@@ -160,7 +178,7 @@ public partial class V1alpha1ServersTransportTCPSpec
 /// ServersTransportTCP is the CRD implementation of a TCPServersTransport.
 /// If no tcpServersTransport is specified, a default one named default@internal will be used.
 /// The default@internal tcpServersTransport can be configured in the static configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/serverstransport/
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/serverstransport/
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
