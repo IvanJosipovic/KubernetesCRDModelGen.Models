@@ -53,7 +53,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutesMiddlewares
 
 /// <summary>
 /// ProxyProtocol defines the PROXY protocol configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/service/#proxy-protocol
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/service/#proxy-protocol
 /// 
 /// Deprecated: ProxyProtocol will not be supported in future APIVersions, please use ServersTransport to configure ProxyProtocol instead.
 /// </summary>
@@ -106,7 +106,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutesServices
 
     /// <summary>
     /// ProxyProtocol defines the PROXY protocol configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/service/#proxy-protocol
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/service/#proxy-protocol
     /// 
     /// Deprecated: ProxyProtocol will not be supported in future APIVersions, please use ServersTransport to configure ProxyProtocol instead.
     /// </summary>
@@ -144,7 +144,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutesServices
 
 /// <summary>
 /// Syntax defines the router&apos;s rule syntax.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/#rulesyntax
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/routing/rules-and-priority/#rulesyntax
 /// 
 /// Deprecated: Please do not use this field and rewrite the router rules to use the v3 syntax.
 /// </summary>
@@ -165,7 +165,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutes
 {
     /// <summary>
     /// Match defines the router&apos;s rule.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/routing/rules-and-priority/
     /// </summary>
     [JsonPropertyName("match")]
     public required string Match { get; set; }
@@ -176,7 +176,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutes
 
     /// <summary>
     /// Priority defines the router&apos;s priority.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/#priority
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/routing/rules-and-priority/#priority
     /// </summary>
     [JsonPropertyName("priority")]
     public int? Priority { get; set; }
@@ -187,7 +187,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutes
 
     /// <summary>
     /// Syntax defines the router&apos;s rule syntax.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/rules-and-priority/#rulesyntax
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/routing/rules-and-priority/#rulesyntax
     /// 
     /// Deprecated: Please do not use this field and rewrite the router rules to use the v3 syntax.
     /// </summary>
@@ -212,7 +212,7 @@ public partial class V1alpha1IngressRouteTCPSpecTlsDomains
 /// <summary>
 /// Options defines the reference to a TLSOption, that specifies the parameters of the TLS connection.
 /// If not defined, the `default` TLSOption is used.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/tls/#tls-options
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/tls/#tls-options
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -246,7 +246,7 @@ public partial class V1alpha1IngressRouteTCPSpecTlsStore
 
 /// <summary>
 /// TLS defines the TLS configuration on a layer 4 / TCP Route.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/router/#tls
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/routing/router/#tls
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -255,14 +255,14 @@ public partial class V1alpha1IngressRouteTCPSpecTls
     /// <summary>
     /// CertResolver defines the name of the certificate resolver to use.
     /// Cert resolvers have to be configured in the static configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/install-configuration/tls/certificate-resolvers/acme/
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/install-configuration/tls/certificate-resolvers/acme/
     /// </summary>
     [JsonPropertyName("certResolver")]
     public string? CertResolver { get; set; }
 
     /// <summary>
     /// Domains defines the list of domains that will be used to issue certificates.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/tls/#domains
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/tls/#domains
     /// </summary>
     [JsonPropertyName("domains")]
     public IList<V1alpha1IngressRouteTCPSpecTlsDomains>? Domains { get; set; }
@@ -270,7 +270,7 @@ public partial class V1alpha1IngressRouteTCPSpecTls
     /// <summary>
     /// Options defines the reference to a TLSOption, that specifies the parameters of the TLS connection.
     /// If not defined, the `default` TLSOption is used.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/tls/#tls-options
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/tls/#tls-options
     /// </summary>
     [JsonPropertyName("options")]
     public V1alpha1IngressRouteTCPSpecTlsOptions? Options { get; set; }
@@ -299,7 +299,7 @@ public partial class V1alpha1IngressRouteTCPSpec
     /// <summary>
     /// EntryPoints defines the list of entry point names to bind to.
     /// Entry points have to be configured in the static configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/install-configuration/entrypoints/
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/install-configuration/entrypoints/
     /// Default: all.
     /// </summary>
     [JsonPropertyName("entryPoints")]
@@ -315,7 +315,7 @@ public partial class V1alpha1IngressRouteTCPSpec
 
     /// <summary>
     /// TLS defines the TLS configuration on a layer 4 / TCP Route.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/router/#tls
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/tcp/routing/router/#tls
     /// </summary>
     [JsonPropertyName("tls")]
     public V1alpha1IngressRouteTCPSpecTls? Tls { get; set; }

@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// ServersTransport is the CRD implementation of a ServersTransport.
 /// If no serversTransport is specified, the default@internal will be used.
 /// The default@internal serversTransport is created from the static configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/serverstransport/
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/serverstransport/
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -63,9 +63,30 @@ public partial class V1alpha1ServersTransportSpecForwardingTimeouts
     [JsonPropertyName("readIdleTimeout")]
     public IntOrString? ReadIdleTimeout { get; set; }
 
+    /// <summary>ReadTimeout is the timeout for reading a response from the proxied server. The timeout between two successive read operations. The connection is closed if nothing is transmitted within this time.</summary>
+    [JsonPropertyName("readTimeout")]
+    public IntOrString? ReadTimeout { get; set; }
+
     /// <summary>ResponseHeaderTimeout is the amount of time to wait for a server&apos;s response headers after fully writing the request (including its body, if any).</summary>
     [JsonPropertyName("responseHeaderTimeout")]
     public IntOrString? ResponseHeaderTimeout { get; set; }
+
+    /// <summary>WriteTimeout is the timeout for transmitting a request to the proxied server. The timeout between two successive write operations. The connection is closed if nothing is transmitted within this time.</summary>
+    [JsonPropertyName("writeTimeout")]
+    public IntOrString? WriteTimeout { get; set; }
+}
+
+/// <summary>SAN represents a Subject Alternative Name.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServersTransportSpecPeerCertSANs
+{
+    /// <summary>SANType is the type of the Subject Alternative Name.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
 }
 
 /// <summary>
@@ -142,7 +163,15 @@ public partial class V1alpha1ServersTransportSpec
     [JsonPropertyName("minVersion")]
     public string? MinVersion { get; set; }
 
-    /// <summary>PeerCertURI defines the peer cert URI used to match against SAN URI during the peer certificate verification.</summary>
+    /// <summary>PeerCertSANs defines the peer cert Subject Alternative Names used to match against SAN during the peer certificate verification.</summary>
+    [JsonPropertyName("peerCertSANs")]
+    public IList<V1alpha1ServersTransportSpecPeerCertSANs>? PeerCertSANs { get; set; }
+
+    /// <summary>
+    /// PeerCertURI defines the peer cert URI used to match against SAN URI during the peer certificate verification.
+    /// 
+    /// Deprecated: PeerCertURI is deprecated, please use the PeerCertSANs option instead.
+    /// </summary>
     [JsonPropertyName("peerCertURI")]
     public string? PeerCertURI { get; set; }
 
@@ -171,7 +200,7 @@ public partial class V1alpha1ServersTransportSpec
 /// ServersTransport is the CRD implementation of a ServersTransport.
 /// If no serversTransport is specified, the default@internal will be used.
 /// The default@internal serversTransport is created from the static configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/serverstransport/
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/serverstransport/
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]

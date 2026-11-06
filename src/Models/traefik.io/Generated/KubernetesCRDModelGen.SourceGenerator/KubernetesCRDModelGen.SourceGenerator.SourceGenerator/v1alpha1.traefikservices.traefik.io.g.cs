@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// TraefikService object allows to:
 /// - Apply weight to Services on load-balancing
 /// - Mirror traffic on services
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/kubernetes/crd/http/traefikservice/
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/kubernetes/crd/http/traefikservice/
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -258,7 +258,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallbackStickyCookie
 
 /// <summary>
 /// Sticky defines the sticky sessions configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -375,7 +375,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallback
 
     /// <summary>
     /// Sticky defines the sticky sessions configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
     /// </summary>
     [JsonPropertyName("sticky")]
     public V1alpha1TraefikServiceSpecFailoverFallbackSticky? Sticky { get; set; }
@@ -594,7 +594,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverServiceStickyCookie
 
 /// <summary>
 /// Sticky defines the sticky sessions configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -711,7 +711,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverService
 
     /// <summary>
     /// Sticky defines the sticky sessions configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
     /// </summary>
     [JsonPropertyName("sticky")]
     public V1alpha1TraefikServiceSpecFailoverServiceSticky? Sticky { get; set; }
@@ -948,7 +948,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesSticky
 
 /// <summary>
 /// Sticky defines the sticky sessions configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1065,7 +1065,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServices
 
     /// <summary>
     /// Sticky defines the sticky sessions configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
     /// </summary>
     [JsonPropertyName("sticky")]
     public V1alpha1TraefikServiceSpecHighestRandomWeightServicesSticky? Sticky { get; set; }
@@ -1390,7 +1390,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrorsStickyCookie
 
 /// <summary>
 /// Sticky defines the sticky sessions configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1514,7 +1514,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrors
 
     /// <summary>
     /// Sticky defines the sticky sessions configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
     /// </summary>
     [JsonPropertyName("sticky")]
     public V1alpha1TraefikServiceSpecMirroringMirrorsSticky? Sticky { get; set; }
@@ -1637,7 +1637,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringStickyCookie
 
 /// <summary>
 /// Sticky defines the sticky sessions configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1773,7 +1773,7 @@ public partial class V1alpha1TraefikServiceSpecMirroring
 
     /// <summary>
     /// Sticky defines the sticky sessions configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
     /// </summary>
     [JsonPropertyName("sticky")]
     public V1alpha1TraefikServiceSpecMirroringSticky? Sticky { get; set; }
@@ -1785,6 +1785,16 @@ public partial class V1alpha1TraefikServiceSpecMirroring
     /// </summary>
     [JsonPropertyName("strategy")]
     public V1alpha1TraefikServiceSpecMirroringStrategyEnum? Strategy { get; set; }
+
+    /// <summary>
+    /// StreamBody defines whether the request body is streamed to the mirrors while the main service reads it,
+    /// instead of being buffered in memory before reaching the main service.
+    /// A mirror reading the body too slowly is aborted, so that it never slows the main request down.
+    /// It has no effect when MirrorBody is false, and cannot be used with MaxBodySize.
+    /// Default value is false.
+    /// </summary>
+    [JsonPropertyName("streamBody")]
+    public bool? StreamBody { get; set; }
 
     /// <summary>
     /// Weight defines the weight and should only be specified when Name references a TraefikService object
@@ -1992,7 +2002,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServicesStickyCookie
 
 /// <summary>
 /// Sticky defines the sticky sessions configuration.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2109,7 +2119,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServices
 
     /// <summary>
     /// Sticky defines the sticky sessions configuration.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
     /// </summary>
     [JsonPropertyName("sticky")]
     public V1alpha1TraefikServiceSpecWeightedServicesSticky? Sticky { get; set; }
@@ -2202,7 +2212,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedStickyCookie
 
 /// <summary>
 /// Sticky defines whether sticky sessions are enabled.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/kubernetes/crd/http/traefikservice/#stickiness-and-load-balancing
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/kubernetes/crd/http/traefikservice/#stickiness-and-load-balancing
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2224,7 +2234,7 @@ public partial class V1alpha1TraefikServiceSpecWeighted
 
     /// <summary>
     /// Sticky defines whether sticky sessions are enabled.
-    /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/kubernetes/crd/http/traefikservice/#stickiness-and-load-balancing
+    /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/kubernetes/crd/http/traefikservice/#stickiness-and-load-balancing
     /// </summary>
     [JsonPropertyName("sticky")]
     public V1alpha1TraefikServiceSpecWeightedSticky? Sticky { get; set; }
@@ -2257,7 +2267,7 @@ public partial class V1alpha1TraefikServiceSpec
 /// TraefikService object allows to:
 /// - Apply weight to Services on load-balancing
 /// - Mirror traffic on services
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/kubernetes/crd/http/traefikservice/
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/kubernetes/crd/http/traefikservice/
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]

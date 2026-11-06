@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// TLSStore is the CRD implementation of a Traefik TLS Store.
 /// For the time being, only the TLSStore named default is supported.
 /// This means that you cannot have two stores that are named default in different Kubernetes namespaces.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/tls/tls-certificates/#certificates-stores#certificates-stores
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/tls/tls-certificates/#certificates-stores#certificates-stores
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -112,7 +112,7 @@ public partial class V1alpha1TLSStoreSpec
 /// TLSStore is the CRD implementation of a Traefik TLS Store.
 /// For the time being, only the TLSStore named default is supported.
 /// This means that you cannot have two stores that are named default in different Kubernetes namespaces.
-/// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/tls/tls-certificates/#certificates-stores#certificates-stores
+/// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/tls/tls-certificates/#certificates-stores#certificates-stores
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
