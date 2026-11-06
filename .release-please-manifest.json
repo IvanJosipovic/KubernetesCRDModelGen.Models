@@ -23,7 +23,7 @@
   "src/Models/vault.upbound.io": "1.11.1",
   "src/Models/fluxcd.io": "1.17.1",
   "src/Models/gateway.networking.k8s.io": "1.58.0",
-  "src/Models/istio.io": "1.25.1",
+  "src/Models/istio.io": "1.26.0",
   "src/Models/jetstack.io": "1.22.1",
   "src/Models/keda.sh": "1.17.1",
   "src/Models/knative.dev": "1.31.1",
@@ -36,6 +36,6 @@
   "src/Models/storage.k8s.io": "1.10.1",
   "src/Models/strimzi.io": "1.5.1",
   "src/Models/temporal.io": "1.7.0",
-  "src/Models/traefik.io": "1.21.1",
+  "src/Models/traefik.io": "1.22.0",
   "src/Models/multicluster.x-k8s.io": "1.2.1"
 }
