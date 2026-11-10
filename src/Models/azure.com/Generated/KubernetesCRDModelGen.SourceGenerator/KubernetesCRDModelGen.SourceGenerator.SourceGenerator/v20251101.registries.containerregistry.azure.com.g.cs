@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.containerregistry.azure.com;
 /// - Generated from: /containerregistry/resource-manager/Microsoft.ContainerRegistry/Registry/stable/2025-11-01/containerregistry.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerRegistry/registries/{registryName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20251101RegistryList : IKubernetesObject<V1ListMeta>, IItems<V20251101Registry>
@@ -42,7 +42,7 @@ public partial class V20251101RegistryList : IKubernetesObject<V1ListMeta>, IIte
 }
 
 /// <summary>IdentityFromConfig: The client id of the identity which will be used to access key vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecEncryptionKeyVaultPropertiesIdentityFromConfig
 {
@@ -59,7 +59,7 @@ public partial class V20251101RegistrySpecEncryptionKeyVaultPropertiesIdentityFr
 }
 
 /// <summary>KeyVaultProperties: Key vault properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecEncryptionKeyVaultProperties
 {
@@ -77,7 +77,7 @@ public partial class V20251101RegistrySpecEncryptionKeyVaultProperties
 }
 
 /// <summary>Status: Indicates whether or not the encryption is enabled for container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecEncryptionStatusEnum>))]
 public enum V20251101RegistrySpecEncryptionStatusEnum
 {
@@ -88,7 +88,7 @@ public enum V20251101RegistrySpecEncryptionStatusEnum
 }
 
 /// <summary>Encryption: The encryption settings of container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecEncryption
 {
@@ -102,7 +102,7 @@ public partial class V20251101RegistrySpecEncryption
 }
 
 /// <summary>Type: The identity type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecIdentityTypeEnum>))]
 public enum V20251101RegistrySpecIdentityTypeEnum
 {
@@ -117,7 +117,7 @@ public enum V20251101RegistrySpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecIdentityUserAssignedIdentitiesReference
 {
@@ -143,7 +143,7 @@ public partial class V20251101RegistrySpecIdentityUserAssignedIdentitiesReferenc
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecIdentityUserAssignedIdentities
 {
@@ -153,7 +153,7 @@ public partial class V20251101RegistrySpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The identity of the container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecIdentity
 {
@@ -172,7 +172,7 @@ public partial class V20251101RegistrySpecIdentity
 }
 
 /// <summary>NetworkRuleBypassOptions: Whether to allow trusted Azure services to access a network restricted registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecNetworkRuleBypassOptionsEnum>))]
 public enum V20251101RegistrySpecNetworkRuleBypassOptionsEnum
 {
@@ -183,7 +183,7 @@ public enum V20251101RegistrySpecNetworkRuleBypassOptionsEnum
 }
 
 /// <summary>DefaultAction: The default action of allow or deny when no other rules match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecNetworkRuleSetDefaultActionEnum>))]
 public enum V20251101RegistrySpecNetworkRuleSetDefaultActionEnum
 {
@@ -194,7 +194,7 @@ public enum V20251101RegistrySpecNetworkRuleSetDefaultActionEnum
 }
 
 /// <summary>Action: The action of IP ACL rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecNetworkRuleSetIpRulesActionEnum>))]
 public enum V20251101RegistrySpecNetworkRuleSetIpRulesActionEnum
 {
@@ -203,7 +203,7 @@ public enum V20251101RegistrySpecNetworkRuleSetIpRulesActionEnum
 }
 
 /// <summary>IP rule with specific IP or IP range in CIDR format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecNetworkRuleSetIpRules
 {
@@ -217,7 +217,7 @@ public partial class V20251101RegistrySpecNetworkRuleSetIpRules
 }
 
 /// <summary>NetworkRuleSet: The network rule set for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecNetworkRuleSet
 {
@@ -235,7 +235,7 @@ public partial class V20251101RegistrySpecNetworkRuleSet
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecOperatorSpecConfigMapExpressions
 {
@@ -276,7 +276,7 @@ public partial class V20251101RegistrySpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecOperatorSpecSecretExpressions
 {
@@ -316,7 +316,7 @@ public partial class V20251101RegistrySpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecOperatorSpec
 {
@@ -334,7 +334,7 @@ public partial class V20251101RegistrySpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecOwner
 {
@@ -347,7 +347,7 @@ public partial class V20251101RegistrySpecOwner
 }
 
 /// <summary>Status: The value that indicates whether the policy is enabled or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecPoliciesAzureADAuthenticationAsArmPolicyStatusEnum>))]
 public enum V20251101RegistrySpecPoliciesAzureADAuthenticationAsArmPolicyStatusEnum
 {
@@ -358,7 +358,7 @@ public enum V20251101RegistrySpecPoliciesAzureADAuthenticationAsArmPolicyStatusE
 }
 
 /// <summary>AzureADAuthenticationAsArmPolicy: The policy for using Azure Resource Manager audience token for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecPoliciesAzureADAuthenticationAsArmPolicy
 {
@@ -368,7 +368,7 @@ public partial class V20251101RegistrySpecPoliciesAzureADAuthenticationAsArmPoli
 }
 
 /// <summary>Status: The value that indicates whether the policy is enabled or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecPoliciesExportPolicyStatusEnum>))]
 public enum V20251101RegistrySpecPoliciesExportPolicyStatusEnum
 {
@@ -379,7 +379,7 @@ public enum V20251101RegistrySpecPoliciesExportPolicyStatusEnum
 }
 
 /// <summary>ExportPolicy: The export policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecPoliciesExportPolicy
 {
@@ -389,7 +389,7 @@ public partial class V20251101RegistrySpecPoliciesExportPolicy
 }
 
 /// <summary>Status: The value that indicates whether the policy is enabled or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecPoliciesQuarantinePolicyStatusEnum>))]
 public enum V20251101RegistrySpecPoliciesQuarantinePolicyStatusEnum
 {
@@ -400,7 +400,7 @@ public enum V20251101RegistrySpecPoliciesQuarantinePolicyStatusEnum
 }
 
 /// <summary>QuarantinePolicy: The quarantine policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecPoliciesQuarantinePolicy
 {
@@ -410,7 +410,7 @@ public partial class V20251101RegistrySpecPoliciesQuarantinePolicy
 }
 
 /// <summary>Status: The value that indicates whether the policy is enabled or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecPoliciesRetentionPolicyStatusEnum>))]
 public enum V20251101RegistrySpecPoliciesRetentionPolicyStatusEnum
 {
@@ -421,7 +421,7 @@ public enum V20251101RegistrySpecPoliciesRetentionPolicyStatusEnum
 }
 
 /// <summary>RetentionPolicy: The retention policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecPoliciesRetentionPolicy
 {
@@ -435,7 +435,7 @@ public partial class V20251101RegistrySpecPoliciesRetentionPolicy
 }
 
 /// <summary>Status: The value that indicates whether the policy is enabled or not.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecPoliciesTrustPolicyStatusEnum>))]
 public enum V20251101RegistrySpecPoliciesTrustPolicyStatusEnum
 {
@@ -446,7 +446,7 @@ public enum V20251101RegistrySpecPoliciesTrustPolicyStatusEnum
 }
 
 /// <summary>Type: The type of trust policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecPoliciesTrustPolicyTypeEnum>))]
 public enum V20251101RegistrySpecPoliciesTrustPolicyTypeEnum
 {
@@ -455,7 +455,7 @@ public enum V20251101RegistrySpecPoliciesTrustPolicyTypeEnum
 }
 
 /// <summary>TrustPolicy: The content trust policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecPoliciesTrustPolicy
 {
@@ -469,7 +469,7 @@ public partial class V20251101RegistrySpecPoliciesTrustPolicy
 }
 
 /// <summary>Policies: The policies for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecPolicies
 {
@@ -495,7 +495,7 @@ public partial class V20251101RegistrySpecPolicies
 }
 
 /// <summary>PublicNetworkAccess: Whether or not public network access is allowed for the container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecPublicNetworkAccessEnum>))]
 public enum V20251101RegistrySpecPublicNetworkAccessEnum
 {
@@ -506,7 +506,7 @@ public enum V20251101RegistrySpecPublicNetworkAccessEnum
 }
 
 /// <summary>RoleAssignmentMode: Determines registry role assignment mode.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecRoleAssignmentModeEnum>))]
 public enum V20251101RegistrySpecRoleAssignmentModeEnum
 {
@@ -517,7 +517,7 @@ public enum V20251101RegistrySpecRoleAssignmentModeEnum
 }
 
 /// <summary>Name: The SKU name of the container registry. Required for registry creation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecSkuNameEnum>))]
 public enum V20251101RegistrySpecSkuNameEnum
 {
@@ -532,7 +532,7 @@ public enum V20251101RegistrySpecSkuNameEnum
 }
 
 /// <summary>Sku: The SKU of the container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpecSku
 {
@@ -542,7 +542,7 @@ public partial class V20251101RegistrySpecSku
 }
 
 /// <summary>ZoneRedundancy: Whether or not zone redundancy is enabled for this container registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20251101RegistrySpecZoneRedundancyEnum>))]
 public enum V20251101RegistrySpecZoneRedundancyEnum
 {
@@ -552,7 +552,7 @@ public enum V20251101RegistrySpecZoneRedundancyEnum
     Enabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistrySpec
 {
@@ -640,7 +640,7 @@ public partial class V20251101RegistrySpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusConditions
 {
@@ -686,7 +686,7 @@ public partial class V20251101RegistryStatusConditions
 }
 
 /// <summary>KeyVaultProperties: Key vault properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusEncryptionKeyVaultProperties
 {
@@ -715,7 +715,7 @@ public partial class V20251101RegistryStatusEncryptionKeyVaultProperties
 }
 
 /// <summary>Encryption: The encryption settings of container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusEncryption
 {
@@ -728,7 +728,7 @@ public partial class V20251101RegistryStatusEncryption
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusIdentityUserAssignedIdentities
 {
@@ -742,7 +742,7 @@ public partial class V20251101RegistryStatusIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The identity of the container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusIdentity
 {
@@ -769,7 +769,7 @@ public partial class V20251101RegistryStatusIdentity
 }
 
 /// <summary>IP rule with specific IP or IP range in CIDR format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusNetworkRuleSetIpRules
 {
@@ -783,7 +783,7 @@ public partial class V20251101RegistryStatusNetworkRuleSetIpRules
 }
 
 /// <summary>NetworkRuleSet: The network rule set for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusNetworkRuleSet
 {
@@ -797,7 +797,7 @@ public partial class V20251101RegistryStatusNetworkRuleSet
 }
 
 /// <summary>AzureADAuthenticationAsArmPolicy: The policy for using Azure Resource Manager audience token for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusPoliciesAzureADAuthenticationAsArmPolicy
 {
@@ -807,7 +807,7 @@ public partial class V20251101RegistryStatusPoliciesAzureADAuthenticationAsArmPo
 }
 
 /// <summary>ExportPolicy: The export policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusPoliciesExportPolicy
 {
@@ -817,7 +817,7 @@ public partial class V20251101RegistryStatusPoliciesExportPolicy
 }
 
 /// <summary>QuarantinePolicy: The quarantine policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusPoliciesQuarantinePolicy
 {
@@ -827,7 +827,7 @@ public partial class V20251101RegistryStatusPoliciesQuarantinePolicy
 }
 
 /// <summary>RetentionPolicy: The retention policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusPoliciesRetentionPolicy
 {
@@ -845,7 +845,7 @@ public partial class V20251101RegistryStatusPoliciesRetentionPolicy
 }
 
 /// <summary>TrustPolicy: The content trust policy for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusPoliciesTrustPolicy
 {
@@ -859,7 +859,7 @@ public partial class V20251101RegistryStatusPoliciesTrustPolicy
 }
 
 /// <summary>Policies: The policies for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusPolicies
 {
@@ -885,7 +885,7 @@ public partial class V20251101RegistryStatusPolicies
 }
 
 /// <summary>An object that represents a private endpoint connection for a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusPrivateEndpointConnections
 {
@@ -898,7 +898,7 @@ public partial class V20251101RegistryStatusPrivateEndpointConnections
 }
 
 /// <summary>Sku: The SKU of the container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusSku
 {
@@ -912,7 +912,7 @@ public partial class V20251101RegistryStatusSku
 }
 
 /// <summary>Status: The status of the container registry at the time the operation was called.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusStatus
 {
@@ -930,7 +930,7 @@ public partial class V20251101RegistryStatusStatus
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatusSystemData
 {
@@ -960,7 +960,7 @@ public partial class V20251101RegistryStatusSystemData
 }
 
 /// <summary>An object that represents a container registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251101RegistryStatus
 {
@@ -1077,7 +1077,7 @@ public partial class V20251101RegistryStatus
 /// - Generated from: /containerregistry/resource-manager/Microsoft.ContainerRegistry/Registry/stable/2025-11-01/containerregistry.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerRegistry/registries/{registryName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20251101Registry : IKubernetesObject<V1ObjectMeta>, ISpec<V20251101RegistrySpec?>, IStatus<V20251101RegistryStatus?>

@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.portal.azure.com;
 /// - Generated from: /portal/resource-manager/Microsoft.Portal/Portal/preview/2025-04-01-preview/portal.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Portal/dashboards/{dashboardName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250401previewstorageDashboardList : IKubernetesObject<V1ListMeta>, IItems<V20250401previewstorageDashboard>
@@ -47,7 +47,7 @@ public partial class V20250401previewstorageDashboardList : IKubernetesObject<V1
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecOperatorSpecConfigMapExpressions
 {
@@ -88,7 +88,7 @@ public partial class V20250401previewstorageDashboardSpecOperatorSpecConfigMapEx
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecOperatorSpecSecretExpressions
 {
@@ -128,7 +128,7 @@ public partial class V20250401previewstorageDashboardSpecOperatorSpecSecretExpre
 /// Storage version of v20250401preview.DashboardOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecOperatorSpec
 {
@@ -151,7 +151,7 @@ public partial class V20250401previewstorageDashboardSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecOwner
 {
@@ -167,7 +167,7 @@ public partial class V20250401previewstorageDashboardSpecOwner
 /// Storage version of v20250401preview.MarkdownPartMetadataSettingsContent
 /// The content of markdown part.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMetadataExtensionHubsExtensionPartTypeMarkdownPartSettingsContent
 {
@@ -198,7 +198,7 @@ public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMe
 /// Storage version of v20250401preview.MarkdownPartMetadataSettings
 /// Markdown part settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMetadataExtensionHubsExtensionPartTypeMarkdownPartSettings
 {
@@ -218,7 +218,7 @@ public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMe
 }
 
 /// <summary>Storage version of v20250401preview.MarkdownPartMetadata</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMetadataExtensionHubsExtensionPartTypeMarkdownPart
 {
@@ -244,7 +244,7 @@ public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMe
 }
 
 /// <summary>Storage version of v20250401preview.DashboardPartMetadata</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMetadata
 {
@@ -264,7 +264,7 @@ public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsMe
 /// Storage version of v20250401preview.DashboardPartsPosition
 /// The dashboard&apos;s part position.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsPosition
 {
@@ -295,7 +295,7 @@ public partial class V20250401previewstorageDashboardSpecPropertiesLensesPartsPo
 /// Storage version of v20250401preview.DashboardParts
 /// A dashboard part.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecPropertiesLensesParts
 {
@@ -322,7 +322,7 @@ public partial class V20250401previewstorageDashboardSpecPropertiesLensesParts
 /// Storage version of v20250401preview.DashboardLens
 /// A dashboard lens.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecPropertiesLenses
 {
@@ -347,7 +347,7 @@ public partial class V20250401previewstorageDashboardSpecPropertiesLenses
 /// Storage version of v20250401preview.DashboardPropertiesWithProvisioningState
 /// Dashboard Properties with Provisioning state
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpecProperties
 {
@@ -366,7 +366,7 @@ public partial class V20250401previewstorageDashboardSpecProperties
 }
 
 /// <summary>Storage version of v20250401preview.Dashboard_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardSpec
 {
@@ -417,7 +417,7 @@ public partial class V20250401previewstorageDashboardSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusConditions
 {
@@ -466,7 +466,7 @@ public partial class V20250401previewstorageDashboardStatusConditions
 /// Storage version of v20250401preview.MarkdownPartMetadataSettingsContent_STATUS
 /// The content of markdown part.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusPropertiesLensesPartsMetadataExtensionHubsExtensionPartTypeMarkdownPartSettingsContent
 {
@@ -497,7 +497,7 @@ public partial class V20250401previewstorageDashboardStatusPropertiesLensesParts
 /// Storage version of v20250401preview.MarkdownPartMetadataSettings_STATUS
 /// Markdown part settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusPropertiesLensesPartsMetadataExtensionHubsExtensionPartTypeMarkdownPartSettings
 {
@@ -517,7 +517,7 @@ public partial class V20250401previewstorageDashboardStatusPropertiesLensesParts
 }
 
 /// <summary>Storage version of v20250401preview.MarkdownPartMetadata_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusPropertiesLensesPartsMetadataExtensionHubsExtensionPartTypeMarkdownPart
 {
@@ -543,7 +543,7 @@ public partial class V20250401previewstorageDashboardStatusPropertiesLensesParts
 }
 
 /// <summary>Storage version of v20250401preview.DashboardPartMetadata_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusPropertiesLensesPartsMetadata
 {
@@ -563,7 +563,7 @@ public partial class V20250401previewstorageDashboardStatusPropertiesLensesParts
 /// Storage version of v20250401preview.DashboardPartsPosition_STATUS
 /// The dashboard&apos;s part position.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusPropertiesLensesPartsPosition
 {
@@ -594,7 +594,7 @@ public partial class V20250401previewstorageDashboardStatusPropertiesLensesParts
 /// Storage version of v20250401preview.DashboardParts_STATUS
 /// A dashboard part.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusPropertiesLensesParts
 {
@@ -621,7 +621,7 @@ public partial class V20250401previewstorageDashboardStatusPropertiesLensesParts
 /// Storage version of v20250401preview.DashboardLens_STATUS
 /// A dashboard lens.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusPropertiesLenses
 {
@@ -646,7 +646,7 @@ public partial class V20250401previewstorageDashboardStatusPropertiesLenses
 /// Storage version of v20250401preview.DashboardPropertiesWithProvisioningState_STATUS
 /// Dashboard Properties with Provisioning state
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusProperties
 {
@@ -671,7 +671,7 @@ public partial class V20250401previewstorageDashboardStatusProperties
 /// Storage version of v20250401preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatusSystemData
 {
@@ -705,7 +705,7 @@ public partial class V20250401previewstorageDashboardStatusSystemData
 /// Storage version of v20250401preview.Dashboard_STATUS
 /// The shared dashboard resource definition.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250401previewstorageDashboardStatus
 {
@@ -755,7 +755,7 @@ public partial class V20250401previewstorageDashboardStatus
 /// - Generated from: /portal/resource-manager/Microsoft.Portal/Portal/preview/2025-04-01-preview/portal.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Portal/dashboards/{dashboardName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250401previewstorageDashboard : IKubernetesObject<V1ObjectMeta>, ISpec<V20250401previewstorageDashboardSpec?>, IStatus<V20250401previewstorageDashboardStatus?>

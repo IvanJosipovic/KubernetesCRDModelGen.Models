@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.settings.databricks.crossplane.io;
 /// <summary>AccountNetworkPolicy is the Schema for the AccountNetworkPolicys API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountNetworkPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccountNetworkPolicy>
@@ -46,7 +46,7 @@ public partial class V1beta1AccountNetworkPolicyList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkPolicySpecDeletionPolicyEnum>))]
 public enum V1beta1AccountNetworkPolicySpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1AccountNetworkPolicySpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessAllowedDatabricksDestinations
 {
@@ -65,7 +65,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessAllowedInternetDestinations
 {
@@ -81,7 +81,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
     public string? InternetDestinationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessAllowedStorageDestinations
 {
@@ -106,7 +106,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
     public string? StorageDestinationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessBlockedInternetDestinations
 {
@@ -123,7 +123,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
 }
 
 /// <summary>Optional. When policy_enforcement is not provided, we default to ENFORCE_MODE_ALL_SERVICES</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccessPolicyEnforcement
 {
@@ -144,7 +144,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
 }
 
 /// <summary>The access policy enforced for egress traffic to the internet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccess
 {
@@ -181,7 +181,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAcce
 }
 
 /// <summary>The network policies applying for egress traffic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderEgress
 {
@@ -190,7 +190,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderEgress
     public V1beta1AccountNetworkPolicySpecForProviderEgressNetworkAccess? NetworkAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities
 {
@@ -207,7 +207,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesAuthentication
 {
@@ -224,7 +224,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi
 {
@@ -238,7 +238,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -251,7 +251,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi
 {
@@ -261,7 +261,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime
 {
@@ -271,7 +271,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -281,7 +281,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
@@ -303,7 +303,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi
 {
@@ -316,7 +316,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesDestination
 {
@@ -360,7 +360,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces
 {
@@ -374,7 +374,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesOrigin
 {
@@ -387,7 +387,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRules
 {
@@ -418,7 +418,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities
 {
@@ -435,7 +435,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesAuthentication
 {
@@ -452,7 +452,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi
 {
@@ -466,7 +466,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -479,7 +479,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi
 {
@@ -489,7 +489,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime
 {
@@ -499,7 +499,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -509,7 +509,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
@@ -531,7 +531,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi
 {
@@ -544,7 +544,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesDestination
 {
@@ -588,7 +588,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces
 {
@@ -602,7 +602,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesOrigin
 {
@@ -615,7 +615,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccessDenyRules
 {
@@ -647,7 +647,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorkspaceAccess
 {
@@ -671,7 +671,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressCrossWorks
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesAuthenticationIdentities
 {
@@ -688,7 +688,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesAuthentication
 {
@@ -705,7 +705,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationAccountApi
 {
@@ -719,7 +719,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -732,7 +732,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationAccountUi
 {
@@ -742,7 +742,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationAppsRuntime
 {
@@ -752,7 +752,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -762,7 +762,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationWorkspaceApi
 {
@@ -784,7 +784,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestinationWorkspaceUi
 {
@@ -797,7 +797,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesDestination
 {
@@ -841,7 +841,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesOriginEndpoints
 {
@@ -855,7 +855,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesOrigin
 {
@@ -888,7 +888,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRules
 {
@@ -919,7 +919,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesAuthenticationIdentities
 {
@@ -936,7 +936,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesAuthentication
 {
@@ -953,7 +953,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationAccountApi
 {
@@ -967,7 +967,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -980,7 +980,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationAccountUi
 {
@@ -990,7 +990,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationAppsRuntime
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationWorkspaceApi
 {
@@ -1032,7 +1032,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestinationWorkspaceUi
 {
@@ -1045,7 +1045,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesDestination
 {
@@ -1089,7 +1089,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesOriginEndpoints
 {
@@ -1103,7 +1103,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesOrigin
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccessDenyRules
 {
@@ -1171,7 +1171,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
 /// The network policy restrictions for private access.
 /// Configures how requests arriving over private connectivity are governed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAccess
 {
@@ -1195,7 +1195,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPrivateAcc
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesAuthenticationIdentities
 {
@@ -1212,7 +1212,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesAuthentication
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationAccountApi
 {
@@ -1243,7 +1243,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationAccountUi
 {
@@ -1266,7 +1266,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationAppsRuntime
 {
@@ -1276,7 +1276,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationWorkspaceApi
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestinationWorkspaceUi
 {
@@ -1321,7 +1321,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesDestination
 {
@@ -1365,7 +1365,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesOriginExcludedIpRanges
 {
@@ -1375,7 +1375,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesOriginIncludedIpRanges
 {
@@ -1389,7 +1389,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesOrigin
 {
@@ -1406,7 +1406,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRules
 {
@@ -1437,7 +1437,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesAuthenticationIdentities
 {
@@ -1454,7 +1454,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesAuthentication
 {
@@ -1471,7 +1471,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationAccountApi
 {
@@ -1485,7 +1485,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -1498,7 +1498,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationAccountUi
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationAppsRuntime
 {
@@ -1518,7 +1518,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -1528,7 +1528,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationWorkspaceApi
 {
@@ -1550,7 +1550,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestinationWorkspaceUi
 {
@@ -1563,7 +1563,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesDestination
 {
@@ -1607,7 +1607,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesOriginExcludedIpRanges
 {
@@ -1617,7 +1617,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesOriginIncludedIpRanges
 {
@@ -1631,7 +1631,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesOrigin
 {
@@ -1648,7 +1648,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccessDenyRules
 {
@@ -1683,7 +1683,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 /// The network policy restrictions for public access to the workspace.
 /// Configures how public internet traffic is allowed or denied access
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccess
 {
@@ -1708,7 +1708,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressPublicAcce
 }
 
 /// <summary>The network policies applying for ingress traffic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngress
 {
@@ -1731,7 +1731,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngress
     public V1beta1AccountNetworkPolicySpecForProviderIngressPublicAccess? PublicAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities
 {
@@ -1748,7 +1748,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication
 {
@@ -1765,7 +1765,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi
 {
@@ -1779,7 +1779,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -1792,7 +1792,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi
 {
@@ -1802,7 +1802,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime
 {
@@ -1812,7 +1812,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -1822,7 +1822,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
@@ -1844,7 +1844,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi
 {
@@ -1857,7 +1857,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination
 {
@@ -1901,7 +1901,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces
 {
@@ -1915,7 +1915,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin
 {
@@ -1928,7 +1928,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRules
 {
@@ -1959,7 +1959,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities
 {
@@ -1976,7 +1976,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication
 {
@@ -1993,7 +1993,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi
 {
@@ -2007,7 +2007,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -2020,7 +2020,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi
 {
@@ -2030,7 +2030,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime
 {
@@ -2040,7 +2040,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -2050,7 +2050,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
@@ -2072,7 +2072,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi
 {
@@ -2085,7 +2085,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination
 {
@@ -2129,7 +2129,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces
 {
@@ -2143,7 +2143,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin
 {
@@ -2156,7 +2156,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccessDenyRules
 {
@@ -2188,7 +2188,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCrossWorkspaceAccess
 {
@@ -2212,7 +2212,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunCros
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities
 {
@@ -2229,7 +2229,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesAuthentication
 {
@@ -2246,7 +2246,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountApi
 {
@@ -2260,7 +2260,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -2273,7 +2273,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountUi
 {
@@ -2283,7 +2283,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime
 {
@@ -2293,7 +2293,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -2303,7 +2303,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi
 {
@@ -2325,7 +2325,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi
 {
@@ -2338,7 +2338,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesDestination
 {
@@ -2382,7 +2382,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesOriginEndpoints
 {
@@ -2396,7 +2396,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesOrigin
 {
@@ -2429,7 +2429,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRules
 {
@@ -2460,7 +2460,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities
 {
@@ -2477,7 +2477,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesAuthentication
 {
@@ -2494,7 +2494,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountApi
 {
@@ -2508,7 +2508,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -2521,7 +2521,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountUi
 {
@@ -2531,7 +2531,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime
 {
@@ -2541,7 +2541,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -2551,7 +2551,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi
 {
@@ -2573,7 +2573,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi
 {
@@ -2586,7 +2586,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesDestination
 {
@@ -2630,7 +2630,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesOriginEndpoints
 {
@@ -2644,7 +2644,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesOrigin
 {
@@ -2677,7 +2677,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccessDenyRules
 {
@@ -2712,7 +2712,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
 /// The network policy restrictions for private access.
 /// Configures how requests arriving over private connectivity are governed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPrivateAccess
 {
@@ -2736,7 +2736,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPriv
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesAuthenticationIdentities
 {
@@ -2753,7 +2753,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesAuthentication
 {
@@ -2770,7 +2770,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationAccountApi
 {
@@ -2784,7 +2784,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -2797,7 +2797,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationAccountUi
 {
@@ -2807,7 +2807,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime
 {
@@ -2817,7 +2817,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -2827,7 +2827,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi
 {
@@ -2849,7 +2849,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi
 {
@@ -2862,7 +2862,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesDestination
 {
@@ -2906,7 +2906,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges
 {
@@ -2916,7 +2916,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges
 {
@@ -2930,7 +2930,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesOrigin
 {
@@ -2947,7 +2947,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRules
 {
@@ -2978,7 +2978,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesAuthenticationIdentities
 {
@@ -2995,7 +2995,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesAuthentication
 {
@@ -3012,7 +3012,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationAccountApi
 {
@@ -3026,7 +3026,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -3039,7 +3039,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationAccountUi
 {
@@ -3049,7 +3049,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime
 {
@@ -3059,7 +3059,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -3069,7 +3069,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi
 {
@@ -3091,7 +3091,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi
 {
@@ -3104,7 +3104,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesDestination
 {
@@ -3148,7 +3148,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges
 {
@@ -3158,7 +3158,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges
 {
@@ -3172,7 +3172,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesOrigin
 {
@@ -3189,7 +3189,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccessDenyRules
 {
@@ -3224,7 +3224,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// The network policy restrictions for public access to the workspace.
 /// Configures how public internet traffic is allowed or denied access
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccess
 {
@@ -3253,7 +3253,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPubl
 /// is allowed by the ingress policy. When this field is set, the policy will be evaluated
 /// and emit logs only without blocking requests
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRun
 {
@@ -3276,7 +3276,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProviderIngressDryRun
     public V1beta1AccountNetworkPolicySpecForProviderIngressDryRunPublicAccess? PublicAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecForProvider
 {
@@ -3305,7 +3305,7 @@ public partial class V1beta1AccountNetworkPolicySpecForProvider
     public string? NetworkPolicyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessAllowedDatabricksDestinations
 {
@@ -3314,7 +3314,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessAllowedInternetDestinations
 {
@@ -3330,7 +3330,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
     public string? InternetDestinationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessAllowedStorageDestinations
 {
@@ -3355,7 +3355,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
     public string? StorageDestinationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessBlockedInternetDestinations
 {
@@ -3372,7 +3372,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
 }
 
 /// <summary>Optional. When policy_enforcement is not provided, we default to ENFORCE_MODE_ALL_SERVICES</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccessPolicyEnforcement
 {
@@ -3393,7 +3393,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
 }
 
 /// <summary>The access policy enforced for egress traffic to the internet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccess
 {
@@ -3430,7 +3430,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAcc
 }
 
 /// <summary>The network policies applying for egress traffic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderEgress
 {
@@ -3439,7 +3439,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderEgress
     public V1beta1AccountNetworkPolicySpecInitProviderEgressNetworkAccess? NetworkAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities
 {
@@ -3456,7 +3456,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesAuthentication
 {
@@ -3473,7 +3473,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi
 {
@@ -3487,7 +3487,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -3500,7 +3500,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi
 {
@@ -3510,7 +3510,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime
 {
@@ -3520,7 +3520,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -3530,7 +3530,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
@@ -3552,7 +3552,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi
 {
@@ -3565,7 +3565,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesDestination
 {
@@ -3609,7 +3609,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces
 {
@@ -3623,7 +3623,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesOrigin
 {
@@ -3636,7 +3636,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRules
 {
@@ -3667,7 +3667,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities
 {
@@ -3684,7 +3684,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesAuthentication
 {
@@ -3701,7 +3701,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi
 {
@@ -3715,7 +3715,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -3728,7 +3728,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi
 {
@@ -3738,7 +3738,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime
 {
@@ -3748,7 +3748,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -3758,7 +3758,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
@@ -3780,7 +3780,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi
 {
@@ -3793,7 +3793,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesDestination
 {
@@ -3837,7 +3837,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces
 {
@@ -3851,7 +3851,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesOrigin
 {
@@ -3864,7 +3864,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccessDenyRules
 {
@@ -3896,7 +3896,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWorkspaceAccess
 {
@@ -3920,7 +3920,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressCrossWork
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesAuthenticationIdentities
 {
@@ -3937,7 +3937,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesAuthentication
 {
@@ -3954,7 +3954,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationAccountApi
 {
@@ -3968,7 +3968,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -3981,7 +3981,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationAccountUi
 {
@@ -3991,7 +3991,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationAppsRuntime
 {
@@ -4001,7 +4001,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -4011,7 +4011,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationWorkspaceApi
 {
@@ -4033,7 +4033,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestinationWorkspaceUi
 {
@@ -4046,7 +4046,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesDestination
 {
@@ -4090,7 +4090,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesOriginEndpoints
 {
@@ -4104,7 +4104,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesOrigin
 {
@@ -4137,7 +4137,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRules
 {
@@ -4168,7 +4168,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesAuthenticationIdentities
 {
@@ -4185,7 +4185,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesAuthentication
 {
@@ -4202,7 +4202,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationAccountApi
 {
@@ -4216,7 +4216,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -4229,7 +4229,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationAccountUi
 {
@@ -4239,7 +4239,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationAppsRuntime
 {
@@ -4249,7 +4249,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -4259,7 +4259,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationWorkspaceApi
 {
@@ -4281,7 +4281,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestinationWorkspaceUi
 {
@@ -4294,7 +4294,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesDestination
 {
@@ -4338,7 +4338,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesOriginEndpoints
 {
@@ -4352,7 +4352,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesOrigin
 {
@@ -4385,7 +4385,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccessDenyRules
 {
@@ -4420,7 +4420,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
 /// The network policy restrictions for private access.
 /// Configures how requests arriving over private connectivity are governed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAccess
 {
@@ -4444,7 +4444,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPrivateAc
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesAuthenticationIdentities
 {
@@ -4461,7 +4461,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesAuthentication
 {
@@ -4478,7 +4478,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationAccountApi
 {
@@ -4492,7 +4492,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -4505,7 +4505,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationAccountUi
 {
@@ -4515,7 +4515,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationAppsRuntime
 {
@@ -4525,7 +4525,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -4535,7 +4535,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationWorkspaceApi
 {
@@ -4557,7 +4557,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestinationWorkspaceUi
 {
@@ -4570,7 +4570,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesDestination
 {
@@ -4614,7 +4614,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesOriginExcludedIpRanges
 {
@@ -4624,7 +4624,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesOriginIncludedIpRanges
 {
@@ -4638,7 +4638,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesOrigin
 {
@@ -4655,7 +4655,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRules
 {
@@ -4686,7 +4686,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesAuthenticationIdentities
 {
@@ -4703,7 +4703,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesAuthentication
 {
@@ -4720,7 +4720,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationAccountApi
 {
@@ -4734,7 +4734,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -4747,7 +4747,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationAccountUi
 {
@@ -4757,7 +4757,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationAppsRuntime
 {
@@ -4767,7 +4767,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -4777,7 +4777,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationWorkspaceApi
 {
@@ -4799,7 +4799,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestinationWorkspaceUi
 {
@@ -4812,7 +4812,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesDestination
 {
@@ -4856,7 +4856,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesOriginExcludedIpRanges
 {
@@ -4866,7 +4866,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesOriginIncludedIpRanges
 {
@@ -4880,7 +4880,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesOrigin
 {
@@ -4897,7 +4897,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccessDenyRules
 {
@@ -4932,7 +4932,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 /// The network policy restrictions for public access to the workspace.
 /// Configures how public internet traffic is allowed or denied access
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccess
 {
@@ -4957,7 +4957,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAcc
 }
 
 /// <summary>The network policies applying for ingress traffic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngress
 {
@@ -4980,7 +4980,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngress
     public V1beta1AccountNetworkPolicySpecInitProviderIngressPublicAccess? PublicAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities
 {
@@ -4997,7 +4997,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication
 {
@@ -5014,7 +5014,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi
 {
@@ -5028,7 +5028,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -5041,7 +5041,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi
 {
@@ -5051,7 +5051,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime
 {
@@ -5061,7 +5061,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -5071,7 +5071,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
@@ -5093,7 +5093,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi
 {
@@ -5106,7 +5106,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination
 {
@@ -5150,7 +5150,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces
 {
@@ -5164,7 +5164,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin
 {
@@ -5177,7 +5177,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRules
 {
@@ -5208,7 +5208,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities
 {
@@ -5225,7 +5225,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication
 {
@@ -5242,7 +5242,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi
 {
@@ -5256,7 +5256,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -5269,7 +5269,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi
 {
@@ -5279,7 +5279,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime
 {
@@ -5289,7 +5289,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -5299,7 +5299,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
@@ -5321,7 +5321,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi
 {
@@ -5334,7 +5334,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination
 {
@@ -5378,7 +5378,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces
 {
@@ -5392,7 +5392,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin
 {
@@ -5405,7 +5405,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccessDenyRules
 {
@@ -5437,7 +5437,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCrossWorkspaceAccess
 {
@@ -5461,7 +5461,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunCro
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities
 {
@@ -5478,7 +5478,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesAuthentication
 {
@@ -5495,7 +5495,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountApi
 {
@@ -5509,7 +5509,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -5522,7 +5522,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountUi
 {
@@ -5532,7 +5532,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime
 {
@@ -5542,7 +5542,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -5552,7 +5552,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi
 {
@@ -5574,7 +5574,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi
 {
@@ -5587,7 +5587,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesDestination
 {
@@ -5631,7 +5631,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesOriginEndpoints
 {
@@ -5645,7 +5645,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesOrigin
 {
@@ -5678,7 +5678,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRules
 {
@@ -5709,7 +5709,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities
 {
@@ -5726,7 +5726,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesAuthentication
 {
@@ -5743,7 +5743,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountApi
 {
@@ -5757,7 +5757,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -5770,7 +5770,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountUi
 {
@@ -5780,7 +5780,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime
 {
@@ -5790,7 +5790,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -5800,7 +5800,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi
 {
@@ -5822,7 +5822,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi
 {
@@ -5835,7 +5835,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesDestination
 {
@@ -5879,7 +5879,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesOriginEndpoints
 {
@@ -5893,7 +5893,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesOrigin
 {
@@ -5926,7 +5926,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccessDenyRules
 {
@@ -5961,7 +5961,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
 /// The network policy restrictions for private access.
 /// Configures how requests arriving over private connectivity are governed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPrivateAccess
 {
@@ -5985,7 +5985,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPri
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesAuthenticationIdentities
 {
@@ -6002,7 +6002,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesAuthentication
 {
@@ -6019,7 +6019,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationAccountApi
 {
@@ -6033,7 +6033,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -6046,7 +6046,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationAccountUi
 {
@@ -6056,7 +6056,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime
 {
@@ -6066,7 +6066,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -6076,7 +6076,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi
 {
@@ -6098,7 +6098,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi
 {
@@ -6111,7 +6111,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesDestination
 {
@@ -6155,7 +6155,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges
 {
@@ -6165,7 +6165,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges
 {
@@ -6179,7 +6179,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesOrigin
 {
@@ -6196,7 +6196,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRules
 {
@@ -6227,7 +6227,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesAuthenticationIdentities
 {
@@ -6244,7 +6244,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesAuthentication
 {
@@ -6261,7 +6261,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationAccountApi
 {
@@ -6275,7 +6275,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -6288,7 +6288,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationAccountUi
 {
@@ -6298,7 +6298,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime
 {
@@ -6308,7 +6308,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -6318,7 +6318,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi
 {
@@ -6340,7 +6340,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi
 {
@@ -6353,7 +6353,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesDestination
 {
@@ -6397,7 +6397,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges
 {
@@ -6407,7 +6407,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges
 {
@@ -6421,7 +6421,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesOrigin
 {
@@ -6438,7 +6438,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
     public V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccessDenyRules
 {
@@ -6473,7 +6473,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// The network policy restrictions for public access to the workspace.
 /// Configures how public internet traffic is allowed or denied access
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPublicAccess
 {
@@ -6502,7 +6502,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRunPub
 /// is allowed by the ingress policy. When this field is set, the policy will be evaluated
 /// and emit logs only without blocking requests
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRun
 {
@@ -6537,7 +6537,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProviderIngressDryRun
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecInitProvider
 {
@@ -6570,7 +6570,7 @@ public partial class V1beta1AccountNetworkPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1AccountNetworkPolicySpecManagementPoliciesEnum
 {
@@ -6594,7 +6594,7 @@ public enum V1beta1AccountNetworkPolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkPolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AccountNetworkPolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -6610,7 +6610,7 @@ public enum V1beta1AccountNetworkPolicySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountNetworkPolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AccountNetworkPolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -6621,7 +6621,7 @@ public enum V1beta1AccountNetworkPolicySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecProviderConfigRefPolicy
 {
@@ -6649,7 +6649,7 @@ public partial class V1beta1AccountNetworkPolicySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecProviderConfigRef
 {
@@ -6668,7 +6668,7 @@ public partial class V1beta1AccountNetworkPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpecWriteConnectionSecretToRef
 {
@@ -6682,7 +6682,7 @@ public partial class V1beta1AccountNetworkPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>AccountNetworkPolicySpec defines the desired state of AccountNetworkPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicySpec
 {
@@ -6749,7 +6749,7 @@ public partial class V1beta1AccountNetworkPolicySpec
     public V1beta1AccountNetworkPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessAllowedDatabricksDestinations
 {
@@ -6758,7 +6758,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
     public IList<double>? WorkspaceIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessAllowedInternetDestinations
 {
@@ -6774,7 +6774,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
     public string? InternetDestinationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessAllowedStorageDestinations
 {
@@ -6799,7 +6799,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
     public string? StorageDestinationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessBlockedInternetDestinations
 {
@@ -6816,7 +6816,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
 }
 
 /// <summary>Optional. When policy_enforcement is not provided, we default to ENFORCE_MODE_ALL_SERVICES</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccessPolicyEnforcement
 {
@@ -6837,7 +6837,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
 }
 
 /// <summary>The access policy enforced for egress traffic to the internet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccess
 {
@@ -6874,7 +6874,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAcc
 }
 
 /// <summary>The network policies applying for egress traffic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgress
 {
@@ -6883,7 +6883,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderEgress
     public V1beta1AccountNetworkPolicyStatusAtProviderEgressNetworkAccess? NetworkAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities
 {
@@ -6900,7 +6900,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesAuthentication
 {
@@ -6917,7 +6917,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi
 {
@@ -6931,7 +6931,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -6944,7 +6944,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi
 {
@@ -6954,7 +6954,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime
 {
@@ -6964,7 +6964,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -6974,7 +6974,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
@@ -6996,7 +6996,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi
 {
@@ -7009,7 +7009,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesDestination
 {
@@ -7053,7 +7053,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces
 {
@@ -7067,7 +7067,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesOrigin
 {
@@ -7080,7 +7080,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRules
 {
@@ -7111,7 +7111,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities
 {
@@ -7128,7 +7128,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesAuthentication
 {
@@ -7145,7 +7145,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi
 {
@@ -7159,7 +7159,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -7172,7 +7172,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi
 {
@@ -7182,7 +7182,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime
 {
@@ -7192,7 +7192,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -7202,7 +7202,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
@@ -7224,7 +7224,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi
 {
@@ -7237,7 +7237,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesDestination
 {
@@ -7281,7 +7281,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces
 {
@@ -7295,7 +7295,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesOrigin
 {
@@ -7308,7 +7308,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccessDenyRules
 {
@@ -7340,7 +7340,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWorkspaceAccess
 {
@@ -7364,7 +7364,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressCrossWork
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesAuthenticationIdentities
 {
@@ -7381,7 +7381,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesAuthentication
 {
@@ -7398,7 +7398,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationAccountApi
 {
@@ -7412,7 +7412,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -7425,7 +7425,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationAccountUi
 {
@@ -7435,7 +7435,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationAppsRuntime
 {
@@ -7445,7 +7445,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -7455,7 +7455,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationWorkspaceApi
 {
@@ -7477,7 +7477,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestinationWorkspaceUi
 {
@@ -7490,7 +7490,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesDestination
 {
@@ -7534,7 +7534,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesOriginEndpoints
 {
@@ -7548,7 +7548,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesOrigin
 {
@@ -7581,7 +7581,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRules
 {
@@ -7612,7 +7612,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesAuthenticationIdentities
 {
@@ -7629,7 +7629,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesAuthentication
 {
@@ -7646,7 +7646,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationAccountApi
 {
@@ -7660,7 +7660,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -7673,7 +7673,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationAccountUi
 {
@@ -7683,7 +7683,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationAppsRuntime
 {
@@ -7693,7 +7693,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -7703,7 +7703,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationWorkspaceApi
 {
@@ -7725,7 +7725,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestinationWorkspaceUi
 {
@@ -7738,7 +7738,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesDestination
 {
@@ -7782,7 +7782,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesOriginEndpoints
 {
@@ -7796,7 +7796,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesOrigin
 {
@@ -7829,7 +7829,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccessDenyRules
 {
@@ -7864,7 +7864,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
 /// The network policy restrictions for private access.
 /// Configures how requests arriving over private connectivity are governed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAccess
 {
@@ -7888,7 +7888,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPrivateAc
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesAuthenticationIdentities
 {
@@ -7905,7 +7905,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesAuthentication
 {
@@ -7922,7 +7922,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationAccountApi
 {
@@ -7936,7 +7936,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -7949,7 +7949,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationAccountUi
 {
@@ -7959,7 +7959,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationAppsRuntime
 {
@@ -7969,7 +7969,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -7979,7 +7979,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationWorkspaceApi
 {
@@ -8001,7 +8001,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestinationWorkspaceUi
 {
@@ -8014,7 +8014,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesDestination
 {
@@ -8058,7 +8058,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesOriginExcludedIpRanges
 {
@@ -8068,7 +8068,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesOriginIncludedIpRanges
 {
@@ -8082,7 +8082,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesOrigin
 {
@@ -8099,7 +8099,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRules
 {
@@ -8130,7 +8130,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesAuthenticationIdentities
 {
@@ -8147,7 +8147,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesAuthentication
 {
@@ -8164,7 +8164,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationAccountApi
 {
@@ -8178,7 +8178,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -8191,7 +8191,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationAccountUi
 {
@@ -8201,7 +8201,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationAppsRuntime
 {
@@ -8211,7 +8211,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -8221,7 +8221,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationWorkspaceApi
 {
@@ -8243,7 +8243,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestinationWorkspaceUi
 {
@@ -8256,7 +8256,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesDestination
 {
@@ -8300,7 +8300,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesOriginExcludedIpRanges
 {
@@ -8310,7 +8310,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesOriginIncludedIpRanges
 {
@@ -8324,7 +8324,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesOrigin
 {
@@ -8341,7 +8341,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccessDenyRules
 {
@@ -8376,7 +8376,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 /// The network policy restrictions for public access to the workspace.
 /// Configures how public internet traffic is allowed or denied access
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccess
 {
@@ -8401,7 +8401,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAcc
 }
 
 /// <summary>The network policies applying for ingress traffic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngress
 {
@@ -8424,7 +8424,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngress
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressPublicAccess? PublicAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities
 {
@@ -8441,7 +8441,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication
 {
@@ -8458,7 +8458,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi
 {
@@ -8472,7 +8472,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -8485,7 +8485,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi
 {
@@ -8495,7 +8495,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime
 {
@@ -8505,7 +8505,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -8515,7 +8515,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi
 {
@@ -8537,7 +8537,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi
 {
@@ -8550,7 +8550,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesDestination
 {
@@ -8594,7 +8594,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces
 {
@@ -8608,7 +8608,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin
 {
@@ -8621,7 +8621,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRules
 {
@@ -8652,7 +8652,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities
 {
@@ -8669,7 +8669,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication
 {
@@ -8686,7 +8686,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi
 {
@@ -8700,7 +8700,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -8713,7 +8713,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi
 {
@@ -8723,7 +8723,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime
 {
@@ -8733,7 +8733,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -8743,7 +8743,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi
 {
@@ -8765,7 +8765,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi
 {
@@ -8778,7 +8778,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesDestination
 {
@@ -8822,7 +8822,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>Specific source workspace IDs to match</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces
 {
@@ -8836,7 +8836,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesOrigin
 {
@@ -8849,7 +8849,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces? SelectedWorkspaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccessDenyRules
 {
@@ -8881,7 +8881,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyCrossWorkspaceAccess, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCrossWorkspaceAccess
 {
@@ -8905,7 +8905,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunCro
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities
 {
@@ -8922,7 +8922,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesAuthentication
 {
@@ -8939,7 +8939,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountApi
 {
@@ -8953,7 +8953,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -8966,7 +8966,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationAccountUi
 {
@@ -8976,7 +8976,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime
 {
@@ -8986,7 +8986,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -8996,7 +8996,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi
 {
@@ -9018,7 +9018,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi
 {
@@ -9031,7 +9031,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesDestination
 {
@@ -9075,7 +9075,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesOriginEndpoints
 {
@@ -9089,7 +9089,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesOrigin
 {
@@ -9122,7 +9122,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRules
 {
@@ -9153,7 +9153,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities
 {
@@ -9170,7 +9170,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesAuthentication
 {
@@ -9187,7 +9187,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountApi
 {
@@ -9201,7 +9201,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -9214,7 +9214,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationAccountUi
 {
@@ -9224,7 +9224,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime
 {
@@ -9234,7 +9234,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -9244,7 +9244,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi
 {
@@ -9266,7 +9266,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi
 {
@@ -9279,7 +9279,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesDestination
 {
@@ -9323,7 +9323,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 }
 
 /// <summary>Matches requests arriving through any of the specified registered endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesOriginEndpoints
 {
@@ -9337,7 +9337,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesOrigin
 {
@@ -9370,7 +9370,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRulesOriginEndpoints? Endpoints { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccessDenyRules
 {
@@ -9405,7 +9405,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
 /// The network policy restrictions for private access.
 /// Configures how requests arriving over private connectivity are governed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPrivateAccess
 {
@@ -9429,7 +9429,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPri
     public string? RestrictionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesAuthenticationIdentities
 {
@@ -9446,7 +9446,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesAuthentication
 {
@@ -9463,7 +9463,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationAccountApi
 {
@@ -9477,7 +9477,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne
 {
@@ -9490,7 +9490,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationAccountUi
 {
@@ -9500,7 +9500,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime
 {
@@ -9510,7 +9510,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime
 {
@@ -9520,7 +9520,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi
 {
@@ -9542,7 +9542,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi
 {
@@ -9555,7 +9555,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesDestination
 {
@@ -9599,7 +9599,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges
 {
@@ -9609,7 +9609,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges
 {
@@ -9623,7 +9623,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesOrigin
 {
@@ -9640,7 +9640,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRules
 {
@@ -9671,7 +9671,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessAllowRulesOrigin? Origin { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesAuthenticationIdentities
 {
@@ -9688,7 +9688,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// The authenticated identity the request must match. When unset, the rule matches
 /// all users and service principals
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesAuthentication
 {
@@ -9705,7 +9705,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// Matches requests to account-level APIs.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationAccountApi
 {
@@ -9719,7 +9719,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>Account DatabricksOne destination is not supported</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne
 {
@@ -9732,7 +9732,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// Matches requests to the account console UI.
 /// Can only be used in the account-level network policy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationAccountUi
 {
@@ -9742,7 +9742,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyAppsRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime
 {
@@ -9752,7 +9752,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyLakebaseRuntimeDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime
 {
@@ -9762,7 +9762,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceApiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi
 {
@@ -9784,7 +9784,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>(CustomerFacingIngressNetworkPolicyWorkspaceUiDestination, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi
 {
@@ -9797,7 +9797,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// The destination the request must match — the resource being accessed, for example
 /// the workspace UI or workspace APIs. See RequestDestination
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesDestination
 {
@@ -9841,7 +9841,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>Excluded means: all public IP ranges except this one</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges
 {
@@ -9851,7 +9851,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 }
 
 /// <summary>Will not allow IP ranges with private IPs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges
 {
@@ -9865,7 +9865,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// either specific source workspaces or any source workspace in any account. See
 /// CrossWorkspaceRequestOrigin
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesOrigin
 {
@@ -9882,7 +9882,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges? IncludedIpRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccessDenyRules
 {
@@ -9917,7 +9917,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// The network policy restrictions for public access to the workspace.
 /// Configures how public internet traffic is allowed or denied access
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccess
 {
@@ -9946,7 +9946,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPub
 /// is allowed by the ingress policy. When this field is set, the policy will be evaluated
 /// and emit logs only without blocking requests
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRun
 {
@@ -9969,7 +9969,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRun
     public V1beta1AccountNetworkPolicyStatusAtProviderIngressDryRunPublicAccess? PublicAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusAtProvider
 {
@@ -10002,7 +10002,7 @@ public partial class V1beta1AccountNetworkPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatusConditions
 {
@@ -10045,7 +10045,7 @@ public partial class V1beta1AccountNetworkPolicyStatusConditions
 }
 
 /// <summary>AccountNetworkPolicyStatus defines the observed state of AccountNetworkPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountNetworkPolicyStatus
 {
@@ -10075,7 +10075,7 @@ public partial class V1beta1AccountNetworkPolicyStatus
 }
 
 /// <summary>AccountNetworkPolicy is the Schema for the AccountNetworkPolicys API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountNetworkPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccountNetworkPolicySpec>, IStatus<V1beta1AccountNetworkPolicyStatus?>

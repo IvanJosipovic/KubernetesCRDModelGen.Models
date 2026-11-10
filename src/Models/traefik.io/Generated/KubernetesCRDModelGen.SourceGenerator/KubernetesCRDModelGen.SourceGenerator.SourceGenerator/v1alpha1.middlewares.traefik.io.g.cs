@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// Middleware is the CRD implementation of a Traefik Middleware.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/overview/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MiddlewareList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Middleware>
@@ -45,7 +45,7 @@ public partial class V1alpha1MiddlewareList : IKubernetesObject<V1ListMeta>, IIt
 /// This middleware updates the path of a request before forwarding it.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/addprefix/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecAddPrefix
 {
@@ -62,7 +62,7 @@ public partial class V1alpha1MiddlewareSpecAddPrefix
 /// This middleware restricts access to your services to known users.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/basicauth/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecBasicAuth
 {
@@ -97,7 +97,7 @@ public partial class V1alpha1MiddlewareSpecBasicAuth
 /// This middleware retries or limits the size of requests that can be forwarded to backends.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/buffering/#maxrequestbodybytes
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecBuffering
 {
@@ -158,7 +158,7 @@ public partial class V1alpha1MiddlewareSpecBuffering
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecChainMiddlewares
 {
@@ -176,7 +176,7 @@ public partial class V1alpha1MiddlewareSpecChainMiddlewares
 /// This middleware enables to define reusable combinations of other pieces of middleware.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/chain/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecChain
 {
@@ -186,7 +186,7 @@ public partial class V1alpha1MiddlewareSpecChain
 }
 
 /// <summary>CircuitBreaker holds the circuit breaker configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecCircuitBreaker
 {
@@ -216,7 +216,7 @@ public partial class V1alpha1MiddlewareSpecCircuitBreaker
 /// This middleware compresses responses before sending them to the client, using gzip, brotli, or zstd compression.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/compress/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecCompress
 {
@@ -251,7 +251,7 @@ public partial class V1alpha1MiddlewareSpecCompress
 /// ContentType holds the content-type middleware configuration.
 /// This middleware exists to enable the correct behavior until at least the default one can be changed in a future version.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecContentType
 {
@@ -270,7 +270,7 @@ public partial class V1alpha1MiddlewareSpecContentType
 /// This middleware restricts access to your services to known users.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/digestauth/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecDigestAuth
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1MiddlewareSpecDigestAuth
 }
 
 /// <summary>EncodedCharacters configures which encoded characters are allowed in the request path.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecEncodedCharacters
 {
@@ -332,7 +332,7 @@ public partial class V1alpha1MiddlewareSpecEncodedCharacters
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrorsServiceHealthCheck
 {
@@ -403,7 +403,7 @@ public partial class V1alpha1MiddlewareSpecErrorsServiceHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecErrorsServiceKindEnum>))]
 public enum V1alpha1MiddlewareSpecErrorsServiceKindEnum
 {
@@ -414,7 +414,7 @@ public enum V1alpha1MiddlewareSpecErrorsServiceKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrorsServiceMiddlewares
 {
@@ -428,7 +428,7 @@ public partial class V1alpha1MiddlewareSpecErrorsServiceMiddlewares
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrorsServicePassiveHealthCheck
 {
@@ -442,7 +442,7 @@ public partial class V1alpha1MiddlewareSpecErrorsServicePassiveHealthCheck
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrorsServiceResponseForwarding
 {
@@ -461,7 +461,7 @@ public partial class V1alpha1MiddlewareSpecErrorsServiceResponseForwarding
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecErrorsServiceStickyCookieSameSiteEnum>))]
 public enum V1alpha1MiddlewareSpecErrorsServiceStickyCookieSameSiteEnum
 {
@@ -480,7 +480,7 @@ public enum V1alpha1MiddlewareSpecErrorsServiceStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrorsServiceStickyCookie
 {
@@ -531,7 +531,7 @@ public partial class V1alpha1MiddlewareSpecErrorsServiceStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrorsServiceSticky
 {
@@ -545,7 +545,7 @@ public partial class V1alpha1MiddlewareSpecErrorsServiceSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecErrorsServiceStrategyEnum>))]
 public enum V1alpha1MiddlewareSpecErrorsServiceStrategyEnum
 {
@@ -565,7 +565,7 @@ public enum V1alpha1MiddlewareSpecErrorsServiceStrategyEnum
 /// Service defines the reference to a Kubernetes Service that will serve the error page.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/errorpages/#service
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrorsService
 {
@@ -675,7 +675,7 @@ public partial class V1alpha1MiddlewareSpecErrorsService
 /// This middleware returns a custom page in lieu of the default, according to configured ranges of HTTP Status codes.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/errorpages/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecErrors
 {
@@ -722,7 +722,7 @@ public partial class V1alpha1MiddlewareSpecErrors
 }
 
 /// <summary>TLS defines the configuration used to secure the connection to the authentication server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecForwardAuthTls
 {
@@ -754,7 +754,7 @@ public partial class V1alpha1MiddlewareSpecForwardAuthTls
 /// This middleware delegates the request authentication to a Service.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/forwardauth/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecForwardAuth
 {
@@ -832,7 +832,7 @@ public partial class V1alpha1MiddlewareSpecForwardAuth
 /// GrpcWeb holds the gRPC web middleware configuration.
 /// This middleware converts a gRPC web request to an HTTP/2 gRPC request.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecGrpcWeb
 {
@@ -849,7 +849,7 @@ public partial class V1alpha1MiddlewareSpecGrpcWeb
 /// This middleware manages the requests and responses headers.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/headers/#customrequestheaders
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecHeaders
 {
@@ -1013,7 +1013,7 @@ public partial class V1alpha1MiddlewareSpecHeaders
 /// IPStrategy holds the IP strategy configuration used by Traefik to determine the client IP.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/ipallowlist/#ipstrategy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecInFlightReqSourceCriterionIpStrategy
 {
@@ -1036,7 +1036,7 @@ public partial class V1alpha1MiddlewareSpecInFlightReqSourceCriterionIpStrategy
 /// If none are set, the default is to use the requestHost.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/inflightreq/#sourcecriterion
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecInFlightReqSourceCriterion
 {
@@ -1061,7 +1061,7 @@ public partial class V1alpha1MiddlewareSpecInFlightReqSourceCriterion
 /// This middleware limits the number of requests being processed and served concurrently.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/inflightreq/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecInFlightReq
 {
@@ -1086,7 +1086,7 @@ public partial class V1alpha1MiddlewareSpecInFlightReq
 /// IPStrategy holds the IP strategy configuration used by Traefik to determine the client IP.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/ipallowlist/#ipstrategy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecIpAllowListIpStrategy
 {
@@ -1108,7 +1108,7 @@ public partial class V1alpha1MiddlewareSpecIpAllowListIpStrategy
 /// This middleware limits allowed requests based on the client IP.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/ipallowlist/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecIpAllowList
 {
@@ -1135,7 +1135,7 @@ public partial class V1alpha1MiddlewareSpecIpAllowList
 /// IPStrategy holds the IP strategy configuration used by Traefik to determine the client IP.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/ipallowlist/#ipstrategy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecIpWhiteListIpStrategy
 {
@@ -1153,7 +1153,7 @@ public partial class V1alpha1MiddlewareSpecIpWhiteListIpStrategy
 }
 
 /// <summary>Deprecated: please use IPAllowList instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecIpWhiteList
 {
@@ -1170,7 +1170,7 @@ public partial class V1alpha1MiddlewareSpecIpWhiteList
 }
 
 /// <summary>Issuer defines the client certificate issuer details to add to the X-Forwarded-Tls-Client-Cert-Info header.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecPassTLSClientCertInfoIssuer
 {
@@ -1204,7 +1204,7 @@ public partial class V1alpha1MiddlewareSpecPassTLSClientCertInfoIssuer
 }
 
 /// <summary>Subject defines the client certificate subject details to add to the X-Forwarded-Tls-Client-Cert-Info header.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecPassTLSClientCertInfoSubject
 {
@@ -1242,7 +1242,7 @@ public partial class V1alpha1MiddlewareSpecPassTLSClientCertInfoSubject
 }
 
 /// <summary>Info selects the specific client certificate details you want to add to the X-Forwarded-Tls-Client-Cert-Info header.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecPassTLSClientCertInfo
 {
@@ -1276,7 +1276,7 @@ public partial class V1alpha1MiddlewareSpecPassTLSClientCertInfo
 /// This middleware adds the selected data from the passed client TLS certificate to a header.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/passtlsclientcert/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecPassTLSClientCert
 {
@@ -1293,7 +1293,7 @@ public partial class V1alpha1MiddlewareSpecPassTLSClientCert
 /// TLS defines TLS-specific configurations, including the CA, certificate, and key,
 /// which can be provided as a file path or file content.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRateLimitRedisTls
 {
@@ -1317,7 +1317,7 @@ public partial class V1alpha1MiddlewareSpecRateLimitRedisTls
 }
 
 /// <summary>Redis hold the configs of Redis as bucket in rate limiter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRateLimitRedis
 {
@@ -1392,7 +1392,7 @@ public partial class V1alpha1MiddlewareSpecRateLimitRedis
 /// IPStrategy holds the IP strategy configuration used by Traefik to determine the client IP.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/ipallowlist/#ipstrategy
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRateLimitSourceCriterionIpStrategy
 {
@@ -1414,7 +1414,7 @@ public partial class V1alpha1MiddlewareSpecRateLimitSourceCriterionIpStrategy
 /// If several strategies are defined at the same time, an error will be raised.
 /// If none are set, the default is to use the request&apos;s remote address field (as an ipStrategy).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRateLimitSourceCriterion
 {
@@ -1439,7 +1439,7 @@ public partial class V1alpha1MiddlewareSpecRateLimitSourceCriterion
 /// This middleware ensures that services will receive a fair amount of requests, and allows one to define what fair is.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/ratelimit/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRateLimit
 {
@@ -1484,7 +1484,7 @@ public partial class V1alpha1MiddlewareSpecRateLimit
 /// This middleware redirects a request using regex matching and replacement.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/redirectregex/#regex
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRedirectRegex
 {
@@ -1506,7 +1506,7 @@ public partial class V1alpha1MiddlewareSpecRedirectRegex
 /// This middleware redirects requests from a scheme/port to another.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/redirectscheme/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRedirectScheme
 {
@@ -1531,7 +1531,7 @@ public partial class V1alpha1MiddlewareSpecRedirectScheme
 /// This middleware replaces the path of the request URL and store the original path in an X-Replaced-Path header.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/replacepath/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecReplacePath
 {
@@ -1545,7 +1545,7 @@ public partial class V1alpha1MiddlewareSpecReplacePath
 /// This middleware replaces the path of a URL using regex matching and replacement.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/replacepathregex/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecReplacePathRegex
 {
@@ -1564,7 +1564,7 @@ public partial class V1alpha1MiddlewareSpecReplacePathRegex
 /// As soon as the server answers, the middleware stops retrying, regardless of the response status.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/retry/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecRetry
 {
@@ -1615,7 +1615,7 @@ public partial class V1alpha1MiddlewareSpecRetry
 /// This middleware removes the specified prefixes from the URL path.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/stripprefix/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecStripPrefix
 {
@@ -1637,7 +1637,7 @@ public partial class V1alpha1MiddlewareSpecStripPrefix
 /// This middleware removes the matching prefixes from the URL path.
 /// More info: https://doc.traefik.io/traefik/v3.8/middlewares/http/stripprefixregex/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecStripPrefixRegex
 {
@@ -1647,7 +1647,7 @@ public partial class V1alpha1MiddlewareSpecStripPrefixRegex
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequestServiceHealthCheck
 {
@@ -1718,7 +1718,7 @@ public partial class V1alpha1MiddlewareSpecTapRequestServiceHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecTapRequestServiceKindEnum>))]
 public enum V1alpha1MiddlewareSpecTapRequestServiceKindEnum
 {
@@ -1729,7 +1729,7 @@ public enum V1alpha1MiddlewareSpecTapRequestServiceKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequestServiceMiddlewares
 {
@@ -1743,7 +1743,7 @@ public partial class V1alpha1MiddlewareSpecTapRequestServiceMiddlewares
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequestServicePassiveHealthCheck
 {
@@ -1757,7 +1757,7 @@ public partial class V1alpha1MiddlewareSpecTapRequestServicePassiveHealthCheck
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequestServiceResponseForwarding
 {
@@ -1776,7 +1776,7 @@ public partial class V1alpha1MiddlewareSpecTapRequestServiceResponseForwarding
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecTapRequestServiceStickyCookieSameSiteEnum>))]
 public enum V1alpha1MiddlewareSpecTapRequestServiceStickyCookieSameSiteEnum
 {
@@ -1795,7 +1795,7 @@ public enum V1alpha1MiddlewareSpecTapRequestServiceStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequestServiceStickyCookie
 {
@@ -1846,7 +1846,7 @@ public partial class V1alpha1MiddlewareSpecTapRequestServiceStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequestServiceSticky
 {
@@ -1860,7 +1860,7 @@ public partial class V1alpha1MiddlewareSpecTapRequestServiceSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecTapRequestServiceStrategyEnum>))]
 public enum V1alpha1MiddlewareSpecTapRequestServiceStrategyEnum
 {
@@ -1877,7 +1877,7 @@ public enum V1alpha1MiddlewareSpecTapRequestServiceStrategyEnum
 }
 
 /// <summary>Service defines the reference to a Kubernetes Service the records are sent to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequestService
 {
@@ -1986,7 +1986,7 @@ public partial class V1alpha1MiddlewareSpecTapRequestService
 /// Request defines where and how the request records are sent.
 /// When omitted, requests are not recorded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapRequest
 {
@@ -2039,7 +2039,7 @@ public partial class V1alpha1MiddlewareSpecTapRequest
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponseServiceHealthCheck
 {
@@ -2110,7 +2110,7 @@ public partial class V1alpha1MiddlewareSpecTapResponseServiceHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecTapResponseServiceKindEnum>))]
 public enum V1alpha1MiddlewareSpecTapResponseServiceKindEnum
 {
@@ -2121,7 +2121,7 @@ public enum V1alpha1MiddlewareSpecTapResponseServiceKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponseServiceMiddlewares
 {
@@ -2135,7 +2135,7 @@ public partial class V1alpha1MiddlewareSpecTapResponseServiceMiddlewares
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponseServicePassiveHealthCheck
 {
@@ -2149,7 +2149,7 @@ public partial class V1alpha1MiddlewareSpecTapResponseServicePassiveHealthCheck
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponseServiceResponseForwarding
 {
@@ -2168,7 +2168,7 @@ public partial class V1alpha1MiddlewareSpecTapResponseServiceResponseForwarding
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecTapResponseServiceStickyCookieSameSiteEnum>))]
 public enum V1alpha1MiddlewareSpecTapResponseServiceStickyCookieSameSiteEnum
 {
@@ -2187,7 +2187,7 @@ public enum V1alpha1MiddlewareSpecTapResponseServiceStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponseServiceStickyCookie
 {
@@ -2238,7 +2238,7 @@ public partial class V1alpha1MiddlewareSpecTapResponseServiceStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponseServiceSticky
 {
@@ -2252,7 +2252,7 @@ public partial class V1alpha1MiddlewareSpecTapResponseServiceSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MiddlewareSpecTapResponseServiceStrategyEnum>))]
 public enum V1alpha1MiddlewareSpecTapResponseServiceStrategyEnum
 {
@@ -2269,7 +2269,7 @@ public enum V1alpha1MiddlewareSpecTapResponseServiceStrategyEnum
 }
 
 /// <summary>Service defines the reference to a Kubernetes Service the records are sent to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponseService
 {
@@ -2378,7 +2378,7 @@ public partial class V1alpha1MiddlewareSpecTapResponseService
 /// Response defines where and how the response records are sent.
 /// When omitted, responses are not recorded.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTapResponse
 {
@@ -2442,7 +2442,7 @@ public partial class V1alpha1MiddlewareSpecTapResponse
 /// This middleware sends a copy of the requests and responses going through it to Kubernetes Services.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/tap/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpecTap
 {
@@ -2462,7 +2462,7 @@ public partial class V1alpha1MiddlewareSpecTap
 }
 
 /// <summary>MiddlewareSpec defines the desired state of a Middleware.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareSpec
 {
@@ -2673,7 +2673,7 @@ public partial class V1alpha1MiddlewareSpec
 /// Middleware is the CRD implementation of a Traefik Middleware.
 /// More info: https://doc.traefik.io/traefik/v3.8/reference/routing-configuration/http/middlewares/overview/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Middleware : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MiddlewareSpec>

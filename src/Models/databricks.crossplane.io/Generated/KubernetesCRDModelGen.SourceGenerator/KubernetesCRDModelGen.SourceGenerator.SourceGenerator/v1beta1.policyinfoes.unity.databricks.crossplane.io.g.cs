@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.unity.databricks.crossplane.io;
 /// <summary>PolicyInfo is the Schema for the PolicyInfos API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PolicyInfoList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PolicyInfo>
@@ -46,7 +46,7 @@ public partial class V1beta1PolicyInfoList : IKubernetesObject<V1ListMeta>, IIte
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyInfoSpecDeletionPolicyEnum>))]
 public enum V1beta1PolicyInfoSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1PolicyInfoSpecDeletionPolicyEnum
 }
 
 /// <summary>Extracts the value of a column-level tag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue
 {
@@ -71,7 +71,7 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgE
 }
 
 /// <summary>The governed tag value, when the policy references a specific value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue
 {
@@ -81,7 +81,7 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgE
 }
 
 /// <summary>An expression that introspects tags at query time</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospection
 {
@@ -99,7 +99,7 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgE
 /// (e.g., tag introspection) so new variants can be added without extending the
 /// FunctionArgument oneof
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpression
 {
@@ -108,7 +108,7 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgE
     public V1beta1PolicyInfoSpecForProviderColumnMaskUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsing
 {
@@ -134,7 +134,7 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMaskUsing
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderColumnMask
 {
@@ -168,7 +168,7 @@ public partial class V1beta1PolicyInfoSpecForProviderColumnMask
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderDeny
 {
@@ -187,7 +187,7 @@ public partial class V1beta1PolicyInfoSpecForProviderDeny
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderGrant
 {
@@ -201,7 +201,7 @@ public partial class V1beta1PolicyInfoSpecForProviderGrant
     public IList<string>? Privileges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderMatchColumns
 {
@@ -215,7 +215,7 @@ public partial class V1beta1PolicyInfoSpecForProviderMatchColumns
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderProviderConfig
 {
@@ -225,7 +225,7 @@ public partial class V1beta1PolicyInfoSpecForProviderProviderConfig
 }
 
 /// <summary>Extracts the value of a column-level tag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue
 {
@@ -239,7 +239,7 @@ public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgEx
 }
 
 /// <summary>The governed tag value, when the policy references a specific value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue
 {
@@ -249,7 +249,7 @@ public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgEx
 }
 
 /// <summary>An expression that introspects tags at query time</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospection
 {
@@ -267,7 +267,7 @@ public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgEx
 /// (e.g., tag introspection) so new variants can be added without extending the
 /// FunctionArgument oneof
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpression
 {
@@ -276,7 +276,7 @@ public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgEx
     public V1beta1PolicyInfoSpecForProviderRowFilterUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsing
 {
@@ -302,7 +302,7 @@ public partial class V1beta1PolicyInfoSpecForProviderRowFilterUsing
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProviderRowFilter
 {
@@ -323,7 +323,7 @@ public partial class V1beta1PolicyInfoSpecForProviderRowFilter
     public IList<V1beta1PolicyInfoSpecForProviderRowFilterUsing>? Using { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecForProvider
 {
@@ -425,7 +425,7 @@ public partial class V1beta1PolicyInfoSpecForProvider
 }
 
 /// <summary>Extracts the value of a column-level tag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue
 {
@@ -439,7 +439,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArg
 }
 
 /// <summary>The governed tag value, when the policy references a specific value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue
 {
@@ -449,7 +449,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArg
 }
 
 /// <summary>An expression that introspects tags at query time</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospection
 {
@@ -467,7 +467,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArg
 /// (e.g., tag introspection) so new variants can be added without extending the
 /// FunctionArgument oneof
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpression
 {
@@ -476,7 +476,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArg
     public V1beta1PolicyInfoSpecInitProviderColumnMaskUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsing
 {
@@ -502,7 +502,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMaskUsing
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderColumnMask
 {
@@ -536,7 +536,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderColumnMask
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderDeny
 {
@@ -555,7 +555,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderDeny
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderGrant
 {
@@ -569,7 +569,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderGrant
     public IList<string>? Privileges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderMatchColumns
 {
@@ -583,7 +583,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderMatchColumns
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderProviderConfig
 {
@@ -593,7 +593,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderProviderConfig
 }
 
 /// <summary>Extracts the value of a column-level tag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue
 {
@@ -607,7 +607,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgE
 }
 
 /// <summary>The governed tag value, when the policy references a specific value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue
 {
@@ -617,7 +617,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgE
 }
 
 /// <summary>An expression that introspects tags at query time</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospection
 {
@@ -635,7 +635,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgE
 /// (e.g., tag introspection) so new variants can be added without extending the
 /// FunctionArgument oneof
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpression
 {
@@ -644,7 +644,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgE
     public V1beta1PolicyInfoSpecInitProviderRowFilterUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsing
 {
@@ -670,7 +670,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderRowFilterUsing
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProviderRowFilter
 {
@@ -703,7 +703,7 @@ public partial class V1beta1PolicyInfoSpecInitProviderRowFilter
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecInitProvider
 {
@@ -808,7 +808,7 @@ public partial class V1beta1PolicyInfoSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyInfoSpecManagementPoliciesEnum>))]
 public enum V1beta1PolicyInfoSpecManagementPoliciesEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta1PolicyInfoSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyInfoSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PolicyInfoSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -848,7 +848,7 @@ public enum V1beta1PolicyInfoSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyInfoSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PolicyInfoSpecProviderConfigRefPolicyResolveEnum
 {
@@ -859,7 +859,7 @@ public enum V1beta1PolicyInfoSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecProviderConfigRefPolicy
 {
@@ -887,7 +887,7 @@ public partial class V1beta1PolicyInfoSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecProviderConfigRef
 {
@@ -906,7 +906,7 @@ public partial class V1beta1PolicyInfoSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpecWriteConnectionSecretToRef
 {
@@ -920,7 +920,7 @@ public partial class V1beta1PolicyInfoSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PolicyInfoSpec defines the desired state of PolicyInfo</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoSpec
 {
@@ -988,7 +988,7 @@ public partial class V1beta1PolicyInfoSpec
 }
 
 /// <summary>Extracts the value of a column-level tag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue
 {
@@ -1002,7 +1002,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArg
 }
 
 /// <summary>The governed tag value, when the policy references a specific value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue
 {
@@ -1012,7 +1012,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArg
 }
 
 /// <summary>An expression that introspects tags at query time</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospection
 {
@@ -1030,7 +1030,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArg
 /// (e.g., tag introspection) so new variants can be added without extending the
 /// FunctionArgument oneof
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpression
 {
@@ -1039,7 +1039,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArg
     public V1beta1PolicyInfoStatusAtProviderColumnMaskUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsing
 {
@@ -1065,7 +1065,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMaskUsing
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderColumnMask
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderColumnMask
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderDeny
 {
@@ -1113,7 +1113,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderDeny
     public IList<string>? Privileges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderGovernedTags
 {
@@ -1131,7 +1131,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderGovernedTags
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderGrant
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderGrant
     public IList<string>? Privileges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderMatchColumns
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderMatchColumns
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderProviderConfig
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderProviderConfig
 }
 
 /// <summary>Extracts the value of a column-level tag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue
 {
@@ -1183,7 +1183,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgE
 }
 
 /// <summary>The governed tag value, when the policy references a specific value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgE
 }
 
 /// <summary>An expression that introspects tags at query time</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospection
 {
@@ -1211,7 +1211,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgE
 /// (e.g., tag introspection) so new variants can be added without extending the
 /// FunctionArgument oneof
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpression
 {
@@ -1220,7 +1220,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgE
     public V1beta1PolicyInfoStatusAtProviderRowFilterUsingFunctionArgExpressionTagIntrospection? TagIntrospection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsing
 {
@@ -1246,7 +1246,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderRowFilterUsing
 /// Required on create and optional on update. When specified on update,
 /// the new options will replace the existing options as a whole
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProviderRowFilter
 {
@@ -1267,7 +1267,7 @@ public partial class V1beta1PolicyInfoStatusAtProviderRowFilter
     public IList<V1beta1PolicyInfoStatusAtProviderRowFilterUsing>? Using { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusAtProvider
 {
@@ -1393,7 +1393,7 @@ public partial class V1beta1PolicyInfoStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatusConditions
 {
@@ -1436,7 +1436,7 @@ public partial class V1beta1PolicyInfoStatusConditions
 }
 
 /// <summary>PolicyInfoStatus defines the observed state of PolicyInfo.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyInfoStatus
 {
@@ -1466,7 +1466,7 @@ public partial class V1beta1PolicyInfoStatus
 }
 
 /// <summary>PolicyInfo is the Schema for the PolicyInfos API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PolicyInfo : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PolicyInfoSpec>, IStatus<V1beta1PolicyInfoStatus?>

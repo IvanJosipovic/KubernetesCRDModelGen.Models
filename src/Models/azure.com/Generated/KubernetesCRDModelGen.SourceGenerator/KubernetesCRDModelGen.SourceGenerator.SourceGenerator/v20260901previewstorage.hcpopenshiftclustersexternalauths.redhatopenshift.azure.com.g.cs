@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.redhatopenshift.azure.com;
 /// - Generated from: /redhatopenshift/resource-manager/Microsoft.RedHatOpenShift/hcpopenshiftclusters/preview/2026-09-01-preview/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RedHatOpenShift/hcpOpenShiftClusters/{hcpOpenShiftClusterName}/externalAuths/{externalAuthName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthList : IKubernetesObject<V1ListMeta>, IItems<V20260901previewstorageHcpOpenShiftClustersExternalAuth>
@@ -47,7 +47,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthList
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecOperatorSpecConfigMapExpressions
 {
@@ -88,7 +88,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecOperatorSpecSecretExpressions
 {
@@ -128,7 +128,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// Storage version of v20260901preview.HcpOpenShiftClustersExternalAuthOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecOperatorSpec
 {
@@ -151,7 +151,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a redhatopenshift.azure.com/HcpOpenShiftCluster resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecOwner
 {
@@ -175,7 +175,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// For example - &apos; &quot;example&quot; &apos; and &apos; &quot;exampleOne&quot;, &quot;exampleTwo&quot;,
 /// &quot;exampleThree&quot; &apos; are valid claim values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClaimMappingsGroups
 {
@@ -200,7 +200,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// from the claims
 /// in a JWT token issued by the identity provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClaimMappingsUsername
 {
@@ -226,7 +226,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// External Auth claim mappings profile.
 /// At a minimum username or groups must be defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClaimMappings
 {
@@ -267,7 +267,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// Storage version of v20260901preview.TokenRequiredClaim
 /// Token required claim validation rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClaimValidationRulesRequiredClaim
 {
@@ -289,7 +289,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// Storage version of v20260901preview.TokenClaimValidationRule
 /// External Auth claim validation rule
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClaimValidationRules
 {
@@ -315,7 +315,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// Storage version of v20260901preview.ExternalAuthClaimProfile
 /// External Auth claim profile
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClaim
 {
@@ -343,7 +343,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// External Auth component profile
 /// Must have unique namespace/name pairs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClientsComponent
 {
@@ -367,7 +367,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// This configures how on-cluster, platform clients should request tokens from the identity
 /// provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesClients
 {
@@ -403,7 +403,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// how tokens issued from
 /// the identity provider are evaluated by the Kubernetes API server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecPropertiesIssuer
 {
@@ -428,7 +428,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 /// Storage version of v20260901preview.ExternalAuthProperties
 /// External Auth profile
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpecProperties
 {
@@ -461,7 +461,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 }
 
 /// <summary>Storage version of v20260901preview.HcpOpenShiftClustersExternalAuth_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 {
@@ -506,7 +506,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusConditions
 {
@@ -563,7 +563,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// For example - &apos; &quot;example&quot; &apos; and &apos; &quot;exampleOne&quot;, &quot;exampleTwo&quot;,
 /// &quot;exampleThree&quot; &apos; are valid claim values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClaimMappingsGroups
 {
@@ -588,7 +588,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// from the claims
 /// in a JWT token issued by the identity provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClaimMappingsUsername
 {
@@ -614,7 +614,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// External Auth claim mappings profile.
 /// At a minimum username or groups must be defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClaimMappings
 {
@@ -655,7 +655,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// Storage version of v20260901preview.TokenRequiredClaim_STATUS
 /// Token required claim validation rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClaimValidationRulesRequiredClaim
 {
@@ -677,7 +677,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// Storage version of v20260901preview.TokenClaimValidationRule_STATUS
 /// External Auth claim validation rule
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClaimValidationRules
 {
@@ -703,7 +703,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// Storage version of v20260901preview.ExternalAuthClaimProfile_STATUS
 /// External Auth claim profile
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClaim
 {
@@ -731,7 +731,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// External Auth component profile
 /// Must have unique namespace/name pairs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClientsComponent
 {
@@ -755,7 +755,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// This configures how on-cluster, platform clients should request tokens from the identity
 /// provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesClients
 {
@@ -791,7 +791,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// how tokens issued from
 /// the identity provider are evaluated by the Kubernetes API server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesIssuer
 {
@@ -816,7 +816,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// Storage version of v20260901preview.Condition_STATUS
 /// Condition represents an observation of a resource&apos;s state.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesStatusConditions
 {
@@ -847,7 +847,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// Storage version of v20260901preview.ResourceStatus_STATUS
 /// ResourceStatus represents the observed status of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusPropertiesStatus
 {
@@ -866,7 +866,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// Storage version of v20260901preview.ExternalAuthProperties_STATUS
 /// External Auth profile
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusProperties
 {
@@ -912,7 +912,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// Storage version of v20260901preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatusSystemData
 {
@@ -943,7 +943,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 }
 
 /// <summary>Storage version of v20260901preview.HcpOpenShiftClustersExternalAuth_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStatus
 {
@@ -987,7 +987,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuthStat
 /// - Generated from: /redhatopenshift/resource-manager/Microsoft.RedHatOpenShift/hcpopenshiftclusters/preview/2026-09-01-preview/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RedHatOpenShift/hcpOpenShiftClusters/{hcpOpenShiftClusterName}/externalAuths/{externalAuthName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20260901previewstorageHcpOpenShiftClustersExternalAuth : IKubernetesObject<V1ObjectMeta>, ISpec<V20260901previewstorageHcpOpenShiftClustersExternalAuthSpec?>, IStatus<V20260901previewstorageHcpOpenShiftClustersExternalAuthStatus?>
