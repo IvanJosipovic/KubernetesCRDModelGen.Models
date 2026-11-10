@@ -129,7 +129,7 @@ class ProjectGenerator
                 </ItemGroup>
 
                 <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
-                    <PackageReference Include="System.Text.Json" Version="11.0.0-rc.3.26522.148" />
+                    <PackageReference Include="System.Text.Json" Version="11.0.0" />
                 </ItemGroup>
             </Project>
             """;
