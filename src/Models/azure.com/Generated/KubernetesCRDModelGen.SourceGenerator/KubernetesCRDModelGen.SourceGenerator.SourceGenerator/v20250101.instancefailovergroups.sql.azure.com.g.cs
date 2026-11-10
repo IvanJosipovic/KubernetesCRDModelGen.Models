@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.sql.azure.com;
 /// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2025-01-01/instanceFailoverGroups.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/instanceFailoverGroups/{failoverGroupName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250101InstanceFailoverGroupList : IKubernetesObject<V1ListMeta>, IItems<V20250101InstanceFailoverGroup>
@@ -42,7 +42,7 @@ public partial class V20250101InstanceFailoverGroupList : IKubernetesObject<V1Li
 }
 
 /// <summary>PartnerManagedInstanceReference: Id of Partner Managed Instance in pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecManagedInstancePairsPartnerManagedInstanceReference
 {
@@ -68,7 +68,7 @@ public partial class V20250101InstanceFailoverGroupSpecManagedInstancePairsPartn
 }
 
 /// <summary>PrimaryManagedInstanceReference: Id of Primary Managed Instance in pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecManagedInstancePairsPrimaryManagedInstanceReference
 {
@@ -94,7 +94,7 @@ public partial class V20250101InstanceFailoverGroupSpecManagedInstancePairsPrima
 }
 
 /// <summary>Pairs of Managed Instances in the failover group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecManagedInstancePairs
 {
@@ -112,7 +112,7 @@ public partial class V20250101InstanceFailoverGroupSpecManagedInstancePairs
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecOperatorSpecConfigMapExpressions
 {
@@ -153,7 +153,7 @@ public partial class V20250101InstanceFailoverGroupSpecOperatorSpecConfigMapExpr
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecOperatorSpecSecretExpressions
 {
@@ -193,7 +193,7 @@ public partial class V20250101InstanceFailoverGroupSpecOperatorSpecSecretExpress
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecOperatorSpec
 {
@@ -211,7 +211,7 @@ public partial class V20250101InstanceFailoverGroupSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecOwner
 {
@@ -224,7 +224,7 @@ public partial class V20250101InstanceFailoverGroupSpecOwner
 }
 
 /// <summary>Partner region information for the failover group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecPartnerRegions
 {
@@ -234,7 +234,7 @@ public partial class V20250101InstanceFailoverGroupSpecPartnerRegions
 }
 
 /// <summary>FailoverPolicy: Failover policy of the read-only endpoint for the failover group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101InstanceFailoverGroupSpecReadOnlyEndpointFailoverPolicyEnum>))]
 public enum V20250101InstanceFailoverGroupSpecReadOnlyEndpointFailoverPolicyEnum
 {
@@ -245,7 +245,7 @@ public enum V20250101InstanceFailoverGroupSpecReadOnlyEndpointFailoverPolicyEnum
 }
 
 /// <summary>ReadOnlyEndpoint: Read-only endpoint of the failover group instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecReadOnlyEndpoint
 {
@@ -258,7 +258,7 @@ public partial class V20250101InstanceFailoverGroupSpecReadOnlyEndpoint
 /// FailoverPolicy: Failover policy of the read-write endpoint for the failover group. If failoverPolicy is Automatic then
 /// failoverWithDataLossGracePeriodMinutes is required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101InstanceFailoverGroupSpecReadWriteEndpointFailoverPolicyEnum>))]
 public enum V20250101InstanceFailoverGroupSpecReadWriteEndpointFailoverPolicyEnum
 {
@@ -269,7 +269,7 @@ public enum V20250101InstanceFailoverGroupSpecReadWriteEndpointFailoverPolicyEnu
 }
 
 /// <summary>ReadWriteEndpoint: Read-write endpoint of the failover group instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpecReadWriteEndpoint
 {
@@ -289,7 +289,7 @@ public partial class V20250101InstanceFailoverGroupSpecReadWriteEndpoint
 }
 
 /// <summary>SecondaryType: Type of the geo-secondary instance. Set &apos;Standby&apos; if the instance is used as a DR option only.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101InstanceFailoverGroupSpecSecondaryTypeEnum>))]
 public enum V20250101InstanceFailoverGroupSpecSecondaryTypeEnum
 {
@@ -299,7 +299,7 @@ public enum V20250101InstanceFailoverGroupSpecSecondaryTypeEnum
     Standby
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupSpec
 {
@@ -347,7 +347,7 @@ public partial class V20250101InstanceFailoverGroupSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupStatusConditions
 {
@@ -393,7 +393,7 @@ public partial class V20250101InstanceFailoverGroupStatusConditions
 }
 
 /// <summary>Pairs of Managed Instances in the failover group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupStatusManagedInstancePairs
 {
@@ -407,7 +407,7 @@ public partial class V20250101InstanceFailoverGroupStatusManagedInstancePairs
 }
 
 /// <summary>Partner region information for the failover group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupStatusPartnerRegions
 {
@@ -421,7 +421,7 @@ public partial class V20250101InstanceFailoverGroupStatusPartnerRegions
 }
 
 /// <summary>ReadOnlyEndpoint: Read-only endpoint of the failover group instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupStatusReadOnlyEndpoint
 {
@@ -431,7 +431,7 @@ public partial class V20250101InstanceFailoverGroupStatusReadOnlyEndpoint
 }
 
 /// <summary>ReadWriteEndpoint: Read-write endpoint of the failover group instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupStatusReadWriteEndpoint
 {
@@ -451,7 +451,7 @@ public partial class V20250101InstanceFailoverGroupStatusReadWriteEndpoint
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupStatusSystemData
 {
@@ -480,7 +480,7 @@ public partial class V20250101InstanceFailoverGroupStatusSystemData
     public string? LastModifiedByType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101InstanceFailoverGroupStatus
 {
@@ -541,7 +541,7 @@ public partial class V20250101InstanceFailoverGroupStatus
 /// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2025-01-01/instanceFailoverGroups.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/locations/{locationName}/instanceFailoverGroups/{failoverGroupName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250101InstanceFailoverGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V20250101InstanceFailoverGroupSpec?>, IStatus<V20250101InstanceFailoverGroupStatus?>

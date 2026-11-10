@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>NotebookInstanceLifecycleConfig is the Schema for the NotebookInstanceLifecycleConfigs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NotebookInstanceLifecycleConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1NotebookInstanceLifecycleConfig>
@@ -55,7 +55,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigList : IKubernetesOb
 /// For information about notebook instance lifestyle configurations, see Step
 /// 2.1: (Optional) Customize a Notebook Instance (https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-lifecycle-config.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceLifecycleConfigSpecOnCreate
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigSpecOnCreate
 /// For information about notebook instance lifestyle configurations, see Step
 /// 2.1: (Optional) Customize a Notebook Instance (https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-lifecycle-config.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceLifecycleConfigSpecOnStart
 {
@@ -104,7 +104,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigSpecOnStart
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceLifecycleConfigSpecTags
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigSpecTags
 }
 
 /// <summary>NotebookInstanceLifecycleConfigSpec defines the desired state of NotebookInstanceLifecycleConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceLifecycleConfigSpec
 {
@@ -158,7 +158,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceLifecycleConfigStatusAckResourceMetadata
 {
@@ -195,7 +195,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigStatusAckResourceMet
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceLifecycleConfigStatusConditions
 {
@@ -206,6 +206,14 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigStatusConditions
     /// <summary>A human readable message indicating details about the transition.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
+
+    /// <summary>
+    /// observedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration
+    /// is 9, the condition is out of date with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
 
     /// <summary>The reason for the condition&apos;s last transition.</summary>
     [JsonPropertyName("reason")]
@@ -221,7 +229,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigStatusConditions
 }
 
 /// <summary>NotebookInstanceLifecycleConfigStatus defines the observed state of NotebookInstanceLifecycleConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NotebookInstanceLifecycleConfigStatus
 {
@@ -252,7 +260,7 @@ public partial class V1alpha1NotebookInstanceLifecycleConfigStatus
 }
 
 /// <summary>NotebookInstanceLifecycleConfig is the Schema for the NotebookInstanceLifecycleConfigs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NotebookInstanceLifecycleConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1NotebookInstanceLifecycleConfigSpec?>, IStatus<V1alpha1NotebookInstanceLifecycleConfigStatus?>

@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.web.azure.com;
 /// - Generated from: /web/resource-manager/Microsoft.Web/AppService/stable/2026-07-15/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/serverfarms/{name}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20260715ServerFarmList : IKubernetesObject<V1ListMeta>, IItems<V20260715ServerFarm>
@@ -42,7 +42,7 @@ public partial class V20260715ServerFarmList : IKubernetesObject<V1ListMeta>, II
 }
 
 /// <summary>ExtendedLocation: Extended Location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecExtendedLocation
 {
@@ -52,7 +52,7 @@ public partial class V20260715ServerFarmSpecExtendedLocation
 }
 
 /// <summary>Reference: Resource ID of the App Service Environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecHostingEnvironmentProfileReference
 {
@@ -78,7 +78,7 @@ public partial class V20260715ServerFarmSpecHostingEnvironmentProfileReference
 }
 
 /// <summary>HostingEnvironmentProfile: Specification for the App Service Environment to use for the App Service plan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecHostingEnvironmentProfile
 {
@@ -88,7 +88,7 @@ public partial class V20260715ServerFarmSpecHostingEnvironmentProfile
 }
 
 /// <summary>Type: Type of managed service identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20260715ServerFarmSpecIdentityTypeEnum>))]
 public enum V20260715ServerFarmSpecIdentityTypeEnum
 {
@@ -103,7 +103,7 @@ public enum V20260715ServerFarmSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecIdentityUserAssignedIdentitiesReference
 {
@@ -129,7 +129,7 @@ public partial class V20260715ServerFarmSpecIdentityUserAssignedIdentitiesRefere
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecIdentityUserAssignedIdentities
 {
@@ -139,7 +139,7 @@ public partial class V20260715ServerFarmSpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: Managed service identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecIdentity
 {
@@ -157,7 +157,7 @@ public partial class V20260715ServerFarmSpecIdentity
 }
 
 /// <summary>Type: Type of the install script.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20260715ServerFarmSpecInstallScriptsSourceTypeEnum>))]
 public enum V20260715ServerFarmSpecInstallScriptsSourceTypeEnum
 {
@@ -168,7 +168,7 @@ public enum V20260715ServerFarmSpecInstallScriptsSourceTypeEnum
 }
 
 /// <summary>Source: Source of the install script.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecInstallScriptsSource
 {
@@ -182,7 +182,7 @@ public partial class V20260715ServerFarmSpecInstallScriptsSource
 }
 
 /// <summary>Server farm install script configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecInstallScripts
 {
@@ -196,7 +196,7 @@ public partial class V20260715ServerFarmSpecInstallScripts
 }
 
 /// <summary>Reference: Resource ID of the Kubernetes Environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecKubeEnvironmentProfileReference
 {
@@ -222,7 +222,7 @@ public partial class V20260715ServerFarmSpecKubeEnvironmentProfileReference
 }
 
 /// <summary>KubeEnvironmentProfile: Specification for the Kubernetes Environment to use for the App Service plan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecKubeEnvironmentProfile
 {
@@ -236,7 +236,7 @@ public partial class V20260715ServerFarmSpecKubeEnvironmentProfile
 /// Integration. This must be of the form
 /// /subscriptions/{subscriptionName}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecNetworkVirtualNetworkSubnetReference
 {
@@ -262,7 +262,7 @@ public partial class V20260715ServerFarmSpecNetworkVirtualNetworkSubnetReference
 }
 
 /// <summary>Network: All network settings for the server farm.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecNetwork
 {
@@ -280,7 +280,7 @@ public partial class V20260715ServerFarmSpecNetwork
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecOperatorSpecConfigMapExpressions
 {
@@ -321,7 +321,7 @@ public partial class V20260715ServerFarmSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecOperatorSpecSecretExpressions
 {
@@ -361,7 +361,7 @@ public partial class V20260715ServerFarmSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecOperatorSpec
 {
@@ -379,7 +379,7 @@ public partial class V20260715ServerFarmSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecOwner
 {
@@ -392,7 +392,7 @@ public partial class V20260715ServerFarmSpecOwner
 }
 
 /// <summary>IdentityType: Type of managed service identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20260715ServerFarmSpecPlanDefaultIdentityIdentityTypeEnum>))]
 public enum V20260715ServerFarmSpecPlanDefaultIdentityIdentityTypeEnum
 {
@@ -407,7 +407,7 @@ public enum V20260715ServerFarmSpecPlanDefaultIdentityIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecPlanDefaultIdentityUserAssignedIdentityResourceReference
 {
@@ -433,7 +433,7 @@ public partial class V20260715ServerFarmSpecPlanDefaultIdentityUserAssignedIdent
 }
 
 /// <summary>PlanDefaultIdentity: Identity to use by platform for various features and integrations using managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecPlanDefaultIdentity
 {
@@ -447,7 +447,7 @@ public partial class V20260715ServerFarmSpecPlanDefaultIdentity
 }
 
 /// <summary>KeyVaultSecretReference: Key vault reference to the value that will be placed in the registry location</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecRegistryAdaptersKeyVaultSecretReference
 {
@@ -461,7 +461,7 @@ public partial class V20260715ServerFarmSpecRegistryAdaptersKeyVaultSecretRefere
 }
 
 /// <summary>Type: Type of the registry adapter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20260715ServerFarmSpecRegistryAdaptersTypeEnum>))]
 public enum V20260715ServerFarmSpecRegistryAdaptersTypeEnum
 {
@@ -480,7 +480,7 @@ public enum V20260715ServerFarmSpecRegistryAdaptersTypeEnum
 }
 
 /// <summary>Server farm registry adapter configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecRegistryAdapters
 {
@@ -498,7 +498,7 @@ public partial class V20260715ServerFarmSpecRegistryAdapters
 }
 
 /// <summary>Describes the capabilities/features allowed for a specific SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecSkuCapabilities
 {
@@ -516,7 +516,7 @@ public partial class V20260715ServerFarmSpecSkuCapabilities
 }
 
 /// <summary>SkuCapacity: Min, max, and default scale values of the SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecSkuSkuCapacity
 {
@@ -542,7 +542,7 @@ public partial class V20260715ServerFarmSpecSkuSkuCapacity
 }
 
 /// <summary>Sku: Description of a SKU for a scalable resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecSku
 {
@@ -580,7 +580,7 @@ public partial class V20260715ServerFarmSpecSku
 }
 
 /// <summary>CredentialsKeyVaultReference: KV reference to the credentials to connect to the share.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecStorageMountsCredentialsKeyVaultReference
 {
@@ -594,7 +594,7 @@ public partial class V20260715ServerFarmSpecStorageMountsCredentialsKeyVaultRefe
 }
 
 /// <summary>Type: Type of the storage mount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20260715ServerFarmSpecStorageMountsTypeEnum>))]
 public enum V20260715ServerFarmSpecStorageMountsTypeEnum
 {
@@ -607,7 +607,7 @@ public enum V20260715ServerFarmSpecStorageMountsTypeEnum
 }
 
 /// <summary>Server farm storage mount configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpecStorageMounts
 {
@@ -632,7 +632,7 @@ public partial class V20260715ServerFarmSpecStorageMounts
     public V20260715ServerFarmSpecStorageMountsTypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmSpec
 {
@@ -796,7 +796,7 @@ public partial class V20260715ServerFarmSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusConditions
 {
@@ -842,7 +842,7 @@ public partial class V20260715ServerFarmStatusConditions
 }
 
 /// <summary>ExtendedLocation: Extended Location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusExtendedLocation
 {
@@ -856,7 +856,7 @@ public partial class V20260715ServerFarmStatusExtendedLocation
 }
 
 /// <summary>HostingEnvironmentProfile: Specification for the App Service Environment to use for the App Service plan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusHostingEnvironmentProfile
 {
@@ -874,7 +874,7 @@ public partial class V20260715ServerFarmStatusHostingEnvironmentProfile
 }
 
 /// <summary>User Assigned identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusIdentityUserAssignedIdentities
 {
@@ -888,7 +888,7 @@ public partial class V20260715ServerFarmStatusIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: Managed service identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusIdentity
 {
@@ -914,7 +914,7 @@ public partial class V20260715ServerFarmStatusIdentity
 }
 
 /// <summary>Source: Source of the install script.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusInstallScriptsSource
 {
@@ -928,7 +928,7 @@ public partial class V20260715ServerFarmStatusInstallScriptsSource
 }
 
 /// <summary>Server farm install script configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusInstallScripts
 {
@@ -942,7 +942,7 @@ public partial class V20260715ServerFarmStatusInstallScripts
 }
 
 /// <summary>KubeEnvironmentProfile: Specification for the Kubernetes Environment to use for the App Service plan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusKubeEnvironmentProfile
 {
@@ -960,7 +960,7 @@ public partial class V20260715ServerFarmStatusKubeEnvironmentProfile
 }
 
 /// <summary>Network: All network settings for the server farm.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusNetwork
 {
@@ -974,7 +974,7 @@ public partial class V20260715ServerFarmStatusNetwork
 }
 
 /// <summary>PlanDefaultIdentity: Identity to use by platform for various features and integrations using managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusPlanDefaultIdentity
 {
@@ -987,7 +987,7 @@ public partial class V20260715ServerFarmStatusPlanDefaultIdentity
 }
 
 /// <summary>KeyVaultSecretReference: Key vault reference to the value that will be placed in the registry location</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusRegistryAdaptersKeyVaultSecretReference
 {
@@ -1001,7 +1001,7 @@ public partial class V20260715ServerFarmStatusRegistryAdaptersKeyVaultSecretRefe
 }
 
 /// <summary>Server farm registry adapter configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusRegistryAdapters
 {
@@ -1019,7 +1019,7 @@ public partial class V20260715ServerFarmStatusRegistryAdapters
 }
 
 /// <summary>Describes the capabilities/features allowed for a specific SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusSkuCapabilities
 {
@@ -1037,7 +1037,7 @@ public partial class V20260715ServerFarmStatusSkuCapabilities
 }
 
 /// <summary>SkuCapacity: Min, max, and default scale values of the SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusSkuSkuCapacity
 {
@@ -1063,7 +1063,7 @@ public partial class V20260715ServerFarmStatusSkuSkuCapacity
 }
 
 /// <summary>Sku: Description of a SKU for a scalable resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusSku
 {
@@ -1101,7 +1101,7 @@ public partial class V20260715ServerFarmStatusSku
 }
 
 /// <summary>CredentialsKeyVaultReference: KV reference to the credentials to connect to the share.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusStorageMountsCredentialsKeyVaultReference
 {
@@ -1115,7 +1115,7 @@ public partial class V20260715ServerFarmStatusStorageMountsCredentialsKeyVaultRe
 }
 
 /// <summary>Server farm storage mount configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusStorageMounts
 {
@@ -1141,7 +1141,7 @@ public partial class V20260715ServerFarmStatusStorageMounts
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatusSystemData
 {
@@ -1170,7 +1170,7 @@ public partial class V20260715ServerFarmStatusSystemData
     public string? LastModifiedByType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260715ServerFarmStatus
 {
@@ -1371,7 +1371,7 @@ public partial class V20260715ServerFarmStatus
 /// - Generated from: /web/resource-manager/Microsoft.Web/AppService/stable/2026-07-15/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/serverfarms/{name}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20260715ServerFarm : IKubernetesObject<V1ObjectMeta>, ISpec<V20260715ServerFarmSpec?>, IStatus<V20260715ServerFarmStatus?>

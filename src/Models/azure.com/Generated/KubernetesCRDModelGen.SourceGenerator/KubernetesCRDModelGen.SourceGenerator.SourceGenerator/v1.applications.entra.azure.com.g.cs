@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.entra.azure.com;
 /// <summary>Application is an Entra Application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ApplicationList : IKubernetesObject<V1ListMeta>, IItems<V1Application>
@@ -38,7 +38,7 @@ public partial class V1ApplicationList : IKubernetesObject<V1ListMeta>, IItems<V
 }
 
 /// <summary>AppId: The application (client) ID of the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecOperatorSpecConfigmapsAppId
 {
@@ -63,7 +63,7 @@ public partial class V1ApplicationSpecOperatorSpecConfigmapsAppId
 }
 
 /// <summary>EntraID: The Entra ID (object ID) of the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecOperatorSpecConfigmapsEntraID
 {
@@ -88,7 +88,7 @@ public partial class V1ApplicationSpecOperatorSpecConfigmapsEntraID
 }
 
 /// <summary>ConfigMaps specifies any config maps that should be created by the operator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecOperatorSpecConfigmaps
 {
@@ -109,7 +109,7 @@ public partial class V1ApplicationSpecOperatorSpecConfigmaps
 /// If multiple applications with the same display name are found, the resource ready condition will show an error.
 /// If not specified, defaults to &quot;AdoptOrCreate&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ApplicationSpecOperatorSpecCreationModeEnum>))]
 public enum V1ApplicationSpecOperatorSpecCreationModeEnum
 {
@@ -122,7 +122,7 @@ public enum V1ApplicationSpecOperatorSpecCreationModeEnum
 }
 
 /// <summary>OperatorSpec: The operator specific configuration for the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecOperatorSpec
 {
@@ -143,7 +143,7 @@ public partial class V1ApplicationSpecOperatorSpec
 }
 
 /// <summary>PublicClient: Public client (desktop/mobile) platform configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecPublicClient
 {
@@ -153,7 +153,7 @@ public partial class V1ApplicationSpecPublicClient
 }
 
 /// <summary>SignInAudience: Specifies the Microsoft accounts that are supported for the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ApplicationSpecSignInAudienceEnum>))]
 public enum V1ApplicationSpecSignInAudienceEnum
 {
@@ -168,7 +168,7 @@ public enum V1ApplicationSpecSignInAudienceEnum
 }
 
 /// <summary>Spa: Single-page application platform configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecSpa
 {
@@ -178,7 +178,7 @@ public partial class V1ApplicationSpecSpa
 }
 
 /// <summary>ImplicitGrantSettings: Settings for implicit grant flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecWebImplicitGrantSettings
 {
@@ -192,7 +192,7 @@ public partial class V1ApplicationSpecWebImplicitGrantSettings
 }
 
 /// <summary>Web: Web platform configuration for the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpecWeb
 {
@@ -205,7 +205,7 @@ public partial class V1ApplicationSpecWeb
     public IList<string>? RedirectUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationSpec
 {
@@ -255,7 +255,7 @@ public partial class V1ApplicationSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationStatusConditions
 {
@@ -301,7 +301,7 @@ public partial class V1ApplicationStatusConditions
 }
 
 /// <summary>PublicClient: Public client (desktop/mobile) platform configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationStatusPublicClient
 {
@@ -311,7 +311,7 @@ public partial class V1ApplicationStatusPublicClient
 }
 
 /// <summary>SignInAudience: Specifies the Microsoft accounts that are supported for the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ApplicationStatusSignInAudienceEnum>))]
 public enum V1ApplicationStatusSignInAudienceEnum
 {
@@ -326,7 +326,7 @@ public enum V1ApplicationStatusSignInAudienceEnum
 }
 
 /// <summary>Spa: Single-page application platform configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationStatusSpa
 {
@@ -336,7 +336,7 @@ public partial class V1ApplicationStatusSpa
 }
 
 /// <summary>ImplicitGrantSettings: Settings for implicit grant flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationStatusWebImplicitGrantSettings
 {
@@ -350,7 +350,7 @@ public partial class V1ApplicationStatusWebImplicitGrantSettings
 }
 
 /// <summary>Web: Web platform configuration for the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationStatusWeb
 {
@@ -363,7 +363,7 @@ public partial class V1ApplicationStatusWeb
     public IList<string>? RedirectUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ApplicationStatus
 {
@@ -421,7 +421,7 @@ public partial class V1ApplicationStatus
 }
 
 /// <summary>Application is an Entra Application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Application : IKubernetesObject<V1ObjectMeta>, ISpec<V1ApplicationSpec?>, IStatus<V1ApplicationStatus?>

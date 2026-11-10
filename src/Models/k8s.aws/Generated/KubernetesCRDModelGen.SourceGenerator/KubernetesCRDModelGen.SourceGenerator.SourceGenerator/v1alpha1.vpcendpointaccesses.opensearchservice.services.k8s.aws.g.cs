@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.opensearchservice.services.k8s.aws;
 /// <summary>VPCEndpointAccess is the Schema for the VPCEndpointAccesses API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VPCEndpointAccessList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1VPCEndpointAccess>
@@ -41,7 +41,7 @@ public partial class V1alpha1VPCEndpointAccessList : IKubernetesObject<V1ListMet
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointAccessSpecDomainRefFrom
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1VPCEndpointAccessSpecDomainRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointAccessSpecDomainRef
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1VPCEndpointAccessSpecDomainRef
 /// removes the authorization itself, so that is rejected: delete this resource
 /// instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointAccessSpecServiceOptions
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1VPCEndpointAccessSpecServiceOptions
 }
 
 /// <summary>VpcEndpointAccessSpec defines the desired state of VpcEndpointAccess.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointAccessSpec
 {
@@ -143,7 +143,7 @@ public partial class V1alpha1VPCEndpointAccessSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointAccessStatusAckResourceMetadata
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1VPCEndpointAccessStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointAccessStatusConditions
 {
@@ -191,6 +191,14 @@ public partial class V1alpha1VPCEndpointAccessStatusConditions
     /// <summary>A human readable message indicating details about the transition.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
+
+    /// <summary>
+    /// observedGeneration represents the .metadata.generation that the condition was set based upon.
+    /// For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration
+    /// is 9, the condition is out of date with respect to the current state of the instance.
+    /// </summary>
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
 
     /// <summary>The reason for the condition&apos;s last transition.</summary>
     [JsonPropertyName("reason")]
@@ -206,7 +214,7 @@ public partial class V1alpha1VPCEndpointAccessStatusConditions
 }
 
 /// <summary>VPCEndpointAccessStatus defines the observed state of VPCEndpointAccess</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VPCEndpointAccessStatus
 {
@@ -229,7 +237,7 @@ public partial class V1alpha1VPCEndpointAccessStatus
 }
 
 /// <summary>VPCEndpointAccess is the Schema for the VPCEndpointAccesses API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VPCEndpointAccess : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1VPCEndpointAccessSpec?>, IStatus<V1alpha1VPCEndpointAccessStatus?>

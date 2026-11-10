@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.servicelinker.azure.com;
 /// - Generated from: /servicelinker/resource-manager/Microsoft.ServiceLinker/ServiceLinker/stable/2024-04-01/servicelinker.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.ServiceLinker/linkers/{linkerName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240401LinkerList : IKubernetesObject<V1ListMeta>, IItems<V20240401Linker>
@@ -46,7 +46,7 @@ public partial class V20240401LinkerList : IKubernetesObject<V1ListMeta>, IItems
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoAccessKeyAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoAccessKeyAuthModeEnum
 {
@@ -57,7 +57,7 @@ public enum V20240401LinkerSpecAuthInfoAccessKeyAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoAccessKeyAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoAccessKeyAuthTypeEnum
 {
@@ -65,7 +65,7 @@ public enum V20240401LinkerSpecAuthInfoAccessKeyAuthTypeEnum
     AccessKey
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoAccessKeyPermissionsEnum>))]
 public enum V20240401LinkerSpecAuthInfoAccessKeyPermissionsEnum
 {
@@ -82,7 +82,7 @@ public enum V20240401LinkerSpecAuthInfoAccessKeyPermissionsEnum
 }
 
 /// <summary>AccessKey: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoAccessKey
 {
@@ -111,7 +111,7 @@ public partial class V20240401LinkerSpecAuthInfoAccessKey
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDAuthModeEnum
 {
@@ -122,7 +122,7 @@ public enum V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDAuthTypeEnum
 {
@@ -131,7 +131,7 @@ public enum V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDAuthTypeEnum
 }
 
 /// <summary>ClientIdFromConfig: Application clientId for EasyAuth Microsoft Entra ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDClientIdFromConfig
 {
@@ -148,7 +148,7 @@ public partial class V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDClientId
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDDeleteOrUpdateBehaviorEnum
 {
@@ -159,7 +159,7 @@ public enum V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDDeleteOrUpdateBeh
 }
 
 /// <summary>Secret: Application Secret for EasyAuth Microsoft Entra ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDSecret
 {
@@ -176,7 +176,7 @@ public partial class V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraIDSecret
 }
 
 /// <summary>EasyAuthMicrosoftEntraID: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraID
 {
@@ -214,7 +214,7 @@ public partial class V20240401LinkerSpecAuthInfoEasyAuthMicrosoftEntraID
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSecretAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoSecretAuthModeEnum
 {
@@ -225,7 +225,7 @@ public enum V20240401LinkerSpecAuthInfoSecretAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSecretAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoSecretAuthTypeEnum
 {
@@ -234,7 +234,7 @@ public enum V20240401LinkerSpecAuthInfoSecretAuthTypeEnum
 }
 
 /// <summary>SecretType: The secret type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretReferenceSecretTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretReferenceSecretTypeEnum
 {
@@ -243,7 +243,7 @@ public enum V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretReferenceSe
 }
 
 /// <summary>KeyVaultSecretReference: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretReference
 {
@@ -261,7 +261,7 @@ public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretRe
 }
 
 /// <summary>SecretType: The secret type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretUriSecretTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretUriSecretTypeEnum
 {
@@ -270,7 +270,7 @@ public enum V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretUriSecretTy
 }
 
 /// <summary>KeyVaultSecretUri: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretUri
 {
@@ -284,7 +284,7 @@ public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoKeyVaultSecretUr
 }
 
 /// <summary>SecretType: The secret type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSecretSecretInfoRawValueSecretTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoSecretSecretInfoRawValueSecretTypeEnum
 {
@@ -293,7 +293,7 @@ public enum V20240401LinkerSpecAuthInfoSecretSecretInfoRawValueSecretTypeEnum
 }
 
 /// <summary>Value: The actual value of the secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoRawValueValue
 {
@@ -310,7 +310,7 @@ public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoRawValueValue
 }
 
 /// <summary>RawValue: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoRawValue
 {
@@ -324,7 +324,7 @@ public partial class V20240401LinkerSpecAuthInfoSecretSecretInfoRawValue
 }
 
 /// <summary>SecretInfo: Password or key vault secret for secret auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoSecretSecretInfo
 {
@@ -342,7 +342,7 @@ public partial class V20240401LinkerSpecAuthInfoSecretSecretInfo
 }
 
 /// <summary>Secret: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoSecret
 {
@@ -372,7 +372,7 @@ public partial class V20240401LinkerSpecAuthInfoSecret
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoServicePrincipalCertificateAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoServicePrincipalCertificateAuthModeEnum
 {
@@ -383,7 +383,7 @@ public enum V20240401LinkerSpecAuthInfoServicePrincipalCertificateAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoServicePrincipalCertificateAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoServicePrincipalCertificateAuthTypeEnum
 {
@@ -392,7 +392,7 @@ public enum V20240401LinkerSpecAuthInfoServicePrincipalCertificateAuthTypeEnum
 }
 
 /// <summary>Certificate: ServicePrincipal certificate for servicePrincipal auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificateCertificate
 {
@@ -409,7 +409,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificateCerti
 }
 
 /// <summary>ClientIdFromConfig: Application clientId for servicePrincipal auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificateClientIdFromConfig
 {
@@ -426,7 +426,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificateClien
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoServicePrincipalCertificateDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecAuthInfoServicePrincipalCertificateDeleteOrUpdateBehaviorEnum
 {
@@ -437,7 +437,7 @@ public enum V20240401LinkerSpecAuthInfoServicePrincipalCertificateDeleteOrUpdate
 }
 
 /// <summary>PrincipalIdFromConfig: Principal Id for servicePrincipal auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificatePrincipalIdFromConfig
 {
@@ -454,7 +454,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificatePrinc
 }
 
 /// <summary>ServicePrincipalCertificate: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificate
 {
@@ -504,7 +504,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalCertificate
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoServicePrincipalSecretAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoServicePrincipalSecretAuthModeEnum
 {
@@ -515,7 +515,7 @@ public enum V20240401LinkerSpecAuthInfoServicePrincipalSecretAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoServicePrincipalSecretAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoServicePrincipalSecretAuthTypeEnum
 {
@@ -524,7 +524,7 @@ public enum V20240401LinkerSpecAuthInfoServicePrincipalSecretAuthTypeEnum
 }
 
 /// <summary>ClientIdFromConfig: ServicePrincipal application clientId for servicePrincipal auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecretClientIdFromConfig
 {
@@ -541,7 +541,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecretClientIdFr
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoServicePrincipalSecretDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecAuthInfoServicePrincipalSecretDeleteOrUpdateBehaviorEnum
 {
@@ -552,7 +552,7 @@ public enum V20240401LinkerSpecAuthInfoServicePrincipalSecretDeleteOrUpdateBehav
 }
 
 /// <summary>PrincipalIdFromConfig: Principal Id for servicePrincipal auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecretPrincipalIdFromConfig
 {
@@ -569,7 +569,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecretPrincipalI
 }
 
 /// <summary>Secret: Secret for servicePrincipal auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecretSecret
 {
@@ -586,7 +586,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecretSecret
 }
 
 /// <summary>ServicePrincipalSecret: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecret
 {
@@ -640,7 +640,7 @@ public partial class V20240401LinkerSpecAuthInfoServicePrincipalSecret
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSystemAssignedIdentityAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoSystemAssignedIdentityAuthModeEnum
 {
@@ -651,7 +651,7 @@ public enum V20240401LinkerSpecAuthInfoSystemAssignedIdentityAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSystemAssignedIdentityAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoSystemAssignedIdentityAuthTypeEnum
 {
@@ -660,7 +660,7 @@ public enum V20240401LinkerSpecAuthInfoSystemAssignedIdentityAuthTypeEnum
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoSystemAssignedIdentityDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecAuthInfoSystemAssignedIdentityDeleteOrUpdateBehaviorEnum
 {
@@ -671,7 +671,7 @@ public enum V20240401LinkerSpecAuthInfoSystemAssignedIdentityDeleteOrUpdateBehav
 }
 
 /// <summary>SystemAssignedIdentity: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoSystemAssignedIdentity
 {
@@ -705,7 +705,7 @@ public partial class V20240401LinkerSpecAuthInfoSystemAssignedIdentity
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoUserAccountAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoUserAccountAuthModeEnum
 {
@@ -716,7 +716,7 @@ public enum V20240401LinkerSpecAuthInfoUserAccountAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoUserAccountAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoUserAccountAuthTypeEnum
 {
@@ -725,7 +725,7 @@ public enum V20240401LinkerSpecAuthInfoUserAccountAuthTypeEnum
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoUserAccountDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecAuthInfoUserAccountDeleteOrUpdateBehaviorEnum
 {
@@ -736,7 +736,7 @@ public enum V20240401LinkerSpecAuthInfoUserAccountDeleteOrUpdateBehaviorEnum
 }
 
 /// <summary>UserAccount: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoUserAccount
 {
@@ -774,7 +774,7 @@ public partial class V20240401LinkerSpecAuthInfoUserAccount
 /// such as enabling identity on source resource and granting RBAC roles. If optOutAllAuth, opt out authentication setup.
 /// Default is optInAllAuth.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoUserAssignedIdentityAuthModeEnum>))]
 public enum V20240401LinkerSpecAuthInfoUserAssignedIdentityAuthModeEnum
 {
@@ -785,7 +785,7 @@ public enum V20240401LinkerSpecAuthInfoUserAssignedIdentityAuthModeEnum
 }
 
 /// <summary>AuthType: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoUserAssignedIdentityAuthTypeEnum>))]
 public enum V20240401LinkerSpecAuthInfoUserAssignedIdentityAuthTypeEnum
 {
@@ -794,7 +794,7 @@ public enum V20240401LinkerSpecAuthInfoUserAssignedIdentityAuthTypeEnum
 }
 
 /// <summary>ClientIdFromConfig: Client Id for userAssignedIdentity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoUserAssignedIdentityClientIdFromConfig
 {
@@ -811,7 +811,7 @@ public partial class V20240401LinkerSpecAuthInfoUserAssignedIdentityClientIdFrom
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecAuthInfoUserAssignedIdentityDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecAuthInfoUserAssignedIdentityDeleteOrUpdateBehaviorEnum
 {
@@ -822,7 +822,7 @@ public enum V20240401LinkerSpecAuthInfoUserAssignedIdentityDeleteOrUpdateBehavio
 }
 
 /// <summary>SubscriptionIdFromConfig: Subscription id for userAssignedIdentity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoUserAssignedIdentitySubscriptionIdFromConfig
 {
@@ -839,7 +839,7 @@ public partial class V20240401LinkerSpecAuthInfoUserAssignedIdentitySubscription
 }
 
 /// <summary>UserAssignedIdentity: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfoUserAssignedIdentity
 {
@@ -885,7 +885,7 @@ public partial class V20240401LinkerSpecAuthInfoUserAssignedIdentity
 }
 
 /// <summary>AuthInfo: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecAuthInfo
 {
@@ -923,7 +923,7 @@ public partial class V20240401LinkerSpecAuthInfo
 }
 
 /// <summary>ClientType: The application client type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecClientTypeEnum>))]
 public enum V20240401LinkerSpecClientTypeEnum
 {
@@ -959,7 +959,7 @@ public enum V20240401LinkerSpecClientTypeEnum
 /// Action: Optional, indicate whether to apply configurations on source application. If enable, generate configurations and
 /// applied to the source application. Default is enable. If optOut, no configuration change will be made on source.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecConfigurationInfoActionEnum>))]
 public enum V20240401LinkerSpecConfigurationInfoActionEnum
 {
@@ -970,7 +970,7 @@ public enum V20240401LinkerSpecConfigurationInfoActionEnum
 }
 
 /// <summary>AppConfigurationReference: The app configuration id to store configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecConfigurationInfoConfigurationStoreAppConfigurationReference
 {
@@ -996,7 +996,7 @@ public partial class V20240401LinkerSpecConfigurationInfoConfigurationStoreAppCo
 }
 
 /// <summary>ConfigurationStore: An option to store configuration into different place</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecConfigurationInfoConfigurationStore
 {
@@ -1006,7 +1006,7 @@ public partial class V20240401LinkerSpecConfigurationInfoConfigurationStore
 }
 
 /// <summary>Required: The value indicating whether the metadata is required or not</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecConfigurationInfoDaprPropertiesMetadataRequiredEnum>))]
 public enum V20240401LinkerSpecConfigurationInfoDaprPropertiesMetadataRequiredEnum
 {
@@ -1017,7 +1017,7 @@ public enum V20240401LinkerSpecConfigurationInfoDaprPropertiesMetadataRequiredEn
 }
 
 /// <summary>The dapr component metadata.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecConfigurationInfoDaprPropertiesMetadata
 {
@@ -1043,7 +1043,7 @@ public partial class V20240401LinkerSpecConfigurationInfoDaprPropertiesMetadata
 }
 
 /// <summary>DaprProperties: Indicates some additional properties for dapr client type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecConfigurationInfoDaprProperties
 {
@@ -1069,7 +1069,7 @@ public partial class V20240401LinkerSpecConfigurationInfoDaprProperties
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecConfigurationInfoDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecConfigurationInfoDeleteOrUpdateBehaviorEnum
 {
@@ -1080,7 +1080,7 @@ public enum V20240401LinkerSpecConfigurationInfoDeleteOrUpdateBehaviorEnum
 }
 
 /// <summary>ConfigurationInfo: The connection information consumed by applications, including secrets, connection strings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecConfigurationInfo
 {
@@ -1127,7 +1127,7 @@ public partial class V20240401LinkerSpecConfigurationInfo
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecOperatorSpecConfigMapExpressions
 {
@@ -1168,7 +1168,7 @@ public partial class V20240401LinkerSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecOperatorSpecSecretExpressions
 {
@@ -1208,7 +1208,7 @@ public partial class V20240401LinkerSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecOperatorSpec
 {
@@ -1226,7 +1226,7 @@ public partial class V20240401LinkerSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. This resource is an
 /// extension resource, which means that any other Azure resource can be its owner.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecOwner
 {
@@ -1251,7 +1251,7 @@ public partial class V20240401LinkerSpecOwner
 /// Action: Optional. Indicates public network solution. If enable, enable public network access of target service with best
 /// try. Default is enable. If optOut, opt out public network access configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecPublicNetworkSolutionActionEnum>))]
 public enum V20240401LinkerSpecPublicNetworkSolutionActionEnum
 {
@@ -1265,7 +1265,7 @@ public enum V20240401LinkerSpecPublicNetworkSolutionActionEnum
 /// DeleteOrUpdateBehavior: Indicates whether to clean up previous operation(such as firewall rules) when Linker is updating
 /// or deleting
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecPublicNetworkSolutionDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecPublicNetworkSolutionDeleteOrUpdateBehaviorEnum
 {
@@ -1276,7 +1276,7 @@ public enum V20240401LinkerSpecPublicNetworkSolutionDeleteOrUpdateBehaviorEnum
 }
 
 /// <summary>AzureServices: Allow Azure services to access the target service if true.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecPublicNetworkSolutionFirewallRulesAzureServicesEnum>))]
 public enum V20240401LinkerSpecPublicNetworkSolutionFirewallRulesAzureServicesEnum
 {
@@ -1290,7 +1290,7 @@ public enum V20240401LinkerSpecPublicNetworkSolutionFirewallRulesAzureServicesEn
 /// CallerClientIP: Allow caller client IP to access the target service if true. the property is used when connecting local
 /// application to target service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecPublicNetworkSolutionFirewallRulesCallerClientIPEnum>))]
 public enum V20240401LinkerSpecPublicNetworkSolutionFirewallRulesCallerClientIPEnum
 {
@@ -1301,7 +1301,7 @@ public enum V20240401LinkerSpecPublicNetworkSolutionFirewallRulesCallerClientIPE
 }
 
 /// <summary>FirewallRules: Describe firewall rules of target service to make sure source application could connect to the target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecPublicNetworkSolutionFirewallRules
 {
@@ -1325,7 +1325,7 @@ public partial class V20240401LinkerSpecPublicNetworkSolutionFirewallRules
 }
 
 /// <summary>PublicNetworkSolution: The network solution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecPublicNetworkSolution
 {
@@ -1349,7 +1349,7 @@ public partial class V20240401LinkerSpecPublicNetworkSolution
 }
 
 /// <summary>KeyVaultReference: The key vault id to store secret</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecSecretStoreKeyVaultReference
 {
@@ -1375,7 +1375,7 @@ public partial class V20240401LinkerSpecSecretStoreKeyVaultReference
 }
 
 /// <summary>SecretStore: An option to store secret value in secure place</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecSecretStore
 {
@@ -1389,7 +1389,7 @@ public partial class V20240401LinkerSpecSecretStore
 }
 
 /// <summary>Reference: The Id of azure resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetServiceAzureResourceReference
 {
@@ -1415,7 +1415,7 @@ public partial class V20240401LinkerSpecTargetServiceAzureResourceReference
 }
 
 /// <summary>Type: The azure resource type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecTargetServiceAzureResourceResourcePropertiesKeyVaultTypeEnum>))]
 public enum V20240401LinkerSpecTargetServiceAzureResourceResourcePropertiesKeyVaultTypeEnum
 {
@@ -1424,7 +1424,7 @@ public enum V20240401LinkerSpecTargetServiceAzureResourceResourcePropertiesKeyVa
 }
 
 /// <summary>KeyVault: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetServiceAzureResourceResourcePropertiesKeyVault
 {
@@ -1438,7 +1438,7 @@ public partial class V20240401LinkerSpecTargetServiceAzureResourceResourceProper
 }
 
 /// <summary>ResourceProperties: The azure resource connection related properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetServiceAzureResourceResourceProperties
 {
@@ -1448,7 +1448,7 @@ public partial class V20240401LinkerSpecTargetServiceAzureResourceResourceProper
 }
 
 /// <summary>Type: The target service type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecTargetServiceAzureResourceTypeEnum>))]
 public enum V20240401LinkerSpecTargetServiceAzureResourceTypeEnum
 {
@@ -1457,7 +1457,7 @@ public enum V20240401LinkerSpecTargetServiceAzureResourceTypeEnum
 }
 
 /// <summary>AzureResource: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetServiceAzureResource
 {
@@ -1475,7 +1475,7 @@ public partial class V20240401LinkerSpecTargetServiceAzureResource
 }
 
 /// <summary>Type: The target service type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecTargetServiceConfluentBootstrapServerTypeEnum>))]
 public enum V20240401LinkerSpecTargetServiceConfluentBootstrapServerTypeEnum
 {
@@ -1484,7 +1484,7 @@ public enum V20240401LinkerSpecTargetServiceConfluentBootstrapServerTypeEnum
 }
 
 /// <summary>ConfluentBootstrapServer: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetServiceConfluentBootstrapServer
 {
@@ -1498,7 +1498,7 @@ public partial class V20240401LinkerSpecTargetServiceConfluentBootstrapServer
 }
 
 /// <summary>Type: The target service type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecTargetServiceConfluentSchemaRegistryTypeEnum>))]
 public enum V20240401LinkerSpecTargetServiceConfluentSchemaRegistryTypeEnum
 {
@@ -1507,7 +1507,7 @@ public enum V20240401LinkerSpecTargetServiceConfluentSchemaRegistryTypeEnum
 }
 
 /// <summary>ConfluentSchemaRegistry: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetServiceConfluentSchemaRegistry
 {
@@ -1521,7 +1521,7 @@ public partial class V20240401LinkerSpecTargetServiceConfluentSchemaRegistry
 }
 
 /// <summary>Type: The target service type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecTargetServiceSelfHostedServerTypeEnum>))]
 public enum V20240401LinkerSpecTargetServiceSelfHostedServerTypeEnum
 {
@@ -1530,7 +1530,7 @@ public enum V20240401LinkerSpecTargetServiceSelfHostedServerTypeEnum
 }
 
 /// <summary>SelfHostedServer: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetServiceSelfHostedServer
 {
@@ -1544,7 +1544,7 @@ public partial class V20240401LinkerSpecTargetServiceSelfHostedServer
 }
 
 /// <summary>TargetService: The target service properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecTargetService
 {
@@ -1566,7 +1566,7 @@ public partial class V20240401LinkerSpecTargetService
 }
 
 /// <summary>DeleteOrUpdateBehavior: Indicates whether to clean up previous operation when Linker is updating or deleting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecVNetSolutionDeleteOrUpdateBehaviorEnum>))]
 public enum V20240401LinkerSpecVNetSolutionDeleteOrUpdateBehaviorEnum
 {
@@ -1577,7 +1577,7 @@ public enum V20240401LinkerSpecVNetSolutionDeleteOrUpdateBehaviorEnum
 }
 
 /// <summary>Type: Type of VNet solution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20240401LinkerSpecVNetSolutionTypeEnum>))]
 public enum V20240401LinkerSpecVNetSolutionTypeEnum
 {
@@ -1588,7 +1588,7 @@ public enum V20240401LinkerSpecVNetSolutionTypeEnum
 }
 
 /// <summary>VNetSolution: The VNet solution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpecVNetSolution
 {
@@ -1601,7 +1601,7 @@ public partial class V20240401LinkerSpecVNetSolution
     public V20240401LinkerSpecVNetSolutionTypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerSpec
 {
@@ -1661,7 +1661,7 @@ public partial class V20240401LinkerSpec
 }
 
 /// <summary>AccessKey: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoAccessKey
 {
@@ -1686,7 +1686,7 @@ public partial class V20240401LinkerStatusAuthInfoAccessKey
 }
 
 /// <summary>EasyAuthMicrosoftEntraID: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoEasyAuthMicrosoftEntraID
 {
@@ -1712,7 +1712,7 @@ public partial class V20240401LinkerStatusAuthInfoEasyAuthMicrosoftEntraID
 }
 
 /// <summary>KeyVaultSecretReference: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoSecretSecretInfoKeyVaultSecretReference
 {
@@ -1730,7 +1730,7 @@ public partial class V20240401LinkerStatusAuthInfoSecretSecretInfoKeyVaultSecret
 }
 
 /// <summary>KeyVaultSecretUri: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoSecretSecretInfoKeyVaultSecretUri
 {
@@ -1744,7 +1744,7 @@ public partial class V20240401LinkerStatusAuthInfoSecretSecretInfoKeyVaultSecret
 }
 
 /// <summary>RawValue: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoSecretSecretInfoRawValue
 {
@@ -1754,7 +1754,7 @@ public partial class V20240401LinkerStatusAuthInfoSecretSecretInfoRawValue
 }
 
 /// <summary>SecretInfo: Password or key vault secret for secret auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoSecretSecretInfo
 {
@@ -1772,7 +1772,7 @@ public partial class V20240401LinkerStatusAuthInfoSecretSecretInfo
 }
 
 /// <summary>Secret: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoSecret
 {
@@ -1798,7 +1798,7 @@ public partial class V20240401LinkerStatusAuthInfoSecret
 }
 
 /// <summary>ServicePrincipalCertificate: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoServicePrincipalCertificate
 {
@@ -1832,7 +1832,7 @@ public partial class V20240401LinkerStatusAuthInfoServicePrincipalCertificate
 }
 
 /// <summary>ServicePrincipalSecret: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoServicePrincipalSecret
 {
@@ -1870,7 +1870,7 @@ public partial class V20240401LinkerStatusAuthInfoServicePrincipalSecret
 }
 
 /// <summary>SystemAssignedIdentity: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoSystemAssignedIdentity
 {
@@ -1900,7 +1900,7 @@ public partial class V20240401LinkerStatusAuthInfoSystemAssignedIdentity
 }
 
 /// <summary>UserAccount: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoUserAccount
 {
@@ -1934,7 +1934,7 @@ public partial class V20240401LinkerStatusAuthInfoUserAccount
 }
 
 /// <summary>UserAssignedIdentity: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfoUserAssignedIdentity
 {
@@ -1972,7 +1972,7 @@ public partial class V20240401LinkerStatusAuthInfoUserAssignedIdentity
 }
 
 /// <summary>AuthInfo: The authentication type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusAuthInfo
 {
@@ -2010,7 +2010,7 @@ public partial class V20240401LinkerStatusAuthInfo
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusConditions
 {
@@ -2056,7 +2056,7 @@ public partial class V20240401LinkerStatusConditions
 }
 
 /// <summary>ConfigurationStore: An option to store configuration into different place</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusConfigurationInfoConfigurationStore
 {
@@ -2066,7 +2066,7 @@ public partial class V20240401LinkerStatusConfigurationInfoConfigurationStore
 }
 
 /// <summary>The dapr component metadata.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusConfigurationInfoDaprPropertiesMetadata
 {
@@ -2092,7 +2092,7 @@ public partial class V20240401LinkerStatusConfigurationInfoDaprPropertiesMetadat
 }
 
 /// <summary>DaprProperties: Indicates some additional properties for dapr client type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusConfigurationInfoDaprProperties
 {
@@ -2126,7 +2126,7 @@ public partial class V20240401LinkerStatusConfigurationInfoDaprProperties
 }
 
 /// <summary>ConfigurationInfo: The connection information consumed by applications, including secrets, connection strings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusConfigurationInfo
 {
@@ -2169,7 +2169,7 @@ public partial class V20240401LinkerStatusConfigurationInfo
 }
 
 /// <summary>FirewallRules: Describe firewall rules of target service to make sure source application could connect to the target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusPublicNetworkSolutionFirewallRules
 {
@@ -2193,7 +2193,7 @@ public partial class V20240401LinkerStatusPublicNetworkSolutionFirewallRules
 }
 
 /// <summary>PublicNetworkSolution: The network solution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusPublicNetworkSolution
 {
@@ -2217,7 +2217,7 @@ public partial class V20240401LinkerStatusPublicNetworkSolution
 }
 
 /// <summary>SecretStore: An option to store secret value in secure place</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusSecretStore
 {
@@ -2231,7 +2231,7 @@ public partial class V20240401LinkerStatusSecretStore
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusSystemData
 {
@@ -2261,7 +2261,7 @@ public partial class V20240401LinkerStatusSystemData
 }
 
 /// <summary>KeyVault: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusTargetServiceAzureResourceResourcePropertiesKeyVault
 {
@@ -2275,7 +2275,7 @@ public partial class V20240401LinkerStatusTargetServiceAzureResourceResourceProp
 }
 
 /// <summary>ResourceProperties: The azure resource connection related properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusTargetServiceAzureResourceResourceProperties
 {
@@ -2285,7 +2285,7 @@ public partial class V20240401LinkerStatusTargetServiceAzureResourceResourceProp
 }
 
 /// <summary>AzureResource: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusTargetServiceAzureResource
 {
@@ -2303,7 +2303,7 @@ public partial class V20240401LinkerStatusTargetServiceAzureResource
 }
 
 /// <summary>ConfluentBootstrapServer: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusTargetServiceConfluentBootstrapServer
 {
@@ -2317,7 +2317,7 @@ public partial class V20240401LinkerStatusTargetServiceConfluentBootstrapServer
 }
 
 /// <summary>ConfluentSchemaRegistry: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusTargetServiceConfluentSchemaRegistry
 {
@@ -2331,7 +2331,7 @@ public partial class V20240401LinkerStatusTargetServiceConfluentSchemaRegistry
 }
 
 /// <summary>SelfHostedServer: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusTargetServiceSelfHostedServer
 {
@@ -2345,7 +2345,7 @@ public partial class V20240401LinkerStatusTargetServiceSelfHostedServer
 }
 
 /// <summary>TargetService: The target service properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusTargetService
 {
@@ -2367,7 +2367,7 @@ public partial class V20240401LinkerStatusTargetService
 }
 
 /// <summary>VNetSolution: The VNet solution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatusVNetSolution
 {
@@ -2380,7 +2380,7 @@ public partial class V20240401LinkerStatusVNetSolution
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240401LinkerStatus
 {
@@ -2449,7 +2449,7 @@ public partial class V20240401LinkerStatus
 /// - Generated from: /servicelinker/resource-manager/Microsoft.ServiceLinker/ServiceLinker/stable/2024-04-01/servicelinker.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.ServiceLinker/linkers/{linkerName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240401Linker : IKubernetesObject<V1ObjectMeta>, ISpec<V20240401LinkerSpec?>, IStatus<V20240401LinkerStatus?>

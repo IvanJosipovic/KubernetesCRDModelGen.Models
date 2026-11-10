@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.app.github.upbound.io;
 /// <summary>AppInstallationRepositories is the Schema for the AppInstallationRepositoriess API. Manages the associations between app installations and repositories.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppInstallationRepositoriesList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AppInstallationRepositories>
@@ -46,7 +46,7 @@ public partial class V1alpha1AppInstallationRepositoriesList : IKubernetesObject
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecDeletionPolicyEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesRefsPolicyResolutionEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesRefsPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositori
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesRefsPolicyResolveEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesRefsPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositori
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesRefsPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedR
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesRefs
 {
@@ -132,7 +132,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositori
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesSelectorPolicyResolveEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositori
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedR
 }
 
 /// <summary>Selector for a list of Repository in repo to populate selectedRepositories.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesSelector
 {
@@ -203,7 +203,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecForProviderSelectedR
     public V1alpha1AppInstallationRepositoriesSpecForProviderSelectedRepositoriesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecForProvider
 {
@@ -236,7 +236,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesRefsPolicyResolutionEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesRefsPolicyResolutionEnum
 {
@@ -252,7 +252,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesRefsPolicyResolveEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesRefsPolicyResolveEnum
 {
@@ -263,7 +263,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositor
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesRefsPolicy
 {
@@ -287,7 +287,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelected
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesRefs
 {
@@ -306,7 +306,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelected
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesSelectorPolicyResolutionEnum
 {
@@ -322,7 +322,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesSelectorPolicyResolveEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesSelectorPolicyResolveEnum
 {
@@ -333,7 +333,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositor
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesSelectorPolicy
 {
@@ -357,7 +357,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelected
 }
 
 /// <summary>Selector for a list of Repository in repo to populate selectedRepositories.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelectedRepositoriesSelector
 {
@@ -389,7 +389,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecInitProviderSelected
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecInitProvider
 {
@@ -420,7 +420,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecManagementPoliciesEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecManagementPoliciesEnum
 {
@@ -444,7 +444,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -460,7 +460,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPolicyResolveEnum
 {
@@ -471,7 +471,7 @@ public enum V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPolicy
 {
@@ -499,7 +499,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecProviderConfigRefPol
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecProviderConfigRef
 {
@@ -518,7 +518,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpecWriteConnectionSecretToRef
 {
@@ -532,7 +532,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpecWriteConnectionSecre
 }
 
 /// <summary>AppInstallationRepositoriesSpec defines the desired state of AppInstallationRepositories</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesSpec
 {
@@ -599,7 +599,7 @@ public partial class V1alpha1AppInstallationRepositoriesSpec
     public V1alpha1AppInstallationRepositoriesSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesStatusAtProvider
 {
@@ -622,7 +622,7 @@ public partial class V1alpha1AppInstallationRepositoriesStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesStatusConditions
 {
@@ -665,7 +665,7 @@ public partial class V1alpha1AppInstallationRepositoriesStatusConditions
 }
 
 /// <summary>AppInstallationRepositoriesStatus defines the observed state of AppInstallationRepositories.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppInstallationRepositoriesStatus
 {
@@ -695,7 +695,7 @@ public partial class V1alpha1AppInstallationRepositoriesStatus
 }
 
 /// <summary>AppInstallationRepositories is the Schema for the AppInstallationRepositoriess API. Manages the associations between app installations and repositories.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppInstallationRepositories : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AppInstallationRepositoriesSpec>, IStatus<V1alpha1AppInstallationRepositoriesStatus?>

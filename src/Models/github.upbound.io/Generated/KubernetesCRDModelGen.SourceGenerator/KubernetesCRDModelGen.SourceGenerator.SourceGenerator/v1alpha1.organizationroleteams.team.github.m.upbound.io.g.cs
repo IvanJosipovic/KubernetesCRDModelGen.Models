@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.team.github.m.upbound.io;
 /// <summary>OrganizationRoleTeam is the Schema for the OrganizationRoleTeams API. Manage an association between an organization role and a team.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OrganizationRoleTeamList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1OrganizationRoleTeam>
@@ -43,7 +43,7 @@ public partial class V1alpha1OrganizationRoleTeamList : IKubernetesObject<V1List
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolicyResolutionEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolicyResolveEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRefPolic
 }
 
 /// <summary>Reference to a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRef
 {
@@ -117,7 +117,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicyResolutionEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicyResolveEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelector
 }
 
 /// <summary>Selector for a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelector
 {
@@ -192,7 +192,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelector
     public V1alpha1OrganizationRoleTeamSpecForProviderTeamSlugSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecForProvider
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPolicyResolutionEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPolicyResolutionEnum
 {
@@ -241,7 +241,7 @@ public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPolicyResolveEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPolicyResolveEnum
 {
@@ -252,7 +252,7 @@ public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPolicy
 {
@@ -276,7 +276,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRefPoli
 }
 
 /// <summary>Reference to a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRef
 {
@@ -299,7 +299,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelectorPolicyResolutionEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelectorPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelectorPolicyResolveEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelectorPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelectorPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelecto
 }
 
 /// <summary>Selector for a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelector
 {
@@ -386,7 +386,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecInitProviderTeamSlugSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecInitProvider
 {
@@ -417,7 +417,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OrganizationRoleTeamSpecManagementPoliciesEnum>))]
 public enum V1alpha1OrganizationRoleTeamSpecManagementPoliciesEnum
 {
@@ -440,7 +440,7 @@ public enum V1alpha1OrganizationRoleTeamSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecProviderConfigRef
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpecWriteConnectionSecretToRef
 {
@@ -469,7 +469,7 @@ public partial class V1alpha1OrganizationRoleTeamSpecWriteConnectionSecretToRef
 }
 
 /// <summary>OrganizationRoleTeamSpec defines the desired state of OrganizationRoleTeam</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamSpec
 {
@@ -520,7 +520,7 @@ public partial class V1alpha1OrganizationRoleTeamSpec
     public V1alpha1OrganizationRoleTeamSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamStatusAtProvider
 {
@@ -543,7 +543,7 @@ public partial class V1alpha1OrganizationRoleTeamStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamStatusConditions
 {
@@ -586,7 +586,7 @@ public partial class V1alpha1OrganizationRoleTeamStatusConditions
 }
 
 /// <summary>OrganizationRoleTeamStatus defines the observed state of OrganizationRoleTeam.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OrganizationRoleTeamStatus
 {
@@ -616,7 +616,7 @@ public partial class V1alpha1OrganizationRoleTeamStatus
 }
 
 /// <summary>OrganizationRoleTeam is the Schema for the OrganizationRoleTeams API. Manage an association between an organization role and a team.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OrganizationRoleTeam : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1OrganizationRoleTeamSpec>, IStatus<V1alpha1OrganizationRoleTeamStatus?>

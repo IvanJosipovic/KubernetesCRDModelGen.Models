@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.keyvault.azure.com;
 /// - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/KeyVault/stable/2023-07-01/keys.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230701storageVaultKeyList : IKubernetesObject<V1ListMeta>, IItems<V20230701storageVaultKey>
@@ -47,7 +47,7 @@ public partial class V20230701storageVaultKeyList : IKubernetesObject<V1ListMeta
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecOperatorSpecConfigMapExpressions
 {
@@ -88,7 +88,7 @@ public partial class V20230701storageVaultKeySpecOperatorSpecConfigMapExpression
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecOperatorSpecSecretExpressions
 {
@@ -128,7 +128,7 @@ public partial class V20230701storageVaultKeySpecOperatorSpecSecretExpressions
 /// Storage version of v20230701.VaultKeyOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecOperatorSpec
 {
@@ -157,7 +157,7 @@ public partial class V20230701storageVaultKeySpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a keyvault.azure.com/Vault resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecOwner
 {
@@ -173,7 +173,7 @@ public partial class V20230701storageVaultKeySpecOwner
 /// Storage version of v20230701.KeyAttributes
 /// The object attributes managed by the Azure Key Vault service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecPropertiesAttributes
 {
@@ -198,7 +198,7 @@ public partial class V20230701storageVaultKeySpecPropertiesAttributes
 }
 
 /// <summary>Storage version of v20230701.KeyReleasePolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecPropertiesReleasePolicy
 {
@@ -217,7 +217,7 @@ public partial class V20230701storageVaultKeySpecPropertiesReleasePolicy
 }
 
 /// <summary>Storage version of v20230701.KeyRotationPolicyAttributes</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyAttributes
 {
@@ -233,7 +233,7 @@ public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyAttribu
 }
 
 /// <summary>Storage version of v20230701.Action</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyLifetimeActionsAction
 {
@@ -249,7 +249,7 @@ public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyLifetim
 }
 
 /// <summary>Storage version of v20230701.Trigger</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyLifetimeActionsTrigger
 {
@@ -268,7 +268,7 @@ public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyLifetim
 }
 
 /// <summary>Storage version of v20230701.LifetimeAction</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyLifetimeActions
 {
@@ -289,7 +289,7 @@ public partial class V20230701storageVaultKeySpecPropertiesRotationPolicyLifetim
 }
 
 /// <summary>Storage version of v20230701.RotationPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecPropertiesRotationPolicy
 {
@@ -312,7 +312,7 @@ public partial class V20230701storageVaultKeySpecPropertiesRotationPolicy
 /// Storage version of v20230701.KeyProperties
 /// The properties of the key.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpecProperties
 {
@@ -352,7 +352,7 @@ public partial class V20230701storageVaultKeySpecProperties
 }
 
 /// <summary>Storage version of v20230701.VaultKey_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeySpec
 {
@@ -403,7 +403,7 @@ public partial class V20230701storageVaultKeySpec
 /// Storage version of v20230701.KeyAttributes_STATUS
 /// The object attributes managed by the Azure Key Vault service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusAttributes
 {
@@ -437,7 +437,7 @@ public partial class V20230701storageVaultKeyStatusAttributes
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusConditions
 {
@@ -483,7 +483,7 @@ public partial class V20230701storageVaultKeyStatusConditions
 }
 
 /// <summary>Storage version of v20230701.KeyReleasePolicy_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusReleasePolicy
 {
@@ -502,7 +502,7 @@ public partial class V20230701storageVaultKeyStatusReleasePolicy
 }
 
 /// <summary>Storage version of v20230701.KeyRotationPolicyAttributes_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusRotationPolicyAttributes
 {
@@ -524,7 +524,7 @@ public partial class V20230701storageVaultKeyStatusRotationPolicyAttributes
 }
 
 /// <summary>Storage version of v20230701.Action_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusRotationPolicyLifetimeActionsAction
 {
@@ -540,7 +540,7 @@ public partial class V20230701storageVaultKeyStatusRotationPolicyLifetimeActions
 }
 
 /// <summary>Storage version of v20230701.Trigger_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusRotationPolicyLifetimeActionsTrigger
 {
@@ -559,7 +559,7 @@ public partial class V20230701storageVaultKeyStatusRotationPolicyLifetimeActions
 }
 
 /// <summary>Storage version of v20230701.LifetimeAction_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusRotationPolicyLifetimeActions
 {
@@ -580,7 +580,7 @@ public partial class V20230701storageVaultKeyStatusRotationPolicyLifetimeActions
 }
 
 /// <summary>Storage version of v20230701.RotationPolicy_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatusRotationPolicy
 {
@@ -600,7 +600,7 @@ public partial class V20230701storageVaultKeyStatusRotationPolicy
 }
 
 /// <summary>Storage version of v20230701.VaultKey_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230701storageVaultKeyStatus
 {
@@ -669,7 +669,7 @@ public partial class V20230701storageVaultKeyStatus
 /// - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/KeyVault/stable/2023-07-01/keys.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}/keys/{keyName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230701storageVaultKey : IKubernetesObject<V1ObjectMeta>, ISpec<V20230701storageVaultKeySpec?>, IStatus<V20230701storageVaultKeyStatus?>
