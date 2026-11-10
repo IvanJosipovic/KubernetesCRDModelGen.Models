@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/databricks.upbound.io-v1.11.2...databricks.upbound.io-v1.12.0) (2026-11-10)
+
+
+### Features
+
+* Sync ([#246](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/246)) ([2a0a80d](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/2a0a80dd60f630a7a921c32fe445359cc1de9d75))
+
 ## [1.11.2](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/databricks.upbound.io-v1.11.1...databricks.upbound.io-v1.11.2) (2026-11-10)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/secrets-store.csi.x-k8s.io-v1.10.1...secrets-store.csi.x-k8s.io-v1.11.0) (2026-11-10)
+
+
+### Features
+
+* Sync ([#246](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/246)) ([2a0a80d](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/2a0a80dd60f630a7a921c32fe445359cc1de9d75))
+
 ## [1.10.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/secrets-store.csi.x-k8s.io-v1.10.0...secrets-store.csi.x-k8s.io-v1.10.1) (2026-11-10)
 
 
