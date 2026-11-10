@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/secrets-store.csi.x-k8s.io-v1.10.0...secrets-store.csi.x-k8s.io-v1.10.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency kubernetescrdmodelgen.sourcegenerator to v1.8.7 ([#241](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/241)) ([a5b6c29](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/a5b6c29b11ea12297a50ac06b92b92b7d548bf39))
+* **deps:** update dotnet monorepo to 11.0.0 ([#242](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/242)) ([131dd2a](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/131dd2a6fb4fede81da8caa50a96016483dab42b))
+
 ## [1.10.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/secrets-store.csi.x-k8s.io-v1.9.1...secrets-store.csi.x-k8s.io-v1.10.0) (2026-11-04)
 
 
