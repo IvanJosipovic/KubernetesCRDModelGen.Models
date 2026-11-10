@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.26.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/istio.io-v1.26.0...istio.io-v1.26.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency kubernetescrdmodelgen.sourcegenerator to v1.8.7 ([#241](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/241)) ([a5b6c29](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/a5b6c29b11ea12297a50ac06b92b92b7d548bf39))
+* **deps:** update dotnet monorepo to 11.0.0 ([#242](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/242)) ([131dd2a](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/131dd2a6fb4fede81da8caa50a96016483dab42b))
+
 ## [1.26.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/istio.io-v1.25.1...istio.io-v1.26.0) (2026-11-06)
 
 
