@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.289.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/cnrm.cloud.google.com-v1.288.2...cnrm.cloud.google.com-v1.289.0) (2026-11-10)
+
+
+### Features
+
+* Sync ([#246](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/246)) ([2a0a80d](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/2a0a80dd60f630a7a921c32fe445359cc1de9d75))
+
 ## [1.288.2](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/cnrm.cloud.google.com-v1.288.1...cnrm.cloud.google.com-v1.288.2) (2026-11-10)
 
 
