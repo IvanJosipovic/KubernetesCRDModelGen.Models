@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.workspace.databricks.crossplane.io;
 /// <summary>NotificationDestination is the Schema for the NotificationDestinations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NotificationDestinationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1NotificationDestination>
@@ -46,7 +46,7 @@ public partial class V1beta1NotificationDestinationList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationDestinationSpecDeletionPolicyEnum>))]
 public enum V1beta1NotificationDestinationSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1NotificationDestinationSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigDatabricksAppSlack
 {
@@ -75,7 +75,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigDatabric
     public bool? TeamIdSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigDatabricksAppTeams
 {
@@ -102,7 +102,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigDatabric
 }
 
 /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigEmail
 {
@@ -112,7 +112,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigEmail
 }
 
 /// <summary>The password for basic authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericWebhookPasswordSecretRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericW
 }
 
 /// <summary>The Slack webhook URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericWebhookUrlSecretRef
 {
@@ -148,7 +148,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericW
 }
 
 /// <summary>The username for basic authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericWebhookUsernameSecretRef
 {
@@ -166,7 +166,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericW
 }
 
 /// <summary>The Generic Webhook configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericWebhook
 {
@@ -193,7 +193,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigGenericW
 }
 
 /// <summary>App ID for Microsoft Teams App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosoftTeamsAppIdSecretRef
 {
@@ -211,7 +211,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosof
 }
 
 /// <summary>Secret for Microsoft Teams App authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosoftTeamsAuthSecretSecretRef
 {
@@ -229,7 +229,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosof
 }
 
 /// <summary>Channel URL for Microsoft Teams App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosoftTeamsChannelUrlSecretRef
 {
@@ -247,7 +247,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosof
 }
 
 /// <summary>Tenant ID for Microsoft Teams App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosoftTeamsTenantIdSecretRef
 {
@@ -265,7 +265,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosof
 }
 
 /// <summary>The Slack webhook URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosoftTeamsUrlSecretRef
 {
@@ -283,7 +283,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosof
 }
 
 /// <summary>The Microsoft Teams configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosoftTeams
 {
@@ -324,7 +324,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigMicrosof
 }
 
 /// <summary>The PagerDuty integration key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigPagerdutyIntegrationKeySecretRef
 {
@@ -342,7 +342,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigPagerdut
 }
 
 /// <summary>The PagerDuty configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigPagerduty
 {
@@ -355,7 +355,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigPagerdut
 }
 
 /// <summary>Slack channel ID for notifications.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigSlackChannelIdSecretRef
 {
@@ -373,7 +373,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigSlackCha
 }
 
 /// <summary>OAuth token for Slack authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigSlackOauthTokenSecretRef
 {
@@ -391,7 +391,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigSlackOau
 }
 
 /// <summary>The Slack webhook URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigSlackUrlSecretRef
 {
@@ -409,7 +409,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigSlackUrl
 }
 
 /// <summary>The Slack configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfigSlack
 {
@@ -436,7 +436,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfigSlack
 }
 
 /// <summary>The configuration of the Notification Destination. It must contain exactly one of the following blocks:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderConfig
 {
@@ -468,7 +468,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderConfig
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProviderProviderConfig
 {
@@ -477,7 +477,7 @@ public partial class V1beta1NotificationDestinationSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecForProvider
 {
@@ -498,7 +498,7 @@ public partial class V1beta1NotificationDestinationSpecForProvider
     public V1beta1NotificationDestinationSpecForProviderProviderConfig? ProviderConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigDatabricksAppSlack
 {
@@ -517,7 +517,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigDatabri
     public bool? TeamIdSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigDatabricksAppTeams
 {
@@ -544,7 +544,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigDatabri
 }
 
 /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigEmail
 {
@@ -554,7 +554,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigEmail
 }
 
 /// <summary>The password for basic authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigGenericWebhookPasswordSecretRef
 {
@@ -572,7 +572,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigGeneric
 }
 
 /// <summary>The Slack webhook URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigGenericWebhookUrlSecretRef
 {
@@ -590,7 +590,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigGeneric
 }
 
 /// <summary>The username for basic authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigGenericWebhookUsernameSecretRef
 {
@@ -608,7 +608,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigGeneric
 }
 
 /// <summary>The Generic Webhook configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigGenericWebhook
 {
@@ -635,7 +635,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigGeneric
 }
 
 /// <summary>App ID for Microsoft Teams App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicrosoftTeamsAppIdSecretRef
 {
@@ -653,7 +653,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicroso
 }
 
 /// <summary>Secret for Microsoft Teams App authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicrosoftTeamsAuthSecretSecretRef
 {
@@ -671,7 +671,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicroso
 }
 
 /// <summary>Channel URL for Microsoft Teams App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicrosoftTeamsChannelUrlSecretRef
 {
@@ -689,7 +689,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicroso
 }
 
 /// <summary>Tenant ID for Microsoft Teams App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicrosoftTeamsTenantIdSecretRef
 {
@@ -707,7 +707,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicroso
 }
 
 /// <summary>The Slack webhook URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicrosoftTeamsUrlSecretRef
 {
@@ -725,7 +725,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicroso
 }
 
 /// <summary>The Microsoft Teams configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicrosoftTeams
 {
@@ -766,7 +766,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigMicroso
 }
 
 /// <summary>The PagerDuty integration key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigPagerdutyIntegrationKeySecretRef
 {
@@ -784,7 +784,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigPagerdu
 }
 
 /// <summary>The PagerDuty configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigPagerduty
 {
@@ -797,7 +797,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigPagerdu
 }
 
 /// <summary>Slack channel ID for notifications.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlackChannelIdSecretRef
 {
@@ -815,7 +815,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlackCh
 }
 
 /// <summary>OAuth token for Slack authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlackOauthTokenSecretRef
 {
@@ -833,7 +833,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlackOa
 }
 
 /// <summary>The Slack webhook URL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlackUrlSecretRef
 {
@@ -851,7 +851,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlackUr
 }
 
 /// <summary>The Slack configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlack
 {
@@ -878,7 +878,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfigSlack
 }
 
 /// <summary>The configuration of the Notification Destination. It must contain exactly one of the following blocks:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderConfig
 {
@@ -910,7 +910,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderConfig
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProviderProviderConfig
 {
@@ -931,7 +931,7 @@ public partial class V1beta1NotificationDestinationSpecInitProviderProviderConfi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecInitProvider
 {
@@ -956,7 +956,7 @@ public partial class V1beta1NotificationDestinationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationDestinationSpecManagementPoliciesEnum>))]
 public enum V1beta1NotificationDestinationSpecManagementPoliciesEnum
 {
@@ -980,7 +980,7 @@ public enum V1beta1NotificationDestinationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationDestinationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1NotificationDestinationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -996,7 +996,7 @@ public enum V1beta1NotificationDestinationSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationDestinationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1NotificationDestinationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1007,7 +1007,7 @@ public enum V1beta1NotificationDestinationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecProviderConfigRefPolicy
 {
@@ -1035,7 +1035,7 @@ public partial class V1beta1NotificationDestinationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecProviderConfigRef
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta1NotificationDestinationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpecWriteConnectionSecretToRef
 {
@@ -1068,7 +1068,7 @@ public partial class V1beta1NotificationDestinationSpecWriteConnectionSecretToRe
 }
 
 /// <summary>NotificationDestinationSpec defines the desired state of NotificationDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationSpec
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta1NotificationDestinationSpec
     public V1beta1NotificationDestinationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfigDatabricksAppSlack
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigDatabri
     public bool? TeamIdSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfigDatabricksAppTeams
 {
@@ -1181,7 +1181,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigDatabri
 }
 
 /// <summary>The email configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfigEmail
 {
@@ -1191,7 +1191,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigEmail
 }
 
 /// <summary>The Generic Webhook configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfigGenericWebhook
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigGeneric
 }
 
 /// <summary>The Microsoft Teams configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfigMicrosoftTeams
 {
@@ -1227,7 +1227,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigMicroso
 }
 
 /// <summary>The PagerDuty configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfigPagerduty
 {
@@ -1236,7 +1236,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigPagerdu
 }
 
 /// <summary>The Slack configuration of the Notification Destination. It must contain the following:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfigSlack
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfigSlack
 }
 
 /// <summary>The configuration of the Notification Destination. It must contain exactly one of the following blocks:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderConfig
 {
@@ -1283,7 +1283,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderConfig
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProviderProviderConfig
 {
@@ -1292,7 +1292,7 @@ public partial class V1beta1NotificationDestinationStatusAtProviderProviderConfi
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusAtProvider
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta1NotificationDestinationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatusConditions
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta1NotificationDestinationStatusConditions
 }
 
 /// <summary>NotificationDestinationStatus defines the observed state of NotificationDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationDestinationStatus
 {
@@ -1391,7 +1391,7 @@ public partial class V1beta1NotificationDestinationStatus
 }
 
 /// <summary>NotificationDestination is the Schema for the NotificationDestinations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NotificationDestination : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1NotificationDestinationSpec>, IStatus<V1beta1NotificationDestinationStatus?>

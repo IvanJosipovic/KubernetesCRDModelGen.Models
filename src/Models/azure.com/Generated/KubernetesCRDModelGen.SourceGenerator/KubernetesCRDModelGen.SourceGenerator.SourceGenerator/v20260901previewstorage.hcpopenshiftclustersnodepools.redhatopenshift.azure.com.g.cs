@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.redhatopenshift.azure.com;
 /// - Generated from: /redhatopenshift/resource-manager/Microsoft.RedHatOpenShift/hcpopenshiftclusters/preview/2026-09-01-preview/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RedHatOpenShift/hcpOpenShiftClusters/{hcpOpenShiftClusterName}/nodePools/{nodePoolName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolList : IKubernetesObject<V1ListMeta>, IItems<V20260901previewstorageHcpOpenShiftClustersNodePool>
@@ -43,7 +43,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolList : I
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecIdentityUserAssignedIdentitiesReference
 {
@@ -72,7 +72,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecIden
 /// Storage version of v20260901preview.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecIdentityUserAssignedIdentities
 {
@@ -92,7 +92,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecIden
 /// Storage version of v20260901preview.ManagedServiceIdentity
 /// Managed service identity (system assigned and/or user assigned identities)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecIdentity
 {
@@ -115,7 +115,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecIden
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOperatorSpecConfigMapExpressions
 {
@@ -156,7 +156,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOper
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOperatorSpecSecretExpressions
 {
@@ -196,7 +196,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOper
 /// Storage version of v20260901preview.HcpOpenShiftClustersNodePoolOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOperatorSpec
 {
@@ -219,7 +219,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOper
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a redhatopenshift.azure.com/HcpOpenShiftCluster resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOwner
 {
@@ -235,7 +235,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecOwne
 /// Storage version of v20260901preview.NodePoolAutoScaling
 /// Node pool autoscaling
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesAutoScaling
 {
@@ -257,7 +257,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Storage version of v20260901preview.Label
 /// Label represents the Kubernetes label
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesLabels
 {
@@ -284,7 +284,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Details on how to create a Disk Encryption Set can be found here:
 /// https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-customer-managed-keys-portal#set-up-your-disk-encryption-set
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesPlatformOsDiskEncryptionSetReference
 {
@@ -313,7 +313,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Storage version of v20260901preview.OsDiskProfile
 /// The settings and configuration options for OSDisk
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesPlatformOsDisk
 {
@@ -351,7 +351,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Note that a subnet cannot be reused between ARO-HCP Clusters, however the
 /// same subnet can be used for NodePools of the same cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesPlatformSubnetReference
 {
@@ -380,7 +380,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Storage version of v20260901preview.NodePoolPlatformProfile
 /// Azure node pool platform configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesPlatform
 {
@@ -420,7 +420,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Storage version of v20260901preview.Taint
 /// Taint is controlling the node taint and its effects
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesTaints
 {
@@ -445,7 +445,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Storage version of v20260901preview.NodePoolVersionProfile
 /// Versions represents an OpenShift version.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecPropertiesVersion
 {
@@ -467,7 +467,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 /// Storage version of v20260901preview.NodePoolProperties
 /// Represents the node pool properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProperties
 {
@@ -516,7 +516,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpecProp
 }
 
 /// <summary>Storage version of v20260901preview.HcpOpenShiftClustersNodePool_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpec
 {
@@ -574,7 +574,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusConditions
 {
@@ -623,7 +623,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusCo
 /// Storage version of v20260901preview.UserAssignedIdentity_STATUS
 /// User assigned identity properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusIdentityUserAssignedIdentities
 {
@@ -645,7 +645,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusId
 /// Storage version of v20260901preview.ManagedServiceIdentity_STATUS
 /// Managed service identity (system assigned and/or user assigned identities)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusIdentity
 {
@@ -673,7 +673,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusId
 /// Storage version of v20260901preview.NodePoolAutoScaling_STATUS
 /// Node pool autoscaling
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesAutoScaling
 {
@@ -695,7 +695,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.Label_STATUS
 /// Label represents the Kubernetes label
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesLabels
 {
@@ -717,7 +717,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.OsDiskProfile_STATUS
 /// The settings and configuration options for OSDisk
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesPlatformOsDisk
 {
@@ -745,7 +745,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.NodePoolPlatformProfile_STATUS
 /// Azure node pool platform configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesPlatform
 {
@@ -780,7 +780,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.Condition_STATUS
 /// Condition represents an observation of a resource&apos;s state.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesStatusConditions
 {
@@ -811,7 +811,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.ResourceStatus_STATUS
 /// ResourceStatus represents the observed status of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesStatus
 {
@@ -830,7 +830,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.Taint_STATUS
 /// Taint is controlling the node taint and its effects
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesTaints
 {
@@ -855,7 +855,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.NodePoolVersionProfile_STATUS
 /// Versions represents an OpenShift version.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPropertiesVersion
 {
@@ -877,7 +877,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.NodePoolProperties_STATUS
 /// Represents the node pool properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusProperties
 {
@@ -939,7 +939,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusPr
 /// Storage version of v20260901preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusSystemData
 {
@@ -970,7 +970,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatusSy
 }
 
 /// <summary>Storage version of v20260901preview.HcpOpenShiftClustersNodePool_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatus
 {
@@ -1027,7 +1027,7 @@ public partial class V20260901previewstorageHcpOpenShiftClustersNodePoolStatus
 /// - Generated from: /redhatopenshift/resource-manager/Microsoft.RedHatOpenShift/hcpopenshiftclusters/preview/2026-09-01-preview/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.RedHatOpenShift/hcpOpenShiftClusters/{hcpOpenShiftClusterName}/nodePools/{nodePoolName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20260901previewstorageHcpOpenShiftClustersNodePool : IKubernetesObject<V1ObjectMeta>, ISpec<V20260901previewstorageHcpOpenShiftClustersNodePoolSpec?>, IStatus<V20260901previewstorageHcpOpenShiftClustersNodePoolStatus?>

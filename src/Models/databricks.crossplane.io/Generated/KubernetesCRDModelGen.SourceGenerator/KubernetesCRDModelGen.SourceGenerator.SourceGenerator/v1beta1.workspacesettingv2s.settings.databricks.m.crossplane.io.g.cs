@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.settings.databricks.m.crossplane.io;
 /// <summary>WorkspaceSettingV2 is the Schema for the WorkspaceSettingV2s API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceSettingV2List : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkspaceSettingV2>
@@ -38,7 +38,7 @@ public partial class V1beta1WorkspaceSettingV2List : IKubernetesObject<V1ListMet
 }
 
 /// <summary>Setting value for aibi_dashboard_embedding_access_policy setting. This is the setting value set by consumers, check effective_aibi_dashboard_embedding_access_policy for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAibiDashboardEmbeddingAccessPolicy
 {
@@ -48,7 +48,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAibiDashboardEmbedd
 }
 
 /// <summary>Setting value for aibi_dashboard_embedding_approved_domains setting. This is the setting value set by consumers, check effective_aibi_dashboard_embedding_approved_domains for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAibiDashboardEmbeddingApprovedDomains
 {
@@ -58,7 +58,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAibiDashboardEmbedd
 }
 
 /// <summary>Setting value for allowed_apps_user_api_scopes setting. This is the setting value set by consumers, check effective_allowed_apps_user_api_scopes for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAllowedAppsUserApiScopes
 {
@@ -68,7 +68,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAllowedAppsUserApiS
 }
 
 /// <summary>(ClusterAutoRestartMessageEnablementDetails, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpdateWorkspaceEnablementDetails
 {
@@ -86,7 +86,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpd
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWindowStartTime, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime
 {
@@ -100,7 +100,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpd
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWeekDayBasedSchedule, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule
 {
@@ -118,7 +118,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpd
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindow, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpdateWorkspaceMaintenanceWindow
 {
@@ -128,7 +128,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpd
 }
 
 /// <summary>Setting value for automatic_cluster_update_workspace setting. This is the setting value set by consumers, check effective_automatic_cluster_update_workspace for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpdateWorkspace
 {
@@ -154,7 +154,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderAutomaticClusterUpd
 }
 
 /// <summary>Setting value for boolean type setting. This is the setting value set by consumers, check effective_boolean_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderBooleanVal
 {
@@ -164,7 +164,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderBooleanVal
 }
 
 /// <summary>Setting value for collaboration_platform_connectivity setting. This is the setting value set by consumers, check effective_collaboration_platform_connectivity for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderCollaborationPlatformConnectivity
 {
@@ -174,7 +174,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderCollaborationPlatfo
 }
 
 /// <summary>Effective setting value for aibi_dashboard_embedding_access_policy setting. This is the final effective value of setting. To set a value use aibi_dashboard_embedding_access_policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAibiDashboardEmbeddingAccessPolicy
 {
@@ -184,7 +184,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAibiDashbo
 }
 
 /// <summary>Effective setting value for aibi_dashboard_embedding_approved_domains setting. This is the final effective value of setting. To set a value use aibi_dashboard_embedding_approved_domains</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAibiDashboardEmbeddingApprovedDomains
 {
@@ -194,7 +194,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAibiDashbo
 }
 
 /// <summary>(ClusterAutoRestartMessageEnablementDetails, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticClusterUpdateWorkspaceEnablementDetails
 {
@@ -212,7 +212,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticC
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWindowStartTime, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime
 {
@@ -226,7 +226,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticC
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWeekDayBasedSchedule, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule
 {
@@ -244,7 +244,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticC
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindow, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow
 {
@@ -254,7 +254,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticC
 }
 
 /// <summary>Effective setting value for automatic_cluster_update_workspace setting. This is the final effective value of setting. To set a value use automatic_cluster_update_workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticClusterUpdateWorkspace
 {
@@ -280,7 +280,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveAutomaticC
 }
 
 /// <summary>Effective setting value for personal_compute setting. This is the final effective value of setting. To set a value use personal_compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectivePersonalCompute
 {
@@ -290,7 +290,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectivePersonalCo
 }
 
 /// <summary>Effective setting value for restrict_workspace_admins setting. This is the final effective value of setting. To set a value use restrict_workspace_admins</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveRestrictWorkspaceAdmins
 {
@@ -307,7 +307,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveRestrictWo
 }
 
 /// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveWorkspaceLabel
 {
@@ -321,7 +321,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderEffectiveWorkspaceL
 }
 
 /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderIntegerVal
 {
@@ -331,7 +331,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderIntegerVal
 }
 
 /// <summary>Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderOperationalEmailCustomRecipient
 {
@@ -341,7 +341,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderOperationalEmailCus
 }
 
 /// <summary>Setting value for personal_compute setting. This is the setting value set by consumers, check effective_personal_compute for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderPersonalCompute
 {
@@ -351,7 +351,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderPersonalCompute
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderProviderConfig
 {
@@ -361,7 +361,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderProviderConfig
 }
 
 /// <summary>Setting value for restrict_workspace_admins setting. This is the setting value set by consumers, check effective_restrict_workspace_admins for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderRestrictWorkspaceAdmins
 {
@@ -378,7 +378,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderRestrictWorkspaceAd
 }
 
 /// <summary>Setting value for string type setting. This is the setting value set by consumers, check effective_string_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderStringVal
 {
@@ -388,7 +388,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderStringVal
 }
 
 /// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProviderWorkspaceLabel
 {
@@ -401,7 +401,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProviderWorkspaceLabel
     public string? Label { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecForProvider
 {
@@ -487,7 +487,7 @@ public partial class V1beta1WorkspaceSettingV2SpecForProvider
 }
 
 /// <summary>Setting value for aibi_dashboard_embedding_access_policy setting. This is the setting value set by consumers, check effective_aibi_dashboard_embedding_access_policy for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAibiDashboardEmbeddingAccessPolicy
 {
@@ -497,7 +497,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAibiDashboardEmbed
 }
 
 /// <summary>Setting value for aibi_dashboard_embedding_approved_domains setting. This is the setting value set by consumers, check effective_aibi_dashboard_embedding_approved_domains for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAibiDashboardEmbeddingApprovedDomains
 {
@@ -507,7 +507,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAibiDashboardEmbed
 }
 
 /// <summary>Setting value for allowed_apps_user_api_scopes setting. This is the setting value set by consumers, check effective_allowed_apps_user_api_scopes for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAllowedAppsUserApiScopes
 {
@@ -517,7 +517,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAllowedAppsUserApi
 }
 
 /// <summary>(ClusterAutoRestartMessageEnablementDetails, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUpdateWorkspaceEnablementDetails
 {
@@ -535,7 +535,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUp
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWindowStartTime, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime
 {
@@ -549,7 +549,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUp
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWeekDayBasedSchedule, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule
 {
@@ -567,7 +567,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUp
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindow, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUpdateWorkspaceMaintenanceWindow
 {
@@ -577,7 +577,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUp
 }
 
 /// <summary>Setting value for automatic_cluster_update_workspace setting. This is the setting value set by consumers, check effective_automatic_cluster_update_workspace for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUpdateWorkspace
 {
@@ -603,7 +603,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderAutomaticClusterUp
 }
 
 /// <summary>Setting value for boolean type setting. This is the setting value set by consumers, check effective_boolean_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderBooleanVal
 {
@@ -613,7 +613,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderBooleanVal
 }
 
 /// <summary>Setting value for collaboration_platform_connectivity setting. This is the setting value set by consumers, check effective_collaboration_platform_connectivity for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderCollaborationPlatformConnectivity
 {
@@ -623,7 +623,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderCollaborationPlatf
 }
 
 /// <summary>Effective setting value for aibi_dashboard_embedding_access_policy setting. This is the final effective value of setting. To set a value use aibi_dashboard_embedding_access_policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAibiDashboardEmbeddingAccessPolicy
 {
@@ -633,7 +633,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAibiDashb
 }
 
 /// <summary>Effective setting value for aibi_dashboard_embedding_approved_domains setting. This is the final effective value of setting. To set a value use aibi_dashboard_embedding_approved_domains</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAibiDashboardEmbeddingApprovedDomains
 {
@@ -643,7 +643,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAibiDashb
 }
 
 /// <summary>(ClusterAutoRestartMessageEnablementDetails, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomaticClusterUpdateWorkspaceEnablementDetails
 {
@@ -661,7 +661,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomatic
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWindowStartTime, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime
 {
@@ -675,7 +675,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomatic
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWeekDayBasedSchedule, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule
 {
@@ -693,7 +693,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomatic
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindow, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow
 {
@@ -703,7 +703,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomatic
 }
 
 /// <summary>Effective setting value for automatic_cluster_update_workspace setting. This is the final effective value of setting. To set a value use automatic_cluster_update_workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomaticClusterUpdateWorkspace
 {
@@ -729,7 +729,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveAutomatic
 }
 
 /// <summary>Effective setting value for personal_compute setting. This is the final effective value of setting. To set a value use personal_compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectivePersonalCompute
 {
@@ -739,7 +739,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectivePersonalC
 }
 
 /// <summary>Effective setting value for restrict_workspace_admins setting. This is the final effective value of setting. To set a value use restrict_workspace_admins</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveRestrictWorkspaceAdmins
 {
@@ -756,7 +756,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveRestrictW
 }
 
 /// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveWorkspaceLabel
 {
@@ -770,7 +770,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderEffectiveWorkspace
 }
 
 /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderIntegerVal
 {
@@ -780,7 +780,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderIntegerVal
 }
 
 /// <summary>Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderOperationalEmailCustomRecipient
 {
@@ -790,7 +790,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderOperationalEmailCu
 }
 
 /// <summary>Setting value for personal_compute setting. This is the setting value set by consumers, check effective_personal_compute for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderPersonalCompute
 {
@@ -800,7 +800,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderPersonalCompute
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderProviderConfig
 {
@@ -810,7 +810,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderProviderConfig
 }
 
 /// <summary>Setting value for restrict_workspace_admins setting. This is the setting value set by consumers, check effective_restrict_workspace_admins for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderRestrictWorkspaceAdmins
 {
@@ -827,7 +827,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderRestrictWorkspaceA
 }
 
 /// <summary>Setting value for string type setting. This is the setting value set by consumers, check effective_string_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderStringVal
 {
@@ -837,7 +837,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderStringVal
 }
 
 /// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProviderWorkspaceLabel
 {
@@ -862,7 +862,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProviderWorkspaceLabel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecInitProvider
 {
@@ -951,7 +951,7 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceSettingV2SpecManagementPoliciesEnum>))]
 public enum V1beta1WorkspaceSettingV2SpecManagementPoliciesEnum
 {
@@ -974,7 +974,7 @@ public enum V1beta1WorkspaceSettingV2SpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecProviderConfigRef
 {
@@ -993,7 +993,7 @@ public partial class V1beta1WorkspaceSettingV2SpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2SpecWriteConnectionSecretToRef
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta1WorkspaceSettingV2SpecWriteConnectionSecretToRef
 }
 
 /// <summary>WorkspaceSettingV2Spec defines the desired state of WorkspaceSettingV2</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2Spec
 {
@@ -1055,7 +1055,7 @@ public partial class V1beta1WorkspaceSettingV2Spec
 }
 
 /// <summary>Setting value for aibi_dashboard_embedding_access_policy setting. This is the setting value set by consumers, check effective_aibi_dashboard_embedding_access_policy for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAibiDashboardEmbeddingAccessPolicy
 {
@@ -1065,7 +1065,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAibiDashboardEmbed
 }
 
 /// <summary>Setting value for aibi_dashboard_embedding_approved_domains setting. This is the setting value set by consumers, check effective_aibi_dashboard_embedding_approved_domains for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAibiDashboardEmbeddingApprovedDomains
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAibiDashboardEmbed
 }
 
 /// <summary>Setting value for allowed_apps_user_api_scopes setting. This is the setting value set by consumers, check effective_allowed_apps_user_api_scopes for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAllowedAppsUserApiScopes
 {
@@ -1085,7 +1085,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAllowedAppsUserApi
 }
 
 /// <summary>(ClusterAutoRestartMessageEnablementDetails, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUpdateWorkspaceEnablementDetails
 {
@@ -1103,7 +1103,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUp
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWindowStartTime, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime
 {
@@ -1117,7 +1117,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUp
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWeekDayBasedSchedule, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUp
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindow, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUpdateWorkspaceMaintenanceWindow
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUp
 }
 
 /// <summary>Setting value for automatic_cluster_update_workspace setting. This is the setting value set by consumers, check effective_automatic_cluster_update_workspace for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUpdateWorkspace
 {
@@ -1171,7 +1171,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderAutomaticClusterUp
 }
 
 /// <summary>Setting value for boolean type setting. This is the setting value set by consumers, check effective_boolean_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderBooleanVal
 {
@@ -1181,7 +1181,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderBooleanVal
 }
 
 /// <summary>Setting value for collaboration_platform_connectivity setting. This is the setting value set by consumers, check effective_collaboration_platform_connectivity for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderCollaborationPlatformConnectivity
 {
@@ -1191,7 +1191,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderCollaborationPlatf
 }
 
 /// <summary>Effective setting value for aibi_dashboard_embedding_access_policy setting. This is the final effective value of setting. To set a value use aibi_dashboard_embedding_access_policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAibiDashboardEmbeddingAccessPolicy
 {
@@ -1201,7 +1201,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAibiDashb
 }
 
 /// <summary>Effective setting value for aibi_dashboard_embedding_approved_domains setting. This is the final effective value of setting. To set a value use aibi_dashboard_embedding_approved_domains</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAibiDashboardEmbeddingApprovedDomains
 {
@@ -1211,7 +1211,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAibiDashb
 }
 
 /// <summary>Effective setting value for allowed_apps_user_api_scopes setting. This is the final effective value of setting. To set a value use allowed_apps_user_api_scopes</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAllowedAppsUserApiScopes
 {
@@ -1221,7 +1221,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAllowedAp
 }
 
 /// <summary>(ClusterAutoRestartMessageEnablementDetails, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomaticClusterUpdateWorkspaceEnablementDetails
 {
@@ -1239,7 +1239,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomatic
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWindowStartTime, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime
 {
@@ -1253,7 +1253,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomatic
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindowWeekDayBasedSchedule, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule
 {
@@ -1271,7 +1271,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomatic
 }
 
 /// <summary>(ClusterAutoRestartMessageMaintenanceWindow, optional)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow
 {
@@ -1281,7 +1281,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomatic
 }
 
 /// <summary>Effective setting value for automatic_cluster_update_workspace setting. This is the final effective value of setting. To set a value use automatic_cluster_update_workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomaticClusterUpdateWorkspace
 {
@@ -1307,7 +1307,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveAutomatic
 }
 
 /// <summary>Effective setting value for boolean type setting. This is the final effective value of setting. To set a value use boolean_val</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveBooleanVal
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveBooleanVa
 }
 
 /// <summary>Effective setting value for collaboration_platform_connectivity setting. This is the final effective value of setting. To set a value use collaboration_platform_connectivity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveCollaborationPlatformConnectivity
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveCollabora
 }
 
 /// <summary>Effective setting value for integer type setting. This is the final effective value of setting. To set a value use integer_val</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveIntegerVal
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveIntegerVa
 }
 
 /// <summary>Effective setting value for operational_email_custom_recipient setting. This is the final effective value of setting. To set a value use operational_email_custom_recipient</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveOperationalEmailCustomRecipient
 {
@@ -1347,7 +1347,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveOperation
 }
 
 /// <summary>Effective setting value for personal_compute setting. This is the final effective value of setting. To set a value use personal_compute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectivePersonalCompute
 {
@@ -1357,7 +1357,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectivePersonalC
 }
 
 /// <summary>Effective setting value for restrict_workspace_admins setting. This is the final effective value of setting. To set a value use restrict_workspace_admins</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveRestrictWorkspaceAdmins
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveRestrictW
 }
 
 /// <summary>Effective setting value for string type setting. This is the final effective value of setting. To set a value use string_val</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveStringVal
 {
@@ -1384,7 +1384,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveStringVal
 }
 
 /// <summary>Effective setting value for workspace_label setting. This is the final effective value of setting. To set a value use workspace_label</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveWorkspaceLabel
 {
@@ -1398,7 +1398,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderEffectiveWorkspace
 }
 
 /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderIntegerVal
 {
@@ -1408,7 +1408,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderIntegerVal
 }
 
 /// <summary>Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderOperationalEmailCustomRecipient
 {
@@ -1418,7 +1418,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderOperationalEmailCu
 }
 
 /// <summary>Setting value for personal_compute setting. This is the setting value set by consumers, check effective_personal_compute for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderPersonalCompute
 {
@@ -1428,7 +1428,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderPersonalCompute
 }
 
 /// <summary>Configure the provider for management through account provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderProviderConfig
 {
@@ -1438,7 +1438,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderProviderConfig
 }
 
 /// <summary>Setting value for restrict_workspace_admins setting. This is the setting value set by consumers, check effective_restrict_workspace_admins for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderRestrictWorkspaceAdmins
 {
@@ -1455,7 +1455,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderRestrictWorkspaceA
 }
 
 /// <summary>Setting value for string type setting. This is the setting value set by consumers, check effective_string_val for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderStringVal
 {
@@ -1465,7 +1465,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderStringVal
 }
 
 /// <summary>Setting value for workspace_label setting. This is the setting value set by consumers, check effective_workspace_label for final setting value</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProviderWorkspaceLabel
 {
@@ -1478,7 +1478,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProviderWorkspaceLabel
     public string? Label { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusAtProvider
 {
@@ -1591,7 +1591,7 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2StatusConditions
 {
@@ -1634,7 +1634,7 @@ public partial class V1beta1WorkspaceSettingV2StatusConditions
 }
 
 /// <summary>WorkspaceSettingV2Status defines the observed state of WorkspaceSettingV2.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceSettingV2Status
 {
@@ -1664,7 +1664,7 @@ public partial class V1beta1WorkspaceSettingV2Status
 }
 
 /// <summary>WorkspaceSettingV2 is the Schema for the WorkspaceSettingV2s API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceSettingV2 : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkspaceSettingV2Spec>, IStatus<V1beta1WorkspaceSettingV2Status?>

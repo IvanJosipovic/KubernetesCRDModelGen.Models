@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.sql.azure.com;
 /// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2025-01-01/managedInstances.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250101ManagedInstanceList : IKubernetesObject<V1ListMeta>, IItems<V20250101ManagedInstance>
@@ -42,7 +42,7 @@ public partial class V20250101ManagedInstanceList : IKubernetesObject<V1ListMeta
 }
 
 /// <summary>AdministratorLoginPassword: The administrator login password (required for managed instance creation).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecAdministratorLoginPassword
 {
@@ -59,7 +59,7 @@ public partial class V20250101ManagedInstanceSpecAdministratorLoginPassword
 }
 
 /// <summary>AdministratorType: Type of the sever administrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecAdministratorsAdministratorTypeEnum>))]
 public enum V20250101ManagedInstanceSpecAdministratorsAdministratorTypeEnum
 {
@@ -68,7 +68,7 @@ public enum V20250101ManagedInstanceSpecAdministratorsAdministratorTypeEnum
 }
 
 /// <summary>LoginFromConfig: Login name of the server administrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecAdministratorsLoginFromConfig
 {
@@ -85,7 +85,7 @@ public partial class V20250101ManagedInstanceSpecAdministratorsLoginFromConfig
 }
 
 /// <summary>PrincipalType: Principal Type of the sever administrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecAdministratorsPrincipalTypeEnum>))]
 public enum V20250101ManagedInstanceSpecAdministratorsPrincipalTypeEnum
 {
@@ -98,7 +98,7 @@ public enum V20250101ManagedInstanceSpecAdministratorsPrincipalTypeEnum
 }
 
 /// <summary>SidFromConfig: SID (object ID) of the server administrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecAdministratorsSidFromConfig
 {
@@ -115,7 +115,7 @@ public partial class V20250101ManagedInstanceSpecAdministratorsSidFromConfig
 }
 
 /// <summary>TenantIdFromConfig: Tenant ID of the administrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecAdministratorsTenantIdFromConfig
 {
@@ -136,7 +136,7 @@ public partial class V20250101ManagedInstanceSpecAdministratorsTenantIdFromConfi
 /// updates, except for the azureADOnlyAuthentication property. To update the azureADOnlyAuthentication property, individual
 /// API must be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecAdministrators
 {
@@ -178,7 +178,7 @@ public partial class V20250101ManagedInstanceSpecAdministrators
 }
 
 /// <summary>AuthenticationMetadata: The managed instance&apos;s authentication metadata lookup mode.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecAuthenticationMetadataEnum>))]
 public enum V20250101ManagedInstanceSpecAuthenticationMetadataEnum
 {
@@ -191,7 +191,7 @@ public enum V20250101ManagedInstanceSpecAuthenticationMetadataEnum
 }
 
 /// <summary>DatabaseFormat: Specifies the internal format of instance databases specific to the SQL engine version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecDatabaseFormatEnum>))]
 public enum V20250101ManagedInstanceSpecDatabaseFormatEnum
 {
@@ -207,7 +207,7 @@ public enum V20250101ManagedInstanceSpecDatabaseFormatEnum
 /// DnsZonePartnerReference: The resource id of another managed instance whose DNS zone this managed instance will share
 /// after creation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecDnsZonePartnerReference
 {
@@ -236,7 +236,7 @@ public partial class V20250101ManagedInstanceSpecDnsZonePartnerReference
 /// HybridSecondaryUsage: Hybrid secondary usage. Possible values are &apos;Active&apos; (default value) and &apos;Passive&apos; (customer uses
 /// the secondary as Passive DR).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecHybridSecondaryUsageEnum>))]
 public enum V20250101ManagedInstanceSpecHybridSecondaryUsageEnum
 {
@@ -250,7 +250,7 @@ public enum V20250101ManagedInstanceSpecHybridSecondaryUsageEnum
 /// Type: The identity type. Set this to &apos;SystemAssigned&apos; in order to automatically create and assign an Azure Active
 /// Directory principal for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecIdentityTypeEnum>))]
 public enum V20250101ManagedInstanceSpecIdentityTypeEnum
 {
@@ -265,7 +265,7 @@ public enum V20250101ManagedInstanceSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecIdentityUserAssignedIdentitiesReference
 {
@@ -291,7 +291,7 @@ public partial class V20250101ManagedInstanceSpecIdentityUserAssignedIdentitiesR
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecIdentityUserAssignedIdentities
 {
@@ -301,7 +301,7 @@ public partial class V20250101ManagedInstanceSpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The Azure Active Directory identity of the managed instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecIdentity
 {
@@ -318,7 +318,7 @@ public partial class V20250101ManagedInstanceSpecIdentity
 }
 
 /// <summary>InstancePoolReference: The Id of the instance pool this managed server belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecInstancePoolReference
 {
@@ -347,7 +347,7 @@ public partial class V20250101ManagedInstanceSpecInstancePoolReference
 /// LicenseType: The license type. Possible values are &apos;LicenseIncluded&apos; (regular price inclusive of a new SQL license) and
 /// &apos;BasePrice&apos; (discounted AHB price for bringing your own SQL licenses).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecLicenseTypeEnum>))]
 public enum V20250101ManagedInstanceSpecLicenseTypeEnum
 {
@@ -363,7 +363,7 @@ public enum V20250101ManagedInstanceSpecLicenseTypeEnum
 /// Restore: Creates an instance by restoring a set of backups to specific point in time. RestorePointInTime and
 /// SourceManagedInstanceId must be specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecManagedInstanceCreateModeEnum>))]
 public enum V20250101ManagedInstanceSpecManagedInstanceCreateModeEnum
 {
@@ -378,7 +378,7 @@ public enum V20250101ManagedInstanceSpecManagedInstanceCreateModeEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecOperatorSpecConfigMapExpressions
 {
@@ -418,7 +418,7 @@ public partial class V20250101ManagedInstanceSpecOperatorSpecConfigMapExpression
 /// FullyQualifiedDomainName: indicates where the FullyQualifiedDomainName config map should be placed. If omitted, no
 /// config map will be created.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecOperatorSpecConfigMapsFullyQualifiedDomainName
 {
@@ -443,7 +443,7 @@ public partial class V20250101ManagedInstanceSpecOperatorSpecConfigMapsFullyQual
 }
 
 /// <summary>ConfigMaps: configures where to place operator written ConfigMaps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecOperatorSpecConfigMaps
 {
@@ -460,7 +460,7 @@ public partial class V20250101ManagedInstanceSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecOperatorSpecSecretExpressions
 {
@@ -500,7 +500,7 @@ public partial class V20250101ManagedInstanceSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecOperatorSpec
 {
@@ -522,7 +522,7 @@ public partial class V20250101ManagedInstanceSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecOwner
 {
@@ -535,7 +535,7 @@ public partial class V20250101ManagedInstanceSpecOwner
 }
 
 /// <summary>PricingModel: Pricing model of Managed Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecPricingModelEnum>))]
 public enum V20250101ManagedInstanceSpecPricingModelEnum
 {
@@ -546,7 +546,7 @@ public enum V20250101ManagedInstanceSpecPricingModelEnum
 }
 
 /// <summary>PrimaryUserAssignedIdentityReference: The resource id of a user assigned identity to be used by default.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecPrimaryUserAssignedIdentityReference
 {
@@ -572,7 +572,7 @@ public partial class V20250101ManagedInstanceSpecPrimaryUserAssignedIdentityRefe
 }
 
 /// <summary>ProxyOverride: Connection type used for connecting to the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecProxyOverrideEnum>))]
 public enum V20250101ManagedInstanceSpecProxyOverrideEnum
 {
@@ -589,7 +589,7 @@ public enum V20250101ManagedInstanceSpecProxyOverrideEnum
 /// are Local (LocallyRedundantStorage), Zone (ZoneRedundantStorage), Geo (GeoRedundantStorage) and
 /// GeoZone(GeoZoneRedundantStorage)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecRequestedBackupStorageRedundancyEnum>))]
 public enum V20250101ManagedInstanceSpecRequestedBackupStorageRedundancyEnum
 {
@@ -604,7 +604,7 @@ public enum V20250101ManagedInstanceSpecRequestedBackupStorageRedundancyEnum
 }
 
 /// <summary>RequestedLogicalAvailabilityZone: Specifies the logical availability zone Managed Instance is pinned to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecRequestedLogicalAvailabilityZoneEnum>))]
 public enum V20250101ManagedInstanceSpecRequestedLogicalAvailabilityZoneEnum
 {
@@ -619,7 +619,7 @@ public enum V20250101ManagedInstanceSpecRequestedLogicalAvailabilityZoneEnum
 }
 
 /// <summary>Type: Service principal type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250101ManagedInstanceSpecServicePrincipalTypeEnum>))]
 public enum V20250101ManagedInstanceSpecServicePrincipalTypeEnum
 {
@@ -630,7 +630,7 @@ public enum V20250101ManagedInstanceSpecServicePrincipalTypeEnum
 }
 
 /// <summary>ServicePrincipal: The managed instance&apos;s service principal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecServicePrincipal
 {
@@ -645,7 +645,7 @@ public partial class V20250101ManagedInstanceSpecServicePrincipal
 /// Standard-Series); BC_G8IM (Business Critical, Premium-series); BC_G8IH (Business Critical, Premium-series memory
 /// optimized).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecSku
 {
@@ -674,7 +674,7 @@ public partial class V20250101ManagedInstanceSpecSku
 /// SourceManagedInstanceReference: The resource identifier of the source managed instance associated with create operation
 /// of this instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecSourceManagedInstanceReference
 {
@@ -700,7 +700,7 @@ public partial class V20250101ManagedInstanceSpecSourceManagedInstanceReference
 }
 
 /// <summary>SubnetReference: Subnet resource ID for the managed instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpecSubnetReference
 {
@@ -725,7 +725,7 @@ public partial class V20250101ManagedInstanceSpecSubnetReference
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceSpec
 {
@@ -956,7 +956,7 @@ public partial class V20250101ManagedInstanceSpec
 /// updates, except for the azureADOnlyAuthentication property. To update the azureADOnlyAuthentication property, individual
 /// API must be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusAdministrators
 {
@@ -986,7 +986,7 @@ public partial class V20250101ManagedInstanceStatusAdministrators
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusConditions
 {
@@ -1032,7 +1032,7 @@ public partial class V20250101ManagedInstanceStatusConditions
 }
 
 /// <summary>Azure Active Directory identity configuration for a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusIdentityUserAssignedIdentities
 {
@@ -1046,7 +1046,7 @@ public partial class V20250101ManagedInstanceStatusIdentityUserAssignedIdentitie
 }
 
 /// <summary>Identity: The Azure Active Directory identity of the managed instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusIdentity
 {
@@ -1071,7 +1071,7 @@ public partial class V20250101ManagedInstanceStatusIdentity
 }
 
 /// <summary>PrivateEndpoint: Private endpoint which the connection belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusPrivateEndpointConnectionsPropertiesPrivateEndpoint
 {
@@ -1081,7 +1081,7 @@ public partial class V20250101ManagedInstanceStatusPrivateEndpointConnectionsPro
 }
 
 /// <summary>PrivateLinkServiceConnectionState: Connection State of the Private Endpoint Connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusPrivateEndpointConnectionsPropertiesPrivateLinkServiceConnectionState
 {
@@ -1099,7 +1099,7 @@ public partial class V20250101ManagedInstanceStatusPrivateEndpointConnectionsPro
 }
 
 /// <summary>Properties: Private endpoint connection properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusPrivateEndpointConnectionsProperties
 {
@@ -1117,7 +1117,7 @@ public partial class V20250101ManagedInstanceStatusPrivateEndpointConnectionsPro
 }
 
 /// <summary>A private endpoint connection under a managed instance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusPrivateEndpointConnections
 {
@@ -1131,7 +1131,7 @@ public partial class V20250101ManagedInstanceStatusPrivateEndpointConnections
 }
 
 /// <summary>ServicePrincipal: The managed instance&apos;s service principal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusServicePrincipal
 {
@@ -1158,7 +1158,7 @@ public partial class V20250101ManagedInstanceStatusServicePrincipal
 /// Standard-Series); BC_G8IM (Business Critical, Premium-series); BC_G8IH (Business Critical, Premium-series memory
 /// optimized).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusSku
 {
@@ -1184,7 +1184,7 @@ public partial class V20250101ManagedInstanceStatusSku
 }
 
 /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatusSystemData
 {
@@ -1214,7 +1214,7 @@ public partial class V20250101ManagedInstanceStatusSystemData
 }
 
 /// <summary>An Azure SQL managed instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250101ManagedInstanceStatus
 {
@@ -1489,7 +1489,7 @@ public partial class V20250101ManagedInstanceStatus
 /// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2025-01-01/managedInstances.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/managedInstances/{managedInstanceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250101ManagedInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V20250101ManagedInstanceSpec?>, IStatus<V20250101ManagedInstanceStatus?>

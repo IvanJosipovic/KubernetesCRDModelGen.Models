@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.eventgrid.azure.com;
 /// - Generated from: /eventgrid/resource-manager/Microsoft.EventGrid/EventGrid/stable/2025-02-15/EventGrid.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventGrid/namespaces/{namespaceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250215storageNamespaceList : IKubernetesObject<V1ListMeta>, IItems<V20250215storageNamespace>
@@ -43,7 +43,7 @@ public partial class V20250215storageNamespaceList : IKubernetesObject<V1ListMet
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecIdentityUserAssignedIdentitiesReference
 {
@@ -72,7 +72,7 @@ public partial class V20250215storageNamespaceSpecIdentityUserAssignedIdentities
 /// Storage version of v20250215.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecIdentityUserAssignedIdentities
 {
@@ -92,7 +92,7 @@ public partial class V20250215storageNamespaceSpecIdentityUserAssignedIdentities
 /// Storage version of v20250215.IdentityInfo
 /// The identity information for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecIdentity
 {
@@ -111,7 +111,7 @@ public partial class V20250215storageNamespaceSpecIdentity
 }
 
 /// <summary>Storage version of v20250215.InboundIpRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecInboundIpRules
 {
@@ -134,7 +134,7 @@ public partial class V20250215storageNamespaceSpecInboundIpRules
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecOperatorSpecConfigMapExpressions
 {
@@ -175,7 +175,7 @@ public partial class V20250215storageNamespaceSpecOperatorSpecConfigMapExpressio
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecOperatorSpecSecretExpressions
 {
@@ -216,7 +216,7 @@ public partial class V20250215storageNamespaceSpecOperatorSpecSecretExpressions
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecOperatorSpecSecretsKey1
 {
@@ -245,7 +245,7 @@ public partial class V20250215storageNamespaceSpecOperatorSpecSecretsKey1
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecOperatorSpecSecretsKey2
 {
@@ -270,7 +270,7 @@ public partial class V20250215storageNamespaceSpecOperatorSpecSecretsKey2
 }
 
 /// <summary>Storage version of v20250215.NamespaceOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecOperatorSpecSecrets
 {
@@ -302,7 +302,7 @@ public partial class V20250215storageNamespaceSpecOperatorSpecSecrets
 /// Storage version of v20250215.NamespaceOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecOperatorSpec
 {
@@ -329,7 +329,7 @@ public partial class V20250215storageNamespaceSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecOwner
 {
@@ -345,7 +345,7 @@ public partial class V20250215storageNamespaceSpecOwner
 /// Storage version of v20250215.NamespaceSku
 /// Represents available Sku pricing tiers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecSku
 {
@@ -367,7 +367,7 @@ public partial class V20250215storageNamespaceSpecSku
 /// Storage version of v20250215.CustomDomainIdentity
 /// The identity information for retrieving the certificate for the custom domain.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationCustomDomainsIdentity
 {
@@ -389,7 +389,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationCustom
 /// Storage version of v20250215.CustomDomainConfiguration
 /// A custom domain configuration that allows users to publish to their own domain name.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationCustomDomains
 {
@@ -430,7 +430,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationCustom
 /// &apos;/subscriptions/{subId}/resourcegroups/{resourceGroupName}/providers/microsoft.EventGrid/topics/{topicName}&apos;.
 /// This topic should reside in the same region where namespace is located.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRouteTopicResourceReference
 {
@@ -456,7 +456,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRouteT
 }
 
 /// <summary>Storage version of v20250215.DynamicRoutingEnrichment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutingEnrichmentsDynamic
 {
@@ -475,7 +475,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutin
 }
 
 /// <summary>Storage version of v20250215.StaticStringRoutingEnrichment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutingEnrichmentsStaticString
 {
@@ -497,7 +497,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutin
 }
 
 /// <summary>Storage version of v20250215.StaticRoutingEnrichment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutingEnrichmentsStatic
 {
@@ -514,7 +514,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutin
 }
 
 /// <summary>Storage version of v20250215.RoutingEnrichments</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutingEnrichments
 {
@@ -536,7 +536,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutin
 /// Storage version of v20250215.RoutingIdentityInfo
 /// Routing identity info for topic spaces configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutingIdentityInfo
 {
@@ -558,7 +558,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfigurationRoutin
 /// Storage version of v20250215.TopicSpacesConfiguration
 /// Properties of the Topic Spaces Configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicSpacesConfiguration
 {
@@ -607,7 +607,7 @@ public partial class V20250215storageNamespaceSpecTopicSpacesConfiguration
 /// Storage version of v20250215.CustomDomainIdentity
 /// The identity information for retrieving the certificate for the custom domain.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicsConfigurationCustomDomainsIdentity
 {
@@ -629,7 +629,7 @@ public partial class V20250215storageNamespaceSpecTopicsConfigurationCustomDomai
 /// Storage version of v20250215.CustomDomainConfiguration
 /// A custom domain configuration that allows users to publish to their own domain name.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicsConfigurationCustomDomains
 {
@@ -667,7 +667,7 @@ public partial class V20250215storageNamespaceSpecTopicsConfigurationCustomDomai
 /// Storage version of v20250215.TopicsConfiguration
 /// Properties of the Topics Configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpecTopicsConfiguration
 {
@@ -683,7 +683,7 @@ public partial class V20250215storageNamespaceSpecTopicsConfiguration
 }
 
 /// <summary>Storage version of v20250215.Namespace_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceSpec
 {
@@ -764,7 +764,7 @@ public partial class V20250215storageNamespaceSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusConditions
 {
@@ -813,7 +813,7 @@ public partial class V20250215storageNamespaceStatusConditions
 /// Storage version of v20250215.UserIdentityProperties_STATUS
 /// The information about the user identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusIdentityUserAssignedIdentities
 {
@@ -835,7 +835,7 @@ public partial class V20250215storageNamespaceStatusIdentityUserAssignedIdentiti
 /// Storage version of v20250215.IdentityInfo_STATUS
 /// The identity information for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusIdentity
 {
@@ -860,7 +860,7 @@ public partial class V20250215storageNamespaceStatusIdentity
 }
 
 /// <summary>Storage version of v20250215.InboundIpRule_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusInboundIpRules
 {
@@ -879,7 +879,7 @@ public partial class V20250215storageNamespaceStatusInboundIpRules
 }
 
 /// <summary>Storage version of v20250215.PrivateEndpointConnection_STATUS_Namespace_SubResourceEmbedded</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusPrivateEndpointConnections
 {
@@ -898,7 +898,7 @@ public partial class V20250215storageNamespaceStatusPrivateEndpointConnections
 /// Storage version of v20250215.NamespaceSku_STATUS
 /// Represents available Sku pricing tiers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusSku
 {
@@ -920,7 +920,7 @@ public partial class V20250215storageNamespaceStatusSku
 /// Storage version of v20250215.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusSystemData
 {
@@ -954,7 +954,7 @@ public partial class V20250215storageNamespaceStatusSystemData
 /// Storage version of v20250215.CustomDomainIdentity_STATUS
 /// The identity information for retrieving the certificate for the custom domain.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationCustomDomainsIdentity
 {
@@ -976,7 +976,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationCust
 /// Storage version of v20250215.CustomDomainConfiguration_STATUS
 /// A custom domain configuration that allows users to publish to their own domain name.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationCustomDomains
 {
@@ -1011,7 +1011,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationCust
 }
 
 /// <summary>Storage version of v20250215.DynamicRoutingEnrichment_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRoutingEnrichmentsDynamic
 {
@@ -1030,7 +1030,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRout
 }
 
 /// <summary>Storage version of v20250215.StaticStringRoutingEnrichment_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRoutingEnrichmentsStaticString
 {
@@ -1052,7 +1052,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRout
 }
 
 /// <summary>Storage version of v20250215.StaticRoutingEnrichment_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRoutingEnrichmentsStatic
 {
@@ -1069,7 +1069,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRout
 }
 
 /// <summary>Storage version of v20250215.RoutingEnrichments_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRoutingEnrichments
 {
@@ -1091,7 +1091,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRout
 /// Storage version of v20250215.RoutingIdentityInfo_STATUS
 /// Routing identity info for topic spaces configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRoutingIdentityInfo
 {
@@ -1113,7 +1113,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfigurationRout
 /// Storage version of v20250215.TopicSpacesConfiguration_STATUS
 /// Properties of the Topic Spaces Configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicSpacesConfiguration
 {
@@ -1158,7 +1158,7 @@ public partial class V20250215storageNamespaceStatusTopicSpacesConfiguration
 /// Storage version of v20250215.CustomDomainIdentity_STATUS
 /// The identity information for retrieving the certificate for the custom domain.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicsConfigurationCustomDomainsIdentity
 {
@@ -1180,7 +1180,7 @@ public partial class V20250215storageNamespaceStatusTopicsConfigurationCustomDom
 /// Storage version of v20250215.CustomDomainConfiguration_STATUS
 /// A custom domain configuration that allows users to publish to their own domain name.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicsConfigurationCustomDomains
 {
@@ -1218,7 +1218,7 @@ public partial class V20250215storageNamespaceStatusTopicsConfigurationCustomDom
 /// Storage version of v20250215.TopicsConfiguration_STATUS
 /// Properties of the Topics Configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatusTopicsConfiguration
 {
@@ -1240,7 +1240,7 @@ public partial class V20250215storageNamespaceStatusTopicsConfiguration
 /// Storage version of v20250215.Namespace_STATUS
 /// Namespace resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250215storageNamespaceStatus
 {
@@ -1329,7 +1329,7 @@ public partial class V20250215storageNamespaceStatus
 /// - Generated from: /eventgrid/resource-manager/Microsoft.EventGrid/EventGrid/stable/2025-02-15/EventGrid.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventGrid/namespaces/{namespaceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250215storageNamespace : IKubernetesObject<V1ObjectMeta>, ISpec<V20250215storageNamespaceSpec?>, IStatus<V20250215storageNamespaceStatus?>
