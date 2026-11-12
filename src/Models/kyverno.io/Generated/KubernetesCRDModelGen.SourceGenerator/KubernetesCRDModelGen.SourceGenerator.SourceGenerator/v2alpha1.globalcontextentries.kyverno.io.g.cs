@@ -196,14 +196,39 @@ public partial class V2alpha1GlobalContextEntrySpecKubernetesResource
     public required string Version { get; set; }
 }
 
+/// <summary>
+/// GlobalContextEntryProjection extracts a named value from the cached resource using
+/// exactly one of JMESPath or Expression.
+/// 
+/// The bound input, `object` for Expression or `@` for JMESPath, is exactly the value
+/// returned by `globalContext.Get(name)` with no projection:
+///   - For an APICall entry, `object` is the parsed API response, typically
+///     `{&quot;items&quot;: [...]}` for a list endpoint, so a projection reads `object.items.size()`.
+///   - For a KubernetesResource entry, `object` is the list of matching resources
+///     directly, so the equivalent projection reads `object.size()`.
+/// 
+/// Numeric values extracted via Expression keep their CEL-native type (`int`,
+/// `uint`, or `double`), which may differ from the `float64` JMESPath always produces;
+/// arithmetic written against one is not guaranteed to type-check against the other.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2alpha1 GlobalContextEntry is deprecated; use kyverno.io/v2 GlobalContextEntry")]
 public partial class V2alpha1GlobalContextEntrySpecProjections
 {
-    /// <summary>JMESPath is the JMESPath expression to extract the value from the cached resource.</summary>
+    /// <summary>
+    /// Expression is the CEL expression to extract the value from the cached resource.
+    /// Mutually exclusive with JMESPath.
+    /// </summary>
+    [JsonPropertyName("expression")]
+    public string? Expression { get; set; }
+
+    /// <summary>
+    /// JMESPath is the JMESPath expression to extract the value from the cached resource.
+    /// Mutually exclusive with Expression.
+    /// </summary>
     [JsonPropertyName("jmesPath")]
-    public required string JmesPath { get; set; }
+    public string? JmesPath { get; set; }
 
     /// <summary>Name is the name to use for the extracted value in the context.</summary>
     [JsonPropertyName("name")]
@@ -234,7 +259,7 @@ public partial class V2alpha1GlobalContextEntrySpec
     [JsonPropertyName("kubernetesResource")]
     public V2alpha1GlobalContextEntrySpecKubernetesResource? KubernetesResource { get; set; }
 
-    /// <summary>Projections defines the list of JMESPath expressions to extract values from the cached resource.</summary>
+    /// <summary>Projections defines the list of projections to extract values from the cached resource.</summary>
     [JsonPropertyName("projections")]
     public IList<V2alpha1GlobalContextEntrySpecProjections>? Projections { get; set; }
 }
