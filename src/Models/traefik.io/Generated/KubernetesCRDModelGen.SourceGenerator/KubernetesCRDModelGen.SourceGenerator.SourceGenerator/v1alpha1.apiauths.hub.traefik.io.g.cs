@@ -82,9 +82,20 @@ public partial class V1alpha1APIAuthSpecApiKey
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIAuthSpecJwtClientConfigTls
 {
-    /// <summary>CA sets the CA bundle used to verify the server certificate.</summary>
+    /// <summary>
+    /// CA sets the CA bundle used to verify the server certificate.
+    /// Mutually exclusive with CASecretName.
+    /// </summary>
     [JsonPropertyName("ca")]
     public string? Ca { get; set; }
+
+    /// <summary>
+    /// CASecretName is the name of the Kubernetes Secret containing the CA bundle used to verify the server certificate.
+    /// The secret must contain a key named &apos;tls.ca&apos;.
+    /// Mutually exclusive with CA.
+    /// </summary>
+    [JsonPropertyName("caSecretName")]
+    public string? CaSecretName { get; set; }
 
     /// <summary>
     /// InsecureSkipVerify skips the server certificate validation.
