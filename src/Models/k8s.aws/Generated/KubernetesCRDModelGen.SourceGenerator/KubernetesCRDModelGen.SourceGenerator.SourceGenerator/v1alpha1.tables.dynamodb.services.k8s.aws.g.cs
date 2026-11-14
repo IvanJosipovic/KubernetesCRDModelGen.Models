@@ -136,6 +136,23 @@ public partial class V1alpha1TableSpecGlobalSecondaryIndexesProvisionedThroughpu
     public long? WriteCapacityUnits { get; set; }
 }
 
+/// <summary>
+/// Provides visibility into the number of read and write operations your table
+/// or secondary index can instantaneously support. The settings can be modified
+/// using the UpdateTable operation to meet the throughput requirements of an
+/// upcoming peak event.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TableSpecGlobalSecondaryIndexesWarmThroughput
+{
+    [JsonPropertyName("readUnitsPerSecond")]
+    public long? ReadUnitsPerSecond { get; set; }
+
+    [JsonPropertyName("writeUnitsPerSecond")]
+    public long? WriteUnitsPerSecond { get; set; }
+}
+
 /// <summary>Represents the properties of a global secondary index.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -173,6 +190,15 @@ public partial class V1alpha1TableSpecGlobalSecondaryIndexes
     /// </summary>
     [JsonPropertyName("provisionedThroughput")]
     public V1alpha1TableSpecGlobalSecondaryIndexesProvisionedThroughput? ProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Provides visibility into the number of read and write operations your table
+    /// or secondary index can instantaneously support. The settings can be modified
+    /// using the UpdateTable operation to meet the throughput requirements of an
+    /// upcoming peak event.
+    /// </summary>
+    [JsonPropertyName("warmThroughput")]
+    public V1alpha1TableSpecGlobalSecondaryIndexesWarmThroughput? WarmThroughput { get; set; }
 }
 
 /// <summary>
@@ -474,6 +500,21 @@ public partial class V1alpha1TableSpecTimeToLive
     public bool? Enabled { get; set; }
 }
 
+/// <summary>
+/// Represents the warm throughput (in read units per second and write units
+/// per second) for creating a table.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TableSpecWarmThroughput
+{
+    [JsonPropertyName("readUnitsPerSecond")]
+    public long? ReadUnitsPerSecond { get; set; }
+
+    [JsonPropertyName("writeUnitsPerSecond")]
+    public long? WriteUnitsPerSecond { get; set; }
+}
+
 /// <summary>TableSpec defines the desired state of Table.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -695,6 +736,13 @@ public partial class V1alpha1TableSpec
     /// </summary>
     [JsonPropertyName("timeToLive")]
     public V1alpha1TableSpecTimeToLive? TimeToLive { get; set; }
+
+    /// <summary>
+    /// Represents the warm throughput (in read units per second and write units
+    /// per second) for creating a table.
+    /// </summary>
+    [JsonPropertyName("warmThroughput")]
+    public V1alpha1TableSpecWarmThroughput? WarmThroughput { get; set; }
 }
 
 /// <summary>
@@ -867,6 +915,21 @@ public partial class V1alpha1TableStatusGlobalSecondaryIndexesDescriptionsProvis
     public long? WriteCapacityUnits { get; set; }
 }
 
+/// <summary>The description of the warm throughput value on a global secondary index.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TableStatusGlobalSecondaryIndexesDescriptionsWarmThroughput
+{
+    [JsonPropertyName("readUnitsPerSecond")]
+    public long? ReadUnitsPerSecond { get; set; }
+
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+
+    [JsonPropertyName("writeUnitsPerSecond")]
+    public long? WriteUnitsPerSecond { get; set; }
+}
+
 /// <summary>Represents the properties of a global secondary index.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -915,6 +978,10 @@ public partial class V1alpha1TableStatusGlobalSecondaryIndexesDescriptions
     /// </summary>
     [JsonPropertyName("provisionedThroughput")]
     public V1alpha1TableStatusGlobalSecondaryIndexesDescriptionsProvisionedThroughput? ProvisionedThroughput { get; set; }
+
+    /// <summary>The description of the warm throughput value on a global secondary index.</summary>
+    [JsonPropertyName("warmThroughput")]
+    public V1alpha1TableStatusGlobalSecondaryIndexesDescriptionsWarmThroughput? WarmThroughput { get; set; }
 }
 
 /// <summary>
@@ -927,6 +994,21 @@ public partial class V1alpha1TableStatusReplicasGlobalSecondaryIndexesProvisione
 {
     [JsonPropertyName("readCapacityUnits")]
     public long? ReadCapacityUnits { get; set; }
+}
+
+/// <summary>The description of the warm throughput value on a global secondary index.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TableStatusReplicasGlobalSecondaryIndexesWarmThroughput
+{
+    [JsonPropertyName("readUnitsPerSecond")]
+    public long? ReadUnitsPerSecond { get; set; }
+
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+
+    [JsonPropertyName("writeUnitsPerSecond")]
+    public long? WriteUnitsPerSecond { get; set; }
 }
 
 /// <summary>Represents the properties of a replica global secondary index.</summary>
@@ -943,6 +1025,10 @@ public partial class V1alpha1TableStatusReplicasGlobalSecondaryIndexes
     /// </summary>
     [JsonPropertyName("provisionedThroughputOverride")]
     public V1alpha1TableStatusReplicasGlobalSecondaryIndexesProvisionedThroughputOverride? ProvisionedThroughputOverride { get; set; }
+
+    /// <summary>The description of the warm throughput value on a global secondary index.</summary>
+    [JsonPropertyName("warmThroughput")]
+    public V1alpha1TableStatusReplicasGlobalSecondaryIndexesWarmThroughput? WarmThroughput { get; set; }
 }
 
 /// <summary>
@@ -967,6 +1053,24 @@ public partial class V1alpha1TableStatusReplicasReplicaTableClassSummary
 
     [JsonPropertyName("tableClass")]
     public string? TableClass { get; set; }
+}
+
+/// <summary>
+/// Represents the warm throughput value (in read units per second and write
+/// units per second) of the base table.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TableStatusReplicasWarmThroughput
+{
+    [JsonPropertyName("readUnitsPerSecond")]
+    public long? ReadUnitsPerSecond { get; set; }
+
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+
+    [JsonPropertyName("writeUnitsPerSecond")]
+    public long? WriteUnitsPerSecond { get; set; }
 }
 
 /// <summary>Contains the details of the replica.</summary>
@@ -1005,6 +1109,13 @@ public partial class V1alpha1TableStatusReplicas
     /// <summary>Contains details of the table class.</summary>
     [JsonPropertyName("replicaTableClassSummary")]
     public V1alpha1TableStatusReplicasReplicaTableClassSummary? ReplicaTableClassSummary { get; set; }
+
+    /// <summary>
+    /// Represents the warm throughput value (in read units per second and write
+    /// units per second) of the base table.
+    /// </summary>
+    [JsonPropertyName("warmThroughput")]
+    public V1alpha1TableStatusReplicasWarmThroughput? WarmThroughput { get; set; }
 }
 
 /// <summary>Contains details for the restore.</summary>
@@ -1023,6 +1134,21 @@ public partial class V1alpha1TableStatusRestoreSummary
 
     [JsonPropertyName("sourceTableARN")]
     public string? SourceTableARN { get; set; }
+}
+
+/// <summary>Describes the warm throughput value of the base table.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TableStatusWarmThroughputDescription
+{
+    [JsonPropertyName("readUnitsPerSecond")]
+    public long? ReadUnitsPerSecond { get; set; }
+
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+
+    [JsonPropertyName("writeUnitsPerSecond")]
+    public long? WriteUnitsPerSecond { get; set; }
 }
 
 /// <summary>TableStatus defines the observed state of Table</summary>
@@ -1148,6 +1274,10 @@ public partial class V1alpha1TableStatus
     /// </summary>
     [JsonPropertyName("tableStatus")]
     public string? TableStatus { get; set; }
+
+    /// <summary>Describes the warm throughput value of the base table.</summary>
+    [JsonPropertyName("warmThroughputDescription")]
+    public V1alpha1TableStatusWarmThroughputDescription? WarmThroughputDescription { get; set; }
 }
 
 /// <summary>Table is the Schema for the Tables API</summary>

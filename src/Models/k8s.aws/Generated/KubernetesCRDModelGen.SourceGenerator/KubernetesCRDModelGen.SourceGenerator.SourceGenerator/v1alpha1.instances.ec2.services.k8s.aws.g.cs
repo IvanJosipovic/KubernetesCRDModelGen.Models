@@ -536,6 +536,42 @@ public partial class V1alpha1InstanceSpecPrivateDNSNameOptions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1InstanceSpecSecurityGroupRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1InstanceSpecSecurityGroupRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1InstanceSpecSecurityGroupRefsFrom? From { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1InstanceSpecSubnetRefFrom
 {
     [JsonPropertyName("name")]
@@ -878,6 +914,9 @@ public partial class V1alpha1InstanceSpec
     /// </summary>
     [JsonPropertyName("securityGroupIDs")]
     public IList<string>? SecurityGroupIDs { get; set; }
+
+    [JsonPropertyName("securityGroupRefs")]
+    public IList<V1alpha1InstanceSpecSecurityGroupRefs>? SecurityGroupRefs { get; set; }
 
     /// <summary>
     /// [Default VPC] The names of the security groups.
