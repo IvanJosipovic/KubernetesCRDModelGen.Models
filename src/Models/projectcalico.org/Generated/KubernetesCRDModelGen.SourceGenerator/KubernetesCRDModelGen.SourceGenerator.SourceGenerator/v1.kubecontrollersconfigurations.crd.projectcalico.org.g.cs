@@ -290,14 +290,14 @@ public enum V1KubeControllersConfigurationSpecHealthChecksEnum
 
 /// <summary>
 /// LogSeverityScreen is the log severity above which logs are sent to the stdout. [Default: Info]
-/// Valid values are: &quot;None&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
+/// Valid values are: &quot;Trace&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationSpecLogSeverityScreenEnum>))]
 public enum V1KubeControllersConfigurationSpecLogSeverityScreenEnum
 {
-    [EnumMember(Value = "None"), JsonStringEnumMemberName("None")]
-    None,
+    [EnumMember(Value = "Trace"), JsonStringEnumMemberName("Trace")]
+    Trace,
     [EnumMember(Value = "Debug"), JsonStringEnumMemberName("Debug")]
     Debug,
     [EnumMember(Value = "Info"), JsonStringEnumMemberName("Info")]
@@ -352,7 +352,7 @@ public partial class V1KubeControllersConfigurationSpec
 
     /// <summary>
     /// LogSeverityScreen is the log severity above which logs are sent to the stdout. [Default: Info]
-    /// Valid values are: &quot;None&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
+    /// Valid values are: &quot;Trace&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
     /// </summary>
     [JsonPropertyName("logSeverityScreen")]
     public V1KubeControllersConfigurationSpecLogSeverityScreenEnum? LogSeverityScreen { get; set; }
@@ -619,14 +619,14 @@ public enum V1KubeControllersConfigurationStatusRunningConfigHealthChecksEnum
 
 /// <summary>
 /// LogSeverityScreen is the log severity above which logs are sent to the stdout. [Default: Info]
-/// Valid values are: &quot;None&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
+/// Valid values are: &quot;Trace&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationStatusRunningConfigLogSeverityScreenEnum>))]
 public enum V1KubeControllersConfigurationStatusRunningConfigLogSeverityScreenEnum
 {
-    [EnumMember(Value = "None"), JsonStringEnumMemberName("None")]
-    None,
+    [EnumMember(Value = "Trace"), JsonStringEnumMemberName("Trace")]
+    Trace,
     [EnumMember(Value = "Debug"), JsonStringEnumMemberName("Debug")]
     Debug,
     [EnumMember(Value = "Info"), JsonStringEnumMemberName("Info")]
@@ -684,7 +684,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfig
 
     /// <summary>
     /// LogSeverityScreen is the log severity above which logs are sent to the stdout. [Default: Info]
-    /// Valid values are: &quot;None&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
+    /// Valid values are: &quot;Trace&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
     /// </summary>
     [JsonPropertyName("logSeverityScreen")]
     public V1KubeControllersConfigurationStatusRunningConfigLogSeverityScreenEnum? LogSeverityScreen { get; set; }

@@ -10906,8 +10906,8 @@ public partial class V1InstallationSpec
 
     /// <summary>
     /// FlexVolumePath optionally specifies a custom path for FlexVolume. If not specified, FlexVolume will be
-    /// enabled by default. If set to &apos;None&apos;, FlexVolume will be disabled. The default is based on the
-    /// kubernetesProvider.
+    /// enabled by default. If set to &apos;None&apos;, FlexVolume will not be installed, but a driver already installed in
+    /// the default path is updated. The default is based on the kubernetesProvider.
     /// </summary>
     [JsonPropertyName("flexVolumePath")]
     public string? FlexVolumePath { get; set; }
@@ -21937,8 +21937,8 @@ public partial class V1InstallationStatusComputed
 
     /// <summary>
     /// FlexVolumePath optionally specifies a custom path for FlexVolume. If not specified, FlexVolume will be
-    /// enabled by default. If set to &apos;None&apos;, FlexVolume will be disabled. The default is based on the
-    /// kubernetesProvider.
+    /// enabled by default. If set to &apos;None&apos;, FlexVolume will not be installed, but a driver already installed in
+    /// the default path is updated. The default is based on the kubernetesProvider.
     /// </summary>
     [JsonPropertyName("flexVolumePath")]
     public string? FlexVolumePath { get; set; }
