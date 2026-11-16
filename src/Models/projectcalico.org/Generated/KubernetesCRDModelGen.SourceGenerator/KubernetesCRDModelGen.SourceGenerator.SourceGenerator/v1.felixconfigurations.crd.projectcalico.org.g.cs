@@ -939,8 +939,8 @@ public partial class V1FelixConfigurationSpec
 
     /// <summary>
     /// BPFMapSizeConntrackScaling controls whether and how we scale the conntrack map size depending
-    /// on its usage. &apos;Disabled&apos; make the size stay at the default or whatever is set by
-    /// BPFMapSizeConntrack*. &apos;DoubleIfFull&apos; doubles the size when the map is pretty much full even
+    /// on its usage. &apos;Disabled&apos; stops the map from growing; a map that already grew keeps its size.
+    /// &apos;DoubleIfFull&apos; doubles the size of an IP family&apos;s map when it is more than 80% full
     /// after cleanups. [Default: DoubleIfFull]
     /// </summary>
     [JsonPropertyName("bpfMapSizeConntrackScaling")]
