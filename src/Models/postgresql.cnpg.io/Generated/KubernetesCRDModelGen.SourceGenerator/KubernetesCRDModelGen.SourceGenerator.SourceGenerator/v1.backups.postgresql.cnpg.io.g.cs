@@ -410,6 +410,28 @@ public partial class V1BackupStatusS3CredentialsSessionToken
     public required string Name { get; set; }
 }
 
+/// <summary>
+/// Reference to the secret holding the key for Server-Side Encryption with
+/// Customer-provided keys (SSE-C): a base64-encoded 256-bit AES key.
+/// barman-cloud uses it to encrypt the objects it uploads and to read them
+/// back. Meant for S3-compatible providers that only support SSE-C
+/// (e.g. Hetzner Object Storage). Cannot be combined with `encryption`.
+/// Works with any authentication method. Changing the key makes the
+/// existing objects unreadable: use a new `destinationPath` or `serverName`.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1BackupStatusS3CredentialsSseCustomerKey
+{
+    /// <summary>The key to select</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the referent.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>The credentials to use to upload data to S3</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -434,6 +456,18 @@ public partial class V1BackupStatusS3Credentials
     /// <summary>The references to the session key</summary>
     [JsonPropertyName("sessionToken")]
     public V1BackupStatusS3CredentialsSessionToken? SessionToken { get; set; }
+
+    /// <summary>
+    /// Reference to the secret holding the key for Server-Side Encryption with
+    /// Customer-provided keys (SSE-C): a base64-encoded 256-bit AES key.
+    /// barman-cloud uses it to encrypt the objects it uploads and to read them
+    /// back. Meant for S3-compatible providers that only support SSE-C
+    /// (e.g. Hetzner Object Storage). Cannot be combined with `encryption`.
+    /// Works with any authentication method. Changing the key makes the
+    /// existing objects unreadable: use a new `destinationPath` or `serverName`.
+    /// </summary>
+    [JsonPropertyName("sseCustomerKey")]
+    public V1BackupStatusS3CredentialsSseCustomerKey? SseCustomerKey { get; set; }
 }
 
 /// <summary>BackupSnapshotElementStatus is a volume snapshot that is part of a volume snapshot method backup</summary>

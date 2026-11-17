@@ -1275,7 +1275,7 @@ public partial class V1ClusterSpecBackupBarmanObjectStoreAzureCredentials
 /// <summary>
 /// Compress a backup file (a tar file per tablespace) while streaming it
 /// to the object store. Available options are empty string (no
-/// compression, default), `gzip`, `bzip2`, `lz4`, and `snappy`.
+/// compression, default), `gzip`, `bzip2`, `lz4`, `snappy`, and `zstd`.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterSpecBackupBarmanObjectStoreDataCompressionEnum>))]
@@ -1288,7 +1288,9 @@ public enum V1ClusterSpecBackupBarmanObjectStoreDataCompressionEnum
     [EnumMember(Value = "lz4"), JsonStringEnumMemberName("lz4")]
     Lz4,
     [EnumMember(Value = "snappy"), JsonStringEnumMemberName("snappy")]
-    Snappy
+    Snappy,
+    [EnumMember(Value = "zstd"), JsonStringEnumMemberName("zstd")]
+    Zstd
 }
 
 /// <summary>
@@ -1339,7 +1341,7 @@ public partial class V1ClusterSpecBackupBarmanObjectStoreData
     /// <summary>
     /// Compress a backup file (a tar file per tablespace) while streaming it
     /// to the object store. Available options are empty string (no
-    /// compression, default), `gzip`, `bzip2`, `lz4`, and `snappy`.
+    /// compression, default), `gzip`, `bzip2`, `lz4`, `snappy`, and `zstd`.
     /// </summary>
     [JsonPropertyName("compression")]
     public V1ClusterSpecBackupBarmanObjectStoreDataCompressionEnum? Compression { get; set; }
@@ -1439,6 +1441,23 @@ public partial class V1ClusterSpecBackupBarmanObjectStoreGoogleCredentials
     public bool? GkeEnvironment { get; set; }
 }
 
+/// <summary>
+/// How bucket names appear in S3 requests: `virtual` (bucket.endpoint/key),
+/// `path` (endpoint/bucket/key) or `auto` (boto3 decides, same as unset).
+/// Requires s3Credentials and Barman 3.18 or later.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterSpecBackupBarmanObjectStoreS3AddressingStyleEnum>))]
+public enum V1ClusterSpecBackupBarmanObjectStoreS3AddressingStyleEnum
+{
+    [EnumMember(Value = "auto"), JsonStringEnumMemberName("auto")]
+    Auto,
+    [EnumMember(Value = "virtual"), JsonStringEnumMemberName("virtual")]
+    Virtual,
+    [EnumMember(Value = "path"), JsonStringEnumMemberName("path")]
+    Path
+}
+
 /// <summary>The reference to the access key id</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1495,6 +1514,28 @@ public partial class V1ClusterSpecBackupBarmanObjectStoreS3CredentialsSessionTok
     public required string Name { get; set; }
 }
 
+/// <summary>
+/// Reference to the secret holding the key for Server-Side Encryption with
+/// Customer-provided keys (SSE-C): a base64-encoded 256-bit AES key.
+/// barman-cloud uses it to encrypt the objects it uploads and to read them
+/// back. Meant for S3-compatible providers that only support SSE-C
+/// (e.g. Hetzner Object Storage). Cannot be combined with `encryption`.
+/// Works with any authentication method. Changing the key makes the
+/// existing objects unreadable: use a new `destinationPath` or `serverName`.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterSpecBackupBarmanObjectStoreS3CredentialsSseCustomerKey
+{
+    /// <summary>The key to select</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the referent.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>The credentials to use to upload data to S3</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1519,6 +1560,18 @@ public partial class V1ClusterSpecBackupBarmanObjectStoreS3Credentials
     /// <summary>The references to the session key</summary>
     [JsonPropertyName("sessionToken")]
     public V1ClusterSpecBackupBarmanObjectStoreS3CredentialsSessionToken? SessionToken { get; set; }
+
+    /// <summary>
+    /// Reference to the secret holding the key for Server-Side Encryption with
+    /// Customer-provided keys (SSE-C): a base64-encoded 256-bit AES key.
+    /// barman-cloud uses it to encrypt the objects it uploads and to read them
+    /// back. Meant for S3-compatible providers that only support SSE-C
+    /// (e.g. Hetzner Object Storage). Cannot be combined with `encryption`.
+    /// Works with any authentication method. Changing the key makes the
+    /// existing objects unreadable: use a new `destinationPath` or `serverName`.
+    /// </summary>
+    [JsonPropertyName("sseCustomerKey")]
+    public V1ClusterSpecBackupBarmanObjectStoreS3CredentialsSseCustomerKey? SseCustomerKey { get; set; }
 }
 
 /// <summary>
@@ -1685,6 +1738,14 @@ public partial class V1ClusterSpecBackupBarmanObjectStore
     /// </summary>
     [JsonPropertyName("historyTags")]
     public IDictionary<string, string>? HistoryTags { get; set; }
+
+    /// <summary>
+    /// How bucket names appear in S3 requests: `virtual` (bucket.endpoint/key),
+    /// `path` (endpoint/bucket/key) or `auto` (boto3 decides, same as unset).
+    /// Requires s3Credentials and Barman 3.18 or later.
+    /// </summary>
+    [JsonPropertyName("s3AddressingStyle")]
+    public V1ClusterSpecBackupBarmanObjectStoreS3AddressingStyleEnum? S3AddressingStyle { get; set; }
 
     /// <summary>The credentials to use to upload data to S3</summary>
     [JsonPropertyName("s3Credentials")]
@@ -3445,7 +3506,7 @@ public partial class V1ClusterSpecExternalClustersBarmanObjectStoreAzureCredenti
 /// <summary>
 /// Compress a backup file (a tar file per tablespace) while streaming it
 /// to the object store. Available options are empty string (no
-/// compression, default), `gzip`, `bzip2`, `lz4`, and `snappy`.
+/// compression, default), `gzip`, `bzip2`, `lz4`, `snappy`, and `zstd`.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterSpecExternalClustersBarmanObjectStoreDataCompressionEnum>))]
@@ -3458,7 +3519,9 @@ public enum V1ClusterSpecExternalClustersBarmanObjectStoreDataCompressionEnum
     [EnumMember(Value = "lz4"), JsonStringEnumMemberName("lz4")]
     Lz4,
     [EnumMember(Value = "snappy"), JsonStringEnumMemberName("snappy")]
-    Snappy
+    Snappy,
+    [EnumMember(Value = "zstd"), JsonStringEnumMemberName("zstd")]
+    Zstd
 }
 
 /// <summary>
@@ -3509,7 +3572,7 @@ public partial class V1ClusterSpecExternalClustersBarmanObjectStoreData
     /// <summary>
     /// Compress a backup file (a tar file per tablespace) while streaming it
     /// to the object store. Available options are empty string (no
-    /// compression, default), `gzip`, `bzip2`, `lz4`, and `snappy`.
+    /// compression, default), `gzip`, `bzip2`, `lz4`, `snappy`, and `zstd`.
     /// </summary>
     [JsonPropertyName("compression")]
     public V1ClusterSpecExternalClustersBarmanObjectStoreDataCompressionEnum? Compression { get; set; }
@@ -3609,6 +3672,23 @@ public partial class V1ClusterSpecExternalClustersBarmanObjectStoreGoogleCredent
     public bool? GkeEnvironment { get; set; }
 }
 
+/// <summary>
+/// How bucket names appear in S3 requests: `virtual` (bucket.endpoint/key),
+/// `path` (endpoint/bucket/key) or `auto` (boto3 decides, same as unset).
+/// Requires s3Credentials and Barman 3.18 or later.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1ClusterSpecExternalClustersBarmanObjectStoreS3AddressingStyleEnum>))]
+public enum V1ClusterSpecExternalClustersBarmanObjectStoreS3AddressingStyleEnum
+{
+    [EnumMember(Value = "auto"), JsonStringEnumMemberName("auto")]
+    Auto,
+    [EnumMember(Value = "virtual"), JsonStringEnumMemberName("virtual")]
+    Virtual,
+    [EnumMember(Value = "path"), JsonStringEnumMemberName("path")]
+    Path
+}
+
 /// <summary>The reference to the access key id</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3665,6 +3745,28 @@ public partial class V1ClusterSpecExternalClustersBarmanObjectStoreS3Credentials
     public required string Name { get; set; }
 }
 
+/// <summary>
+/// Reference to the secret holding the key for Server-Side Encryption with
+/// Customer-provided keys (SSE-C): a base64-encoded 256-bit AES key.
+/// barman-cloud uses it to encrypt the objects it uploads and to read them
+/// back. Meant for S3-compatible providers that only support SSE-C
+/// (e.g. Hetzner Object Storage). Cannot be combined with `encryption`.
+/// Works with any authentication method. Changing the key makes the
+/// existing objects unreadable: use a new `destinationPath` or `serverName`.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ClusterSpecExternalClustersBarmanObjectStoreS3CredentialsSseCustomerKey
+{
+    /// <summary>The key to select</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the referent.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>The credentials to use to upload data to S3</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3689,6 +3791,18 @@ public partial class V1ClusterSpecExternalClustersBarmanObjectStoreS3Credentials
     /// <summary>The references to the session key</summary>
     [JsonPropertyName("sessionToken")]
     public V1ClusterSpecExternalClustersBarmanObjectStoreS3CredentialsSessionToken? SessionToken { get; set; }
+
+    /// <summary>
+    /// Reference to the secret holding the key for Server-Side Encryption with
+    /// Customer-provided keys (SSE-C): a base64-encoded 256-bit AES key.
+    /// barman-cloud uses it to encrypt the objects it uploads and to read them
+    /// back. Meant for S3-compatible providers that only support SSE-C
+    /// (e.g. Hetzner Object Storage). Cannot be combined with `encryption`.
+    /// Works with any authentication method. Changing the key makes the
+    /// existing objects unreadable: use a new `destinationPath` or `serverName`.
+    /// </summary>
+    [JsonPropertyName("sseCustomerKey")]
+    public V1ClusterSpecExternalClustersBarmanObjectStoreS3CredentialsSseCustomerKey? SseCustomerKey { get; set; }
 }
 
 /// <summary>
@@ -3855,6 +3969,14 @@ public partial class V1ClusterSpecExternalClustersBarmanObjectStore
     /// </summary>
     [JsonPropertyName("historyTags")]
     public IDictionary<string, string>? HistoryTags { get; set; }
+
+    /// <summary>
+    /// How bucket names appear in S3 requests: `virtual` (bucket.endpoint/key),
+    /// `path` (endpoint/bucket/key) or `auto` (boto3 decides, same as unset).
+    /// Requires s3Credentials and Barman 3.18 or later.
+    /// </summary>
+    [JsonPropertyName("s3AddressingStyle")]
+    public V1ClusterSpecExternalClustersBarmanObjectStoreS3AddressingStyleEnum? S3AddressingStyle { get; set; }
 
     /// <summary>The credentials to use to upload data to S3</summary>
     [JsonPropertyName("s3Credentials")]
