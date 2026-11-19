@@ -542,31 +542,71 @@ public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfigurationDisk
     public required IntOrString MemoryLimit { get; set; }
 }
 
-/// <summary>LogVerbosity sets log verbosity level of  various components</summary>
+/// <summary>LogVerbosity sets log verbosity level of various components</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfigurationLogVerbosity
 {
-    /// <summary>NodeVerbosity represents a map of nodes with a specific verbosity level</summary>
+    /// <summary>
+    /// NodeVerbosity represents a map of node names to specific log verbosity levels.
+    /// Allows overriding verbosity on specific nodes without altering cluster-wide settings.
+    /// Changes take effect on the fly without triggering a pod restart.
+    /// </summary>
     [JsonPropertyName("nodeVerbosity")]
     public IDictionary<string, int>? NodeVerbosity { get; set; }
 
+    /// <summary>
+    /// VirtAPI specifies the log verbosity level for the virt-api deployment.
+    /// A higher value increases the amount of logged information.
+    /// Changes take effect on the fly without triggering a pod restart.
+    /// Default: 2. Levels up to 9 produce progressively more detailed logs.
+    /// </summary>
     [JsonPropertyName("virtAPI")]
     public int? VirtAPI { get; set; }
 
+    /// <summary>
+    /// VirtController specifies the log verbosity level for the virt-controller deployment.
+    /// A higher value increases the amount of logged information.
+    /// Changes take effect on the fly without triggering a pod restart.
+    /// Default: 2. Levels up to 9 produce progressively more detailed logs.
+    /// </summary>
     [JsonPropertyName("virtController")]
     public int? VirtController { get; set; }
 
+    /// <summary>
+    /// VirtHandler specifies the log verbosity level for the virt-handler DaemonSet.
+    /// A higher value increases the amount of logged information.
+    /// Changes take effect on the fly without triggering a pod restart.
+    /// Default: 2. Levels up to 9 produce progressively more detailed logs.
+    /// </summary>
     [JsonPropertyName("virtHandler")]
     public int? VirtHandler { get; set; }
 
+    /// <summary>
+    /// VirtLauncher specifies the log verbosity level for virt-launcher pods managing VMI workloads.
+    /// A higher value increases the amount of logged information.
+    /// Changes apply to newly created virt-launcher pods. Existing pods retain their original verbosity.
+    /// Default: 2. Levels up to 9 produce progressively more detailed logs.
+    /// </summary>
     [JsonPropertyName("virtLauncher")]
     public int? VirtLauncher { get; set; }
 
+    /// <summary>
+    /// VirtOperator specifies the log verbosity level for the virt-operator deployment.
+    /// A higher value increases the amount of logged information.
+    /// Changes take effect on the fly without triggering a pod restart.
+    /// Default: 2. Levels up to 9 produce progressively more detailed logs.
+    /// </summary>
     [JsonPropertyName("virtOperator")]
     public int? VirtOperator { get; set; }
 
+    /// <summary>
+    /// VirtSynchronizationController specifies the log verbosity level for the virt-synchronization-controller component.
+    /// A higher value increases the amount of logged information.
+    /// Changes take effect on the fly without triggering a pod restart.
+    /// Default: 2. Levels up to 9 produce progressively more detailed logs.
+    /// </summary>
     [JsonPropertyName("virtSynchronizationController")]
     public int? VirtSynchronizationController { get; set; }
 }
@@ -611,7 +651,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfiguration
     [JsonPropertyName("featureGates")]
     public IList<string>? FeatureGates { get; set; }
 
-    /// <summary>LogVerbosity sets log verbosity level of  various components</summary>
+    /// <summary>LogVerbosity sets log verbosity level of various components</summary>
     [JsonPropertyName("logVerbosity")]
     public V1alpha3KubeVirtSpecConfigurationDeveloperConfigurationLogVerbosity? LogVerbosity { get; set; }
 
@@ -660,6 +700,33 @@ public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfiguration
     /// </summary>
     [JsonPropertyName("useEmulation")]
     public bool? UseEmulation { get; set; }
+}
+
+/// <summary>
+/// EmulationPolicy is the default emulation policy for VMs that do not set
+/// spec.emulationPolicy. A VM may set a more permissive policy.
+/// 
+/// Valid Options from least to most permissive are:
+/// - None: Only native-kvm
+/// - Hardware: Not yet implemented
+/// - Software: Qemu TCG cross-architecture emulation
+/// Default policy is &apos;None&apos;
+/// 
+/// This is an alpha field and should only be configured if the
+/// feature-gate CrossArchitectureVirtualization is enabled.
+/// This feature is in alpha.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha3KubeVirtSpecConfigurationEmulationPolicyEnum>))]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public enum V1alpha3KubeVirtSpecConfigurationEmulationPolicyEnum
+{
+    [EnumMember(Value = "None"), JsonStringEnumMemberName("None")]
+    None,
+    [EnumMember(Value = "Hardware"), JsonStringEnumMemberName("Hardware")]
+    Hardware,
+    [EnumMember(Value = "Software"), JsonStringEnumMemberName("Software")]
+    Software
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
@@ -977,8 +1044,32 @@ public partial class V1alpha3KubeVirtSpecConfigurationMigrations
     public long? CompletionTimeoutPerGiB { get; set; }
 
     /// <summary>
-    /// When set to true, DisableTLS will disable the additional layer of live migration encryption
-    /// provided by KubeVirt. This is usually a bad idea. Defaults to false
+    /// CrossClusterNetwork is the name of the CNI network used for synchronization-controller
+    /// peer traffic when decentralizedLiveMigrationDatapath is Proxy. When set, sync controllers
+    /// attach to this network as crosscluster0 and bind the sync gRPC port only there.
+    /// When omitted with Proxy, peer traffic uses the pod network. Must not be set when
+    /// decentralizedLiveMigrationDatapath is Direct (or unset).
+    /// </summary>
+    [JsonPropertyName("crossClusterNetwork")]
+    public string? CrossClusterNetwork { get; set; }
+
+    /// <summary>
+    /// DecentralizedLiveMigrationDatapath selects how live-migration traffic moves for
+    /// decentralized live migrations (cross-namespace or cross-cluster).
+    /// Direct (default when unset): no synchronization-controller migration-data proxy.
+    /// Proxy: sync controllers proxy migration traffic on a single gRPC port.
+    /// Requires the CrossClusterMigrationProxy feature gate while Alpha.
+    /// </summary>
+    [JsonPropertyName("decentralizedLiveMigrationDatapath")]
+    public string? DecentralizedLiveMigrationDatapath { get; set; }
+
+    /// <summary>
+    /// DisableTLS disables both TLS encryption and mutual TLS authentication
+    /// on the migration proxy when set to true. This removes all cryptographic
+    /// protection from the migration data stream.
+    /// When disabled, implement network-level access controls to restrict
+    /// migration traffic to trusted sources only.
+    /// Defaults to false.
     /// </summary>
     [JsonPropertyName("disableTLS")]
     public bool? DisableTLS { get; set; }
@@ -1001,7 +1092,10 @@ public partial class V1alpha3KubeVirtSpecConfigurationMigrations
 
     /// <summary>
     /// Network is the name of the CNI network to use for live migrations. By default, migrations go
-    /// through the pod network.
+    /// through the pod network. When decentralizedLiveMigrationDatapath is Proxy, this network is
+    /// also used for virt-handler ↔ synchronization-controller migration listeners (omit = pod IP).
+    /// If set with Proxy, synchronization controllers require the migration0 interface at startup
+    /// and will fail to start if it is missing.
     /// </summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
@@ -1049,6 +1143,24 @@ public partial class V1alpha3KubeVirtSpecConfigurationMigrations
     /// </summary>
     [JsonPropertyName("utilityVolumesTimeout")]
     public long? UtilityVolumesTimeout { get; set; }
+}
+
+/// <summary>
+/// MultiIOThreadAutoPolicy, when used in conjunction with SCSIMultiIOThread feature gate, will enable the auto IOThreadPolicy
+/// to allocate a pool of iothreads (capped at 8 threads) to each virtio-blk disk instead of a single iothread per disk.
+/// This setting has no effect unless the SCSIMultiIOThread feature gate is enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecConfigurationMultiIOThreadAutoPolicy
+{
+    /// <summary>
+    /// Enabled configures the auto IOThreadsPolicy to allocate multiple iothreads to virtio-blk disks. Defaults to false.
+    /// Requires SCSIMultiIOThread feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
 }
 
 /// <summary>
@@ -1430,6 +1542,20 @@ public partial class V1alpha3KubeVirtSpecConfigurationTlsConfiguration
     public IList<string>? Ciphers { get; set; }
 
     /// <summary>
+    /// Groups defines the set of allowed TLS supported groups (elliptic curves)
+    /// on all TLS server endpoints. Group names follow the IANA TLS Supported
+    /// Groups registry (e.g. X25519, secp256r1, X25519MLKEM768). Unrecognised
+    /// names are silently ignored at TLS setup time, so an older component
+    /// tolerates group names added in a newer release. When empty or when the
+    /// TLSGroupPreferences feature gate is disabled, Go&apos;s default curve
+    /// preferences apply.
+    /// MaxItems bounds the CEL cost estimate for the exists() validation rule
+    /// on TLSConfiguration; without it the CRD is rejected at creation time.
+    /// </summary>
+    [JsonPropertyName("groups")]
+    public IList<string>? Groups { get; set; }
+
+    /// <summary>
     /// MinTLSVersion is a way to specify the minimum protocol version that is acceptable for TLS connections.
     /// Protocol versions are based on the following most common TLS configurations:
     /// 
@@ -1651,6 +1777,23 @@ public partial class V1alpha3KubeVirtSpecConfiguration
     public IList<string>? EmulatedMachines { get; set; }
 
     /// <summary>
+    /// EmulationPolicy is the default emulation policy for VMs that do not set
+    /// spec.emulationPolicy. A VM may set a more permissive policy.
+    /// 
+    /// Valid Options from least to most permissive are:
+    /// - None: Only native-kvm
+    /// - Hardware: Not yet implemented
+    /// - Software: Qemu TCG cross-architecture emulation
+    /// Default policy is &apos;None&apos;
+    /// 
+    /// This is an alpha field and should only be configured if the
+    /// feature-gate CrossArchitectureVirtualization is enabled.
+    /// This feature is in alpha.
+    /// </summary>
+    [JsonPropertyName("emulationPolicy")]
+    public V1alpha3KubeVirtSpecConfigurationEmulationPolicyEnum? EmulationPolicy { get; set; }
+
+    /// <summary>
     /// EvictionStrategy defines at the cluster level if the VirtualMachineInstance should be
     /// migrated instead of shut-off in case of a node drain. If the VirtualMachineInstance specific
     /// field is set it overrides the cluster level one.
@@ -1711,6 +1854,14 @@ public partial class V1alpha3KubeVirtSpecConfiguration
     /// <summary>deprecated</summary>
     [JsonPropertyName("minCPUModel")]
     public string? MinCPUModel { get; set; }
+
+    /// <summary>
+    /// MultiIOThreadAutoPolicy, when used in conjunction with SCSIMultiIOThread feature gate, will enable the auto IOThreadPolicy
+    /// to allocate a pool of iothreads (capped at 8 threads) to each virtio-blk disk instead of a single iothread per disk.
+    /// This setting has no effect unless the SCSIMultiIOThread feature gate is enabled.
+    /// </summary>
+    [JsonPropertyName("multiIOThreadAutoPolicy")]
+    public V1alpha3KubeVirtSpecConfigurationMultiIOThreadAutoPolicy? MultiIOThreadAutoPolicy { get; set; }
 
     /// <summary>NetworkConfiguration holds network options</summary>
     [JsonPropertyName("network")]
@@ -2954,9 +3105,10 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementTolerations
 
     /// <summary>
     /// Operator represents a key&apos;s relationship to the value.
-    /// Valid operators are Exists and Equal. Defaults to Equal.
+    /// Valid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.
     /// Exists is equivalent to wildcard for value, so that a pod can
     /// tolerate all taints of a particular category.
+    /// Lt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).
     /// </summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
@@ -3027,6 +3179,1187 @@ public partial class V1alpha3KubeVirtSpecInfra
     /// </summary>
     [JsonPropertyName("nodePlacement")]
     public V1alpha3KubeVirtSpecInfraNodePlacement? NodePlacement { get; set; }
+
+    /// <summary>
+    /// replicas indicates how many replicas should be created for each KubeVirt infrastructure
+    /// component (like virt-api or virt-controller). Defaults to 2.
+    /// WARNING: this is an advanced feature that prevents auto-scaling for core kubevirt components. Please use with caution!
+    /// </summary>
+    [JsonPropertyName("replicas")]
+    public int? Replicas { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>A node selector term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
+{
+    /// <summary>A list of node selector requirements by node&apos;s labels.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>A list of node selector requirements by node&apos;s fields.</summary>
+    [JsonPropertyName("matchFields")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields>? MatchFields { get; set; }
+}
+
+/// <summary>
+/// An empty preferred scheduling term matches all objects with implicit weight 0
+/// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>A node selector term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("preference")]
+    public required V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference Preference { get; set; }
+
+    /// <summary>Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.</summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A node selector requirement is a selector that contains values, a key, and an operator
+/// that relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// An array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. If the operator is Gt or Lt, the values
+    /// array must have a single element, which will be interpreted as an integer.
+    /// This array is replaced during a strategic merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A null or empty node selector term matches no objects. The requirements of
+/// them are ANDed.
+/// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
+{
+    /// <summary>A list of node selector requirements by node&apos;s labels.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>A list of node selector requirements by node&apos;s fields.</summary>
+    [JsonPropertyName("matchFields")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields>? MatchFields { get; set; }
+}
+
+/// <summary>
+/// If the affinity requirements specified by this field are not met at
+/// scheduling time, the pod will not be scheduled onto the node.
+/// If the affinity requirements specified by this field cease to be met
+/// at some point during pod execution (e.g. due to an update), the system
+/// may or may not try to eventually evict the pod from its node.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A list of node selector terms. The terms are ORed.</summary>
+    [JsonPropertyName("nodeSelectorTerms")]
+    public required IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms> NodeSelectorTerms { get; set; }
+}
+
+/// <summary>Describes node affinity scheduling rules for the pod.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and adding
+    /// &quot;weight&quot; to the sum if the node matches the corresponding matchExpressions; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to an update), the system
+    /// may or may not try to eventually evict the pod from its node.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key in (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key notin (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    /// <summary>
+    /// weight associated with matching the corresponding podAffinityTerm,
+    /// in the range 1-100.
+    /// </summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Defines a set of pods (namely those matching the labelSelector
+/// relative to the given namespace(s)) that this pod should be
+/// co-located (affinity) or not co-located (anti-affinity) with,
+/// where co-located is defined as running on a node whose value of
+/// the label with key &lt;topologyKey&gt; matches that of any node on which
+/// a pod of the set of pods is running
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key in (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key notin (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and adding
+    /// &quot;weight&quot; to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to a pod label update), the
+    /// system may or may not try to eventually evict the pod from its node.
+    /// When there are multiple elements, the lists of nodes corresponding to each
+    /// podAffinityTerm are intersected, i.e. all terms must be satisfied.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key in (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key notin (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    /// <summary>
+    /// weight associated with matching the corresponding podAffinityTerm,
+    /// in the range 1-100.
+    /// </summary>
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over a set of resources, in this case pods.
+/// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label query over the set of namespaces that the term applies to.
+/// The term is applied to the union of the namespaces selected by this field
+/// and the ones listed in the namespaces field.
+/// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+/// An empty selector ({}) matches all namespaces.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Defines a set of pods (namely those matching the labelSelector
+/// relative to the given namespace(s)) that this pod should be
+/// co-located (affinity) or not co-located (anti-affinity) with,
+/// where co-located is defined as running on a node whose value of
+/// the label with key &lt;topologyKey&gt; matches that of any node on which
+/// a pod of the set of pods is running
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    /// <summary>
+    /// A label query over a set of resources, in this case pods.
+    /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
+    /// </summary>
+    [JsonPropertyName("labelSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    /// <summary>
+    /// MatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key in (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both matchLabelKeys and labelSelector.
+    /// Also, matchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// MismatchLabelKeys is a set of pod label keys to select which pods will
+    /// be taken into consideration. The keys are used to lookup values from the
+    /// incoming pod labels, those key-value labels are merged with &apos;labelSelector&apos; as &apos;key notin (value)&apos;
+    /// to select the group of existing pods which pods will be taken into consideration
+    /// for the incoming pod&apos;s pod (anti) affinity. Keys that don&apos;t exist in the incoming
+    /// pod labels will be ignored. The default value is empty.
+    /// The same key is forbidden to exist in both mismatchLabelKeys and labelSelector.
+    /// Also, mismatchLabelKeys cannot be set when labelSelector isn&apos;t set.
+    /// </summary>
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    /// <summary>
+    /// A label query over the set of namespaces that the term applies to.
+    /// The term is applied to the union of the namespaces selected by this field
+    /// and the ones listed in the namespaces field.
+    /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
+    /// An empty selector ({}) matches all namespaces.
+    /// </summary>
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    /// <summary>
+    /// namespaces specifies a static list of namespace names that the term applies to.
+    /// The term is applied to the union of the namespaces listed in this field
+    /// and the ones selected by namespaceSelector.
+    /// null or empty namespaces list and null namespaceSelector means &quot;this pod&apos;s namespace&quot;.
+    /// </summary>
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    /// <summary>
+    /// This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+    /// the labelSelector in the specified namespaces, where co-located is defined as running on a node
+    /// whose value of the label with key topologyKey matches that of any node on which any of the
+    /// selected pods is running.
+    /// Empty topologyKey is not allowed.
+    /// </summary>
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+/// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinity
+{
+    /// <summary>
+    /// The scheduler will prefer to schedule pods to nodes that satisfy
+    /// the anti-affinity expressions specified by this field, but it may choose
+    /// a node that violates one or more of the expressions. The node that is
+    /// most preferred is the one with the greatest sum of weights, i.e.
+    /// for each node that meets all of the scheduling requirements (resource
+    /// request, requiredDuringScheduling anti-affinity expressions, etc.),
+    /// compute a sum by iterating through the elements of this field and subtracting
+    /// &quot;weight&quot; from the sum if the node has pods which matches the corresponding podAffinityTerm; the
+    /// node(s) with the highest sum are the most preferred.
+    /// </summary>
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    /// <summary>
+    /// If the anti-affinity requirements specified by this field are not met at
+    /// scheduling time, the pod will not be scheduled onto the node.
+    /// If the anti-affinity requirements specified by this field cease to be met
+    /// at some point during pod execution (e.g. due to a pod label update), the
+    /// system may or may not try to eventually evict the pod from its node.
+    /// When there are multiple elements, the lists of nodes corresponding to each
+    /// podAffinityTerm are intersected, i.e. all terms must be satisfied.
+    /// </summary>
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+/// <summary>
+/// affinity enables pod affinity/anti-affinity placement expanding the types of constraints
+/// that can be expressed with nodeSelector.
+/// affinity is going to be applied to the relevant kind of pods in parallel with nodeSelector
+/// See https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinity
+{
+    /// <summary>Describes node affinity scheduling rules for the pod.</summary>
+    [JsonPropertyName("nodeAffinity")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityNodeAffinity? NodeAffinity { get; set; }
+
+    /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
+    [JsonPropertyName("podAffinity")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAffinity? PodAffinity { get; set; }
+
+    /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
+    [JsonPropertyName("podAntiAffinity")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
+}
+
+/// <summary>
+/// The pod this Toleration is attached to tolerates any taint that matches
+/// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementTolerations
+{
+    /// <summary>
+    /// Effect indicates the taint effect to match. Empty means match all taint effects.
+    /// When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
+    /// </summary>
+    [JsonPropertyName("effect")]
+    public string? Effect { get; set; }
+
+    /// <summary>
+    /// Key is the taint key that the toleration applies to. Empty means match all taint keys.
+    /// If the key is empty, operator must be Exists; this combination means to match all values and all keys.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>
+    /// Operator represents a key&apos;s relationship to the value.
+    /// Valid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.
+    /// Exists is equivalent to wildcard for value, so that a pod can
+    /// tolerate all taints of a particular category.
+    /// Lt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public string? Operator { get; set; }
+
+    /// <summary>
+    /// TolerationSeconds represents the period of time the toleration (which must be
+    /// of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default,
+    /// it is not set, which means tolerate the taint forever (do not evict). Zero and
+    /// negative values will be treated as 0 (evict immediately) by the system.
+    /// </summary>
+    [JsonPropertyName("tolerationSeconds")]
+    public long? TolerationSeconds { get; set; }
+
+    /// <summary>
+    /// Value is the taint value the toleration matches to.
+    /// If the operator is Exists, the value should be empty, otherwise just a regular string.
+    /// </summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>
+/// nodePlacement describes scheduling configuration for specific
+/// KubeVirt components
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacement
+{
+    /// <summary>
+    /// affinity enables pod affinity/anti-affinity placement expanding the types of constraints
+    /// that can be expressed with nodeSelector.
+    /// affinity is going to be applied to the relevant kind of pods in parallel with nodeSelector
+    /// See https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+    /// </summary>
+    [JsonPropertyName("affinity")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementAffinity? Affinity { get; set; }
+
+    /// <summary>
+    /// nodeSelector is the node selector applied to the relevant kind of pods
+    /// It specifies a map of key-value pairs: for the pod to be eligible to run on a node,
+    /// the node must have each of the indicated key-value pairs as labels
+    /// (it can have additional labels as well).
+    /// See https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
+    /// </summary>
+    [JsonPropertyName("nodeSelector")]
+    public IDictionary<string, string>? NodeSelector { get; set; }
+
+    /// <summary>
+    /// tolerations is a list of tolerations applied to the relevant kind of pods
+    /// See https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/ for more info.
+    /// These are additional tolerations other than default ones.
+    /// </summary>
+    [JsonPropertyName("tolerations")]
+    public IList<V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacementTolerations>? Tolerations { get; set; }
+}
+
+/// <summary>
+/// SynchronizationPlacement allows customization of node placement for synchronization controllers.
+/// This can be used to schedule sync controllers on specific nodes (e.g., nodes with access to
+/// the cross-cluster migration network). By default, sync controllers use control-plane placement.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.7+00ac3969291f8562bd89dbcccc16e63b66e09d70")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
+public partial class V1alpha3KubeVirtSpecSynchronizationPlacement
+{
+    /// <summary>
+    /// nodePlacement describes scheduling configuration for specific
+    /// KubeVirt components
+    /// </summary>
+    [JsonPropertyName("nodePlacement")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacementNodePlacement? NodePlacement { get; set; }
 
     /// <summary>
     /// replicas indicates how many replicas should be created for each KubeVirt infrastructure
@@ -4170,9 +5503,10 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementTolerations
 
     /// <summary>
     /// Operator represents a key&apos;s relationship to the value.
-    /// Valid operators are Exists and Equal. Defaults to Equal.
+    /// Valid operators are Exists, Equal, Lt, and Gt. Defaults to Equal.
     /// Exists is equivalent to wildcard for value, so that a pod can
     /// tolerate all taints of a particular category.
+    /// Lt and Gt perform numeric comparisons (requires feature gate TaintTolerationComparisonOperators).
     /// </summary>
     [JsonPropertyName("operator")]
     public string? Operator { get; set; }
@@ -4350,6 +5684,14 @@ public partial class V1alpha3KubeVirtSpec
     /// </summary>
     [JsonPropertyName("serviceMonitorNamespace")]
     public string? ServiceMonitorNamespace { get; set; }
+
+    /// <summary>
+    /// SynchronizationPlacement allows customization of node placement for synchronization controllers.
+    /// This can be used to schedule sync controllers on specific nodes (e.g., nodes with access to
+    /// the cross-cluster migration network). By default, sync controllers use control-plane placement.
+    /// </summary>
+    [JsonPropertyName("synchronizationPlacement")]
+    public V1alpha3KubeVirtSpecSynchronizationPlacement? SynchronizationPlacement { get; set; }
 
     /// <summary>Specify the port to listen on for VMI status synchronization traffic. Default is 9185</summary>
     [JsonPropertyName("synchronizationPort")]
