@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/keda.sh-v1.18.0...keda.sh-v1.19.0) (2026-11-19)
+
+
+### Features
+
+* Sync ([#260](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/260)) ([72ff59e](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/72ff59e818a34f823d74340e8fea82525cb3c118))
+
 ## [1.18.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/keda.sh-v1.17.2...keda.sh-v1.18.0) (2026-11-10)
 
 
